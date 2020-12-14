@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff377
+start:
+  say Typing(2000)
+  say Question(
+    "Quelle solution souhaiterais-tu modifier ? 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("Solution 1", payload="/_resolution_de_problemeit___modif1_5c67dc3a76ccbc29ae8ff378"),
+      Button("Solution 2", payload="/_resolution_de_problemeit___modif2_5c67dc3a76ccbc29ae8ff379"),
+      Button("Solution 3", payload="/_resolution_de_problemeit___modif3_5c67dc3a76ccbc29ae8ff37a"),
+      Button("Solution 4", payload="/_resolution_de_problemeit___modif4_5c67dc3a76ccbc29ae8ff37b"),
+      Button("Solution 5", payload="/_resolution_de_problemeit___modif5_5c67dc3a76ccbc29ae8ff37c"),
+    ],
+  )
+  hold
+  

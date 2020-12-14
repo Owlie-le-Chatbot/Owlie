@@ -1,0 +1,23 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff336
+start:
+  say Typing(2000)
+  say "Je vais te proposer quelques petites exercices pour assouplir ta pensée douloureuse."
+  say Typing(2000)
+  say "Une fois l'un ou plusieurs de ces exercices complétés, tu pourras essayer de la reformuler."
+  say Typing(2000)
+  say Question(
+    "As-tu déjà écrit ta pensée douloureuse ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339"),
+      Button("Non", payload="/_restructuration_cog_it___defpenseer_5c67dc3a76ccbc29ae8ff337"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  // adding conditional redirect to flow
+  goto flow _restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339

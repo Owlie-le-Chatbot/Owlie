@@ -1,0 +1,118 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0762
+start:
+  say Typing(4000)
+  say "Voici les principales caractéristiques du comportement affirmé ✊."
+  say Typing(7000)
+  say Question(
+    "Il consiste à exprimer ce que l'on ressent, ce que l'on pense, ce que l'on désire, tout en respectant ce que les interlocuteurices ressentent, pensent ou désirent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pas bête"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Ceci conduit généralement à des rapports égalitaires avec les autres.",
+    button_type="quick_reply",
+    buttons=[
+      Button("ok !"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(5000)
+  say Question(
+    "Avoir régulièrement un comportement affirmé revient à  se respecter soi-même tout en respectant ses interlocuteurices.",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord !"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say Question(
+    "Cela permet généralement de préserver de bonnes relations avec les autres...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Cool !"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(5000)
+  say Question(
+    "Ainsi que de se sentir moins anxieuxse, moins déprimé.e, plus confiant.e et satisfait.e de soi-même.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah bon ?"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4000)
+  say Question(
+    "Mais ce n'est pas naturel! Il faut s'entrainer régulièrement pour y arriver.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✊Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "Quel autre type de comportement souhaites-tu explorer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapituler"),
+      Button("🙏Passif", payload="/_assertivite___assertpass_5c7e84780ecd9f746fcc0760"),
+      Button("👊Agressif", payload="/_assertivite___assertagress_5c7e84780ecd9f746fcc0761"),
+      Button("🤞Manipulateur", payload="/_assertivite___assertmanip_5c7e84780ecd9f746fcc0763"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ca59b7e3-11cb-4b8d-850e-2c82f7723d23.jpeg",
+    quick_replies=[
+      Button("🙏Passif", payload="/_assertivite___assertpass_5c7e84780ecd9f746fcc0760"),
+      Button("👊Agressif", payload="/_assertivite___assertagress_5c7e84780ecd9f746fcc0761"),
+      Button("🤞Manipulateur", payload="/_assertivite___assertmanip_5c7e84780ecd9f746fcc0763"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

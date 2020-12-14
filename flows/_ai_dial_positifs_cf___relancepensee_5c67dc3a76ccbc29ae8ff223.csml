@@ -1,0 +1,30 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff223
+start:
+  say Question(
+    "C'est quelque chose de...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Plutôt positif 😊"),
+      Button("Plutôt négatif 😕", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+    ],
+  )
+  hold
+  
+  remember _pensee = event
+  goto step_1
+
+
+step_1:
+  say Typing(1800)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Ah c'est chouette ça ! Raconte !"
+  hold
+  
+  remember _pensee_positive = event
+  
+  // adding conditional redirect to flow
+  goto flow _renforcements_clara___randomrenfo_5c67dc3a76ccbc29ae8ff249

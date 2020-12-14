@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2dc
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_ancrage_emotionnel_igor___bienveillance_5c67dc3a76ccbc29ae8ff2d2", "_ancrage_emotionnel_igor___photo_5c67dc3a76ccbc29ae8ff2d3", "_ancrage_emotionnel_igor___securite_5c67dc3a76ccbc29ae8ff2d5", "_ancrage_emotionnel_igor___favoris_5c67dc3a76ccbc29ae8ff2d6", "_ancrage_emotionnel_igor___inspiration_5c67dc3a76ccbc29ae8ff2d7", "_ancrage_emotionnel_igor___chanson_5c67dc3a76ccbc29ae8ff2d8", "_ancrage_emotionnel_igor___valorisation_5c67dc3a76ccbc29ae8ff2d9", "_ancrage_emotionnel_igor___recompense_5c67dc3a76ccbc29ae8ff2da", "_ancrage_emotionnel_igor___avenir_5c67dc3a76ccbc29ae8ff2db"]))
+  if (rand == 0) goto flow _ancrage_emotionnel_igor___bienveillance_5c67dc3a76ccbc29ae8ff2d2
+  if (rand == 1) goto flow _ancrage_emotionnel_igor___photo_5c67dc3a76ccbc29ae8ff2d3
+  if (rand == 2) goto flow _ancrage_emotionnel_igor___securite_5c67dc3a76ccbc29ae8ff2d5
+  if (rand == 3) goto flow _ancrage_emotionnel_igor___favoris_5c67dc3a76ccbc29ae8ff2d6
+  if (rand == 4) goto flow _ancrage_emotionnel_igor___inspiration_5c67dc3a76ccbc29ae8ff2d7
+  if (rand == 5) goto flow _ancrage_emotionnel_igor___chanson_5c67dc3a76ccbc29ae8ff2d8
+  if (rand == 6) goto flow _ancrage_emotionnel_igor___valorisation_5c67dc3a76ccbc29ae8ff2d9
+  if (rand == 7) goto flow _ancrage_emotionnel_igor___recompense_5c67dc3a76ccbc29ae8ff2da
+  if (rand == 8) goto flow _ancrage_emotionnel_igor___avenir_5c67dc3a76ccbc29ae8ff2db

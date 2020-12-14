@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff31e
+start:
+  say Typing(2000)
+  say Question(
+    "Te sens-tu prêt.e à reformuler ta pensée douloureuse ou souhaites-tu d'abord l'assouplir davantage avec de petits exercices ?",
+    buttons=[
+      Button("Reformuler", payload="/_restructuration_cog_it___reformulation_5c67dc3a76ccbc29ae8ff33a"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("😉Ça me suffit !", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,81 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff292
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Pac-man",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0e845eec-d09e-413f-8cf6-7a0985dc008b.jpeg",
+        buttons=[
+          Url("https://www.google.fr/search?q=pacman&rlz=1C5CHFA_enFR735FR735&oq=pacman&aqs=chrome..69i57.889j0j1&sourceid=chrome&ie=UTF-8#clb=clb", text="Jouer !"),
+        ],
+      ),
+      Card(
+        title="Solitaire",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bb99017c-980c-4a01-9427-f64400122eaf.jpeg",
+        buttons=[
+          Url("https://www.google.com/search?q=solitaire&oq=solitaire&aqs=chrome..69i57j69i61l3j69i59j0.251j0j7&sourceid=chrome&ie=UTF-8#clb=clb", text="Jouer !"),
+        ],
+      ),
+      Card(
+        title="Morpion",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/68d4f5ed-97fd-44fa-88c6-052a6365a425.jpeg",
+        buttons=[
+          Url("https://www.google.com/search?q=tic-tac-toe&cad=h", text="Jouer !"),
+        ],
+      ),
+      Card(
+        title="Snake",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2e85d367-7763-4d08-aaa1-2a1d8814374f.jpeg",
+        buttons=[
+          Url("https://www.google.fr/search?q=snake&rlz=1C5CHFA_enFR735FR735&oq=snake&aqs=chrome..69i57.858j0j9&sourceid=chrome&ie=UTF-8", text="Jouer !"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3500)
+  say Carousel(
+    cards=[
+      Card(
+        title="Atari Break-out (casse brique)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c20b368b-ea7f-422b-8613-500197834ed6.jpeg",
+        buttons=[
+          Url("https://elgoog.im/breakout/", text="Jouer !"),
+        ],
+      ),
+      Card(
+        title="Spooky Cat ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fedb11eb-dcdc-45c2-b33b-5d66bacab8cd.jpeg",
+        buttons=[
+          Url("https://www.google.com/doodles/halloween-2016", text="Jouer !"),
+        ],
+      ),
+      Card(
+        title="Weebinette",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ac548497-711e-4283-9a5d-025cbb50eed3.jpeg",
+        buttons=[
+          Url("http://www.webinette.fr/", text="Jouer !"),
+        ],
+      ),
+      Card(
+        title="Idées d'applications mobiles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b5fead10-05ba-4e56-ad06-5677e3adef14.jpeg",
+        buttons=[
+          Button("Donne-moi des idées", payload="/_activites_igor___jeuxappmobile_5c67dc3a76ccbc29ae8ff293"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+      Button("🚀Autres activités", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+  )
+  hold
+  

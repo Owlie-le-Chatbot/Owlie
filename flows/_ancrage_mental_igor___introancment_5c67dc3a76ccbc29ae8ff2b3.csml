@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2b3
+start:
+  say Typing(3000)
+  say Question(
+    "Je vais te proposer des techniques très simples qui vont te permettre de te recentrer sur le contrôle de ton esprit 💭",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌟C'est parti !", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+      Button("🔙Sortir ", payload="/_ancrage_igor___listanc_5c67dc3a76ccbc29ae8ff2af"),
+    ],
+  )
+  hold
+  

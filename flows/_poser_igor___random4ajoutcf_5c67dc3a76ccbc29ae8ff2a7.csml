@@ -1,0 +1,12 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a7
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_poser_igor___listnature_5c67dc3a76ccbc29ae8ff2a4", "_poser_igor___listmusic_5c67dc3a76ccbc29ae8ff2a3", "_poser_igor___listasmr_5c67dc3a76ccbc29ae8ff2a5", "_poser_igor___listpc_5c67dc3a76ccbc29ae8ff2a2", "_poser_igor___listvid_5c67dc3a76ccbc29ae8ff2a6", "_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1", "_respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9", "_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"]))
+  if (rand == 0) goto flow _poser_igor___listnature_5c67dc3a76ccbc29ae8ff2a4
+  if (rand == 1) goto flow _poser_igor___listmusic_5c67dc3a76ccbc29ae8ff2a3
+  if (rand == 2) goto flow _poser_igor___listasmr_5c67dc3a76ccbc29ae8ff2a5
+  if (rand == 3) goto flow _poser_igor___listpc_5c67dc3a76ccbc29ae8ff2a2
+  if (rand == 4) goto flow _poser_igor___listvid_5c67dc3a76ccbc29ae8ff2a6
+  if (rand == 5) goto flow _poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1
+  if (rand == 6) goto flow _respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9
+  if (rand == 7) goto flow _poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853

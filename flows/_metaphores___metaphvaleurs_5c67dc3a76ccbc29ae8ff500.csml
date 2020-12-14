@@ -1,0 +1,73 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff500
+start:
+  say Typing(5000)
+  say "Lorsque tu es en difficulté, tu as tendance, comme tout être humain, à privilégier des solutions à court terme pour te soulager."
+  say Typing(5000)
+  say "Or ces solutions à court terme peuvent aussi t'éloigner de ce qui est réellement important pour toi : tes valeurs."
+  say Typing(5000)
+  say Question(
+    "Identifier tes valeurs te permet d'opter pour des solutions dont l'effet est certes moins immédiat, mais qui te rapprochent d'un bien-être plus durable.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment faire?"),
+      Button("⤴️Sortir", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(5000)
+  say "Une première méthode consiste à t'imaginer dans 10 ans, au cours d'une célébration en ton honneur."
+  say Typing(5000)
+  say "Les personnes que tu apprécies témoignent sincèrement de ce qu'iels pensent et ressentent pour toi."
+  say Typing(4000)
+  say Question(
+    "Que voudrais tu qu'iels disent?",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Autre méthode"),
+      Button("⤴️Sortir", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(5000)
+  say "Une autre méthode consiste à examiner les dix dernières années de ta vie."
+  say Typing(5000)
+  say "Classe d'un coté, les actions que tu regrettes et de l'autre celles qui te donnent un sentiment de fierté."
+  say Typing(4000)
+  say Question(
+    "Ces dernières correspondent à tes valeurs.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Autre chose"),
+      Button("⤴️Sortir", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(5000)
+  say "Enfin, le tableau des forces de caractère est également un outil précieux pour identifier tes valeurs afin de t'en rapprocher."
+  say Typing(4000)
+  say Question(
+    "Le voici :",
+    buttons=[
+      Url("https://igorthiriez.com/portfolio/24-forces-de-caractere/", text="Forces de caractère"),
+    ],
+    quick_replies=[
+      Button("👌OK", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+    ],
+  )
+  hold
+  

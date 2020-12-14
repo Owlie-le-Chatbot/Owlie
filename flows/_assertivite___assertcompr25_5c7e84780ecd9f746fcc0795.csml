@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0795
+start:
+  say Typing(4000)
+  say Question(
+    "Souhaite-tu un exemple de compliment constructif 🌤:",
+    buttons=[
+      Button("✅Conpliment vrai", payload="/_assertivite___assertcompr21_5c7e84780ecd9f746fcc0791"),
+      Button("❎Compliment faux", payload="/_assertivite___assertcompr22_5c7e84780ecd9f746fcc0792"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule !"),
+      Button("❓Un autre compliment", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Un autre exemple !", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f7aee9a5-fe04-4eba-83d5-e4d04ce40ceb.jpeg",
+    quick_replies=[
+      Button("❓Autre compliment", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Autre exemples?", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

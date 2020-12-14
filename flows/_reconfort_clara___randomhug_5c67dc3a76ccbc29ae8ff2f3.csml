@@ -1,0 +1,42 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2f3
+start:
+  say Typing(3300)
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_reconfort_clara___hug4_5c67dc3a76ccbc29ae8ff2ef", "_reconfort_clara___hug6_5c67dc3a76ccbc29ae8ff2f1", "_reconfort_clara___hug3_5c67dc3a76ccbc29ae8ff2ee", "_reconfort_clara___hug1_5c67dc3a76ccbc29ae8ff2ec", "_reconfort_clara___hug5_5c67dc3a76ccbc29ae8ff2f0", "_reconfort_clara___hug2_5c67dc3a76ccbc29ae8ff2ed", "_reconfort_clara___hug7_5c67dc3a76ccbc29ae8ff2f2", "_reconfort_clara___hug8_5c67dc3a76ccbc29ae8ff2f4", "_reconfort_clara___hug9_5c67dc3a76ccbc29ae8ff2f5", "_reconfort_clara___hug10_5c67dc3a76ccbc29ae8ff2f6", "_reconfort_clara___hug11_5c67dc3a76ccbc29ae8ff2f7", "_reconfort_clara___hug12_5c67dc3a76ccbc29ae8ff2f8", "_reconfort_clara___hug13_5c67dc3a76ccbc29ae8ff2f9", "_reconfort_clara___hug14_5c67dc3a76ccbc29ae8ff2fa", "_reconfort_clara___hug15_5c67dc3a76ccbc29ae8ff2fb", "_reconfort_clara___hug16_5c67dc3a76ccbc29ae8ff2fc", "_reconfort_clara___hug17_5c67dc3a76ccbc29ae8ff2fd", "_reconfort_clara___hug18_5c67dc3a76ccbc29ae8ff2fe", "_reconfort_clara___hug19_5c67dc3a76ccbc29ae8ff2ff", "_reconfort_clara___hug20_5c67dc3a76ccbc29ae8ff300", "_reconfort_clara___hug21_5c67dc3a76ccbc29ae8ff301", "_reconfort_clara___hug22_5c67dc3a76ccbc29ae8ff302", "_reconfort_clara___hug23_5c67dc3a76ccbc29ae8ff303", "_reconfort_clara___hug24_5c67dc3a76ccbc29ae8ff304", "_reconfort_clara___hug25_5c67dc3a76ccbc29ae8ff305", "_reconfort_clara___hug26_5c67dc3a76ccbc29ae8ff306", "_reconfort_clara___hug27_5c67dc3a76ccbc29ae8ff307", "_reconfort_clara___hug30_5c67dc3a76ccbc29ae8ff30a", "_reconfort_clara___hug31_5c67dc3a76ccbc29ae8ff30b", "_reconfort_clara___hug32_5c67dc3a76ccbc29ae8ff30c", "_reconfort_clara___hug33_5c67dc3a76ccbc29ae8ff30d", "_reconfort_clara___hug34_5c67dc3a76ccbc29ae8ff30e", "_reconfort_clara___hug36_5c67dc3a76ccbc29ae8ff310", "_reconfort_clara___hug37_5c67dc3a76ccbc29ae8ff311", "_reconfort_clara___hug28_5c67dc3a76ccbc29ae8ff308", "_reconfort_clara___hug29_5c67dc3a76ccbc29ae8ff309", "_reconfort_clara___hug35_5c67dc3a76ccbc29ae8ff30f"]))
+  if (rand == 0) goto flow _reconfort_clara___hug4_5c67dc3a76ccbc29ae8ff2ef
+  if (rand == 1) goto flow _reconfort_clara___hug6_5c67dc3a76ccbc29ae8ff2f1
+  if (rand == 2) goto flow _reconfort_clara___hug3_5c67dc3a76ccbc29ae8ff2ee
+  if (rand == 3) goto flow _reconfort_clara___hug1_5c67dc3a76ccbc29ae8ff2ec
+  if (rand == 4) goto flow _reconfort_clara___hug5_5c67dc3a76ccbc29ae8ff2f0
+  if (rand == 5) goto flow _reconfort_clara___hug2_5c67dc3a76ccbc29ae8ff2ed
+  if (rand == 6) goto flow _reconfort_clara___hug7_5c67dc3a76ccbc29ae8ff2f2
+  if (rand == 7) goto flow _reconfort_clara___hug8_5c67dc3a76ccbc29ae8ff2f4
+  if (rand == 8) goto flow _reconfort_clara___hug9_5c67dc3a76ccbc29ae8ff2f5
+  if (rand == 9) goto flow _reconfort_clara___hug10_5c67dc3a76ccbc29ae8ff2f6
+  if (rand == 10) goto flow _reconfort_clara___hug11_5c67dc3a76ccbc29ae8ff2f7
+  if (rand == 11) goto flow _reconfort_clara___hug12_5c67dc3a76ccbc29ae8ff2f8
+  if (rand == 12) goto flow _reconfort_clara___hug13_5c67dc3a76ccbc29ae8ff2f9
+  if (rand == 13) goto flow _reconfort_clara___hug14_5c67dc3a76ccbc29ae8ff2fa
+  if (rand == 14) goto flow _reconfort_clara___hug15_5c67dc3a76ccbc29ae8ff2fb
+  if (rand == 15) goto flow _reconfort_clara___hug16_5c67dc3a76ccbc29ae8ff2fc
+  if (rand == 16) goto flow _reconfort_clara___hug17_5c67dc3a76ccbc29ae8ff2fd
+  if (rand == 17) goto flow _reconfort_clara___hug18_5c67dc3a76ccbc29ae8ff2fe
+  if (rand == 18) goto flow _reconfort_clara___hug19_5c67dc3a76ccbc29ae8ff2ff
+  if (rand == 19) goto flow _reconfort_clara___hug20_5c67dc3a76ccbc29ae8ff300
+  if (rand == 20) goto flow _reconfort_clara___hug21_5c67dc3a76ccbc29ae8ff301
+  if (rand == 21) goto flow _reconfort_clara___hug22_5c67dc3a76ccbc29ae8ff302
+  if (rand == 22) goto flow _reconfort_clara___hug23_5c67dc3a76ccbc29ae8ff303
+  if (rand == 23) goto flow _reconfort_clara___hug24_5c67dc3a76ccbc29ae8ff304
+  if (rand == 24) goto flow _reconfort_clara___hug25_5c67dc3a76ccbc29ae8ff305
+  if (rand == 25) goto flow _reconfort_clara___hug26_5c67dc3a76ccbc29ae8ff306
+  if (rand == 26) goto flow _reconfort_clara___hug27_5c67dc3a76ccbc29ae8ff307
+  if (rand == 27) goto flow _reconfort_clara___hug30_5c67dc3a76ccbc29ae8ff30a
+  if (rand == 28) goto flow _reconfort_clara___hug31_5c67dc3a76ccbc29ae8ff30b
+  if (rand == 29) goto flow _reconfort_clara___hug32_5c67dc3a76ccbc29ae8ff30c
+  if (rand == 30) goto flow _reconfort_clara___hug33_5c67dc3a76ccbc29ae8ff30d
+  if (rand == 31) goto flow _reconfort_clara___hug34_5c67dc3a76ccbc29ae8ff30e
+  if (rand == 32) goto flow _reconfort_clara___hug36_5c67dc3a76ccbc29ae8ff310
+  if (rand == 33) goto flow _reconfort_clara___hug37_5c67dc3a76ccbc29ae8ff311
+  if (rand == 34) goto flow _reconfort_clara___hug28_5c67dc3a76ccbc29ae8ff308
+  if (rand == 35) goto flow _reconfort_clara___hug29_5c67dc3a76ccbc29ae8ff309
+  if (rand == 36) goto flow _reconfort_clara___hug35_5c67dc3a76ccbc29ae8ff30f

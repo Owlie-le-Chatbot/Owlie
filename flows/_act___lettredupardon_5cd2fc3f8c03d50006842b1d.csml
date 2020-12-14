@@ -1,0 +1,185 @@
+// CHATFUEL BLOCK ID 5cd2fc3f8c03d50006842b1d
+start:
+  say Typing(1400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "1. Quel est le nom de la personne en question ? Écris-le moi 📝"
+  hold
+  
+  remember _personsname = event
+  
+  say Typing(1700)
+  say "2. Pourquoi choisis-tu de pardonner à {{_personsname}} ?"
+  say Typing(900)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Écris-le moi 📝"
+  hold
+  
+  remember _forgiveness1 = event
+  
+  say Typing(1900)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "3. Qu'est-ce qui a causé ta peine ou ton irritation ? 
+Dis-moi ce que tu ressens 📝. Je t'invite à être très précis.e et spécifique."
+  hold
+  
+  remember _forgiveness2 = event
+  
+  say Typing(2500)
+  say "4. Comment le comportement de {{_personsname}} t'a t-il affecté ?"
+  say Typing(1200)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Dis-moi 📝"
+  hold
+  
+  remember _forgiveness3 = event
+  
+  say Typing(1900)
+  say "5. Comment comprends-tu le point de vue de {{_personsname}} ou selon toi pourquoi {{_personsname}} s'est-il/elle comporté.e de la sorte ?"
+  say Typing(1500)
+  goto form_15_0
+
+
+// form component
+form_15_0:
+  say "Dis-moi 📝"
+  hold
+  
+  remember _forgiveness4 = event
+  
+  say Typing(2500)
+  goto form_17_0
+
+
+// form component
+form_17_0:
+  say "6. Qu'est-ce qui pourrait alimenter le fait que tu te sentes encore blessé.e aujourd'hui ?
+Dis-moi 📝"
+  hold
+  
+  remember _forgiveness5 = event
+  
+  say Typing(2200)
+  say "7. De quelle manière souhaiterais-tu exprimer à {{_personsname}} le fait que tu le/la pardonnes ?"
+  say Typing(1000)
+  goto form_21_0
+
+
+// form component
+form_21_0:
+  say "Écris-le moi 📝"
+  hold
+  
+  remember _forgiveness6 = event
+  
+  say Typing(1900)
+  say "8. Qu'est-ce que tu apprécies chez {{_personsname}} (s'il y a quelque chose que tu apprécies) ?"
+  say Typing(1000)
+  goto form_25_0
+
+
+// form component
+form_25_0:
+  say "Écris-le moi 📝"
+  hold
+  
+  remember _forgiveness7 = event
+  
+  say Typing(1800)
+  say "9. De quelle manière souhaiterais-tu exprimer à {{_personsname}} de bons voeux pour l'avenir ?"
+  say Typing(800)
+  goto form_29_0
+
+
+// form component
+form_29_0:
+  say "Dis-moi 📝"
+  hold
+  
+  remember _forgiveness8 = event
+  
+  say Typing(2200)
+  say "En résumé : 
+
+{{_personsname}}  
+① t'a/a : {{_forgiveness2}}
+② cela a/t'a {{_forgiveness3}}
+③ Tu comprends ce comportement car : {{_forgiveness4}}
+④ De ton côté tu joues un rôle dans le maintien du ressentiment en : {{_forgiveness5}}"
+  say Typing(3100)
+  say Question(
+    "⑤ Selon toi, si il/elle a des qualités et/ou ce que tu apprécies chez elle c'est : {{_forgiveness7}}.
+
+⑥ Quoi qu'il en soit, tu choisis de pardonner {{_personsname}} car : {{_forgiveness1}}.
+
+⑦ Voilà ce que tu souhaites lui dire : {{_forgiveness6}}
+⑧ Et {{_forgiveness8}}
+
+C'est cela ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Recommencer", payload="/_act___lettredupardon_5cd2fc3f8c03d50006842b1d"),
+    ],
+  )
+  hold
+  
+  goto step_34
+
+
+step_34:
+  say Typing(1900)
+  say Question(
+    "Bien joué {{_name}} 👏🏻😊!",
+    buttons=[
+      Button("⏩sauter conclusion", payload="/_eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254"),
+    ],
+  )
+  
+  say Typing(1800)
+  say "Tu peux te sentir très émotif.ve 😭après avoir écrit cette lettre ou ne pas ressentir de différence."
+  say Typing(2200)
+  say "Rappelles-toi que le pardon n’est pas un sentiment..."
+  say Typing(2100)
+  say Question(
+    "... Mais un processus qui permet d’abandonner la colère et le ressentiment quand cela se manifeste.
+
+Cela permet d'accueillir ses émotions avec conscience et d'agir dans une direction qui a du sens pour toi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️continue"),
+    ],
+  )
+  hold
+  
+  goto step_43
+
+
+step_43:
+  say Typing(2100)
+  say Question(
+    "Peut-être auras-tu le souhait de refaire cet exercice de temps en temps pour mieux ancrer le pardon ⚓️
+
+Tu peux aussi choisir d'exprimer ton pardon à {{_personsname}} directement, mais uniquement si tu estimes que c'est important pour toi !",
+    button_type="quick_reply",
+    buttons=[
+      Button("😊Ok !", payload="/_eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254"),
+    ],
+  )
+  hold
+  

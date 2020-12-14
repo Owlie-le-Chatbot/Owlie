@@ -1,0 +1,48 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a2
+start:
+  say Typing(2000)
+  say "Fais ton choix parmi ces 4 sites francophones :"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Philippot & col.",
+        subtitle="CPS",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b6390c8e-5176-4bef-8335-382545a88151.jpeg",
+        buttons=[
+          Url("http://mindfulness.cps-emotions.be/materiel-adulte.php", text="Voir le site"),
+        ],
+      ),
+      Card(
+        title="Jeanson & Versaevel",
+        subtitle="EPSM Lille-Métropole",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4fdd3333-c060-43fe-aa05-f76d7e785f73.jpeg",
+        buttons=[
+          Url("https://www.epsm-lille-metropole.fr/programme-de-therapie-base-sur-la-pleine-conscience", text="Voir le site"),
+        ],
+      ),
+      Card(
+        title="Illy & Poinsot",
+        subtitle="Immanence",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1e5ffeca-14c6-40b4-b16a-2700bf2d9d14.jpeg",
+        buttons=[
+          Url("https://www.pleineconscience-paca.com/la-pleine-conscience/téléchargements/", text="Voir le site"),
+        ],
+      ),
+      Card(
+        title="Orain-Pelissolo",
+        subtitle="MBCT France",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/220abbab-7d16-44aa-bc61-3d02a07a707d.jpeg",
+        buttons=[
+          Url("http://www.mbct-france.fr/fichiers-audio", text="Voir le site"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

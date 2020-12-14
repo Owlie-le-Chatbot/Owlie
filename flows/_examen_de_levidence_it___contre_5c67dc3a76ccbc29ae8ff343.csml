@@ -1,0 +1,10 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff343
+start:
+  say Typing(2000)
+  say "Concentre-toi maintenant sur les faits qui pourraient contredire la pensée douloureuse : {{_penseedouloureuse}}."
+  say Typing(2000)
+  say "Cette étape est un peu plus difficile 💪🏻
+
+Il existe certainement certains faits que tu considères sans importance en ce moment mais qui sont tout de même en défaveur de cette pensée."
+  // adding conditional redirect to flow
+  goto flow _examen_de_levidence_it___contre1_5c67dc3a76ccbc29ae8ff344

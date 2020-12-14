@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0772
+start:
+  say Typing(4000)
+  say Question(
+    "À quel type de critique souhaites-tu répondre?",
+    button_type="quick_reply",
+    buttons=[
+      Button("✅Vraie", payload="/_assertivite___assertcritr11_5c7e84780ecd9f746fcc0773"),
+      Button("❎Fausse", payload="/_assertivite___assertcritr12_5c7e84780ecd9f746fcc0774"),
+      Button("☁️Vague", payload="/_assertivite___assertcritr13_5c7e84780ecd9f746fcc0775"),
+      Button("⛈Blessante", payload="/_assertivite___assertcritr14_5c7e84780ecd9f746fcc0776"),
+      Button("🌤Constructive", payload="/_assertivite___assertcritr15_5c7e84780ecd9f746fcc0777"),
+    ],
+  )
+  hold
+  

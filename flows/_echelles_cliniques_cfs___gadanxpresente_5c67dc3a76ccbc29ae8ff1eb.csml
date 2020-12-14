@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1eb
+start:
+  say Typing(2600)
+  say Question(
+    "D'après tes réponses, tu présentes un certain niveau d'anxiété. Je vais faire de mon mieux pour t'aider !
+
+Si je ne t'ai pas déjà posé la question, es-tu suivi.e psychologiquement ?",
+    buttons=[
+      Button("J'ai déjà répondu", payload="/_echelles_cliniques_cfs___endgad_5c67dc3a76ccbc29ae8ff1ec"),
+    ],
+    quick_replies=[
+      Button("Oui, psychiatre"),
+      Button("Oui, psychologue"),
+      Button("Oui, les deux"),
+      Button("Médecin traitant"),
+      Button("Non, plus maintenant"),
+      Button("Non, interrompu"),
+      Button("Non, jamais été"),
+    ],
+  )
+  hold
+  
+  remember _suivipsy = event
+  goto step_2
+
+
+step_2:
+  // adding conditional redirect to flow
+  goto flow _echelles_cliniques_cfs___endgad_5c67dc3a76ccbc29ae8ff1ec

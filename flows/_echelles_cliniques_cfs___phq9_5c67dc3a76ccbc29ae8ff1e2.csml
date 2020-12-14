@@ -1,0 +1,290 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1e2
+start:
+  say Typing(3100)
+  say Question(
+    "Je te propose un petit questionnaire pour savoir comment tu vas moralement, ok ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+      Button("🚫Pas ok", payload="/_echelles_cliniques_cfs___endphq_5c67dc3a76ccbc29ae8ff1e8"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Je vais te poser 9 questions.
+
+À chaque fois, réponds en te demandant \"au cours des 2 dernières semaines, à quelle fréquence ai-je été gêné.e par cela ?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3200)
+  say Question(
+    "Le peu d’intérêt ou de plaisir à faire les choses.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_1 = event
+  goto step_8
+
+
+step_8:
+  say Typing(3000)
+  say Question(
+    "Le fait d'être triste, déprimé.e ou désespéré.e.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_2 = event
+  goto step_11
+
+
+step_11:
+  say Typing(3100)
+  say Question(
+    "Des difficultés à s’endormir ou à rester endormi.e, ou dormir trop.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_3 = event
+  goto step_14
+
+
+step_14:
+  say Typing(3500)
+  say Question(
+    "Le fait de se sentir fatigué.e ou manquer d’énergie.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_4 = event
+  goto step_17
+
+
+step_17:
+  say Typing(3000)
+  say Question(
+    "Avoir peu d’appétit ou manger trop.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_5 = event
+  goto step_20
+
+
+step_20:
+  say Typing(3100)
+  say Question(
+    "Avoir une mauvaise opinion de soi-même, ou avoir le sentiment d’être nul.le, ou d’avoir déçu sa famille ou s’être déçu.e soi-même.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_6 = event
+  goto step_23
+
+
+step_23:
+  say Typing(2900)
+  say Question(
+    "Avoir du mal à se concentrer, par exemple, pour lire le journal ou regarder la télévision.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_7 = event
+  goto step_26
+
+
+step_26:
+  say Typing(3000)
+  say Question(
+    "Bouger ou parler si lentement que les autres auraient pu le
+remarquer. 
+Ou au contraire, être si agité.e que tu as du mal à tenir en place par rapport à d'habitude.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_8 = event
+  goto step_29
+
+
+step_29:
+  say Typing(3200)
+  say Question(
+    "Penser qu’il vaudrait mieux mourir ou envisager de te faire du mal d’une manière ou d’une autre
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _phq9_9 = event
+  goto step_32
+
+
+step_32:
+  say Typing(1400)
+  say Question(
+    "Sur l'ensemble de ces problèmes évoqués. 
+
+À quel point ce(s) problème(s) a-t-il (ont-ils) rendu ton travail, tes tâches à la maison ou ta capacité à t'entendre avec les autres difficile(s) ?
+
+A - Pas du tout difficile
+B - Assez difficile(s)
+C - Très difficile(s)
+D - Extrêmement difficile(s)",
+    button_type="quick_reply",
+    buttons=[
+      Button("A"),
+      Button("B"),
+      Button("C"),
+      Button("D"),
+    ],
+  )
+  hold
+  
+  remember _ressenti_global_phq9 = event
+  goto step_35
+
+
+step_35:
+  remember _sum =  _phq9_1  + _phq9_2 +  _phq9_3  +  _phq9_4  +  _phq9_5  + _phq9_6  + _phq9_7  +  _phq9_8  +  _phq9_9 
+  say Typing(3300)
+  // adding conditional redirect to flow
+  if (_sum == "0" || _sum == "1" || _sum == "2" || _sum == "3" || _sum == "4") {
+    goto flow _echelles_cliniques_cfs___phq9absdep_5c67dc3a76ccbc29ae8ff1e3
+  }
+  // adding conditional redirect to flow
+  if (_sum == "5" || _sum == "6" || _sum == "7" || _sum == "8" || _sum == "9") {
+    goto flow _echelles_cliniques_cfs___phq9leger_5c67dc3a76ccbc29ae8ff1e4
+  }
+  // adding conditional redirect to flow
+  if (_sum == "10" || _sum == "11" || _sum == "12" || _sum == "13" || _sum == "14") {
+    goto flow _echelles_cliniques_cfs___phq9modere_5c67dc3a76ccbc29ae8ff1e5
+  }
+  // adding conditional redirect to flow
+  if (_sum == "15" || _sum == "16" || _sum == "17" || _sum == "18" || _sum == "19") {
+    goto flow _echelles_cliniques_cfs___phq9modsevere_5c67dc3a76ccbc29ae8ff1e6
+  }
+  // adding conditional redirect to flow
+  if (_sum == "20" || _sum == "21" || _sum == "22" || _sum == "23" || _sum == "24" || _sum == "25" || _sum == "26" || _sum == "27") {
+    goto flow _echelles_cliniques_cfs___phq9severe_5c67dc3a76ccbc29ae8ff1e7
+  }
+  say Typing(2800)

@@ -1,0 +1,22 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff40f
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_education_therapeutiqcf___les_ruminations_5c67dc3a76ccbc29ae8ff41a", "_education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c", "_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b", "_education_therapeutiqcf___fonctionnement_evitement_5c67dc3a76ccbc29ae8ff41d", "_education_therapeutiqcf___fonctionnement_emotions_5c67dc3a76ccbc29ae8ff419", "_education_therapeutiqcf___hygiene_stress_5c67dc3a76ccbc29ae8ff414", "_education_therapeutiqcf___hygiene_sommeil_5c67dc3a76ccbc29ae8ff416", "_education_therapeutiqcf___hygiene_nature_5c67dc3a76ccbc29ae8ff413", "_education_therapeutiqcf___hygiene_alimentation_5c67dc3a76ccbc29ae8ff411", "_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b", "_education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c", "_education_therapeutiqcf___fonctionnement_evitement_5c67dc3a76ccbc29ae8ff41d", "_psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb", "_psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca", "_education_therapeutiqcf___contrecarrer_les_il_faut_5c67dc3a76ccbc29ae8ff423", "_psychologie_clara___exercice_de_gratitude_5c67dc3a76ccbc29ae8ff3d7", "_education_therapeutiqcf___evitement_and_cpmt_automatique_5c67dc3a76ccbc29ae8ff424", "_education_therapeutiqcf___relations_interpersonnelles_5c67dc3a76ccbc29ae8ff426"]))
+  if (rand == 0) goto flow _education_therapeutiqcf___les_ruminations_5c67dc3a76ccbc29ae8ff41a
+  if (rand == 1) goto flow _education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c
+  if (rand == 2) goto flow _education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b
+  if (rand == 3) goto flow _education_therapeutiqcf___fonctionnement_evitement_5c67dc3a76ccbc29ae8ff41d
+  if (rand == 4) goto flow _education_therapeutiqcf___fonctionnement_emotions_5c67dc3a76ccbc29ae8ff419
+  if (rand == 5) goto flow _education_therapeutiqcf___hygiene_stress_5c67dc3a76ccbc29ae8ff414
+  if (rand == 6) goto flow _education_therapeutiqcf___hygiene_sommeil_5c67dc3a76ccbc29ae8ff416
+  if (rand == 7) goto flow _education_therapeutiqcf___hygiene_nature_5c67dc3a76ccbc29ae8ff413
+  if (rand == 8) goto flow _education_therapeutiqcf___hygiene_alimentation_5c67dc3a76ccbc29ae8ff411
+  if (rand == 9) goto flow _education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b
+  if (rand == 10) goto flow _education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c
+  if (rand == 11) goto flow _education_therapeutiqcf___fonctionnement_evitement_5c67dc3a76ccbc29ae8ff41d
+  if (rand == 12) goto flow _psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb
+  if (rand == 13) goto flow _psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca
+  if (rand == 14) goto flow _education_therapeutiqcf___contrecarrer_les_il_faut_5c67dc3a76ccbc29ae8ff423
+  if (rand == 15) goto flow _psychologie_clara___exercice_de_gratitude_5c67dc3a76ccbc29ae8ff3d7
+  if (rand == 16) goto flow _education_therapeutiqcf___evitement_and_cpmt_automatique_5c67dc3a76ccbc29ae8ff424
+  if (rand == 17) goto flow _education_therapeutiqcf___relations_interpersonnelles_5c67dc3a76ccbc29ae8ff426

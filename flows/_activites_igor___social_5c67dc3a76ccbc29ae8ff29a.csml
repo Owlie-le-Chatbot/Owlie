@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff29a
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Appeler un.e ami.e, la famille, un collègue etc.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/85386d8b-20ec-4a94-9ab6-e3681dd96e44.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Envoyer un message",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/402cd889-8209-4657-9c11-e183756c3059.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Sorties",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/480ceabc-89ec-4839-b7cd-1d1bd761cd56.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_activites_igor___sorties_5c67dc3a76ccbc29ae8ff299"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🏖Activité agréable", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

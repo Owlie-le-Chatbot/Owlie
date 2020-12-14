@@ -1,0 +1,73 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d8
+start:
+  say Typing(3000)
+  say Question(
+    "Faire un peu d'exercices permet de produire des endorphines, des hormones qui apportent un sentiment de bien-être !",
+    buttons=[
+      Button("Commencer direct ", payload="/_psychologie_clara___sport_5c67dc3a76ccbc29ae8ff3c6"),
+      Button("Intérêt du sport", payload="/_education_therapeutiqcf___hygiene_sport_5c67dc3a76ccbc29ae8ff412"),
+    ],
+    quick_replies=[
+      Button("C'est vrai..."),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2400)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9377615c-48ce-4e0a-baf5-38252d151600.jpeg")
+  say Typing(3000)
+  say Question(
+    "On l'oublie souvent, mais quelques mouvements simples peuvent aussi nous aider à \"switcher\" d'état mental, de passer à autre chose... ...et de se mettre dans un état d'esprit positif en faisant une action bonne pour soi !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say "Voici deux entrainements possibles, choisis celui qui te tente le plus !"
+  say Typing(2600)
+  say Carousel(
+    cards=[
+      Card(
+        title="Quelques mouvements pour changer les idées (3 minutes)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d74e14e7-63ff-4fae-a4df-f56e1d9683cf.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_psychologie_clara___sport_5c67dc3a76ccbc29ae8ff3c6"),
+        ],
+      ),
+      Card(
+        title="Niveau 1 - 6 exercices (5 minutes)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5b763d7d-5eae-4bba-9674-63534dca3386.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_psychologie_clara___sport_niveau_1_statique_5c67dc3a76ccbc29ae8ff3c7"),
+        ],
+      ),
+      Card(
+        title="Niveau 2 - 12 exercices (7-10')",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/33debe0f-aefa-4467-837c-5afa7179213d.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_psychologie_clara___sport_niveau_2_statique_5c67dc3a76ccbc29ae8ff3c8"),
+        ],
+      ),
+      Card(
+        title="Choisir une autre activité",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/76682dba-8b39-429d-9917-32338515eb68.jpeg",
+        buttons=[
+          Button("Autres activités", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="square",
+  )
+  

@@ -1,0 +1,10 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1f5
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_accueil_check_clara___check1_5c67dc3a76ccbc29ae8ff1ee", "_accueil_check_clara___check2_5c67dc3a76ccbc29ae8ff1ef", "_accueil_check_clara___check3_5c67dc3a76ccbc29ae8ff1f0", "_accueil_check_clara___check4_5c67dc3a76ccbc29ae8ff1f1", "_accueil_check_clara___check5_5c67dc3a76ccbc29ae8ff1f2", "_accueil_check_clara___check6_5c67dc3a76ccbc29ae8ff1f3"]))
+  if (rand == 0) goto flow _accueil_check_clara___check1_5c67dc3a76ccbc29ae8ff1ee
+  if (rand == 1) goto flow _accueil_check_clara___check2_5c67dc3a76ccbc29ae8ff1ef
+  if (rand == 2) goto flow _accueil_check_clara___check3_5c67dc3a76ccbc29ae8ff1f0
+  if (rand == 3) goto flow _accueil_check_clara___check4_5c67dc3a76ccbc29ae8ff1f1
+  if (rand == 4) goto flow _accueil_check_clara___check5_5c67dc3a76ccbc29ae8ff1f2
+  if (rand == 5) goto flow _accueil_check_clara___check6_5c67dc3a76ccbc29ae8ff1f3

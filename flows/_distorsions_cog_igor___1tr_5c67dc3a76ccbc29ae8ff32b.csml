@@ -1,0 +1,57 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff32b
+start:
+  say Typing(2000)
+  say "C'est tout noir ou tout blanc !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e825581a-990b-4dad-bf07-0895aec0b1ae.jpeg")
+  say Question(
+    "La pensée en tout ou rien consiste à se baser sur une opposition entre deux extrêmes sans prendre en compte les nuances.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"Si tu n'es pas avec moi, tu es contre moi\""
+  say Typing(2000)
+  say "\"J’ai fait un écart, ça ne vaut plus la peine de continuer le régime\""
+  say Typing(2000)
+  say Question(
+    "\"L’employeur.e ne m’a pas recruté.e, je ne suis pas fait.e pour ce boulot\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(3000)
+  say "La plupart du temps, si tu poses un problème sans prendre en compte le fait que la réalité n'est ni toute blanche, ni toute noire, ce problème devient un faux problème."
+  say Typing(3000)
+  say "Et un faux problème ne peut pas avoir de bonnes solutions. Si tu n'attends pas avant d'agir, tu risques de le regretter."
+  say Typing(3000)
+  say "1. Identifie et désigne les deux catégories ou les deux extrêmes que tu es en train d'opposer. 
+
+Imagine-les comme les deux extrêmes d'un thermomètre."
+  say Typing(3000)
+  say Question(
+    "2. Identifie et désigne le plus possible de catégories (graduations) intermédiaires sans forcément chercher un juste milieu, et sans forcément y chercher une solution immédiate.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("✍️Donner mon avis", payload="/_feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,476 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc076b
+start:
+  say Typing(3000)
+  say "Il n'est pas toujours facile de formuler une demande."
+  say Typing(4000)
+  say Question(
+    "Certaines pensées, certaines convictions peuvent parfois t'en dissuader.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Lesquelles?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Indique pour chacune d'entre elles si tu les partages.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say Question(
+    "1. J'ai souvent l'impression de ne pas avoir le droit de refuser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say Question(
+    "2. J'ai peur de décevoir, d'être mal jugé.e ou rejeté.e si je refuse.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "3. Je me sens souvent hésitant.e et tiraillé.e face à une demande.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3000)
+  say Question(
+    "4. Il serait malpoli de ne pas justifier mon refus.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(5000)
+  say Question(
+    "5. J'ai peur que mon interlocuteurice se sente rejeté.e ou agressé.e si je refuse.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Question(
+    "6. Je ne saurais pas quoi faire si mon interlocuteurice insistait.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3000)
+  say "Très bien {{_firstname}}."
+  say Typing(6000)
+  say Question(
+    "Je vais maintenant t'exposer des points de vue que j'estime aussi importants et qui ne vont pas forcément dans le même sens :",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Vas-y !"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(4000)
+  say "À partir du moment où tu es face à une demande (et non un ordre, quoique), tu as le droit de refuser."
+  say Typing(3000)
+  say "Ce qui signifie que :"
+  say Typing(3000)
+  say "1. Demander, ce n'est pas exiger"
+  say Typing(4000)
+  say Question(
+    "2. Refuser, ce n'est pas manquer de respect à ton interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+      Button("Et les ordres?"),
+    ],
+  )
+  hold
+  
+  goto step_39
+
+
+step_39:
+  say Typing(4000)
+  say "Donner des ordres peut-être \"légitime\" dans trois types de situations :"
+  say Typing(3000)
+  say "a. Des parents face à leur enfant mineur.e"
+  say Typing(4000)
+  say "b. Des supérieur.e.s hiérarchiques dans le cadre du travail"
+  say Typing(4000)
+  say "c. Des autorités publiques telles que la police, la justice ou l'administration"
+  say Typing(5000)
+  say Question(
+    "Si tu n'es pas dans l'une de ces situations, ton droit au refus ne peut pas être remis en cause.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_50
+
+
+step_50:
+  say Typing(4000)
+  say Question(
+    "3. Refuser quelque chose, ce n'est pas refuser quelqu'un.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Explique!"),
+    ],
+  )
+  hold
+  
+  goto step_53
+
+
+step_53:
+  say Typing(6000)
+  say "À partir du moment où ton refus est bien formulé, ton interlocuteurice ne doit pas se sentir rejeté.e en tant que personne."
+  say Typing(4000)
+  say Question(
+    "Si toutefois iel se sent rejeté.e ou agressé.e, le problème ne vient pas de toi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_58
+
+
+step_58:
+  say Question(
+    "4. Atténuer un refus, c’est inviter l’interlocuteurice à insister",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Ah bon ?"),
+    ],
+  )
+  hold
+  
+  goto step_60
+
+
+step_60:
+  say Typing(3000)
+  say "Note la différence entre ces deux refus :"
+  say Typing(3000)
+  say "a. \"Je crois que je ne préfère pas venir\""
+  say Typing(3000)
+  say "b. \"Non je ne viendrais pas\""
+  say Typing(4000)
+  say "Dans le premier cas, l'interlocuteurice aura davantage tendance à insister."
+  say Typing(7000)
+  say Question(
+    "Les atténuations surviennent généralement quand tu n'es pas sûr.e d'avoir le droit de refuser ou quand tu ne sais pas vraiment ce que tu veux.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je fais quoi alors?"),
+    ],
+  )
+  hold
+  
+  goto step_71
+
+
+step_71:
+  say Typing(5000)
+  say "Dans les deux cas, il peut être préférable de différer ta réponse, ce qui est aussi un droit."
+  say Typing(6000)
+  say Question(
+    "Ceci te permettra de trouver du temps pour y réfléchir plus tranquillement puis d'être en mesure de formuler une réponse directe et précise.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est pas faux"),
+    ],
+  )
+  hold
+  
+  goto step_76
+
+
+step_76:
+  say Typing(3000)
+  say Question(
+    "5. Se justifier, ce n’est pas faire preuve de respect",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Ah bon ?"),
+    ],
+  )
+  hold
+  
+  goto step_79
+
+
+step_79:
+  say Typing(4000)
+  say "Les justifications sont des arguments que nous utilisons pour prouver notre innocence."
+  say Typing(4000)
+  say "Elles sont inutiles à partir du moment où notre refus n'est pas une faute."
+  say Typing(5000)
+  say "De plus, les justifications ont tendance à atténuer le refus et donc à inviter l'interlocuteurice à insister."
+  say Typing(5000)
+  say Question(
+    "Si tu veux montrer du respect à ton interlocuteurice, manifeste plutôt ton empathie!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_88
+
+
+step_88:
+  say Typing(4000)
+  say Question(
+    "6. Faire deviner, ce n’est pas refuser",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_91
+
+
+step_91:
+  say Typing(3000)
+  say "Remarque la différence entre ces deux refus :"
+  say Typing(3000)
+  say "a. \"Je n'ai vraiment pas de temps à t'accorder aujourd'hui\""
+  say Typing(3000)
+  say "b. \"Tu crois vraiment que je n'ai que ça à faire aujourd'hui?\" (devinette)"
+  say Typing(6000)
+  say "Lorsqu'un refus prend la forme d'une devinette, il véhicule généralement de l'antipathie, du cynisme ou une leçon de morale."
+  say Typing(6000)
+  say Question(
+    "Ceci ajouté à son manque de clarté n'en fait pas une bonne affaire du tout! Mieux vaut s'abstenir des devinettes pour s'affirmer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_102
+
+
+step_102:
+  say Typing(4000)
+  say Question(
+    "7. Reprocher, ce n’est pas refuser",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_105
+
+
+step_105:
+  say Typing(4000)
+  say "Reprocher, c'est signaler son mécontentement par rapport au passé."
+  say Typing(3000)
+  say Question(
+    "Ce n'est pas refuser quelque chose maintenant ou plus tard.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_110
+
+
+step_110:
+  say Typing(3000)
+  say Question(
+    "8. L’insistance ne rend pas le refus moins légitime",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_113
+
+
+step_113:
+  say Typing(5000)
+  say "Si ton interlocuteurice insiste, c'est probablement car ce qu'iel demande est important pour lui.elle."
+  say Typing(3000)
+  say Question(
+    "Mais ça ne diminue pas l'importance de ton refus!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_118
+
+
+step_118:
+  say Typing(4000)
+  say "Si tu estimes que ton interlocuteurice insiste trop, tu peux:"
+  say Typing(4000)
+  say "a. persister dans ton refus, en essayant d'être à la fois plus ferme et plus empathique."
+  say Typing(3000)
+  say "b. exprimer clairement ta gêne face à cette insistance."
+  say Typing(4000)
+  say Question(
+    "c. clore la discussion en précisant que ta décision est définitive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_127
+
+
+step_127:
+  say Typing(4000)
+  say Question(
+    "9. Si on ne refuse rien, on n’obtient pas davantage.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_130
+
+
+step_130:
+  say Typing(4000)
+  say "Ne rien refuser n'empêchera jamais tes interlocuteurice.s de faire valoir leurs droits."
+  say Typing(3000)
+  say "Ça ne les empêchera donc pas de te refuser des choses."
+  say Typing(3000)
+  say Question(
+    "Même si tu estimes qu'iels te sont redevables!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_137
+
+
+step_137:
+  say Typing(4000)
+  say "Ces points de vue rationnels devraient t'aider à formuler tes refus."
+  say Typing(5000)
+  say Question(
+    "N'hésite pas également à refaire un tour dans la rubrique relative à tes droits fondamentaux en cliquant sur le bouton \"Mes droits?\" ci dessous",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule stp!"),
+      Button("📜Mes droits?", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("❓Comment refuser?", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+      Button("🔍Un exemple!!", payload="/_assertivite___assertref2_5c7e84780ecd9f746fcc076a"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_142
+
+
+step_142:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f2f3c61a-8072-4dba-9397-442ffb5d6e6b.jpeg",
+    quick_replies=[
+      Button("📜Mes droits?", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("❓Comment refuser?", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+      Button("🔍Un exemple?", payload="/_assertivite___assertref2_5c7e84780ecd9f746fcc076a"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

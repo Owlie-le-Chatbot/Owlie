@@ -1,0 +1,39 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff22b
+start:
+  say Typing(2900)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Alors {{_name}}, qu'est-ce qu'il se passe ? (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(3200)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Et tu en penses quoi, toi ? (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(3200)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/87010426-662d-4a6a-9d19-d74a904cd5dd.jpeg")
+  say Question(
+    "Qu'est-ce qui te ferait du bien ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("💬Continuer à parler", payload="/_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"),
+      Button("🙂Ça va...", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("🚨De l'aide", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("🏖Activité agréable", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🐻Câlins", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+  )
+  hold
+  

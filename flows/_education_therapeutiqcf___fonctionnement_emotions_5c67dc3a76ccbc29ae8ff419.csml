@@ -1,0 +1,168 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff419
+start:
+  say Typing(2300)
+  say Question(
+    "Je ne sais pas si tu le sais, mais nos émotions sont là pour nous protéger...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Explique..."),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("Choisir une activité", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3500)
+  say Question(
+    "Eh oui , les émotions sont comme des alarmes, en quelque sorte. 
+Elles nous indiquent quand quelque chose ne nous convient pas, nous a touché, ou dépasse ce que l'on est en mesure d'accepter !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(2100)
+  say "Mais parfois..."
+  say Typing(3000)
+  say "...nos émotions sont aussi déclenchées ou augmentées non pas par la situation elle-même, mais par ce que nous nous racontons sur cette situation... et cela a ensuite un effet sur notre corps et nos comportements, et continuent d'alimenter nos boucles de pensées comme ceci :"
+  say Typing(2600)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f94b310a-f013-4756-88ad-bd10f407181f.jpeg",
+    quick_replies=[
+      Button("D'accord..."),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2800)
+  say Question(
+    "Te fais-tu souvent des remarques, des commentaires négatifs au sujet des situations ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Rarement"),
+      Button("De temps en temps"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _commentaires_negatifs = event
+  goto step_15
+
+
+step_15:
+  say Typing(3400)
+  say Question(
+    "Reconnaître ce qui émerge en toi (les émotions, les pensées et les sensations corporelles) est alors très utile pour prendre conscience de ce que tu ressens, pour accepter puis laisser passer ces ressentis... ce qui te permettra ensuite d'avancer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est bon à savoir !"),
+      Button("Eh oui..."),
+      Button("Choisir autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Surprends moi", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3000)
+  say Question(
+    "Si tu as du mal avec certaines émotions, tu peux déjà commencer par observer comment elles évoluent au fil de la journée à l'aide de cette petite grille :",
+    buttons=[
+      Url("https://drive.google.com/open?id=0BwzjG62bhAz0Wm82V0xrN2gyMlk", text="Observations émotion"),
+    ],
+    quick_replies=[
+      Button("Ok, continue"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(2600)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/02f2b63b-0a32-4ff2-9608-7588cf596684.jpeg")
+  say Typing(3000)
+  say Question(
+    "L’acceptation constitue maintenant une composante importante d'une vie agréable et en paix avec ses émotions. 
+
+Accepter uniquement ce qui est agréable équivaut tout simplement à ne pas accepter la vie !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr..."),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(3500)
+  say Question(
+    "L’acceptation ne veut pas dire résignation ou même ou approbation.
+Accueillir ce qu'on ressent c’est une position active d’ouverture envers les pensées, les sensations et émotions, en les considérants telles qu’elles sont, sans tenter de les modifier ou de diminuer leur intensité.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, c'est sûr"),
+      Button("C'est trop dur...", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_29
+
+
+step_29:
+  say Typing(3400)
+  say Question(
+    "Pour en apprendre plus sur les émotions, surtout celles qui nous empêchent d'agir, je te propose de lire ce petit document que je t'ai préparé pour approfondir la question et être encore plus conscient.e du fonctionnement des émotions pour mieux les gérer... surtout celles qui sont pénibles !",
+    buttons=[
+      Url("https://drive.google.com/open?id=0BwzjG62bhAz0cHZrV1JralBTNXM", text="Sur les émotions"),
+    ],
+    quick_replies=[
+      Button("Ok :-)"),
+    ],
+  )
+  hold
+  
+  goto step_32
+
+
+step_32:
+  say Typing(2600)
+  say Question(
+    "Qu'est-ce qui te dirait maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Surprends moi", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("En rester là :-)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

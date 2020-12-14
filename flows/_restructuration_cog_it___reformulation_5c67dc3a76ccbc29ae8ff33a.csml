@@ -1,0 +1,57 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff33a
+start:
+  say Typing(2000)
+  say Question(
+    "Tu vas maintenant reformuler la pensée douloureuse {{_penseedouloureuse}} de manière plus raisonnable et rationnelle.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Va-y ! Écris-moi la nouvelle pensée qui pourrait la remplacer 📝 "
+  hold
+  
+  remember _penseereformulee = event
+  
+  say Typing(2000)
+  say "Voici donc ta pensée douloureuse reformulée :
+- {{_penseereformulee}}"
+  say Typing(2000)
+  say Question(
+    "Te convient-elle ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2000)
+  say Question(
+    "Souhaites-tu à nouveau essayer de la reformuler ou continuer à l'assouplir ?",
+    buttons=[
+      Button("Reformuler", payload="/_restructuration_cog_it___reformulation_5c67dc3a76ccbc29ae8ff33a"),
+      Button("Assouplir", payload="/_restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339"),
+    ],
+    quick_replies=[
+      Button("Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

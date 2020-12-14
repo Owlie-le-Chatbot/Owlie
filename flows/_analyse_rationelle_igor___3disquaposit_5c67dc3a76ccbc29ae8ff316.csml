@@ -1,0 +1,33 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff316
+start:
+  say Typing(2000)
+  say "Concentre-toi sur ta pensée douloureuse : 
+- {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Es-tu en train de dévaloriser ou minimiser une chose positive ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_analyse_rationelle_igor___4generabu_5c67dc3a76ccbc29ae8ff317"),
+      Button("Je ne comprends pas"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Aurais-tu transformé quelque chose de positif en quelque chose de négatif ou neutre?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_distorsions_cog_igor___3disqualificationdupositif_5c67dc3a76ccbc29ae8ff323"),
+      Button("Non", payload="/_analyse_rationelle_igor___4generabu_5c67dc3a76ccbc29ae8ff317"),
+      Button("Je ne sais pas", payload="/_analyse_rationelle_igor___4generabu_5c67dc3a76ccbc29ae8ff317"),
+    ],
+  )
+  hold
+  

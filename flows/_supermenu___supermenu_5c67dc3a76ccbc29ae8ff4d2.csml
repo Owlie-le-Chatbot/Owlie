@@ -1,0 +1,417 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4d2
+start:
+  say Typing(3200)
+  say Question(
+    "Voici toutes les grandes catégories d'activités possibles ! Il y en a beaucoup, laisse 1 minute pour tout charger puis fait défiler 😅",
+    buttons=[
+      Button("🌟menu principal", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("🏖accès menu détente", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🤗réconfort", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="JE CRAQUE",
+        subtitle="Gérer la crise",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c64f892f-db1b-40d4-b94c-3cccf3a86d74.jpeg",
+        buttons=[
+          Button("Menu 🚨", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+        ],
+      ),
+      Card(
+        title="Respiration",
+        subtitle="Reprendre le contrôle de ma respiration",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d3fc664a-761c-4ca1-8b44-5628313a2e6d.jpeg",
+        buttons=[
+          Button("C'est parti! 🌬️", payload="/_respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9"),
+        ],
+      ),
+      Card(
+        title="Eau",
+        subtitle="S'appliquer de l'eau froide",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/74ebf1f4-ed8b-40e1-8aac-dafc56b45f4b.jpeg",
+        buttons=[
+          Button("C'est parti ! 💦", payload="/_crise_igor___eaufroide_5c67dc3a76ccbc29ae8ff279"),
+        ],
+      ),
+      Card(
+        title="Conscience sensorielle",
+        subtitle="Retrouver mes sens",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e97be866-8bca-4f07-a613-dca30ba3f04a.jpeg",
+        buttons=[
+          Button("C'est parti! 🙌🏻", payload="/_crise_igor___conssens_5c67dc3a76ccbc29ae8ff27c"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="ANCRAGE",
+        subtitle="Reprendre le contrôle",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3192f400-a289-409e-b904-8ca3d7c36181.jpeg",
+        buttons=[
+          Button("Menu ⚓", payload="/_ancrage_igor___introanc_5c67dc3a76ccbc29ae8ff2ae"),
+        ],
+      ),
+      Card(
+        title="Ancrage mental",
+        subtitle="Reprendre le contrôle de mon cerveau",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a43cc202-2dc6-484f-a416-468b39b33cad.jpeg",
+        buttons=[
+          Button("C'est parti ! 🧠", payload="/_ancrage_mental_igor___introancment_5c67dc3a76ccbc29ae8ff2b3"),
+        ],
+      ),
+      Card(
+        title="Ancrage physique",
+        subtitle="Reprendre le contrôle de mon corps",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8e28239a-52d1-4545-9e18-a4a147368589.jpeg",
+        buttons=[
+          Button("C'est parti ! 👣", payload="/_ancrage_physique_igor___introancphy_5c67dc3a76ccbc29ae8ff2c1"),
+        ],
+      ),
+      Card(
+        title="Ancrage émotionnel",
+        subtitle="Reprendre le contrôle de mes émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7a841ea8-94c9-4932-b25c-d46856f53f6d.jpeg",
+        buttons=[
+          Button("C'est parti ! 💙", payload="/_ancrage_emotionnel_igor___introancemo_5c67dc3a76ccbc29ae8ff2cf"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="PENSÉES",
+        subtitle="J'ai de mauvaises pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/04172ba3-b1bd-4b58-8521-4530b997b9b2.jpeg",
+        buttons=[
+          Button("Menu 💭", payload="/_pensee_igor___intropensee_5c67dc3a76ccbc29ae8ff27f"),
+        ],
+      ),
+      Card(
+        title="Apaiser une pensée",
+        subtitle="Analyser et assouplir les mauvaises pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7f7443ec-853f-490a-95fe-b5fdf41f17e6.jpeg",
+        buttons=[
+          Button("C'est parti ! ⛈️", payload="/_pensee_igor___intropensee_5c67dc3a76ccbc29ae8ff27f"),
+        ],
+      ),
+      Card(
+        title="Résoudre un problème",
+        subtitle="Trouver et analyser des solutions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7eea408e-7174-4990-baeb-3429c7dca4d7.jpeg",
+        buttons=[
+          Button("C'est parti ! 🤔", payload="/_resolution_de_problemeit___probleme_5c67dc3a76ccbc29ae8ff36f"),
+        ],
+      ),
+      Card(
+        title="Restructuration cognitive",
+        subtitle="Exercices d'assouplissement de pensée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0ae3e150-7caf-4905-abd0-1ca943c207e7.jpeg",
+        buttons=[
+          Button("C'est parti ! 🔩", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Je m'inquiète",
+        subtitle="En savoir plus sur l'inquiétude",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b50d7b47-534e-481b-8694-6f148f55e45a.jpeg",
+        buttons=[
+          Button("C'est parti ! ⁉️", payload="/_inquietude_igor___introinquiet_5c67dc3a76ccbc29ae8ff34a"),
+        ],
+      ),
+      Card(
+        title="Mauvais réflexes de pensée",
+        subtitle="Ce qui peut clocher dans le raisonnement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b1d73b02-1d30-4a08-80e7-df23474702c5.jpeg",
+        buttons=[
+          Button("C'est parti ! 🔁", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+        ],
+      ),
+      Card(
+        title="Croyances profondes",
+        subtitle="Ce qui peut clocher dans les croyances",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/aa8a31fe-8dc9-4ead-92ad-c9fa008dccb3.jpeg",
+        buttons=[
+          Button("C'est parti ! 💔", payload="/_ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393"),
+        ],
+      ),
+      Card(
+        title="Métaphores",
+        subtitle="Je métaphorise ma pensée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/00dde149-1ddf-4dec-b589-dd869b187e93.jpeg",
+        buttons=[
+          Button("C'est parti ! 🌟", payload="/_metaphores___intrometaph_5c67dc3a76ccbc29ae8ff4d4"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="ACTION",
+        subtitle="Je me mets en action",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4a03044f-49de-40ab-b05b-c598382ac7ac.jpeg",
+        buttons=[
+          Button("Menu 🕺", payload="/_activites_igor___introaction_5c67dc3a76ccbc29ae8ff287"),
+        ],
+      ),
+      Card(
+        title="Activités apaisantes",
+        subtitle="J'ai besoin d'une activité paisible.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3b591268-2e1c-4d4f-8391-e17afed96b15.jpeg",
+        buttons=[
+          Button("C'est parti ! 🧘", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+        ],
+      ),
+      Card(
+        title="Activités stimulantes",
+        subtitle="J'ai besoin d'une activité stimulante",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/edff5540-457d-4f57-a71e-b52c649917d2.jpeg",
+        buttons=[
+          Button("C'est parti ! 👯", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+        ],
+      ),
+      Card(
+        title="Procrastination",
+        subtitle="Je remets souvent à plus tard",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/29d3781e-fbca-42d2-b6e8-b609dc6b7b84.jpeg",
+        buttons=[
+          Button("C'est parti ! ⏳", payload="/_procrastination_igor___introprocrast_5c67dc3a76ccbc29ae8ff3a5"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Valeurs",
+        subtitle="J'agis selon mes valeurs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/27a45da6-032c-4dab-8f53-51a8a3eae075.jpeg",
+        buttons=[
+          Button("C'est parti 🎋!", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+        ],
+      ),
+      Card(
+        title="Assertivité",
+        subtitle="Je m'affirme",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4b252cb9-1327-4ecf-8fb1-8bf9e981e0fb.jpeg",
+        buttons=[
+          Button("C'est parti ! ✊", payload="/_assertivite___introassert_5c7e84780ecd9f746fcc074e"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="PAUSE",
+        subtitle="Je me pose",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fb998ba6-33d2-4d78-a137-c10caca6efe9.jpeg",
+        buttons=[
+          Button("Menu 🧘", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+        ],
+      ),
+      Card(
+        title="Relaxation",
+        subtitle="Je fais une séance de relaxation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/647b2f2e-2c27-4857-9e28-d786093e8e08.jpeg",
+        buttons=[
+          Button("C'est parti ! 🙇🏻", payload="/_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1"),
+        ],
+      ),
+      Card(
+        title="Méditation",
+        subtitle="Je cherche la pleine conscience",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f93fa52b-94a5-4cd6-9daa-77ff37904806.jpeg",
+        buttons=[
+          Button("C'est parti ! 🧘", payload="/_poser_igor___listpc_5c67dc3a76ccbc29ae8ff2a2"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Musique",
+        subtitle="J'écoute une musique",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8ad7ea7e-937d-4a81-82ea-c15ac255aab4.jpeg",
+        buttons=[
+          Button("C'est parti ! 🎶", payload="/_poser_igor___listmusic_5c67dc3a76ccbc29ae8ff2a3"),
+        ],
+      ),
+      Card(
+        title="Nature",
+        subtitle="J'écoute des sons de la nature",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f46c8b22-5780-4366-8beb-c29e4a3a7fa1.jpeg",
+        buttons=[
+          Button("C'est parti ! 🍃", payload="/_poser_igor___listnature_5c67dc3a76ccbc29ae8ff2a4"),
+        ],
+      ),
+      Card(
+        title="ASMR",
+        subtitle="J'écoute des sons satisfaisants",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b6032a39-9d4f-44d8-b33c-1d91f146db80.jpeg",
+        buttons=[
+          Button("C'est parti ! 👂🏻", payload="/_poser_igor___listasmr_5c67dc3a76ccbc29ae8ff2a5"),
+        ],
+      ),
+      Card(
+        title="Vidéos",
+        subtitle="Je regarde des vidéos satisfaisantes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0f8fb0d2-f146-49b5-bd6e-29a71740d257.jpeg",
+        buttons=[
+          Button("C'est parti ! 🎞️", payload="/_poser_igor___listvid_5c67dc3a76ccbc29ae8ff2a6"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="JEUX",
+        subtitle="Apprendre en s'amusant",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/93ad96c1-64c5-4e90-b132-379b0db4bc3d.jpeg",
+        buttons=[
+          Button("Menu 🎮", payload="/_psychologie_clara___activite_agreable_5c67dc3a76ccbc29ae8ff3dd"),
+        ],
+      ),
+      Card(
+        title="Jeu sur les émotions",
+        subtitle="Je joue à des jeux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2b92dbd0-1d3c-41fd-b199-2dbaac86dc5a.jpeg",
+        buttons=[
+          Button("Quizz émotion", payload="/_psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb"),
+        ],
+      ),
+      Card(
+        title="Jeu sur les pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3b50349b-32ee-4ad3-8bdb-8ea969c914bd.jpeg",
+        buttons=[
+          Button("Quizz pensées", payload="/_psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca"),
+        ],
+      ),
+      Card(
+        title="Jeux divertissants",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/37973c19-6226-4718-8f2b-4470a0c43107.jpeg",
+        buttons=[
+          Button("Jeux divertissants", payload="/_activites_igor___jeux_copy_1_5c67dc3a76ccbc29ae8ff292"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="PSYCHOLOGIE POSITIVE",
+        subtitle="Exercices positifs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fa848a93-58bb-4108-811d-a0470bd39f4e.jpeg",
+        buttons=[
+          Button("Menu 🧠", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+        ],
+      ),
+      Card(
+        title="Me comprendre",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dbb2de6a-7266-4d45-8940-7d0c3c2a4e71.jpeg",
+        buttons=[
+          Button("Me comprendre", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+        ],
+      ),
+      Card(
+        title="Lettre moi futur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/13d493ce-b404-45c2-b3e4-16db1d7d793a.jpeg",
+        buttons=[
+          Button("Lettre moi futur", payload="/_act___lettremoifutur1_5c67dc3a76ccbc29ae8ff3e6"),
+        ],
+      ),
+      Card(
+        title="Gratitude",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/125508c4-fa5e-43f4-a365-57e61de262bd.jpeg",
+        buttons=[
+          Button("Gratitude", payload="/_psychologie_clara___exercice_de_gratitude_5c67dc3a76ccbc29ae8ff3d7"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Mon esprit et mes comportements",
+        subtitle="Comprendre le fonctionnement de mon esprit et de certains comportements",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e7bf97c6-c654-4aab-be73-cde6cee76cf0.jpeg",
+        buttons=[
+          Button("Esprit et Actions", payload="/_menus_igorclara___cataloguecog_5c67dc3a76ccbc29ae8ff272"),
+          Button("Infos maladies", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+        ],
+      ),
+      Card(
+        title="Mes émotions et leur fonctionnement",
+        subtitle="Comprendre le fonctionnement de mes émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bcffdc4a-3a96-46c6-a987-ed043d79130f.jpeg",
+        buttons=[
+          Button("Émotions", payload="/_menus_igorclara___catalogueemotion_5c67dc3a76ccbc29ae8ff270"),
+        ],
+      ),
+      Card(
+        title="Relations aux autres",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b3a0d1f2-19e9-4b32-96c5-0da9ba39f6aa.jpeg",
+        buttons=[
+          Button("Relations aux autres", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+        ],
+      ),
+      Card(
+        title="Infos bien-être et santé",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b3f89bd2-9e87-490c-b283-41cbe0a16ef7.jpeg",
+        buttons=[
+          Button("Bien-être", payload="/_menus_igorclara___cataloguecorporel_5c67dc3a76ccbc29ae8ff273"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❔Au hasard ", payload="/_supermenu___randomsupermenu_5c698fc076ccbc29ae6014ef"),
+      Button("😕Je ne sais pas", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  

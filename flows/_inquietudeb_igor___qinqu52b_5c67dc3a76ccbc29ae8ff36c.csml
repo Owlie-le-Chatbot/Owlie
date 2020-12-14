@@ -1,0 +1,10 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff36c
+start:
+  say Typing(2000)
+  say "Bonne réponse ! (youhou!)"
+  say Typing(2000)
+  say "Envisager le pire incite à penser qu'il est inutile d'agir, et donc qu'on est incapable de résoudre les problèmes."
+  say Typing(2000)
+  say "Il s'agit donc du meilleur moyen de rester déçu.e de soi-même."
+  // adding conditional redirect to flow
+  goto flow _inquietudeb_igor___repriseanaldoul_5c67dc3a76ccbc29ae8ff36d

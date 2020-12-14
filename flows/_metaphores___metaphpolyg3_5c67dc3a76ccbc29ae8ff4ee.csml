@@ -1,0 +1,36 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ee
+start:
+  say Typing(3000)
+  say "Tu renonces à essayer de contrôler tes émotions."
+  say Typing(4000)
+  say "Après tout, ton anxiété est inévitable dans une situation pareille."
+  say Typing(4000)
+  say "Les pics d'anxiété sont logiquement plus fréquents dans les minutes qui suivent."
+  say Typing(5000)
+  say "Mais en laissant venir cette anxiété, tu la trouves progressivement moins écrasante."
+  say Typing(5000)
+  say "Il devient alors possible pour toi de chercher d'autres solutions, même si le compteur continue à sonner."
+  say Typing(4000)
+  say "Tu regardes autour de toi..."
+  say Typing(4000)
+  say "À tout hasard, tu demandes à passer un coup de téléphone."
+  say Typing(5000)
+  say "Ce coup de téléphone t'est accordé, conformément à la loi, et un.e officier.e te tend un combiné."
+  say Typing(6000)
+  say "Tu appeles un.e avocat.e qui te confirme que tu ne dois absolument pas chercher à contrôler ton anxiété."
+  say Typing(4000)
+  say "Iel poursuit en te disant qu'iel arrive dans un quart d'heure et qu'iel va t'aider."
+  say Typing(4000)
+  say "Durant ce quart d'heure, tu demandes à aller aux toilettes, à boire un verre d'eau."
+  say Typing(4000)
+  say "L'anxiété reste élevée sur le tracé mais les pics sont moins fréquents."
+  say Typing(4000)
+  say Question(
+    "À son arrivée, l'avocat.e t'informe que tu es disculpé.e car lea coupable a été identifié.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphpolyg4_5c67dc3a76ccbc29ae8ff4ef"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,83 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff397
+start:
+  say Typing(4000)
+  say Question(
+    "Aussi mauvais et injustes soient-ils, les faits n'ont pas forcément à se dérouler comme tu le veux. 
+
+Des ennuis et des malheurs surviennent partout dans le monde, c'est comme ça 😊
+
+Cela ne signifie pas qu'il faille t'en réjouir quand ça se produit mais tu n'arrangeras rien en te tracassant.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Plus tu seras contrarié.e, moins tu seras efficace pour changer les choses qui ne te plaisent pas.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Ce n'est pas parce que les enfant.e.s de deux ans piquent une crise quand iels n'ont pas ce qu'iels veulent que tu dois en faire de même 😅 
+
+Si tu peux changer ce qui ne te plait pas, va de l'avant et fait-le. 
+Si ce n'est pas possible, apprend à vivre avec sans que cela te mette dans tous tes états à chaque fois 😭(c'est épuisant pour toi...)",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Tu n'es pas contrarié.e parce que des mauvaises choses arrivent mais parce que tu penses que c'est terrible et que ça ne devrait pas se produire.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Quand les choses ne sont pas à ton goût, et que tu ne peux pas les changer, tu peux te dire que tu aimerais que ce soit différent mais que ce n'est pas la fin du monde, et que ça ne te tuera pas si tu continues à vivre avec. 
+
+Tente alors d'apprendre de ces choses, de les accepter comme des défis à relever... ...voire d'en faire quelque chose d'utile dans ta vie  
+
+Si ça ne marche pas, essaye de les ignorer et fais autre chose que tu aimes 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

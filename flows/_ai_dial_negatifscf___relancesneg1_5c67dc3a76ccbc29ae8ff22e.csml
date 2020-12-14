@@ -1,0 +1,50 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff22e
+start:
+  say Typing(3000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Je t'écoute... explique-moi ce que tu ressens, sans jugement... (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(3000)
+  say Question(
+    "As-tu écris tout ce que tu as sur le coeur là ? 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui je crois...", payload="/_ai_dial_negatifscf___sortiedialogueneg_5c67dc3a76ccbc29ae8ff230"),
+      Button("Non, pas tout"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3300)
+  goto form_6_0
+
+
+// form component
+form_6_0:
+  say "Je t'en prie {{_name}}, continue... lâche-toi, personne n'est là pour te juger 🤗...                                         (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(3100)
+  say Question(
+    "Y a t-il encore autre chose ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😕Oui...", payload="/_ai_dial_negatifscf___relancesneg2_5c67dc3a76ccbc29ae8ff22f"),
+      Button("C'est un peu mieux..", payload="/_ai_dial_negatifscf___sortiedialogueneg_5c67dc3a76ccbc29ae8ff230"),
+    ],
+  )
+  hold
+  

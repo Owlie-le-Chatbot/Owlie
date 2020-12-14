@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff279
+start:
+  say Typing(2000)
+  say Question(
+    "Mets ton visage sous l'eau froide ou applique-toi quelque chose de froid sur les yeux ou les joues tout en retenant ta respiration pendant 15 ou 20 secondes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("J'y vais !", payload="/_crise_igor___reprise_5c67dc3a76ccbc29ae8ff27b"),
+      Button("Pourquoi ?", payload="/_crise_igor___eaufroidepq_5c67dc3a76ccbc29ae8ff27a"),
+    ],
+  )
+  hold
+  

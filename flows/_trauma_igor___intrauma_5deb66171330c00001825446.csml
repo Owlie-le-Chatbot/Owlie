@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825446
+start:
+  say Typing(4000)
+  say "On ressent souvent de la honte ou de la culpabilité après avoir vécu un traumatisme 😔"
+  say Typing(4000)
+  say "Aussi paradoxal qu'il puisse paraitre, ce phénomène est \"normal\"."
+  say Typing(5000)
+  say "Certaines pensées, raisonnements ou croyances peuvent entretenir cette culpabilité."
+  say Typing(5000)
+  say Question(
+    "Essayons de les passer en revue une par une et de les analyser afin d'apaiser la douleur occasionnée. OK ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Allons-y!", payload="/_trauma_igor___traumapculp01_5deb66171330c00001825447"),
+      Button("Choisir la pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Voir les fiches!", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Non merci"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say "Très bien. N'hésite pas à y revenir plus tard ou lorsque tu te sentiras prêt.e 🤗"
+  // adding conditional redirect to flow
+  goto flow Default

@@ -1,0 +1,14 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4d6
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_metaphores___metaphgps_5c67dc3a76ccbc29ae8ff4d8", "_metaphores___metaphtbfete_5c67dc3a76ccbc29ae8ff4dc", "_metaphores___metaphsabmou_5c67dc3a76ccbc29ae8ff4e0", "_metaphores___metaphtirecord_5c67dc3a76ccbc29ae8ff4e4", "_metaphores___metaphlavoile_5c67dc3a76ccbc29ae8ff4e8", "_metaphores___metaphpolyg_5c67dc3a76ccbc29ae8ff4ec", "_metaphores___metaphbus_5c67dc3a76ccbc29ae8ff4f0", "_metaphores___metaphfoot_5c67dc3a76ccbc29ae8ff4f4", "_metaphores___metaphbrou_5c67dc3a76ccbc29ae8ff4f8", "_metaphores___metaphechi_5c67dc3a76ccbc29ae8ff4fc"]))
+  if (rand == 0) goto flow _metaphores___metaphgps_5c67dc3a76ccbc29ae8ff4d8
+  if (rand == 1) goto flow _metaphores___metaphtbfete_5c67dc3a76ccbc29ae8ff4dc
+  if (rand == 2) goto flow _metaphores___metaphsabmou_5c67dc3a76ccbc29ae8ff4e0
+  if (rand == 3) goto flow _metaphores___metaphtirecord_5c67dc3a76ccbc29ae8ff4e4
+  if (rand == 4) goto flow _metaphores___metaphlavoile_5c67dc3a76ccbc29ae8ff4e8
+  if (rand == 5) goto flow _metaphores___metaphpolyg_5c67dc3a76ccbc29ae8ff4ec
+  if (rand == 6) goto flow _metaphores___metaphbus_5c67dc3a76ccbc29ae8ff4f0
+  if (rand == 7) goto flow _metaphores___metaphfoot_5c67dc3a76ccbc29ae8ff4f4
+  if (rand == 8) goto flow _metaphores___metaphbrou_5c67dc3a76ccbc29ae8ff4f8
+  if (rand == 9) goto flow _metaphores___metaphechi_5c67dc3a76ccbc29ae8ff4fc

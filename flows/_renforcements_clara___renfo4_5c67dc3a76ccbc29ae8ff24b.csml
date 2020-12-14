@@ -1,0 +1,9 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff24b
+start:
+  say Typing(2400)
+  say "Super {{_name}} !"
+  say Typing(2000)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/51610af0-2b2a-41df-b118-e8762cc01f53.jpeg")
+  say Typing(2000)
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

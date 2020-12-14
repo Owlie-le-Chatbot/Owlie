@@ -1,0 +1,35 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff31a
+start:
+  say Typing(2000)
+  say "Concentre-toi sur ta pensée douloureuse : 
+- {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Es-tu en train d'imaginer le pire ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_analyse_rationelle_igor___8raisemot_5c67dc3a76ccbc29ae8ff31b"),
+      Button("Je ne comprends pas
+"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Un ou quelques évènements négatifs t'ont-ils conduit.e à imaginer un scénario catastrophe ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_distorsions_cog_igor___7penseecatastrophique_5c67dc3a76ccbc29ae8ff327"),
+      Button("Non", payload="/_analyse_rationelle_igor___8raisemot_5c67dc3a76ccbc29ae8ff31b"),
+      Button("Je ne sais pas
+", payload="/_analyse_rationelle_igor___8raisemot_5c67dc3a76ccbc29ae8ff31b"),
+    ],
+  )
+  hold
+  

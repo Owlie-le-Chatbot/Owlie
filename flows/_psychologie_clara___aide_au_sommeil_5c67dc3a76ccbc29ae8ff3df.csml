@@ -1,0 +1,60 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3df
+start:
+  say Typing(2600)
+  say Question(
+    "Tu souhaites savoir comment est-il possible d’établir une bonne hygiène de sommeil ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, j'aimerais bien"),
+      Button("Ça va :-)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Je suis stressé(e) !", payload="/_psychologie_clara___activites_contre_le_stress_5c67dc3a76ccbc29ae8ff3c3"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2500)
+  say "Ok {{_name}}, regardons ensemble comment procéder..."
+  say Typing(4000)
+  say Question(
+    "Déjà tu peux essayer :
+- d'avoir une heure de coucher régulière et avant minuit (Lee met un réveil pour penser à aller dormir)
+- la lecture (livre, revue, mot fléché), peut aider à s'endormir
+- de fermer tous les écrans 1h avant de s’endormir (télévision,
+ordinateur, écran de lecture, etc.) : ces appareils ont un effet stimulant sur le cerveau et le sommeil sera moins réparateur... même si c'est très tentant de regarder son téléphone ou son ordinateur (film, série). Tu peux activer un filtre de type des ondes bleues (comme \"f.lux\") pour les réduire.
+- de bien sortir t'aérer ou faire quelques mouvements/sport la journée !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Quoi d'autre ?"),
+      Button("Gérer mon stress", payload="/_psychologie_clara___activites_contre_le_stress_5c67dc3a76ccbc29ae8ff3c3"),
+      Button("Une histoire ?:-)", payload="/_psychologie_clara___stress_5c67dc3a76ccbc29ae8ff3b8"),
+      Button("Et les habitudes ?", payload="/_education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(2200)
+  say Question(
+    "Si tu ne trouves pas le sommeil :
+- après 20 ou 30 minutes... on rallume et on rouvre le livre, ne reste pas à tourner dans ton lit, rien de pire... lit un livre (mais pas un polar !),écrit, dessine avec une boisson chaude, par exemple, et attends d'avoir envie de dormir
+- même dans le cas où on prend des somnifères, on fait aussi la routine de l’hygiène de sommeil! :-)
+- NE PAS prendre de somnifère durant la nuit (dans la mesure du possible)
+- se réveiller à son heure habituelle le lendemain pour ne pas se décaler, quitte à faire une courte sieste en journée (max 20 min)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Exercice pour dormir", payload="/_psychologie_clara___exercices_sommeil_5c67dc3a76ccbc29ae8ff3dc"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Discuter", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Me changer les idées", payload="/_education_therapeutiqcf___ressources_inspiration_5c67dc3a76ccbc29ae8ff41e"),
+    ],
+  )
+  hold
+  

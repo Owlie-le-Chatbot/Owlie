@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff256
+start:
+  say Typing(2500)
+  say Question(
+    "Comment te sens-tu là ?
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("☺️Ça va mieux !", payload="/_ai_dial_positifs_cf___choixrenfo_5c67dc3a76ccbc29ae8ff212"),
+      Button("🙂Un peu mieux", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("😕Toujours pas top", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("😯Je ne sais pas...", payload="/_specification_etat_cf___specjsp_5c67dc3a76ccbc29ae8ff25c"),
+    ],
+  )
+  hold
+  
+  remember _effet = event

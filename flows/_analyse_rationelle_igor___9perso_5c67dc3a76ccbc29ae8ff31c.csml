@@ -1,0 +1,35 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff31c
+start:
+  say Typing(2000)
+  say "Concentre-toi sur ta pensée douloureuse : 
+- {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Es-tu en train de te blâmer pour quelque chose?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_analyse_rationelle_igor___10oblig_5c67dc3a76ccbc29ae8ff31d"),
+      Button("Je ne comprends pas
+"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Serais-tu en train de t'attribuer trop de torts dans cette affaire ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_distorsions_cog_igor___9personnalisation_5c67dc3a76ccbc29ae8ff329"),
+      Button("Non", payload="/_analyse_rationelle_igor___10oblig_5c67dc3a76ccbc29ae8ff31d"),
+      Button("Je ne sais pas
+", payload="/_analyse_rationelle_igor___10oblig_5c67dc3a76ccbc29ae8ff31d"),
+    ],
+  )
+  hold
+  

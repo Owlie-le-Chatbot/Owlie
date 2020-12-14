@@ -1,0 +1,58 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff288
+start:
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Goût",
+        subtitle="Gouter quelque chose",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ee3afe17-762f-42c9-9cc5-fae5cfd0205d.jpeg",
+        buttons=[
+          Button("C'est parti! 👅", payload="/_activites_igor___gout_5c67dc3a76ccbc29ae8ff28d"),
+        ],
+      ),
+      Card(
+        title="Ouïe",
+        subtitle="Écouter quelque chose",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/00230260-d548-4c3f-b64c-7ed74e5cc472.jpeg",
+        buttons=[
+          Button("C'est parti! 👂🏻", payload="/_activites_igor___ouie_5c67dc3a76ccbc29ae8ff28e"),
+        ],
+      ),
+      Card(
+        title="Vue",
+        subtitle="Regarder quelque chose",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/175a6aef-1163-477c-bdde-63942157263a.jpeg",
+        buttons=[
+          Button("C'est parti! 👁️", payload="/_activites_igor___vue_5c67dc3a76ccbc29ae8ff289"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Toucher",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/671a83b5-66c9-4bb0-b427-247027600ff9.jpeg",
+        buttons=[
+          Button("C'est parti! 👆🏻", payload="/_activites_igor___toucher_5c67dc3a76ccbc29ae8ff290"),
+        ],
+      ),
+      Card(
+        title="Odorat",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/082a6d5f-9274-41d1-ba4e-83eeaacc4944.jpeg",
+        buttons=[
+          Button("C'est parti! 👃🏻", payload="/_activites_igor___odorat_5c67dc3a76ccbc29ae8ff28f"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("🚀Autres activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

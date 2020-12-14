@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff219
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Quand as-tu éprouvé des émotions positives/agréables aujourd'hui ?"
+  hold
+  
+  remember _quand_astu_eprouve_des_emotions_positivesagreables_aujourdhui = event
+  
+  say Typing(1200)
+  say "D'accord..."
+  // adding conditional redirect to flow
+  goto flow _choix_clara___choix1_5c67dc3a76ccbc29ae8ff263

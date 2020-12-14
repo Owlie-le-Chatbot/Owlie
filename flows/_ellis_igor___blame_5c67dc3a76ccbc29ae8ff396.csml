@@ -1,0 +1,165 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff396
+start:
+  say Typing(2500)
+  say "Personne n'est parfait.e. Personne ne peut contrôler absolument tous ses comportements."
+  say Typing(4000)
+  say Question(
+    "Dans le monde réel, nous commettons tou.te.s des erreurs qui nous amènent parfois à maltraiter les autres car :
+
+① nous ne savons pas mieux faire
+② nous ne pouvons pas mieux faire
+③ ou nous sommes trop perturbé.e.s. 
+
+C'est ainsi que nous sommes 😊
+
+Celleux qui considèrent que les autres doivent toujours agir parfaitement ignorent le monde réel.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Blâmer ou punir quelqu'un.e pour une erreur qu'iel a faite 
+① ne lea rendra pas plus compétent.e
+② ne l'aidera pas à mieux faire et 
+③ ne lea rendra pas moins perturbé.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "Nous faisons énormément de choses chaque jour. 
+Certaines de ces choses sont \"mauvaises\", d'autres \"bonnes\", d'autres encore ne sont ni \"bonnes\" ni \"mauvaises\". 
+
+Les \"mauvaises\" actions que nous accomplissons ne font pas de nous des \"mauvaises\" personnes, et les \"bonnes\" actions que nous réalisons ne font pas de nous des \"bonnes\" personnes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say Question(
+    "Blâmer ou punir quelqu'un.e pour ses erreurs ne l'empêchera pas d'en faire d'autres et l'incitera même parfois à en faire davantage pour se venger de ses punisseurices ou autres détracteurices.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "Si tu dis à quelqu'un.e qu'iel est une \"mauvaise personne\", iel pourrait acquiescer et finir par y croire. 
+
+Ceci pourrait alors l'inciter à faire plus de \"mauvaises\" choses puisque c'est ce que font les \"mauvaises personnes\"... c'est à dire à se conformer à ce \"rôle\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4000)
+  say Question(
+    "En te blâmant ou en te punissant pour tes erreurs, tu vas t'inquiéter et te démoraliser. 
+
+En blâmant ou en punissant les autres pour leurs erreurs, tu te mettras en colère et deviendras moins tolérant.e. 
+
+Tu risques alors de te reprocher d'être inquiet.e, démoralisé.e, en colère et moins tolérant.e, ce qui aggravera ton malaise, et t'incitera à te blâmer encore davantage, et ainsi de suite pour le cercle vicieux 🔄",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "Lorsque des gens te reprochent des erreurs que tu aurais faites, demande-toi si tu as vraiment fait quelque chose de mal. 
+
+Si c'est le cas, essaye de ne pas recommencer. 
+Si tu n'as rien fait de mal, souviens-toi que les autres peuvent aussi commettre des erreurs, et que c'est même inévitable.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Question(
+    "Ce n'est pas la fin du monde si les autres se comportent mal, égoïstement ou injustement. 
+
+Si tu peux leur apprendre à mieux se comporter la prochaine fois, fais-le. Si ce n'est pas possible, tu aurais tout intérêt à apprendre à vivre avec leurs erreurs et à te dire que c'est dommage mais pas si terrible.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(4000)
+  say Question(
+    "De temps en temps, tu es aussi amené.e à te comporter mal, égoïstement ou injustement. 
+
+Comme tout le monde, tu fais des erreurs parce que 
+① tu ne sais pas mieux faire, ② tu ne peux pas mieux faire ou 
+③ tu es perturbé.e. 
+
+Désormais, lorsque ce sera le cas, tu pourras te dire que c'est la vie, que tu es aussi humain.e que les autres, que tu vas essayer de faire mieux mais sans garantie 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

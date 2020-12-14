@@ -1,0 +1,22 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff20a
+start:
+  say Question(
+    "Mmmh... est-ce qu'il y a quelque chose que je peux faire pour t'être agréable ? 😊
+
+(fais défiler les boutons ↔️)",
+    buttons=[
+      Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+    ],
+    quick_replies=[
+      Button("🚨Besoin d'aide  ", payload="/_jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b"),
+      Button("💬Parler ", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("⛵️Découvrir", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("🔴Éteindre l'esprit ", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("❔Activité au hasard", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("🎓Info au hasard", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  
+  remember _souhait = event

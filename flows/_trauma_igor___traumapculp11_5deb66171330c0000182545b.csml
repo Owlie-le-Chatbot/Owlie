@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182545b
+start:
+  say Typing(4000)
+  say Question(
+    "11. \"Si j’ai ressenti de l’excitation, c’est que je désirais et que je cherchais ce qui est arrivé.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Analyser", payload="/_trauma_igor___traumapculp11r_5deb66171330c0000182545c"),
+      Button("Passer", payload="/_trauma_igor___traumapculp12_5deb66171330c0000182545d"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

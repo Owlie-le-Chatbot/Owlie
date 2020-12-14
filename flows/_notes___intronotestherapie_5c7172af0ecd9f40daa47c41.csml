@@ -1,0 +1,32 @@
+// CHATFUEL BLOCK ID 5c7172af0ecd9f40daa47c41
+start:
+  say Typing(2900)
+  say Question(
+    "Tu souhaites noter quelque chose pour t'en souvenir à ton prochain rendez-vous ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻Oui"),
+      Button("✖️Non", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(1800)
+  say Question(
+    "Est-ce ta première note, ou une deuxième ou troisième que tu souhaites ajouter ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("1ère note", payload="/_notes___notestherapie1_5c7174ee0ecd9f40daa8e64d"),
+      Button("2e note", payload="/_notes___notestherapie2_5c72b6580ecd9f40da2fd90f"),
+      Button("3e note", payload="/_notes___notestherapie3_5c72b82b0ecd9f40da31436e"),
+      Button("✖️Sortir", payload="/_accueil_check_clara___randomcheck_5c67dc3a76ccbc29ae8ff1f5"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,92 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff39f
+start:
+  say Typing(4000)
+  say Question(
+    "Être performant.e dans un domaine (ou plusieurs) ne fait, en soi, pas de toi une bonne personne. 
+
+Être incompétent.e dans un domaine (ou plusieurs) ne fait pas de toi une mauvaise personne. 
+
+Certain.e.s individu.e.s sont meilleur.e.s que d'autres - par exemple en sport -, mais ça ne fait pas d'elleux de meilleures personnes. 
+
+Celleux qui sont plus intelligent.e.s, plus beaux/belles, ou plus amusant.e.s que toi ne sont pas des meilleures personnes pour autant 😉",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Personne n'est bon.ne partout.
+
+Si tu sais danser mais pas chanter, tu ne seras pas meilleur.e ni moins bon.ne que quelqu'un.e qui sait chanter mais pas danser. 
+
+Il n'existe aucune manière fiable de savoir qui serait une meilleure personne d'une autre.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Si tu réussis quelque chose un jour et rates autre chose le lendemain, es-tu une meilleure personne le jour où tu réussis ? 
+
+Pas vraiment. 
+
+Tu es toujours la même personne 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Nous changeons tous d'un jour à l'autre. 
+
+Par exemple, si tu es habituellement poli.e mais parfois impoli.e quand tu ne te sens pas bien, cela fait-il de toi une bonne (poli.e) ou une mauvaise (impoli.e) personne ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+      Button("➡️Continue"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Nous ne savons pas tout sur les gens. 
+
+Nous pourrions voir quelqu'un.e réaliser une bonne action (par exemple sauver des gens d'un immeuble en feu) et penser qu'il s'agit d'une bonne personne sans forcément savoir ce qu'iel fait de mal par ailleurs (par exemple se battre contre des plus faibles qu'iel). 
+
+Il est rare que les gens soient aussi bon.ne.s ou aussi mauvais.e.s que ce qu'iels montrent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

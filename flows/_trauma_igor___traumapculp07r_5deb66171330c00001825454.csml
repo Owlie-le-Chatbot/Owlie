@@ -1,0 +1,76 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825454
+start:
+  say Typing(4000)
+  say Question(
+    "Là, tu penses par obligation 😉",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est à dire ?"),
+      Button("👍"),
+      Button("Ah ?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say Question(
+    "Tu te fixes, à postériori, des objectifs rigides et déraisonnables, jusqu'à exiger de toi une sorte de perfection.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Et alors ?"),
+      Button("👍"),
+      Button("oups"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(5000)
+  say "Avant de te blâmer pour ne pas avoir accompli l'impossible, pose-toi la question suivante :"
+  say Typing(4000)
+  say Question(
+    "Condamnerais-tu quelqu'un.e d'autre si iel se trouvait dans la même situation?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp08_5deb66171330c00001825455"),
+      Button("Explique mieux"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say "Je vais essayer ! Nous arriverons peut-être un jour à remonter le temps pour modifier nos comportements."
+  say Typing(3000)
+  say "Mais nous n'atteindrons toujours pas la perfection pour autant."
+  say Typing(4000)
+  say "En attendant, les \"j'aurais dû\" et les \"il fallait\" ne nous y conduiront pas davantage."
+  say Typing(1800)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp08_5deb66171330c00001825455"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

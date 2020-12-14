@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1ef
+start:
+  say "Je suis ravie de pouvoir de nouveau échanger avec toi 🤗 !"
+  say Typing(2700)
+  say Question(
+    "Comment ça va aujourd'hui ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("😞Ça ne va pas..."),
+      Button("😕Bof, pas top"),
+      Button("😐Ça peut aller"),
+      Button("🙂Plutôt bien"),
+      Button("😊Très bien !"),
+      Button("😯Je ne sais pas tro"),
+    ],
+  )
+  hold
+  
+  remember _humeur = event
+  goto step_3
+
+
+step_3:
+  // adding conditional redirect to flow
+  if (_humeur == "😕Bof, pas top" || _humeur == "😞Ça ne va pas...") {
+    goto flow _ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c
+  }
+  // adding conditional redirect to flow
+  if (_humeur == "😐Ça peut aller" || _humeur == "😊Très bien !" || _humeur == "🙂Plutôt bien") {
+    goto flow _ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d
+  }
+  say Typing(2600)
+  say "D'accord... Ce n'est pas toujours facile de faire le point sur ce qu'on ressent 😊!"
+  // adding conditional redirect to flow
+  goto flow _default_answers_clara___defaultanswer7_5c67dc3a76ccbc29ae8ff209

@@ -1,0 +1,99 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4d5
+start:
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Le GPS",
+        subtitle="\"Continuez tout droit\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cb60afdf-6119-44bf-926a-e1030c777281.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphgps_5c67dc3a76ccbc29ae8ff4d8"),
+        ],
+      ),
+      Card(
+        title="Le trouble-fête",
+        subtitle="\"C'est ici la soirée?\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9e0b90bd-1453-49cb-94a7-5205076c9edb.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphtbfete_5c67dc3a76ccbc29ae8ff4dc"),
+        ],
+      ),
+      Card(
+        title="Les sables mouvants",
+        subtitle="\"Je veux sortir!\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e78ef1e1-3212-4842-bee8-997097cc5cb0.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphsabmou_5c67dc3a76ccbc29ae8ff4e0"),
+        ],
+      ),
+      Card(
+        title="Le tir à la corde",
+        subtitle="\"Oh hisse!\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0a38b454-a182-45fc-8aaa-9d59585ce624.jpeg",
+        buttons=[
+          Button("C’est parti!", payload="/_metaphores___metaphtirecord_5c67dc3a76ccbc29ae8ff4e4"),
+        ],
+      ),
+      Card(
+        title="En pleine tempête",
+        subtitle="\"Larguez les amarres!\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1d997d10-9a97-4f2a-88de-04e70d20e876.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphlavoile_5c67dc3a76ccbc29ae8ff4e8"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Le polygraphe",
+        subtitle="\"Calmez-vous!\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/32a39b00-6b76-4063-847d-61dbd88a831e.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphpolyg_5c67dc3a76ccbc29ae8ff4ec"),
+        ],
+      ),
+      Card(
+        title="Les passagers du bus",
+        subtitle="\"Prenez à gauche!\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/86b3dfde-d571-4ba7-89bd-32715424ca6d.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphbus_5c67dc3a76ccbc29ae8ff4f0"),
+        ],
+      ),
+      Card(
+        title="Le stade de football",
+        subtitle="\"Rentre au vestiaire!\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/78685fb6-9d06-450e-9d8d-08850a2cb84f.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphfoot_5c67dc3a76ccbc29ae8ff4f4"),
+        ],
+      ),
+      Card(
+        title="La nappe de brouillard",
+        subtitle="\"Un matin brumeux\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b2ae5867-8551-4b26-8283-784c7c9daf75.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphbrou_5c67dc3a76ccbc29ae8ff4f8"),
+        ],
+      ),
+      Card(
+        title="L'échiquier",
+        subtitle="\"Envoyez la cavalerie!\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3d1bde15-6943-423d-bdcb-d7383f36d430.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___metaphechi_5c67dc3a76ccbc29ae8ff4fc"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❓Au hasard", payload="/_metaphores___metaphhasard_5c67dc3a76ccbc29ae8ff4d6"),
+    ],
+  )
+  hold
+  

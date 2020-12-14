@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3b6
+start:
+  say Typing(2700)
+  say Question(
+    "Rien ne vaut une bonne activité agréable quand on n'est pas au top.
+
+Ça te dit qu'on fasse ça ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻Ça aide oui, go ", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("⛵️Faire autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  

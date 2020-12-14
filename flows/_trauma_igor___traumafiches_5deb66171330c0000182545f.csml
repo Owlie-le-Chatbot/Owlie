@@ -1,0 +1,31 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182545f
+start:
+  say Typing(4000)
+  say "Voici la fiche concernant les 6 premières pensées. N'hésite pas à l'enregistrer!"
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/568d3a66-f66d-4485-a7a4-d8a5d4c57b00.jpeg",
+    quick_replies=[
+      Button("Suite"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say "Voici la fiche correspondant aux 6 dernières de ces pensées. Tu peux aussi l'enregistrer."
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1051253b-4542-4ebe-b8cb-7a596f375e17.jpeg",
+    quick_replies=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Recommencer", payload="/_trauma_igor___intrauma_5deb66171330c00001825446"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

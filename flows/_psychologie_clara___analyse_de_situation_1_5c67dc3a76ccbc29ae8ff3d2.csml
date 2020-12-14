@@ -1,0 +1,160 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d2
+start:
+  say Typing(2300)
+  say "D'accord, alors, explique moi..."
+  say Typing(2800)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Quelle est la situation sur laquelle tu souhaites que nous fassions une auto-observation ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _situation = event
+  
+  say Typing(2600)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Ok... et toi, qu'est-ce que tu penses de cette situation ? 📝Écris-le moi  puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _pensee_douloureuse = event
+  
+  say Typing(2900)
+  say Question(
+    "Alors, reprenons depuis le début ensemble si tu le veux bien...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, bien sûr !"),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3600)
+  goto form_10_0
+
+
+// form component
+form_10_0:
+  say "Donc, dans nos dominos, après le déclencheur quelles ont été tes réactions (pensées puis émotions puis comportement écrit à partir du modèle \"il s'est passé ça, du coup j'ai pensé ça, j'ai ressenti ça et j'ai fait ça\"). 📝Écris-le moi puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _reponse = event
+  
+  say Typing(3000)
+  goto form_12_0
+
+
+// form component
+form_12_0:
+  say "Ok, qu'est-ce qui s'est passé pour que tu en arrives là ? Quel a été LE (ou les) déclencheur(s) de toute la situation problème ? 📝Écris-le moi en 1 phrase "
+  hold
+  
+  remember _declencheur = event
+  
+  say Typing(3300)
+  say Question(
+    "Bon.. on cherche des solutions maintenant ?
+
+Si tu préfères plutôt te centrer sur une pensée => \"Pensée\"
+
+Te centrer sur une émotion => \"émotion\"
+
+Sinon, clique sur \"continuer\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Pensée", payload="/_psychologie_clara___pensees_et_avis_ami_5c67dc3a76ccbc29ae8ff3ce"),
+      Button("Émotion", payload="/_psychologie_clara___exos_respiration_5c67dc3a76ccbc29ae8ff3c9"),
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Reprendre + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(3000)
+  goto form_17_0
+
+
+// form component
+form_17_0:
+  say "Face à cette situation, qu'aurais-tu pu faire d'autre ? (si tu avais pris le temps de considérer toute la situation, par exemple) 📝Écris moi tout ce qui te vient à l'esprit puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _comportement_alternatif = event
+  
+  say Typing(2600)
+  say Question(
+    "Tu as trouvé une alternative ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je crois bien"),
+      Button("Non...", payload="/_psychologie_clara___aide_5c67dc3a76ccbc29ae8ff3db"),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(4000)
+  say Question(
+    "Bien ! Quand tu auras l'occasion de mettre ça en place, je t'invite à observer les effets de ce nouveau choix et de l'exécution du comportement alternatif sur ton humeur et ta conduite (actions, réactions...)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_23
+
+
+step_23:
+  say Typing(3100)
+  say Question(
+    "Je te demande ça parce que le déclencheur, c'est ce qui a ensuite provoqué ton émotion et la (ou les) pensée(s) associée(s). Comme une chaine de réactions en cascade ! 
+
+Des dominos \"déclencheur(s) => pensée(s) => émotion(s) => comportement(s)\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah ok !!"),
+      Button("Je vois..."),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(3100)
+  say Question(
+    "N'hésite pas à retenter plusieurs fois, il faut du temps pour ancrer une nouvelle habitude, ça vient avec l'entrainement et ce qu'on vient de faire (analyse, prise de distance).
+
+Comment ça va maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Mieux !", payload="/_feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243"),
+      Button("C'est pas encore ça", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  remember _effet = event

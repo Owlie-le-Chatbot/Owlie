@@ -1,0 +1,71 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff329
+start:
+  say Typing(2000)
+  say "L'auto-flagellation !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4967d508-54b5-4605-b896-c42d003d8655.jpeg")
+  say Question(
+    "La personnalisation consiste à surestimer sa responsabilité dans un évènement négatif voire à se les attribuer à tort, et à se le reprocher.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say "\"Mon fils a encore raté ses examens, son père n’a jamais réussi à lui donner le gout des études\""
+  say Typing(4000)
+  say "\"Mon ami.e semble contrarié.e, j’ai forcément dit quelque chose de mal\""
+  say Typing(4000)
+  say Question(
+    "\"Mon père fait une dépression, c’est de ma faute, je n’ai pas été à la hauteur de ses attentes\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(2900)
+  say "Ce mode de pensée déprimant repose généralement sur deux types de raisonnement qui sont autant de simplifications excessives du monde qui nous entoure."
+  say Typing(2000)
+  say "Il y a d'un côté la tendance à attribuer aux évènements une cause unique."
+  say Typing(2000)
+  say "Et de l'autre une tendance à se désigner comme responsable des évènements négatifs qui se produisent, notamment de ceux qui sont hors de notre contrôle."
+  say Typing(2000)
+  say "1. Réévalue systématiquement les différentes causes possibles de l'évènement et pas seulement celles qui t'impliquent."
+  say Typing(2000)
+  say Question(
+    "2. Attribue à chacune de ces causes possibles une part ou un pourcentage de responsabilité.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Question(
+    "Veux-tu continuer l'analyse de ta pensée douloureuse ou commencer les exercices d'assouplissement de pensée?",
+    buttons=[
+      Button("Continuer", payload="/_distorsions_cog_igor___10obligation_5c67dc3a76ccbc29ae8ff32a"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

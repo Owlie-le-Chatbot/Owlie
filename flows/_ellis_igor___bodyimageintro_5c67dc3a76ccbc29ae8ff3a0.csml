@@ -1,0 +1,137 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3a0
+start:
+  say Typing(2000)
+  say "Les difficultés avec l'image de son corps nous amènent parfois à avoir des pensées douloureuses 🤗
+
+En voici quelques unes :
+
+(fais défiler les images ↔️)"
+  say Typing(3300)
+  say Carousel(
+    cards=[
+      Card(
+        title="Je ne peux pas quitter la maison sans maquillage, sans être bien habillé.e",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8f8c3687-5010-4447-bd8c-f2d986f415e5.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="J'évite les situations où je ne vais pas avoir le contrôle sur ce que je mange",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a7dd3f06-5fb2-45e5-8629-acacc0df746f.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="J'évite les situations où les gens me verront en train de manger",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f5a4545a-b846-43f8-8693-484acb9e2f55.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je ne peux pas me regarder dans le miroir sans avoir des pensées douloureuses ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1b32d45b-00b9-4738-a4d2-443d45d24934.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je juge souvent mon apparence par rapport à celle des autres",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/99795c65-676e-4a02-87a2-c93f0e4a5c2a.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="J'ai la pensée que mon apparence ne sera jamais assez bien malgré mes efforts",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b410fc59-93c3-4362-8579-9db85162b1ee.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je passe beaucoup de temps à être focalisé.e sur mon corps au détriment du reste",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a9c959f8-230e-4ad7-bb72-2456b64a0892.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je dois être parfait.e dans mon apparence pour être suffisamment bien",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d070e41d-54ff-41ba-88a3-141293842692.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Je passe beaucoup de temps à penser à mon apparence",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2b4df971-5ccf-4f59-8ece-8fe7793bddd4.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je passe beaucoup de temps dans des activités visants à modifier mon apparence",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c1c2fee1-b385-4f99-80c5-10c6da190bdb.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je passe beaucoup de temps à penser à mon poids",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ea654266-691e-4a0c-b8f9-2da501d59f2f.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je passe beaucoup de temps à penser à ce que je mange ou vais manger",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cd9e37b9-ffd5-44ad-b4ac-2ecd9b6c7377.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Je me force à faire du sport même quand je suis fatigué.e ou malade",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a7493607-8770-4af0-9fc0-1c026b6e19d8.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="J'ai la pensée que je ne serai jamais satisfait.e de mon propre corps",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8994507f-bb2e-44c6-8f94-2efe50b10745.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Quand les autres me regardent, j'ai la pensée que je ne suis pas assez bien",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/31dca68e-bbd5-421c-93e0-60830d497367.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+      Card(
+        title="Les autres me jugent beaucoup sur mon apparence physique",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/106d5c82-526d-4aa7-bfce-44587041b073.jpeg",
+        buttons=[
+          Button("Je vis ça !", payload="/_ellis_igor___bodyimageremediation_5c67dc3a76ccbc29ae8ff3a1"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir ", payload="/Default"),
+    ],
+  )
+  hold
+  

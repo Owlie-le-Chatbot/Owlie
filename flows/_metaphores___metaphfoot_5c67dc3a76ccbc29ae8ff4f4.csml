@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f4
+start:
+  say Typing(4000)
+  say "Imagine-toi en train de jouer un match de foot dans un stade petit mais bondé."
+  say Typing(4000)
+  say "Tu es gardien.ne de but."
+  say Typing(5000)
+  say "Ton match se déroule plutôt bien. Au début de la seconde mi-temps, ton équipe mène 2 à 0."
+  say Typing(4000)
+  say "Mais..."
+  say Typing(4000)
+  say "Les supporterices de l'équipe adverse semblent en avoir après toi, personnellement."
+  say Typing(4000)
+  say "Tu les entends t'insulter de plus en plus fort :"
+  say Typing(3000)
+  say "{{_firstname}}! Rentre au vestiaire!\""
+  say Typing(3000)
+  say "{{_firstname}}! Tu sais pas jouer!\""
+  say Typing(3000)
+  say "{{_firstname}}! Va te faire enc...!\""
+  say Typing(5000)
+  say "Non seulement les insultes pleuvent mais on te lance également des gobelets en plastique."
+  say Typing(4000)
+  say "Tu sens le stress et la colère monter en toi."
+  say Typing(6000)
+  say "De plus, l'arbitre de touche le plus proche de toi, très concentré.e sur le match, ne semble pas prendre en compte la difficulté de ta situation."
+  say Typing(5000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("☝️Appeler l'arbitre", payload="/_metaphores___metaphfoot2_5c67dc3a76ccbc29ae8ff4f5"),
+      Button("⚽Continuer à jouer", payload="/_metaphores___metaphfoot3_5c67dc3a76ccbc29ae8ff4f6"),
+    ],
+  )
+  hold
+  

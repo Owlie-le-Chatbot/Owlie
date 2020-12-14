@@ -1,0 +1,59 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff32e
+start:
+  say Typing(2000)
+  say "La contamination !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f10e33f6-e8e5-41b4-b8ed-dd65bf916257.jpeg")
+  say Question(
+    "La généralisation abusive (surgénéralisation) consiste à transposer un ou quelques évènements à l'ensemble des expériences ou des performances d'un.e individu.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"J’ai été licencié.e, j’ai toujours été incapable de garder un boulot\""
+  say Typing(2000)
+  say "\"Aucune fille ne m’a invité.e à danser hier, et de toute façon personne ne s’intéresse à moi\""
+  say Typing(2000)
+  say Question(
+    "\"Je suis encore tombé.e sur un homme marié, c’est sûr, je resterai seul.e toute ma vie\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2000)
+  say "Les surgénéralisations contiennent souvent des mots absolus tels que « toujours », « jamais », « tout le monde », « personne »."
+  say Typing(3000)
+  say "Ces formulations condamnent à la défaite et au malheur. 
+
+Tu te prives ainsi d'un avenir meilleur tout en effaçant d'un coup ce qui s'est mieux passé auparavant."
+  say Typing(2000)
+  say "1. Examine attentivement les évènements de ton passé qui pourraient contredire ta conclusion actuelle."
+  say Typing(2000)
+  say Question(
+    "2. Confronte ta réaction à celle que pourrait avoir quelqu'un d'autre dans la même situation. 
+
+Et arrête de juger",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("✍️Donner mon avis", payload="/_feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

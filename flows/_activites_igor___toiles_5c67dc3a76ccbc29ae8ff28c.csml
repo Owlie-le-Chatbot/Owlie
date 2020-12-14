@@ -1,0 +1,53 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff28c
+start:
+  say Typing(3000)
+  say "(fais défiler les images ↔️)"
+  say Typing(2300)
+  say Carousel(
+    cards=[
+      Card(
+        title="Mona Lisa",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/81aab222-83a4-487f-ab6c-92ec86b92d7a.jpeg",
+        buttons=[
+          Url("http://wisetoast.com/wp-content/uploads/2015/10/mona-lisa-leonardo-da-vinci-most-famous-painting.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="La Naissance de Venus",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/51ebdc89-d77c-4811-90a7-3f93c72a382b.jpeg",
+        buttons=[
+          Url("http://wisetoast.com/wp-content/uploads/2015/10/The-Birth-of-Venus-Painting.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Un dimanche après-midi à l'Île de la Grande Jatte",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ec836d6b-810a-4c28-90c2-28cdd281db7f.jpeg",
+        buttons=[
+          Url("http://wisetoast.com/wp-content/uploads/2015/10/A-Sunday-Afternoon-on-the-Island-of-La-Grande-Jatte-painting2.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="La Persistance de la mémoire",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/49083df8-6d84-4ad1-ac49-fd0543694aa1.jpeg",
+        buttons=[
+          Url("http://wisetoast.com/wp-content/uploads/2015/10/The-Persistence-of-Memory-salvador-deli-painting.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="L'École d'Athènes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c1ee838d-7ad8-4db6-9a0d-d38b9cdd0416.jpeg",
+        default_action=Url("http://wisetoast.com/wp-content/uploads/2015/10/school-of-athens-raphael-painting.jpg"),
+        buttons=[
+          Url("http://wisetoast.com/wp-content/uploads/2015/10/The-Persistence-of-Memory-salvador-deli-painting.jpg", text="Agrandir"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Retour", payload="/_activites_igor___vue_5c67dc3a76ccbc29ae8ff289"),
+      Button("⛵️Activité agréable", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

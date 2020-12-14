@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182544d
+start:
+  say Typing(4000)
+  say Question(
+    "4. \"Si je me sens aussi coupable, ça veut dire que je dois l’être, au moins un peu.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Analyser la pensée", payload="/_trauma_igor___traumapculp04r_5deb66171330c0000182544e"),
+      Button("Passer à la suivante", payload="/_trauma_igor___traumapculp05_5deb66171330c0000182544f"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

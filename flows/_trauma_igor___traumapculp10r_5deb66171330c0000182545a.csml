@@ -1,0 +1,101 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182545a
+start:
+  say Typing(3000)
+  say Question(
+    "Sais-tu ce qu'est le biais de compétence ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est quoi ?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "C'est, dans ce cas précis, ce qui peut nous faire croire que nos intuitions sont des compétences.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, et alors ?"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Que se passerait-il si nous agissions uniquement selon nos intuitions?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je ne sais pas"),
+      Button("Rien de bon ?"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3000)
+  say "Le résultat serait globalement assez catastrophique."
+  say Typing(4000)
+  say Question(
+    "Et nous pourrions constater à quel point la grande majorité de nos intuitions nous trompent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pourquoi ?"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(5000)
+  say Question(
+    "Parce qu'agir selon un pressentiment, c'est mettre de coté la raison et s'en remettre au hasard tout simplement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp11_5deb66171330c0000182545b"),
+      Button("Pas compris..."),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4000)
+  say "Qu'elles soient bonnes ou mauvaises, tes intuitions te trompent régulièrement."
+  say Typing(6000)
+  say "Une intuition n'est pas une compétence, c'est un phénomène qui te donne l'impression de comprendre sans analyser et sans raisonner."
+  say Typing(4000)
+  say "T'en remettre uniquement à tes intuitions, c'est jouer ta vie à pile ou face."
+  say Typing(1500)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp11_5deb66171330c0000182545b"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

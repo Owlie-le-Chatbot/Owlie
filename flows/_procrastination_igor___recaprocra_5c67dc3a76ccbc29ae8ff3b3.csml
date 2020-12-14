@@ -1,0 +1,48 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3b3
+start:
+  say Typing(2000)
+  say "Récapitulons 🙂!"
+  say Typing(2000)
+  say "Tu vas démarrer {{_procra}} {{_jourprocra}} à {{_heureprocra}}."
+  say Typing(2000)
+  say "Parce que {{_avantageprocra}}"
+  say Typing(2000)
+  say "Tu auras pris soin de contrôler ou d'éviter :
+- {{_joker}}
+- {{_distractionprocra}}"
+  say Typing(2000)
+  say "Mais également de favoriser ou de recourir à :
+- {{_preliminaire}}
+- {{_signalprocra}}"
+  say Typing(2000)
+  say "La réalisation de {{_procra}} devrait te prendre {{_dureeprocra}}."
+  say Typing(2000)
+  say "Mais tes efforts seront récompensés, si nécéssaire à chaque étape :
+- {{_etaprocra1}} par {{_recomprocra1}}
+- {{_etaprocra2}} par {{_recomprocra2}}
+- {{_etaprocra3}} par {{_recomprocra3}}
+- {{_etaprocra4}} par {{_recomprocra4}}
+- enfin {{_etaprocra5}} par {{_recomprocra5}}"
+  say Typing(2000)
+  say "N'oublie pas que je crois en toi 🤗🌟!"
+  say Typing(2000)
+  say Question(
+    "Puis-je te donner un dernier conseil ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_procrastination_igor___5minutes_5c67dc3a76ccbc29ae8ff3b4"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  remember _procrastination = event
+  goto step_18
+
+
+step_18:
+  say Typing(2000)
+  say "Tant pis ! Ahaha !"
+  say Typing(4000)
+  // adding conditional redirect to flow
+  goto flow _eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257

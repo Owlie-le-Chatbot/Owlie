@@ -1,0 +1,49 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff38b
+start:
+  say Typing(3000)
+  say "Pour rappel, voici les 5 solutions que tu as proposées avec leur avantage et leur inconvénient :"
+  say Typing(4000)
+  say "Solution 1 : {{_solution1}}
+Avantage : {{_avantage1}}
+Inconvénient : {{_inconvenient1}}"
+  say Typing(2000)
+  say "Solution 2 : {{_solution2}}
+Avantage : {{_avantage2}}
+Inconvénient : {{_inconvenient2}}"
+  say Typing(2000)
+  say "Solution 3 : {{_solution3}}
+Avantage : {{_avantage3}}
+Inconvénient : {{_inconvenient3}}"
+  say Typing(2000)
+  say "Solution 4 : {{_solution4}}
+Avantage : {{_avantage4}}
+Inconvénient : {{_inconvenient4}}"
+  say Typing(2000)
+  say "Solution 5 : {{_solution5}}
+Avantage : {{_avantage5}}
+Inconvénient : {{_inconvenient5}}"
+  say Typing(2000)
+  say "N'oublies pas qu'un choix :
+
+① n'est pas toujours définitif
+② qu'il n'y a pas forcément de \"bonnes\" et de \"mauvaises\" solutions
+③...mais que ne pas choisir est rarement une bonne solution 😅"
+  say Typing(2000)
+  say Question(
+    "Quelle solution veux-tu explorer en premier ?
+1. {{_solution1}}?
+2. {{_solution2}}?
+3. {{_solution3}}?
+4. {{_solution4}}?
+5. {{_solution5}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("1", payload="/_resolution_de_problemeit___planif1_5c67dc3a76ccbc29ae8ff38c"),
+      Button("2", payload="/_resolution_de_problemeit___planif2_5c67dc3a76ccbc29ae8ff38d"),
+      Button("3", payload="/_resolution_de_problemeit___planif3_5c67dc3a76ccbc29ae8ff38e"),
+      Button("4", payload="/_resolution_de_problemeit___planif4_5c67dc3a76ccbc29ae8ff38f"),
+      Button("5", payload="/_resolution_de_problemeit___planif5_5c67dc3a76ccbc29ae8ff390"),
+    ],
+  )
+  hold
+  

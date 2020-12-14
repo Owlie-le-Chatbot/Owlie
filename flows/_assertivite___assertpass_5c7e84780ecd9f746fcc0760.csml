@@ -1,0 +1,132 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0760
+start:
+  say Typing(4000)
+  say "Voici les principales caractéristiques du comportement passif 🙏."
+  say Typing(5000)
+  say Question(
+    "Il consiste généralement à NE PAS exprimer ce que l'on ressent, ce que l'on pense, ou ce que l'on désire.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "Il conduit souvent à être dominé.e par les autres.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Arf"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "Avoir régulièrement un comportement passif revient à ne pas se respecter soi-même.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah ?"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(5000)
+  say Question(
+    "À trop sombrer dans la passivité, on finit par se culpabiliser, par se sentir frustré.e et inférieur.e aux autres.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Mince ..."),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(5000)
+  say Question(
+    "La passivité chronique peut également finir par mettre les interlocuteurices mal à l'aise, les irriter puis les lasser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est noté"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(5000)
+  say Question(
+    "Enfin, être trop souvent passi.f.ve attire logiquement les personnes qui ont tendance à dominer ou à manipuler.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Aïe !"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "Les paillassons 🔳attirent les hérissons 🦔!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌J'ai compris !"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Question(
+    "Quel autre type de comportement veux-tu explorer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapituler"),
+      Button("👊Agressif", payload="/_assertivite___assertagress_5c7e84780ecd9f746fcc0761"),
+      Button("✊Affirmé", payload="/_assertivite___assertaffirm_5c7e84780ecd9f746fcc0762"),
+      Button("🤞Manipulateur", payload="/_assertivite___assertmanip_5c7e84780ecd9f746fcc0763"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6675e3b9-4396-43be-8541-c454bfa2bb91.jpeg",
+    quick_replies=[
+      Button("👊Agressif", payload="/_assertivite___assertagress_5c7e84780ecd9f746fcc0761"),
+      Button("✊Affirmé", payload="/_assertivite___assertaffirm_5c7e84780ecd9f746fcc0762"),
+      Button("🤞Manipulateur", payload="/_assertivite___assertmanip_5c7e84780ecd9f746fcc0763"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

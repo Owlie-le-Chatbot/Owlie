@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff207
+start:
+  say Typing(2700)
+  say Question(
+    "Tu sais moi j'aime faire de mon mieux pour t'être agréable 😊 
+Que puis-je faire pour toi ?
+
+(fais défiler les boutons ↔️)",
+    buttons=[
+      Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+    ],
+    quick_replies=[
+      Button("🚨Besoin d'aide", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("🤗M'améliorer", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+      Button("🌈Me divertir", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🤗Psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🚀Activités", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+      Button("❔Activité au hasard ", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("😕Je ne sais pas", payload="/_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"),
+      Button("🕗Se voir + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  

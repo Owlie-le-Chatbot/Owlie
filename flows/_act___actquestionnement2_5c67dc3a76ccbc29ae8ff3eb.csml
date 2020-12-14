@@ -1,0 +1,42 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3eb
+start:
+  say Typing(2800)
+  say "Ok, voici ton cheminement : 
+
+1. Ce qui a changé : {{_act1}}"
+  say Typing(2400)
+  say "2. Ce que ce comportement essaie de te dire : {{_act2}}"
+  say Typing(3000)
+  say "3. Ce sur quoi ton corps et ton esprit essaie d'attirer l'attention : {{_act3}}"
+  say Typing(3100)
+  say "4. Ce qui est vraiment important toi : {{_act4}}
+
+Et enfin,
+
+5. La plus petite chose que tu peux faire maintenant pour aller vers ce qui compte pour toi : {{_act5}}"
+  say Typing(3100)
+  say Question(
+    "Est-ce que ce petit bilan fait ensemble te convient ou tu souhaites recommencer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ça me convient"),
+      Button("🔃Recommencer", payload="/_act___actquestionnement_5c67dc3a76ccbc29ae8ff3ea"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3200)
+  say Question(
+    "Souhaites-tu de l'aide pour mettre en oeuvre la 1ère action vers ce qui compte pour toi (pour ne pas la remettre à plus tard) ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !", payload="/_procrastination_igor___menuprocrast_5c67dc3a76ccbc29ae8ff3a6"),
+      Button("Non", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

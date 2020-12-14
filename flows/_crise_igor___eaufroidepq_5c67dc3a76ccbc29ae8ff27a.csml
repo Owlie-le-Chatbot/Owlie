@@ -1,0 +1,24 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff27a
+start:
+  say Typing(2600)
+  say "Quand tu mets ton visage dans l’eau froide… ou que tu mets quelque chose de froid sur tes yeux et tes joues, tout en retenant votre respiration, cela indique à ton cerveau que tu es en plongée sous l’eau."
+  say Typing(2700)
+  say "Cela déclenche un \"réflexe d’immersion\" 💦
+(Cela peut prendre 15-30 secondes pour débuter)."
+  say Typing(3200)
+  say "Ton coeur ralentit, le débit sanguin vers les organes non-essentiels se réduit et est redirigé vers le coeur et le cerveau."
+  say Typing(2900)
+  say "Cette réponse peut en fait t'aider à réguler tes émotions ❤️"
+  say Typing(2000)
+  say "Cela peut être utile en tant que stratégie de tolérance à la détresse quand tu vis une émotion très forte et pénible ou lorsque tu as une puissante impulsion à t'engager dans des comportements dangereux."
+  say Typing(2000)
+  say Question(
+    "(Cette stratégie fonctionne mieux quand tu es assis.e au calme – l’activité et la distraction diminuent son efficacité)",
+    button_type="quick_reply",
+    buttons=[
+      Button("💦Me passer de l'eau", payload="/_crise_igor___eaufroide_5c67dc3a76ccbc29ae8ff279"),
+      Button("🔙Arrêter", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

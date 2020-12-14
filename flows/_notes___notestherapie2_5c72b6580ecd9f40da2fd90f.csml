@@ -1,0 +1,42 @@
+// CHATFUEL BLOCK ID 5c72b6580ecd9f40da2fd90f
+start:
+  say Typing(1800)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Ok, que souhaites-tu que je te rappelle quand tu me le demanderas ? (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _notes2 = event
+  
+  say Typing(2900)
+  say Question(
+    "D'accord, tu souhaites que je te rappelle : 
+{{_notes2}}
+
+C'est bien cela ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Oui !"),
+      Button("🔄Recommencer", payload="/_notes___notestherapie2_5c72b6580ecd9f40da2fd90f"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Ok, tu pourras me le redemander avec le mot clé \"notes2\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok !", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("➡️En ajouter une", payload="/_notes___notestherapie3_5c72b82b0ecd9f40da31436e"),
+    ],
+  )
+  hold
+  

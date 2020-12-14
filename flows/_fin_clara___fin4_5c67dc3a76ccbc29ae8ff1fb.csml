@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1fb
+start:
+  say Typing(3100)
+  say Question(
+    "Ça marche !
+Je serai toujours heureuse de te revoir 🤗
+À ton service !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci 😊"),
+      Button("👋🏻À bientôt !"),
+    ],
+  )
+  hold
+  

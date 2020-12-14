@@ -1,0 +1,130 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff38c
+start:
+  say Typing(2000)
+  say "Tu as choisi la solution :
+- {{_solution1}}"
+  say Typing(2000)
+  say "Il te reste encore à l'appliquer. Ce qui n'est pas toujours facile 😉"
+  say Typing(2000)
+  say Question(
+    "Je te propose donc de la décomposer en plusieurs étapes (5 maximum) qui la rendront plus facile à réaliser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Quelle est la première étape ? Écris-là en 1 phrase 📝"
+  hold
+  
+  remember _etape1 = event
+  
+  say Typing(2000)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Quelle est la deuxième étape ? Écris-là en 1 phrase 📝"
+  hold
+  
+  remember _etape2 = event
+  
+  say Typing(2000)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Quelle est la troisième étape ? Écris-là en 1 phrase 📝"
+  hold
+  
+  remember _etape3 = event
+  
+  say Typing(2000)
+  say Typing(2000)
+  goto form_14_0
+
+
+// form component
+form_14_0:
+  say "Si tu as besoin d'une quatrième étape, inscris-là ici. Sinon, mets un smiley 😉"
+  hold
+  
+  remember _etape4 = event
+  
+  goto form_15_0
+
+
+// form component
+form_15_0:
+  say "Si tu as besoin d'une cinquième étape, inscris-là ici. Sinon, mettez un smiley 😉"
+  hold
+  
+  remember _etape5 = event
+  
+  say Typing(2000)
+  say "Récapitulons les différentes étapes nécessaires à la mise en place de ta solution :
+1. {{_etape1}}
+2. {{_etape2}}
+3. {{_etape3}}
+4. {{_etape4}}
+5. {{_etape5}}"
+  say Typing(2000)
+  say Question(
+    "Cela te convient-il ou souhaites-tu recommencer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ça me va !"),
+      Button("Recommencer", payload="/_resolution_de_problemeit___planif1_5c67dc3a76ccbc29ae8ff38c"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(2000)
+  say Question(
+    "Veux-tu enfin te mettre en action ou choisir une autre solution ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Action ! "),
+      Button("Choisir une autre", payload="/_resolution_de_problemeit___rappel_5c67dc3a76ccbc29ae8ff38b"),
+    ],
+  )
+  hold
+  
+  remember _planif = event
+  goto step_23
+
+
+step_23:
+  say Typing(2000)
+  say Question(
+    "Allez ! Courage ! Je crois en toi ! 
+Solution : {{_solution1}}
+1. {{_etape1}}
+2. {{_etape2}}
+3. {{_etape3}}
+4. {{_etape4}}
+5. {{_etape5}}",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci ", payload="/_fin_clara___randomfin_5c67dc3a76ccbc29ae8ff201"),
+      Button("Voir autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

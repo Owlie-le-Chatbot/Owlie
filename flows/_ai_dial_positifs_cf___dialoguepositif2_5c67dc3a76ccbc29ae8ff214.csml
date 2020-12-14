@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff214
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Quelle est l'élément de ta journée, aujourd'hui, dont tu es reconnaissant.e 💛 ?"
+  hold
+  
+  remember _reconnaissant = event
+  
+  say Typing(2600)
+  say "Je vois !"
+  // adding conditional redirect to flow
+  goto flow _choix_clara___choix1_5c67dc3a76ccbc29ae8ff263

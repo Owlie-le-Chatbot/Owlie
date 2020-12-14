@@ -1,0 +1,8 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff33f
+start:
+  say Typing(2000)
+  say "Commence par les faits qui vont dans le sens de la pensée douloureuse. 
+
+C'est la partie la plus facile 😊!"
+  // adding conditional redirect to flow
+  goto flow _examen_de_levidence_it___pour1_5c67dc3a76ccbc29ae8ff340

@@ -1,0 +1,79 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0794
+start:
+  say Typing(5000)
+  say "Voici l'exemple d'un compliment manipulateur ⛈formulé par un.e collègue de travail."
+  say Typing(5000)
+  say Question(
+    "Compliment ⛈: \"J'aime beaucoup ta nouvelle coupe de cheveux. Pourrais-tu accueillir les client.e.s à ma place cet après-midi? J'ai un impératif.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Donne la réponse !"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(8000)
+  say Question(
+    "Réponse : \"Merci pour le compliment. Pour répondre à ta demande, ça m'ennuie pour ton impératif, mais je ne pourrai pas m'occuper des clients cet après-midi.\". (remerciement, puis refus)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre compliment", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(7000)
+  say Question(
+    "Compliment (2) ⛈: \"Bon d'accord. Mais je trouve que ta nouvelle coupe te va super bien! C'est dommage que les client.e.s n'en profitent pas plus souvent.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je réponds quoi ?"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(8000)
+  say Question(
+    "Réponse : \"Encore merci pour le compliment. En ce qui concerne ta critique vis-à-vis de moi et des client.e.s, pourrais-tu préciser de quoi veux tu parler?\" (remerciement, puis demande de précision)",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule !"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Autre exemple!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/93da0171-2c26-4cca-a43a-a37fda8fbd1f.jpeg",
+    quick_replies=[
+      Button("❓Autre compliment !", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Autre exemple !", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir ?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

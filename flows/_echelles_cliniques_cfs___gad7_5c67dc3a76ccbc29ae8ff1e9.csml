@@ -1,0 +1,205 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1e9
+start:
+  say Typing(2700)
+  say Question(
+    "Je te propose un petit questionnaire pour évaluer ton niveau d'anxiété, ok ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+      Button("🚫Pas ok", payload="/_echelles_cliniques_cfs___endgad_5c67dc3a76ccbc29ae8ff1ec"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2400)
+  say Question(
+    "Je vais te poser 7 questions.
+
+À chaque fois, réponds en te demandant \"au cours des 2 dernières semaines, à quelle fréquence ai-je été gêné.e par cela ?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(2500)
+  say Question(
+    "Un sentiment de nervosité, d’anxiété ou de tension.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _gad_1 = event
+  goto step_8
+
+
+step_8:
+  say Typing(1900)
+  say Question(
+    "Une incapacité à arrêter de s’inquiéter ou à contrôler ses inquiétudes.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _gad_2 = event
+  goto step_11
+
+
+step_11:
+  say Typing(2300)
+  say Question(
+    "Une inquiétude excessive à propos de différentes choses.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _gad_3 = event
+  goto step_14
+
+
+step_14:
+  say Typing(2400)
+  say Question(
+    "Des difficultés à se détendre.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _gad_4 = event
+  goto step_17
+
+
+step_17:
+  say Typing(2200)
+  say Question(
+    "Une agitation telle qu’il est difficile de tenir en place. 
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _gad_5 = event
+  goto step_20
+
+
+step_20:
+  say Typing(2300)
+  say Question(
+    "Une tendance à être facilement contrarié.e ou irritable.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _gad_6 = event
+  goto step_23
+
+
+step_23:
+  say Typing(2400)
+  say Question(
+    "Un sentiment de peur comme si quelque chose de terrible risquait de se
+produire.
+
+0 = Jamais
+1 = Plusieurs jours
+2 = Plus de la moitié du temps
+3 = Presque tous les jours",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _gad_7 = event
+  goto step_26
+
+
+step_26:
+  remember _sumgad =  _gad_1  + _gad_2 +  _gad_3  +  _gad_4  +  _gad_5  + _gad_6  + _gad_7 
+  say Typing(3300)
+  // adding conditional redirect to flow
+  if (_sumgad == "0" || _sumgad == "1" || _sumgad == "2" || _sumgad == "3" || _sumgad == "4" || _sumgad == "5" || _sumgad == "6") {
+    goto flow _echelles_cliniques_cfs___gadabsanx_5c67dc3a76ccbc29ae8ff1ea
+  }
+  // adding conditional redirect to flow
+  if (_sumgad == "7" || _sumgad == "8" || _sumgad == "9" || _sumgad == "10" || _sumgad == "11" || _sumgad == "12" || _sumgad == "13" || _sumgad == "14" || _sumgad == "15" || _sumgad == "16" || _sumgad == "17" || _sumgad == "18" || _sumgad == "19" || _sumgad == "20" || _sumgad == "21") {
+    goto flow _echelles_cliniques_cfs___gadanxpresente_5c67dc3a76ccbc29ae8ff1eb
+  }

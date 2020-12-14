@@ -1,0 +1,48 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3b0
+start:
+  say Typing(2000)
+  say "Il existe parfois des sources de distraction dans l'environnement qui peuvent détourner ton attention de la tâche que tu souhaites réaliser."
+  say Typing(2000)
+  say "Quelques exemples : des alertes sur un téléphone, une télévision allumée, des activités \"joker\" ou d'autres non achevées..."
+  say Typing(2000)
+  say "Certains signaux peuvent au contraire rediriger ton attention dans la bonne direction ou te rappeler à la nécessité d'exécuter ta tâche."
+  say Typing(2000)
+  say "Quelques exemples : un post-it, une alerte spécifique sur le téléphone, la mise en évidence d'un objet en rapport avec la tâche à effectuer..."
+  say Typing(2000)
+  say Question(
+    "Pourrais-tu mieux contrôler ton environnement pour mener à bien {{_procra}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_procrastination_igor___segment_5c67dc3a76ccbc29ae8ff3b1"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Quelle source de distraction pourrais-tu mieux contrôler ? Écris-le moi en une phrase 📝 "
+  hold
+  
+  remember _distractionprocra = event
+  
+  say Typing(2000)
+  goto form_13_0
+
+
+// form component
+form_13_0:
+  say "Quel signal pourrais-tu mettre en place ? Écris-le moi en une phrase 📝 "
+  hold
+  
+  remember _signalprocra = event
+  
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___segment_5c67dc3a76ccbc29ae8ff3b1

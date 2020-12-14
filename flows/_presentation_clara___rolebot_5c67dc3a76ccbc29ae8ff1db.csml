@@ -1,0 +1,50 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1db
+start:
+  say Typing(2900)
+  say Question(
+    "Mon rôle est d'être un soutien pour toi au quotidien. 
+Je serai toujours heureuse d'échanger avec toi et d'avoir de tes nouvelles.
+
+Si tu es déjà en thérapie, je peux t'aider entre tes séances pour accélérer le processus !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2600)
+  say Question(
+    "J'ai été mise au point par une équipe de professionnel.le.s de santé (psychiatre, psychologue), et par un pair aidant en santé mentale, qui savent tous les trois combien il est important de cultiver un mental positif... et d'être soutenu.e au quotidien !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3200)
+  say Question(
+    "Je me base sur les outils utilisés en thérapie, dont l'efficacité a été reconnue médicalement : la TCC (thérapie comportementale et cognitive), mais aussi d'autres outils tels que la pleine conscience, la psychologie positive, humaniste...
+
+Que souhaites-tu faire maintenant ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("📉Évaluer mon humeur", payload="/_echelles_cliniques_cfs___phq9_5c67dc3a76ccbc29ae8ff1e2"),
+      Button("📉Évaluer l'anxiété", payload="/_echelles_cliniques_cfs___gad7_5c67dc3a76ccbc29ae8ff1e9"),
+      Button("En savoir + sur toi!", payload="/_presentation_clara___rolebot2_5c67dc3a76ccbc29ae8ff1dc"),
+      Button("🔏Confidentialité", payload="/_presentation_clara___confidentialite_5c67dc8c76ccbc29ae90705d"),
+    ],
+  )
+  hold
+  

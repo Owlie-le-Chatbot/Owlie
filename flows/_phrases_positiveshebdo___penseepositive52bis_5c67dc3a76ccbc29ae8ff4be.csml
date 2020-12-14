@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4be
+start:
+  say Typing(4000)
+  say Question(
+    "\"La chance ce n'est pas ce qui vous arrive, mais ce que vous allez faire avec ce qui va vous arriver\".
+
+Richard Wiseman",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌟Donner 1 citation", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

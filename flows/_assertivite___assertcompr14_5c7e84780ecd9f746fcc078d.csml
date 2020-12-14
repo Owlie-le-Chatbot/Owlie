@@ -1,0 +1,135 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc078d
+start:
+  say Typing(6000)
+  say "Un compliment est considéré comme manipulateur ⛈lorsqu'il est associé à une demande ou à un message plus négatif comme une critique."
+  say Typing(5000)
+  say "Ex. \"Je suis sûr que vous allez à nouveau m'accorder cette avance, vous qui êtes si soucieux du bien-être de vos employé.es\"."
+  say Typing(4000)
+  say Question(
+    "Ex. \"Je suis impressionné.e par votre intelligence. Il est regrettable que vous ne l'utilisiez pas davantage pour le bien de vos collaborateurices\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(4000)
+  say Question(
+    "Après avoir appliqué les deux premières règles pour montrer que tu as reçu compliment,",
+    buttons=[
+      Button("3 premières règles?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+    ],
+  )
+  
+  say Typing(4000)
+  say "Fais l'effort de répondre de façon distincte aux deux messages."
+  say Typing(3000)
+  say Question(
+    "Règle 3. Répondre au compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Oui ?"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(3000)
+  say "Si le compliment est faux, nie et rétablis la vérité."
+  say Typing(3000)
+  say Question(
+    "Si le compliment est vrai ou vague, remercie la personne!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ça marche !"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3000)
+  say Question(
+    "Règle 4. Répondre au message associé.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Hein ?"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(4000)
+  say Question(
+    "Si tu souhaites refuser ce qui t'es demandé, fais-le selon le module (refus) consacré.",
+    buttons=[
+      Button("Refuser", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+    ],
+  )
+  
+  say Typing(4000)
+  say Question(
+    "S'il s'agit d'une critique, recois-la selon le module (recevoir une critique) correspondant.",
+    buttons=[
+      Button("Recevoir critique", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+    ],
+    quick_replies=[
+      Button("Ca marche... et...?"),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(5000)
+  say "Si ton interlocuterice insiste trop, tu peux aussi essayer de lae décourager en utilisant :"
+  say Typing(3000)
+  say "Règle 5. Le brouillard."
+  say Typing(3000)
+  say "Ex. \"C'est possible\", \"Tu as peut-être raison\" etc."
+  say Typing(4000)
+  say Question(
+    "As-tu envie d'illustrer cela avec un exemple ou de passer à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcompr24_5c7e84780ecd9f746fcc0794"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule !!!"),
+      Button("🔍Autres exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_35
+
+
+step_35:
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5d712d9f-7198-4039-ac2b-e81e376fe764.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

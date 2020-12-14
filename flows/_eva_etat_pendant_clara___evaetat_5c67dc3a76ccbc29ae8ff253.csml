@@ -1,0 +1,38 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff253
+start:
+  say Typing(2400)
+  say Question(
+    "Sur l'échelle du bonheur, tu es où là, maintenant ?
+
+(0 = ça ne va pas du tout 😩
+10 = au top 😃!)",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _etat = event
+  goto step_2
+
+
+step_2:
+  say Typing(1700)
+  // adding conditional redirect to flow
+  if (_etat == "0" || _etat == "1" || _etat == "2" || _etat == "3" || _etat == "4") {
+    goto flow _ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c
+  }
+  say "Je suis heureuse pour toi 😊!"
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

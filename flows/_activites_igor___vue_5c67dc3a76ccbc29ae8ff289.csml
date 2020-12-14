@@ -1,0 +1,48 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff289
+start:
+  say Typing(2000)
+  say "Je te suggère de contempler quelque chose d'apaisant ou de réconfortant"
+  say Typing(2000)
+  say "Il peut s'agir d'un paysage, d'une oeuvre d'art, des étoiles ou d'un endroit joli que tu connais"
+  say Typing(2000)
+  say "Si tu ne peux pas bouger ou que tu n'as pas d'idées, voici quelques propositions :"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Toiles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0bbaf094-c386-4123-8bb5-e0b24376b8da.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___toiles_5c67dc3a76ccbc29ae8ff28c"),
+        ],
+      ),
+      Card(
+        title="Paysages",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d93c6a33-3c8d-4f5c-8db4-179b05a76da8.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___paysages_5c67dc3a76ccbc29ae8ff28a"),
+        ],
+      ),
+      Card(
+        title="Étoiles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8eb42c3c-4a92-4947-a244-f527e78a0bb6.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___etoiles_5c67dc3a76ccbc29ae8ff28b"),
+        ],
+      ),
+      Card(
+        title="Vidéos",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2384fc8d-441c-4191-a66f-351dcea19dea.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_poser_igor___listvid_5c67dc3a76ccbc29ae8ff2a6"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+      Button("🚀Autres activités", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

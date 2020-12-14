@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c3
+start:
+  say Typing(2100)
+  say Question(
+    "Voici quelques petits exercices efficaces dans ce genre de situation :",
+    buttons=[
+      Button("Quelques mouvements", payload="/_psychologie_clara___sport_5c67dc3a76ccbc29ae8ff3c6"),
+      Button("Stretch détente", payload="/_psychologie_clara___stretch_5c67dc3a76ccbc29ae8ff3c5"),
+      Url("https://www.youtube.com/watch?v=dGJkzyKHKUE", text="Cohérence cardiaque"),
+    ],
+    quick_replies=[
+      Button("💨Exos de respiratio", payload="/_psychologie_clara___exos_respiration_5c67dc3a76ccbc29ae8ff3c9"),
+      Button("🚨Besoin d'aide", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+      Button("🏖Activité agréable", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("😢Parler", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+    ],
+  )
+  hold
+  

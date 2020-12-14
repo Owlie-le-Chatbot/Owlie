@@ -1,0 +1,172 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2b7
+start:
+  say Typing(3000)
+  say Question(
+    "Regarde autour de toi et choisis un premier objet, n'importe lequel.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔Ok, j'en ai un"),
+      Button("🔙Arrêter", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  goto form_4_0
+
+
+// form component
+form_4_0:
+  say "Quel est le nom de cet objet ?"
+  hold
+  
+  remember _objet_1 = event
+  
+  goto form_4_1
+
+
+// form component
+form_4_1:
+  say "Quelle est sa forme ?"
+  hold
+  
+  remember _forme_1 = event
+  
+  goto form_4_2
+
+
+// form component
+form_4_2:
+  say "De quelle(s) couleur(s) est cet objet ?"
+  hold
+  
+  remember _couleur_1 = event
+  
+  goto form_4_3
+
+
+// form component
+form_4_3:
+  say "Comment pourrais-tu le décrire davantage ?"
+  hold
+  
+  remember _objet_1 = event
+  
+  say Typing(3000)
+  say Question(
+    "Regardes autour de toi et choisis un deuxième objet, n'importe lequel.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔Ok, j'en ai un"),
+      Button("🔙Arrêter", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(2000)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Quel est le nom de cet objet ?"
+  hold
+  
+  remember _objet_2 = event
+  
+  goto form_9_1
+
+
+// form component
+form_9_1:
+  say "Quelle est sa forme ?"
+  hold
+  
+  remember _forme_2 = event
+  
+  goto form_9_2
+
+
+// form component
+form_9_2:
+  say "De quelle(s) couleur(s) est cet objet ?"
+  hold
+  
+  remember _couleur_2 = event
+  
+  goto form_9_3
+
+
+// form component
+form_9_3:
+  say "Comment pourrais-tu le décrire davantage ?"
+  hold
+  
+  remember _objet_2 = event
+  
+  say Typing(3000)
+  say Question(
+    "Regarde autour de toi et choisis un troisième objet, n'importe lequel.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔Ok, j'en ai un"),
+      Button("🔙Arrêter", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2000)
+  goto form_14_0
+
+
+// form component
+form_14_0:
+  say "Quel est le nom de cet objet ?"
+  hold
+  
+  remember _objet_3 = event
+  
+  goto form_14_1
+
+
+// form component
+form_14_1:
+  say "Quelle est sa forme?"
+  hold
+  
+  remember _forme_3 = event
+  
+  goto form_14_2
+
+
+// form component
+form_14_2:
+  say "De quelle(s) couleur(s) est cet objet ?"
+  hold
+  
+  remember _couleur_3 = event
+  
+  goto form_14_3
+
+
+// form component
+form_14_3:
+  say "Comment pourrais-tu le décrire davantage ?"
+  hold
+  
+  remember _objet_3 = event
+  
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff486
+start:
+  say Typing(2500)
+  say Question(
+    "Voici la pensée du jour 🌟😊
+
+\"Faites que le rêve dévore votre vie afin que la vie ne dévore pas votre rêve.\"
+
+Antoine de St Exupery",
+    buttons=[
+      Button("Donner 1 citation 🌟", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+    ],
+    quick_replies=[
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

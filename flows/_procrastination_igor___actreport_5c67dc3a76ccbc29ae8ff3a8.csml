@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3a8
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Commence par écrire en une phrase la chose que tu remets à plus tard mais que tu aimerais faire 📝"
+  hold
+  
+  remember _procra = event
+  
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___bonnesresol_5c67dc3a76ccbc29ae8ff3a9

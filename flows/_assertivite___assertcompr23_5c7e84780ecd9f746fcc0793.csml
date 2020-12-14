@@ -1,0 +1,108 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0793
+start:
+  say Typing(4000)
+  say "Voici l'exemple d'un compliment vague ☁️formulé par un.e collègue de travail."
+  say Typing(3000)
+  say Question(
+    "Compliment ☁️: \"Tu es très élégant.e aujourd'hui!\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Réponse : \"Merci. Qu'entends-tu exactement par élégant.e?\". (demande de précision)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre compliment !", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "Compliment (2) ☁️: \"Tout est élégant chez toi. À commencer par tes cheveux.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say Question(
+    "Réponse : \"Merci. Tu veux me dire que tu apprécies ma nouvelle coupe de cheveux?\". (reformulation)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre compliment", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(7000)
+  say Question(
+    "Compliment (3) ☁️: \"Oui j'aime beaucoup! Et tout le reste aussi. Tu as fière allure et tu as l'air très en forme. Ça tombe bien pour la réunion de cet après-midi.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(9000)
+  say Question(
+    "Réponse : \"Encore merci. Ça me fait plaisir que tu apprécies ma nouvelle coupe de cheveux. Je l'aime également. Pour mon allure, tu as probablement raison (brouillard). Du coup, comment te sens-tu par rapport à ça et cette réunion? (question ouverte sur les sentiments)\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule !"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Autre exemple !", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0e7a0528-3455-4edd-ac7e-63baf06f4369.jpeg",
+    quick_replies=[
+      Button("❓Autre compliment", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Autre exemples?", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

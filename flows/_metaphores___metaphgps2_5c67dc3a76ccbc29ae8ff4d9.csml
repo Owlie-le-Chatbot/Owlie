@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4d9
+start:
+  say Typing(4000)
+  say "Tu laisses donc le GPS te guider dans une direction qui n'est pas bonne pour toi."
+  say Typing(4000)
+  say "Il t'éloigne de plus en plus de ton objectif et te fait même parfois tourner en rond."
+  say Typing(3000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🚗Obéir au GPS", payload="/_metaphores___metaphgps2_5c67dc3a76ccbc29ae8ff4d9"),
+      Button("🚘Désobéir au GPS", payload="/_metaphores___metaphgps3_5c67dc3a76ccbc29ae8ff4da"),
+    ],
+  )
+  hold
+  

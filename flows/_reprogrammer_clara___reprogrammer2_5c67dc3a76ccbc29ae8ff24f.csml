@@ -1,0 +1,28 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff24f
+start:
+  say Typing(3000)
+  say Question(
+    "Quand souhaites-tu que je reviennes vers toi 😊?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Dans 10 minutes"),
+      Button("Dans 30 minutes"),
+      Button("Dans quelques heures"),
+      Button("Demain"),
+      Button("Dans quelques jours"),
+      Button("Je m'en charge moi !", payload="/_fin_clara___randomfin_5c67dc3a76ccbc29ae8ff201"),
+    ],
+  )
+  hold
+  
+  remember _prochainerelance = event
+  goto step_2
+
+
+step_2:
+  say Typing(3100)
+  say "Ça marche ! 👌🏻
+
+À ton service 🤗!"

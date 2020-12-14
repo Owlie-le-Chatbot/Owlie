@@ -1,0 +1,152 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff298
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Along Comes Mary",
+        subtitle="The Association",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d78c9a62-698f-4f01-9ade-5db80d895895.jpeg",
+        buttons=[
+          Url("https://youtu.be/6m0jVnJMU9E", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="A Spoonful of Bromide Helps the Pulse Rate Go Down",
+        subtitle="Atomic Rooster",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8d54d00d-a538-4933-95c3-5a7029954460.jpeg",
+        buttons=[
+          Url("https://youtu.be/EWAoALT6AT0", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Unfinished Business",
+        subtitle="The Blackbyrds",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/51525e99-f58c-4afb-9e51-7ce2a715ead6.jpeg",
+        buttons=[
+          Url("https://youtu.be/LeuCSltAkMY", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Dynamite",
+        subtitle="Brenda Lee",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/21a27da1-2370-4289-9df6-a7acc19c3b84.jpeg",
+        buttons=[
+          Url("https://youtu.be/M1T5oKqwABU", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Hoedown",
+        subtitle="Caravan",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8729cbda-7c62-4f1d-99cb-a2234df11c27.jpeg",
+        buttons=[
+          Url("https://youtu.be/Zyzv_9UZ9lk", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Burning",
+        subtitle="Warhorse",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a2bb806b-923b-46db-9992-5c4e45efdf6a.jpeg",
+        buttons=[
+          Url("https://youtu.be/vZAZ6fnX9E8", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Hole in Your Soul",
+        subtitle="ABBA",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8ff53078-7b23-481c-82b7-f4609607317d.jpeg",
+        buttons=[
+          Url("https://youtu.be/geooJv-Usus", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Got to Love Somebody",
+        subtitle="Sister Sledge",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/eaadae8c-39f2-4b19-a21f-af224785c00b.jpeg",
+        buttons=[
+          Url("https://youtu.be/Go1Xk2JOsOk", text="Écouter"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Gonna Fly Now",
+        subtitle="Bill Conti",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f9cc8bda-37d0-4969-a187-c22f7fdab066.jpeg",
+        buttons=[
+          Url("https://youtu.be/ioE_O7Lm0I4", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="He's a Pirate",
+        subtitle="Klaus Badelt & Hans Zimmer",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f3ccb88e-01d2-4963-a166-826cea57a35d.jpeg",
+        buttons=[
+          Url("https://youtu.be/wRfSeZSc3zc", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="CHiPs",
+        subtitle="John Parker",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a312ad2a-f007-459f-b7b8-756258c3f516.jpeg",
+        buttons=[
+          Url("https://youtu.be/QRGZofc1ywI", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="I'm Still Standing",
+        subtitle="Elton John",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bc01d76a-236f-48b0-90b9-4a4708c24f8b.jpeg",
+        buttons=[
+          Url("https://youtu.be/Ye9hGotPPVk", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Don't Stop Me Now",
+        subtitle="Queen",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b6e13ec2-c42a-400e-9e50-9efaf6c62e96.jpeg",
+        buttons=[
+          Url("https://youtu.be/CczcMarUoVk", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Darlin'",
+        subtitle="The Beach Boys",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d64bb1ce-68e3-4dba-9808-1549f0009c0a.jpeg",
+        buttons=[
+          Url("https://youtu.be/ZoY8pdDFA54", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="Runaway",
+        subtitle="Bon Jovi",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6da7f793-ba65-4d94-9cc7-1d7f58d4eeb9.jpeg",
+        buttons=[
+          Url("https://youtu.be/kb2DgAF3egQ", text="Écouter"),
+        ],
+      ),
+      Card(
+        title="The Force Theme",
+        subtitle="Meco",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ab6491c4-51d0-4bb2-b97f-b1432e3f32b4.jpeg",
+        buttons=[
+          Url("https://youtu.be/0lxg6I3lFT8", text="Écouter"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+      Button("🚀Autres activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

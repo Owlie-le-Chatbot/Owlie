@@ -1,0 +1,183 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d2
+start:
+  say Typing(2000)
+  say "Tu vas maintenant te rassurer avec bienveillance avec mon aide 🤗"
+  say Typing(2000)
+  say "Cet exercice consiste tout simplement à te dire des choses gentilles et rassurantes à haute voix."
+  say Typing(2000)
+  say "Imagine que tu t'adresses à un petit enfant, ou à toi quand tu étais enfant."
+  say Typing(2000)
+  say Question(
+    "Si tu te sens prêt.e, commence maintenant et arrête-toi au bout de 10 phrases.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+      Button("💡Pas d'idées"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2000)
+  say "Je vais t'aider à en trouver 😊"
+  say Typing(2000)
+  say Question(
+    "Répète chaque phrase après moi à haute voix.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(2000)
+  say Question(
+    "Ça va aller {{_name}}.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(2000)
+  say Question(
+    "Aussi difficile que soit ce moment, tu vas le traverser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(2000)
+  say Question(
+    "Beaucoup de gens ressentiraient la même chose dans cette situation.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(2000)
+  say Question(
+    "Ça fait mal mais ça va passer, car une crise, ça passe toujours.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2000)
+  say Question(
+    "Souviens-toi du dernier moment où tu te sentais bien {{_name}}. 
+Tu vas bientôt retrouver cet état.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(2000)
+  say Question(
+    "Ce qui t'arrive est injuste, mais au fond de toi tu sais que ça va passer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(2000)
+  say Question(
+    "Il suffit de laisser passer l'orage émotionnel.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_34
+
+
+step_34:
+  say Typing(2000)
+  say Question(
+    "Après l'orage, après la pluie, le beau temps.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(2000)
+  say Question(
+    "Courage {{_name}}. 
+Tiens bon ! Ne lâche pas !",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_40
+
+
+step_40:
+  say Typing(2000)
+  say Question(
+    "Souviens toi qu'une crise, ça passe toujours.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_43
+
+
+step_43:
+  // adding conditional redirect to flow
+  goto flow _ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1

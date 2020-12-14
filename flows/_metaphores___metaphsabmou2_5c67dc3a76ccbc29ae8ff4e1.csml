@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e1
+start:
+  say Typing(4000)
+  say "Tu continues à essayer de t'extraire des sables mouvants."
+  say Typing(4000)
+  say "Mais à chaque fois tu tentes de lever une jambe, l’autre s’enfonce davantage."
+  say Typing(3000)
+  say "À ce rythme, ton corps sera bientôt totalement submergé."
+  say Typing(3000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("💪M’extraire", payload="/_metaphores___metaphsabmou2_5c67dc3a76ccbc29ae8ff4e1"),
+      Button("✋M’allonger", payload="/_metaphores___metaphsabmou3_5c67dc3a76ccbc29ae8ff4e2"),
+    ],
+  )
+  hold
+  

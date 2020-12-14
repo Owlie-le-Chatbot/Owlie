@@ -1,0 +1,34 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff25f
+start:
+  say Typing(1800)
+  say "Oh, je vois que cela ne va pas fort..."
+  say Typing(2600)
+  say Question(
+    "Je te suggère vivement d'en faire part tout de suite à un professionnel, plus habilité que moi à t'aider concrètement face à ta détresse.
+
+Voici mes suggestions :",
+    buttons=[
+      Url("tel:+33147072424", text="🆘SOS - Urgences psy"),
+      Url("tel:+33142962626", text="📞 SOS Amitié"),
+      Url("tel:+33145394000", text="😭SOS Suicide"),
+    ],
+  )
+  
+  say Typing(2400)
+  say Question(
+    "Je peux aussi te proposer :
+- le menu d'aide pour les moments de crise
+- mon soutien, via un \"câlin virtuel\"",
+    buttons=[
+      Button("🚨Menu crise", payload="/_crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278"),
+      Button("🐻Câlins", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+      Button("📞Appeler ami(e)", payload="/_sos_clara___appelamie_5c67dc3a76ccbc29ae8ff260"),
+    ],
+    quick_replies=[
+      Button("🔙Retour", payload="/Default"),
+      Button("🚀Autre chose", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+      Button("🕗Se voir + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  

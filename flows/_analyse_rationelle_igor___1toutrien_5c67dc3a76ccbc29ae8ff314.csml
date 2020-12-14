@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff314
+start:
+  say Typing(2000)
+  say "Concentre toi sur ta pensée douloureuse : 
+- {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Es-tu en train de raisonner en \"tout ou rien\"?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_analyse_rationelle_igor___2filtment_5c67dc3a76ccbc29ae8ff315"),
+      Button("Je ne comprends pas"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Bases-tu cette idée sur une opposition entre deux catégories extrêmes :
+
+ex. bien/mal
+ex. ami/ennemi
+ex. succès/échec",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_distorsions_cog_igor___1toutourien_5c67dc3a76ccbc29ae8ff321"),
+      Button("Non", payload="/_analyse_rationelle_igor___2filtment_5c67dc3a76ccbc29ae8ff315"),
+      Button("Je ne sais pas", payload="/_analyse_rationelle_igor___2filtment_5c67dc3a76ccbc29ae8ff315"),
+    ],
+  )
+  hold
+  

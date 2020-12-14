@@ -1,0 +1,161 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c7
+start:
+  say Typing(1500)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e899072b-f657-433a-824d-ad05241d4bae.jpeg")
+  say Typing(2100)
+  say "Je suis de tout coeur avec toi !"
+  say Typing(4000)
+  say Question(
+    "Tu vas peut-être être essouflé.e, c'est normal :-)
+C'est la preuve que cela marche !
+
+Effectue de ton mieux chaque exercice, à ton rythme.
+Il y en a 6.
+Je me charge du décompte des 20 secondes d'exercice :)
+Tant que me voit taper \"...\" c'est que le temps n'est pas écoulé.
+
+Appuie sur \"Ok, chrono\" à chaque fois pour lancer le décompte !
+C'est parti ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est parti !!"),
+      Button("Menu précédent", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(3200)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4411e8e5-4170-4ccf-9431-0c30325595cf.jpeg",
+    quick_replies=[
+      Button("Ok, chrono !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(20000)
+  say "Bravo !!"
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/780ce6de-614d-4ba3-80ed-443d3c2f3f62.jpeg",
+    quick_replies=[
+      Button("Ok, chrono !"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(20000)
+  say "Super {{_name}} !"
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/75aff749-4f19-42ba-aace-c2c21481ed9e.jpeg",
+    quick_replies=[
+      Button("Ok, chrono !"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(20000)
+  say Question(
+    "Excellent !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Suivant !"),
+      Button("Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8c2e0097-833e-4d45-a0d3-83da0c734927.jpeg",
+    quick_replies=[
+      Button("Ok, chrono !"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(20000)
+  say Question(
+    "Tu t'en sors très bien ! 
+Ne lâche rien !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Suivant !"),
+      Button("Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4aa32356-71b3-45b7-bed7-30cd531d6ad3.jpeg",
+    quick_replies=[
+      Button("Ok, chrono !"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(20000)
+  say "Plus qu'un !!"
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b1ac02d4-0a80-4246-ae19-5498e7ad228b.jpeg",
+    quick_replies=[
+      Button("Suivant !"),
+      Button("Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(20000)
+  say "Beau travail {{_name}}! Tu peux être fier.e de toi !"
+  say Typing(1900)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e8045e5a-8e04-4aed-9f18-f99111854b81.jpeg",
+    quick_replies=[
+      Button("Merci !"),
+      Button("En rester là :-)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  
+  goto step_36
+
+
+step_36:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253", "_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"]))
+  if (rand == 0) goto flow _eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253
+  if (rand == 1) goto flow _choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265

@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff472
+start:
+  say Typing(2500)
+  say Question(
+    "Voici la pensée du jour 🌟😊
+
+\"Ce n’est pas le chemin qui est difficile. C’est le difficile qui est le chemin\" 
+Søren Kierkegaard
+
+citation proposée par Emmanuelle, utilisatrice",
+    buttons=[
+      Button("Donner 1 citation 🌟", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+    ],
+    quick_replies=[
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

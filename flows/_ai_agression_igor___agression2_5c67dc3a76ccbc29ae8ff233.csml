@@ -1,0 +1,6 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff233
+start:
+  say Typing(2000)
+  say "J'ai beau être une intelligence artificielle, j'ai quand même du mal à tolérer un tel vocabulaire."
+  // adding conditional redirect to flow
+  goto flow _fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8

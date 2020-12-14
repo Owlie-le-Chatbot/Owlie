@@ -1,0 +1,26 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f6
+start:
+  say Typing(4000)
+  say "Les insultes et les gobelets continuent à pleuvoir sur toi."
+  say Typing(4000)
+  say "Tu faites signe à l'arbitre de touche qui te voit mais ne t'entend pas."
+  say Typing(3000)
+  say "Durant un arrêt de jeu, celui-ci te fait signe d'approcher."
+  say Typing(4000)
+  say "Mais tu préfères rester dans ta surface, concentré.e sur le jeu."
+  say Typing(4000)
+  say "Et tu fais bien car l'équipe adverse reprend le jeu plus vite que prévu."
+  say Typing(4000)
+  say "Et t'oblige à effectuer un arrêt magnifique sur un tir à bout portant."
+  say Typing(6000)
+  say "Les acclamations de tes supporterices se mettent alors à raisonner plus fort que les insultes de ceux de l'équipe adverse."
+  say Typing(4000)
+  say Question(
+    "Et tu finis par remporter ce match!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphfoot4_5c67dc3a76ccbc29ae8ff4f7"),
+    ],
+  )
+  hold
+  

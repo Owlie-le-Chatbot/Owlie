@@ -1,0 +1,12 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ad
+start:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5669f3af-6095-4f1f-bbf1-2c1628765cc4.jpeg",
+    quick_replies=[
+      Button("🌟Donner 1 citation", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

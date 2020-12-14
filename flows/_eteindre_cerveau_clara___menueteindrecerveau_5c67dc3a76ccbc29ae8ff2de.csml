@@ -1,0 +1,99 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2de
+start:
+  say Typing(2900)
+  say "Je comprends, parfois on a juste envie d'appuyer sur 
+🔴\"OFF\" quelques temps pour souffler 😅"
+  say Typing(2600)
+  say "Voici ce que je peux te proposer 
+
+(fais aussi défiler les boutons en bas ↔️)"
+  say Typing(3700)
+  say Carousel(
+    cards=[
+      Card(
+        title="Relaxation",
+        subtitle="J'ai besoin de me détendre",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d6ac33f7-4741-47ab-8dc7-b43901215a51.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1"),
+        ],
+      ),
+      Card(
+        title="Activités apaisantes",
+        subtitle="J'ai besoin d'une activité paisible",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/49ae23ac-1bd0-4334-9e94-a4f9060cca11.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+        ],
+      ),
+      Card(
+        title="Ancrage",
+        subtitle="Je reprends pied dans mon corps et dans ma tête",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/40e1a669-daea-4895-be1f-b7def88ed453.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_igor___introanc_5c67dc3a76ccbc29ae8ff2ae"),
+        ],
+      ),
+      Card(
+        title="Jeux",
+        subtitle="J'ai besoin de me divertir",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a29d70d1-6d76-4b37-a12c-077c3204ca6d.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_activites_igor___jeux_copy_1_5c67dc3a76ccbc29ae8ff292"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Vidéos",
+        subtitle="Je regarde des vidéos sympas",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0703a326-db58-4757-8608-f837edfd5ab2.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___listvid_5c67dc3a76ccbc29ae8ff2a6"),
+          Button("🏖Autres activités", payload="/_activites_agreables_cf___activiteagreable1_5c67dc3a76ccbc29ae8ff2e1"),
+        ],
+      ),
+      Card(
+        title="Musique",
+        subtitle="J'écoute une musique",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/00e7893b-f4bc-4c83-9f31-93155d7eb56c.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___listmusic_5c67dc3a76ccbc29ae8ff2a3"),
+        ],
+      ),
+      Card(
+        title="Sons satisfaisants",
+        subtitle="J'écoute des sons étonnants",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c95ca379-01ce-4c42-9d2b-c98093c99fea.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___listasmr_5c67dc3a76ccbc29ae8ff2a5"),
+        ],
+      ),
+      Card(
+        title="Nature",
+        subtitle="J'écoute des sons de la nature",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/add9cb94-36ee-4dcb-a261-622fe9fe2904.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___listnature_5c67dc3a76ccbc29ae8ff2a4"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❔Au hasard", payload="/_eteindre_cerveau_clara___randomajout_cf5_5c67dc3a76ccbc29ae8ff2df"),
+      Button("🌟Tous les menus", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+      Button("🚀Menu au hasard", payload="/_supermenu___randomsupermenu_5c698fc076ccbc29ae6014ef"),
+      Button("🤗Psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("💛Réconfort", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+      Button("🐻Câlin gratuit", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+      Button("Rire 😂", payload="/_blagues_clara___randomrire_5c67dc3a76ccbc29ae8ff2e9"),
+      Button("💛Audios de thérapie", payload="/_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"),
+    ],
+  )
+  hold
+  

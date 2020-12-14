@@ -1,0 +1,30 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc076c
+start:
+  say Typing(4000)
+  say "Bienvenue dans le module consacré à formuler des critiques constructives."
+  say Typing(4000)
+  say Question(
+    "Exprimer ses sentiments est un droit fondamental, même si ces sentiments sont négatifs.",
+    button_type="quick_reply",
+    buttons=[
+      Button("😎Je sais !", payload="/_assertivite___assertcritf1_5c7e84780ecd9f746fcc076d"),
+      Button("🔍Vraiment?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Veux-tu relire tes droits fondamentaux 📜?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_assertivite___assertdrocrf_5c7e84780ecd9f746fcc075b"),
+      Button("Non", payload="/_assertivite___assertcritf1_5c7e84780ecd9f746fcc076d"),
+    ],
+  )
+  hold
+  

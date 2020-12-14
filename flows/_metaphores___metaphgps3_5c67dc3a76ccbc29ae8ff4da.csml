@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4da
+start:
+  say Typing(5000)
+  say "Plutôt que de suivre aveuglément les instructions du GPS, tu décides de prendre les choses en main."
+  say Typing(4000)
+  say "La voix du GPS est toujours là mais c'est toi qui a les mains sur le volant."
+  say Typing(5000)
+  say "Si tu ne peux rien faire pour éteindre cette voix, tu peux tourner le volant dans la direction qui compte pour toi."
+  say Typing(6000)
+  say Question(
+    "Tu ne trouveras peut-être pas le chemin le plus rapide mais tu finiras par te rapprocher davantage de ce qui te tient vraiment à coeur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphgps4_5c67dc3a76ccbc29ae8ff4db"),
+    ],
+  )
+  hold
+  

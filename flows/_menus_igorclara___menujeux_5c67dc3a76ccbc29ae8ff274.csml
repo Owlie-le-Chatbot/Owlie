@@ -1,0 +1,44 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff274
+start:
+  say Typing(1500)
+  say "Bonne idée 👍🏻 !"
+  say Typing(2900)
+  say Carousel(
+    cards=[
+      Card(
+        title="Les jeux ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fe2c9416-1f22-42a6-b62b-2917393cad7b.jpeg",
+        buttons=[
+          Button("Toutes les activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+        ],
+      ),
+      Card(
+        title="Jeu sur les émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a8131ed4-1f1d-4fb2-87f3-417c50e7a870.jpeg",
+        buttons=[
+          Button("Jeu sur les émotions", payload="/_psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb"),
+        ],
+      ),
+      Card(
+        title="Jeu sur les pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/22e20505-1a4b-42e5-aba7-e8453ba54ae2.jpeg",
+        buttons=[
+          Button("Jeu sur les pensées", payload="/_psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca"),
+        ],
+      ),
+      Card(
+        title="Jeux divertissants",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/572dd4de-1112-48d7-9b97-803245da245a.jpeg",
+        buttons=[
+          Button("Jeux divertissants", payload="/_activites_igor___jeux_copy_1_5c67dc3a76ccbc29ae8ff292"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_default_answers_clara___defaultanswer7_5c67dc3a76ccbc29ae8ff209"),
+      Button("Menu principal", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+    ],
+  )
+  hold
+  

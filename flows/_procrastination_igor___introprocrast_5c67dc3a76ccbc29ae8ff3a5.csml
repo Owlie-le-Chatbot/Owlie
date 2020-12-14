@@ -1,0 +1,14 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3a5
+start:
+  say Typing(2000)
+  say "La procrastination est la tendance à différer, à remettre au lendemain une décision ou l’exécution de quelque chose."
+  say Typing(2000)
+  say "Il existe trois grands types de procrastination :"
+  say Typing(2000)
+  say "① La procrastination académique qui concerne les activités scolaires ou professionnelles"
+  say Typing(2000)
+  say "② La procrastination routinière qui concerne les tâches administratives ou de la vie quotidienne."
+  say Typing(2000)
+  say "③ La procrastination décisionnelle qui concerne les prises de décision plus ou moins importantes."
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___menuprocrast_5c67dc3a76ccbc29ae8ff3a6

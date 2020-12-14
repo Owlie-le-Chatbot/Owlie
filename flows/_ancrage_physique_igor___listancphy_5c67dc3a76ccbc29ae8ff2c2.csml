@@ -1,0 +1,98 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2c2
+start:
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Contact",
+        subtitle="Je sens les contacts de mon corps",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d9867aee-4c68-4ad9-b85c-1afe9358689c.jpeg",
+        buttons=[
+          Button("C’est parti !", payload="/_ancrage_physique_igor___contact_5c67dc3a76ccbc29ae8ff2c5"),
+        ],
+      ),
+      Card(
+        title="Crampon",
+        subtitle="Je me cramponne à ma chaise",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ed033a36-4c9c-46ef-add7-3eeef4d17dec.jpeg",
+        buttons=[
+          Button("C’est parti !", payload="/_ancrage_physique_igor___crampon_5c67dc3a76ccbc29ae8ff2c6"),
+        ],
+      ),
+      Card(
+        title="Étirement",
+        subtitle="J'étire des muscles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/73a27437-9d39-49e6-80d4-df0eb3be98aa.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_physique_igor___etirement_5c67dc3a76ccbc29ae8ff2c4"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Toucher",
+        subtitle="Je manipule un objet",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2697ef13-9090-4684-8891-d4c21e30a52f.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_physique_igor___tactile_5c67dc3a76ccbc29ae8ff2c8"),
+        ],
+      ),
+      Card(
+        title="Talons",
+        subtitle="Je me tiens sur les talons",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/17cd6c9c-a84f-41b9-b0f2-7eb2cdc8c9cd.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_physique_igor___talons_5c67dc3a76ccbc29ae8ff2c9"),
+        ],
+      ),
+      Card(
+        title="Souffle",
+        subtitle="Je sens le contact de l'air que je respire",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/04f134e6-d0c8-43c0-9723-abaa739019d0.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_physique_igor___souffle_5c67dc3a76ccbc29ae8ff2c7"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Marche",
+        subtitle="Je marche lentement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b59a5645-32f2-478f-a795-5da38e5ecf58.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_physique_igor___marche_5c67dc3a76ccbc29ae8ff2ca"),
+        ],
+      ),
+      Card(
+        title="Saut",
+        subtitle="Je sautille sur place",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/45208a12-26d5-48d2-8571-f9f4a86ef7fd.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_physique_igor___saut_5c67dc3a76ccbc29ae8ff2cb"),
+        ],
+      ),
+      Card(
+        title="Eau",
+        subtitle="Je mets les mains sous l'eau",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7ef8b011-3edc-48ad-a408-17b5f8ee95a1.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_physique_igor___eaucopy1_5c67dc3a76ccbc29ae8ff2cc"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❔Au hasard ", payload="/_ancrage_physique_igor___randomancrphycf_5c67dc3a76ccbc29ae8ff2cd"),
+      Button("🔙Sortir", payload="/_ancrage_igor___listanc_5c67dc3a76ccbc29ae8ff2af"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825451
+start:
+  say Typing(4000)
+  say Question(
+    "6. \"Il est évident que ce n’est pas cette attitude là que j’aurais dû adopter.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Analyser la pensée �", payload="/_trauma_igor___traumapculp06r_5deb66171330c00001825452"),
+      Button("Pensée suivante ➡️", payload="/_trauma_igor___traumapculp07_5deb66171330c00001825453"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap !", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

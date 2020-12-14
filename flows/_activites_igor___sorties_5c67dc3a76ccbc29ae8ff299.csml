@@ -1,0 +1,62 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff299
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Promenade",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/117cb8b1-3573-448a-8c06-341893f41e36.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+          Button("Intérêt ?", payload="/_education_therapeutiqcf___hygiene_nature_5c67dc3a76ccbc29ae8ff413"),
+        ],
+      ),
+      Card(
+        title="Cinéma, théâtre",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c401873e-062e-462c-98bd-7b0cd8f28a69.jpeg",
+        buttons=[
+          Url("http://www.allocine.fr/", text="Je fais ça !"),
+        ],
+      ),
+      Card(
+        title="Musée, expo, salon etc.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ba94c116-c6b0-404f-9973-d330ce6d4609.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Concert, spectacle",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e07c8ba4-241a-4656-9dae-66fc9a98166b.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="OnVaSortir!",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a7027a68-8a83-49cb-8923-2d388254fa6c.jpeg",
+        buttons=[
+          Url("https://www.onvasortir.com", text="Je fais ça !"),
+        ],
+      ),
+      Card(
+        title="Meetup",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fa72b167-6e10-418a-9c8e-e5baa1aae5e7.jpeg",
+        buttons=[
+          Url("https://www.meetup.com/fr-FR/", text="Je fais ça !"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+      Button("🏖Activité agréable", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("🚀Autres activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

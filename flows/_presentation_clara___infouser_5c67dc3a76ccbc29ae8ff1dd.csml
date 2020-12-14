@@ -1,0 +1,87 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1dd
+start:
+  say "Ok {{_name}}, pour mieux t'aider, j'aimerais bien te connaître..."
+  say Typing(2000)
+  goto form_2_0
+
+
+// form component
+form_2_0:
+  say "Déjà, comment m'as-tu connue ?"
+  hold
+  
+  remember _comment_mastu_connu = event
+  
+  say Typing(2100)
+  say "Ok..."
+  say Typing(2900)
+  goto form_6_0
+
+
+// form component
+form_6_0:
+  say "Quel âge as-tu ?"
+  hold
+  
+  remember _age_utilisateur = event
+  
+  say Typing(3200)
+  say Question(
+    "Es-tu...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Un homme"),
+      Button("Une femme"),
+      Button("Autre"),
+    ],
+  )
+  hold
+  
+  remember _genre = event
+  goto step_9
+
+
+step_9:
+  say Typing(2400)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Que fais-tu dans la vie ?"
+  hold
+  
+  remember _activite_professionnelle = event
+  
+  say Typing(3400)
+  say "D'accord 😊"
+  say Typing(2900)
+  say "Dernière petite question..."
+  say Typing(4000)
+  goto form_17_0
+
+
+// form component
+form_17_0:
+  say "Qu'est-ce que tu attends de moi ?"
+  hold
+  
+  remember _questce_que_tu_attends_de_moi = event
+  
+  say Typing(2900)
+  say "Ok, c'est bon à savoir !"
+  say Typing(1300)
+  say Question(
+    "Merci pour ta confiance 😊 !
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻Merci, check", payload="/_accueil_check_clara___check1_5c67dc3a76ccbc29ae8ff1ee"),
+      Button("📉Évaluer mon humeur", payload="/_echelles_cliniques_cfs___phq9_5c67dc3a76ccbc29ae8ff1e2"),
+      Button("📉Évaluer l'anxiété", payload="/_echelles_cliniques_cfs___gad7_5c67dc3a76ccbc29ae8ff1e9"),
+    ],
+  )
+  hold
+  
+  remember _anamnese = event

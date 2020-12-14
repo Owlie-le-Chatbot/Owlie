@@ -1,0 +1,83 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff291
+start:
+  say Typing(2000)
+  say "Choisis une catégorie :"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Exercice physique",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/51ef976d-f2b2-4e70-8b96-0d449708dc0a.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___exercice_5c67dc3a76ccbc29ae8ff296"),
+        ],
+      ),
+      Card(
+        title="Tâches ménagères",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/05fdf116-43a0-4ad1-931e-ba9cb6232b1c.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___menage_5c67dc3a76ccbc29ae8ff295"),
+        ],
+      ),
+      Card(
+        title="Jeux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f6747042-f1bc-4921-954e-b28be7f02aa1.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___jeux_copy_1_5c67dc3a76ccbc29ae8ff292"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Sorties",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/84c2d100-b270-452b-a836-c83e794c7de9.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___sorties_5c67dc3a76ccbc29ae8ff299"),
+        ],
+      ),
+      Card(
+        title="Gratitude",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/db27f2ce-60b9-4b5a-92c2-cf467c937812.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___gratitude_5c67dc3a76ccbc29ae8ff29b"),
+        ],
+      ),
+      Card(
+        title="Social",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/280f6703-ecf3-45f9-88e6-91e1ef7452c7.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___social_5c67dc3a76ccbc29ae8ff29a"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Médias",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/df22df51-f747-41ba-97db-6f1c612dde48.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___medias_5c67dc3a76ccbc29ae8ff297"),
+        ],
+      ),
+      Card(
+        title="Activités manuelles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4ee2ae93-6eac-44f3-8e72-fb24835c2f3b.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_activites_igor___manuel_5c67dc3a76ccbc29ae8ff294"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🚀Autre activité", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

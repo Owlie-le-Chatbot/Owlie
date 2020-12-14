@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825447
+start:
+  say Typing(4000)
+  say Question(
+    "1. \"Je savais que l’évènement allait se produire. Il y avait des signes avant-coureurs.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Analyser", payload="/_trauma_igor___traumapculp01r_5deb66171330c00001825448"),
+      Button("Passer", payload="/_trauma_igor___traumapculp02_5deb66171330c00001825449"),
+      Button("Autre pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Faire autre chose", payload="/Default"),
+    ],
+  )
+  hold
+  

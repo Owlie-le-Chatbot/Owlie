@@ -1,0 +1,50 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ec
+start:
+  say Typing(3000)
+  say "Imagine-toi dans une société futuriste."
+  say Typing(4000)
+  say "Tu es en garde à vue pour un délit que tu n'as pas commis."
+  say Typing(4000)
+  say "Dans cette société futuriste, la peine encourue est évaluée en fonction de l'anxiété ressentie."
+  say Typing(4000)
+  say "Un appareil mesure en permanence ton anxiété : le polygraphe."
+  say Typing(5000)
+  say "Chaque fois que ton anxiété monte au dessus d'un certain seuil, ton amende augmente de 10 euros."
+  say Typing(5000)
+  say "L'un des enquêteurs branche l'appareil sur toi et déclare : \"maintenant nous allons voir si vous êtes coupable!\"."
+  say Typing(4000)
+  say Question(
+    "Que va-t-il se passer?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Rien"),
+      Button("L'anxiété va monter"),
+      Button("Je ne sais pas"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(3000)
+  say "Tu ressens un premier pic d'anxiété, puis un deuxième..."
+  say Typing(3000)
+  say "Un troisième, puis un quatrième, puis encore un..."
+  say Typing(3000)
+  say "Le montant \"50 euros\" s'affiche en direct sur l'écran."
+  say Typing(4000)
+  say "Ton amende augmente, encore et encore. Tu en es à 180 euros..."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🧘‍♂️Respiration", payload="/_metaphores___metaphpolyg2_5c67dc3a76ccbc29ae8ff4ed"),
+      Button("🧘‍♀️Relaxation", payload="/_metaphores___metaphpolyg2_5c67dc3a76ccbc29ae8ff4ed"),
+      Button("💭Penser à autre ch.", payload="/_metaphores___metaphpolyg2_5c67dc3a76ccbc29ae8ff4ed"),
+    ],
+  )
+  hold
+  

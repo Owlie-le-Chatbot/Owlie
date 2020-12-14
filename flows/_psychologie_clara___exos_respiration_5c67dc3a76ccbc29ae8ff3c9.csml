@@ -1,0 +1,22 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c9
+start:
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/398fb62b-5a71-4316-b401-d5be8932e05d.jpeg")
+  say Typing(3100)
+  say Question(
+    "Voici deux courts exercices de respiration qui font du bien, on essaie ?
+(testé et approuvé, promis !)
+
+Clique sur \"terminé\" quand tu as fini :-)",
+    buttons=[
+      Url("https://www.youtube.com/watch?v=HKm0yh2ITb4", text="Mieux respirer"),
+      Url("https://www.youtube.com/watch?v=dGJkzyKHKUE", text="Cohérence cardiaque"),
+      Button("Pourquoi ?", payload="/_education_therapeutiqcf___hygiene_respiration_5c67dc3a76ccbc29ae8ff410"),
+    ],
+    quick_replies=[
+      Button("✔ Terminé !", payload="/_eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254"),
+      Button("💛Audios de thérapie", payload="/_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  

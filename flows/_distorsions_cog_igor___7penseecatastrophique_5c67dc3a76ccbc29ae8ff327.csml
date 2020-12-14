@@ -1,0 +1,74 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff327
+start:
+  say Typing(2000)
+  say "Le pire du pire !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/89e7602e-0185-4885-a180-c8804ba438a8.jpeg")
+  say Question(
+    "La pensée catastrophique (dramatisation, amplification ou \"catastrophisme\") consiste à construire un scénario désastreux sur la base d'un ou plusieurs incidents sans gravité.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"Ma fille n’est toujours pas rentrée, elle a dû se faire kidnapper, assassiner, écraser…\""
+  say Typing(4000)
+  say "\"J’ai laissé ma braguette ouverte toute la matinée, iels doivent tou.te.s se moquer de moi, ma réputation est fichue, je n’ai plus qu’à changer de boulot, à déménager, loin…\""
+  say Typing(4000)
+  say Question(
+    "\"Ma femme rigole en lisant le SMS d’un.e collègue, elle me trompe, elle ne m’aime plus, nous allons devoir divorcer et je me retrouverai seul.e, personne ne voudra d’un.e cocu.e comme moi…\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2000)
+  say Question(
+    "Ce mode de pensée est souvent associé à une tendance excessive à l'inquiétude. Si tu veux en savoir plus, c'est ici :",
+    buttons=[
+      Button("L'inquiétude", payload="/_inquietudeb_igor___introinquietb_5c67dc3a76ccbc29ae8ff35c"),
+    ],
+  )
+  
+  say Typing(3000)
+  say "1. Fais l'effort de dérouler le scénario catastrophe jusqu'au bout, avec toutes les étapes intermédiaires. Tu constatera d'autant plus qu'il est peu probable."
+  say Typing(2000)
+  say Question(
+    "2. À chaque étape du scénario, explore les différentes possibilités sans te limiter à la pire d'entre elles.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Question(
+    "Veux-tu continuer l'analyse de votre pensée douloureuse ou commencer les exercices d'assouplissement de pensée?",
+    buttons=[
+      Button("Continuer", payload="/_distorsions_cog_igor___8raisonnementemotif_5c67dc3a76ccbc29ae8ff328"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff34f
+start:
+  say Typing(2000)
+  say Question(
+    "S'inquiéter...
+
+1. n'empêche pas les problèmes de survenir.
+
+2. permet de diminuer le risque d'apparition des problèmes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("1", payload="/_inquietude_igor___qinqu21_5c67dc3a76ccbc29ae8ff350"),
+      Button("2", payload="/_inquietude_igor___qinqu22_5c67dc3a76ccbc29ae8ff351"),
+    ],
+  )
+  hold
+  

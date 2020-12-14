@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5d7cf56d6774190001b4238a
+start:
+  say Typing(4000)
+  say Question(
+    "\"Quand tu as un problème, demandes toi le conseil que tu donnerais à ta meilleure amie ou ton meilleur ami si c'était leur situation. Applique à toi-même ce conseil.\"
+
+Claire M.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌟Donner 1 citation", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

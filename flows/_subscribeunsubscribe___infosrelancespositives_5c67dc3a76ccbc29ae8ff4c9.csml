@@ -1,0 +1,32 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4c9
+start:
+  say Typing(2500)
+  say Question(
+    "Ce sont des petites phrases que je peux t'envoyer pour cultiver un esprit heureux 😊!
+
+Souhaites-tu t'y abonner ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, quotidiens"),
+      Button("Oui, hebdomadaires"),
+      Button("Non, merci !", payload="/Default"),
+    ],
+  )
+  hold
+  
+  remember _abopositif = event
+  goto step_2
+
+
+step_2:
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff4c9 (SUBSCRIBE/UNSUBSCRIBE / Infos-relances-positives)
+
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff4c9 (SUBSCRIBE/UNSUBSCRIBE / Infos-relances-positives)
+
+  say Typing(2500)
+  say "C'est fait 😊!"
+  say Typing(2100)
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

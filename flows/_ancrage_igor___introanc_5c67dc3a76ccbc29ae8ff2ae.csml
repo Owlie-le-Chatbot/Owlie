@@ -1,0 +1,8 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2ae
+start:
+  say Typing(3000)
+  say "L'ancrage consiste à te faire reprendre le contrôle de ton cerveau, de ton corps et de tes émotions."
+  say Typing(2000)
+  say "Tu vas maintenant choisir une catégorie :"
+  // adding conditional redirect to flow
+  goto flow _ancrage_igor___listanc_5c67dc3a76ccbc29ae8ff2af

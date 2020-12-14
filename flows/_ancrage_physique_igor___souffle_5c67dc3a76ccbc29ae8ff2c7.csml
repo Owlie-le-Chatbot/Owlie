@@ -1,0 +1,26 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2c7
+start:
+  say Typing(2000)
+  say "Concentre-toi sur ta respiration 🌬"
+  say Typing(2000)
+  say "Et plus particulièrement, essaye de sentir le contact de l'air qui rentre et sort."
+  say Typing(2000)
+  say "Du nez jusqu'à tes poumons."
+  say Typing(2000)
+  say "Des poumons jusqu'à ton nez."
+  say Typing(2000)
+  say Question(
+    "Compte à haute voix à chaque expiration, et ralentis le rythme. Fais le 10 fois.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  // adding conditional redirect to flow
+  goto flow _ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3

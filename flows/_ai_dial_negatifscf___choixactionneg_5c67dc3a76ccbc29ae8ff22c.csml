@@ -1,0 +1,20 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff22c
+start:
+  say Question(
+    "De quoi aurais-tu besoin pour améliorer la situation ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Comprendre", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🔧Y remédier", payload="/_jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b"),
+      Button("🚨Besoin d'aide", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+      Button("🚀Activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("🌈Changer les idées", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("❔Au hasard ", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("🕗Se voir + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  
+  remember _continuer = event

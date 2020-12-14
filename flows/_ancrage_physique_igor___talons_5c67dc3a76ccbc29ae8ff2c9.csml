@@ -1,0 +1,36 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2c9
+start:
+  say Typing(2000)
+  say Question(
+    "Si tu ne l'es pas déjà, lève-toi s'il te plait 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  say "Tu vas maintenant essayer de t'appuyer uniquement sur tes talons."
+  say Typing(2900)
+  say "Essaye de tenir le plus longtemps possible et de sentir le poids de ton corps s'exercer sur tes talons."
+  say Typing(2000)
+  say Question(
+    "Renouvelle la procédure autant de fois que tu l'estimes nécessaire 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  // adding conditional redirect to flow
+  goto flow _ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3

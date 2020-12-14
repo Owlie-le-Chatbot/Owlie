@@ -1,0 +1,89 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc078e
+start:
+  say Typing(6000)
+  say Question(
+    "Un compliment est considéré comme constructif 🌤lorsqu'il respecte les règles énoncées dans la rubrique correspondante !",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say "L'interlocuteurice le décrit le ou les faits de façon directe et précise."
+  say Typing(3000)
+  say "Il s'agit de fait(s) ou de comportement(s) et non de ta personne dans sa globalité."
+  say Typing(3000)
+  say "Iel exprime un ou des sentiments positifs."
+  say Typing(5000)
+  say Question(
+    "Et iel s'implique personnellement (je) et t'implique également (tu,vous) dans son message.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say "Le compliment constructif n'est ni vague, ni manipulateur par définition."
+  say Typing(6000)
+  say "En revanche, il peut être considéré comme vrai ou faux selon les faits ou comportements dont il est question."
+  say Typing(4000)
+  say Question(
+    "Selon ton appréciation, rends-toi aux rubriques correspondantes.",
+    buttons=[
+      Button("✅Compliment vrai", payload="/_assertivite___assertcompr11_5c7e84780ecd9f746fcc078a"),
+      Button("❎Compliment faux", payload="/_assertivite___assertcompr12_5c7e84780ecd9f746fcc078b"),
+    ],
+    quick_replies=[
+      Button("👍Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(4000)
+  say Question(
+    "Est-ce que tu as envie d'illustrer cela avec un exemple ou plutôt de passer à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcompr25_5c7e84780ecd9f746fcc0795"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule Owlie !"),
+      Button("🔍Autres exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre critique", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("Je n'y arrive pas...", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1b6c493a-35ba-412b-a08f-05e5820ea013.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre compliment", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,60 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff294
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Scoubidous",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a3f3056b-754f-42ac-8231-1d3ab697579c.jpeg",
+        buttons=[
+          Url("http://lartdesscoubidous.com/", text="Ouvrir le site"),
+        ],
+      ),
+      Card(
+        title="Bracelets de fils",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5cd4c439-ac93-46c4-868f-76bf940481b3.jpeg",
+        buttons=[
+          Url("http://friendship-bracelets.net/index.php", text="Ouvrir le site"),
+        ],
+      ),
+      Card(
+        title="Mandalas",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5ccf2ca0-9b2d-41c0-9e3a-dd32bf082ca4.jpeg",
+        buttons=[
+          Url("https://www.mandalas-gratuits.net/", text="Ouvrir le site"),
+        ],
+      ),
+      Card(
+        title="Hand Spinner",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5954d8ba-1e1a-4e48-9fca-a4a28b5718d2.jpeg",
+        buttons=[
+          Url("https://www.mandalas-gratuits.net/", text="Ouvrir le site"),
+        ],
+      ),
+      Card(
+        title="Fidget Cube",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3b8b9d4a-a2bb-499c-bedf-02c477023e57.jpeg",
+        buttons=[
+          Url("https://www.mandalas-gratuits.net/", text="Ouvrir le site"),
+        ],
+      ),
+      Card(
+        title="Casse-tête",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2e5be8bd-80c5-4a4f-8f46-b29ab866907f.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=iqjJi-SR5J0", text="Vidéo"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+      Button("🚀Autres activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,73 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182544a
+start:
+  say Typing(3000)
+  say Question(
+    "Un évènement complexe n'a rarement qu'une seule cause.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍"),
+      Button("Ah ?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(6000)
+  say "Mais on a souvent tendance à surestimer notre implication dans la survenue d'un évènement à partir du moment où cet évènement nous concerne."
+  say Typing(3000)
+  say Question(
+    "Il s'agit d'un biais qualifié d'égocentrique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Et alors ?"),
+      Button("Egocentrique ?"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(9000)
+  say "Alors tu n'es pas égocentrique pour autant ! Je t'explique : Nous mettons parrallèlement de coté les autres personnes (les agresseurs ou ceux qui auraient pu nous protéger) mais aussi les circonstances et le système dans lequel on évoluait au moment de l’évènement.
+
+Tu n'étais pas seul.e dans cette situation, tu ne peux pas être responsable de ce qui s'est passé!"
+  say Typing(4000)
+  say Question(
+    "On a fini l'analyse de cette pensée culpabilisante. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp03_5deb66171330c0000182544b"),
+      Button("Je comprends pas"),
+      Button("Choisir autre pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(7000)
+  say Question(
+    "À partir du moment où tu es inclus.e dans un évènement qui t'a traumatisé.e, ton cerveau te donnera l'impression d'y avoir contribué, même si ce n'est pas le cas.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp03_5deb66171330c0000182544b"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

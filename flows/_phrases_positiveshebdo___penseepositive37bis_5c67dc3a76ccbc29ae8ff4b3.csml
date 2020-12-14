@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4b3
+start:
+  say Typing(4000)
+  say Question(
+    "\"Qu'est-ce que le temps ?
+Si personne ne me le demande, je le sais ; mais si on me le demande et que je veuille l'expliquer, je ne le sais plus\"
+
+Saint Augustin",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌟Donner 1 citation", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,33 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff319
+start:
+  say Typing(2000)
+  say "Concentre-toi sur ta pensée douloureuse : 
+- {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Es-tu en train de prédire l'avenir ou de deviner les pensées de quelqu'un d'autre.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_analyse_rationelle_igor___7penscata_5c67dc3a76ccbc29ae8ff31a"),
+      Button("Je ne comprends pas"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Ton intuition est-elle tellement forte que tu ne ressens pas le besoin de recolter d'autres informations ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_distorsions_cog_igor___6prophetiedivination_5c67dc3a76ccbc29ae8ff326"),
+      Button("Non", payload="/_analyse_rationelle_igor___7penscata_5c67dc3a76ccbc29ae8ff31a"),
+      Button("Je ne sais pas", payload="/_analyse_rationelle_igor___7penscata_5c67dc3a76ccbc29ae8ff31a"),
+    ],
+  )
+  hold
+  

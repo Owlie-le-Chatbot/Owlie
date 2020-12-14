@@ -1,0 +1,22 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f2
+start:
+  say Typing(5000)
+  say "Tu décides de suivre l'itinéraire prévu pour ton bus, malgré les difficultés imposées par tou.te.s ces passager.e.s."
+  say Typing(4000)
+  say "Ces dernier.e.s continuent bien-sûr à hurler, à essayer de te supplier ou de t'intimider."
+  say Typing(4000)
+  say "Mais tu tiens bon, et iels finissent par sortir."
+  say Typing(4000)
+  say "À chaque arrêt, de nouve.aux.lles passager.e.s rentrent également."
+  say Typing(4000)
+  say "Certain.e.s tentent à nouveau de te diriger, d'autres sont plus calmes et respectueuxses."
+  say Typing(5000)
+  say Question(
+    "À la fin de la journée, tu es exténué.e, mais également satisfait.e d'avoir réussi à tenir le cap.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphbus4_5c67dc3a76ccbc29ae8ff4f3"),
+    ],
+  )
+  hold
+  

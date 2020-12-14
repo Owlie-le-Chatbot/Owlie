@@ -1,0 +1,148 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff413
+start:
+  say Typing(2400)
+  say Question(
+    "J'aimerais t'expliquer en quoi sortir dehors peut t'aider à être de meilleure humeur :-)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Plutôt autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("Choisir une activité", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3500)
+  say Question(
+    "Déjà, cela te permet de voir la lumière, ce qui est informe ton cerveau que c'est le jour et lui permet de produire des hormones qui t'aident à synchroniser tes rythmes jour/nuit, veille/sommeil et ainsi, de mieux dormir !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr..."),
+      Button("Propose autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3600)
+  say Question(
+    "Être exposé.e à la lumière te permet également à ton corps de synthétiser de la vitamine D, indispensable à une bonne immunité, au capital osseux et au bon fonctionnement de ton organisme.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continue..."),
+      Button("Choisis autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3300)
+  say Question(
+    "Les chercheu.r.se.s savent maintenant que la lumière a aussi un impact très important sur le moral !
+La dépression saisonnière en automne et hiver en est un bon exemple...",
+    buttons=[
+      Url("http://www.psychiatryadvisor.com/mood-disorders/nature-cognitive-anxiety-depression-mood/article/448018/", text="Article scientifique"),
+    ],
+    quick_replies=[
+      Button("Oui, je connais ça"),
+      Button("Merci pour l'info !"),
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4100)
+  say Question(
+    "Si tu es très affecté.e par la baisse de luminosité pendant les saisons froides, ou que tu travailles à des horaires décalés (la nuit, 3 x 8), je t'invite vivement à te renseigner sur la luminothérapie !
+
+Ses effets dans les troubles de l'humeur, dont la dépression, ont été prouvés plusieurs fois :-)
+
+Parles-en à ton médecin ou un.e professionnel.le de santé mentale.",
+    buttons=[
+      Url("http://www.doctissimo.fr/html/dossiers/depression/8219-luminotherapie-depression-saisonniere.htm", text="Infos luminothérapie"),
+    ],
+    quick_replies=[
+      Button("Ok !"),
+      Button("Continue..."),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(3700)
+  say "Ensuite, sortir te permet de bouger un peu, ce qui est indispensable au maintien d'une bonne hygiène de vie, de ta forme (tonus musculaire, coeur)"
+  say Typing(2300)
+  say Question(
+    "Et puis...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Quoi donc ?"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3800)
+  say Question(
+    "Sortir c'est aussi l'occasion parfois de rencontrer ou d'aller voir des personnes qui nous sont cher.e.s, de ne pas rester isolé.e, ce qui améliore aussi grandement l'humeur... même si tu ne fais que de parler de la pluie et du beau temps avec ton/ta voisin.e !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai"),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(2900)
+  say "Se sentir appartenir à une communauté, c'est important. Nous sommes des êtres sociaux !"
+  say Typing(4000)
+  say "Si tu en as l'occasion, tu peux faire le tour d'un petit parc (ou d'un grand !) ou aller en forêt, l'air de la nature contribue à t'apporter de beaucoup d'oxygène et sentir les odeurs des feuilles, le bruit de tes pas sur les sentiers, observer la nature est source d'apaisement et de plaisir :-)"
+  say Typing(2400)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/585f081e-ab14-42f2-ae0a-f9aee4a58207.jpeg")
+  say Typing(2600)
+  goto form_30_0
+
+
+// form component
+form_30_0:
+  say "C'était quand ta dernière sortie dans la nature ?"
+  hold
+  
+  remember _derniere_sortie_nature = event
+  
+  say Typing(3200)
+  say Question(
+    "Que dirais-tu d'en prévoir une bientôt ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je note ça !", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("Ça va pour le moment", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

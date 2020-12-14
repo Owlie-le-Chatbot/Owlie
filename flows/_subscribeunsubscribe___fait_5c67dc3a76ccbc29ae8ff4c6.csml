@@ -1,0 +1,6 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4c6
+start:
+  say Typing(2800)
+  say "Entendu, c'est fait ✔ !"
+  // adding conditional redirect to flow
+  goto flow Default

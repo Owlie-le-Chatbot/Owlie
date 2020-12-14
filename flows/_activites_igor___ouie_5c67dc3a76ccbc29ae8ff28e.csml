@@ -1,0 +1,48 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff28e
+start:
+  say Typing(2000)
+  say "Je te propose d'écouter quelque chose d'apaisant et de réconfortant 😊"
+  say Typing(3000)
+  say "Il peut s'agir de musique, de sons de la nature, d'ASMR ou d'une séance de relaxation 🧘‍♂️"
+  say Typing(2000)
+  say "Si tu n'as rien sous la main, voici quelques propositions :"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Musique",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f5c8fdb3-c221-416a-b332-0869faf0fb6e.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___listmusic_5c67dc3a76ccbc29ae8ff2a3"),
+        ],
+      ),
+      Card(
+        title="Sons de la nature",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/240ca472-4ee1-447a-870d-6dcb05e718c1.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___listnature_5c67dc3a76ccbc29ae8ff2a4"),
+        ],
+      ),
+      Card(
+        title="Relaxation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/45331e27-122e-4485-8de6-63c3393ea769.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1"),
+        ],
+      ),
+      Card(
+        title="ASMR",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ac9f1414-87a9-4f7d-ad58-7052cf59778d.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_poser_igor___listasmr_5c67dc3a76ccbc29ae8ff2a5"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Activité apaisante", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+      Button("🚀Autre activité", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

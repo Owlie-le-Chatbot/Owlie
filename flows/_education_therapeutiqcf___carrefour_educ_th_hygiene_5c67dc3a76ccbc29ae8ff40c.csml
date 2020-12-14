@@ -1,0 +1,88 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff40c
+start:
+  say Typing(2600)
+  say "Voici ce que je peux te proposer :"
+  say Typing(2100)
+  say Carousel(
+    cards=[
+      Card(
+        title="L'alimentation : bien nourrir son corps",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/eccce7e4-f0f8-4773-add7-1eeb935e9bb7.jpeg",
+        buttons=[
+          Button("L'alimentation", payload="/_education_therapeutiqcf___hygiene_alimentation_5c67dc3a76ccbc29ae8ff411"),
+        ],
+      ),
+      Card(
+        title="Lien entre le sommeil et l'humeur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/50405fde-5393-4002-a672-b7d0b98c295d.jpeg",
+        buttons=[
+          Button("Sommeil", payload="/_education_therapeutiqcf___hygiene_sommeil_5c67dc3a76ccbc29ae8ff416"),
+        ],
+      ),
+      Card(
+        title="Pourquoi faut-il bouger un peu chaque jour ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9de44305-4816-4800-8b4f-129c788ff256.jpeg",
+        buttons=[
+          Button("Importance du sport", payload="/_education_therapeutiqcf___hygiene_sport_5c67dc3a76ccbc29ae8ff412"),
+        ],
+      ),
+      Card(
+        title="Importance des balades dehors",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f309aa01-db25-4abb-b17d-73fa4d0f692a.jpeg",
+        buttons=[
+          Button("La nature", payload="/_education_therapeutiqcf___hygiene_nature_5c67dc3a76ccbc29ae8ff413"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("+ de propositions"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2700)
+  say Carousel(
+    cards=[
+      Card(
+        title="À quoi sert le stress ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/38f9384f-0f28-45ff-996a-5b10d178d3ff.jpeg",
+        buttons=[
+          Button("Le stress", payload="/_education_therapeutiqcf___hygiene_stress_5c67dc3a76ccbc29ae8ff414"),
+        ],
+      ),
+      Card(
+        title="Intérêt de la respiration sur l'humeur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2ce32434-3c37-4a0c-8c30-94970dbd982a.jpeg",
+        buttons=[
+          Button("La respiration", payload="/_education_therapeutiqcf___hygiene_respiration_5c67dc3a76ccbc29ae8ff410"),
+        ],
+      ),
+      Card(
+        title="Gérer le stress",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/374aa6da-1cd0-4487-a410-7982105d5c28.jpeg",
+        buttons=[
+          Button("Gérer le stress", payload="/_psychologie_clara___activites_contre_le_stress_5c67dc3a76ccbc29ae8ff3c3"),
+        ],
+      ),
+      Card(
+        title="Infos maladies mentales et santé",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c173054f-5ed3-4c2e-b466-c242e3fe5e7e.jpeg",
+        buttons=[
+          Button("Infos maladie", payload="/_education_therapeutiqcf___maladiesante_5c67dc3a76ccbc29ae8ff418"),
+          Button("Médicaments", payload="/_education_therapeutiqcf___medicaments_5c67dc3a76ccbc29ae8ff417"),
+          Button("Traitement", payload="/_education_therapeutiqcf___hygiene_traitement_5c67dc3a76ccbc29ae8ff415"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("Menu précédent", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  

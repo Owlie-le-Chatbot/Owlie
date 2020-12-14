@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff265
+start:
+  say Typing(2500)
+  say Question(
+    "On essaie autre chose ?
+
+(😊fais défiler les boutons ↔️)",
+    buttons=[
+      Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+    ],
+    quick_replies=[
+      Button("😊Oui pourquoi pas !", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("🔄Propose, toi !", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("🎓Apprendre un truc.", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("🏖Changer les idées", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

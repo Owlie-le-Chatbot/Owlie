@@ -1,0 +1,157 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff412
+start:
+  say Typing(2000)
+  say Question(
+    "Tu veux savoir en quoi le sport peut t'aider à maintenir une bonne humeur ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("J'aimerais bien oui!"),
+      Button("Plutôt autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3200)
+  say Question(
+    "En fait, c'est assez simple :  l’exercice aérobique (qui augmente l'activité du coeur), 3 fois par semaine, pendant 30-45 minutes peut aider à combattre la dépression légère à
+modérée et plus généralement, des émotions négatives, la fatigue, la tristesse, le stress...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("C'est bon à savoir"),
+      Button("C'est vrai !"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3500)
+  say Question(
+    "Cela te permet de mieux gérer tes émotions et ta forme en maintenant ton coeur, tes muscles en bon état. 
+
+Cela te permet aussi de générer du plaisir par la production d'hormones du plaisir : les endorphines !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui..."),
+      Button("Je savais :-)"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2800)
+  say Question(
+    "Les endorphines ont un effet direct sur ton humeur et leur action se prolonge une fois que tu as terminé ton activité sportive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est bon à savoir"),
+      Button("Continue"),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(3100)
+  say Question(
+    "Cela même être de la marche au quotidien... si possible un peu plus rapide que d'habitude :-)
+
+Marcher 45-50' environ 3 fois par semaine à un effet équivalent à un médicament dans le cas d'une dépression légère !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah oui ?"),
+      Button("Je savais ça :-)"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(2100)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/20dca5c6-6cc3-4682-8c09-9ccd282389bf.jpeg")
+  say Typing(3700)
+  say Question(
+    "Et l'avantage aussi de faire du sport c'est que souvent, tu peux le faire dehors... 
+
+... en tout cas cela te permet de sortir un peu, donc d'être exposé.e à la lumière, ce qui est bon pour booster le moral !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok :-)"),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(2600)
+  say "Tu peux aussi partager la pratique du sport avec des gens, ce qui améliore aussi l'humeur !"
+  say Typing(2300)
+  goto form_23_0
+
+
+// form component
+form_23_0:
+  say "Et toi {{_name}}, de quelle façon bouges-tu au quotidien ?"
+  hold
+  
+  remember _habitudes_sport = event
+  
+  say Typing(2800)
+  goto form_25_0
+
+
+// form component
+form_25_0:
+  say "Quels sont les activités que tu aimes faire ? "
+  hold
+  
+  remember _habitudes_sport = event
+  
+  say Typing(2400)
+  say Question(
+    "Aimerais-tu augmenter ton niveau d'activité ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ça va..."),
+      Button("Oui, mais comment ?", payload="/_psychologie_clara___sport_aide_5c67dc3a76ccbc29ae8ff3de"),
+      Button("Je suis bien ainsi !", payload="/_eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(2300)
+  say Question(
+    "D'accord... qu'est-ce qui te dirait maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Quelques mouvements", payload="/_psychologie_clara___forme_choix_des_exos_5c67dc3a76ccbc29ae8ff3d8"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("En rester là :-)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,10 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1ff
+start:
+  say Typing(2800)
+  say "Ah, je suis désolée {{_name}}, je ne peux pas être utilisée si tu n'es pas en accord avec le fait qu'il s'agit d'un prototype  🙂"
+  say Typing(3200)
+  say "Si tu as besoin d'en savoir plus (ce que je comprends tout à fait !), je t'invite à envoyer un email à l'équipe qui m'a créée à  owlie.le.chatbot@gmail.com.
+
+À bientôt !
+
+Owlie"

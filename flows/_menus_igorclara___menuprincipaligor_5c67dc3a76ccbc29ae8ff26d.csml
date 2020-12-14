@@ -1,0 +1,55 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff26d
+start:
+  say Typing(2900)
+  say "Voici ce que je peux te proposer :
+
+(fais défiler les boutons ↔️ en bas)"
+  say Typing(3500)
+  say Carousel(
+    cards=[
+      Card(
+        title="Je suis en pleine crise",
+        subtitle="Je panique, je vais exploser, je vais faire une connerie, je me déconnecte etc.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/93c65483-d635-4ef8-a71c-e3c6fb7774bc.jpeg",
+        buttons=[
+          Button("Je craque 🚨", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+          Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+        ],
+      ),
+      Card(
+        title="J'ai des mauvaises pensées",
+        subtitle="Je ressasse, je me prends la tête, je ne trouve pas de solutions etc.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cf990fc2-d140-421a-903e-39f9e4bbd6f7.jpeg",
+        buttons=[
+          Button("Je rumine 💭", payload="/_pensee_igor___intropensee_5c67dc3a76ccbc29ae8ff27f"),
+        ],
+      ),
+      Card(
+        title="Je ne sais pas quoi faire",
+        subtitle="J'ai envie de rien, je m'ennuie, je me sens vide, je procrastine etc.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5469fd2f-9b24-4949-a64e-f925fd68546f.jpeg",
+        buttons=[
+          Button("Je bloque ⛔️", payload="/_activites_igor___introaction_5c67dc3a76ccbc29ae8ff287"),
+        ],
+      ),
+      Card(
+        title="J'ai besoin de me poser",
+        subtitle="Relaxation, méditation, musique ou sons de la nature",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5727ac25-7843-4300-b428-034abc6e0629.jpeg",
+        buttons=[
+          Button("Je m'installe 🧘", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❔Au hasard", payload="/_menus_igorclara___randommenuigorajoutcf_5c67dc3a76ccbc29ae8ff26e"),
+      Button("🚨Menu crise", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+      Button("🏖Menu détente", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🚀Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🔑Rappel mots clés", payload="/_menus_igorclara___motscles_5c697f4f76ccbc29ae559fe5"),
+    ],
+  )
+  hold
+  

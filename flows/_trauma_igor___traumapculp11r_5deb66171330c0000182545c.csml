@@ -1,0 +1,71 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182545c
+start:
+  say Typing(3000)
+  say Question(
+    "Désir et excitation sexuelle sont deux phénomènes différents.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pourquoi ?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say "Le désir correspond à l’envie d’accomplir un acte sexuel."
+  say Typing(6000)
+  say Question(
+    "L’excitation sexuelle peut être une conséquence du désir mais peut également survenir sans le moindre désir sexuel, notamment lors des rapports non consentis.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Comment ça ?"),
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(5000)
+  say Question(
+    "Il s’agit alors d’une réaction involontaire (lubrification, érection etc.) à une stimulation corporelle : un réflexe.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp12_5deb66171330c0000182545d"),
+      Button("Pas compris..."),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say "L'excitation sexuelle est un réflexe du corps qui réagit à une stimulation."
+  say Typing(4000)
+  say "Il est impossible de contrôler ses réflexes. Ils ne dépendent pas de la volonté. Ils sont automatiques."
+  say Typing(1600)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp12_5deb66171330c0000182545d"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

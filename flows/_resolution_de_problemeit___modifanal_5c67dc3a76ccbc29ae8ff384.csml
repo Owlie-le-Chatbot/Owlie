@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff384
+start:
+  say Typing(3000)
+  say Question(
+    "Quels avantages et inconvénients souhaites-tu modifier ? 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("Solution 1", payload="/_resolution_de_problemeit___modifanalsol1_5c67dc3a76ccbc29ae8ff385"),
+      Button("Solution 2", payload="/_resolution_de_problemeit___modifanalsol2_5c67dc3a76ccbc29ae8ff386"),
+      Button("Solution 3", payload="/_resolution_de_problemeit___modifanalsol3_5c67dc3a76ccbc29ae8ff387"),
+      Button("Solution 4", payload="/_resolution_de_problemeit___modifanalsol4_5c67dc3a76ccbc29ae8ff388"),
+      Button("Solution 5", payload="/_resolution_de_problemeit___modifanalsol5_5c67dc3a76ccbc29ae8ff389"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,127 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff39b
+start:
+  say Typing(4000)
+  say Question(
+    "Nous ne pouvons pas tout faire nous-mêmes. 
+De temps en temps, nous avons besoin de l'aide des autres pour réparer notre voiture, soigner nos maladies ou construire nos maisons. 
+
+Mais plus nous pouvons agir par nous-mêmes, mieux c'est, dans la mesure de nos possibilités.
+
+Si nous devenons trop dépendant.e.s des autres, nous perdons le contrôle de nos vies, nous permettons aux gens de choisir et de penser à notre place. Il est constructif de coopérer avec les autres mais pas d'en devenir totalement dépendant.e 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Si tu penses avoir systématiquement besoin de l'aide de quelqu'un.e pour t'en sortir, tu vas sûrelement devoir renoncer à beaucoup de choses que tu veux faire dans la vie au profit de choses que les autres voudront que tu fasses. 
+
+Tu craindras peut-être que ces gens ne soient plus là pour t'aider si tu ne fais pas ce qu'iels veulent.
+
+Tu finiras par ne plus être toi-même, mais par devenir leur esclave.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Si tu dépends des autres pour te sentir bien, tu finiras par te sentir mal car tu seras moins apte à prendre soin de toi.
+
+Ce n'est pas \"mal\" d'être dépendant.e des autres. Ce n'est pas \"mal\" non plus de demander de l'aide. Je ne suis pas là pour te dire de ne pas demander d'aide hein!
+
+Chacun.e a ses forces, ses difficultés, ici ce sont des conseils et des réflexions globales :)",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Plus tu laisses les autres faire les choses à ta place, moins compétent.e et confiant.e tu seras pour les faire. 
+
+Moins tu seras compétent.e et confiant.e, plus tu auras besoin des autres. 
+Tu entres dans un cercle vicieux 🔄",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Tu ne peux pas être sûr.e que les gens sur lesquel.le.s tu te reposes seront toujours là. 
+
+Par conséquent, plus tu pourras compter sur toi-même, mieux ce sera !",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4000)
+  say Question(
+    "Tu es la seule personne à savoir ce que tu veux réellement dans la vie 😊 
+
+Si tu te reposes sur les autres pour obtenir ce que tu veux, tu risques d'être déçu.e. 
+
+En revanche, si tu comptes sur toi-même, tu auras plus de chance d'obtenir exactement ce que tu veux !",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(4000)
+  say Question(
+    "Si tu ne réussis pas au début, essaye encore et encore. 
+
+Si tu ne parviens toujours pas à obtenir ce que tu cherches, ce n'est pas catastrophique 😊
+On ne peut pas tout réussir et tu auras au moins essayé !",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

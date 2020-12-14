@@ -1,0 +1,161 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff416
+start:
+  say Typing(2900)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a6f72389-2e33-4702-be54-ee693ef7eab4.jpeg")
+  say Typing(3000)
+  say Question(
+    "Peut-être que je peux t'expliquer comment le sommeil influe sur l'humeur et l'anxiété ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Ça va !", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("Aide directe sommeil", payload="/_psychologie_clara___aide_au_sommeil_5c67dc3a76ccbc29ae8ff3df"),
+      Button("Je suis stressé(e) !", payload="/_psychologie_clara___activites_contre_le_stress_5c67dc3a76ccbc29ae8ff3c3"),
+      Button("En rester là", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3100)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/56347fab-b07d-4798-bdcc-e3d988c11819.jpeg")
+  say Typing(3200)
+  say Question(
+    "Le manque de sommeil crée un stress pour ton organisme. 
+
+Le sommeil ne se récupère pas aussi bien lorsqu’on dort le jour...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai..."),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say Question(
+    "Dormir est un besoin de base. Il est important pour toi de savoir que le cerveau se répare au niveau des neurotransmetteurs (les \"transmetteurs de l'information\" dans le cerveau) lorsqu’on dort.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah bon ?"),
+      Button("Je savais ça !"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(3300)
+  say Question(
+    "S’il y a des problèmes de sommeil, il faut plutôt établir une bonne hygiène de sommeil...
+
+On ne considère pas que la médication (somnifère) est le 1er choix à faire en cas d'insomnie.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, c'est sûr"),
+      Button("Je fais déjà ça..."),
+      Button("Aide-y moi, là !", payload="/_psychologie_clara___aide_au_sommeil_5c67dc3a76ccbc29ae8ff3df"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(3200)
+  say "Par exemple l'inactivité diminue la qualité du sommeil : on se lève fatigué.e le matin ce qui diminue notre envie d'être acti.f.ve pendant la journée..."
+  say Typing(2600)
+  say Question(
+    "On a plutôt envie d'aller se recoucher ce qui nuit encore là à la qualité du sommeil qui n'est plus réparateur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+      Button("Que faire alors ?"),
+      Button("Oui, c'est mon pb !", payload="/_psychologie_clara___aide_au_sommeil_5c67dc3a76ccbc29ae8ff3df"),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(3100)
+  say Question(
+    "On suggère donc d'adopter une routine quotidienne qui comprend des heures de lever et de coucher régulières ainsi que des limitations au niveau des heures de siestes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord"),
+      Button("Dis m'en plus...", payload="/_psychologie_clara___aide_au_sommeil_5c67dc3a76ccbc29ae8ff3df"),
+    ],
+  )
+  hold
+  
+  goto step_23
+
+
+step_23:
+  say Typing(4000)
+  say "Des problèmes de sommeil ne sont pas à prendre à la légère. Un problème de sommeil peut être dû à une inquiétude, des difficultés relationnelles ou liées au travail... ils peuvent alors soit empêcher de dormir soit générer une \"fuite\" dans le sommeil..."
+  say Typing(2300)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/46b44cec-958e-4a45-93b9-76309437485b.jpeg",
+    quick_replies=[
+      Button("C'est à dire ?"),
+      Button("Oui"),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(3600)
+  say "Voici quelques exemples : le ménage n’est pas fait, partout où l’on pose le regard c’est en désordre (balai ou aspirateur pas passé(s), salle de bain, vaisselle, lessives non faites). On ne se sent pas capable de faire tout le ménage, on va se recoucher. 
+
+ou alors on a des échéances de travail mais on préfaire aller faire une sieste et les remettre à plus tard."
+  say Typing(2500)
+  say Question(
+    "Est-ce ton cas ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non, ça va !"),
+      Button("Oui, je crois bien"),
+    ],
+  )
+  hold
+  
+  goto step_33
+
+
+step_33:
+  say Typing(4000)
+  say Question(
+    "Je voulais aussi te dire qu'une fatigue envahissante, des baisses d’énergie sont souvent associées à la dépression. L'abus de siestes, de repos et de sommeil, des réveils précoces récurrents (nuits écourtées) ou des insomnies de l'endormissement peuvent être des signes que ton moral n'est pas au top... 
+
+Je t'inviterai alors à prendre rdv avec ton/ta généraliste ou un.e professionnel.le de la santé mentale pour en parler :-)",
+    buttons=[
+      Button("Ressources médicales", payload="/_education_therapeutiqcf___ressources_medicales_5c67dc3a76ccbc29ae8ff41f"),
+    ],
+    quick_replies=[
+      Button("Ok, je comprends !", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("Changer un habitude", payload="/_education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c"),
+      Button("En rester là :)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

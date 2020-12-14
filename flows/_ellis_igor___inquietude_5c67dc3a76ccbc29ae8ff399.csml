@@ -1,0 +1,118 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff399
+start:
+  say Typing(4000)
+  say Question(
+    "Si tu pouvais éviter ou prévenir les calamités, fais-le. 
+
+Si ce n'est pas possible, te faire un sang d'encre ne t'aidera pas à les régler. 
+
+En réalité, tu seras même moins efficace si tu te tourmentes 😉",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "S'inquiéter des dangers et autres désagréments ne les fera pas disparaître, et pourra même parfois favoriser leur survenue. 
+Par exemple, si tu apprends à conduire et que tu es sans cesse préoccupé.e par le risque d'accident, tu deviendras nerveuxse et conduiras moins bien, ce qui augmentera le risque d'accident.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Les gens qui s'inquiètent de la survenue de quelque chose s'attendent à ce que cette chose survienne plus fréquemment que les gens qui ne se font pas de souci à ce sujet. 
+
+Par exemple, si tu redoutes de croiser une araignée, tu t'attendras à en voir plus souvent que celleux qui ne s'en préoccupent pas, ce qui t'inquiètera d'autant plus. 
+
+Il s'agit d'un cercle vicieux 🔄",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Il est impossible d'éviter certaines choses : la mort par exemple. 
+
+Être effrayé.e par la mort ne te rendra pas immortel.le mais rendra ta vie moins plaisante. 
+Au lieu d'avoir un problème (la mort), tu en auras deux : 
+① la mort et 
+② passer ta vie à en avoir peur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Se faire du souci au sujet d'une chose la fait paraître plus grave qu'elle l'est réellement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4000)
+  say Question(
+    "Ce n'est pas ce qui pourrait aller mal dans ta vie qui te cause du souci, c'est de penser qu'il serait terrible que ça se produise. Ainsi, pour arrêter de t'inquiéter, dis-toi qu'il serait malencontreux que cela survienne, mais que ce ne serait pas la fin du monde pour autant 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(4000)
+  say Question(
+    "Plutôt que d'éviter les choses dont tu as peur (parler en public par exemple), lance-toi, entraine-toi à les affronter. 
+
+Au bout d'un moment, tu constateras qu'il n'y avait pas de raison d'en avoir peur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

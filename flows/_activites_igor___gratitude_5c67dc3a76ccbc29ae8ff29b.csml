@@ -1,0 +1,49 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff29b
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Remercier quelqu'un.e",
+        subtitle="Par écrit, par oral, par une visite etc.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bb306d25-02b6-47c2-9e06-bb63ceaefe66.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Faire un sourire",
+        subtitle="Pendant au moins 15 secondes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/06ad681c-0c13-4a31-9ea2-be6e4156c826.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="3 bonnes choses",
+        subtitle="Noter 3 bonnes choses qui sont arrivées tous les jours",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b5509b78-374d-49b1-bfe2-6cfee3cbdd34.jpeg",
+        buttons=[
+          Url("https://chatfuel.com/bot/3BonnesChoses", text="Je fais ça !"),
+        ],
+      ),
+      Card(
+        title="Je pratique la gratitude",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/aeb571aa-5d5d-48bf-9389-c04caec38f60.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_psychologie_clara___exercice_de_gratitude_5c67dc3a76ccbc29ae8ff3d7"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("🏖Activité agréable", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,137 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc077b
+start:
+  say Typing(4000)
+  say "Voici l'exemple d'une \"critique fausse\" ❎formulée par un.e collègue de travail."
+  say Typing(6000)
+  say Question(
+    "Critique ❎: \"Ça m'ennuie que vous ne m'informiez pas plus tôt de ces réunions. Je vais avoir des difficultés à prendre mes dispositions.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(8000)
+  say Question(
+    "Réponse : \"Je suis également ennuyé.e que vous vous retrouviez dans une telle situation (empathie) mais je vous avais informé il y a plusieurs semaines de cette réunion (rétablir la vérité).\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(5000)
+  say Question(
+    "Critique (2) ❎: \"Je n'ai pas été informé.e du tout. J'ai appris ça seulement aujourd'hui alors qu'elle a lieu demain.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(10000)
+  say Question(
+    "Réponse : \"Encore une fois, ça m'embette de vous savoir en difficulté vis-à-vis de cette réunion (empathie) mais je vous ai informé (disque rayé) ainsi que l'ensemble de l'équipe il y a trois semaine par courrier électronique (donner de l'information).\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "Critique (3) ❎: \"Non je n'ai rien reçu du tout. Vous ne m'avez pas informé\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(9000)
+  say Question(
+    "Réponse : \"Je suis déçu.e. Vous n'avez pas l'air de me croire quand je dis que j'ai envoyé ce courrier électronique il y a trois semaines (expression des sentiments). J'ai même reçu un accusé de réception de votre part (donner de l'information).\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(6000)
+  say Question(
+    "Critique (4) ❎: \"C'est vous qui ne me croyez pas. Mais ce n'est pas étonnant. C'est toujours vous qui avez raison ici...\" (critique vague et blessante)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(9000)
+  say Question(
+    "Réponse : \"Je ne suis pas sûr.e de tout comprendre. Ça m'inquiète (expression des sentiments). Pourriez-vous préciser vos propos? (demande de précision) Auriez vous autre chose à me reprocher? (enquête négative)\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Waouh! Récapitule"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6320c7a5-2beb-4bfd-9a25-3e3d3c278778.jpeg",
+    quick_replies=[
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

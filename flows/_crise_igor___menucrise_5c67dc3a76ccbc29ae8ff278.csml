@@ -1,0 +1,63 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff278
+start:
+  say Typing(3000)
+  say Question(
+    "Voici ce que je peux te proposer : 
+
+(n'hésite pas aussi à faire défiler les boutons en bas ↔️)",
+    buttons=[
+      Button("🤗Réconfort", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+  )
+  
+  say Typing(3600)
+  say Carousel(
+    cards=[
+      Card(
+        title="Respiration",
+        subtitle="Reprendre le contrôle de ma respiration",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b858535d-4996-4b14-ac1e-5acc4b53aa7f.jpeg",
+        buttons=[
+          Button("C'est parti! 🌬️", payload="/_respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9"),
+        ],
+      ),
+      Card(
+        title="Ancrage",
+        subtitle="Reprendre le contrôle de mon cerveau, de mon corps et de mes émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f4f3f427-231d-4be1-9c98-2e7654d81b86.jpeg",
+        buttons=[
+          Button("C'est parti! ⚓", payload="/_ancrage_igor___introanc_5c67dc3a76ccbc29ae8ff2ae"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Eau",
+        subtitle="S'appliquer de l'eau froide sur le visage.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5392509d-1b7f-4e07-bbbe-5c815e696050.jpeg",
+        buttons=[
+          Button("C'est parti ! 💦", payload="/_crise_igor___eaufroide_5c67dc3a76ccbc29ae8ff279"),
+        ],
+      ),
+      Card(
+        title="Conscience sensorielle",
+        subtitle="À la recherche des sens perdus",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7f8b7a37-213d-4e3f-980c-bb5021b48e9c.jpeg",
+        buttons=[
+          Button("C'est parti! 🙌🏻", payload="/_crise_igor___conssens_5c67dc3a76ccbc29ae8ff27c"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("❔Au hasard", payload="/_crise_igor___random1ajoutcf_5c67dc3a76ccbc29ae8ff27d"),
+      Button("🐻Câlin", payload="/_reconfort_clara___randomhug_5c67dc3a76ccbc29ae8ff2f3"),
+    ],
+  )
+  hold
+  

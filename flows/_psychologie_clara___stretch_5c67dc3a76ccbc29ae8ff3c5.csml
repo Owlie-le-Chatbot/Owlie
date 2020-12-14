@@ -1,0 +1,111 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c5
+start:
+  say Typing(2900)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4c51206a-151d-433b-a909-07d7bc78482f.jpeg")
+  say Question(
+    "Ces quelques mouvements devraient t'aider à relâcher les tensions :)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Propose autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_3
+
+
+step_3:
+  say Typing(3100)
+  say Question(
+    "Regarde juste les images, reproduis le mouvement de ton mieux et tiens environ 10-20 secondes chaque étirement en fonction de tes possibilités.
+
+Appuie sur ok à chaque fois quand tu as terminé.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Propose autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2700)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/78c9ac64-2a0a-4451-aae1-dacc6ca96e5f.jpeg",
+    quick_replies=[
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(2900)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d0a3a9aa-8952-4bdf-ae3f-66328fa820a4.jpeg",
+    quick_replies=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/87b64628-def2-4d04-a70b-da83bc1d4b97.jpeg",
+    quick_replies=[
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(3200)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d5d73e94-a55a-4851-9138-79d533ec2bd0.jpeg",
+    quick_replies=[
+      Button("Ok !"),
+      Button("Faire autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dde3f4b7-f85d-40f8-a943-8de2e23fe5bf.jpeg",
+    quick_replies=[
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(2800)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/db4fb92f-60a8-448d-8607-4ea9eee8add4.jpeg",
+    quick_replies=[
+      Button("Terminé !", payload="/_renforcements_clara___randomrenfo_5c67dc3a76ccbc29ae8ff249"),
+    ],
+  )
+  hold
+  

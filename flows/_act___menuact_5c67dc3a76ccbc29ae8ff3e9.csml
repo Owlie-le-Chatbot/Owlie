@@ -1,0 +1,39 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3e9
+start:
+  say Typing(3200)
+  say "Ce module est en construction  😉
+
+Voici les exercices possibles à ce jour :"
+  say Typing(3400)
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Lettre à mon moi futur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/64009ee4-7326-41be-bb07-d49b97d9747f.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_act___lettremoifutur1_5c67dc3a76ccbc29ae8ff3e6"),
+        ],
+      ),
+      Card(
+        title="Réfléchir sur un problème",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/48c7732d-349f-4bd7-a7bc-ee31a800598b.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_act___actquestionnement_5c67dc3a76ccbc29ae8ff3ea"),
+        ],
+      ),
+      Card(
+        title="Lettre du pardon",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/68b05ece-81c0-41be-a799-0ee3355de920.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_act___intro_lettredupardon_5cd302fe8c03d500068c9e58"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

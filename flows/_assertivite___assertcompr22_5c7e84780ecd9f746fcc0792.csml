@@ -1,0 +1,166 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0792
+start:
+  say Typing(4000)
+  say "Voici l'exemple d'un compliment faux ❎formulé par un.e collègue de travail."
+  say Typing(3000)
+  say Question(
+    "Compliment ❎: \"J'aime beaucoup ta nouvelle coupe de cheveux.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Réponse : \"Non, je n'ai pas une nouvelle coupe de cheveux.\" (nier et rétablir la vérité)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre compliment!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "Compliment (2) ❎: \"Si si ne sois pas timide. Je trouve qu'elle est vraiment très réussie.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(5000)
+  say Question(
+    "Réponse : \"Non non. J'ai bien compris mais ma coupe de cheveux n'a pas changé.\". (disque rayé)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre compliment", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(5000)
+  say Question(
+    "Compliment (3) ❎: \"Mais si puisque je te dis que je la trouve super cette nouvelle coupe.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(7000)
+  say Question(
+    "Réponse : \"Non. Je ne suis pas allé.e chez le coiffeur depuis la dernière fois qu'on s'est vu.es et je n'ai rien changé à mes cheveux.\". (donner de l'information)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre compliment", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(6000)
+  say Question(
+    "Compliment (4) ❎: \"Je ne voulais pas te mettre mal à l'aise mais je trouve que c'est beaucoup mieux maintenant que tu as changé ça.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(7000)
+  say Question(
+    "Réponse : \"Ça m'ennuie vraiment que tu insistes à ce point. Je te répète que je n'ai pas changé de coupe de cheveux.\" (expression des sentiments)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre compliment", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(5000)
+  say Question(
+    "Compliment (5) ❎: \"Je dis juste ce que je pense tu sais... Et je trouve que ta coupe de cheveux est très réussie.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(6000)
+  say Question(
+    "Réponse : \"N'y aurait-il pas une autre raison pour laquelle tu tiens tant à me faire un compliment?\". (enquête positive)",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule!"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Autre exemple!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/208d204e-ef7a-4e62-a275-1658d851a544.jpeg",
+    quick_replies=[
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Autre exemple!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("❓Comment recevoir?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

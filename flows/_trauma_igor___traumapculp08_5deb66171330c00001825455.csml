@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825455
+start:
+  say Typing(4000)
+  say Question(
+    "8. \"Si j’avais agi différemment, ça se serait surement mieux passé et mieux terminé.\" 😔",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Analyser la pensée �", payload="/_trauma_igor___traumapculp08r_5deb66171330c00001825456"),
+      Button("Pensée suivante ➡️", payload="/_trauma_igor___traumapculp09_5deb66171330c00001825457"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

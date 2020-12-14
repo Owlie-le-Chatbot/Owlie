@@ -1,0 +1,407 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc078f
+start:
+  say Typing(5000)
+  say Question(
+    "Tu peux t'entrainer à identifier les différents types de compliments ou passer directement aux exemples.",
+    button_type="quick_reply",
+    buttons=[
+      Button("💪 Je m'entraine"),
+      Button("🔍Des exemples!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "1. \"Je t'adresse mes félicitations pour avoir obtenu ton diplôme! Je suis très content.e pour toi.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say "Il s'agit d'un compliment \"constructif\" 🌤!"
+  say Typing(7000)
+  say Question(
+    "Le compliment est direct, précis, concerne un fait, un sentiment positif est exprimé, avec implication personnelle (je) et implication de l'interlocuteurice (tu).",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Continuer !"),
+      Button("🔍Des exemples!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "2. \"J'ai adoré ton tiramisu. Tu pourrais m'écrire la recette sur ce bout de papier?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(3000)
+  say "Il s'agit d'un compliment \"manipulateur\" ⛈."
+  say Typing(3000)
+  say "En effet, le compliment est associé à une demande."
+  say Typing(6000)
+  say Question(
+    "N'oublie pas que la \"forme\" manipulatrice d'un compliment ne signifie pas que ton interlocuteurice soit mal intentionné.e dans le \"fond\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ On continue"),
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_24
+
+
+step_24:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(3000)
+  say Question(
+    "3. \"Tu es vraiment quelqu'un d'original\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_29
+
+
+step_29:
+  say Typing(4000)
+  say "Il s'agit d'un compliment \"vague\" ☁️."
+  say Typing(5000)
+  say "En effet, le compliment concerne la personne dans ce qu'elle est et non un fait ou un comportement."
+  say Typing(4000)
+  say Question(
+    "De plus aucune implication personnelle ni aucun sentiment ne sont exprimés.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Dac! Je continue"),
+      Button("🔍Des exemples!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_36
+
+
+step_36:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(6000)
+  say Question(
+    "4. \"Comme vous êtes quelqu'un de très diplomate, pourriez-vous négocier le contrat du prochain client? Il est parfois un peu agressif.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(3000)
+  say "Il s'agit d'un compliment à la fois \"vague\" ☁️et \"manipulateur\" ⛈."
+  say Typing(8000)
+  say "Vague car le compliment concerne la personne dans ce qu'elle est et non un fait ou un comportement, et car aucune implication personnelle ni aucun sentiment ne sont exprimés."
+  say Typing(4000)
+  say Question(
+    "Et manipulateur car le compliment est associé à une demande.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Je continue !"),
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_48
+
+
+step_48:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "5. \"On t'a déjà dit que tu ressemblais à Leonardo Di Caprio?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_53
+
+
+step_53:
+  say Typing(3000)
+  say "Il s'agit d'un compliment \"vague\" ☁️."
+  say Typing(5000)
+  say "En effet, le compliment concerne la personne dans ce qu'elle est et non un fait ou un comportement."
+  say Typing(4000)
+  say Question(
+    "De plus aucune implication personnelle ni aucun sentiment ne sont exprimés.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Ok ! On continue"),
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retourner au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_60
+
+
+step_60:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(5000)
+  say Question(
+    "6. \"J'ai beaucoup aimé ton discours au mariage hier. Il était  amusant, juste et très touchant.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_65
+
+
+step_65:
+  say Typing(3000)
+  say "Il s'agit d'un compliment \"constructif\" 🌤!"
+  say Typing(7000)
+  say Question(
+    "En effet, le compliment est direct, précis, concerne un fait, un sentiment positif est exprimé, avec implication personnelle (j'ai) et implication de l'interlocuteur (ton).",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Continuer"),
+      Button("🔍Des exemples!", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_70
+
+
+step_70:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(5000)
+  say Question(
+    "7. \"Je voulais te remercier de m'avoir raccompagné chez moi hier. C'était très gentil de ta part.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_75
+
+
+step_75:
+  say Typing(3000)
+  say "C'est un compliment \"constructif\" 🌤!"
+  say Typing(7000)
+  say Question(
+    "Le compliment est direct, précis, concerne un fait, un sentiment positif est exprimé, avec implication personnelle (j'ai) et implication de l'interlocuteur (ta).",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ On continue !"),
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_80
+
+
+step_80:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(6000)
+  say Question(
+    "8. \"Je ne comprends pas. Toi qui est si beau! Comment peux-tu t'enlaidir volontairement avec ce piercing...?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_85
+
+
+step_85:
+  say Typing(3000)
+  say "C'est un compliment à la fois \"vague\" ☁️et \"manipulateur\" ⛈."
+  say Typing(5000)
+  say "Le compliment concerne la personne dans ce qu'elle est et non un fait ou un comportement."
+  say Typing(3000)
+  say Question(
+    "Et le compliment est associé à une critique négative.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ S'entrainer"),
+      Button("🔍Des exemples !", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retourner au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_92
+
+
+step_92:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "9. \"Je tenais à te dire que t'es un mec super. Je suis honoré.e de te connaitre.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_97
+
+
+step_97:
+  say Typing(3000)
+  say "C'est un compliment \"vague\" ☁️."
+  say Typing(3000)
+  say "Certes, un sentiment est exprimé, avec une implication personnelle."
+  say Typing(3000)
+  say "Et l'interlocuteurice est impliqué.e."
+  say Typing(5000)
+  say Question(
+    "En revanche, la critique concerne l'interlocuteurice dans ce qu'iel est et non un fait ou un comportement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ OK ! On contine !"),
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_106
+
+
+step_106:
+  say Typing(3000)
+  say "De quel type de compliment s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "10. \"J'adore ta nouvelle chemise. Celle d'hier était tellement moche!\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructif"),
+      Button("☁️Vague"),
+      Button("⛈Manipulateur"),
+    ],
+  )
+  hold
+  
+  goto step_111
+
+
+step_111:
+  say Typing(3000)
+  say "Ce compliment est de type \"manipulateur\" ⛈."
+  say Typing(3000)
+  say "Le compliment est formulé dans les règles."
+  say Typing(4000)
+  say Question(
+    "Mais il est associé à une critique négative.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule STP !"),
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("😥J'y arrive pas...", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("❓Comment recevoir?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_118
+
+
+step_118:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3e7a2135-9157-4fcc-8384-38e07bde4e84.jpeg",
+    quick_replies=[
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcompr20_5c7e84780ecd9f746fcc0790"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("❓Comment recevoir?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

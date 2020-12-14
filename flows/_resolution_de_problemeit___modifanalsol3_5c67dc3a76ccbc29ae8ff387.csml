@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff387
+start:
+  say Typing(3000)
+  say "Voici ta troisième solution : 
+- {{_solution3}}"
+  say Typing(2000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Écris le plus gros avantage de cette troisième solution en une phrase 📝"
+  hold
+  
+  remember _avantage3 = event
+  
+  say Typing(2000)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Écris maintenant son plus gros inconvénient en une phrase 📝"
+  hold
+  
+  remember _inconvenient3 = event
+  
+  // adding conditional redirect to flow
+  goto flow _resolution_de_problemeit___recapanal_5c67dc3a76ccbc29ae8ff383

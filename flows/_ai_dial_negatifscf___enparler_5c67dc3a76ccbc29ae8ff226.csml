@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff226
+start:
+  say Typing(3400)
+  say Question(
+    "Ok, tu veux en parler 😊?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😢Oui, en parler", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+      Button("🔧Agir", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("🌈Activité positive", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("❤️Apaiser l'émotion", payload="/_ancrage_igor___introanc_5c67dc3a76ccbc29ae8ff2ae"),
+      Button("🎲Faire un jeu", payload="/_menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274"),
+    ],
+  )
+  hold
+  
+  remember _choix_en_parler = event

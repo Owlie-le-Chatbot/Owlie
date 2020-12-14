@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f5
+start:
+  say Typing(4000)
+  say "Les insultes et les gobelets continuent à pleuvoir sur toi."
+  say Typing(4000)
+  say "Tu essayes d'alerter l'arbitre de touche."
+  say Typing(3000)
+  say "Il t'a vu mais ne t'entend pas."
+  say Typing(4000)
+  say "Tu profites d'un arrêt de jeu pour te rapprocher de lui."
+  say Typing(4000)
+  say "Mais le jeu reprend plus vite que prévu et l'équipe adverse se rapproche."
+  say Typing(4000)
+  say "Tu rebrousses chemin hativement mais trop tard : tu as pris un but."
+  say Typing(4000)
+  say "Tes coéquipier.e.s sont stupéfaits, ton entraineur te réprimande sévèrement."
+  say Typing(5000)
+  say "Tu ne parviens pas à te justifier. Et le match reprend de plus belle, de même que les insultes."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("☝️Appeler l'arbitre", payload="/_metaphores___metaphfoot2_5c67dc3a76ccbc29ae8ff4f5"),
+      Button("⚽Continuer à jouer", payload="/_metaphores___metaphfoot3_5c67dc3a76ccbc29ae8ff4f6"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,44 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2c4
+start:
+  say Typing(3000)
+  say "Ok, tu vas maintenant étirer des groupes de muscles 😊 (en fonction de ce qu'il est possible pour toi de faire)"
+  say Typing(3000)
+  say Question(
+    "Étire tous tes doigts le plus fort possible pendant 10 secondes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+      Button("🔙Arrêter", payload="/_ancrage_physique_igor___listancphy_5c67dc3a76ccbc29ae8ff2c2"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "Étire maintenant tes bras le plus fort possible pendant 10 secondes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+      Button("🔙Arrêter", payload="/_ancrage_physique_igor___listancphy_5c67dc3a76ccbc29ae8ff2c2"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say Question(
+    "Ok, pour finir étire tes jambes le plus fort possible pendant 10 secondes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !", payload="/_ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3"),
+    ],
+  )
+  hold
+  

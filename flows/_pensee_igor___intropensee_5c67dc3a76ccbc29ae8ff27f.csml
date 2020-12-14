@@ -1,0 +1,8 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff27f
+start:
+  say Typing(2000)
+  say "Des ruminations peuvent être causées par une ou plusieurs pensées douloureuses"
+  say Typing(2000)
+  say "Elles peuvent aussi résulter de la difficulté à résoudre un problème."
+  // adding conditional redirect to flow
+  goto flow _pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280

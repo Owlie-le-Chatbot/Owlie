@@ -1,0 +1,105 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d5
+start:
+  say Typing(2000)
+  say "Imagine maintenant un endroit dans lequel tu te sentirais en sécurité."
+  say Typing(2900)
+  say "Il peut s'agit d'un endroit imaginaire ou d'un lieu réel, même si tu n'y es pas encore allé.e physiquement."
+  say Typing(3000)
+  say "Si tu ne trouves pas, voici quelques idées : 
+
+(fais défiler les images ↔️)"
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Plage ensoleillée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3d7f5b20-be22-4d5f-b4d9-626c011afb53.jpeg",
+      ),
+      Card(
+        title="Montagne et fleurs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/723e37d4-8ce8-4905-9843-e27b165521cf.jpeg",
+      ),
+      Card(
+        title="À la maison",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e6a7547c-598a-42f1-87b7-424c4bacb3d6.jpeg",
+      ),
+      Card(
+        title="Disneyland",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9b0aa5b4-800a-412a-8736-8397d1f56dfa.jpeg",
+      ),
+      Card(
+        title="Une cabane dans les bois",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f2c68a90-9eb0-4e87-a2ca-9e46243ac01b.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Le monde des Bisounours",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/630f3ed4-44b7-4373-b194-b3584828a860.jpeg",
+      ),
+      Card(
+        title="La Comtée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/21dc7cda-d8cd-4cf4-bc74-4012d5d09ff5.jpeg",
+      ),
+      Card(
+        title="Bespin",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/22cfab68-3ddf-4ed6-a2e3-391dee0c43f0.jpeg",
+      ),
+      Card(
+        title="Pandora",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/49e3821d-cef5-4342-847b-f3753ca85ecd.jpeg",
+      ),
+      Card(
+        title="La vallée des merveilles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d2183ac8-20e0-4f49-8d62-772c3ce0491b.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("👍🏻 J'ai choisi !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(2000)
+  say "Imagine-toi maintenant dans cet endroit."
+  say Typing(3000)
+  say Question(
+    "Imagine pendant une vingtaine de secondes ce que tu pourrais voir autour de toi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4200)
+  say "Imagine qu'aucun mal ne puisse t'atteindre dans cet endroit."
+  say Typing(3500)
+  say Question(
+    "Imagine que tu y sois en totale sécurité 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  // adding conditional redirect to flow
+  goto flow _ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1

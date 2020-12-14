@@ -1,0 +1,47 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff28d
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Manger un bon repas",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/23c0bf09-8132-4622-ac2c-40d1f1a1002e.jpeg",
+        buttons=[
+          Url("https://youtu.be/Hjj5GkavZro", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Manger un petit en-cas",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8f6f9533-6b6f-420f-9bb3-b32450255290.jpeg",
+        buttons=[
+          Url("https://youtu.be/sdjgQR43o3Q", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Faire un pique-nique",
+        subtitle="S'il fait beau!",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ea5ba2dc-ed29-4df2-b11b-df4a415c7063.jpeg",
+        buttons=[
+          Url("https://youtu.be/GxS5RKtenmk", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Boire quelque chose de bon",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0de83149-399e-4ebc-bce7-b4078a407087.jpeg",
+        buttons=[
+          Url("https://youtu.be/TUXBG1uwaKc", text="Vidéo"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Activité apaisante", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

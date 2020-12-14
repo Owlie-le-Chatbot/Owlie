@@ -1,0 +1,63 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3f2
+start:
+  say Typing(3700)
+  say "\"Je dois être bien habillé.e pour être apprécié.e\"
+
+\"Après tout ce que j’ai fait pour iel, comment ose-t-iel refuser de m'aider dans cette tâche, iel devrait le faire sans même rechigner !!!\""
+  say Typing(2400)
+  say Question(
+    "Ces pensées distordent la réalité.
+
+Quel type de pensée est-ce ?",
+    buttons=[
+      Button("Les types de pensée", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+    ],
+    quick_replies=[
+      Button("Personnalisation", payload="/_quiz_cognitif_clara___mauvaise_reponse_5c67dc3a76ccbc29ae8ff3ed"),
+      Button("Maximisation", payload="/_quiz_cognitif_clara___mauvaise_reponse_5c67dc3a76ccbc29ae8ff3ed"),
+      Button("\"Je dois\"/devoir"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2600)
+  say Question(
+    "C'est ça oui ! Des pensées de type \"je dois / il faut\"...
+
+Pour en savoir +, clique sur \"En savoir +\", tu pourras revenir au jeu après.
+
+Sinon, veux-tu continuer direct ?",
+    buttons=[
+      Button("En savoir +", payload="/_types_de_distorsions_cf___5_pensee_de_type_je_dois_5c67dc3a76ccbc29ae8ff400"),
+    ],
+    quick_replies=[
+      Button("Ok !"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  // adding conditional redirect to flow
+  if (_reponse == "Ok !") {
+    do rand = Floor(Random() * Length(["_quiz_cognitif_clara___jeu_6_dichotomie_5c67dc3a76ccbc29ae8ff3f3", "_quiz_cognitif_clara___jeu_7_jugement_dattributionetiquetage_5c67dc3a76ccbc29ae8ff3f4", "_quiz_cognitif_clara___jeu_8_filtre_negatif_tunnel_abstraction_selective_5c67dc3a76ccbc29ae8ff3f5", "_quiz_cognitif_clara___jeu_9_illusion_de_controle_externe_5c67dc3a76ccbc29ae8ff3f6", "_quiz_cognitif_clara___jeu_10_attribution_arbitraire_5c67dc3a76ccbc29ae8ff3f7", "_quiz_cognitif_clara___jeu_11_erreur_dequite_5c67dc3a76ccbc29ae8ff3f8", "_quiz_cognitif_clara___jeu_12_personnalisation_5c67dc3a76ccbc29ae8ff3f9", "_quiz_cognitif_clara___jeu_13_maximisation_minimisation_5c67dc3a76ccbc29ae8ff3fa", "_quiz_cognitif_clara___jeu_1_pensee_catastrophique_5c67dc3a76ccbc29ae8ff3ee", "_quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef", "_quiz_cognitif_clara___jeu_3_raisonnement_emotionnel_5c67dc3a76ccbc29ae8ff3f0", "_quiz_cognitif_clara___jeu_4_lecture_dans_les_pensees_5c67dc3a76ccbc29ae8ff3f1"]))
+    if (rand == 0) goto flow _quiz_cognitif_clara___jeu_6_dichotomie_5c67dc3a76ccbc29ae8ff3f3
+    if (rand == 1) goto flow _quiz_cognitif_clara___jeu_7_jugement_dattributionetiquetage_5c67dc3a76ccbc29ae8ff3f4
+    if (rand == 2) goto flow _quiz_cognitif_clara___jeu_8_filtre_negatif_tunnel_abstraction_selective_5c67dc3a76ccbc29ae8ff3f5
+    if (rand == 3) goto flow _quiz_cognitif_clara___jeu_9_illusion_de_controle_externe_5c67dc3a76ccbc29ae8ff3f6
+    if (rand == 4) goto flow _quiz_cognitif_clara___jeu_10_attribution_arbitraire_5c67dc3a76ccbc29ae8ff3f7
+    if (rand == 5) goto flow _quiz_cognitif_clara___jeu_11_erreur_dequite_5c67dc3a76ccbc29ae8ff3f8
+    if (rand == 6) goto flow _quiz_cognitif_clara___jeu_12_personnalisation_5c67dc3a76ccbc29ae8ff3f9
+    if (rand == 7) goto flow _quiz_cognitif_clara___jeu_13_maximisation_minimisation_5c67dc3a76ccbc29ae8ff3fa
+    if (rand == 8) goto flow _quiz_cognitif_clara___jeu_1_pensee_catastrophique_5c67dc3a76ccbc29ae8ff3ee
+    if (rand == 9) goto flow _quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef
+    if (rand == 10) goto flow _quiz_cognitif_clara___jeu_3_raisonnement_emotionnel_5c67dc3a76ccbc29ae8ff3f0
+    if (rand == 11) goto flow _quiz_cognitif_clara___jeu_4_lecture_dans_les_pensees_5c67dc3a76ccbc29ae8ff3f1
+  }

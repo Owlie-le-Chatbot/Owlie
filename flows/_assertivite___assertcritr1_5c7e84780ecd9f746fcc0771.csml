@@ -1,0 +1,133 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0771
+start:
+  say Typing(4000)
+  say Question(
+    "Avant de répondre à une critique, il est essentiel de bien la recevoir, de façon active.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment faire?"),
+      Button("⏩Passer l'étape", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("🔍Des exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say "Voici quelques règles très simples qui te permettront d'accuser réception d'une critique."
+  say Typing(4000)
+  say "Les respecter ne te garantira pas une efficacité systématique et immédiate."
+  say Typing(4000)
+  say Question(
+    "Mais en les appliquant, tu aura plus de chance d'y répondre de manière optimale.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say Question(
+    "Règle 1. Écouter, jusqu'au bout.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(4000)
+  say "Cela peut paraitre évident, mais ce n'est pas si facile."
+  say Typing(4000)
+  say "Le malaise ressenti face à une critique donne souvent l'envie de répondre très vite."
+  say Typing(4000)
+  say "Or il est essentiel que ton interlocuteurice se sente écouté.e."
+  say Typing(4000)
+  say "Sois donc à l'écoute et n'ai pas l'air amusé.e, irrité.e ou découragé.e."
+  say Typing(5000)
+  say Question(
+    "De même, ne t'empresse pas de minimiser la critique, de l'exagérer, de la ridiculiser ou de contre-attaquer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_23
+
+
+step_23:
+  say Typing(3000)
+  say Question(
+    "Règle 2. Faire preuve d'empathie",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(4000)
+  say "Cela consiste à faire savoir à l'interlocuteurice ce que l'on comprend de sa position ou de sa situation."
+  say Typing(5000)
+  say "Par exemple \"Ça m'ennuie que vous vous retrouviez dans cette situation\" ou \"Je comprends votre malaise\"."
+  say Typing(4000)
+  say "Manifester son empathie ne signifie pas que tu sois \"d'accord\" avec la critique."
+  say Typing(5000)
+  say Question(
+    "L'empathie signifie que tu as bien entendu la critique et que tu \"comprends\" ton interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_35
+
+
+step_35:
+  say Typing(4000)
+  say Question(
+    "Règle 3. Identifier le fond et la forme de la critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(4000)
+  say "Sur le fond : une critique peut-être vraie ✅, fausse ❎ou vague ☁️."
+  say Typing(4000)
+  say Question(
+    "Sur la forme : une critique peut-être constructive 🌤ou blessante ⛈.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  

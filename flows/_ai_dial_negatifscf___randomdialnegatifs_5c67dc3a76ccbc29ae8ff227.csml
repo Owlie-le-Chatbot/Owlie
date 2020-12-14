@@ -1,0 +1,9 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff227
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228", "_ai_dial_negatifscf___dialogueneg2_5c67dc3a76ccbc29ae8ff229", "_ai_dial_negatifscf___dialogueneg3_5c67dc3a76ccbc29ae8ff22a", "_ai_dial_negatifscf___dialogueneg4_5c67dc3a76ccbc29ae8ff22b", "_ai_dial_negatifscf___dialoguenegmeteo_5c67dc3a76ccbc29ae8ff22d"]))
+  if (rand == 0) goto flow _ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228
+  if (rand == 1) goto flow _ai_dial_negatifscf___dialogueneg2_5c67dc3a76ccbc29ae8ff229
+  if (rand == 2) goto flow _ai_dial_negatifscf___dialogueneg3_5c67dc3a76ccbc29ae8ff22a
+  if (rand == 3) goto flow _ai_dial_negatifscf___dialogueneg4_5c67dc3a76ccbc29ae8ff22b
+  if (rand == 4) goto flow _ai_dial_negatifscf___dialoguenegmeteo_5c67dc3a76ccbc29ae8ff22d

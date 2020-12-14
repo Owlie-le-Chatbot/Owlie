@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4eb
+start:
+  say Typing(4000)
+  say "Lutter contre des mauvaises pensées et des émotions négatives peut s'apparenter à naviguer en pleine tempête."
+  say Typing(4000)
+  say "Plutôt que de s'épuiser et de s'esquinter en essayant de passer à travers..."
+  say Typing(3000)
+  say "Mieux vaut parfois lâcher prise et attendre que ça passe."
+  say Typing(4000)
+  say Question(
+    "Car une crise, une panique, un tracas, comme une tempête, ça finit toujours par passer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

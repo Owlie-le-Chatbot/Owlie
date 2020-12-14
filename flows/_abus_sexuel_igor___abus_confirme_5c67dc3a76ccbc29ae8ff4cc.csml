@@ -1,0 +1,57 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4cc
+start:
+  say Typing(2000)
+  say "Je suis désolée que ça te soit arrivé {{_name}}, mais je suis fière de toi car tu as réussi à m'en parler."
+  say Typing(1500)
+  say Question(
+    "Je tiens tout d'abord à te dire que ce n'est pas de ta faute.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2500)
+  say Question(
+    "Et je tiens vraiment à te féliciter d'avoir réussi à m'en faire part. Je sais que même par écrit, c'est souvent très difficile de se livrer sur un tel sujet.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(2500)
+  say Question(
+    "Je tiens à ce que tu saches que quelque soit ce que tu as subi, que cet abus soit ancien ou qu'il soit récent, il n'est jamais trop tard pour être aidé(e) si tu le souhaites.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(2000)
+  say Question(
+    "Je peux te fournir quelques ressources si tu veux te renseigner ou si tu te sens prêt(e) à en parler à quelqu'un d'autre.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je veux bien", payload="/_abus_sexuel_igor___abus_ressources_5c67dc3a76ccbc29ae8ff4ce"),
+      Button("Non merci", payload="/_abus_sexuel_igor___abus_non_merci_5c67dc3a76ccbc29ae8ff4d0"),
+    ],
+  )
+  hold
+  

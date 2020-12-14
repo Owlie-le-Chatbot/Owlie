@@ -1,0 +1,35 @@
+// CHATFUEL BLOCK ID 5c69305f76ccbc29ae23abff
+start:
+  say Typing(2800)
+  say Question(
+    "Voici un document fait par mon équipe d'humains qui récapitule le sujet 😊",
+    buttons=[
+      Url("https://drive.google.com/open?id=1bmkhrXts2a30rGnTuhmTDgOqtJDl3u2L", text="🔏confidentialité"),
+    ],
+    quick_replies=[
+      Button("Merci 😎"),
+      Button("🔙Sortir", payload="/_presentation_clara___postwelcome_5c67dc3a76ccbc29ae8ff1da"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2200)
+  say Question(
+    "Que souhaites-tu faire maintenant {{_name}} ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌟Découvrir", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("📉Évaluer mon humeur", payload="/_echelles_cliniques_cfs___phq9_5c67dc3a76ccbc29ae8ff1e2"),
+      Button("📉Évaluer l'anxiété", payload="/_echelles_cliniques_cfs___gad7_5c67dc3a76ccbc29ae8ff1e9"),
+      Button("🚨 Besoin d'aide", payload="/_jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b"),
+      Button("🕗Se voir + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  

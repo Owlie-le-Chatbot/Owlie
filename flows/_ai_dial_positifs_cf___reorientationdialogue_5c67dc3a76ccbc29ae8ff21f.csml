@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff21f
+start:
+  say Question(
+    "De quoi souhaites-tu parler {{_name}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📆d'un événement", payload="/_ai_dial_positifs_cf___relanceevnmt_5c67dc3a76ccbc29ae8ff220"),
+      Button("❤️d'un ressenti", payload="/_ai_dial_positifs_cf___relanceressenti_5c67dc3a76ccbc29ae8ff222"),
+      Button("💭d'une pensée", payload="/_ai_dial_positifs_cf___relancepensee_5c67dc3a76ccbc29ae8ff223"),
+      Button("👬d'une relation", payload="/_ai_dial_positifs_cf___relancerelation_5c67dc3a76ccbc29ae8ff221"),
+    ],
+  )
+  hold
+  
+  remember _reorientation_dialogue = event

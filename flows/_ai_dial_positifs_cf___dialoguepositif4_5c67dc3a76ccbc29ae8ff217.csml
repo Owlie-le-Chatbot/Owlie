@@ -1,0 +1,44 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff217
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Quel est l'élément le plus intéressant de ta journée aujourd'hui ?"
+  hold
+  
+  remember _element_le_plus_interessant_de_ta_journee = event
+  
+  say Typing(1700)
+  say Question(
+    "Ok...
+
+Une activité qui te tente ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("💬Papoter", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("📍Faire le point", payload="/_eva_etat_pendant_clara___evaetat3_5c67dc3a76ccbc29ae8ff255"),
+      Button("🎓Apprendre un truc ", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("🎲Un jeu"),
+      Button("🌟Être inspiré(e)", payload="/_education_therapeutiqcf___ressources_inspiration_5c67dc3a76ccbc29ae8ff41e"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  
+  remember _dialogue_positif_choix = event
+  goto step_4
+
+
+step_4:
+  // adding conditional redirect to flow
+  if (_dialogue_positif_choix == "Un jeu") {
+    do rand = Floor(Random() * Length(["_psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb", "_psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca"]))
+    if (rand == 0) goto flow _psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb
+    if (rand == 1) goto flow _psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca
+  }

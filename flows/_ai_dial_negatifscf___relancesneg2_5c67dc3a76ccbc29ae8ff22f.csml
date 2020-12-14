@@ -1,0 +1,26 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff22f
+start:
+  say Typing(3000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Je suis là pour accueillir, va-y,
+dis-moi...                                         
+(📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(3000)
+  say Question(
+    "Est-ce que là, ça commence à aller mieux ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😐Un peu mieux...", payload="/_ai_dial_negatifscf___sortiedialogueneg_5c67dc3a76ccbc29ae8ff230"),
+      Button("😕Bof...", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  

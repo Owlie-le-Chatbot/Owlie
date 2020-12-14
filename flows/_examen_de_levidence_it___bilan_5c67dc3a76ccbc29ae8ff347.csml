@@ -1,0 +1,64 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff347
+start:
+  say Typing(2000)
+  say "Il est temps de faire le bilan de ton examen de la pensée douloureuse : {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Voici les arguments \"pour\" :
+- {{_faveur1}}
+- {{_faveur2}}
+- {{_faveur3}}",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Voici les arguments \"contre\" :
+- {{_defaveur1}}
+- {{_defaveur2}}
+- {{_defaveur3}}",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Question(
+    "Cela te convient-il ou souhaites-tu recommencer une étape de l'examen des faits ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ça me convient !"),
+      Button("Reprendre", payload="/_examen_de_levidence_it___reprexamevid_5c67dc3a76ccbc29ae8ff348"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Question(
+    "Te sens-tu prêt.e à reformuler ta pensée douloureuse ou souhaite-tu l'assouplir davantage?",
+    buttons=[
+      Button("Reformuler", payload="/_restructuration_cog_it___reformulation_5c67dc3a76ccbc29ae8ff33a"),
+      Button("Assouplir", payload="/_restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339"),
+    ],
+    quick_replies=[
+      Button("Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

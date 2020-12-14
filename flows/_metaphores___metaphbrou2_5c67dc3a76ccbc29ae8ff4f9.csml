@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f9
+start:
+  say Typing(4000)
+  say "Par prudence, tu choisis de rester à l'arrêt sur le bas-coté."
+  say Typing(3000)
+  say "Et d'attendre que le brouillard se dissippe."
+  say Typing(3000)
+  say "Quelques minutes plus tard, le brouillard est toujours là."
+  say Typing(3000)
+  say "Une demi-heure après, rien n'a changé."
+  say Typing(3000)
+  say "Une heure plus tard, la situation n'a pas évolué, le brouillard persiste."
+  say Typing(4000)
+  say "Plus le temps passe, plus tu loupes des évènements importants au travail."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🚗Reprendre la route", payload="/_metaphores___metaphbrou3_5c67dc3a76ccbc29ae8ff4fa"),
+      Button("🖐️Rester à l'arrêt", payload="/_metaphores___metaphbrou2_5c67dc3a76ccbc29ae8ff4f9"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,24 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff26f
+start:
+  say Typing(1900)
+  say Question(
+    "Dans quel \"grand domaine\" d'activités souhaites-tu que je te propose des choses ?
+
+Des activités pour agir...
+
+(fais défiler les boutons ↔️)",
+    buttons=[
+      Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+    ],
+    quick_replies=[
+      Button("💭Sur mes pensées", payload="/_menus_igorclara___cataloguecog_5c67dc3a76ccbc29ae8ff272"),
+      Button("❤️Sur mes émotions", payload="/_menus_igorclara___catalogueemotion_5c67dc3a76ccbc29ae8ff270"),
+      Button("👬Sur mes relations", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+      Button("🤸‍♀️Sur mes actions", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+      Button("💪🏻Sur ma forme", payload="/_menus_igorclara___cataloguecorporel_5c67dc3a76ccbc29ae8ff273"),
+      Button("🎓Sur ce que je sais", payload="/_education_therapeutiqcf___carrefour_explications_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40a"),
+      Button("🔙Retour ", payload="/Default"),
+    ],
+  )
+  hold
+  

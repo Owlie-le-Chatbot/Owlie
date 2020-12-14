@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff392
+start:
+  say Typing(2000)
+  say "Certaines pensées douloureuses (de même que certains comportements problématiques) sont la conséquence de croyances plus profondes."
+  say Typing(2000)
+  say "Ces croyances sont souvent élaborées à partir d'expériences vécues, notamment pendant l'enfance."
+  say Typing(2000)
+  say "Elles concernent ce que l'on peut comprendre de soi-même, des autres et de notre environnement."
+  say Typing(2900)
+  say "Ces croyances nous ont été utiles mais deviennent problématiques lorsqu'elles sont rigides, extrêmes, négatives ou absolues."
+  say Typing(2300)
+  say "Elles se maintiennent souvent par des mauvais réflexes de pensées, et parce que nous retenons davantage ce qui les confirme."
+  say Typing(3100)
+  say Question(
+    "Je te propose d'en examiner quelques unes. 
+Qui sait ? 
+Tu t'y reconnaitras peut-être ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌🏻Ok", payload="/_ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

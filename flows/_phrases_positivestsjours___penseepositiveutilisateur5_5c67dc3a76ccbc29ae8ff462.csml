@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff462
+start:
+  say Typing(2500)
+  say Question(
+    "Voici la pensée du jour 🌟😊
+
+\"On ne voit bien qu'avec le coeur. L'essentiel est invisible pour les yeux\"
+
+Saint-Exupéry
+Citation proposée par une utilisatrice qui se reconnaitra😉",
+    buttons=[
+      Button("Donner 1 citation 🌟", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+    ],
+    quick_replies=[
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

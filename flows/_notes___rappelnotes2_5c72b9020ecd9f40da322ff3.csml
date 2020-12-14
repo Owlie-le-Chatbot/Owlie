@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c72b9020ecd9f40da322ff3
+start:
+  say Typing(2500)
+  say Question(
+    "Voici les notes que tu souhaitais que je te rappelle : 
+
+{{_notes2}}",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci Owlie 🦉!"),
+      Button("😕C'était pas ça...", payload="/_notes___autresnotes_5c71776c0ecd9f40daade7c8"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2200)
+  say "Je t'en prie 😊! 
+On est là pour faire équipe toi et moi !"
+  say Typing(2400)
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

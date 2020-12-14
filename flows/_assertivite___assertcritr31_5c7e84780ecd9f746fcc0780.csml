@@ -1,0 +1,141 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0780
+start:
+  say Typing(5000)
+  say Question(
+    "Il est impossible d'être aimé.e ou apprécié.e par tout le monde. Quelle que soit ta popularité, il y aura toujours quelqu'un.e qui ne t'apprécie pas.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say Question(
+    "Même si tu pouvais obtenir l'amour ou l'approbation de tous, tu ne pourrais jamais être sûr.e qu'iels t'apprécient suffisamment, ou qu'iels t'aimeront toujours.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(5000)
+  say Question(
+    "Tous les goûts sont dans la nature. Certain.e.s pourront aimer (par exemple) ta nouvelle coupe de cheveux, d'autres pourront la détester, certain.e.s vont t'admirer, d'autres non.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(5000)
+  say Question(
+    "Se faire aimer demande du temps et des efforts. Si tu essayes d'être aimé.e de tou.tes, il ne ne te restera plus de temps ni d'énergie pour faire ce que tu veux.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(5000)
+  say Question(
+    "Si tu recherches toujours l'approbation des autres, tu finiras par ne faire que ce qu'iels veulent. Tu ne disposeras plus de ton temps ni de ta vie. Ta vie ne sera plus la tienne.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est pas faux"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(5000)
+  say Question(
+    "À trop chercher l'amour et l'approbation des autres, iels finiront par se lasser de tes \"lècheries\" et ne te respecteront plus.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Arg"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(5000)
+  say Question(
+    "Plus tu seras soucieuxse de la quantité d'amour et d'approbation que tu reçois, moins tu seras attentif.ve à l'amour et l'approbation que tu donnes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(5000)
+  say Question(
+    "Il n'y a pas de mal à rechercher la popularité mais il est préférable de ne pas en faire une obsession. En d'autres termes, il est constructif de vouloir être populaire mais autodestructeur d'en avoir besoin.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_23
+
+
+step_23:
+  say Typing(5000)
+  say Question(
+    "L'amour et l'approbation des autres te permettront plus facilement d'avoir des ami.e.s, de trouver un travail et de le garder, de trouver un logement, etc. Mais tu ne t'aimeras pas forcément davantage. Il est préférable de chercher à s'accepter soi-même de façon inconditionnelle, indépendamment de ce que les autres pensent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(5000)
+  say Question(
+    "Il est désagréable de ne pas être aimé.e par quelqu'un.e, mais ce n'est pas la fin du monde pour autant. Ce n'est ni catastrophique, ni définitif.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Continuer", payload="/_assertivite___assertcritr32_5c7e84780ecd9f746fcc0781"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

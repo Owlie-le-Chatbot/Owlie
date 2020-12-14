@@ -1,0 +1,59 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff332
+start:
+  say Typing(2000)
+  say "La preuve par le sentiment !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/35cee7a1-f6cd-44e2-aa8f-6c4ee499483d.jpeg")
+  say Question(
+    "Le raisonnement émotif consiste à tirer une conclusion sur la base d'une émotion ou d'un sentiment plutôt que sur des éléments plus rationnels.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"S’iel a réussi à m’énerver à ce point, c’est qu’iel cherche les problèmes\""
+  say Typing(2000)
+  say "\"Lea patron.ne m’a convoqué.e dans son bureau, je ne suis pas tranquille, iel a certainement quelque chose à me reprocher\""
+  say Typing(2000)
+  say Question(
+    "\"J’étais mal à l’aise au diner, je suis sûr.e qu’iels m’ont trouvé ridicule\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(3000)
+  say "Lorsque les émotions négatives se mettent à penser à ta place, tes idées ne sont plus forcément fondées sur les choses telles qu'elles sont mais sur la façon dont ces choses t'affectent."
+  say Typing(2000)
+  say "Tes opinions seront amenées à changer, à devenir plus rationnelles une fois les émotions négatives apaisées."
+  say Typing(2000)
+  say "1. Ne tire pas de conclusion, ne prend pas de décision importante \"à chaud\". 
+
+Diffère !"
+  say Typing(2000)
+  say Question(
+    "2. Concentre-toi en priorité sur l'émotion négative qui te trouble et sur ce qui pourrait l'apaiser.",
+    buttons=[
+      Button("Apaiser la crise", payload="/_crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278"),
+    ],
+    quick_replies=[
+      Button("✔ Ok", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("✍️Donner mon avis", payload="/_feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

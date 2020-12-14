@@ -1,0 +1,271 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0769
+start:
+  say Typing(4000)
+  say Question(
+    "Il n'est pas toujours facile de refuser quelque chose.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment faire?"),
+      Button("🔍Un exemple!", payload="/_assertivite___assertref2_5c7e84780ecd9f746fcc076a"),
+      Button("😥Oui je n'ose pas", payload="/_assertivite___assertref3_5c7e84780ecd9f746fcc076b"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say "Voici quelques règles très simples pour formuler un refus."
+  say Typing(4000)
+  say "Les respecter ne te garantira pas une efficacité systématique et immédiate."
+  say Typing(5000)
+  say Question(
+    "En revanche, tu te donnera plus de chances de bien faire passer ton message.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Cool !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say Question(
+    "Règle 1. Avoir bien compris la demande",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Comment ça?"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(5000)
+  say "Si tu n'as pas bien compris ce qui t'est demandé, tu ne sauras pas vraiment ce que tu refuses."
+  say Typing(5000)
+  say "Si tu n'es pas certain.e d'avoir bien compris, tu peux vérifier le contenu de la demande en la reformulant :"
+  say Typing(3000)
+  say Question(
+    "Exemple \"Si j'ai bien compris, tu me demandes...\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍C'est pas bête !"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "Règle 2. Connaitre ses droits, et ce qu'ils impliquent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire ?"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(5000)
+  say "Dans la grande majorité des cas, tu as le droit d'exprimer ton refus face à une demande."
+  say Typing(6000)
+  say Question(
+    "Tu as également le devoir d'assumer les conséquences de ce refus, notamment vis-à-vis des droits fondamentaux de ton interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(4000)
+  say Question(
+    "Règle 3. Formuler le refus de façon DIRECTE et PRÉCISE.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Comment faire?"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(6000)
+  say "Il peut s'agir de dire tout simplement \"non\" ou d'affirmer que tu ne donneras pas ou tu ne fera pas ce qui t'es demandé."
+  say Typing(5000)
+  say "Plus ton refus sera direct et précis, moins ton interlocuteurice aura envie d'insister."
+  say Typing(5000)
+  say "Remarque par exemple la différence entre répondre à son/sa collègue qui vous demande de lae remplacer :"
+  say Typing(4000)
+  say "a. \"J'aurais aimé te rendre service mais je ne pourrais pas te remplacer ce jour là.\""
+  say Typing(10000)
+  say Question(
+    "b. \"Euh en fait ça ne m'arrange pas vraiment, enfin c'est le jour où je dois m'occuper de ma mère qui est malade alors la dernière fois j'ai dû demander à mon frère de le faire à ma place mais ça m'embetterait de lui demander à nouveau, je pense que sa femme serait fachée en plus et...\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("En effet !"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(4000)
+  say "Si tu ne sais pas vraiment ce que tu veux au moment où la demande est formulée :"
+  say Typing(3000)
+  say Question(
+    "Règle 3bis. Remettre à plus tard si c'est préférable (et possible).",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Ah?"),
+    ],
+  )
+  hold
+  
+  goto step_46
+
+
+step_46:
+  say Typing(6000)
+  say "Si tu as le droit d'accepter ou de refuser, tu as également le droit de ne pas donner ta réponse immédiatement."
+  say Typing(6000)
+  say Question(
+    "Dans la mesure du possible, essaye tout de même d'indiquer à ton interlocuteurice à quel moment tu pourras lui donner ta réponse.",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_51
+
+
+step_51:
+  say Typing(4000)
+  say Question(
+    "Règle 4. Exprimer ses sentiments de façon positive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Comment?"),
+      Button("Pourquoi?"),
+    ],
+  )
+  hold
+  
+  goto step_54
+
+
+step_54:
+  say Typing(4000)
+  say "Exprimer ce que l'on ressent, ou ce que l'on pourrait ressentir donne plus de force à un refus."
+  say Typing(4000)
+  say "Mais le message passera toujours mieux si tu le formule de façon positive!"
+  say Typing(5000)
+  say "Par exemple, note la différence entre ces deux réponses à un.e collègue qui te demande de lae raccompagner :"
+  say Typing(4000)
+  say "a. \"Je n'aimerais pas être en retard pour accueillir mes invité.e.s ce soir. Donc désolé.e.\""
+  say Typing(5000)
+  say Question(
+    "b. \"J'aurais vraiment aimé pouvoir te raccompagner mais je ne pourrais pas le faire cette fois.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_65
+
+
+step_65:
+  say Typing(4000)
+  say Question(
+    "Règle 5. Exprimer son empathie.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_68
+
+
+step_68:
+  say Typing(5000)
+  say "Cela consiste à faire savoir à l'interlocuteurice ce que l'on comprend de sa position ou de sa situation."
+  say Typing(4000)
+  say "Certain.e.s appellent ça : passer un peu de pommade"
+  say Typing(7000)
+  say "La plupart du temps, dans le cadre d'un refus, il s'agit de signifier à son interlocuteurice que l'on peut comprendre que ce qu'iel désire soit important pour lui/elle."
+  say Typing(5000)
+  say "Examine par exemple ces deux réponses faites à un.e collègue qui te demande de lae remplacer :"
+  say Typing(4000)
+  say "a. \"J'aurais vraiment aimé te rendre ce service mais je ne pourrais pas te remplacer jeudi prochain.\" (pas d'empathie)"
+  say Typing(7000)
+  say "b.  \"J'imagine que cette journée est importante pour toi et j'aurais aimé te rendre ce service mais je ne pourrais pas te remplacer jeudi prochain.\" (empathie)"
+  say Typing(5000)
+  say Question(
+    "L'empathie est le ressort le plus efficace pour s'affirmer. Alors autant ne pas se priver de la manifester!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌Merci du conseil !"),
+    ],
+  )
+  hold
+  
+  goto step_83
+
+
+step_83:
+  say Typing(4000)
+  say Question(
+    "C'était donc les 6 règles à respecter pour formuler des refus affirmés.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule !!!"),
+      Button("🔍Un exemple?", payload="/_assertivite___assertref2_5c7e84780ecd9f746fcc076a"),
+      Button("😥Je n'ose pas Owlie", payload="/_assertivite___assertref3_5c7e84780ecd9f746fcc076b"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_86
+
+
+step_86:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/56414165-301f-4002-84cf-d7b8cfa245e4.jpeg",
+    quick_replies=[
+      Button("🔍Un exemple?", payload="/_assertivite___assertref2_5c7e84780ecd9f746fcc076a"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertref3_5c7e84780ecd9f746fcc076b"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

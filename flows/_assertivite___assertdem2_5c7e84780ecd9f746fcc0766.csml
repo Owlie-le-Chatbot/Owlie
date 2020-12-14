@@ -1,0 +1,174 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0766
+start:
+  say Typing(6000)
+  say Question(
+    "Voici un exemple qui te permettra de vérifier si tu as bien retenu les instructions pour formuler une demande affirmée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Vas-y Owlie"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(6000)
+  say "Imagine-toi un jour de grève des transports. Tu souhaterais que ta/ton collègue vous dépose chez toi après le travail."
+  say Typing(4000)
+  say "Sélectionne la demande qui te semble la plus affirmée."
+  say Typing(4000)
+  say "A. \"Je ne pourrai jamais rentrer chez moi avec cette foutue grève des transports.\""
+  say Typing(3000)
+  say "B. \"Pourrais-tu me déposer chez moi après le travail?\""
+  say Typing(7000)
+  say "C. \"J'ai bien conscience que cela pourrait rajouter ton trajet mais ça m'arrangerait beaucoup si tu pouvais me déposer chez moi après le travail.\""
+  say Typing(4000)
+  say "D. \"Il faudrait que quelqu'un.e me dépose chez moi après le travail.\""
+  say Typing(10000)
+  say "E. \"Jai quelque chose à te demander. En fait je dois rentrer chez moi très vite après le travail parce que j'ai invité des gens à diner et il faut que je prépare tout alors si tu pouvais peut-être m'aider à rentrer plus vite un peu si c'est sur ton chemin ça me permettrait de me préparer un peu et de commencer préparer la cuisine pour accueillir tout le monde à temps et rester avec elleux pendant plus longtemps pour en profiter tu comprends et puis je serais moins stressé.e par tous ces préparatifs, déjà que la journée a été interminable et...\""
+  say Typing(5000)
+  say Question(
+    "F. \"Tu crois que ça m'amuse de devoir payer un taxi pour rentrer chez moi à cause de la grève des transports?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("A"),
+      Button("B"),
+      Button("C"),
+      Button("D"),
+      Button("E"),
+      Button("F"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "La \"bonne\" réponse est la réponse C !",
+    button_type="quick_reply",
+    buttons=[
+      Button("🔍Mais pourquoi?"),
+      Button("❓Comment demander?", payload="/_assertivite___assertdem1_5c7e84780ecd9f746fcc0765"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertdem3_5c7e84780ecd9f746fcc0767"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(5000)
+  say "Prenons la demande A : 
+\"Je ne pourrai jamais rentrer chez moi avec cette foutue grève des transports.\""
+  say Typing(5000)
+  say Question(
+    "Aucune demande n'est réellement formulée et le message est exprimé de façon négative.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍C'est vrai ..."),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(4000)
+  say "Concernant la demande B : 
+\"Pourrais-tu me déposer chez moi après le travail?\""
+  say Typing(4000)
+  say "La demande est formulée en impliquant bien l'interlocuteurice."
+  say Typing(4000)
+  say "En revanche, aucune empathie n'est manifestée ni aucun sentiment personnel positif."
+  say Typing(9000)
+  say Question(
+    "Deux éléments que l'on retrouve dans la bonne réponse C : 
+\"J'ai bien conscience que cela pourrait rajouter ton trajet mais ça m'arrangerait beaucoup si tu pouvais me déposer chez moi après le travail.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_36
+
+
+step_36:
+  say Typing(5000)
+  say "Dans la demande D : 
+\"Il faudrait que quelqu'un.e me dépose chez moi après le travail.\""
+  say Typing(6000)
+  say Question(
+    "Aucune interlocuteurice n'est impliqué.e personnellement, aucune empathie n'est exprimée et la demande n'est pas exprimée de façon positive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(12000)
+  say "Enfin, pour ce qui est de la réponse E : 
+\"J'ai quelque chose à te demander. En fait je dois rentrer chez moi très vite après le travail parce que j'ai invité des gens à diner et il faut que je prépare tout alors si tu pouvais peut-être m'aider à rentrer plus vite un peu si c'est sur ton chemin ça me permettrait de me préparer un peu et de commencer préparer la cuisine pour accueillir tout le monde à temps et rester avec elleux pendant plus longtemps pour en profiter tu comprends et puis je serais moins stressé.e par tous ces préparatifs, déjà que la journée a été interminable et...\""
+  say Typing(4000)
+  say "La demande est floue et se perd dans des justifications excessives. Elle n'est donc ni directe ni précise."
+  say Typing(7000)
+  say "La demande F est également indirecte et floue :
+\"Tu crois que ça m'amuse de devoir payer un taxi pour rentrer chez moi à cause de la grève des transports?\""
+  say Typing(4000)
+  say Question(
+    "De plus, l'utilisation de l'ironie et du reproche équivaut à une forme de manipulation.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_50
+
+
+step_50:
+  say Question(
+    "Très bien {{_firstname}}! Sur quoi souhaites-tu enchainer?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule stp !"),
+      Button("❓Comment demander?", payload="/_assertivite___assertdem1_5c7e84780ecd9f746fcc0765"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertdem3_5c7e84780ecd9f746fcc0767"),
+      Button("Mes droits?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_52
+
+
+step_52:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ddcbc3b9-c778-440c-9a95-d30d390fc423.jpeg",
+    quick_replies=[
+      Button("❓Comment demander?", payload="/_assertivite___assertdem1_5c7e84780ecd9f746fcc0765"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertdem3_5c7e84780ecd9f746fcc0767"),
+      Button("Mes droits?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

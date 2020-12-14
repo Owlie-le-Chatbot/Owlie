@@ -1,0 +1,74 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825458
+start:
+  say Typing(5000)
+  say "Si nous avons tendance à surestimer les comportements que nous n'avons pas adoptés (voir pensée précédente)..."
+  say Typing(4000)
+  say Question(
+    "Nous avons au contraire tendance à sous estimer les avantages de ce que nous avons fait.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est à dire ?"),
+      Button("👍"),
+      Button("Pensée précédente ⬅️", payload="/_trauma_igor___traumapculp08_5deb66171330c00001825455"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(5000)
+  say Question(
+    "C'est à dire que ce biais de négativité nous fait souvent oublier une chose très importante :",
+    button_type="quick_reply",
+    buttons=[
+      Button("Quoi ?"),
+      Button("👍"),
+      Button("Ah bon?"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "Ce que nous avons fait nous a peut-être permis d'éviter bien pire encore.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pensée suivante...", payload="/_trauma_igor___traumapculp10_5deb66171330c00001825459"),
+      Button("Je comprends pas.."),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say "Je comprends c'est pas simple! Prenons un exemple : ne pas se débattre au cours d'une agression."
+  say Typing(4000)
+  say "Beaucoup se le reprochent alors même que c'est probablement ce qui leur a permis de rester en vie."
+  say Typing(1700)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante ➡️", payload="/_trauma_igor___traumapculp10_5deb66171330c00001825459"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff21e
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Es-tu sorti.e un peu aujourd'hui ?"
+  hold
+  
+  remember _estu_sortie_un_peu_aujourdhui = event
+  
+  say Typing(2600)
+  say "Ok..."
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

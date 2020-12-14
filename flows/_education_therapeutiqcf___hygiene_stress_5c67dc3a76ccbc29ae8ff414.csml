@@ -1,0 +1,110 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff414
+start:
+  say Typing(2600)
+  say Question(
+    "Le stress a un impact majeur sur l'humeur... Il existe plein de variétés de \"stresseurs\" pour l'organisme !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Comme quoi ?"),
+      Button("Faire autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2600)
+  say "En fait, on ne devrait pas parler de \"stress\" mais \"des stress\" potentiels auxquels le corps peut être exposé."
+  say Typing(3900)
+  say Question(
+    "Ce peut être des
+- Stress physiques
+- Stress psychologiques (évènements de vie négatifs)
+ => Maladie
+ => Chirurgie
+ => Intoxication
+
+L'alcool, les drogues, la caféine (présente dans le café, le coca, le thé et aussi un peu dans le chocolat), mais aussi la cigarette, en trop grande quantité, ce sont tous des stresseurs pour l'organisme !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je vois !"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3500)
+  say Question(
+    "Il existe ensuite d'autres types de stress comme : 
+- le manque de sommeil (le sommeil ne se récupère pas aussi bien lorsqu’on dort le jour)
+- les stress hormonaux (ménopause, post-partum, andropause) ; ceux-là ne nous viennent pas spontanément à l'esprit !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr..."),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3200)
+  say Question(
+    "Es-tu soumis.e à beaucoup de stress au quotidien ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non, pas trop"),
+      Button("Ça va..."),
+      Button("Un peu trop en fait!"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(2600)
+  say Question(
+    "Voudrais-tu agir dessus ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, j'aimerais bien"),
+      Button("Ça va bien :-)", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3200)
+  say Question(
+    "Quelle est la nature de ton stress ? 
+
+(fais défiler toutes les possibilités de gauche à droite si dessous pour trouver ta réponse)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je n'en ai pas ", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("Un problème", payload="/_psychologie_clara___trouver_un_cpmt_alternati_5c67dc3a76ccbc29ae8ff3d5"),
+      Button("Physique/santé", payload="/_specification_etat_cf___specemotion_5c67dc3a76ccbc29ae8ff25a"),
+      Button("Psychologique", payload="/_ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228"),
+      Button("Pensées douloureuses", payload="/_psychologie_clara___beck_exemple_1_5c67dc3a76ccbc29ae8ff3cc"),
+      Button("Sommeil", payload="/_psychologie_clara___aide_au_sommeil_5c67dc3a76ccbc29ae8ff3df"),
+      Button("Hormonal", payload="/_education_therapeutiqcf___ressources_medicales_5c67dc3a76ccbc29ae8ff41f"),
+      Button("Trop de café/tabac", payload="/_psychologie_clara___trouver_un_cpmt_alternati_5c67dc3a76ccbc29ae8ff3d5"),
+      Button("Trop d'émotions", payload="/_specification_etat_cf___specemotion_5c67dc3a76ccbc29ae8ff25a"),
+      Button("Trop de travail", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Pb relationnel", payload="/_psychologie_clara___communication_non_violente_5c67dc3a76ccbc29ae8ff3d6"),
+    ],
+  )
+  hold
+  

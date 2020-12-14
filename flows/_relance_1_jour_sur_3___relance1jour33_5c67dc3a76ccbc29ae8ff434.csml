@@ -1,0 +1,6 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff434
+start:
+  say "Quoi de neuf aujourd'hui 😊?"
+  say Typing(3300)
+  // adding conditional redirect to flow
+  goto flow _accueil_check_clara___checkrelance_5c67dc3a76ccbc29ae8ff1f6

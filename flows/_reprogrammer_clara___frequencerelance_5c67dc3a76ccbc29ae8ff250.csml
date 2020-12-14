@@ -1,0 +1,59 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff250
+start:
+  say Typing(3000)
+  say Question(
+    "À quelle fréquence souhaites-tu que je vienne prendre de tes nouvelles 😊?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Tous les jours"),
+      Button("1 jour sur 3"),
+      Button("Toutes les semaines"),
+      Button("3 fois par mois"),
+      Button("2 fois par mois"),
+      Button("1 fois par mois"),
+      Button("Je m'en charge moi !", payload="/_fin_clara___randomfin_5c67dc3a76ccbc29ae8ff201"),
+      Button("Me désinscrire"),
+    ],
+  )
+  hold
+  
+  remember _frequencerelance = event
+  goto step_2
+
+
+step_2:
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff250 (REPROGRAMMER - CLARA / FrequenceRelance)
+
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff250 (REPROGRAMMER - CLARA / FrequenceRelance)
+
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff250 (REPROGRAMMER - CLARA / FrequenceRelance)
+
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff250 (REPROGRAMMER - CLARA / FrequenceRelance)
+
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff250 (REPROGRAMMER - CLARA / FrequenceRelance)
+
+  // not handling add_to_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff250 (REPROGRAMMER - CLARA / FrequenceRelance)
+
+  // not handling remove_from_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff250 (REPROGRAMMER - CLARA / FrequenceRelance)
+
+  say Typing(3100)
+  say Question(
+    "Ça marche !
+Je serai toujours heureuse de te revoir 🤗
+À bientôt !",
+    button_type="quick_reply",
+    buttons=[
+      Button("👋🏻À bientôt !"),
+      Button("✍️Donner mon avis", payload="/_feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243"),
+      Button("Merci 😊"),
+    ],
+  )
+  hold
+  

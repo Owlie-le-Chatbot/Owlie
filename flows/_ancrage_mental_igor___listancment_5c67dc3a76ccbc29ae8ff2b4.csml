@@ -1,0 +1,98 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2b4
+start:
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Au rapport !",
+        subtitle="Je décris mes bases",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e286262c-4957-469c-8dba-c3ab445523ec.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___rapport_5c67dc3a76ccbc29ae8ff2b6"),
+        ],
+      ),
+      Card(
+        title="3 Objets",
+        subtitle="Je décris 3 objets",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1718f001-ce65-482f-a518-72c4b8baffc0.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___3_objets_5c67dc3a76ccbc29ae8ff2b7"),
+        ],
+      ),
+      Card(
+        title="Lecture",
+        subtitle="Je lis des lettres, des mots, des phrases",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d6ba481a-ab1b-447e-a36f-adf4076d32a3.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___lecture_5c67dc3a76ccbc29ae8ff2b8"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Routine",
+        subtitle="Je détaille une activité",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5c3157b5-496c-48ca-aa59-cb8659eb025c.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___routine_5c67dc3a76ccbc29ae8ff2b9"),
+        ],
+      ),
+      Card(
+        title="Récitation",
+        subtitle="Je récite quelque chose",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8fed167d-51f0-4c87-9914-fa3fbe9d87f0.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___recitation_5c67dc3a76ccbc29ae8ff2ba"),
+        ],
+      ),
+      Card(
+        title="Souvenir",
+        subtitle="Je détaille un souvenir",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e6c61d0e-42e7-469f-ad78-ace527469b97.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___souvenir_5c67dc3a76ccbc29ae8ff2bb"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Catégories",
+        subtitle="Je joue aux catégories",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/750dd997-3f58-48f6-8900-4c09eb46bcc8.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___categorie_5c67dc3a76ccbc29ae8ff2bc"),
+        ],
+      ),
+      Card(
+        title="Protection",
+        subtitle="Je m'imagine protégé",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/36c6a8ad-ab95-4e83-a64f-9a13f93e4234.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___protection_5c67dc3a76ccbc29ae8ff2bd"),
+        ],
+      ),
+      Card(
+        title="Au présent !",
+        subtitle="Je progresse jusqu'au présent",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5df8a0c3-13c9-41cb-a121-9c346fae6303.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_mental_igor___present_5c67dc3a76ccbc29ae8ff2be"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❔Au hasard ", payload="/_ancrage_mental_igor___randomancrmentalcf_5c67dc3a76ccbc29ae8ff2bf"),
+      Button("🔙Sortir", payload="/_ancrage_igor___listanc_5c67dc3a76ccbc29ae8ff2af"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,4 @@
+// flow built from AI Rules text target undefined
+start:
+  say "Ceci ne semble pas être une adresse email valide :-)"
+  goto end

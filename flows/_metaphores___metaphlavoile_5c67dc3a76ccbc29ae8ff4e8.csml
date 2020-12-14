@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e8
+start:
+  say Typing(3000)
+  say "Imagine-toi sur un bateau à voile en pleine tempête."
+  say Typing(4000)
+  say "Des torrents de pluie s’abattent sur toi et te fouettent le visage."
+  say Typing(5000)
+  say "Chaque vague est si imposante qu’elle te semble infranchissable."
+  say Typing(4000)
+  say "Le vent souffle si fort qu’il te cloue sur place et exerce une pression énorme sur la voile de ton bateau."
+  say Typing(5000)
+  say "Tu n’as qu’une envie : que ce cauchemar prenne fin et donc de rentrer chez toi le plus vite possible."
+  say Typing(4000)
+  say "Pour cela, il faudrait garder le contrôle sur ce bateau et donc laisser la voile tendue."
+  say Typing(3000)
+  say "Mais..."
+  say Typing(5000)
+  say "Ceci n’est pas sans risques puisque les voiles pourraient se déchirer ou, pire, tu pourrais chavirer."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("⛵Tendre la voile", payload="/_metaphores___metaphlavoile2_5c67dc3a76ccbc29ae8ff4e9"),
+      Button("✋Lâcher la voile", payload="/_metaphores___metaphlavoile3_5c67dc3a76ccbc29ae8ff4ea"),
+    ],
+  )
+  hold
+  

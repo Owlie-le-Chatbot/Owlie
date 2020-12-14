@@ -1,0 +1,191 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff41b
+start:
+  say Typing(3200)
+  say Question(
+    "Il existe différents types de pensées qui créent des filtres, comme si on regardait la vie avec des \"lunettes\".
+
+On dit que ces pensées \"distordent\" la réalité car on n'en voit qu'une partie et pas l'ensemble.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui..."),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3800)
+  say Question(
+    "Souvent on ne voit que le négatif... 
+
+En plus, ces pensées formulées à la 1ère personne (\"je\"), nous culpabilisent et nous font nous sentir mal... en plus de nous amener à avoir des jugements erronnés sur nous ou les autres.
+
+Ce sont des \"veilles rengaines\" comme \"je suis nul.le\", \"elleux iels arrivent à être heureuxses, moi jamais\", \"personne ne m'aime\"... 
+
+Que du bonheur quoi !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je vois...!!"),
+      Button("Gérer une pensée", payload="/_psychologie_clara___beck_exemple_1_5c67dc3a76ccbc29ae8ff3cc"),
+      Button("Autre", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3400)
+  say Question(
+    "Nous en avons tou.te.s mais de façons plus ou moins fréquentes.
+
+On dit que les personnes qui sont dépressives peuvent passer des heures à n'avoir que ce type de pensée ! C'est un cercle viscieux car plus elles en ont, plus elles sont dépressives... et plus elles en ont !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah..."),
+      Button("Je savais ça !"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3600)
+  say Question(
+    "En plus, ces pensées là ne proposent pas de solution, elles \"n'aident pas\", on dit qu'elles sont des productions \"dysfonctionnelles\" du cerveau... souvent ça vient de notre vécu ou de notre éducation.
+
+Mais la bonne nouvelle, c'est qu'en les connaissant mieux, on peut apprendre à les repérer et réorienter son esprit sur quelque chose de plus aidant !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Les reconnaitre"),
+      Button("En gérer une", payload="/_psychologie_clara___beck_exemple_1_5c67dc3a76ccbc29ae8ff3cc"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2500)
+  say "En voici différents types :
+
+(fais défiler les images ↔️)"
+  say Typing(3100)
+  say Carousel(
+    cards=[
+      Card(
+        title="Pensée catastrophique / amplification",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1ec1c493-27e9-4774-b5d5-321baea86fc5.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_quiz_cognitif_clara___jeu_1_pensee_catastrophique_5c67dc3a76ccbc29ae8ff3ee"),
+        ],
+      ),
+      Card(
+        title="Surgénéralisation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/97e47afe-e841-4272-87bc-41438e947f8c.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___2_surgeneralisation_generalisation_a_outrance_5c67dc3a76ccbc29ae8ff3fd"),
+        ],
+      ),
+      Card(
+        title="Raisonnement émotionnel",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/624fb5a2-0c7e-47eb-b9c4-49b3e2232c1d.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___3_raisonnement_emotionnel_5c67dc3a76ccbc29ae8ff3fe"),
+        ],
+      ),
+      Card(
+        title="Lecture dans les pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5a882e94-89b8-492e-90c8-47f76cf985ca.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___4_lecture_dans_les_pensees_5c67dc3a76ccbc29ae8ff3ff"),
+        ],
+      ),
+      Card(
+        title="Pensée de type \"je dois\"",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f738640c-941c-4315-a760-a6d5e04887d4.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___5_pensee_de_type_je_dois_5c67dc3a76ccbc29ae8ff400"),
+        ],
+      ),
+      Card(
+        title="Dichotomie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1746826f-9681-40e3-9f6f-290de7cea4f4.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___6_dichotomie_5c67dc3a76ccbc29ae8ff401"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="square",
+  )
+  
+  say Typing(4500)
+  say Carousel(
+    cards=[
+      Card(
+        title="Jugement d'attribution",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/56531d5e-65ff-4917-b744-c12af4f0bfee.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___7_jugement_dattribution_5c67dc3a76ccbc29ae8ff402"),
+        ],
+      ),
+      Card(
+        title="Filtre négatif",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a13ea305-9c64-4363-ba1b-90300577776a.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___8_filtre_negatif_vision_en_tunnel_5c67dc3a76ccbc29ae8ff403"),
+        ],
+      ),
+      Card(
+        title="Illusion de contrôle externe",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/50839ad6-042f-456e-940b-99f5e7086f46.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___9_illusion_de_controle_externe_5c67dc3a76ccbc29ae8ff404"),
+        ],
+      ),
+      Card(
+        title="Inférence arbitraire",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e41f6262-80bc-404d-bea9-0dd3b9620a0f.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___10_attribution_arbitraire_5c67dc3a76ccbc29ae8ff405"),
+        ],
+      ),
+      Card(
+        title="Erreur d'équité",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/174e3f27-f851-405b-a31c-286b39a54705.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___11_erreur_dequite_5c67dc3a76ccbc29ae8ff406"),
+        ],
+      ),
+      Card(
+        title="Personnalisation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/946b85c9-fdcb-4ce6-b7d4-9838f7bd0a82.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___12_la_personnalisation_5c67dc3a76ccbc29ae8ff407"),
+        ],
+      ),
+      Card(
+        title="Maximisation / Minimisation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2d9fbdc9-9fd7-4360-8dff-76fa53894d02.jpeg",
+        buttons=[
+          Button("Qu'est-ce que c'est?", payload="/_types_de_distorsions_cf___13_maximisation_minimisation_5c67dc3a76ccbc29ae8ff408"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="square",
+    quick_replies=[
+      Button("Faire le quiz dessus", payload="/_psychologie_clara___quizz_cognitif_2_explication_du_jeu_5c67dc3a76ccbc29ae8ff3cb"),
+      Button("Gérer une pensée", payload="/_pensee_igor___intropensee_5c67dc3a76ccbc29ae8ff27f"),
+      Button("Autres activités", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  

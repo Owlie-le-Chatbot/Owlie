@@ -1,0 +1,85 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2b6
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Où es-tu en ce moment même ?"
+  hold
+  
+  remember _lieu = event
+  
+  goto form_1_1
+
+
+// form component
+form_1_1:
+  say "En quelle année sommes-nous ?"
+  hold
+  
+  remember _annee = event
+  
+  goto form_1_2
+
+
+// form component
+form_1_2:
+  say "Quel jour sommes-nous?"
+  hold
+  
+  remember _jour = event
+  
+  goto form_1_3
+
+
+// form component
+form_1_3:
+  say "Quelle heure est-il ?"
+  hold
+  
+  remember _heure = event
+  
+  goto form_1_4
+
+
+// form component
+form_1_4:
+  say "Quel est ton prénom ?"
+  hold
+  
+  remember _prenom = event
+  
+  goto form_1_5
+
+
+// form component
+form_1_5:
+  say "Quel est ton nom de famille ?"
+  hold
+  
+  remember _nom = event
+  
+  goto form_1_6
+
+
+// form component
+form_1_6:
+  say "Quel âge as-tu ?"
+  hold
+  
+  remember _age = event
+  
+  goto form_1_7
+
+
+// form component
+form_1_7:
+  say "Es-tu actuellement en vie ?"
+  hold
+  
+  remember _vie = event
+  
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

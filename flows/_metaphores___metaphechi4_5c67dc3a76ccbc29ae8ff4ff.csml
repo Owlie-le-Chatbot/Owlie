@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ff
+start:
+  say Typing(4000)
+  say "Tes pensées et tes émotions douloureuses sont comme les pièces noires de l'échiquier."
+  say Typing(5000)
+  say "En cherchant à tout prix à les éliminer avec les pièces blanches, tu cherches à éliminer tes propres expériences."
+  say Typing(4000)
+  say "Or tu n'es pas les pièces blanches."
+  say Typing(4000)
+  say "Tu es l'échiquier!"
+  say Typing(4000)
+  say "Les expériences négatives ne disparaitront jamais totalement de ta vie."
+  say Typing(5000)
+  say "De plus, en t'obstinant à leur faire la guerre sans cesse, tu perds de vue ce qui compte réellement pour toi."
+  say Typing(5000)
+  say Question(
+    "Et ce qui compte vraiment pour toi se passe ailleurs que sur l'échiquier!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

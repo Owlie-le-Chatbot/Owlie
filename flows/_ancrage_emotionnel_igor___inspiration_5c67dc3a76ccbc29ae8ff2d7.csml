@@ -1,0 +1,212 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d7
+start:
+  say Typing(2000)
+  say "Tu vas maintenant te réciter quelque chose d'inspirant 🌟"
+  say Typing(3000)
+  say "Il peut s'agir d'une chanson, d'un poème, d'une citation, d'un discours, d'un conte ou d'autre chose."
+  say Typing(2000)
+  say Question(
+    "Vas-y !",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+      Button("💡Pas d'idées"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2000)
+  say "Voici quelques idées."
+  say Typing(2000)
+  say "Quelques citations pour commencer :
+
+(fais défiler les images ↔️)"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Douleur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a574c3a8-a724-4b5d-8682-feafed885166.jpeg",
+      ),
+      Card(
+        title="Douleur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/46a0250b-e52e-4367-b73f-b048fe9b4763.jpeg",
+      ),
+      Card(
+        title="Effort",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1ff35b87-3169-421d-a830-c62f606c0241.jpeg",
+      ),
+      Card(
+        title="Effort",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d9813c5c-8ad1-495e-b888-b17ae8d8ed5d.jpeg",
+      ),
+      Card(
+        title="Colère",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fc07943b-dc32-4d21-a260-60c2099c8898.jpeg",
+      ),
+      Card(
+        title="Colère",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c22eaad5-9b56-4d45-ad2c-afa098a5b381.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Acceptation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0d7ae896-efe3-49aa-b832-56c913685d54.jpeg",
+      ),
+      Card(
+        title="Acceptation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/75caf8bb-b8bc-43c3-8f60-a29af7a118e1.jpeg",
+      ),
+      Card(
+        title="Acceptation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9fd1f3ab-3f33-4f77-94cb-c1960319ace6.jpeg",
+      ),
+      Card(
+        title="Acceptation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/12d357e5-cc5f-4f72-a3de-5c0081b1eeaf.jpeg",
+      ),
+      Card(
+        title="Acceptation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c8ad3608-6db8-4b83-9c03-c29f9af844da.jpeg",
+      ),
+      Card(
+        title="Présente",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/45c6e087-b64a-4188-b7de-151c0d82886c.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Guérison",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f442288a-51ce-4cf4-b9bc-920152b37083.jpeg",
+      ),
+      Card(
+        title="Yoda",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1cfe16ce-59c5-407c-9e6d-d941c7f3cd29.jpeg",
+      ),
+      Card(
+        title="Acceptation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c8e955db-a10c-479d-b3b3-9f4974fae19e.jpeg",
+      ),
+    ],
+    image_aspect_ratio="square",
+    quick_replies=[
+      Button("👍🏻Ça me suffit !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+      Button("➡️Continuer"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(2000)
+  say "Voici maintenant quelques scènes de film inspirantes :
+
+(fais défiler les images ↔️)"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Rocky Balboa",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cee3b47a-27bd-48dc-bd19-0edc5359511d.jpeg",
+        buttons=[
+          Url("https://youtu.be/NEKEFsiP4LI", text="Voir l'extrait"),
+        ],
+      ),
+      Card(
+        title="Ghandi",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d3b7ad48-27d5-4950-bf54-deb722cea0ac.jpeg",
+        buttons=[
+          Url("https://youtu.be/J9G8lToun9U", text="Voir l'extrait"),
+        ],
+      ),
+      Card(
+        title="Le Cercle des poètes disparus",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/42d1d28c-2faa-4467-8c4b-fe102107d60b.jpeg",
+        buttons=[
+          Url("https://youtu.be/cbLwLYUgSrc", text="Voir l'extrait"),
+        ],
+      ),
+      Card(
+        title="À la recherche du bonheur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8bf8e330-b764-4f26-9144-5183cf58fd65.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=FZF2b0jCVJc", text="Voir l'extrait"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("👍🏻Ça me suffit !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+      Button("➡️Continuer"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(2000)
+  say "Voici enfin un petit conte philosophique intitulé : \"Qui peut le dire ?\""
+  say Typing(2000)
+  say "Il y avait dans un village un vieil homme très pauvre qui avait un très beau cheval."
+  say Typing(2000)
+  say "Le cheval était si beau que les seigneurs du château voulaient le lui acheter, mais il refusait toujours..."
+  say Typing(2000)
+  say "- Pour moi ce cheval n'est pas un animal, c'est un ami, comment voulez-vous vendre un ami ? demandait-il."
+  say Typing(2000)
+  say "Un matin, il se rendit à l'étable et le cheval n'etait plus là..."
+  say Typing(2000)
+  say "Tous les villageois lui dirent : 
+- On te l'avait bien dit ! Tu aurais mieux fait de le vendre. Maintenant, on te l'a volé... Quelle malchance !"
+  say Typing(2000)
+  say "Le vieil homme répond :
+- Chance, malchance, qui peut le dire ?"
+  say Typing(2900)
+  say "Tout le monde se moqua de lui. Mais 15 jours plus tard, le cheval revint, avec toute une horde de chevaux sauvages. Il s'était échappé, avait séduit une belle jument et rentrait avec le reste de la horde."
+  say Typing(2000)
+  say "- Quelle chance ! dirent les villageois."
+  say Typing(2000)
+  say "Le vieil homme et son fils se mirent au dressage des chevaux sauvages. Mais une semaine plus tard, son fils se cassa une jambe à l'entraînement."
+  say Typing(2000)
+  say "- Quelle malchance ! dirent ses amis. Comment vas-tu faire, toi qui es déjà si pauvre, si ton fils, ton seul support, ne peut plus t'aider !"
+  say Typing(2000)
+  say "Le vieil homme se contenta de répondre :
+- Chance, malchance, qui peut le dire ?"
+  say Typing(2000)
+  say "Quelques temps plus tard, l'armée du seigneur du pays arriva dans le village et enrôla de force tous les jeunes gens disponibles.
+Tous... sauf le fils du vieil homme qui avait sa jambe cassée."
+  say Typing(4000)
+  say "- Quelle chance tu as, tous nos enfants sont partis à la guerre, et toi tu es le seul à garder avec toi ton fils. Les nôtres vont peut-être se faire tuer..."
+  say Typing(2000)
+  say Question(
+    "Le vieil homme répond : 
+- Chance, malchance, qui peut le dire ?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😉Ok"),
+    ],
+  )
+  hold
+  
+  goto step_51
+
+
+step_51:
+  // adding conditional redirect to flow
+  goto flow _ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1

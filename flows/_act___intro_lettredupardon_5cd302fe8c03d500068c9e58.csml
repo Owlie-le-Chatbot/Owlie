@@ -1,0 +1,38 @@
+// CHATFUEL BLOCK ID 5cd302fe8c03d500068c9e58
+start:
+  say Typing(1200)
+  say "Cet exercice en 10 étapes est fait pour t'aider à faire un pas en direction de quelqu'un dans ta vie qui t'a blessé.e 😩."
+  say Typing(1900)
+  say Question(
+    "Lui pardonner et vivre plus pleinement dans le présent 🤗.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️continue"),
+      Button("sortir🔙", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(1300)
+  say "Le pardon n'est pas une chose à faire pour \"se sentir mieux\" ou parce que tu \"dois le faire\""
+  say Typing(2000)
+  say "C'est un processus difficile mais qui peut avoir vraiment du sens dans un cheminement de vie."
+  say Typing(1700)
+  say "Tu es libre de choisir de le faire ou de ne pas le faire selon si cela correspond à tes valeurs."
+  say Typing(1800)
+  say "Je t'invite à avoir une personne précise en tête lorsque tu feras cet exercice💭."
+  say Typing(1700)
+  say Question(
+    "Ne fais cet exercice que si tu te sens suffisamment prêt.e à abandonner ton ressentiment envers cette personne.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK continue 👍🏻", payload="/_act___lettredupardon_5cd2fc3f8c03d50006842b1d"),
+      Button("sortir🔙", payload="/Default"),
+    ],
+  )
+  hold
+  

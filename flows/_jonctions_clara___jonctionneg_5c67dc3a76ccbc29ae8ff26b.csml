@@ -1,0 +1,26 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff26b
+start:
+  say Typing(2200)
+  say Question(
+    "De quoi tu as besoin pour aller mieux ?
+ 
+- ❓Prendre le temps de comprendre ce qu'il se passe
+- 🚨Agir direct
+- 😢Parler
+
+(😊fais défiler les boutons ↔️)",
+    buttons=[
+      Button("🌟Tous les menus !", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+      Button("🤗Réconfort", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+      Button("💛Audios de thérapie", payload="/_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"),
+    ],
+    quick_replies=[
+      Button("🚨 Agir direct", payload="/_choix_clara___empathiepremenucrise_5c67dc3a76ccbc29ae8ff268"),
+      Button("😢Parler", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+      Button("🐻d'un câlin", payload="/_reconfort_clara___randomhug_5c67dc3a76ccbc29ae8ff2f3"),
+      Button("❓Comprendre", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🔙Retour", payload="/Default"),
+    ],
+  )
+  hold
+  

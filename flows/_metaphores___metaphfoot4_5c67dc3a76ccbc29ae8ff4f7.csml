@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f7
+start:
+  say Typing(5000)
+  say "Tes pensées et tes émotions douloureuses sont parfois comme les supporterices d'une équipe adverse."
+  say Typing(5000)
+  say "Elles peuvent te pousser à te dévaloriser, à fuir, ou vers des combats inutiles."
+  say Typing(5000)
+  say "À trop y accorder d'importance et d'attention, tu risques de te détourner de ce qui te tient à coeur."
+  say Typing(4000)
+  say "Car les victoires se remportent sur le terrain, pas dans les tribunes."
+  say Typing(4000)
+  say Question(
+    "C'est aussi bien le cas dans un match de foot que dans la vie en général.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

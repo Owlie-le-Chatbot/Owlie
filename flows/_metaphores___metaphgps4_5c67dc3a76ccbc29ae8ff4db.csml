@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4db
+start:
+  say Typing(3000)
+  say "Tes pensées sont comme les instructions d'un GPS."
+  say Typing(5000)
+  say "Mais les plus douloureuses et obsédantes de ces pensées ne te guident pas forcément vers la bonne destination."
+  say Typing(4000)
+  say "La bonne direction est celle qui correspond à tes valeurs, à ce qui est important pour toi."
+  say Typing(4000)
+  say Question(
+    "Mieux vaut être en accord avec ses valeurs qu'obéir aveuglément à de mauvaises pensées.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

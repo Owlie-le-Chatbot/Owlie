@@ -1,0 +1,128 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff418
+start:
+  say Typing(2600)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f69713c0-3337-4ecf-bce7-4d5b6230d688.jpeg")
+  say Typing(3400)
+  say Question(
+    "C'est une excellente initiative de vouloir te documenter à partir de sources fiables, rédigées par des professionnel.le.s de la santé mentale. 
+
+Mieux connaître la maladie, c'est savoir comment mieux la combattre et avoir une meilleure qualité de vie !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai..."),
+      Button("Menu précédent", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "Il est important que tu saches comment la maladie affecte à la fois l'esprit et le corps.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(1800)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/aea331ce-1cfd-4eac-b518-720ad308759d.jpeg")
+  say Typing(2900)
+  say "Voici ce que je peux te proposer pour te documenter davantage :"
+  say Typing(2400)
+  say Carousel(
+    cards=[
+      Card(
+        title="Les troubles anxieux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/eda7b9cd-da0b-448b-813e-ea6fe6f3812a.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Troubles-anxieux", text="Troubles anxieux"),
+        ],
+      ),
+      Card(
+        title="Les troubles dépressifs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/69d2cfa0-a745-4b10-a2a5-c117d97dbd86.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Troubles-depressifs", text="Troubles dépressifs"),
+        ],
+      ),
+      Card(
+        title="Les troubles bipolaires",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a1564699-7cf5-403c-892f-b68067049a23.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Troubles-bipolaires", text="Troubles bipolaires"),
+        ],
+      ),
+      Card(
+        title="La schizophrénie et ses différentes formes d'expression",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e676a83c-b5d8-4da2-b723-fcbf8f39b2b4.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Schizophrenie-s", text="La schizophrénie"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="square",
+    quick_replies=[
+      Button("+ d'infos"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Carousel(
+    cards=[
+      Card(
+        title="Les troubles addictifs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ec438742-458e-485e-a2fc-53b185406169.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Troubles-addictifs", text="Troubles addictifs"),
+        ],
+      ),
+      Card(
+        title="Les troubles du comportement alimentaire (TCA)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9a7b3173-6c5f-4151-ab1a-0666b7ca62bd.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Troubles-des-comportements-alimentaires-TCA", text="TCA"),
+        ],
+      ),
+      Card(
+        title="Risque suicidaire",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/84b3180c-4e35-4404-a992-4fbd84f6103e.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Risque-suicidaire", text="Risque suicidaire"),
+        ],
+      ),
+      Card(
+        title="La santé mentale et le quotidien...",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/acdf7aed-17a5-494d-92f3-0dabc1581654.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Sante-mentale-et", text="Au quotidien"),
+        ],
+      ),
+      Card(
+        title="Vivre avec une maladie mentale",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/23f09d60-b35b-453e-8d86-74ad0333e571.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Temoignages-Vivre-avec-des-troubles-psy", text="Témoignages"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="square",
+    quick_replies=[
+      Button("Autres infos", payload="/_education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c"),
+      Button("Autres activités", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  

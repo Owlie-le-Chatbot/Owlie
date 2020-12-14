@@ -1,0 +1,50 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c2
+start:
+  say Typing(2400)
+  say "Mes bras se resserrent contre moi, mes sourcils se froncent, je recule..."
+  say Typing(2600)
+  say Question(
+    "...mes yeux sont écarquillés, mon coeur se serre et bat fort...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est de la peur !"),
+      Button("C'est la surprise !", payload="/_psychologie_clara___quizzemotrate_5c67dc3a76ccbc29ae8ff3bc"),
+      Button("C'est de la colère !", payload="/_psychologie_clara___quizzemotrate_5c67dc3a76ccbc29ae8ff3bc"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3100)
+  say Question(
+    "Bien joué ! Oui, c'est de la peur ! Voici la peur :",
+    buttons=[
+      Url("https://www.youtube.com/watch?v=83z7_YBqZtQ", text="Peur"),
+    ],
+  )
+  
+  say Typing(1300)
+  say Question(
+    "Encore ? 😉",
+    button_type="quick_reply",
+    buttons=[
+      Button("😊Oui, continuons !"),
+      Button("🚀Autre chose", targets=["_education_therapeutiqcf___carrefour_explications_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40a", "_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"]) as btn__1,
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0", "_psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd", "_psychologie_clara___quizzdegout_5c67dc3a76ccbc29ae8ff3c1", "_psychologie_clara___quizzjoie_5c67dc3a76ccbc29ae8ff3bf", "_psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be"]))
+  if (rand == 0) goto flow _psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0
+  if (rand == 1) goto flow _psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd
+  if (rand == 2) goto flow _psychologie_clara___quizzdegout_5c67dc3a76ccbc29ae8ff3c1
+  if (rand == 3) goto flow _psychologie_clara___quizzjoie_5c67dc3a76ccbc29ae8ff3bf
+  if (rand == 4) goto flow _psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be

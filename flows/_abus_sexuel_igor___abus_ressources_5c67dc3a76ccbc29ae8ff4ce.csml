@@ -1,0 +1,54 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ce
+start:
+  say Typing(1500)
+  say "Voici deux numéros d'écoute, d'information et d'orientation :"
+  say Typing(1000)
+  say "1. Le 39 19 : Violences Femmes Info"
+  say Typing(3000)
+  say "C’est un numéro d’écoute national destiné aux femmes victimes de toutes formes de violences (violences conjugales, violences sexuelles, violences au travail, mutilations sexuelles féminines, mariages forcés), ainsi qu’à leur entourage et aux professionnel.le.s concerné.e.s. ll permet d’assurer une écoute, une information, et, en fonction des demandes, une orientation adaptée vers les dispositifs locaux d’accompagnement et de prise en charge."
+  say Typing(2500)
+  say Question(
+    "ll est anonyme. Il est accessible et gratuit en métropole et dans les DOM 7 jours sur 7. Le numéro est ouvert du lundi au vendredi de 9 h à 22 h, les samedi, dimanche et jours fériés de 9h à 18h. Le 3919 n’est pas un numéro d’appel d’urgence.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(1000)
+  say "2. Le 0 800 05 95 95 : SOS Viols-Femmes-Informations"
+  say Typing(2000)
+  say "Ce numéro est destiné aux femmes victimes de viol ou d’agressions sexuelles, à leur entourage et aux professionnel.le.s concernés."
+  say Typing(3000)
+  say Question(
+    "C’est un numéro d’écoute national et anonyme. Il est accessible et gratuit depuis un poste fixe en métropole et dans les DOM du lundi au vendredi de 10 h à 19 h. 
+Vous trouverez au 0 800 05 95 95 : écoute, soutien, information, accompagnement, aide pour faire valoir vos droits en justice. Si vous le souhaitez, Viols-Femmes-Informations vous proposera une orientation adaptée vers les dispositifs locaux d’accompagnement et de prise en charge.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(2000)
+  say Question(
+    "Voici d'autres ressources qui pourraient t'être utiles",
+    buttons=[
+      Url("http://stop-violences-femmes.gouv.fr/Les-numeros-d-urgence,396.html", text="Numéros d'urgence"),
+      Url("http://stop-violences-femmes.gouv.fr/associations-nationales-397.html", text="Associations"),
+    ],
+    quick_replies=[
+      Button("Merci Owlie", payload="/_accueil_check_clara___check1_5c67dc3a76ccbc29ae8ff1ee"),
+    ],
+  )
+  hold
+  

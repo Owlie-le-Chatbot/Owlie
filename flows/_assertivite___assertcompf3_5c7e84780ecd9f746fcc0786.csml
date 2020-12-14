@@ -1,0 +1,278 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0786
+start:
+  say Typing(3000)
+  say "Il n'est pas toujours facile de formuler un compliment."
+  say Typing(4000)
+  say Question(
+    "Certaines pensées, certaines convictions peuvent parfois t'en dissuader.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Lesquelles ?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Indique pour chacune d'entre elles si tu les partages.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "1. Si mon interlocuteurice sait déjà que je l'apprécie, ça ne sert à rien de lae complimenter.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3000)
+  say Question(
+    "2. Mon interlocuteurice se fiche de ce que je peux penser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "3. J'ai peur de paraître trop flatteu.r.se ou hypocrite si je formule un compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4000)
+  say Question(
+    "4. Je vais mettre mon interlocuteurice mal à l'aise si je lae complimente.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(5000)
+  say Question(
+    "5. Mon interlocuteurice va penser que je veux obtenir quelque chose de lui/elle si je lae complimente.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Question(
+    "6. Si j'exprime mes sentiments, je passerai pour quelqu'un.e de faible.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3000)
+  say "Très bien {{_firstname}}."
+  say Typing(6000)
+  say Question(
+    "Je vais maintenant t'exposer des points de vue que j'estime aussi importants et qui ne vont pas forcément dans le même sens :",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Vas-y Owlie !"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(5000)
+  say "Exprimer des sentiments positifs à travers des compliments est non seulement un droit..."
+  say Typing(4000)
+  say "Mais également la meilleure façon de maintenir et renforcer tes relations."
+  say Typing(4000)
+  say "Les compliments sont donc non seulement utiles mais nécessaires à la vie en société."
+  say Typing(4900)
+  say Question(
+    "Ces bénéfices se maintiennent même lorsque l'interlocuteurice pense déjà que tu l'apprécies.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Certainement"),
+    ],
+  )
+  hold
+  
+  goto step_39
+
+
+step_39:
+  say Typing(4000)
+  say "Les compliments apportent aussi des bénéfices à cellui qui les formule."
+  say Typing(6000)
+  say "En les formulant régulièrement et sincèrement, tu vas cultiver ton bien-être, tes émotions positives et améliorer la qualité de ton sommeil."
+  say Typing(6000)
+  say "Faire preuve de gratitude régulièrement réduit également le risque de dépression et d'anxiété et te rend moins envieux.se."
+  say Typing(5000)
+  say Question(
+    "Ces bénéfices se maintiennent même si ton interlocuteurice se fiche de ce que tu penses.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Waouh"),
+    ],
+  )
+  hold
+  
+  goto step_48
+
+
+step_48:
+  say Typing(5000)
+  say "À partir du moment où ton compliment est sincère, il ne s'agit ni de flatterie, ni d'hypocrisie."
+  say Typing(5000)
+  say Question(
+    "Si la flatterie ou l'hypocrisie te sont reprochées, c'est que ton compliment a été soit mal formulé, soit mal interprété.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ah ok!"),
+    ],
+  )
+  hold
+  
+  goto step_53
+
+
+step_53:
+  say Typing(5000)
+  say "Si ton interlocuteurice est mal à l'aise, ça ne signifie pas que ton compliment n'a pas lieu d'être."
+  say Typing(5000)
+  say "Si ton interlocuteurice refuse ton compliment, ça ne signifie pas qu'il n'aurait pas dû être formulé."
+  say Typing(6000)
+  say Question(
+    "Beaucoup de gens ne savent pas recevoir les compliments, notamment pour des raisons culturelles, ou par manque d'estime de soi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Compris !"),
+    ],
+  )
+  hold
+  
+  goto step_60
+
+
+step_60:
+  say Typing(5000)
+  say "Si tu crains de passer pour un.e manipulateurice, assure-toi que ton compliment reste gratuit."
+  say Typing(4000)
+  say "Veille donc à ne pas associer une demande ou une critique à ton compliment."
+  say Typing(6000)
+  say "Exemple \"Tu es très élégant aujourd'hui. Pourrais-tu t'occuper de ce client tout à l'heure?\" (compliment + demande = demande déguisée)"
+  say Typing(6000)
+  say Question(
+    "Exemple \"Vous êtes très rigoureuse dans votre travail. C'est dommage que vous soyez aussi susceptible.\" (compliment + critique = critique déguisée)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍C'est noté"),
+    ],
+  )
+  hold
+  
+  goto step_69
+
+
+step_69:
+  say Typing(6000)
+  say Question(
+    "Et n'oublie pas que quelqu'un.e qui exprime ses sentiments avec sincérité ne fait pas preuve de faiblesse mais de courage.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌D'accord !"),
+    ],
+  )
+  hold
+  
+  goto step_72
+
+
+step_72:
+  say Typing(4000)
+  say "Ces points de vue rationnels devraient t'aider à formuler tes compliments."
+  say Typing(4000)
+  say Question(
+    "N'hésites pas à refaire un tour dans la rubrique \"droits fondamentaux\" si besoin!",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule !"),
+      Button("📜Mes droits?", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("❓Comment faire?", payload="/_assertivite___assertcompf1_5c7e84780ecd9f746fcc0784"),
+      Button("🔍Un exemple!", payload="/_assertivite___assertcompf2_5c7e84780ecd9f746fcc0785"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_77
+
+
+step_77:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c066a58b-1006-4b6f-a99f-fba9a9fc8b4d.jpeg",
+    quick_replies=[
+      Button("📜Voir mes droits!", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("❓Comment faire?", payload="/_assertivite___assertcompf1_5c7e84780ecd9f746fcc0784"),
+      Button("🔍Un exemple!", payload="/_assertivite___assertcompf2_5c7e84780ecd9f746fcc0785"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

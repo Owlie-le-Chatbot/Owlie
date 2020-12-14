@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff216
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Comment était ton sommeil aujourd'hui ?"
+  hold
+  
+  remember _astu_suffisamment_dormi_aujourdhui = event
+  
+  say Typing(1400)
+  say Question(
+    "Ok...
+
+Que veux-tu faire ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📍Faire le point", payload="/_eva_etat_pendant_clara___evaetat3_5c67dc3a76ccbc29ae8ff255"),
+      Button("🌈Propose...", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("💬Papoter", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("💤Gérer le sommeil", payload="/_psychologie_clara___aide_au_sommeil_5c67dc3a76ccbc29ae8ff3df"),
+      Button("🕗Se voir + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  

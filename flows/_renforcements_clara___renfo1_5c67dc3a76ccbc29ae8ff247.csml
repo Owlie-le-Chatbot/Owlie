@@ -1,0 +1,8 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff247
+start:
+  say Typing(2500)
+  say "Je suis contente pour toi {{_name}} !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c988bcf9-1ba7-4616-b52a-5d9e9391ffc4.jpeg")
+  say Typing(2800)
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

@@ -1,0 +1,108 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff423
+start:
+  say Typing(2100)
+  say Question(
+    "J'aimerais bien te parler de l’utilisation des \"il faut\" dans notre langage...
+
+Tu sais, ces injonctions qu'on se fait souvent et qui nous plombent et nous stressent quand on n'y répond pas !
+
+Tu vois l'idée ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah..je connais bien!"),
+      Button("Va-y..."),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Surprends moi !", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3100)
+  say Question(
+    "Je ne sais pas toi, mais moi cela me stresse beaucoup, par exemple, de devoir répondre à une liste de \"il faut\" ou même en avoir un seul qui tourne en boucle dans ma tête !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est clair !"),
+      Button("Continue..."),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(2300)
+  say Question(
+    "Regarde, je vais te donner un exemple : admettons que j'ai un objectif, faire la vaisselle après le repas.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, explique..."),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3400)
+  say "Voilà comment je me sentirais selon les deux alternatives possibles de pensées dans ma tête :"
+  say Typing(1700)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/12032a39-4adc-4606-a34b-d929234bfcb1.jpeg")
+  say Typing(3200)
+  say Question(
+    "Pourrais-tu remplacer ton \"il faut\" d'une situation récente par un \"j'aimerais\"/\"je préfererais que\" ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je crois"),
+      Button("Non, c'est bon", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("Voir autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(3300)
+  goto form_17_0
+
+
+// form component
+form_17_0:
+  say "Qu'observes-tu alors ? Que ressens-tu ?"
+  hold
+  
+  remember _il_faut = event
+  
+  say Typing(3100)
+  say Question(
+    "Pour approfondir, je te propose ce petit texte de 2 pages sur les \"il faut\" et comment mieux les gérer au quotidien :-)",
+    buttons=[
+      Url("https://drive.google.com/open?id=0BwzjG62bhAz0UEtHQUNFRTlmQ2c", text="Les \"il faut\""),
+    ],
+  )
+  
+  say Typing(3400)
+  say "La prochaine fois que tu te diras \"il faut\", je t'invite à en prendre conscience et à le remplacer par \"j'aimerais/je préfererais que\" et à observer ce qu'il se passe :-)"
+  say Typing(2700)
+  say Question(
+    "Et maintenant, quel est ton souhait ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Faire autre chose", payload="/_eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253"),
+      Button("Propose, toi !", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("En rester là :-)", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

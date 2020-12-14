@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2bf
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_ancrage_mental_igor___rapport_5c67dc3a76ccbc29ae8ff2b6", "_ancrage_mental_igor___3_objets_5c67dc3a76ccbc29ae8ff2b7", "_ancrage_mental_igor___lecture_5c67dc3a76ccbc29ae8ff2b8", "_ancrage_mental_igor___routine_5c67dc3a76ccbc29ae8ff2b9", "_ancrage_mental_igor___recitation_5c67dc3a76ccbc29ae8ff2ba", "_ancrage_mental_igor___souvenir_5c67dc3a76ccbc29ae8ff2bb", "_ancrage_mental_igor___categorie_5c67dc3a76ccbc29ae8ff2bc", "_ancrage_mental_igor___protection_5c67dc3a76ccbc29ae8ff2bd", "_ancrage_mental_igor___present_5c67dc3a76ccbc29ae8ff2be"]))
+  if (rand == 0) goto flow _ancrage_mental_igor___rapport_5c67dc3a76ccbc29ae8ff2b6
+  if (rand == 1) goto flow _ancrage_mental_igor___3_objets_5c67dc3a76ccbc29ae8ff2b7
+  if (rand == 2) goto flow _ancrage_mental_igor___lecture_5c67dc3a76ccbc29ae8ff2b8
+  if (rand == 3) goto flow _ancrage_mental_igor___routine_5c67dc3a76ccbc29ae8ff2b9
+  if (rand == 4) goto flow _ancrage_mental_igor___recitation_5c67dc3a76ccbc29ae8ff2ba
+  if (rand == 5) goto flow _ancrage_mental_igor___souvenir_5c67dc3a76ccbc29ae8ff2bb
+  if (rand == 6) goto flow _ancrage_mental_igor___categorie_5c67dc3a76ccbc29ae8ff2bc
+  if (rand == 7) goto flow _ancrage_mental_igor___protection_5c67dc3a76ccbc29ae8ff2bd
+  if (rand == 8) goto flow _ancrage_mental_igor___present_5c67dc3a76ccbc29ae8ff2be

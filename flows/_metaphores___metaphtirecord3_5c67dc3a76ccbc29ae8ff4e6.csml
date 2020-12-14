@@ -1,0 +1,20 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e6
+start:
+  say Typing(3000)
+  say "Tu lâches la corde et reprends ton souffle pendant plusieurs minutes."
+  say Typing(5000)
+  say "Le brouillard finit par se dissiper lentement. Tu parviens maintenant à reconnaitre ton adversaire."
+  say Typing(4000)
+  say "Il s'agit de..."
+  say Typing(4000)
+  say "Toi!"
+  say Typing(5000)
+  say Question(
+    "Tu comprends alors qu'en continuant à lutter, Tu perdais ton temps et ton énergie dans un combat que tu ne pouvais pas gagner.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphtirecord4_5c67dc3a76ccbc29ae8ff4e7"),
+    ],
+  )
+  hold
+  

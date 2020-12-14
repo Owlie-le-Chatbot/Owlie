@@ -1,0 +1,99 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff320
+start:
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Raisonnement en tout ou rien",
+        subtitle="Tout noir ou tout blanc",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/98906adb-05bd-48f3-ada1-ec517e053573.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___1tr_5c67dc3a76ccbc29ae8ff32b"),
+        ],
+      ),
+      Card(
+        title="Filtrage mental",
+        subtitle="Une mémoire sélective",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e91f8e2a-8c29-4bb9-a62f-bfc53fcba048.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___2fm_5c67dc3a76ccbc29ae8ff32c"),
+        ],
+      ),
+      Card(
+        title="Disqualification du positif",
+        subtitle="Le discrédit pour soi",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bea11fd0-3a2a-4417-bf2e-f4139955b9cb.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___3dp_5c67dc3a76ccbc29ae8ff32d"),
+        ],
+      ),
+      Card(
+        title="Généralisation abusive",
+        subtitle="La contamination",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9dcb86d5-bb57-49f9-b466-f602eb075e8c.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___4ga_5c67dc3a76ccbc29ae8ff32e"),
+        ],
+      ),
+      Card(
+        title="Étiquetage",
+        subtitle="Le jugement définitif",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b63d757f-fea4-44da-9027-b088133d56ed.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___5et_5c67dc3a76ccbc29ae8ff32f"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Prophétie/Divination",
+        subtitle="La boule de cristal",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6db5c9aa-db9d-48b4-a834-a52cf6db8f1f.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___6pd_5c67dc3a76ccbc29ae8ff330"),
+        ],
+      ),
+      Card(
+        title="Pensée catastrophique",
+        subtitle="Le pire du pire",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f215f000-87a2-4f4c-b731-a94f640daf86.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___7pc_5c67dc3a76ccbc29ae8ff331"),
+        ],
+      ),
+      Card(
+        title="Raisonnement émotif",
+        subtitle="La preuve par le sentiment",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/adb664fe-1706-48f6-90c5-269105ddc380.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___8re_5c67dc3a76ccbc29ae8ff332"),
+        ],
+      ),
+      Card(
+        title="Personnalisation",
+        subtitle="L'auto-flagellation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cf7a9312-f2d5-40ed-840c-0371708b8310.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___9pe_5c67dc3a76ccbc29ae8ff333"),
+        ],
+      ),
+      Card(
+        title="Obligation",
+        subtitle="La musturbation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c35b15ec-5c1f-4f58-9f45-09c4e0a9fb47.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_distorsions_cog_igor___10ob_5c67dc3a76ccbc29ae8ff334"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,67 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a5
+start:
+  say Typing(3000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(1900)
+  say Carousel(
+    cards=[
+      Card(
+        title="Murmures",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cc935b04-7b6c-42ca-a6cf-a0b59eb10531.jpeg",
+        buttons=[
+          Url("https://youtu.be/XeNytdssmGI", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Hôtesse SF",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/16e25dd2-560f-4535-a180-9c957a415ccf.jpeg",
+        buttons=[
+          Url("https://youtu.be/oapgiZc5i-g", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Textures",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d478f02e-e420-4c46-8fc9-22ae15f329a6.jpeg",
+        buttons=[
+          Url("https://youtu.be/PAqlmGb5wGg", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Univers & Big Bang",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1577c0f4-0ba1-4010-ab22-915b3cb5e695.jpeg",
+        buttons=[
+          Url("https://youtu.be/jYUQb9KpJE0", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Sable etc.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8064f3bf-093d-4c6f-a5c9-b3376e9041b1.jpeg",
+        buttons=[
+          Url("https://youtu.be/CSvYyjfYEok", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Ronronnements",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f4a35258-a6ec-4289-b39b-cbb9b6fec548.jpeg",
+        buttons=[
+          Url("https://youtu.be/y9PU4ktra1E", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Marche dans la neige",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e970d5c9-f8cc-4aa9-85fc-39266fefca74.jpeg",
+        buttons=[
+          Url("https://youtu.be/8J04LpwzbDQ", text="J'écoute"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+      Button("🔙Sortir ", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

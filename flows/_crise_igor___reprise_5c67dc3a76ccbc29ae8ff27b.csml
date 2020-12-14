@@ -1,0 +1,49 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff27b
+start:
+  say Typing(3000)
+  say Question(
+    "Est-ce que tu te sens un peu mieux maintenant 😊?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+      Button("Un câlin....!!!", payload="/_reconfort_clara___randomhug_5c67dc3a76ccbc29ae8ff2f3"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  say Question(
+    "Veux-tu essayer une autre technique pour cette crise ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(2000)
+  say Question(
+    "As-tu encore besoin de moi ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say "Très bien ! N'hésites pas à me solliciter quand tu le souhaiteras !"

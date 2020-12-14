@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f1
+start:
+  say Typing(5000)
+  say "Tu décides d'essayer de déposer ces passager.e.s perturbateurices là où iels le demandent."
+  say Typing(4000)
+  say "Mais..."
+  say Typing(6000)
+  say "À chaque changement de direction imposée par l'un.e d'entre elleux, d'autres se mettent à protester encore plus fort."
+  say Typing(4000)
+  say "Et, pire..."
+  say Typing(7000)
+  say "À chaque fois que tu arrêtes le bus pour faire descendre un.e passager.e, il en rentre deux fois plus qui entendent bien également t'imposer leur itinéraire."
+  say Typing(5000)
+  say "Ton trajet ne ressemble plus à rien et tu tournes même en rond depuis un certain temps."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🚌Obéir aux autres", payload="/_metaphores___metaphbus2_5c67dc3a76ccbc29ae8ff4f1"),
+      Button("🚍Suivre votre ligne", payload="/_metaphores___metaphbus3_5c67dc3a76ccbc29ae8ff4f2"),
+    ],
+  )
+  hold
+  

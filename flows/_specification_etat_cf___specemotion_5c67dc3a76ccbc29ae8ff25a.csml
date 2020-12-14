@@ -1,0 +1,39 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff25a
+start:
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/93aef250-2e3f-4416-8acd-d1e62f166114.jpeg")
+  say Question(
+    "Elle t'impacte à quel point cette émotion ? 
+
+(0 = pas de problème 😊; 
+10 = extrêmement pénible 😩)",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _impact_emotion = event
+  goto step_2
+
+
+step_2:
+  say Typing(1900)
+  // adding conditional redirect to flow
+  if (_impact_emotion == "0" || _impact_emotion == "1" || _impact_emotion == "2" || _impact_emotion == "3" || _impact_emotion == "4" || _impact_emotion == "5") {
+    goto flow _eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de
+  }
+  // adding conditional redirect to flow
+  if (_impact_emotion == "6" || _impact_emotion == "7" || _impact_emotion == "8" || _impact_emotion == "9") {
+    goto flow _crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277
+  }

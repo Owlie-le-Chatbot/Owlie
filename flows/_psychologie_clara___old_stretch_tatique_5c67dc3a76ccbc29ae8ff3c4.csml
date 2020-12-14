@@ -1,0 +1,190 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c4
+start:
+  say Typing(2800)
+  say "Voici une petite séquence de 5 minutes qui devrait te faire du bien :-)
+
+Psst!
+- Si tu as des douleurs à certaines parties de ton corps, ou qu'il t'es impossible de faire un exercice: étire un autre membre et ne force pas!
+- La gauche et la droite... (euh c'est quel côté déjà?), ça te prends la tête? alterne simplement ;)"
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d502ad6c-8b96-417e-8a6e-04d104a33aed.jpeg",
+    quick_replies=[
+      Button("Ok !"),
+      Button("Propose autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_3
+
+
+step_3:
+  say Typing(1600)
+  say "Commence par attraper ta jambe gauche comme ceci :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9ab0b4cc-e657-4457-88bf-348707b97296.jpeg")
+  say Typing(3100)
+  say "Compte jusqu'à 10 doucement... 
+Je vais compter 10 secondes aussi avec toi, dès que je recommence à parler, change de jambe :-)"
+  say Typing(10000)
+  say "Et de 10 !
+Tu peux maintenant relâcher ta jambe gauche
+
+et attraper de la même façon ta jambe droite."
+  say Typing(2600)
+  say "Compte jusqu'à 10...
+Je compte toujours avec toi !"
+  say Typing(10000)
+  say "Cela fait 10 secondes !
+Tu peux relâcher ta jambe droite."
+  say Typing(1200)
+  say Question(
+    "On continue ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Plus tard", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(900)
+  say "Maintenant pose ta jambe gauche contre un support (une chaise par exemple) comme ceci :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d4cdd2bc-8505-4b67-b7bc-82d78b870dc9.jpeg")
+  say "Nous allons compter 10 secondes..."
+  say Typing(10000)
+  say "Tu peux maintenant changer de jambes
+
+Et compter jusqu'à 10 avec la jambe droite."
+  say Typing(10000)
+  say "Maintenant, mets toi sur le rebord d'une marche et fait comme ceci avec ton pied droit :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6cbb4b92-6c93-494e-93e2-b4be6b6baf83.jpeg")
+  say Typing(2000)
+  say "Tu peux aussi appuyer la pointe du pied contre un mur comme ceci :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9466b86d-636d-401c-beb8-fdbc1376a338.jpeg")
+  say Typing(3400)
+  say "De nouveau, comptons 10 secondes pour le pied gauche..."
+  say Typing(10000)
+  say "...puis 10 secondes pour le pied droit !"
+  say Typing(10000)
+  say Question(
+    "Voilà, cela fait 10 secondes. 
+
+On continue ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Ça va...", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_36
+
+
+step_36:
+  say Typing(1600)
+  say "Maintenant, tu peux poser tes genoux au sol, t'assoir sur tes talons"
+  say Typing(4000)
+  say "et relever tes hanches, en t'appuyant en arrière sur tes bras comme ceci :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/50b745b0-7801-4dac-b430-f7c83890c442.jpeg")
+  say "Je compte pour toi jusqu'à 10 secondes :-)"
+  say Typing(10000)
+  say "Voilà, très bien !"
+  say Typing(2800)
+  say "Maintenant, toujours au sol, en tailleur, écarte les jambes comme un papillon :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/53fc402d-5f63-4146-8ad3-2743182a88f8.jpeg")
+  say "Je compte de nouveau 10 secondes..."
+  say Typing(10000)
+  say "Tu peux maintenant te relever doucement, mais reste la tête en bas, ainsi :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/353f6b85-3238-43d1-b328-c3f0ab7de433.jpeg")
+  say "Comptons 10 secondes pour bien étirer le bas de ton dos et l'arrière de tes jambes !"
+  say Typing(10000)
+  say Question(
+    "...Et de 10 !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Ça va...", payload="/_fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8"),
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_55
+
+
+step_55:
+  say Typing(1400)
+  say "Pose ensuite la jambe gauche au sol et mets ta jambe droite devant pour l'étirer, pointe du pied relevée :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9d0c5744-5e74-4631-9928-d344d1563397.jpeg")
+  say Typing(2600)
+  say "Je compte jusqu'à 10 puis on fera l'autre jambe (pas de jalouse !) !"
+  say Typing(10000)
+  say "Maintenant la même chose, jambe droite devant :-)"
+  say Typing(3500)
+  say "Super ! 
+On va terminer d'étirer tout ton corps en terminant par les hanches et les fessiers."
+  say Typing(4000)
+  say "Remets-toi dans la position de départ, jambe gauche devant (droite derrière).
+
+Propulse maintenant ton bassin vers l'avant, tout en restant droit.e ainsi :"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/92abdd27-f446-4eee-bb0e-95742a591163.jpeg")
+  say Typing(2600)
+  say "Je compte jusqu'à 10 secondes encore, puis on passe au côté droit !"
+  say Typing(2900)
+  say Question(
+    "Très bien ! 
+Plus que 2 exercices !
+
+On continue ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Ça va maintenant...", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_72
+
+
+step_72:
+  say Typing(2500)
+  say "Maintenant la jambre droite devant, et la jambe gauche derrière, le bassin vers l'avant tout en restant droit.e."
+  say Typing(10000)
+  say "Et pour finir, tu peux te rallonger sur le sol"
+  say Typing(2700)
+  say "Sur le dos"
+  say "Et attraper ta jambe gauche fléchie contre toi."
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/02620f95-0916-4ae6-bf38-f222a0f8cf13.jpeg")
+  say Typing(2600)
+  say "Je compte 10 secondes encore et on passera à la jambe droite :-)"
+  say Typing(10000)
+  say "Parfait !"
+  say Typing(2800)
+  say "Jambe droite maintenant..."
+  say Typing(10000)
+  say "Et voilà !"
+  say Typing(3100)
+  say Question(
+    "C'est super {{_name}}! Tu as terminé ta séquence entière et a pris soin de toi !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci !"),
+    ],
+  )
+  hold
+  
+  goto step_91
+
+
+step_91:
+  // adding conditional redirect to flow
+  goto flow _eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254

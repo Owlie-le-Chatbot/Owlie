@@ -1,0 +1,92 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a4
+start:
+  say Typing(3000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(2400)
+  say Carousel(
+    cards=[
+      Card(
+        title="Océan",
+        subtitle="Vagues",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/344beba4-571a-4b1f-8905-a244038b3bcd.jpeg",
+        buttons=[
+          Url("https://youtu.be/MD0tXdSsnBA", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Plage tropicale",
+        subtitle="Vagues",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/90b784e2-e78e-485b-8b33-4c25e9bc6ad0.jpeg",
+        buttons=[
+          Url("https://youtu.be/DGIXT7ce3vQ", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Feu de cheminée",
+        subtitle="Craquements",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/214381b7-0a10-421a-814f-cfbb91412b2c.jpeg",
+        buttons=[
+          Url("https://youtu.be/ZY3J3Y_OU0w", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Forêt",
+        subtitle="Chants d'oiseaux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/eec9aeda-bc58-469f-a9a4-bb9472965118.jpeg",
+        buttons=[
+          Url("https://youtu.be/Qm846KdZN_c", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Rivière",
+        subtitle="Écoulements
+Vent",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ddd04dff-f47d-4c5c-8a98-2ef633fe2829.jpeg",
+        buttons=[
+          Url("https://youtu.be/GPYzt69i-Jo", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Orage tropical",
+        subtitle="Tonnerre
+Chants d'oiseaux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8327919e-62e4-48dc-a0a0-57add10c7c2f.jpeg",
+        buttons=[
+          Url("https://youtu.be/8myYyMg1fFE", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Pluie légère",
+        subtitle="Pluie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5e2fb372-3152-41bc-9da3-aa1fb3c64832.jpeg",
+        buttons=[
+          Url("https://youtu.be/NQJE03pslqQ", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Averse",
+        subtitle="Pluie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ceed20f7-f7c5-44fb-ab87-662628306d45.jpeg",
+        buttons=[
+          Url("https://youtu.be/4Y3iYtJHnS4", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Rivière",
+        subtitle="Écoulements",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9aae47d6-4e97-4a62-9a89-ebb4d235d96e.jpeg",
+        buttons=[
+          Url("https://youtu.be/IvjMgVS6kng", text="J'écoute"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

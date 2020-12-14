@@ -1,0 +1,114 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d6
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Écris le nom de l'une de tes couleurs préférées 📝 "
+  hold
+  
+  remember _couleurfavorite = event
+  
+  say Typing(2000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Écris le nom du jour de la semaine que tu préfères 📝 "
+  hold
+  
+  remember _jourfavori = event
+  
+  say Typing(2000)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Écris le nom de l'un de tes plats préférés 📝 "
+  hold
+  
+  remember _platfavori = event
+  
+  say Typing(2000)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Écris le nom de l'une de tes séries télé préférées 📝 "
+  hold
+  
+  remember _seriefavorite = event
+  
+  say Typing(2000)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Écris maintenant le nom de l'un.e de tes acteurices préféré.e.s 📝 "
+  hold
+  
+  remember _acteurfavori = event
+  
+  say Typing(2000)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Écris le nom de l'une de tes activités préférées 📝 "
+  hold
+  
+  remember _activitefavorite = event
+  
+  say Typing(2000)
+  goto form_13_0
+
+
+// form component
+form_13_0:
+  say "Écris le nom de l'un.e de tes musicien.ne.s préféré.e.s ou de l'un de tes groupes préférés 📝 "
+  hold
+  
+  remember _musicienfavori = event
+  
+  say Typing(2000)
+  goto form_15_0
+
+
+// form component
+form_15_0:
+  say "Écris le nom de l'un de tes films préférés 📝 "
+  hold
+  
+  remember _filmfavori = event
+  
+  say Typing(2000)
+  goto form_17_0
+
+
+// form component
+form_17_0:
+  say "Écris maintenant le nom de l'un.e de tes peintres préféré.e.s 📝 "
+  hold
+  
+  remember _peintrefavori = event
+  
+  say Typing(2000)
+  goto form_19_0
+
+
+// form component
+form_19_0:
+  say "Écris le nom de l'une de tes chansons préférées 📝 "
+  hold
+  
+  remember _chansonfavorite = event
+  
+  // adding conditional redirect to flow
+  goto flow _ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1

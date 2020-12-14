@@ -1,0 +1,89 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0777
+start:
+  say Typing(6000)
+  say Question(
+    "Une critique est considérée comme constructive 🌤lorsqu'elle respecte les règles énoncées dans la rubrique correspondante.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say "L'interlocuteurice te décrit son problème de façon directe et précise."
+  say Typing(5000)
+  say "Le problème qu'iel décrit est un fait, un comportement et non ta personne dans sa globalité."
+  say Typing(5000)
+  say "Iel exprime un ou des sentiments négatifs sans se montrer blessant.e ou agressif.ve."
+  say Typing(4000)
+  say Question(
+    "Et iel formule éventuellement une demande affirmée de changement de ta part.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say "La critique constructive n'est ni vague, ni blessante par définition."
+  say Typing(6000)
+  say "En revanche, elle peut être considérée comme vraie ou fausse selon les faits ou comportements dont il est question."
+  say Typing(4000)
+  say Question(
+    "Selon ton appréciation, clique sur le bouton qui correspond à ton besoin",
+    buttons=[
+      Button("✅Critique vraie", payload="/_assertivite___assertcritr11_5c7e84780ecd9f746fcc0773"),
+      Button("❎Critique fausse", payload="/_assertivite___assertcritr12_5c7e84780ecd9f746fcc0774"),
+    ],
+    quick_replies=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(4000)
+  say Question(
+    "Veux-tu illustrer cela avec un exemple ou passer à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcritr25_5c7e84780ecd9f746fcc077e"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule !!"),
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2ead4e23-ce88-4af8-9204-eb204b033190.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

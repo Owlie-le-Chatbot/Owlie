@@ -1,0 +1,147 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3b8
+start:
+  say Typing(2300)
+  say Question(
+    "Le stress fait partie de la vie.
+Il s'agit d'une réaction normale de l'organisme pour faire face à une situation.
+
+En fait, ce n'est pas la situation en elle-même qui est un problème mais le jugement que tu portes dessus (ce que te raconte ton cerveau).",
+    button_type="quick_reply",
+    buttons=[
+      Button("🙂Continue"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("💛Audios de thérapie", payload="/_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"),
+      Button("Faire autre chose", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say "Face à une situation réelle ou imaginée (anticipée, future), ton cerveau commence à imaginer des scénarios possibles.
+
+Ton organisme se mobilise alors pour faire face. 3 réactions sont possibles : 
+
+① le combat : tu réfléchis à toutes les stratégies possibles pour aborder la situation"
+  say Typing(2800)
+  say Question(
+    "② la fuite / l'évitement : c'est là qu'apparaissent la procrastination, ou des comportements tels que fumer/boire/jouer, faire des activités qui n'ont rien à voir avec le problème pour ne pas y penser : faire le ménage, des rituels, regarder des séries...",
+    button_type="quick_reply",
+    buttons=[
+      Button("😂Oh que oui..."),
+      Button("➡️Continue"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say "③ la sidération : tu es comme \"paralysé(e)\" par le stress.
+
+Cela t'évoque quelque chose 😉?"
+  say Typing(2900)
+  say "Avec le stress, tout est question d'équilibre. 
+Une petite dose de stress peut être boostante 💥, te permettre de décupler tes forces 💪🏻"
+  say Typing(3100)
+  say Question(
+    "Là où tu peux être en difficulté c'est quand le stress est perçu comme \"trop\" : 
+- il est trop intense ⚡️
+- il dure trop longtemps 🕗
+
+Il génère des comportements ou des pensées pénibles, comme : 
+🚬🍷🎲🤒🤮🍔🍫🍭
+ 
+Bref, il est difficile à gérer 😩",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("😅C'est vrai...!"),
+      Button("Faire autre chose", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(2800)
+  say "Tu peux alors : 
+① Faire de la résolution de problème pour faire face à la situation 🔧
+
+② Travailler sur les pensées pénibles avec de la restructuration cognitive 💭
+
+③ Apaiser tes émotions avec de la relaxation 🧘‍♂️💛"
+  say Typing(3900)
+  say Question(
+    "Pratiquées régulièrement, ces stratégies pourront te rendre plus fort.e et capable de gérer de mieux en mieux les situations qui déclenchent du stress 👍🏻",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻Ok"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3200)
+  say Question(
+    "Ça fait longtemps qu'on parle toi et moi ☺️... 
+
+Donc, en résumé : 
+① le stress est une réaction normale de ton corps pour t'aider à t'adapter à une situation (réelle ou anticipée)
+
+② rien ne sert de vouloir le supprimer totalement, tout est question d'équilibre avec des moments de relaxation/détente et des stratégies pour mieux l'appréhender.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(4000)
+  say Question(
+    "Bravo, tu as complété un niveau de connaissance !
+
+Est-ce que cela que l'on a vu ensemble t'a été utile ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Bof", payload="/_feedbacks_clara___avisutilisateur_5c67dc3a76ccbc29ae8ff240"),
+      Button("Non", payload="/_feedbacks_clara___avisutilisateur_5c67dc3a76ccbc29ae8ff240"),
+    ],
+  )
+  hold
+  
+  goto step_24
+
+
+step_24:
+  say Typing(2100)
+  say Question(
+    "On fait quoi maintenant ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🎓Un autre niveau !", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("💪🏻Gérer le stress", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("⛵️Activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

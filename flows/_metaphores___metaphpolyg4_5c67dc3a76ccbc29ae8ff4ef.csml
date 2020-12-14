@@ -1,0 +1,33 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ef
+start:
+  say Typing(4000)
+  say "Dans les situations de stress, ton cerveau fonctionne parfois comme un polygraphe."
+  say Typing(3000)
+  say "Ceci te pousse à :"
+  say Typing(3000)
+  say "1. Refuser qu'une émotion douloureuse ne survienne"
+  say Typing(3000)
+  say "2. Surveiller constamment cette émotion"
+  say Typing(3000)
+  say "3. Chercher à t'en débarrasser au plus vite et à tout prix"
+  say Typing(5000)
+  say "Or ces trois attitudes ne font que rendre plus fortes les émotions douloureuses."
+  say Typing(5000)
+  say "Les émotions ne sont pas sous le contrôle direct de ta volonté."
+  say Typing(4000)
+  say "Mais tes actions oui."
+  say Typing(5000)
+  say "Ce ne sont donc pas les émotions qu'il faut changer mais tes actes."
+  say Typing(4000)
+  say "Les émotions, elles, doivent être acceptées comme elles sont."
+  say Typing(5000)
+  say Question(
+    "En les acceptant, il devient plus facile de trouver et d'adopter de nouvelles attitudes, plus en accord avec tes valeurs.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

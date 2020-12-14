@@ -1,0 +1,72 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff326
+start:
+  say Typing(2000)
+  say "La boule de cristal !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/929f1b37-18d3-4f71-8b09-bc770023dd70.jpeg")
+  say Question(
+    "L'inférence arbitraire (saut à la conclusion, prophétie ou divination) consiste à tirer trop vite une conclusion sur la base d'une intuition.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu Précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"Ça ne sert à rien de lui demander une augmentation car si je la méritais, iel me l’aurait donnée\""
+  say Typing(2000)
+  say "\"Je ne serai jamais suffisamment solide pour pouvoir me passer des médicaments\""
+  say Typing(2000)
+  say Question(
+    "\"Si iel ne m’a pas rappelé, c’est qu’iel n’a pas envie de me voir\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2000)
+  say "Le plus souvent, ce mode de pensée est utilisé pour prédire l'avenir ou lire dans la pensée d'autrui."
+  say Typing(2000)
+  say "Or ce que l'on essaye de deviner ne devrait pas être une certitude. Il ne s'agit pas d'un fait mais d'une pensée dans ta tête."
+  say Typing(3000)
+  say "En te laissant trop entrainer par une mauvaise intuition, tu risques de la renforcer en ne prenant uniquement en compte les éléments qui la confirment."
+  say Typing(2000)
+  say "1. Récolte le plus possible d'informations, notamment celles qui pourraient contredire ton intuition."
+  say Typing(2000)
+  say Question(
+    "2. Confronte ton intuition à celle d'autre personnes en qui tu as confiance.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Question(
+    "Veux-tu continuer l'analyse de ta pensée douloureuse ou commencer les exercices d'assouplissement de pensée?",
+    buttons=[
+      Button("Continuer", payload="/_distorsions_cog_igor___7penseecatastrophique_5c67dc3a76ccbc29ae8ff327"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

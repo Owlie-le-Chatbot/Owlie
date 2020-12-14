@@ -1,0 +1,218 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc076e
+start:
+  say Typing(6000)
+  say Question(
+    "Voici un exemple qui te permettra de vérifier si tu as bien retenu les instructions pour formuler une critique constructive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'accord"),
+      Button("⤴️Retouner au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say "Il est une heure du matin et la musique de ton voisin t'empêche de dormir."
+  say Typing(4000)
+  say "Indique la critique qui te parait la plus contructive."
+  say Typing(5000)
+  say "A. \"Monsieur, vous n'êtes pas tout seul dans l'immeuble. Il y a des gens qui travaillent demain.\""
+  say Typing(4000)
+  say "B. \"Baissez un peu le son de votre musique! C'est insupportable!\""
+  say Typing(9000)
+  say "C. \"Bonsoir. Vous en avez encore pour longtemps? Parce que j'aimerais juste réussir à dormir un peu sinon je ne serai pas en forme demain et c'est une journée importante pour moi parce qu'on a une réunion avec plusieurs clients au travail. J'ai déjà mal dormi la nuit dernière parce que des chats se battaient dans la rue donc ça m'embette d'avoir à vous demander ça mais le sommeil est important comme vous le savez pour rester en bonne santé, ce n'est pas moi qui le dit c'est le Professeur Fro... Ah j'ai oublié son nom mais vous devez surement le connaitre...\""
+  say Typing(3000)
+  say "D. \"Je vais vous demander de baisser le son s'il vous plait.\""
+  say Typing(6000)
+  say "E. \"Bonsoir Monsieur. Votre musique me dérange. J'aimerais que vous baissiez le volume afin que je puisse dormir.\""
+  say Typing(4000)
+  say Question(
+    "F. \"Vous croyez vraiment que j'ai envie de danser à une heure du matin?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("A"),
+      Button("B"),
+      Button("C"),
+      Button("D"),
+      Button("E"),
+      Button("F"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "La réponse E propose la critique la plus constructive 🌤.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🔍Pourquoi?"),
+      Button("❓Comment critiquer?", payload="/_assertivite___assertcritf1_5c7e84780ecd9f746fcc076d"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcritf3_5c7e84780ecd9f746fcc076f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(5000)
+  say "Reprenons la réponse A :
+\"Monsieur, vous n'êtes pas tout seul dans l'immeuble. Il y a des gens qui travaillent demain.\""
+  say Typing(6000)
+  say "Le problème n'est pas clairement défini ☁️, les sentiments ne sont pas exprimés et aucune demande de changement n'est formulée."
+  say Typing(4000)
+  say Question(
+    "De plus, le message est moralisateur, ce qui risque de blesser l'interlocuteurice ⛈.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_29
+
+
+step_29:
+  say Typing(5000)
+  say "En ce qui concerne la réponse B : 
+\"Baissez un peu le son de votre musique! C'est insupportable!\""
+  say Typing(4000)
+  say "On peut considérer que le problème est exposé de façon directe, précise, et que des sentiments sont exprimés."
+  say Typing(6000)
+  say "En revanche, le message est formulé de façon agressive ⛈et il s'agit d'une \"exigence\" de changement plutôt que d'une demande."
+  say Typing(4000)
+  say Question(
+    "L'interlocuteurice risque de se mettre sur la défensive, voire de contre-attaquer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(3000)
+  say "Examinons la longue réponse C."
+  say Typing(6000)
+  say "Le problème n'est pas décrit de façon directe et précise ☁️. Le message se perd dans des détails inutiles au point de perdre son objectif."
+  say Typing(4000)
+  say Question(
+    "De plus la demande de changement n'est pas clairement exprimée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_45
+
+
+step_45:
+  say Typing(4000)
+  say "Pour la réponse D :
+\"Je vais vous demander de baisser le son s'il vous plait.\""
+  say Typing(6000)
+  say "Il s'agit d'une demande de changement plutôt correcte, bien qu'aucune conséquence positive de ce changement ne soit soulignée."
+  say Typing(5000)
+  say Question(
+    "Par ailleurs, le problème n'est pas décrit et aucun sentiment n'est exprimé. Il ne s'agit donc pas d'une critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_52
+
+
+step_52:
+  say Typing(7000)
+  say "Prenons maintenant la réponse E 🌤:
+\"Bonsoir Monsieur. Votre musique me dérange. J'aimerais que vous baissiez le volume afin que je puisse dormir.\""
+  say Typing(3000)
+  say "Tout y est!"
+  say Typing(3000)
+  say "Le problème est décrit de façon directe et précise."
+  say Typing(3000)
+  say "Un sentiment négatif est exprimé."
+  say Typing(5000)
+  say Question(
+    "Une demande de changement est exprimée, tout en soulignant les conséquences positives de ce changement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_63
+
+
+step_63:
+  say Typing(6000)
+  say "Enfin, pour ce qui est de la réponse F :
+\"Vous croyez vraiment que j'ai envie de danser à une heure du matin?\""
+  say Typing(5000)
+  say "La critique est exprimée de façon indirecte, à travers une question ☁️."
+  say Typing(5000)
+  say "Dans ce genre de situation, l'ironie risque d'être perçue comme antipathique ou agressive ⛈."
+  say Typing(5000)
+  say Question(
+    "Par ailleurs, jouer aux devinettes ne conduit généralement pas vers une critique constructive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_72
+
+
+step_72:
+  say Typing(4000)
+  say Question(
+    "Très bien {{_firstname}}! Sur quoi souhaites-tu enchainer?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapituler", payload="/_assertivite___assertfichcrf_5c7e84780ecd9f746fcc0754"),
+      Button("❓Comment critiquer?", payload="/_assertivite___assertcritf1_5c7e84780ecd9f746fcc076d"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcritf3_5c7e84780ecd9f746fcc076f"),
+      Button("📜Mes droits?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_75
+
+
+step_75:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7e743b33-52ae-430e-a868-b6d2840cbe1a.jpeg",
+    quick_replies=[
+      Button("❓Comment critiquer?", payload="/_assertivite___assertcritf1_5c7e84780ecd9f746fcc076d"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcritf3_5c7e84780ecd9f746fcc076f"),
+      Button("📜Mes droits?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

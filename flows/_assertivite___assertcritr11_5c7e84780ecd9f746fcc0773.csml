@@ -1,0 +1,186 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0773
+start:
+  say Typing(5000)
+  say "Une critique est considérée comme vraie ✅lorsque tu es certain.e que les faits rapportés correspondent à la réalité."
+  say Typing(3000)
+  say Question(
+    "Par exemple :  une erreur que tu as commise.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Après avoir appliqué les trois premières règles pour accuser réception de la critique, voici d'autres règles pour t'aider à répondre à une critique,",
+    buttons=[
+      Button("3 premières règles?", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+    ],
+  )
+  
+  say Typing(4000)
+  say Question(
+    "Règle 4. Reconnaitre les faits avec empathie.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(6000)
+  say "Si la critique qui t'est adressée correspond à des faits réels, il est important de le confirmer à ton interlocuteurice."
+  say Typing(5000)
+  say "Ne pas nier des faits n'équivaut pas à les reconnaitre. Tu dois les reconnaitre de façon claire et active."
+  say Typing(5000)
+  say "Il est également important de manifester ton empathie vis-à-vis des sentiments négatifs de l'interlocuteurice."
+  say Typing(5000)
+  say Question(
+    "N'oublie pas que reconnaitre des faits ne t'engage ni à réparer, ni à changer de comportement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3000)
+  say Question(
+    "Règle 5. Décider.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(4000)
+  say "Généralement, face à une critique vraie, trois options affirmées s'offrent à toi :"
+  say Typing(5000)
+  say "5.1 Faire savoir qu'il s'agit d'un comportement inhabituel de ta part (ce qui implique qu'il n'est pas voué à se reproduire)."
+  say Typing(6000)
+  say Question(
+    "Exemple \"Vous avez raison. Ça m'ennuie également de vous mettre dans de telles difficultés. Ce n'est pas dans mes habitudes.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(5000)
+  say "5.2 Faire savoir que ce comportement est habituel mais que tu désires le changer."
+  say Typing(7000)
+  say Question(
+    "Ex. \"Vous avez raison. Ça m'ennuie également de vous mettre dans de telles difficultés. C'est une mauvaise habitude dont j'essaie de me défaire.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_33
+
+
+step_33:
+  say Typing(5000)
+  say "5.3 Faire savoir que ce comportement est habituel mais que tu n'as pas l'intention de le changer."
+  say Typing(7000)
+  say Question(
+    "Exemple: \"Vous avez raison. Ça m'ennuie également de vous mettre dans de telles difficultés, mais dans ma situation, je peux difficilement faire autrement.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(3000)
+  say Question(
+    "Règle 6. Négocier.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(5000)
+  say "Si tu l'estimes nécessaire, tu peux également tenter un compromis ou faire une offre de réparation."
+  say Typing(4000)
+  say Question(
+    "Exemple: \"Comment souhaiterais-tu que je procède la prochaine fois?\" ou \"Accepterais-tu que je te rembourse la différence?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_46
+
+
+step_46:
+  say Typing(4000)
+  say Question(
+    "Veux-tu illustrer cela avec un exemple ou plutôt passer à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcritr21_5c7e84780ecd9f746fcc077a"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule Owlie !"),
+      Button("🔍Des exemples !", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_49
+
+
+step_49:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b8c3e952-f545-4942-9795-ce987397f889.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

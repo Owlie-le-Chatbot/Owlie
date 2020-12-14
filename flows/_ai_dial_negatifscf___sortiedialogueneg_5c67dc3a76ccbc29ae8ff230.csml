@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff230
+start:
+  say Typing(2900)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3f38d28d-6a3d-4f08-b298-90135b8d41aa.jpeg")
+  say Question(
+    "Qu'est-ce qui te ferait du bien ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🙂Faire le point...", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("🚨De l'aide", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("🏖Activité agréable", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🐻Câlins", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,209 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff41d
+start:
+  say Typing(2900)
+  say Question(
+    "J'aimerais bien t'expliquer pourquoi on a tendance à éviter certaines situations...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Va-y..."),
+      Button("Plutôt autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3200)
+  say "Voici une liste de situations que l'on peut avoir envie d'éviter à cause des émotions qui leur sont souvent associées :"
+  say Typing(2000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ae09666c-961e-4b90-ab2b-08753fbefb8f.jpeg",
+    quick_replies=[
+      Button("Ok"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3600)
+  say Question(
+    "L’évitement est un comportement appris pour aider à éviter une/des émotion(s) négatives, pour se soulager et à s’apaiser rapidement, mais temporairement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai !"),
+      Button("Continue..."),
+      Button("Choisir une activité", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3000)
+  say Question(
+    "Le problème c'est que l'évitement ne permet pas d’adopter d’autres stratégies plus efficaces qui pourraient diminuer la détresse à long terme...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je vois..."),
+      Button("Continue"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(3600)
+  say Question(
+    "Eh oui, l’évitement peut devenir un problème parce qu’il empêche souvent de faire les démarches nécessaires à la résolution des problèmes de la vie ou à l’amélioration de leur humeur... puisqu'on évite le problème, on évite aussi de lui trouver une vraie solution (en s'y confrontant) ! 
+
+C'est la \"politique de l'autruche\" !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Arf..."),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3200)
+  say Question(
+    "Veux-tu savoir quels sont les types de stratégies d'évitement fréquentes ?
+
+Cela te permettra peut être de reconnaitre la stratégie la plus fréquente chez toi et ainsi t'en rendre compte pour en changer plus facilement !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, allons-y..."),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Gérer une situation ", payload="/_psychologie_clara___analyse_2_resolution_de_probleme_5c67dc3a76ccbc29ae8ff3d3"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3400)
+  say Question(
+    "1. La procrastination : remettre à plus tard ce qu’on pourrait faire maintenant.
+
+Exemple : aller chercher ses lettres dans la boîte aux lettres et ne pas les ouvrir, car on appréhende ce que l’on trouvera dedans.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je fais souvent ça !"),
+      Button("Continue"),
+      Button("Autre activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3500)
+  say Question(
+    "3. La fatigue envahissante : baisse d’énergie et fatigue souvent associées à la dépression. Abus de siestes, de repos et de sommeil. Fuite dans le sommeil.
+
+Exemple : le ménage n’est pas fait, partout où l’on pose le regard c’est en désordre (balai ou aspirateur pas passés, salle de bain, vaisselle, tout est sale et il reste la lessive à faire). On ne se sent pas capable de faire tout le ménage, on va se recoucher.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je fais souvent ça !"),
+      Button("Poursuis..."),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2900)
+  say Question(
+    "4. La rumination : c'est quand on pense constamment à quelque chose sans résolution de problèmes, en repassant en revue les différents aspects de la problématique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je fais souvent ça !"),
+      Button("Continue"),
+      Button("Autre activité", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(3900)
+  say Question(
+    "2. L'engourdissement : c'est une tentative d’apaisement des émotions telles la colère, la tristesse, la culpabilité en adoptant des comportements qui engourdissent les émotions. Ces comportements qui ont habituellement des conséquences négatives.
+
+Exemple : penser à la fin de ses vacances rend anxieux, pour ne pas ressentir l’émotion on mange un gâteau ou on va jouer à un jeu...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je fais souvent ça !"),
+      Button("Continue"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(3300)
+  say Question(
+    "5. Les symptômes de dépression et les plaintes : l’utilisation des symptômes dépressifs pour éviter de faire certaines activités, se plaindre constamment des symptômes dépressifs.
+
+Exemple : un diner est organisé avec des amis, on est trop fatigué, on annule pour ne pas s’épuiser davantage.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je fais souvent ça !"),
+      Button("Continue"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_34
+
+
+step_34:
+  say Typing(4000)
+  say Question(
+    "6. L'isolement social : c'est le retrait des relations sociales et une préférence pour se retrouver seul.e. 
+
+Exemple : on ne réponds pas à ses appels ou on ne rappelle pas parce que nos ami.e.s vont proposer de faire quelque chose et on n'a envie de rien faire. 
+
+Diverses stratégies interactives contre-productives sont alors invoquées : « Je n’ai rien à dire à part du négatif, j’aime mieux rester seul.e. ».
+
+Que souhaites-tu faire maintenant ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Gérer mon évitement", payload="/_procrastination_igor___actreport_5c67dc3a76ccbc29ae8ff3a8"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Discuter", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Surprends-moi", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("En rester là", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

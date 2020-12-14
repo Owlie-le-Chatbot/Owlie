@@ -1,0 +1,41 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2cc
+start:
+  say Typing(2000)
+  say "Tu vas maintenant mettre une main sous l'eau froide 💦"
+  say Typing(2000)
+  say Question(
+    "Tu peux laisser le robinet couler mais il serait plus écologique de remplir un récipient suffisamment grand pour que ta main y rentre en entier (un bol, un tupperware, une casserole, une bassine...).",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ J'ai trouvé!"),
+      Button("🔙Arrêter", payload="/_ancrage_physique_igor___listancphy_5c67dc3a76ccbc29ae8ff2c2"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say "Concentre-toi maintenant sur le contact de ta main avec l'eau froide lorsqu'elle est immobile."
+  say Typing(4300)
+  say "Sens la différence entre les parties immergées et émergées de ton bras."
+  say Typing(4200)
+  say "Bouge légèrement la main et sens les effets de ce mouvement sur la surface de ta peau."
+  say Typing(3000)
+  say Question(
+    "Si tu l'estimes nécessaire, applique-toi un peu d'eau sur le visage et concentre-toi à nouveau sur les sensations que cela te procure.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  // adding conditional redirect to flow
+  goto flow _ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3

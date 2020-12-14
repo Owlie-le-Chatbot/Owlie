@@ -1,0 +1,105 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff270
+start:
+  say "Voici toutes les activités dans le domaine des émotions :
+
+(fais défiler les images ↔️)"
+  say Typing(2600)
+  say Carousel(
+    cards=[
+      Card(
+        title="Auto-apaisement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/306bb5a7-7405-425e-a3c3-1f849fb24261.jpeg",
+        buttons=[
+          Button("Auto-apaisement", payload="/_psychologie_clara___autoapaisement_5c67dc3a76ccbc29ae8ff3b9"),
+          Button("💛Audios de thérapie", payload="/_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"),
+        ],
+      ),
+      Card(
+        title="Trouver une activité agréable à faire",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7011e83d-a92d-42f4-9ae2-ad417bb45125.jpeg",
+        buttons=[
+          Button("Activité agréable", payload="/_psychologie_clara___activite_agreable_5c67dc3a76ccbc29ae8ff3dd"),
+        ],
+      ),
+      Card(
+        title="Cohérence cardiaque",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0aad0188-88ea-4f29-907a-f5b50269e2ea.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=dGJkzyKHKUE", text="Cohérence cardiaque"),
+        ],
+      ),
+      Card(
+        title="Méditation guidée (12')",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fe4e3b89-cbb8-4d9c-a5f4-081ddbb8fade.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=JaCxFK1ttYE", text="Méditer"),
+        ],
+      ),
+      Card(
+        title="Respirer pour s'apaiser",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/043a6b85-e4ab-465d-8cee-a6fe693b01c7.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=ruWLyDivpnU", text="Respirer"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("✚ de choix"),
+    ],
+  )
+  hold
+  
+  goto step_3
+
+
+step_3:
+  say Typing(3200)
+  say Carousel(
+    cards=[
+      Card(
+        title="Prendre du recul sur ce que je vis",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/496f284b-1521-4965-8740-1d2e4dbcba4b.jpeg",
+        buttons=[
+          Button("Prendre du recul", payload="/_psychologie_clara___pensees_et_avis_ami_5c67dc3a76ccbc29ae8ff3ce"),
+        ],
+      ),
+      Card(
+        title="Faire une activité agréable",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/610becbd-8192-41ee-aa1e-dc9d00ddca68.jpeg",
+        buttons=[
+          Button("Les conseils de Owli", payload="/_psychologie_clara___invitactagreable_5c67dc3a76ccbc29ae8ff3b6"),
+        ],
+      ),
+      Card(
+        title="Comment marchent les émotions ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6a6e3972-c3e6-4954-b9a6-bfee06851c85.jpeg",
+        buttons=[
+          Button("Les émotions", payload="/_education_therapeutiqcf___fonctionnement_emotions_5c67dc3a76ccbc29ae8ff419"),
+        ],
+      ),
+      Card(
+        title="Quiz sur les émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/82eeca92-9141-4066-a75e-32135dc51d05.jpeg",
+        buttons=[
+          Button("Quiz émotions", payload="/_psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb"),
+        ],
+      ),
+      Card(
+        title="Une petite histoire du stress",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0863ea52-9eca-41df-ac40-f2aae3e861fe.jpeg",
+        buttons=[
+          Button("Histoire ", payload="/_psychologie_clara___stress_5c67dc3a76ccbc29ae8ff3b8"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("😢Parler ", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+      Button("Menu principal", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+    ],
+  )
+  hold
+  

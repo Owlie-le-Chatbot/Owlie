@@ -1,0 +1,11 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0752
+start:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/238e3abc-aace-4de0-9163-f586719b06dc.jpeg",
+    quick_replies=[
+      Button("Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

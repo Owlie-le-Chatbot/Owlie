@@ -1,0 +1,65 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3e6
+start:
+  say Typing(3100)
+  say Question(
+    "Je te propose d'imaginer que tu vas écrire quelques mots à ton toi du futur, âgé de 10 ans de plus.",
+    button_type="quick_reply",
+    buttons=[
+      Button("😉Ok !"),
+      Button("🔙Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3300)
+  goto form_4_0
+
+
+// form component
+form_4_0:
+  say "Lorsque tu te projettes dans le futur, où et comment te vois-tu dans 10 ans ?                                  📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _personnel = event
+  
+  say Typing(3300)
+  goto form_6_0
+
+
+// form component
+form_6_0:
+  say "Quels sont les rêves ou les projets que tu aimerais accomplir d'ici 10 ans ?                                                📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _projets = event
+  
+  say Typing(3300)
+  goto form_8_0
+
+
+// form component
+form_8_0:
+  say "Qu'aimerais-tu avoir réalisé sur le plan de tes relations avec les autres ?                                                       📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _relations = event
+  
+  say Typing(3100)
+  goto form_10_0
+
+
+// form component
+form_10_0:
+  say "Et quelle serait LA chose qui compte vraiment pour toi que tu souhaiterais avoir réalisé d'ici 10 ans. 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _lachose = event
+  
+  say Typing(3300)
+  say "Ok, merci {{_name}} !"
+  // adding conditional redirect to flow
+  goto flow _act___lettremoifutur2_5c67dc3a76ccbc29ae8ff3e7

@@ -1,0 +1,187 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0775
+start:
+  say Typing(6000)
+  say "Une critique est considérée comme vague ☁️lorsqu'elle n'est pas suffisamment directe et précise pour être évaluée comme vraie ou fausse."
+  say Typing(5000)
+  say Question(
+    "Ex. \"Vous ne travaillez pas sérieusement\", \"Vous n'êtes jamais à l'heure\", \"on ne peut pas compter sur toi\" etc.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Après avoir appliqué les trois premières règles pour accuser réception de la critique, en voici d'autres pour t'aider,",
+    buttons=[
+      Button("3 premières règles?", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+    ],
+  )
+  
+  say Typing(3000)
+  say Question(
+    "Règle 4. Enquête négative.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(4000)
+  say "L'objectif de cette enquête négative est de savoir si cette critique est vraie ou fausse."
+  say Typing(3000)
+  say "Trois possibiités s'offrent à toi :"
+  say Typing(3000)
+  say Question(
+    "4.1. Demander des précisions.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3000)
+  say Question(
+    "Exemple \"Pourriez-vous préciser vos propos?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "4.2. Reformuler.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say Question(
+    "Exemple \"Si j'ai bien compris, vous me dites que...?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(4000)
+  say Question(
+    "4.3. Poser des questions ouvertes sur les faits rapportés ou les sentiments exprimés.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(4000)
+  say "Exemple : \"Comment...?\", \"...où...?\", \"quand...?\", \"qui...?\", \"qu'est-ce que...?\", \"qu'est-ce qui...?\" etc."
+  say Typing(5000)
+  say Question(
+    "Exemple:  \"Qu'en pensez-vous?\", \"Comment l'as-tu vécu?\" ou \"Comment vous sentez-vous face à ce problème?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_33
+
+
+step_33:
+  say Typing(6000)
+  say Question(
+    "Si l'enquête négative aboutit à une critique vraie ou une critique fausse, clique sur les rubriques correspondantes!",
+    buttons=[
+      Button("✅Critique vraie", payload="/_assertivite___assertcritr11_5c7e84780ecd9f746fcc0773"),
+      Button("❎Critique fausse", payload="/_assertivite___assertcritr12_5c7e84780ecd9f746fcc0774"),
+    ],
+  )
+  
+  say Typing(6000)
+  say Question(
+    "Si la critique reste vague malgré ton enquête négative, les attitudes à privilégier sont celles utilisées face à une critique blessante.",
+    buttons=[
+      Button("⛈Critique blessante", payload="/_assertivite___assertcritr14_5c7e84780ecd9f746fcc0776"),
+    ],
+    quick_replies=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(4000)
+  say Question(
+    "Préfère-tu illustrer cela avec un exemple ou passer à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcritr23_5c7e84780ecd9f746fcc077c"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule !"),
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c9da55e9-449c-4fd0-8a5e-fc23adc759e0.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

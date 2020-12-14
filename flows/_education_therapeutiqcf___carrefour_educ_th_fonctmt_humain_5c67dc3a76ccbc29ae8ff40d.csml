@@ -1,0 +1,79 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff40d
+start:
+  say Typing(3200)
+  say "Voici ce que je peux te proposer :"
+  say Typing(2800)
+  say Carousel(
+    cards=[
+      Card(
+        title="Le fonctionnement des émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d0207784-2079-49dd-98a0-ad8c8b7efd79.jpeg",
+        buttons=[
+          Button("Les émotions", payload="/_education_therapeutiqcf___fonctionnement_emotions_5c67dc3a76ccbc29ae8ff419"),
+        ],
+      ),
+      Card(
+        title="Les pensées négatives : pourquoi j'en ai ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2766254f-5689-410d-9bd5-ef59e5b738f4.jpeg",
+        buttons=[
+          Button("Les pensées pénibles", payload="/_education_therapeutiqcf___les_ruminations_5c67dc3a76ccbc29ae8ff41a"),
+        ],
+      ),
+      Card(
+        title="Les différents types de pensées qui peuvent te plomber au quotidien",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d9653e34-c8e3-4aea-a18f-c8c4f86da7ca.jpeg",
+        buttons=[
+          Button("Les types de pensées", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("+ de propositions"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2600)
+  say Carousel(
+    cards=[
+      Card(
+        title="Pourquoi je répète des comportements qui ne marchent pas ? ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6e66afd8-c8a5-46e5-b745-26a14977a706.jpeg",
+        buttons=[
+          Button("Répétition/habitudes", payload="/_education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c"),
+        ],
+      ),
+      Card(
+        title="Pourquoi j'évite et fuis parfois ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cfdf952b-8fc7-4634-8b72-9e2968b6d6b9.jpeg",
+        buttons=[
+          Button("Fuite et évitement", payload="/_education_therapeutiqcf___fonctionnement_evitement_5c67dc3a76ccbc29ae8ff41d"),
+        ],
+      ),
+      Card(
+        title="Pourquoi certaines situations déclenchent toujours les mêmes réactions chez moi?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/92e03eca-f821-401d-ab6d-489e14fe63bf.jpeg",
+        buttons=[
+          Button("Déclencheurs", payload="/_education_therapeutiqcf___declencheurs_de_comportements_5c67dc3a76ccbc29ae8ff425"),
+        ],
+      ),
+      Card(
+        title="Changer des habitudes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fc1223e4-1de6-4735-b8f2-cc91903e6524.jpeg",
+        buttons=[
+          Button("Des alternatives", payload="/_psychologie_clara___trouver_un_cpmt_alternati_5c67dc3a76ccbc29ae8ff3d5"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("menu précédent", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  

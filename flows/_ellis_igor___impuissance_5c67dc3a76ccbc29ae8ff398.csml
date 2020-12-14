@@ -1,0 +1,44 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff398
+start:
+  say Typing(4000)
+  say Question(
+    "Les gens ne peuvent pas teblesser à moins de t'agresser physiquement, ce qui n'arrive pas tous les jours ! 
+
+Si quelqu'un.e te traite de tous les noms, ce ne sont pas ses mots qui te blessent mais la façon dont tu les interprètes et ce que tu te dis.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Quand tu te dis \"ça me blesse quand les gens sont injustes\" ou \"quand ça se passe mal, je ne peux pas le supporter\", c'est un non-sens puisque rien de tout ça ne peut te faire mal. Il serait plus réaliste de te dire \"je me contrarie en me disant qu'il est horrible que les gens soient injustes ou que les choses se passent mal\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("OK"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "La plupart des gens pensent qu'il est impossible de contrôler leurs émotions, mais ils se trompent. Bien qu'il ne soit pas forcément facile de changer la façon dont on se sent, ce n'est pas impossible.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

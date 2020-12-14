@@ -1,0 +1,10 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff365
+start:
+  say Typing(2000)
+  say "Mauvaise réponse ! (aïe)"
+  say Typing(2000)
+  say "On résoud un problème en examinant toutes les solutions possibles, en choisissant et en appliquant l'une d'entre elles."
+  say Typing(2000)
+  say "Si on reste concentré.e sur le problème et sur les conséquences négatives qui pourraient en découler, on ne fait que créer autant de nouveaux problèmes à résoudre."
+  // adding conditional redirect to flow
+  goto flow _inquietudeb_igor___questinqu4b_5c67dc3a76ccbc29ae8ff367

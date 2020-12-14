@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1f9
+start:
+  say Question(
+    "Au plaisir de te revoir bientôt {{_name}} !
+
+À bientôt !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Au revoir !"),
+    ],
+  )
+  hold
+  

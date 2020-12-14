@@ -1,0 +1,35 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff318
+start:
+  say Typing(2000)
+  say "Concentre-toi sur ta pensée douloureuse : 
+- {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Es-tu en train de coller une étiquette ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_analyse_rationelle_igor___6prophdiv_5c67dc3a76ccbc29ae8ff319"),
+      Button("Je ne comprends pas
+"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Es-tu en train de juger de façon définitive une personne (toi ou quelqu'un d'autre) ou le monde qui entoure?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_distorsions_cog_igor___5etiquetage_5c67dc3a76ccbc29ae8ff325"),
+      Button("Non", payload="/_analyse_rationelle_igor___6prophdiv_5c67dc3a76ccbc29ae8ff319"),
+      Button("Je ne sais pas
+", payload="/_analyse_rationelle_igor___6prophdiv_5c67dc3a76ccbc29ae8ff319"),
+    ],
+  )
+  hold
+  

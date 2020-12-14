@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff25c
+start:
+  say Question(
+    "D'accord... 😊
+Qu'est-ce qui te semble est être au premier plan, là ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("❤️Une émotion", payload="/_crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278"),
+      Button("💭Une pensée", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("⁉️Un problème", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("⚡️Problème Physique", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("😵Du stress", payload="/_ancrage_igor___introanc_5c67dc3a76ccbc29ae8ff2ae"),
+    ],
+  )
+  hold
+  

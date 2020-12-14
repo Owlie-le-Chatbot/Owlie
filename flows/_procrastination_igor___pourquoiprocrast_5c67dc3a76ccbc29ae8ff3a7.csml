@@ -1,0 +1,81 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3a7
+start:
+  say Typing(2000)
+  say "Plusieurs raisons peuvent pousser à procrastiner :"
+  say Typing(2000)
+  say "① Pour échapper à la frustration."
+  say Typing(2000)
+  say Question(
+    "Je préfère éviter un désagrément immédiat même s’il est moins fort que celui qui pourrait survenir plus tard (difficulté à tolérer ma frustration), et je choisis une récompense immédiate même si elle est moins importante que celle que je pourrais obtenir plus tard (difficulté à contrôler mes impulsions).",
+    button_type="quick_reply",
+    buttons=[
+      Button("J'ai compris !"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2000)
+  say "② Pour éviter une situation dangereuse pour l'estime de soi."
+  say Typing(2000)
+  say Question(
+    "Lorsque mon espoir de succès est faible, je procrastine pour m’infliger un handicap afin de pouvoir me rassurer en cas d’échec (\"Si j’avais pris le temps, j’y serais peut-être arrivé.e\"). 
+J’ai l’impression de protéger mon estime de soi mais elle ne se renforce pas pour autant.",
+    button_type="quick_reply",
+    buttons=[
+      Button("J'ai compris !"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2000)
+  say "③ Pour résister aux autres"
+  say Typing(2000)
+  say Question(
+    "Ayant du mal à m’affirmer face à l’autorité, j’évite de m’opposer de façon directe lorsqu’une situation est injuste. Je dis \"oui\" mais je fais \"non\" (comportement passif agressif). 
+
+Je résiste mais je cultive ma colère et mon sentiment d’injustice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("J'ai compris !"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say "④ Pour rechercher des sensations fortes ou de la stimulation."
+  say Typing(2000)
+  say Question(
+    "J’ai tendance à sous-estimer le temps nécessaire à la réalisation d’une tâche et je suis peu sensible aux signaux extérieurs qui poussent à agir. J’ai donc besoin de procrastiner pour augmenter mon niveau de stress et agir. L’urgence et le stress finissent par m’épuiser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("J'ai compris !"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Question(
+    "Souhaites-tu que je te donne quelques conseils pour moins procrastiner par rapport à une tâche en particulier ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_procrastination_igor___actreport_5c67dc3a76ccbc29ae8ff3a8"),
+      Button("Non", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("Ça me suffit", payload="/_procrastination_igor___menuprocrast_5c67dc3a76ccbc29ae8ff3a6"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,194 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3a1
+start:
+  say Typing(3300)
+  say "Tu as des pensées critiques à ton égard depuis des mois voire des années et cela ne t'a jamais rendu.e heureuxse.
+
+À force de les cultiver, tu ne vois plus que cela :-("
+  say Typing(3300)
+  say Question(
+    "Je vais maintenant t'inviter à répéter à haute voix chaque phrase que je vais t'écrire.",
+    button_type="quick_reply",
+    buttons=[
+      Button("☺️Prêt !"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3100)
+  say Question(
+    "Tu n'es pas que ton physique {{_name}}.
+
+Tu es bien plus que cela.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3200)
+  say Question(
+    "Tu peux essayer d’accueillir ce que tu es et voir ce qu’il se passe.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3100)
+  say Question(
+    "Si tu utilisais toute cette énergie à être plus doux/ce, calme, aimant.e, ouvert.e, tu découvrirais que la beauté intérieure est plus lumineuse que ne pourra jamais l’être l’apparence physique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(3000)
+  say Question(
+    "Tu peux choisir de créer ta propre définition de la beauté, alignée avec ta propre réalité, ce qui est important pour toi et tes idéaux.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3100)
+  say Question(
+    "Tu es aimable quelque soit ton apparence. 
+Parce que tu es toi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "Tu es une belle personne {{_name}}.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(2000)
+  say Question(
+    "Tu n'as pas besoin d'être plus mince ou plus beau/belle.
+
+Tu as besoin d'être profondément toi, de prendre soin de qui tu es.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2000)
+  say Question(
+    "Tu peux recevoir des compliments lorsque tu es bien habillé.e mais l'admiration, l'amour et le respect, tu les reçois du fait de la manière dont tu te traites toi-même et dont tu traites les autres.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(2000)
+  say Question(
+    "Tu es aimable, digne, important.e juste parce que tu es qui tu es.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(2000)
+  say Question(
+    "Tu es tellement plus que ton apparence {{_name}} !",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_34
+
+
+step_34:
+  say Typing(3300)
+  say Question(
+    "Tu peux être fier.e de toi !
+🌟Tu as complété ce niveau !
+
+Tope-là 🙌",
+    button_type="quick_reply",
+    buttons=[
+      Button("Top 🙌!"),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(3400)
+  say Question(
+    "Souhaites-tu approfondir ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😃Oui !", payload="/_act___actquestionnement_5c67dc3a76ccbc29ae8ff3ea"),
+      Button("Faire autre chose", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,38 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2af
+start:
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Ancrage mental",
+        subtitle="Reprendre le contrôle de mon cerveau",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/03f32ced-5729-47ed-bf1b-b069818ea9fb.jpeg",
+        buttons=[
+          Button("C'est parti ! 🧠", payload="/_ancrage_mental_igor___introancment_5c67dc3a76ccbc29ae8ff2b3"),
+        ],
+      ),
+      Card(
+        title="Ancrage physique",
+        subtitle="Reprendre le contrôle de son corps",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7bc1c0d3-4f7a-470b-9da5-bda7facb9365.jpeg",
+        buttons=[
+          Button("C'est parti ! 👣", payload="/_ancrage_physique_igor___introancphy_5c67dc3a76ccbc29ae8ff2c1"),
+        ],
+      ),
+      Card(
+        title="Ancrage émotionnel",
+        subtitle="Reprendre le contrôle de ses émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/53df4140-b220-4283-a71a-c3c6e77007dd.jpeg",
+        buttons=[
+          Button("C'est parti ! 💙", payload="/_ancrage_emotionnel_igor___introancemo_5c67dc3a76ccbc29ae8ff2cf"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❔Au hasard", payload="/_ancrage_igor___randomancrcf_5c67dc3a76ccbc29ae8ff2b1"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

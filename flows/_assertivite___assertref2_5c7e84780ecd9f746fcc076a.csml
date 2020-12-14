@@ -1,0 +1,213 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc076a
+start:
+  say Typing(6000)
+  say Question(
+    "Voici un exemple qui te permettra de vérifier si tu as bien retenu les instructions pour formuler un refus affirmé.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Vérifier"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say "Un.e collègue de travail te demande de lae déposer chez lui/elle en ce jour de grève des transports publics."
+  say Typing(3000)
+  say "Indique le refus qui te semble le plus/mieux affirmé."
+  say Typing(3000)
+  say "A. \"Non. Je ne peux pas. Désolé.e.\""
+  say Typing(8000)
+  say "B. \"Euh et bien je ne sais pas trop, ça me fait un gros détour quand même et je dois absolument être à l'heure ce soir pour le diner parce qu'on a des invité.e.s important.e.s et mon ami.e m'en voudrait si...\""
+  say Typing(3000)
+  say "C. \"Tu crois vraiment que j'ai le temps pour ça?\""
+  say Typing(7000)
+  say "D. \"Je me rends compte de tes difficultés liées à la grève des transports et j'aurais aimé te rendre ce service, mais je ne pourrais pas te raccompagner chez toi après le boulot.\""
+  say Typing(4000)
+  say "E. \"Désolé.e mais je déteste arriver chez moi en retard quand j'ai des invité.e.s.\""
+  say Typing(8000)
+  say Question(
+    "F. \"Je sais que c'est important pour toi mais je ne peux pas te répondre pour le moment. Je serai en mesure de te donner une réponse dans un petit quart d'heure si c'est possible pour toi.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("A"),
+      Button("B"),
+      Button("C"),
+      Button("D"),
+      Button("E"),
+      Button("F"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "Les réponses D et F sont les mieux/plus affirmées",
+    button_type="quick_reply",
+    buttons=[
+      Button("🔍Pourquoi?"),
+      Button("❓Comment refuser?", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertref3_5c7e84780ecd9f746fcc076b"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say "Prenons le refus A : 
+\"Non. Je ne peux pas. Désolé.e\""
+  say Typing(3000)
+  say "Le refus est direct et précis."
+  say Typing(5000)
+  say Question(
+    "Mais il n'y a pas d'expression (positive) des sentiments, et l'empathie assez peu marquée (\"désolé.e\").",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_29
+
+
+step_29:
+  say Typing(10000)
+  say "En ce qui concerne le refus B :
+\"Euh et bien je ne sais pas trop, ça me fait un gros détour quand même et je dois absolument être à l'heure ce soir pour le diner parce qu'on a des invité.e.s important.e.s et mon ami.e m'en voudrait si...\""
+  say Typing(3000)
+  say "Le refus n'est ni direct ni précis."
+  say Typing(4000)
+  say "Il est même atténué (\"je ne sais pas trop\"), et se noie dans des justifications excessives."
+  say Typing(3000)
+  say Question(
+    "Il invite donc l'interlocuteurice à insister!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(4000)
+  say "Pour ce qui est de le refus C :
+\"Tu crois vraiment que j'ai le temps pour ça?\""
+  say Typing(3000)
+  say "Il ne s'agit pas d'un refus mais d'une devinette."
+  say Typing(5000)
+  say "Non seulement le refus n'est pas clairement exprimé mais le message est cynique, antipathique voire moralisateur."
+  say Typing(4000)
+  say Question(
+    "Tu risques de dégrader la relation avec ton interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_47
+
+
+step_47:
+  say Typing(8000)
+  say "Le refus D est bien affirmé : 
+\"Je me rends compte de tes difficultés liées à la grève des transports et j'aurais aimé te rendre ce service, mais je ne pourrais pas te raccompagner chez toi après le boulot.\""
+  say Typing(6000)
+  say Question(
+    "Il combine parfaitement les conseils du module : expression positive des sentiments, empathie, refus direct et précis.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_52
+
+
+step_52:
+  say Typing(5000)
+  say "Reprenons la réponse E :
+\"Désolé.e mais je déteste arriver chez moi en retard quand j'ai des invité.e.s.\""
+  say Typing(4000)
+  say "Il n'y a pas de refus clairement exprimé et juste un \"désolé.e\" en guise d'empathie."
+  say Typing(4000)
+  say Question(
+    "Les sentiment sont certes exprimés mais de façon très négative (\"je déteste...\").",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_59
+
+
+step_59:
+  say Typing(9000)
+  say "Enfin, pour la réponse F :
+\"Je sais que c'est important pour toi mais je ne peux pas te répondre pour le moment. Je serai en mesure de te donner une réponse dans un petit quart d'heure si c'est possible pour toi.\""
+  say Typing(5000)
+  say "Rien n'interdit en effet de remettre ta réponse à plus tard, ce qu'il est aussi possible de faire de façon affirmée."
+  say Typing(5000)
+  say Question(
+    "Cela est ici formulé avec empathie, et en proposant un délai pour fournir une réponse définitive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_66
+
+
+step_66:
+  say Typing(3000)
+  say Question(
+    "Très bien {{_firstname}}! Sur quoi souhaite-tu enchainer?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule!!!", payload="/_assertivite___assertfichref_5c7e84780ecd9f746fcc0753"),
+      Button("❓Comment refuser??", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+      Button("😥Je n'ose pas...", payload="/_assertivite___assertref3_5c7e84780ecd9f746fcc076b"),
+      Button("📜Mes droits ?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_69
+
+
+step_69:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/822bdad7-e961-4f86-8176-a0d1887ed2b0.jpeg",
+    quick_replies=[
+      Button("❓Comment refuser??", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+      Button("😥Je n'ose pas...", payload="/_assertivite___assertref3_5c7e84780ecd9f746fcc076b"),
+      Button("📜Mes droits ?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

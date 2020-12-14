@@ -1,0 +1,83 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2be
+start:
+  say Typing(2000)
+  say "Tu vas maintenant relier progressivement le passé au présent."
+  say Typing(3000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Imagine-toi dans ton enfance. À quel âge veux-tu commencer ? (tape seulement le chiffre)"
+  hold
+  
+  remember _age = event
+  
+  say Typing(2000)
+  say Question(
+    "Dis maintenant à haute voix : \"j'ai {{_age}} ans\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+      Button("🔙Arrêter", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2100)
+  say Question(
+    "Imagine-toi à {{_age}} ans. Imagine à quoi tu ressemblais, ce que tu faisais, avec qui tu étais.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3600)
+  say "Tu vas maintenant t'imaginer progresser d'année en année jusqu'à ton âge actuel."
+  say Typing(3900)
+  say "Tu peux te servir d'évènements tels que : 
+- les anniversaires
+- les déménagements
+- les passages en classe supérieure 
+- ou d'autres événements marquants pour t'aider à progresser."
+  say Typing(4100)
+  say Question(
+    "À chaque année supplémentaire, dis ton âge à haute voix.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🎬 Je commence"),
+      Button("🔙Arrêter", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(1900)
+  say Question(
+    "J'écoute 😊!",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait!"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

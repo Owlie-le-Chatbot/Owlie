@@ -1,0 +1,62 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff32f
+start:
+  say Typing(2000)
+  say "Le jugement définitif !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/aff1200c-5e15-489d-b468-c8fbb47ec331.jpeg")
+  say Question(
+    "L'étiquetage consiste à catégoriser ou à juger définitivement un.e individu.e sur la base d'un ou de quelques comportements.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu Précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"J’ai oublié mon RDV, je ne suis pas quelqu’un de fiable\""
+  say Typing(2000)
+  say "\"Il m’a doublé par la droite, c’est un chauffard !\""
+  say Typing(2000)
+  say Question(
+    "\"Je me suis énervé.e contre lui, je ne sais pas garder mon sang froid\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2000)
+  say "Coller une étiquette, c'est juger quelqu'un.e de façon définitive, qu'il s'agisse de toi ou d'une autre personne."
+  say Typing(3000)
+  say "En étiquetant quelqu'un.e, tu lea punis. 
+Tu lui enleves la possibilité de corriger son erreur, de progresser. 
+
+Tu effaces également toute une partie plus positive de son passé."
+  say Typing(3000)
+  say "Par ailleurs, le monde est complexe et évolue en permanence. Les étiquettes ne tiennent jamais longtemps, pas plus que les tiroirs dans lesquels on essaye de ranger les choses ou les gens."
+  say Typing(2000)
+  say "1. Imagine-toi décoller cette étiquette. 
+
+Si une erreur ou une mauvaise chose a été commise, critique l'acte en lui-même sans juger la personne dans son ensemble."
+  say Typing(2000)
+  say Question(
+    "2. Cherche attentivement des comportements du passé qui pourraient contredire le jugement porté sur cette personne.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("✍️Donner mon avis", payload="/_feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

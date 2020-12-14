@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff36d
+start:
+  say Typing(4000)
+  say Question(
+    "Veux-tu continuer l'analyse de ta pensée douloureuse ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_analyse_rationelle_igor___8raisemot_5c67dc3a76ccbc29ae8ff31b"),
+      Button("Non", payload="/_pensee_igor___reprisepensee_5c67dc3a76ccbc29ae8ff284"),
+    ],
+  )
+  hold
+  

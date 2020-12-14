@@ -1,0 +1,40 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2e8
+start:
+  say Typing(2600)
+  say "Voici quelques suggestions 😉"
+  say Typing(2500)
+  say Carousel(
+    cards=[
+      Card(
+        title="Rire de bébé",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b6a69fee-6b55-4f10-8f68-d70dcfc9ea5c.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=RP4abiHdQpc", text="Lire la vidéo"),
+        ],
+      ),
+      Card(
+        title="Compilation de fou-rires",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6a428742-d628-45e5-84a5-7037875b2674.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=oJiOr3KRsCY", text="Lire la vidéo"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("😉Ça me suffit !", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("😂Blagues !"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_blagues_clara___blague1_5c67dc3a76ccbc29ae8ff2e4", "_blagues_clara___blague2_5c67dc3a76ccbc29ae8ff2e5", "_blagues_clara___blague3_5c67dc3a76ccbc29ae8ff2e6", "_blagues_clara___blague4_5c67dc3a76ccbc29ae8ff2e7"]))
+  if (rand == 0) goto flow _blagues_clara___blague1_5c67dc3a76ccbc29ae8ff2e4
+  if (rand == 1) goto flow _blagues_clara___blague2_5c67dc3a76ccbc29ae8ff2e5
+  if (rand == 2) goto flow _blagues_clara___blague3_5c67dc3a76ccbc29ae8ff2e6
+  if (rand == 3) goto flow _blagues_clara___blague4_5c67dc3a76ccbc29ae8ff2e7

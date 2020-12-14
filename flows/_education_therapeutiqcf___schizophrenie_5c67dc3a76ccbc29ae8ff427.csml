@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff427
+start:
+  say Typing(3000)
+  say "Voici les informations que je peux te proposer :"
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Informations",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ff3528d4-cd7d-4d79-b16c-810384e31b91.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Troubles-psychiques/Schizophrenie-s", text="Je fais ça !"),
+        ],
+      ),
+      Card(
+        title="Blog ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f4e83792-075c-4c18-95c7-945d30ab2271.jpeg",
+        buttons=[
+          Url("http://tagueuleboris.com/", text="Je fais ça !"),
+        ],
+      ),
+      Card(
+        title="Travailler sur mes pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/61ed7ee5-f21f-4e5d-abab-ffc19834693a.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🚀Autre chose", payload="/Default"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  

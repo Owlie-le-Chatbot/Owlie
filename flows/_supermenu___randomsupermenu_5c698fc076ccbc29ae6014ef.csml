@@ -1,0 +1,27 @@
+// CHATFUEL BLOCK ID 5c698fc076ccbc29ae6014ef
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_menus_igorclara___catalogueemotion_5c67dc3a76ccbc29ae8ff270", "_menus_igorclara___catalogueemotion_5c67dc3a76ccbc29ae8ff270", "_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271", "_menus_igorclara___cataloguecog_5c67dc3a76ccbc29ae8ff272", "_menus_igorclara___cataloguecorporel_5c67dc3a76ccbc29ae8ff273", "_psychologie_clara___sport_5c67dc3a76ccbc29ae8ff3c6", "_menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274", "_menus_igorclara___menumusique_5c67dc3a76ccbc29ae8ff275", "_crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278", "_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280", "_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1", "_restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339", "_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de", "_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320", "_ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393", "_act___menuact_5c67dc3a76ccbc29ae8ff3e9", "_metaphores___menumetaph_5c67dc3a76ccbc29ae8ff4d5", "_psychologie_clara___stress_5c67dc3a76ccbc29ae8ff3b8", "_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b", "_education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c", "_education_therapeutiqcf___carrefour_educ_th_fonctmt_humain_5c67dc3a76ccbc29ae8ff40d", "_education_therapeutiqcf___carrefour_educ_infossoutien_5c67dc3a76ccbc29ae8ff40e", "_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"]))
+  if (rand == 0) goto flow _menus_igorclara___catalogueemotion_5c67dc3a76ccbc29ae8ff270
+  if (rand == 1) goto flow _menus_igorclara___catalogueemotion_5c67dc3a76ccbc29ae8ff270
+  if (rand == 2) goto flow _menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271
+  if (rand == 3) goto flow _menus_igorclara___cataloguecog_5c67dc3a76ccbc29ae8ff272
+  if (rand == 4) goto flow _menus_igorclara___cataloguecorporel_5c67dc3a76ccbc29ae8ff273
+  if (rand == 5) goto flow _psychologie_clara___sport_5c67dc3a76ccbc29ae8ff3c6
+  if (rand == 6) goto flow _menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274
+  if (rand == 7) goto flow _menus_igorclara___menumusique_5c67dc3a76ccbc29ae8ff275
+  if (rand == 8) goto flow _crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278
+  if (rand == 9) goto flow _pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280
+  if (rand == 10) goto flow _poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1
+  if (rand == 11) goto flow _restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339
+  if (rand == 12) goto flow _eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de
+  if (rand == 13) goto flow _distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320
+  if (rand == 14) goto flow _ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393
+  if (rand == 15) goto flow _act___menuact_5c67dc3a76ccbc29ae8ff3e9
+  if (rand == 16) goto flow _metaphores___menumetaph_5c67dc3a76ccbc29ae8ff4d5
+  if (rand == 17) goto flow _psychologie_clara___stress_5c67dc3a76ccbc29ae8ff3b8
+  if (rand == 18) goto flow _education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b
+  if (rand == 19) goto flow _education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c
+  if (rand == 20) goto flow _education_therapeutiqcf___carrefour_educ_th_fonctmt_humain_5c67dc3a76ccbc29ae8ff40d
+  if (rand == 21) goto flow _education_therapeutiqcf___carrefour_educ_infossoutien_5c67dc3a76ccbc29ae8ff40e
+  if (rand == 22) goto flow _psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3

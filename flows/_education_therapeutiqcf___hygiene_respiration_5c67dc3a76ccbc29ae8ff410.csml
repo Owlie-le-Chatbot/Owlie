@@ -1,0 +1,69 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff410
+start:
+  say Typing(3100)
+  say Question(
+    "Bien respirer est nécessaire pour ton bien-être, pour bien oxygéner tes muscles, ton cerveau et être au maximum de ton potentiel :-)
+
+En gros, c'est aussi fondamental que manger, dormir, boire...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah bon ?"),
+      Button("Je savais ça !"),
+      Button("Propose autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2600)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/277615ea-6832-4bee-b58c-b66d5211285d.jpeg")
+  say Typing(2900)
+  say "Lorsque tu réalises une respiration \"haute\" (respiration thoracique), seul 30 % de tes poumons se remplissent..."
+  say Typing(2300)
+  say Question(
+    "Cette respiration \"incomplète\" peut générer de l'anxiété et du stress du fait d'une mauvaise oxygénation.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah ?"),
+      Button("Je savais ça !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say "À l'inverse, la respiration abdominale, dite \"basse\", te permet de remplir pleinement tes poumons et de favoriser les bons échanges gazeux.
+
+Voici un schéma qui explique bien :"
+  say Typing(2300)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/de811159-3908-4178-aa76-2ff9c75d0e3d.jpeg",
+    quick_replies=[
+      Button("Ok, continue"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(3000)
+  say "Lorsque tu regardes un bébé en train de dormir, seul son abdomen se soulève. Il pratique naturellement la respiration abdominale."
+  say Typing(2600)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/428054ea-362a-468b-9e25-3966996378f2.jpeg",
+    quick_replies=[
+      Button("Comment faire ?", payload="/_psychologie_clara___exos_respiration_5c67dc3a76ccbc29ae8ff3c9"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("Autre activité", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  

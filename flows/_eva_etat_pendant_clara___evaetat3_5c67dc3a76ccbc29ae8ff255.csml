@@ -1,0 +1,38 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff255
+start:
+  say Question(
+    "Sur l'échelle du bonheur, tu es où là ?
+
+(0 = ça ne va pas du tout 😩
+10 = au top 😃!)",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _point = event
+  goto step_1
+
+
+step_1:
+  // adding conditional redirect to flow
+  if (_point == "0" || _point == "1" || _point == "2" || _point == "3" || _point == "4") {
+    goto flow _ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c
+  }
+  say Typing(1700)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/756bafac-1e0f-4a57-9276-df2062a09dc0.jpeg")
+  say "Je suis heureuse d'apprendre que tu vas bien !"
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

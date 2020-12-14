@@ -1,0 +1,280 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc076f
+start:
+  say Typing(3000)
+  say "Il n'est pas toujours facile de formuler une critique."
+  say Typing(4000)
+  say Question(
+    "Certaines pensées, certaines convictions peuvent parfois t'en dissuader.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Lesquelles?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Indique s'il te plait pour chacune d'entre elles si tu les partages.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say Question(
+    "1. Ça ne sert à rien de critiquer",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say Question(
+    "2. J'ai souvent l'impression de ne pas avoir le droit de critiquer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(3000)
+  say Question(
+    "3. C'est malpoli de critiquer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3000)
+  say Question(
+    "4. J'ai peur de paraître hostile et d'être rejeté.e si je critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "5. J'ai peur de blesser mon interlocuteurice avec ma critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say Question(
+    "6. J'ai peur de déclencher un conflit si je critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3000)
+  say "Très bien {{_firstname}}."
+  say Typing(6000)
+  say Question(
+    "Je vais maintenant t'exposer des points de vue que j'estime aussi importants et qui ne vont pas forcément dans le même sens :",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(4000)
+  say "La critique constructive vise à rechercher des conditions communes de bien-être."
+  say Typing(4000)
+  say Question(
+    "Elle est donc non seulement utile mais nécessaire à la vie en société.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_35
+
+
+step_35:
+  say Typing(4000)
+  say "Exprimer ses sentiments est un droit fondamental."
+  say Typing(4000)
+  say "Demander quelque chose est aussi un droit fondamental."
+  say Typing(6000)
+  say "La critique constructive consiste à exprimer des sentiments négatifs puis à formuler une demande de changement."
+  say Typing(3000)
+  say Question(
+    "Critiquer de façon constructive est donc un droit fondamental.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_44
+
+
+step_44:
+  say Typing(5000)
+  say "La critique constructive concerne un fait ou un comportement, pas une personne dans son ensemble."
+  say Typing(7000)
+  say "Exprimer ses sentiments à l'égard d'un fait ou d'un comportement, puis demander un changement de comportement, ce n'est pas juger ou condamner quelqu'un.e."
+  say Typing(4000)
+  say "Et demander quelque chose, ce n'est pas exiger quelque chose."
+  say Typing(4000)
+  say Question(
+    "La critique constructive n'est donc pas un manque de respect.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_53
+
+
+step_53:
+  say Typing(4000)
+  say "Il est plus facile d'être à l'aise avec quelqu'un.e si l'on connait son point de vue et ses limites."
+  say Typing(6000)
+  say "Ton interlocuteurice sera donc logiquement plus à l'aise si tu lui exprime clairement et sans agressivité tes points de vue et tes limites."
+  say Typing(4000)
+  say Question(
+    "La critique constructive est donc aussi un moyen de mettre à l'aise son interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_60
+
+
+step_60:
+  say Typing(5000)
+  say "Rester passif plutôt que de critiquer de façon constructive expose non seulement à faire perdurer une situation défavorable..."
+  say Typing(5000)
+  say "Mais aussi à cultiver ses sentiments négatifs, notamment son anxiété et sa colère."
+  say Typing(5000)
+  say "Ce qui peut nous conduire à des comportements manipulateurs mais aussi et surtout à l'agressivité et donc au conflit."
+  say Typing(4000)
+  say Question(
+    "La critique constructive reste l'un des meilleurs moyens d'éviter le conflit à long terme.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_69
+
+
+step_69:
+  say Typing(6000)
+  say "Si ta demande de changement est acceptée et mise en oeuvre, n'oublie pas de renforcer ce changement par un compliment."
+  say Typing(6000)
+  say Question(
+    "Pour maintenir de bonnes relations il est d'ailleurs essentiel de veiller à maintenir un équilibre entre critiques et compliments.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_74
+
+
+step_74:
+  say Typing(4000)
+  say "Ces points de vue rationnels devraient t'aider à formuler tes critiques."
+  say Typing(4000)
+  say Question(
+    "N'hésite pas également à refaire un tour dans la rubrique relative à tes droits fondamentaux (en cliquant sur le bouton \"mes droits\")",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule !!!"),
+      Button("📜Mes droits?", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("❓Comment critiquer?", payload="/_assertivite___assertcritf1_5c7e84780ecd9f746fcc076d"),
+      Button("🔍Un exemple?", payload="/_assertivite___assertcritf2_5c7e84780ecd9f746fcc076e"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_79
+
+
+step_79:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9b016fe6-01fa-422d-ba0a-4985b1969129.jpeg",
+    quick_replies=[
+      Button("📜Mes droits?", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("❓Comment critiquer?", payload="/_assertivite___assertcritf1_5c7e84780ecd9f746fcc076d"),
+      Button("🔍Un exemple !", payload="/_assertivite___assertcritf2_5c7e84780ecd9f746fcc076e"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

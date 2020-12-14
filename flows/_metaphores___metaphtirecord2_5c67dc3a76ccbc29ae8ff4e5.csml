@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e5
+start:
+  say Typing(4000)
+  say "Tu continues à lutter et à t'épuiser mais la situation n'a pas changé."
+  say Typing(5000)
+  say "Chaque petit progrès est compensé par un effort supplémentaire de ton adversaire, et inversement."
+  say Typing(2000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("💪Tirer encore", payload="/_metaphores___metaphtirecord2_5c67dc3a76ccbc29ae8ff4e5"),
+      Button("✋Lâcher la corde", payload="/_metaphores___metaphtirecord3_5c67dc3a76ccbc29ae8ff4e6"),
+    ],
+  )
+  hold
+  

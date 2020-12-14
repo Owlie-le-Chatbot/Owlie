@@ -1,0 +1,33 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff244
+start:
+  say Typing(2900)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Je suis ravie de pouvoir de nouvelles idées, surtout de ta part ! Dis-moi quelle est la pensée positive que tu aimes toi ! (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propositioncitation = event
+  
+  say Typing(4000)
+  say Question(
+    "La citation que tu souhaites partager est-elle bien {{_propositioncitation}} ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui 😊"),
+      Button("🔄Reformuler", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say "Ok, bien reçu ! Merci beaucoup pour ce partage {{_firstname}} ! 
+
+Peut-être que l'équipe qui m'a créée ajoutera ta citation pour en faire profiter les autres, qui sait 😉!"
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

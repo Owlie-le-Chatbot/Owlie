@@ -1,0 +1,23 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff34c
+start:
+  say Typing(2000)
+  say "Les inquiétudes sont aussi souvent associées à des croyances sur leur utilité."
+  say Typing(2000)
+  say "Voici un petit questionnaire sur l'utilité ou non de s'inquiéter. 
+
+Je t'invite à y répondre le plus franchement possible."
+  say Typing(2000)
+  say Question(
+    "Plus on s'inquiète...
+
+1. plus on se protège contre le stress et les émotions négatives qui pourraient survenir
+
+2. plus on devient anxieux et pessimiste face aux évènements à venir.",
+    button_type="quick_reply",
+    buttons=[
+      Button("1", payload="/_inquietude_igor___qinqu11_5c67dc3a76ccbc29ae8ff34d"),
+      Button("2", payload="/_inquietude_igor___qinqu12_5c67dc3a76ccbc29ae8ff34e"),
+    ],
+  )
+  hold
+  

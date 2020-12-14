@@ -1,0 +1,61 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff415
+start:
+  say Typing(3200)
+  say Question(
+    "Tu t'en doutes j'imagine, mais il est très important de bien suivre les instructions données par ton/ta professionnel.le de santé concernant la prise de ton traitement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr !"),
+      Button("D'autres infos", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2900)
+  say Question(
+    "Cela permet aux molécules d'agir correctement. 
+
+C'est la régularité de l'apport du \"principe actif\" qui permet au traitement d'être efficace !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3400)
+  say Question(
+    "Parfois, il peut mettre entre 2 à 4 semaines pour agir pleinement. 
+Au bout de 10 jours - 2 semaines tu vois les premiers effets, mais l'efficacité du médicament n'est complète qu'au bout d' 1 mois environ (voire un peu plus pour certains traitement).",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2800)
+  say Question(
+    "As-tu du mal à prendre régulièrement ton traitement ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Un peu", payload="/_psychologie_clara___aide_planifier_traitement_5c67dc3a76ccbc29ae8ff3e1"),
+      Button("Non, ça va", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("J'ai besoin d'infos", payload="/_education_therapeutiqcf___medicaments_5c67dc3a76ccbc29ae8ff417"),
+      Button("En rester là", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

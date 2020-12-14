@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3e8
+start:
+  say Typing(3000)
+  say Question(
+    "Cet exercice a été créé sur suggestion d'un utilisateur (qui se reconnaîtra 😉).
+
+Pour proposer ton exercice ou idée, c'est ici ⬇️",
+    buttons=[
+      Button("🤗Je propose 1 truc", payload="/_feedbacks_clara___propositionexercice_5c67dc3a76ccbc29ae8ff245"),
+      Button("🏖Faire autre chose", payload="/_default_answers_clara___defaultanswer14_5c67dc3a76ccbc29ae8ff210"),
+    ],
+  )
+  

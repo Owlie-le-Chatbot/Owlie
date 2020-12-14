@@ -1,0 +1,99 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3b2
+start:
+  say Typing(2000)
+  say "Pour renforcer encore un peu plus ta motivation, je te conseille de t'accorder une petite récompense à la fin de chaque étape, puis une autre lorsque tu auras achevé {{_procra}}."
+  say Typing(2000)
+  say "Il n'est pas nécessaire de sortir le grand jeu. Il suffit d'un petit quelque chose de satisfaisant, d'un petit plaisir, aussi modeste soit-il, pour obtenir ds bénéfices sur la motivation."
+  say Typing(2000)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Quelle récompense t'accorderas-tu une fois {{_procra}} mené.e à son terme ? Écris-le moi en une phrase 📝 "
+  hold
+  
+  remember _recomprocra5 = event
+  
+  say Typing(2000)
+  say Question(
+    "As-tu auparavant décomposé {{_procra}} en plusieurs étapes ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_procrastination_igor___recaprocra_5c67dc3a76ccbc29ae8ff3b3"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Quelle récompense t'accorderas-tu une fois la première étape : {{_etaprocra1}} mené.e à son terme ? Écris-le moi en une phrase 📝 "
+  hold
+  
+  remember _recomprocra1 = event
+  
+  say Typing(2000)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Quelle récompense t'accorderas-tu une fois la deuxième étape : {{_etaprocra2}} mené.e à son terme ? "
+  hold
+  
+  remember _recomprocra2 = event
+  
+  say Typing(2000)
+  goto form_13_0
+
+
+// form component
+form_13_0:
+  say "Quelle récompense t'accorderas-tu une fois la troisième étape : {{_etaprocra3}} mené.e à son terme ?"
+  hold
+  
+  remember _recomprocra3 = event
+  
+  say Typing(2000)
+  goto form_15_0
+
+
+// form component
+form_15_0:
+  say "Quelle récompense t'accorderas-tu une fois la quatrième étape : {{_etaprocra4}} mené.e à son terme? S'il n'y a pas de quatrième étape, met un smiley 🙂"
+  hold
+  
+  remember _recomprocra4 = event
+  
+  say Typing(2000)
+  say "Voici les récompenses que tu prévois :
+- Étape 1 : {{_recomprocra1}}
+- Étape 2 : {{_recomprocra2}}
+- Étape 3 : {{_recomprocra3}}
+- Étape 4 : {{_recomprocra4}}
+- Étape 5 : {{_recomprocra5}}"
+  say Typing(2000)
+  say Question(
+    "Cela te convient-il ou veux-tu recommencer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ça me va"),
+      Button("Recommencer", payload="/_procrastination_igor___recomp_5c67dc3a76ccbc29ae8ff3b2"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___recaprocra_5c67dc3a76ccbc29ae8ff3b3

@@ -1,0 +1,45 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff41f
+start:
+  say Typing(3000)
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Professionnels en santé mentale",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e9561fe0-8c00-4b0a-a48b-bb60cd252890.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Ou-s-adresser", text="Santé mentale"),
+        ],
+      ),
+      Card(
+        title="Visioconsultation avec un psychologue",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b8ec5e07-b97c-451d-b478-58b35afe86b7.jpeg",
+        buttons=[
+          Url("https://www.goodpsy.fr/", text="Visioconsultation"),
+        ],
+      ),
+      Card(
+        title="Consultation médecin : prise de rdv",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/467beed0-93f4-48f5-a747-ac71b5dff116.jpeg",
+        buttons=[
+          Url("https://www.doctolib.fr/", text="Doctolib - rdv"),
+        ],
+      ),
+      Card(
+        title="Documentation maladies",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a693e60a-2f57-4add-b93e-1845b5291a28.jpeg",
+        buttons=[
+          Url("https://www.has-sante.fr/portail/jcms/r_1482168/fr/portlet-jsp-recherche-maladie", text="Guides maladies"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    buttons=[
+      Button("Urgence - SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+    ],
+    quick_replies=[
+      Button("Autres", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  

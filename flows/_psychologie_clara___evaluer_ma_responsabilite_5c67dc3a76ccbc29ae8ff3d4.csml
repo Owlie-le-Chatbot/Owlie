@@ -1,0 +1,170 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d4
+start:
+  say Typing(3300)
+  say Question(
+    "Cet exercice est un peu long (5-7 minutes) car on va essayer de démêler ta part de responsabilité, celle de(s) autre(s) pour y voir plus clair et apaiser ta culpabilité.
+
+C'est bon pour toi ou tu préfères gérer la situation autrement / faire autre chose ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Propose autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3400)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9be6df4a-d92b-42f1-9225-e773da353122.jpeg")
+  say Question(
+    "Je te propose de faire un petit exercice \"visuel\". 
+Tu vois ce cercle ? 
+
+Visualise-le mentalement ou retrace-le sur un bout de papier (c'est + efficace !).",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, c'est bon !"),
+      Button("Je n'y arrive pas", payload="/_psychologie_clara___aide_5c67dc3a76ccbc29ae8ff3db"),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(4100)
+  say Question(
+    "Quand une situation nous pose problème, on oublie que :
+
+1. on ne peut pas tout maîtriser dans une situation et les autres non plus
+
+2. on ne maitrise pas les sentiments des gens
+
+3. quand on culpabilise ou en veut à l'autre, c'est souvent parce qu'on a des pensées \"disque rayé\" supers négatives qui se sont activées et tournent en boucle.
+
+Hein ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est clair !"),
+      Button("C'est bien possible"),
+      Button("Mouais pas vraiment", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(2600)
+  say Question(
+    "Quel degré de contrôle avais-tu sur la situation ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Inexistant (0-10 %)"),
+      Button("Faible (10-30 %)"),
+      Button("Moyen (30-50 %)"),
+      Button("Fort (50-80 %)"),
+      Button("Très fort (80-100 %)"),
+      Button("Je ne sais pas..."),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2400)
+  say Question(
+    "Et l'autre (ou les autres personnes) ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Inexistant (0-10 %)"),
+      Button("Faible (10-30 %)"),
+      Button("Moyen (30-50 %)"),
+      Button("Fort (50-80 %)"),
+      Button("Très fort (80-100 %)"),
+      Button("Je ne sais pas"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(2900)
+  say Question(
+    "Tu dis ça de façon posée (tête froide) ou encore sous le coup d'une émotion ?
+
+(Je te dis ça parce qu'on n'est pas très réaliste quand il y a encore de l'émotion...)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je suis calme"),
+      Button("Encore de l'émotion"),
+      Button("C'est encore flou"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3100)
+  say Question(
+    "Ok, donc il s'est passé un truc et chacun.e a eu un comportement dû en partie :
+
+1. au contexte particulier
+2. à des pensées qui se sont déclenchées 
+3. à des émotions qui se sont réveillées",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui...."),
+      Button("Je vois !"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(3800)
+  say Question(
+    "Maintenant, sur le cercle, découpe des \"parts\" (comme une tarte !) selon le degré de responsabilité (en %) qui incombe à :
+- la situation 
+- la / les personnes impliquées
+- toi
+- tous les autres facteurs/personnes/émotions ou pensées ayant pu contribuer à la situation.
+
+Par exemple : \"cette situation est due à 30 % de malchance\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord"),
+      Button("Je n'y arrive pas", payload="/_psychologie_clara___aide_5c67dc3a76ccbc29ae8ff3db"),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_24
+
+
+step_24:
+  say Typing(3100)
+  say Question(
+    "Prends ton temps, et quand tu as terminé, clique sur \"J'ai terminé !\"",
+    buttons=[
+      Button("J'ai terminé !", payload="/_eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  

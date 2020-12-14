@@ -1,0 +1,61 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3ee
+start:
+  say Typing(3000)
+  say "Voici deux exemples de pensées qui distordent  la réalité : 
+
+\"J'ai loupé 3 appels de ma mère, je suis sûr.e qu'elle va m'en vouloir maintenant\"
+
+\" Mon mari/ma femme rigole en lisant le SMS d’un.e collègue, iel me trompe, j'en suis sûr.e. Iel ne m’aime plus, nous allons devoir divorcer et je me retrouverai seul.e, personne ne voudra de moi\""
+  say Typing(2900)
+  say Question(
+    "Quel \"grand type\" de pensée est-ce ?",
+    buttons=[
+      Button("Les types de pensées", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+    ],
+    quick_replies=[
+      Button("Catastrophique"),
+      Button("Lecture de pensées", payload="/_quiz_cognitif_clara___mauvaise_reponse_5c67dc3a76ccbc29ae8ff3ed"),
+      Button("Surgénéralisation", payload="/_quiz_cognitif_clara___mauvaise_reponse_5c67dc3a76ccbc29ae8ff3ed"),
+      Button("Émotionnelle", payload="/_quiz_cognitif_clara___mauvaise_reponse_5c67dc3a76ccbc29ae8ff3ed"),
+    ],
+  )
+  hold
+  
+  remember _reponse_quiz_cog = event
+  goto step_4
+
+
+step_4:
+  say Typing(2100)
+  say Question(
+    "Exactement {{_name}}, c'est de la pensée catastrophique !
+
+Pour en savoir +, clique sur \"En savoir +\", tu pourras revenir au jeu après.",
+    buttons=[
+      Button("En savoir +", payload="/_types_de_distorsions_cf___1_pensee_catastrophique_dramatisation_amplification_5c67dc3a76ccbc29ae8ff3fc"),
+    ],
+    quick_replies=[
+      Button("Continuer"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef", "_quiz_cognitif_clara___jeu_3_raisonnement_emotionnel_5c67dc3a76ccbc29ae8ff3f0", "_quiz_cognitif_clara___jeu_4_lecture_dans_les_pensees_5c67dc3a76ccbc29ae8ff3f1", "_quiz_cognitif_clara___jeu_5_pensee_de_type_je_dois_5c67dc3a76ccbc29ae8ff3f2", "_quiz_cognitif_clara___jeu_6_dichotomie_5c67dc3a76ccbc29ae8ff3f3", "_quiz_cognitif_clara___jeu_7_jugement_dattributionetiquetage_5c67dc3a76ccbc29ae8ff3f4", "_quiz_cognitif_clara___jeu_8_filtre_negatif_tunnel_abstraction_selective_5c67dc3a76ccbc29ae8ff3f5", "_quiz_cognitif_clara___jeu_9_illusion_de_controle_externe_5c67dc3a76ccbc29ae8ff3f6", "_quiz_cognitif_clara___jeu_10_attribution_arbitraire_5c67dc3a76ccbc29ae8ff3f7", "_quiz_cognitif_clara___jeu_11_erreur_dequite_5c67dc3a76ccbc29ae8ff3f8", "_quiz_cognitif_clara___jeu_12_personnalisation_5c67dc3a76ccbc29ae8ff3f9", "_quiz_cognitif_clara___jeu_13_maximisation_minimisation_5c67dc3a76ccbc29ae8ff3fa"]))
+  if (rand == 0) goto flow _quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef
+  if (rand == 1) goto flow _quiz_cognitif_clara___jeu_3_raisonnement_emotionnel_5c67dc3a76ccbc29ae8ff3f0
+  if (rand == 2) goto flow _quiz_cognitif_clara___jeu_4_lecture_dans_les_pensees_5c67dc3a76ccbc29ae8ff3f1
+  if (rand == 3) goto flow _quiz_cognitif_clara___jeu_5_pensee_de_type_je_dois_5c67dc3a76ccbc29ae8ff3f2
+  if (rand == 4) goto flow _quiz_cognitif_clara___jeu_6_dichotomie_5c67dc3a76ccbc29ae8ff3f3
+  if (rand == 5) goto flow _quiz_cognitif_clara___jeu_7_jugement_dattributionetiquetage_5c67dc3a76ccbc29ae8ff3f4
+  if (rand == 6) goto flow _quiz_cognitif_clara___jeu_8_filtre_negatif_tunnel_abstraction_selective_5c67dc3a76ccbc29ae8ff3f5
+  if (rand == 7) goto flow _quiz_cognitif_clara___jeu_9_illusion_de_controle_externe_5c67dc3a76ccbc29ae8ff3f6
+  if (rand == 8) goto flow _quiz_cognitif_clara___jeu_10_attribution_arbitraire_5c67dc3a76ccbc29ae8ff3f7
+  if (rand == 9) goto flow _quiz_cognitif_clara___jeu_11_erreur_dequite_5c67dc3a76ccbc29ae8ff3f8
+  if (rand == 10) goto flow _quiz_cognitif_clara___jeu_12_personnalisation_5c67dc3a76ccbc29ae8ff3f9
+  if (rand == 11) goto flow _quiz_cognitif_clara___jeu_13_maximisation_minimisation_5c67dc3a76ccbc29ae8ff3fa

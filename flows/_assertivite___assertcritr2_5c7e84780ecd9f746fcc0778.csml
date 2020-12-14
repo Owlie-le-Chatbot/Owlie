@@ -1,0 +1,407 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0778
+start:
+  say Typing(5000)
+  say Question(
+    "Tu peux t'entrainer à identifier les différents types de critique ou passer directement aux exemples.",
+    button_type="quick_reply",
+    buttons=[
+      Button("💪M'entrainer !"),
+      Button("🔍Exemples direct !", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "1. \"Je suis désolé.e de vous dire ça mais vous n'êtes pas une bonne personne\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say "C'est une critique de type \"blessante\" ⛈et/ou \"vague\" ☁️."
+  say Typing(7000)
+  say Question(
+    "La critique ne concerne pas un fait ou un comportement mais la personne dans ce qu'elle est. De plus on ne connait pas les raisons précises de ce jugement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Suite"),
+      Button("🔍Exemples direct !", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "2. \"Non pour moi c'est clair : je n'aime pas votre façon de travailler\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(3000)
+  say "Il s'agit d'une critique \"vague\" ☁️."
+  say Typing(4000)
+  say Question(
+    "La critique concerne bien un ou des comportements, mais pas assez précisément.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Suite"),
+      Button("🔍Exemples direct !", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "3. \"Ça me dérange que vous arriviez en retard pour la troisième fois cette semaine. J'aimerais que vous soyez à l'heure à partir de la semaine prochaine.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(3000)
+  say "Il s'agit d'une critique \"constructive\" 🌤."
+  say Typing(7000)
+  say Question(
+    "Le problème est décrit de façon directe et précise, les sentiments négatifs sont exprimés. La demande de changement de comportement est bien formulée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ On continue"),
+      Button("🔍Donne des exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_32
+
+
+step_32:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(9000)
+  say Question(
+    "4. \"Vous savez j'ai attrapé un rhume qui s'est déclaré dans la nuit de mardi à mercredi et vous étiez là avec moi mardi. Ça m'était déjà arrivé l'année dernière alors j'avais prévenu tout le monde de laisser les fenêtres fermées parce que vous voyez, là je me sens pas bien, je crois que j'ai de la fièvre en plus. Vous comprenez?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(3000)
+  say "C'est une critique \"vague\" ☁️!"
+  say Typing(7000)
+  say Question(
+    "Le problème dont il est question est bien un comportement mais la critique n'est pas directe ni précise, de même que la demande de changement de comportement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ continue Owlie !"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_42
+
+
+step_42:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "5. \"C'est ma place! Dégage de là connard!\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_47
+
+
+step_47:
+  say Typing(4000)
+  say "Il s'agit (évidemment) d'une critique \"blessante\" ⛈."
+  say Typing(4000)
+  say Question(
+    "La critique est directe et précise, mais très agressive",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Suite"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_52
+
+
+step_52:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "6. \"La fumée de votre cigarette me dérange\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_57
+
+
+step_57:
+  say Typing(3000)
+  say "Cette critique est de type \"constructive\" 🌤."
+  say Typing(3000)
+  say Question(
+    "Bien qu'aucune demande de changement ne soit formulée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Suite"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_62
+
+
+step_62:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "7. \"Faut vraiment être empoté.e pour louper un tir aussi facile!\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_67
+
+
+step_67:
+  say Typing(3000)
+  say "C'est une critique \"blessante\" ⛈..."
+  say Typing(4000)
+  say Question(
+    "Bien qu'indirect, il s'agit bien d'un jugement négatif de la personne dans ce qu'elle est.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ On continue !"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_72
+
+
+step_72:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "8. \"J'en ai vraiment marre de ton mépris systématique vis-à-vis mon travail\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_77
+
+
+step_77:
+  say Typing(3000)
+  say "C'est une critique \"vague\" ☁️."
+  say Typing(5000)
+  say Question(
+    "Le sentiment négatif est exprimé mais les faits ne sont pas critiqués avec suffisamment de précision.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ La suite !!!"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_82
+
+
+step_82:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "9. \"Ça m'est pénible de ne pas comprendre ce que tu dis. Pourrais-tu parler plus fort?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_87
+
+
+step_87:
+  say Typing(3000)
+  say "C'est une critique  \"constructive\" 🌤!"
+  say Typing(4000)
+  say Question(
+    "Tout y est : sentiment négatif vis-à-vis d'un comportement et demande de changement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Encore"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_92
+
+
+step_92:
+  say Typing(3000)
+  say "De quel type de critique s'agit-il?"
+  say Typing(4000)
+  say Question(
+    "10. \"Tu crois vraiment que tu vas trouver du boulot avec un CV pareil?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌤Constructive"),
+      Button("☁️Vague"),
+      Button("⛈Blessante"),
+    ],
+  )
+  hold
+  
+  goto step_97
+
+
+step_97:
+  say Typing(4000)
+  say "C'est une critique \"vague\" ☁️."
+  say Typing(4000)
+  say Question(
+    "La critique est formulée de façon indirecte et pas assez précise pour être constructive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_102
+
+
+step_102:
+  say Typing(4000)
+  say Question(
+    "Souhaite-tu poursuivre avec des exemples?",
+    buttons=[
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule !"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir ?", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_105
+
+
+step_105:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1a3618eb-41d8-4d55-ba11-935f3e3909b1.jpeg",
+    quick_replies=[
+      Button("🔍Exemples", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

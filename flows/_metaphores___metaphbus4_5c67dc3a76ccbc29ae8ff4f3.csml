@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f3
+start:
+  say Typing(4000)
+  say "Tes pensées et tes émotions douloureuses sont comme des passager.e.s d'un bus."
+  say Typing(4000)
+  say "Certaines te crient où elles veulent aller, d'autres veulent t'arrêter."
+  say Typing(4000)
+  say "Mais c'est toi qui as les mains sur le volant."
+  say Typing(5000)
+  say "C'est toi qui peux choisir de les laisser crier et de te diriger dans la bonne direction."
+  say Typing(4000)
+  say Question(
+    "Celle de tes valeurs.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes Valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,169 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc078a
+start:
+  say Typing(6000)
+  say "Un compliment est considéré comme vrai ✅lorsque tu es certain.e. que les faits rapportés correspondent à la réalité."
+  say Typing(3000)
+  say Question(
+    "Par exemple: un service que tu as rendu.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Après avoir appliqué les deux premières règles pour accuser réception du compliment,",
+    buttons=[
+      Button("3 premières règles?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+    ],
+  )
+  
+  say Typing(4000)
+  say Question(
+    "Règle 3. Remercier.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Remercier?"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(4000)
+  say Question(
+    "Le plus simple est encore de dire \"merci\" ou \"je te (vous) remercie\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ah ok!
+
+
+"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(4000)
+  say Question(
+    "Règle 4.1. Exprimer ses sentiments vis-à-vis du compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(4000)
+  say "Si le compliment te fait plaisir, dis-le, tout simplement !"
+  say Typing(5000)
+  say "Si le compliment te rassure, te surprend, te redonne le moral ou autre chose, dis-le également."
+  say Typing(4000)
+  say Question(
+    "Par exemple : \"Ça me fait plaisir que tu me dises ça.\" ou \"Je suis surpris.e que tu aimes\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍C'est noté"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say Question(
+    "Règle 4.2. Exprimer ses sentiments vis-à-vis de ce qui est complimenté.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(5000)
+  say "Tu peux également exprimer tes sentiments ou ton opinion vis-à-vis de ce qui est complimenté."
+  say Typing(5000)
+  say Question(
+    "Par exemple : \"Moi aussi j'aime bien ma nouvelle coupe\" ou \"Je suis également content.e de t'avoir rendu service\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord !"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(5000)
+  say "Si ton interlocuteurice insiste trop, tu peux aussi essayer de lae décourager en utilisant :"
+  say Typing(3000)
+  say "Règle 5. Le brouillard."
+  say Typing(3000)
+  say Question(
+    "Ex. \"C'est possible\", \"Tu as peut-être raison\" etc.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ok!"),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(4000)
+  say Question(
+    "Souhaite-tu illustrer ça avec un exemple ou on passe plutôt à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcompr21_5c7e84780ecd9f746fcc0791"),
+    ],
+    quick_replies=[
+      Button("📋Owlie, récapitule"),
+      Button("🔍Autres exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_40
+
+
+step_40:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fb7e3bf5-adfb-401a-8e91-feea379f9503.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("😥J'y arrive pas...", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

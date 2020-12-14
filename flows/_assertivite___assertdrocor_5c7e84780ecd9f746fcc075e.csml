@@ -1,0 +1,225 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc075e
+start:
+  say Typing(4000)
+  say "T'affirmer nécessite d'être bien conscient.e de tes droits et de ce qu'ils impliquent."
+  say Typing(4000)
+  say Question(
+    "Je te propose d'énumérer ensemble ces droits fondamentaux 📜un par un.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'ac!"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "1. J'ai le droit d'exister.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✊"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say Question(
+    "1.1. J'ai le droit de ressentir des choses.",
+    button_type="quick_reply",
+    buttons=[
+      Button("💗"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3000)
+  say Question(
+    "1.2. J'ai le droit d'avoir des opinions.",
+    button_type="quick_reply",
+    buttons=[
+      Button("💭"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "1.3. J'ai le droit d'exprimer ce que je ressens et ce que je pense.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🗣"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4000)
+  say Question(
+    "1.4. À partir du moment où je m'exprime, j'ai le devoir d'en assumer les conséquences.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📝"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "1.5. Étant donné que mes interlocuteurices ont les mêmes droits que moi, j'ai plutôt intérêt à connaitre leur point de vue pour être plus à l'aise avec elleux.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👂 "),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(7000)
+  say Question(
+    "2. J'ai le droit d'évoluer, d'apprendre, de progresser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📈"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3000)
+  say Question(
+    "2.1. J'ai le droit de ne pas être parfait.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌦"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(3000)
+  say Question(
+    "2.2. J'ai le droit de faire des erreurs.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❌ "),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(7000)
+  say Question(
+    "2.3. À partir du moment où mes interlocuteurices ont les mêmes droits, j'ai plutôt intérêt à leur faire connaitre mes limites et à chercher à connaitre leurs limites.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📞"),
+    ],
+  )
+  hold
+  
+  goto step_34
+
+
+step_34:
+  say Typing(3000)
+  say Question(
+    "3. J'ai le droit d'être heureux.se.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🙂 "),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(3000)
+  say Question(
+    "3.1. J'ai le droit d'agir pour rechercher mon bien-être.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👈"),
+    ],
+  )
+  hold
+  
+  goto step_40
+
+
+step_40:
+  say Typing(5000)
+  say Question(
+    "3.2. À partir du moment où mes interlocuteurrices ont les mêmes droits, mon bien-être ne doit pas menacer le leur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("♻️ "),
+    ],
+  )
+  hold
+  
+  goto step_43
+
+
+step_43:
+  say Typing(6000)
+  say Question(
+    "3.3. J'ai donc plutôt intérêt à rechercher des conditions communes qui favoriseraient mon bien-être et celui de mes interlocuteurices.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👫J'ai compris !"),
+    ],
+  )
+  hold
+  
+  goto step_46
+
+
+step_46:
+  say Typing(5000)
+  say Question(
+    "Très bien! As-tu envie de continuer le module consacré à recevoir les compliments?",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Allez Owlie !", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

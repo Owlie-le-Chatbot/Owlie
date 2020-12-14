@@ -1,0 +1,30 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff221
+start:
+  say Question(
+    "Il y a un souci ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui...", targets=["_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227", "_ai_dial_positifs_cf___relanceressenti_5c67dc3a76ccbc29ae8ff222"]) as btn__0,
+      Button("Non"),
+      Button("Je ne sais pas", payload="/_ai_dial_positifs_cf___specvalenceemot_5c67dc3a76ccbc29ae8ff224"),
+    ],
+  )
+  hold
+  
+  goto step_1
+
+
+step_1:
+  say Typing(2000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Ok, du coup tu voulais me raconter quoi ?"
+  hold
+  
+  remember _relation = event
+  
+  // adding conditional redirect to flow
+  goto flow _ai_dial_positifs_cf___specvalenceemot_5c67dc3a76ccbc29ae8ff224

@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4bc
+start:
+  say Typing(4000)
+  say Question(
+    "\"Ne jamais confondre silence et ignorance, calme et acceptation, gentillesse et faiblesse.\"
+
+Bob Marley",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌟Donner 1 citation", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

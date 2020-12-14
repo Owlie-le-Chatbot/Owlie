@@ -1,0 +1,12 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff34e
+start:
+  say Typing(2000)
+  say "Bonne réponse ! (clapclapclap)"
+  say Typing(2000)
+  say "L'inquiétude est un phénomène qui s'auto-entretient."
+  say Typing(4000)
+  say "Enchainer des pensées négatives au sujet de l'avenir ou les faire tourner en boucle ne va certainement pas t'apaiser ou te rendre optimiste."
+  say Typing(2000)
+  say "Le fait de s'inquiéter peut même devenir inquiétant en soi."
+  // adding conditional redirect to flow
+  goto flow _inquietude_igor___questinqu2_5c67dc3a76ccbc29ae8ff34f

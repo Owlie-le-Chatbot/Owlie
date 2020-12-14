@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e3
+start:
+  say Typing(5000)
+  say "Les mauvaises pensées et les émotions négatives fonctionnent parfois comme des sables mouvants."
+  say Typing(4000)
+  say "Plus tu cherches à t'en extirper rapidement, plus tu t'enfonces."
+  say Typing(4000)
+  say Question(
+    "C'est en acceptant d'abord leur présence que tu parviendras à mieux les gérer et à résoudre les problèmes qui te sont posés.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J’ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

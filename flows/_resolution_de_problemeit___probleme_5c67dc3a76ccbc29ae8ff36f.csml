@@ -1,0 +1,24 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff36f
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Essaye de décrire clairement et précisément le problème à résoudre en 1 phrase 📝"
+  hold
+  
+  remember _probleme = event
+  
+  say Typing(2000)
+  say Question(
+    "Veux-tu résoudre le problème : {{_probleme}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_resolution_de_problemeit___solutions_5c67dc3a76ccbc29ae8ff370"),
+      Button("Reformuler", payload="/_resolution_de_problemeit___probleme_5c67dc3a76ccbc29ae8ff36f"),
+    ],
+  )
+  hold
+  

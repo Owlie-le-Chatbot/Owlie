@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc8c76ccbc29ae907059
+start:
+  say Typing(2900)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "C'est très important pour moi de t'appeler par le prénom qui te convient. C'est ma manière de te respecter 😊. Comment souhaites-tu que je t'appelle ?"
+  hold
+  
+  remember _name = event
+  
+  // adding conditional redirect to flow
+  goto flow _choix_nom_clara___choixnomsuite_5c67dc8c76ccbc29ae90705a

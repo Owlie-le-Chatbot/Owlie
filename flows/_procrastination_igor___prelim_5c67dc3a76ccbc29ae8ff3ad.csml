@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3ad
+start:
+  say Typing(2000)
+  say Question(
+    "Connais-tu au moins une activité qui, à la différence des jokers, pourrait t'aider à démarrer {{_procra}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_procrastination_igor___demarrage_5c67dc3a76ccbc29ae8ff3ae"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Écris le nom de l'une de ces activités \"préliminaires\" 📝"
+  hold
+  
+  remember _preliminaire = event
+  
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___demarrage_5c67dc3a76ccbc29ae8ff3ae

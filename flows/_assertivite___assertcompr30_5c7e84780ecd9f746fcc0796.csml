@@ -1,0 +1,155 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0796
+start:
+  say Typing(3000)
+  say "C'est pas toujours facile de recevoir un compliment."
+  say Typing(4000)
+  say Question(
+    "Certaines pensées, certaines convictions peuvent parfois te perturber.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Ah bon? Comme ?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Dis moi pour chacune d'entre elles si elles te correspondent. (la réponse qui te viens en premier!)",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Ok, c'est parti !"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "1. J'ai peur d'être mal à l'aise, anxieux.se, de rougir face à un compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Plutôt oui"),
+      Button("Plutôt non"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(5000)
+  say Question(
+    "2. J'ai peur de paraître prétentieux.se ou vaniteux.se si j'accepte un compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Plutôt oui"),
+      Button("Plutôt non"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "3. J'ai peur que le compliment qu'on me fait ne soit pas sincère.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Plutôt oui"),
+      Button("Plutôt non"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4000)
+  say Question(
+    "4. Je dois être aimé.e ou approuvé.e de tou.tes celleux qui m'entourent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Plutôt oui"),
+      Button("Plutôt non"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "5. Je dois toujours être performant.e et compétent.e dans ce que je fais.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Plutôt oui"),
+      Button("Plutôt non"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say Question(
+    "6. Les mauvaises personnes devraient toujours être punies.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Plutôt oui"),
+      Button("Plutôt non"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3000)
+  say "Très bien {{_firstname}}"
+  say Typing(6000)
+  say Question(
+    "Je vais maintenant t'exposer des points de vue que j'estime aussi importants et qui ne vont pas forcément dans le même sens :",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Vas-y Owlie !"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(4000)
+  say "Les compliments sont souvent aussi difficiles à accepter que les critiques."
+  say Typing(4000)
+  say "Ils visent également à rechercher des conditions communes de bien-être."
+  say Typing(4000)
+  say Question(
+    "Ils sont donc aussi utiles et nécessaires que les critiques à la vie en société.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ On continue !", payload="/_assertivite___assertcompr31_5c7e84780ecd9f746fcc0797"),
+      Button("❓Comment recevoir ?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("🔍Des exemples !!!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,42 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff420
+start:
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Associations d'entraide",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/593227f7-371c-4be4-a170-150889a537cf.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Soins-accompagnements-et-entraide/Entraide/Associations-d-usagers", text="Association - aide"),
+        ],
+      ),
+      Card(
+        title="Groupes d'entraide mutuelle",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7f603a92-a5bd-40de-9e94-49466c09c35a.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Ou-s-adresser/Entraide/Groupes-d-entraide-mutuelle/Carte-des-GEM", text="Entraide"),
+        ],
+      ),
+      Card(
+        title="Lignes d'écoute",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/094914ff-c8a7-4817-ad0c-a035a6f2ce86.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Soins-accompagnements-et-entraide/Entraide/Lignes-d-ecoute", text="Lignes d'écoute"),
+        ],
+      ),
+      Card(
+        title="Appeler un ami",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ce5497f5-704a-499a-8748-d5da90e4d776.jpeg",
+        buttons=[
+          Button("Appeler un ami", payload="/_education_therapeutiqcf___appeler_une_amie_5c67dc3a76ccbc29ae8ff422"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("Travailler sur un pb", payload="/_choix_clara___empathiepremenucrise_5c67dc3a76ccbc29ae8ff268"),
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,23 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f8
+start:
+  say Typing(4000)
+  say "Imagine-toi un matin en voiture sur la route pour aller au travail."
+  say Typing(4000)
+  say "Tu entres dans une nappe de brouillard."
+  say Typing(3000)
+  say "Il devient très difficile de voir la route devant toi."
+  say Typing(4000)
+  say "Tu distingues à peine les bandes blanches à quelques mètres devant toi."
+  say Typing(4000)
+  say "Continuer à conduire te semble très dangereux."
+  say Typing(3000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🚗Continuer", payload="/_metaphores___metaphbrou3_5c67dc3a76ccbc29ae8ff4fa"),
+      Button("🖐️M'arrêter", payload="/_metaphores___metaphbrou2_5c67dc3a76ccbc29ae8ff4f9"),
+    ],
+  )
+  hold
+  

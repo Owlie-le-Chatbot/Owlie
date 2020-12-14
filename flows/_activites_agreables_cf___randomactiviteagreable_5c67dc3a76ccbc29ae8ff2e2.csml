@@ -1,0 +1,20 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2e2
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274", "_ancrage_emotionnel_igor___favoris_5c67dc3a76ccbc29ae8ff2d6", "_ancrage_emotionnel_igor___inspiration_5c67dc3a76ccbc29ae8ff2d7", "_ancrage_emotionnel_igor___chanson_5c67dc3a76ccbc29ae8ff2d8", "_activites_igor___vue_5c67dc3a76ccbc29ae8ff289", "_activites_igor___ouie_5c67dc3a76ccbc29ae8ff28e", "_activites_igor___musicstim_5c67dc3a76ccbc29ae8ff298", "_ancrage_physique_igor___tactile_5c67dc3a76ccbc29ae8ff2c8", "_ancrage_physique_igor___contact_5c67dc3a76ccbc29ae8ff2c5", "_respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9", "_crise_igor___conssens_5c67dc3a76ccbc29ae8ff27c", "_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2", "_blagues_clara___randomrire_5c67dc3a76ccbc29ae8ff2e9", "_activites_igor___jeux_copy_1_5c67dc3a76ccbc29ae8ff292", "_act___lettremoifutur1_5c67dc3a76ccbc29ae8ff3e6", "_act___menuact_5c67dc3a76ccbc29ae8ff3e9"]))
+  if (rand == 0) goto flow _menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274
+  if (rand == 1) goto flow _ancrage_emotionnel_igor___favoris_5c67dc3a76ccbc29ae8ff2d6
+  if (rand == 2) goto flow _ancrage_emotionnel_igor___inspiration_5c67dc3a76ccbc29ae8ff2d7
+  if (rand == 3) goto flow _ancrage_emotionnel_igor___chanson_5c67dc3a76ccbc29ae8ff2d8
+  if (rand == 4) goto flow _activites_igor___vue_5c67dc3a76ccbc29ae8ff289
+  if (rand == 5) goto flow _activites_igor___ouie_5c67dc3a76ccbc29ae8ff28e
+  if (rand == 6) goto flow _activites_igor___musicstim_5c67dc3a76ccbc29ae8ff298
+  if (rand == 7) goto flow _ancrage_physique_igor___tactile_5c67dc3a76ccbc29ae8ff2c8
+  if (rand == 8) goto flow _ancrage_physique_igor___contact_5c67dc3a76ccbc29ae8ff2c5
+  if (rand == 9) goto flow _respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9
+  if (rand == 10) goto flow _crise_igor___conssens_5c67dc3a76ccbc29ae8ff27c
+  if (rand == 11) goto flow _psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2
+  if (rand == 12) goto flow _blagues_clara___randomrire_5c67dc3a76ccbc29ae8ff2e9
+  if (rand == 13) goto flow _activites_igor___jeux_copy_1_5c67dc3a76ccbc29ae8ff292
+  if (rand == 14) goto flow _act___lettremoifutur1_5c67dc3a76ccbc29ae8ff3e6
+  if (rand == 15) goto flow _act___menuact_5c67dc3a76ccbc29ae8ff3e9

@@ -1,0 +1,219 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc078c
+start:
+  say Typing(6000)
+  say "Un compliment est considéré comme vague ☁️ lorsqu'il n'est pas suffisamment direct et précis pour être évalué comme vrai ou faux."
+  say Typing(5000)
+  say Question(
+    "Ex. \"Vous travaillez beaucoup\", \"Vous êtes quelqu'un de sympa\", \"on peut toujours compter sur toi\" etc.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Après avoir appliqué les deux premières règles en montrant que tu as receptionné le compliment,",
+    buttons=[
+      Button("3 premières règles?", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+    ],
+  )
+  
+  say Typing(3000)
+  say Question(
+    "Règle 3. Remercier",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Oh ?"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(5000)
+  say "Il est préférable d'adopter un à priori positif vis-à-vis d'un compliment vague avant d'enquêter."
+  say Typing(4000)
+  say Question(
+    "Le plus simple est encore de dire \"merci\" ou \"je te (vous) remercie\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord !"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(3000)
+  say Question(
+    "Règle 4. Enquête positive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Qu'est ce que c'est?"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(4000)
+  say "L'objectif de cette enquête positive est de savoir si ce compliment est vrai ou faux."
+  say Typing(3000)
+  say "Trois possibiités s'offrent à toi :"
+  say Typing(3000)
+  say Question(
+    "4.1. Demander des précisions.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_24
+
+
+step_24:
+  say Typing(3000)
+  say Question(
+    "Ex. \"Pourriez-vous préciser vos propos?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ah ok!"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(3000)
+  say Question(
+    "4.2. Reformuler.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(3000)
+  say Question(
+    "Ex. \"Si j'ai bien compris, vous me dites que...?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_33
+
+
+step_33:
+  say Typing(4000)
+  say Question(
+    "4.3. Poser des questions ouvertes sur les faits rapportés ou les sentiments exprimés.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_36
+
+
+step_36:
+  say Typing(4000)
+  say "Ex. \"Comment...?\", \"...où...?\", \"quand...?\", \"qui...?\", \"qu'est-ce que...?\", \"qu'est-ce qui...?\" etc."
+  say Typing(4000)
+  say Question(
+    "Ex. \"Qu'en pensez-vous?\", \"Comment l'as-tu vécu?\" ou \"Cela vous a-t-il touché?\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌Oki !"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(5000)
+  say Question(
+    "Si l'enquête positive aboutit à un compliment vrai ou faux, rends toi aux rubriques correspondantes :",
+    buttons=[
+      Button("✅Compliment vrai", payload="/_assertivite___assertcompr11_5c7e84780ecd9f746fcc078a"),
+      Button("❎Compliment faux", payload="/_assertivite___assertcompr12_5c7e84780ecd9f746fcc078b"),
+    ],
+  )
+  
+  say Typing(6000)
+  say "Si le compliment reste vague et que ton interlocuteurice insiste trop, tu peux aussi essayer de lae décourager en utilisant :"
+  say Typing(3000)
+  say "Règle 5. Le brouillard."
+  say Typing(3000)
+  say Question(
+    "Ex. \"C'est possible\", \"Tu as peut-être raison\" etc.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_50
+
+
+step_50:
+  say Typing(4000)
+  say Question(
+    "On illustre ça avec un exemple ou on passe plutôt à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcompr23_5c7e84780ecd9f746fcc0793"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule !"),
+      Button("🔍Autres exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_53
+
+
+step_53:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/48ea62f6-12fd-4a0b-8984-136d5b33dd31.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("❓Autre compliment!", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("😥J'y arrive pas", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,134 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff424
+start:
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3117e6bb-7a57-4fa8-a600-fbe6cd580fb4.jpeg")
+  say Typing(2300)
+  say Question(
+    "Que dirais-tu de comprendre les situations dans lesquelles tu retombes (trop) souvent ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Voir autre chose", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+      Button("Autres propositions?", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_3
+
+
+step_3:
+  say Typing(3500)
+  say Question(
+    "Un comportement d'évitement se met en place par apprentissage.
+
+Comme tous les êtres vivants : si tu vis une situation qui génère un ressenti (physique, émotion, pensée) désagréable pour toi, tu feras en sorte de l'éviter par la suite quand tu rencontrera les mêmes circonstances.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je vois !"),
+      Button("Ok..."),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2500)
+  say Question(
+    "Pourtant, au départ, cela part d'une \"bonne intention\" de notre cerveau : il fait en sorte que tu n'aies pas besoin de réfléchir systématiquement face à une situation à la question \"comment je dois me comporter face à ça déjà ?\".
+
+Et ce, Pour 2 raisons : 
+1. ça prend du temps de réfléchir 
+2. ça consomme de l'énergie !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ahahah !!!"),
+      Button("Mais quel flemmard !"),
+      Button("Je savais ça !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3100)
+  say Question(
+    "Alors ça, c'est cool quand il s'agit de comportement qui te sont utiles deviennent automatiques (heureusement que tu ne te demandes pas à chaque fois comment on se sert d'un couteau et d'une fourchette !)...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continue"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(4000)
+  say "...mais ça l'est beaucoup moins quand cela devient une \"mauvaise habitudes\" comme  les comportements d'évitement et de fuite.
+
+En plus, une habitude, cela se met très vite en place (mais cela se défait aussi assez vite en fait, si si !)... 
+...si tu répètes le schéma suivant plusieurs fois :"
+  say Typing(3700)
+  say Question(
+    "1. situation qui demande une action de ta part (ex : rappeler une personne que tu n'aimes pas)
+
+2. activation de la pensée/souvenir (\"ah c'est vrai, c'est désagréable ça\")
+
+3. rappel de souvenir de l'émotion éprouvée dans le passé
+
+4. stratégie d'évitement (ne pas faire l'action \"je l'appelerai demain !\")",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je vois très bien !"),
+      Button("Continue..."),
+      Button("Propose autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(3700)
+  say "Si tu as des \"habitudes\" comme ça sur lesquelles tu voudrais changer de comportement, voici un petit exercice pratico-pratique pour l'analyser et trouver ensuite une alternative.
+
+Ne serait-ce que faire l'exercice d'en prendre conscience, c'est déjà un pas vers le changement !
+
+Prends ton temps pour le remplir, plus clique sur \"J'ai terminé !\""
+  say Typing(1400)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d0217632-ec51-44c1-b297-2ee2bfb26b69.jpeg",
+    quick_replies=[
+      Button("J'ai terminé !"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Question(
+    "Bravo, tu as complété ce niveau !
+Que souhaites-tu faire maintenant ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Un autre !", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Besoin d'aide", payload="/_jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("Gérer une situation", payload="/_psychologie_clara___analyse_2_resolution_de_probleme_5c67dc3a76ccbc29ae8ff3d3"),
+      Button("En rester là :-)", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

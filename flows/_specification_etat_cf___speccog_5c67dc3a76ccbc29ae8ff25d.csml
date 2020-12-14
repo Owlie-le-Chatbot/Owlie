@@ -1,0 +1,38 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff25d
+start:
+  say Typing(2800)
+  say Question(
+    "Les pensées que tu as, elles t'impactent à quel point ?
+
+(0 = pas de problème 😊; 
+10 = extrêmement pénible 😩)",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _impact_pensee = event
+  goto step_2
+
+
+step_2:
+  // adding conditional redirect to flow
+  if (_impact_pensee == "0" || _impact_pensee == "1" || _impact_pensee == "2" || _impact_pensee == "3" || _impact_pensee == "4" || _impact_pensee == "5") {
+    goto flow _eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de
+  }
+  // adding conditional redirect to flow
+  if (_impact_pensee == "6" || _impact_pensee == "7" || _impact_pensee == "8" || _impact_pensee == "9" || _impact_pensee == "10") {
+    goto flow _pensee_igor___intropensee_5c67dc3a76ccbc29ae8ff27f
+  }

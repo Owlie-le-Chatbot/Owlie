@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4df
+start:
+  say Typing(3000)
+  say "Tes pensées sont comme des gens qui s'invitent chez toi."
+  say Typing(4000)
+  say "Mais les plus douloureuses et obsédantes de ces pensées ne se laissent pas forcément chasser de ta tête. Elles reviennent malgré tes efforts pour les réfréner, encore et encore."
+  say Typing(3500)
+  say "Plutôt que de monopoliser ton temps et ton énergie à essayer de faire disparaitre ces pensées, laisse-les venir."
+  say Typing(3500)
+  say Question(
+    "Accepter leur présence te permettra d'économiser du temps, de l'énergie et d'en consacrer davantage à des actions plus positives.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

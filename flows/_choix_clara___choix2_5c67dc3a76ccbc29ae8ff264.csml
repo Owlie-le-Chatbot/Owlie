@@ -1,0 +1,20 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff264
+start:
+  say Question(
+    "Que puis-je pour toi maintenant ?
+
+(😊fais aussi défiler les boutons ↔️)",
+    buttons=[
+      Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+    ],
+    quick_replies=[
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🚀Activités", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("🎓 Apprendre un truc", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("🤗Psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🏖Changer les idées", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

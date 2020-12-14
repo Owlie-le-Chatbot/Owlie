@@ -1,0 +1,105 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c6
+start:
+  say Typing(2700)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/424c9e98-4f15-4bdc-92bf-57585f22ac83.jpeg")
+  say Question(
+    "Voici 5 mouvements courts pour t'aider à changer te changer les idées et te détendre !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Propose autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_3
+
+
+step_3:
+  say Typing(3100)
+  say Question(
+    "Regarde juste les images, reproduis le mouvement de ton mieux ! 
+Compte entre 10-30 secondes pour chaque mouvement selon ton envie et tes possibilités.
+
+Appuie sur ok à chaque fois quand tu as terminé ! :",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Propose autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d333ada5-8d33-46c2-972e-0473d201b959.jpeg",
+    quick_replies=[
+      Button("Wow, ok !!"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2e51a059-0a24-4ef6-a5a9-b5e749417c3e.jpeg",
+    quick_replies=[
+      Button("👍🏻Wow, Ok !"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2900)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/39a2817f-5945-473d-bd1a-c7ca67f68bad.jpeg",
+    quick_replies=[
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(3300)
+  say "On a dépassé la moitié ! 
+Go go go !!!"
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7f4c004f-1719-4a48-a983-05dfd1582f28.jpeg",
+    quick_replies=[
+      Button("Ok !"),
+      Button("Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/58fbd3f3-5e1a-4d94-8fba-acc4433200fc.jpeg",
+    quick_replies=[
+      Button("Terminé !", payload="/_renforcements_clara___randomrenfo_5c67dc3a76ccbc29ae8ff249"),
+      Button("Faire le strech", payload="/_psychologie_clara___stretch_5c67dc3a76ccbc29ae8ff3c5"),
+      Button("Encore !", payload="/_psychologie_clara___sport_5c67dc3a76ccbc29ae8ff3c6"),
+    ],
+  )
+  hold
+  

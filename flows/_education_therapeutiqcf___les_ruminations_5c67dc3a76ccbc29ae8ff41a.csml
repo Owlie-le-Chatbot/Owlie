@@ -1,0 +1,100 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff41a
+start:
+  say Typing(2100)
+  say Question(
+    "Comprendre le fonctionnement des pensées, c'est apprendre à mieux se connaître et à mieux gérer son humeur au quotidien, y être moins assujetti.e !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Dis-m'en plus..."),
+      Button("Surprends moi !", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4300)
+  say Question(
+    "Par exemple, on sait maintenant que les ruminations, c'est-à-dire les pensées récurrentes, persistantes, non productives (= qui n'apportent pas de solution(s)) sont source de souffrance :
+Elles ont tendance à amplifier les émotions et les pensées négatives...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah ?"),
+      Button("Continue"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(2100)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7b79ed00-b7e1-40a3-a42e-e753d164b5d3.jpeg")
+  say Typing(3600)
+  say "C'est un cercle viscieux car cela augmente le nombre de souvenirs négatifs qui vont venir à ton esprit spontanément et altère ta capacité à résoudre des problèmes.
+
+Quelqu'un.e qui est déprimé.e peut ruminer 50-75 % du temps, pendant 6-10 h à chaque fois..."
+  say Typing(2100)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5de747ee-e735-4e39-8bef-15ced0ee0944.jpeg",
+    quick_replies=[
+      Button("Comment faire alors?"),
+      Button("Propose autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2700)
+  say Question(
+    "Eh ben, la bonne nouvelle c'est qu'on peut y rémédier !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Comment ?"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(4000)
+  say Question(
+    "En en prenant conscience ! \"Tiens, voilà une pensée en boucle, je suis en train de ruminer là !\". 
+Si tu t'exerces à observer ces pensées et à voir les choses d’une manière plus constructive, il se peut que cela t'aide à diminuer tes émotions négatives, à améliorer ton fonctionnement et ainsi, surmonter tes symptômes de tristesse...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3700)
+  say Question(
+    "Voici un petit exercice pour gérer une rumination (ou pour la prochaine :-)).
+
+Sinon on peut travailler dessus et apprendre à les reconnaître, elles peuvent être de différents types :",
+    buttons=[
+      Url("https://drive.google.com/open?id=0BwzjG62bhAz0eWlTVFRMQXBzWGs", text="Gérer une rumination"),
+    ],
+    quick_replies=[
+      Button("Les reconnaître", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+      Button("En gérer une", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,154 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0776
+start:
+  say Typing(6000)
+  say "Une critique est considérée comme blessante ⛈lorsqu'elle ne concerne pas un fait ou des comportements mais la personne dans ce qu'elle est."
+  say Typing(5000)
+  say Question(
+    "Ex. \"Tu n'es pas respectueux.\", \"Il faut être con pour faire une chose pareillle.\" ou \"Vous êtes completement irresponsable.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment répondre?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Après avoir appliqué les trois premières règles pour accuser réception de la critique,",
+    buttons=[
+      Button("3 premières règles?", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+    ],
+  )
+  
+  say Typing(3000)
+  say Question(
+    "Règle 4. Critiquer la forme.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(4000)
+  say "Il s'agit là de faire une critique constructive de la critique reçue."
+  say Typing(6000)
+  say "Ce procédé est particulièrement utile si tu estimes que la relation avec ton interlocuteurice doit être préservée."
+  say Typing(7000)
+  say Question(
+    "Ex. \"J'ai bien compris que quelque chose ne vous convenait pas mais je me sens offensé.e par votre critique. Pourriez-vous me préciser plus paisiblement ce qui ne va pas?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3000)
+  say Question(
+    "Règle 5. Le brouillard.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say "Il s'agit ici de ne pas discuter la critique, de ne pas \"renvoyer la balle\"."
+  say Typing(5000)
+  say "Cette technique est particulièrement utile pour décourager un.e interlocuteurice insistant.e."
+  say Typing(4000)
+  say Question(
+    "Exemple \"C'est possible...\", \"Peut-être...\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(4000)
+  say Question(
+    "Règle 6. Le refus de la forme.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_29
+
+
+step_29:
+  say Typing(4000)
+  say "Il s'agit de désarmer l'interlocuteurice en refusant de poursuivre la discussion."
+  say Typing(8000)
+  say "Tu peux opter pour cette méthode si l'interlocuteurice se montre trop agressif.ve, trop insistant.e ou si tu te sens trop blessé.e pour poursuivre sereinement la conversation."
+  say Typing(5000)
+  say Question(
+    "Exemple \"Il est hors de question que je continue à vous écouter si vous vous adressez à moi sur ce ton\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_36
+
+
+step_36:
+  say Typing(4000)
+  say Question(
+    "Veux-tu illustrer cela avec un exemple ou passer à une autre forme de critique?",
+    buttons=[
+      Button("🔍Un exemple", payload="/_assertivite___assertcritr24_5c7e84780ecd9f746fcc077d"),
+    ],
+    quick_replies=[
+      Button("📋Récapitule !"),
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_39
+
+
+step_39:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8f9fd279-07d0-4dbe-b20b-fb137d1b5023.jpeg",
+    quick_replies=[
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff25b
+start:
+  say Question(
+    "Sur une échelle de 0 à 10, à quel point c'est pénible ?
+
+(0 = pas de problème 😊; 
+10 = extrêmement pénible 😩)",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _impact = event
+  goto step_1
+
+
+step_1:
+  // adding conditional redirect to flow
+  if (_impact == "6" || _impact == "7" || _impact == "8" || _impact == "9" || _impact == "10") {
+    goto flow _crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278
+  }
+  // adding conditional redirect to flow
+  if (_impact == "0" || _impact == "1" || _impact == "2" || _impact == "3" || _impact == "4" || _impact == "5") {
+    goto flow _eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de
+  }

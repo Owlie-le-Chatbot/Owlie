@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff21c
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Comment pourrais-tu rendre la journée de demain encore meilleure que celle d'aujourd'hui ?
+"
+  hold
+  
+  remember _comment_pourraistu_rendre_la_journee_de_demain_encore_meilleure = event
+  
+  say Typing(1600)
+  say "Mmmh, ok !"
+  // adding conditional redirect to flow
+  goto flow _choix_clara___choix1_5c67dc3a76ccbc29ae8ff263

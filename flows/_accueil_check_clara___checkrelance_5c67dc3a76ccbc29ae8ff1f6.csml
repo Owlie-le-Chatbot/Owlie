@@ -1,0 +1,38 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1f6
+start:
+  say Question(
+    "Comment ça va  ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😞Ça ne va pas..."),
+      Button("😕Bof, pas top"),
+      Button("😐Ça peut aller"),
+      Button("🙂Plutôt bien"),
+      Button("😊Très bien !"),
+      Button("😯Je ne sais pas"),
+    ],
+  )
+  hold
+  
+  remember _humeur = event
+  goto step_1
+
+
+step_1:
+  say Typing(1900)
+  say "D'accord..."
+  // adding conditional redirect to flow
+  if (_humeur == "😕Bof, pas top" || _humeur == "😞Ça ne va pas...") {
+    goto flow _ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c
+  }
+  // adding conditional redirect to flow
+  if (_humeur == "😐Ça peut aller" || _humeur == "🙂Plutôt bien" || _humeur == "😊Très bien !") {
+    do rand = Floor(Random() * Length(["_eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253", "_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"]))
+    if (rand == 0) goto flow _eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253
+    if (rand == 1) goto flow _ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d
+  }
+  say Typing(1900)
+  say "Ce n'est pas toujours évident de mettre des mots sur nos ressentis.
+Moi-même j'ai du mal parfois... (bon en même temps, je suis un robot 😅🤖)"
+  // adding conditional redirect to flow
+  goto flow _default_answers_clara___defaultanswer7_5c67dc3a76ccbc29ae8ff209

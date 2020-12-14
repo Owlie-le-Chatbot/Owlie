@@ -1,0 +1,77 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff283
+start:
+  say Typing(2000)
+  say "Concentre-toi sur cette pensée : {{_penseedouloureuse}}"
+  say Typing(2000)
+  say Question(
+    "Te semble-t-elle rationnelle ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+      Button("Je ne sais pas"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Je te suggère tout de même de le vérifier avec moi",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord", payload="/_analyse_rationelle_igor___introanalratio_5c67dc3a76ccbc29ae8ff313"),
+      Button("Non merci"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(2000)
+  say Question(
+    "La pensée : {{_penseedouloureuse}} te parait-elle découler d'une croyance plus profonde et tenace ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_ellis_igor___introellis_5c67dc3a76ccbc29ae8ff392"),
+      Button("Non"),
+      Button("Je ne sais pas", payload="/_ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Question(
+    "Souhaites-tu assouplir cette pensée pour la rendre moins douloureuse ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2000)
+  say Question(
+    "Souhaites-tu résoudre un problème ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_resolution_de_problemeit___probleme_5c67dc3a76ccbc29ae8ff36f"),
+      Button("Non", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("🚀Autres activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

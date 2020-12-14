@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff370
+start:
+  say Typing(2000)
+  say "Essaye maintenant d'imaginer toutes les solutions possibles, même les plus irréalistes 😊"
+  say Typing(2000)
+  say Question(
+    "Je vais te demander d'en sélectionner 5 afin de les examiner. 
+Prend le temps d'y réfléchir.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est bon !", payload="/_resolution_de_problemeit___solution1_5c67dc3a76ccbc29ae8ff371"),
+    ],
+  )
+  hold
+  

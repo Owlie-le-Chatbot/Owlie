@@ -1,0 +1,87 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff27c
+start:
+  say Typing(3000)
+  say Question(
+    "Es-tu prêt.e à te concentrer sur tes sensations ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/Default"),
+      Button("🔙Arrêter", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say "1. Sens-tu tes cheveux toucher ta tête ?"
+  say Typing(5000)
+  say "2. Sens-tu ton abdomen se lever et se baisser quand tu respires ?"
+  say Typing(5000)
+  say "3. Sens-tu l’espace entre tes yeux ?"
+  say Typing(5000)
+  say "4. Sens-tu la distance entre tes oreilles ?"
+  say Typing(5000)
+  say "5. Sens-tu ton souffle toucher l’arrière de tes yeux quand tu inspires ?"
+  say Typing(5000)
+  say "6. Peux-tu te représenter un objet éloigné ?"
+  say Typing(5000)
+  say "7. Sens-tu tes bras toucher ton corps ?"
+  say Typing(5000)
+  say "8. Sens-tu la plante de tes pieds ?"
+  say Typing(5000)
+  say "9. Peux-tu imaginer une belle journée à la plage ?"
+  say Typing(5000)
+  say "10. Perçois-tu l’espace à l’intérieur de ta bouche ?"
+  say Typing(5000)
+  say "11. Remarques-tu la position de ta langue dans ta bouche ?"
+  say Typing(5000)
+  say "12. Sens-tu la brise effleurer ta joue ?"
+  say Typing(5000)
+  say "13. Sens-tu qu’un bras est plus lourd que l’autre ?"
+  say Typing(5000)
+  say "14. Sens-tu un picotement ou un engourdissement dans une main ?"
+  say Typing(5000)
+  say "15. Sens-tu qu’un bras est plus détendu que l’autre ?"
+  say Typing(5000)
+  say "16. Sens-tu un changement de la température de l’air autour de toi ?"
+  say Typing(5000)
+  say "17. Sens-tu que ton bras gauche est plus chaud que le droit ?"
+  say Typing(5000)
+  say "18. Peux-tu imaginer ce que tu ressentirais si tu étais une poupée de chiffon ?"
+  say Typing(5000)
+  say "19. Remarques-tu une tension dans ton avant-bras gauche ?"
+  say Typing(5000)
+  say "20. Peux-tu imaginer quelque chose de très agréable ?"
+  say Typing(5000)
+  say "21. Peux-tu imaginer ce que tu ressentirais si tu flottais dans un nuage ?"
+  say Typing(5000)
+  say "22. Peux-tu imaginer ce que tu ressentirais si tu étais englué dans la mélasse ?"
+  say Typing(5000)
+  say "23. Peux-tu imaginer te représenter un objet éloigné ?"
+  say Typing(5000)
+  say "24. Sens-tu une lourdeur dans tes jambes ?"
+  say Typing(5000)
+  say "25. Peux-tu t'imaginer flotter dans de l’eau chaude ?"
+  say Typing(5000)
+  say "26. Sens-tu ton corps suspendu à ton ossature ?"
+  say Typing(5000)
+  say "27. T'autorises-tu à te laisser entraîner paresseusement ?"
+  say Typing(5000)
+  say "28. Sens-tu ton visage s’attendrir ?"
+  say Typing(5000)
+  say "29. Peux-tu imaginer une belle fleur ?"
+  say Typing(5000)
+  say Question(
+    "30. Sens-tu qu’un bras et une jambe sont plus lourds que les autres ?",
+    button_type="quick_reply",
+    buttons=[
+      Button(" ✔ C'est fait !", payload="/_crise_igor___reprise_5c67dc3a76ccbc29ae8ff27b"),
+      Button("🔄Recommencer", payload="/_crise_igor___conssens_5c67dc3a76ccbc29ae8ff27c"),
+    ],
+  )
+  hold
+  

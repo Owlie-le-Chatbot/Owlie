@@ -1,0 +1,35 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4cf
+start:
+  say Typing(1500)
+  say Question(
+    "Voici quelques liens dans lesquels tu pourras trouver une information fiable sur les définitions des différents types d'agression sexuelle.",
+    buttons=[
+      Url("http://www.victimedeviol.fr/definitions.html", text="victimedeviol.fr"),
+      Url("http://www.sosfemmes.com/violences/viol_loi.htm", text="sosfemmes.com"),
+      Url("http://stop-violences-femmes.gouv.fr/ce-que-dit-la-loi-340.html", text="stop-violences-femme"),
+    ],
+    quick_replies=[
+      Button("Je vais voir"),
+      Button("Non merci", payload="/_abus_sexuel_igor___abus_non_merci_5c67dc3a76ccbc29ae8ff4d0"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  say Question(
+    "Très bien {{_name}}.
+Prends le temps de consulter l'un de ces liens. 
+
+Une fois revenu.e ici, tu sauras probablement si ce que tu as subi peut-être considéré comme une agression ou un abus sexuel.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui c'est le cas", payload="/_abus_sexuel_igor___abus_confirme_5c67dc3a76ccbc29ae8ff4cc"),
+      Button("Non je ne crois pas", payload="/_abus_sexuel_igor___abus_non_merci_5c67dc3a76ccbc29ae8ff4d0"),
+    ],
+  )
+  hold
+  

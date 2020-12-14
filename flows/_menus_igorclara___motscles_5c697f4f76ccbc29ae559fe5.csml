@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c697f4f76ccbc29ae559fe5
+start:
+  say Typing(2500)
+  say Question(
+    "On m'a dit que parfois on s'y perdait dans mes menus 😅 
+
+Lee, Igor et Clara on essayé de remédier à cela avec des mots clés qui activent directement certains menus ! 
+
+Voici les mots clés (clique ci-dessous ou sur les photos pour les enregistrer dans ton téléphone !",
+    buttons=[
+      Url("https://drive.google.com/open?id=1OSp_YQDN0-MP-cz4Aw-3k0MnGd7dL3xk", text="🔑Mots-clés"),
+    ],
+  )
+  
+  say Typing(2300)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/83fbc77e-796a-4c52-a20e-16278b890909.jpeg")
+  say Typing(1100)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/487c9ab5-663c-40cf-b4dd-9279a62504f2.jpeg",
+    quick_replies=[
+      Button("❔Au hasard", payload="/_menus_igorclara___randommenuigorajoutcf_5c67dc3a76ccbc29ae8ff26e"),
+      Button("🚨Menu crise", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+      Button("🏖Menu détente", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🚀Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  

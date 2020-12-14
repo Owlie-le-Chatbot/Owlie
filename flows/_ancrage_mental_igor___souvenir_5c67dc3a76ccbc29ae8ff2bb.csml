@@ -1,0 +1,61 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2bb
+start:
+  say Typing(3000)
+  say "Plonge maintenant dans ta mémoire à la recherche d’un moment important et agréable de ta vie."
+  say Typing(3000)
+  say Question(
+    "Une fois que tu as choisi un souvenir, tu vas pouvoir commencer à le détailler.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔J’ai choisi !"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  goto form_6_0
+
+
+// form component
+form_6_0:
+  say "C’etait quand ?"
+  hold
+  
+  remember _quand_souvenir = event
+  
+  goto form_6_1
+
+
+// form component
+form_6_1:
+  say "C’etait avec qui ?"
+  hold
+  
+  remember _qui_souvenir = event
+  
+  goto form_6_2
+
+
+// form component
+form_6_2:
+  say "Que s’est il passé ?"
+  hold
+  
+  remember _passe_souvenir = event
+  
+  goto form_6_3
+
+
+// form component
+form_6_3:
+  say "De quoi d’autre te souviens-tu ?"
+  hold
+  
+  remember _autre_souvenir = event
+  
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

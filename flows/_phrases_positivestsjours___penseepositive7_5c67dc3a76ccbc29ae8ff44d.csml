@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff44d
+start:
+  say Typing(2500)
+  say Question(
+    "Voici la pensée du jour 🌟😊
+
+\"L’échec est seulement l’opportunité de recommencer d’une façon plus intelligente.\"
+
+Henry Ford",
+    buttons=[
+      Button("Donner 1 citation 🌟", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+    ],
+    quick_replies=[
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

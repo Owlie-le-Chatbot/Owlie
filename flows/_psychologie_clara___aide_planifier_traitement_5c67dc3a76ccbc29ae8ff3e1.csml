@@ -1,0 +1,55 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3e1
+start:
+  say Typing(2900)
+  say "Je suis sûre que tu peux y arriver {{_name}} !"
+  say Typing(3400)
+  say Question(
+    "Pour t’aider, les premières choses à faire sont : 
+- d'en parler au.à la professionnel.le de santé qui te suit, c'est essentiel si tu te sens à l'aise avec iel
+- d'associer la prise de ton traitement à une action-clé que tu fais tous les jours (par exemple, avant de te laver les dents, de boire un thé, ...)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue..."),
+      Button("Autres activités", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3300)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ad00c48d-6b76-4ba7-95c1-3fbc37f86447.jpeg")
+  say Typing(2100)
+  say "Le but, créer une association (pour éviter l'oubli) et une routine.
+
+...
+Tu peux aussi en parler à tes pairs (personnes qui vivent des difficultés similaires au tiennes) afin qu'iels partagent avec toi leurs outils, leur stratégies et leur expérience de la prise de traitements, la communication avec les soignant.e.s ..."
+  say Typing(2400)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e0a827f4-63ea-4fa7-90b9-4650cd087194.jpeg",
+    quick_replies=[
+      Button("Ok, je comprends :-)"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(1800)
+  say Question(
+    "Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("M'améliorer", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("Discuter", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Merci :-) bye !", payload="/_fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8"),
+    ],
+  )
+  hold
+  

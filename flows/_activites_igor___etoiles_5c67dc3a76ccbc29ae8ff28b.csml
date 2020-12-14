@@ -1,0 +1,52 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff28b
+start:
+  say Typing(3000)
+  say "(fais défiler les images ↔️)"
+  say Typing(1800)
+  say Carousel(
+    cards=[
+      Card(
+        title="Jake Weirick",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0fda035b-0a47-43ba-9aef-f76a4eb6056c.jpeg",
+        buttons=[
+          Url("https://unsplash.com/photos/Q_RBVFFXR_g", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="William Malott",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/29edfbd1-0a5b-49f3-b9ef-724924bc0648.jpeg",
+        buttons=[
+          Url("https://unsplash.com/photos/XynjvHu0E90", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Michał Mancewicz",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/90de9e06-d9ad-4753-9cde-fd01f1c98e38.jpeg",
+        buttons=[
+          Url("https://unsplash.com/photos/1eJ38ETICQ4", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Adrian Pelletier",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/40478928-edc0-4e86-bbdc-9df4edfe998a.jpeg",
+        buttons=[
+          Url("https://unsplash.com/photos/f7vGvHwxwS8", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Brett Ritchie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4aad432d-c34e-47af-8db7-5a6ffacc75c0.jpeg",
+        buttons=[
+          Url("https://unsplash.com/photos/1vKTnwLMdqs", text="Agrandir"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Retour", payload="/_activites_igor___vue_5c67dc3a76ccbc29ae8ff289"),
+      Button("⛵️Activité agréable", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

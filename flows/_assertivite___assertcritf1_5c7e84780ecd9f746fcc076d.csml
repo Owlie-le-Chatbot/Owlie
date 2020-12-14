@@ -1,0 +1,310 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc076d
+start:
+  say Typing(6000)
+  say "Formuler une critique constructive consiste généralement à exprimer des sentiments négatifs vis-à-vis de quelque chose..."
+  say Typing(4000)
+  say Question(
+    "Puis si possible à formuler une demande de changement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment faire?"),
+      Button("🔍Un exemple?", payload="/_assertivite___assertcritf2_5c7e84780ecd9f746fcc076e"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcritf3_5c7e84780ecd9f746fcc076f"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say "Voici quelques règles très simples pour formuler une critique constructive."
+  say Typing(4000)
+  say "Les respecter ne te garantira pas une efficacité systématique et immédiate."
+  say Typing(4000)
+  say Question(
+    "Mais en les appliquant, ton message a plus de chance de bien passer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Règle 1. Avoir bien identifié le problème",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(5000)
+  say "Si la critique est constructive, elle portera sur un fait et non sur une personne dans ce qu'elle est."
+  say Typing(5000)
+  say "C'est ce qui différencie une critique constructive d'un jugement définitif ou d'une condamnation."
+  say Typing(4000)
+  say "Pour exemple, ton voisin ne réagira forcément de la même façon si tu lui dis :"
+  say Typing(3000)
+  say "a. qu'il est irrespectueux (jugement définitif)"
+  say Typing(3000)
+  say "b. que sa musique te dérange (un fait)"
+  say Typing(4000)
+  say Question(
+    "Si les problèmes sont multiples, tu devra les critiquer un à la fois.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(3000)
+  say Question(
+    "Règle 1bis. Avoir si possible une solution à proposer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(5000)
+  say "Avoir une idée précise du changement que tu souhaiterais voir adopté est un plus."
+  say Typing(6000)
+  say Question(
+    "En le proposant ultérieurement (règle 5.), tu augmentera logiquement tes chances que ce soit ta solution qui soit adoptée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_35
+
+
+step_35:
+  say Typing(4000)
+  say Question(
+    "Règle 2. Bien choisir son moment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(4000)
+  say "Il n'est jamais facile ni très agréable de recevoir un message négatif."
+  say Typing(5000)
+  say "Du coup, assure-toi que ton interlocuteurice soit dans de bonnes conditions pour le recevoir."
+  say Typing(5000)
+  say "Il est généralement conseillé de formuler ta critique au calme, en évitant les distractions potentielles."
+  say Typing(4000)
+  say "Mieux vaut par exemple prendre ton interlocuteurice à part si c'est possible."
+  say Typing(4000)
+  say "Par ailleurs, le meilleur moment n'est pas forcément celui où survient le problème."
+  say Typing(6000)
+  say Question(
+    "Une critique ne sera jamais moins efficace à distance du problème, et souvent même plus efficace si formulée dans de meilleures conditions.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_51
+
+
+step_51:
+  say Typing(3000)
+  say Question(
+    "Règle 3. Décrire le problème de façon directe et précise.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_54
+
+
+step_54:
+  say Typing(4000)
+  say "C'est ce qui différencie une critique constructive d'une critique vague."
+  say Typing(6000)
+  say "Si tu restes flou.e, ton interlocuteurice aura plus de mal à comprendre ce qui te dérange et ce qu'il faudrait changer."
+  say Typing(3000)
+  say "Note par exemple la différence entre ces deux critiques :"
+  say Typing(4000)
+  say "a. \"Ça m'ennuie beaucoup que tu ne finisses pas ton travail. J'aimerais...\" (vague)"
+  say Typing(5000)
+  say Question(
+    "b. \"Ça m'ennuie beaucoup que tu n'aies pas cloturé tes dossiers hier. J'aimerais...\" (constructive)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_65
+
+
+step_65:
+  say Typing(4000)
+  say Question(
+    "Règle 4. Exprimer ses sentiments négatifs face au problème.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_68
+
+
+step_68:
+  say Typing(5000)
+  say "Il est essentiel d'exprimer ce que tu ressens pour que ton interlocuteurices puisse comprendre ta position."
+  say Typing(6000)
+  say "Ces sentiments négatifs doivent évidemment concerner le fait qui te dérange et non condamner la personne dans son ensemble."
+  say Typing(4000)
+  say "Remarque ce qui différencie ces deux critiques :"
+  say Typing(5000)
+  say "a. \"Ça me fait de la peine que tu ne m'aies pas souhaité bon anniversaire hier\" (sentiment exprimé)"
+  say Typing(4000)
+  say Question(
+    "b. \"Tu ne m'as pas souhaité bon anniversaire hier\" (pas de sentiment exprimé)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_79
+
+
+step_79:
+  say Typing(4000)
+  say Question(
+    "Règle 5. Formuler une demande de changement si possible.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_82
+
+
+step_82:
+  say Typing(9000)
+  say "Si tu as une solution à proposer (règle 1bis.) ou si tu souhaites tout simplement que ton interlocuteurice change de comportement, tu as tout intérêt à formuler une demande de changement."
+  say Typing(4000)
+  say "Dans ce cas, ce sont les règles de la demande qui s'appliquent."
+  say Typing(5000)
+  say Question(
+    "N'hésites pas à refaire un passage par le module sur les demandes si tu l'estime nécessaire.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_89
+
+
+step_89:
+  say Typing(4000)
+  say Question(
+    "Règle 6. Souligner les conséquences positive de ce changement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_92
+
+
+step_92:
+  say Typing(4000)
+  say "Ta demande aura plus de chance d'être acceptée si tu la tourne de façon positive."
+  say Typing(3000)
+  say "Compare ces deux exemples :"
+  say Typing(6000)
+  say "a. \"J'aimerais que tu arrives à l'heure la prochaine fois. Ça nous permettrait de bien préparer notre présentation.\" (positif)"
+  say Typing(5000)
+  say Question(
+    "b. \"J'aimerais que tu arrives à l'heure la prochaine fois. Sinon on sera obligés de bâcler notre présentation.\" (négatif)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_101
+
+
+step_101:
+  say Typing(4000)
+  say Question(
+    "C'était donc les 6 règles à respecter pour formuler des critiques constructives.",
+    button_type="quick_reply",
+    buttons=[
+      Button(" 📋Récapitule Owlie"),
+      Button("🔍Un exemple?", payload="/_assertivite___assertcritf2_5c7e84780ecd9f746fcc076e"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcritf3_5c7e84780ecd9f746fcc076f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_104
+
+
+step_104:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b48b9c41-ecc0-4c93-8569-8c6cf69d76c3.jpeg",
+    quick_replies=[
+      Button("🔍Un exemple stp !", payload="/_assertivite___assertcritf2_5c7e84780ecd9f746fcc076e"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcritf3_5c7e84780ecd9f746fcc076f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

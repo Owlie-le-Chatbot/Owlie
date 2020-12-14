@@ -1,0 +1,52 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1f1
+start:
+  goto form_0_0
+
+
+// form component
+form_0_0:
+  say "Depuis que l'on s'est écrit, quoi de neuf ?"
+  hold
+  
+  remember _check = event
+  
+  say Typing(2200)
+  say "D'accord...😊"
+  say Typing(2000)
+  say Question(
+    "Ta journée tu la trouves comment dans l'ensemble ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("😊Très bien"),
+      Button("🙂Bien"),
+      Button("😐Bof", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("😕Pas terrible", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("😞Difficile", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("❔Pas d'avis", payload="/_default_answers_clara___defaultanswer7_5c67dc3a76ccbc29ae8ff209"),
+    ],
+  )
+  hold
+  
+  remember _journee = event
+  goto step_5
+
+
+step_5:
+  // adding conditional redirect to flow
+  if (_journee == "😊Très bien" || _journee == "🙂Bien") {
+    do rand = Floor(Random() * Length(["_ai_dial_positifs_cf___dialoguepositif3_5c67dc3a76ccbc29ae8ff215", "_ai_dial_positifs_cf___dialoguepositif6_5c67dc3a76ccbc29ae8ff219", "_ai_dial_positifs_cf___dialoguepositif4_5c67dc3a76ccbc29ae8ff217", "_ai_dial_positifs_cf___dialoguepositif2_5c67dc3a76ccbc29ae8ff214", "_ai_dial_positifs_cf___dialoguepositif1_5c67dc3a76ccbc29ae8ff213", "_ai_dial_positifs_cf___dialoguepositif5_5c67dc3a76ccbc29ae8ff218", "_ai_dial_positifs_cf___dialoguepositif4_5c67dc3a76ccbc29ae8ff217", "_ai_dial_positifs_cf___dialoguepositif8_5c67dc3a76ccbc29ae8ff21b", "_ai_dial_positifs_cf___dialoguechecksommeil3_5c67dc3a76ccbc29ae8ff216", "_ai_dial_positifs_cf___dialoguechecksortie_5c67dc3a76ccbc29ae8ff21e", "_ai_dial_positifs_cf___dialoguepositif9_5c67dc3a76ccbc29ae8ff21c", "_ai_dial_positifs_cf___choixrenfo_5c67dc3a76ccbc29ae8ff212"]))
+    if (rand == 0) goto flow _ai_dial_positifs_cf___dialoguepositif3_5c67dc3a76ccbc29ae8ff215
+    if (rand == 1) goto flow _ai_dial_positifs_cf___dialoguepositif6_5c67dc3a76ccbc29ae8ff219
+    if (rand == 2) goto flow _ai_dial_positifs_cf___dialoguepositif4_5c67dc3a76ccbc29ae8ff217
+    if (rand == 3) goto flow _ai_dial_positifs_cf___dialoguepositif2_5c67dc3a76ccbc29ae8ff214
+    if (rand == 4) goto flow _ai_dial_positifs_cf___dialoguepositif1_5c67dc3a76ccbc29ae8ff213
+    if (rand == 5) goto flow _ai_dial_positifs_cf___dialoguepositif5_5c67dc3a76ccbc29ae8ff218
+    if (rand == 6) goto flow _ai_dial_positifs_cf___dialoguepositif4_5c67dc3a76ccbc29ae8ff217
+    if (rand == 7) goto flow _ai_dial_positifs_cf___dialoguepositif8_5c67dc3a76ccbc29ae8ff21b
+    if (rand == 8) goto flow _ai_dial_positifs_cf___dialoguechecksommeil3_5c67dc3a76ccbc29ae8ff216
+    if (rand == 9) goto flow _ai_dial_positifs_cf___dialoguechecksortie_5c67dc3a76ccbc29ae8ff21e
+    if (rand == 10) goto flow _ai_dial_positifs_cf___dialoguepositif9_5c67dc3a76ccbc29ae8ff21c
+    if (rand == 11) goto flow _ai_dial_positifs_cf___choixrenfo_5c67dc3a76ccbc29ae8ff212
+  }

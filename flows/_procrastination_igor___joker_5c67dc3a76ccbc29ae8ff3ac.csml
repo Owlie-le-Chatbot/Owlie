@@ -1,0 +1,30 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3ac
+start:
+  say Typing(2000)
+  say Question(
+    "Utilises-tu une ou plusieurs activités comme prétexte pour différer {{_procra}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_procrastination_igor___prelim_5c67dc3a76ccbc29ae8ff3ad"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  goto form_4_0
+
+
+// form component
+form_4_0:
+  say "Écris le nom de l'une de ces activités \"joker\" 📝"
+  hold
+  
+  remember _joker = event
+  
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___prelim_5c67dc3a76ccbc29ae8ff3ad

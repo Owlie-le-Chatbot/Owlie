@@ -1,0 +1,228 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff411
+start:
+  say Typing(2300)
+  say Question(
+    "L'alimentation joue une part très importante dans notre état physique et mental, de même que l'hydration.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continue..."),
+      Button("Je savais ça !"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("Activités", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2700)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b4f2d132-678d-4ccb-8697-934c663b041f.jpeg")
+  say Typing(2500)
+  say Question(
+    "Le ventre est en quelque sorte notre \"deuxième cerveau\" : les neurones de l'intestin communique avec ceux de notre cerveau !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah ?"),
+      Button("Je sais :-)"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(2600)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ac348f32-9655-4603-abed-e1414463d068.jpeg")
+  say Typing(4100)
+  say Question(
+    "Ainsi, la qualité de ton alimentation, sa densité nutritionnelle, la présence de nutriments essentiels... tout cela peut grandement aider à réhausser et maintenir ton humeur. 
+
+Bien boire de l'eau (1,5 litres, soit 6-8 verres environ par jour) contribue aussi à être au mieux de ta forme.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Comment ?"),
+      Button("C'est vrai !"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2900)
+  goto form_14_0
+
+
+// form component
+form_14_0:
+  say "As-tu des idées de nutriments essentiels pour maintenir une bonne humeur et un corps en pleine santé ?"
+  hold
+  
+  remember _alimentation = event
+  
+  say Typing(3300)
+  say Question(
+    "Veux-tu en apprendre plus ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, va-y...."),
+      Button("Plutôt autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("Choisir une activité", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Reprendre plus tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(3700)
+  say "Globalement, il est judicieux de veiller à avoir une alimentation adaptée à se dépense d'énergie, suffisante mais pas non plus trop riche : une alimentation diversifiée et équilibrée, pleines de couleurs et riches en végétaux (fruits, légumes le + proche de leur état naturel) pour maintenir un poids santé stable..."
+  say Typing(1700)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/70e4993b-a419-4e93-b9d1-d36d86ee9e6a.jpeg",
+    quick_replies=[
+      Button("C'est sûr..."),
+      Button("Continue"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3600)
+  say "Le but est de bien s’alimenter (3 repas par jour) pour éviter la fatigue liée à la dénutrition. On sait que la fatigue génère des émotions négatives.
+
+Cela fait du bien au moral de joliment préparer son assiette, sa table, même lorsqu'on est seul.e..."
+  say Typing(2900)
+  say Question(
+    "Veux-tu savoir comment avoir une alimentation qui contribue à une bonne humeur ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Pourquoi pas"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("Choisir une activité", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(4000)
+  say Question(
+    "Savais-tu aussi que les oméga 3 (un type d'acide gras essentiel que ne pas fabriquer ton corps) ont un impact bénéfique sur l’humeur, le cœur et le cerveau ?
+On les trouve dans les huiles de colza, noix, poissons gras...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue"),
+      Button("Oui je sais !"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(3300)
+  say Question(
+    "Prendre un peu chaque jour la lumière (pour la vitamine D et/ou se supplémenter l'hiver) et manger beaucoup de légumes...
+Tout ça contribue aussi à rendre heureuxse, ça été prouvé.
+
+Quelle part réserves-tu au végétal (légumes, fruits, légumineuses, noix) dans ton alimentation déjà ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Très peu de place"),
+      Button("Un peu de place"),
+      Button("Une place moyenne"),
+      Button("Une bonne place"),
+      Button("Une grande place"),
+    ],
+  )
+  hold
+  
+  remember _part_de_vegetal = event
+  goto step_33
+
+
+step_33:
+  say Typing(2800)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6cdfbedb-e4f0-459d-a37d-ea6895ada5df.jpeg")
+  say Typing(3300)
+  say Question(
+    "Pour être au top, tu peux toujours augmenter un peu la part de crudités ou ajouter une soupe en entrée, un accompagnement (ou plat principal) de céréales/légumineuses avec des légumes, un fruit en dessert ou collation, quelques noix...
+Et en parallèle tu peux aussi agir en limitant certaines choses...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Lesquelles ?"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(3200)
+  say Question(
+    "Pour être au top, on peut aussi agir en limitant la consommation de certains aliments...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci !"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(3500)
+  say "Déjà, conserver les sucres rapides que pour le plaisir à petite dose (tout ce qui est sucré mais aussi les féculents non complets).
+Ensuite, limiter les excitants (thé/café, coca) qui génèrent des \"coups de barre\" et augmentent l'anxiété..."
+  say Typing(3500)
+  say Question(
+    "Et bien sûr, limiter la consommation d’alcool car il est reconnu que même la consommation modérée d’alcool contribue à la persistance des états dépressifs.
+Idem avec les drogues...
+
+Voilà, maintenant tu sais tout sur l'alimentation pour la forme et la bonne humeur :-)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je le fais déjà"),
+      Button("J'y veillerai"),
+      Button("Je n'y parviens pas", payload="/_education_therapeutiqcf___ressources_medicales_5c67dc3a76ccbc29ae8ff41f"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  remember _comportement_substances = event
+  goto step_46
+
+
+step_46:
+  say Typing(3100)
+  say Question(
+    "Souhaites-tu continuer à te documenter sur différents sujets ou préfères-tu faire autre chose ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Me documenter", payload="/_education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Me changer les idées", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("En rester là :-)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

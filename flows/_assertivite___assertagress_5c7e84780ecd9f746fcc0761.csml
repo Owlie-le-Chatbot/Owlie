@@ -1,0 +1,132 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0761
+start:
+  say Typing(4000)
+  say "Voici les principales caractéristiques du comportement agressif 👊."
+  say Typing(4000)
+  say Question(
+    "Il consiste à IMPOSER ce que l'on ressent, ce que l'on pense, ou ce que l'on désire.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oula"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "Il conduit généralement à dominer les autres.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(5000)
+  say Question(
+    "Avoir régulièrement un comportement agressif revient à ne pas respecter ses interlocuteurices.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oh ?"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(5000)
+  say Question(
+    "À trop sombrer dans l'agressivité, on finit par cultiver un sentiment d'injustice, par se sentir incompris.e et frustré.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oups"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(6000)
+  say Question(
+    "L'agressivité chronique peut également finir par mettre les interlocuteurices en colère, par les inciter à contre-attaquer, à fuir ou à te rejeter.",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(5000)
+  say Question(
+    "Enfin, à être trop souvent agressif.ve, on finit immanquablement par se sentir bien seul.e avec son agressivité.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Entendu"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "Car un hérisson 🦔, ça pique énormément!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌J'ai compris"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Question(
+    "Quel autre type de comportement voudrais tu explorer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapituler"),
+      Button("🙏Passif", payload="/_assertivite___assertpass_5c7e84780ecd9f746fcc0760"),
+      Button("✊Affirmé", payload="/_assertivite___assertaffirm_5c7e84780ecd9f746fcc0762"),
+      Button("🤞Manipulateur", payload="/_assertivite___assertmanip_5c7e84780ecd9f746fcc0763"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6138956f-ae02-467d-9b73-e1926634cf86.jpeg",
+    quick_replies=[
+      Button("🙏Passif", payload="/_assertivite___assertpass_5c7e84780ecd9f746fcc0760"),
+      Button("✊Affirmé", payload="/_assertivite___assertaffirm_5c7e84780ecd9f746fcc0762"),
+      Button("🤞Manipulateur", payload="/_assertivite___assertmanip_5c7e84780ecd9f746fcc0763"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

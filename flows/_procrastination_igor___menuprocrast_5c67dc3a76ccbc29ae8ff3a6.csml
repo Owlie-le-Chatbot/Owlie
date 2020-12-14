@@ -1,0 +1,31 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3a6
+start:
+  say Typing(2000)
+  say "Voici ce que je peux te proposer pour t'aider :"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Pourquoi je procrastine ?",
+        subtitle="Ce qui pousse à procrastiner",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d155d765-33eb-4348-9371-19135efc6072.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_procrastination_igor___pourquoiprocrast_5c67dc3a76ccbc29ae8ff3a7"),
+        ],
+      ),
+      Card(
+        title="Comment faire ?",
+        subtitle="Quelques stratégies et conseils",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/93f5a4d0-9387-4ad0-a558-e82ec3dde375.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_procrastination_igor___actreport_5c67dc3a76ccbc29ae8ff3a8"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

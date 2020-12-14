@@ -1,0 +1,204 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d3
+start:
+  say Typing(2900)
+  say "Ok, nous allons essayer de comprendre la situation qui te pose problème et/ou te provoque des émotions négatives..."
+  say Typing(1900)
+  say Question(
+    "Tu visualises la situation en question ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, c'est bon !"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Parler", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2600)
+  goto form_6_0
+
+
+// form component
+form_6_0:
+  say "Ok, on va démêler un peu tout ça ensemble {{_first_name}}. Peux-tu me décrire ta situation ? 📝Écris-le moi puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _situation_probleme = event
+  
+  say Typing(2300)
+  say "Ok..."
+  say Typing(3100)
+  goto form_10_0
+
+
+// form component
+form_10_0:
+  say "Maintenant, qu'est-ce qui fait que tu es dans cette situation (qu'est-ce qui a tout déclenché et quand) ? 📝Écris-le moi en 1 phrase :"
+  hold
+  
+  remember _declencheurs = event
+  
+  say Typing(1600)
+  say "D'accord..."
+  say Typing(3200)
+  goto form_14_0
+
+
+// form component
+form_14_0:
+  say "Quand cela a commencé à devenir un problème, qu'est-ce que tu as fais face à cela ? 📝Écris-le moi puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _reaction_au_probleme = event
+  
+  say Typing(2400)
+  say Question(
+    "Ok... on continue notre petite analyse ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Je n'y arrive pas", payload="/_psychologie_clara___aide_5c67dc3a76ccbc29ae8ff3db"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(2900)
+  goto form_19_0
+
+
+// form component
+form_19_0:
+  say "Ok, du coup, comment aimerais-tu que la situation évolue ? 📝Écris-le moi puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _questce_que_je_veux_faire = event
+  
+  say Typing(2900)
+  say Question(
+    "Bon... réfléchissons maintenant à des alternatives possibles...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, allons-y"),
+      Button("Faire autre chose", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3200)
+  goto form_24_0
+
+
+// form component
+form_24_0:
+  say "Écris tout ce qui te vient à l’esprit en termes de solutions possibles (= qu'est-ce que tu pourrais faire pour faire évoluer les choses) 📝Écris tout ce qui te vient à l'esprit puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _questce_que_je_peux_faire = event
+  
+  say Typing(3500)
+  say Question(
+    "Tu as trouvé au moins une solution que tu peux mettre en place ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je crois "),
+      Button("Non", payload="/_psychologie_clara___aide_5c67dc3a76ccbc29ae8ff3db"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(2400)
+  goto form_29_0
+
+
+// form component
+form_29_0:
+  say "Quelle serait la première action à effectuer pour cela ? 📝Écris-le moi en 1 phrase "
+  hold
+  
+  remember _premiere_action_a_effectuer = event
+  
+  say Typing(3200)
+  say Question(
+    "Bon... est-ce que tu as trouvé une première petite action à réaliser qui te semble faisable ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je crois bien oui..."),
+      Button("Non, pas vraiment", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Me changer les idées", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  
+  goto step_32
+
+
+step_32:
+  say Typing(2900)
+  say Question(
+    "Si tu le souhaites, tu peux réfléchir aux actions/petites tâches suivantes à réaliser pour atteindre ton but.
+
+Cela aide à le concrétiser :-)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_35
+
+
+step_35:
+  say Typing(3100)
+  goto form_37_0
+
+
+// form component
+form_37_0:
+  say "Maintenant que nous avons trouvé une solution potentielle au problème. Que penses-tu du problème initial, était-il si insurmontable ? 📝"
+  hold
+  
+  remember _reconsideration = event
+  
+  say Typing(2400)
+  say "Bravo à toi d'être allé.e jusqu'au bout !"
+  say Typing(1200)
+  say Question(
+    "Dès que tu fais une première action dans le sens d'une solution, félicite-toi et évalue ton ressenti. 
+
+Peut-être te sentiras-tu + en confiance, fier.e de toi !
+
+Et maintenant, que veux-tu faire ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok ! ", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+      Button("🚨Ça va toujours pas", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Propose quelquechose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("En rester là :-)", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

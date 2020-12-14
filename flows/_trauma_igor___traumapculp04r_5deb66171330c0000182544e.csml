@@ -1,0 +1,85 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182544e
+start:
+  say Typing(3000)
+  say Question(
+    "Ce type de raisonnement est qualifié d'émotif !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pourquoi ?"),
+      Button("👍"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say Question(
+    "Parce qu'il aboutit à la conclusion que ressentir une émotion prouve que la pensée qui l'accompagne est vraie.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Et c'est pas vrai ?"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Une pensée peut provoquer des émotions (qu'elle corresponde ou non à la vérité)",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr ?"),
+      Button("👍"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(8000)
+  say Question(
+    "Oui, de plus lorsque des mauvais réflexes de pensée contribuent à nous faire croire quelque chose de faux, nos émotions nous détournent souvent des éléments plus rationnels qui pourraient nous aider.",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante ➡️", payload="/_trauma_igor___traumapculp05_5deb66171330c0000182544f"),
+      Button("Je comprends pas..."),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap !", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(3000)
+  say "Une émotion ou un sentiment ne sont pas des preuves."
+  say Typing(6000)
+  say "De même que te sentir supérieur.e ne prouve pas que tu le sois réellement, te sentir coupable ne prouve pas que tu le sois réellement non plus."
+  say Typing(1500)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp05_5deb66171330c0000182544f"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

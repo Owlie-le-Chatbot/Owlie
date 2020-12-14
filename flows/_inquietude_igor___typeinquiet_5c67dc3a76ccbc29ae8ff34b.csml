@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff34b
+start:
+  say Typing(2000)
+  say "Les inquiétudes excessives sont souvent associées à une difficulté à tolérer l'incertitude."
+  say Typing(2000)
+  say Question(
+    "Ton inquiétude concerne-t-elle :
+1. ce qui peut découler d'un problème déjà survenu ? (ex. manque d’argent, perte d’emploi, conflit au travail ou dans l’entourage)
+
+2. ce qui pourrait découler d'un problème qui n'est pas (encore) survenu ? (ex. possibilité d’attraper une maladie grave, qu’un proche soit impliqué dans un accident)",
+    button_type="quick_reply",
+    buttons=[
+      Button("1", payload="/_inquietude_igor___questinqu1_5c67dc3a76ccbc29ae8ff34c"),
+      Button("2", payload="/_inquietude_igor___questinqu1_5c67dc3a76ccbc29ae8ff34c"),
+    ],
+  )
+  hold
+  

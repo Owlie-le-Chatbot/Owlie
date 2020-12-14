@@ -1,0 +1,76 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff417
+start:
+  say Typing(3100)
+  say Question(
+    "Voici des ressources où tu pourras trouver des informations sur les médicaments et la maladie",
+    buttons=[
+      Url("https://www.vidal.fr/", text="Infos médicaments"),
+      Url("http://www.psycom.org/Medicaments-psychotropes", text="Infos psychotropes"),
+      Button("Autres infos", payload="/_education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c"),
+    ],
+    quick_replies=[
+      Button("Infos + précises"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3200)
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Infos sur les antidépresseurs",
+        subtitle="Indiqués en cas de dépression ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/24879bb5-517b-4fa1-9e58-e97308a51088.jpeg",
+        default_action=Url("http://www.psycom.org/Medicaments-psychotropes"),
+        buttons=[
+          Url("http://www.psycom.org/Medicaments-psychotropes/Medicaments-psychotropes/Antidepresseurs", text="Les antidépresseurs"),
+        ],
+      ),
+      Card(
+        title="Infos sur les anxiolytiques",
+        subtitle="Indiqués en cas de troubles anxieux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b00f6ffb-9a90-499a-bbc2-f96886155c83.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Medicaments-psychotropes/Medicaments-psychotropes/Anxiolytiques", text="Les anxiolytiques"),
+        ],
+      ),
+      Card(
+        title="Infos sur les hypnotiques",
+        subtitle="Indiqués en cas de troubles du sommeil",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/722652af-c783-43ef-b723-8e81831bf0de.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Medicaments-psychotropes/Medicaments-psychotropes/Hypnotiques", text="Les hypnotiques"),
+        ],
+      ),
+      Card(
+        title="Infos sur les régulateurs de l'humeur ",
+        subtitle="Indiqués en cas de troubles de l'humeur comme la bipolarité, la dépression...",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a97c4be8-f245-457d-a679-89725c756cd6.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Medicaments-psychotropes/Medicaments-psychotropes/Regulateurs-de-l-humeur", text="Régulateurs d'humeur"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    buttons=[
+      Button("Infos maladie", payload="/_education_therapeutiqcf___maladiesante_5c67dc3a76ccbc29ae8ff418"),
+    ],
+    quick_replies=[
+    ],
+  )
+  hold
+  
+  say Typing(2500)
+  say Question(
+    "Ce que tu cherches ne se trouve pas ici ?",
+    buttons=[
+      Button("Autres activités", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Autres ressources", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  

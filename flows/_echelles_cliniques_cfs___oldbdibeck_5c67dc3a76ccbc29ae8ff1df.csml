@@ -1,0 +1,514 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1df
+start:
+  say Typing(2600)
+  say "Pour mieux te connaître, je te propose de faire un petit état des lieux de ton humeur à l'aide d'un court questionnaire (5 minutes)."
+  say Typing(2100)
+  say Question(
+    "Je vais te poser 21 questions, réponds moi spontanément choisissant la réponse la plus proche de ton ressenti ces dernières semaines.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3200)
+  say Question(
+    "Question A :
+
+0- Je ne me sens pas triste.
+1- Je me sens triste.
+2- Je me sens perpétuellement triste et je n'arrive pas à m'en sortir.
+3- Je suis si triste ou si découragé.e que je ne peux plus le supporter.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_a = event
+  goto step_7
+
+
+step_7:
+  say Typing(3300)
+  say Question(
+    "Question B :
+
+0- Je ne me sens pas particulièrement découragé.e en pensant à l'avenir.
+1- Je me sens découragé.e en pensant à l'avenir.
+2- Il me semble que je n'ai rien à attendre de l'avenir.
+3- L'avenir est sans espoir et rien ne s'arrangera.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_b = event
+  goto step_10
+
+
+step_10:
+  say Typing(3600)
+  say Question(
+    "Question C :
+
+0- Je n'ai pas l'impression d'être un.e raté.e.
+1- Je crois avoir connu plus d'échecs que le reste des gens.
+2- Lorsque je pense à ma vie passée, je ne vois que des échecs.
+3- Je suis un.e raté.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_c = event
+  goto step_13
+
+
+step_13:
+  say Typing(2900)
+  say Question(
+    "Question D :
+
+0- Je tire autant de satisfaction de ma vie qu'autrefois.
+1- Je ne jouis pas de la vie comme autrefois.
+2- Je ne tire plus vraiment de satisfaction de la vie.
+3- Tout m'ennuie, rien ne me satisfait.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_d = event
+  goto step_16
+
+
+step_16:
+  say Typing(3300)
+  say Question(
+    "Question E :
+
+0- Je ne me sens pas particulièrement coupable.
+1- Je me sens coupable une grande partie du temps.
+2- Je me sens vraiment coupable la plupart du temps.
+3- Je me sens constamment coupable.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_e = event
+  goto step_19
+
+
+step_19:
+  say Typing(3200)
+  say Question(
+    "Question F :
+
+0- Je n'ai pas l'impression d'être puni.e.
+1- J'ai l'impression d'être parfois puni.e.
+2- Je m'attends à être puni.e.
+3- Je sens parfaitement que je suis puni.E.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_f = event
+  goto step_22
+
+
+step_22:
+  say Typing(3200)
+  say Question(
+    "Question G :
+
+0- Je ne me sens pas déçu.e de moi-même.
+1- Je suis déçu.e de moi-même.
+2- Je suis dégoûté.e de moi-même.
+3- Je me hais.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_g = event
+  goto step_25
+
+
+step_25:
+  say Typing(3300)
+  say Question(
+    "Question H :
+
+0- Je ne crois pas être pire que les autres.
+1- Je critique mes propres faiblesses et défauts.
+2- Je me blâme constamment de mes défauts.
+3- Je suis à blâmer pour tout ce qui arrive de déplaisant.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_h = event
+  goto step_28
+
+
+step_28:
+  say Typing(3200)
+  say Question(
+    "Question I :
+
+0- Je ne pense jamais à me tuer.
+1- Je pense parfois à me tuer mais je ne le ferai probablement jamais.
+2- J'aimerais me tuer.
+3- Je me tuerais si j'en avais la possibilité.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_i = event
+  goto step_31
+
+
+step_31:
+  say Typing(3500)
+  say Question(
+    "Question J :
+
+0- Je ne pleure pas plus que d'habitude.
+1- Je pleure plus qu'autrefois.
+2- Je pleure constamment.
+3- Autrefois, je pouvais pleurer, mais je n'en suis même plus capable aujourd'hui.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_j = event
+  goto step_34
+
+
+step_34:
+  say Typing(3200)
+  say Question(
+    "Question K :
+
+0- Je ne suis pas plus irritable qu'autrefois.
+1- Je suis légèrement plus irritable que d'habitude.
+2- Je me sens agacé.e et irrité.e une bonne partie du temps.
+3- Je suis constamment irrité.e ces temps-ci.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_k = event
+  goto step_37
+
+
+step_37:
+  say Typing(3500)
+  say Question(
+    "Question L :
+
+0- Je n'ai pas perdu mon intérêt pour les autres.
+1- Je m'intéresse moins aux gens qu'autrefois.
+2- J'ai perdu la plus grande partie de mon intérêt pour les autres.
+3- Les gens ne m'intéressent plus du tout.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_l = event
+  goto step_40
+
+
+step_40:
+  say Typing(3400)
+  say Question(
+    "Question M :
+
+0- Je prends mes décisions exactement comme autrefois.
+1- Je remets les décisions au lendemain beaucoup plus fréquemment qu'autrefois.
+2- J'éprouve de grandes difficultés à prendre des décisions de nos jours.
+3- Je suis incapable de prendre des décisions.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_m = event
+  goto step_43
+
+
+step_43:
+  say Typing(3800)
+  say Question(
+    "Question N :
+
+0- Je ne crois pas que mon apparence a empiré.
+1- Je crains d'avoir l'air plus âgé.e ou moins attrayant.e.
+2- Je crois que mon apparence a subi des changements irréversibles qui me rendent peu attrayant.e.
+3- Je crois que je suis laid.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_n = event
+  goto step_46
+
+
+step_46:
+  say Typing(3500)
+  say Question(
+    "Question O :
+
+0- Je travaille aussi bien qu'autrefois.
+1- J'ai besoin de fournir un effort supplémentaire pour commencer un travail. 
+2- Je dois me forcer vraiment très énergiquement pour faire quoi que ce soit.
+3- Je suis absolument incapable de travailler.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_o = event
+  goto step_49
+
+
+step_49:
+  say Typing(3200)
+  say Question(
+    "Question P :
+
+0- Je dors aussi bien que d'habitude.
+1- Je ne dors pas aussi bien que d'habitude.
+2- Je me réveille une à deux heures plus tôt que d'habitude et j'ai du mal à me rendormir.
+3- Je me réveille plusieurs heures plus tôt que d'habitude et ne parviens pas à me rendormir.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_p = event
+  goto step_52
+
+
+step_52:
+  say Typing(3000)
+  say Question(
+    "Question Q :
+
+0- Je ne me sens pas plus fatigué.e que d'habitude.
+1- Je me fatigue plus vite qu'autrefois.
+2- Un rien me fatigue.
+3- Je suis trop fatigué.e pour faire quoi que ce soit.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_q = event
+  goto step_55
+
+
+step_55:
+  say Typing(4000)
+  say Question(
+    "Question R :
+
+0- Mon appétit n'a pas changé.
+1- Mon appétit n'est pas aussi bon que d'habitude.
+2- Mon appétit a beaucoup diminué.
+3- Je n'ai plus d'appétit du tout.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_r = event
+  goto step_58
+
+
+step_58:
+  say Typing(3400)
+  say Question(
+    "Question S :
+
+0- Je ne crois pas avoir maigri ces derniers temps.
+1- J'ai maigri de plus de cinq livres (2.2 kg).
+2- J'ai maigri de plus de dix livres (4.5 kg).
+3- J'ai maigri de plus de quinze livres (6.8 kg).",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_s = event
+  goto step_61
+
+
+step_61:
+  say Typing(3900)
+  say Question(
+    "Question T :
+
+0- Ma santé ne m'inquiète pas plus que d'habitude.
+1- Certains problèmes physiques me tracassent comme des douleurs, des maux d'estomac ou de la
+constipation.
+2- Je suis très inquiet.e à propos de problèmes physiques et il m'est difficile de penser à autre chose.
+3- Mes problèmes physiques me tracassent tant que je n'arrive pas à penser à rien d'autre.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_t = event
+  goto step_64
+
+
+step_64:
+  say Typing(3300)
+  say Question(
+    "Question U :
+
+0- Je n'ai pas remarqué de changements à propos de ma libido.
+1- Je m'intéresse moins aux rapports sexuels qu'autrefois.
+2- Je m'intéresse beaucoup moins aux rapports sexuels.
+3- J'ai perdu tout intérêt pour les rapports sexuels.",
+    button_type="quick_reply",
+    buttons=[
+      Button("0"),
+      Button("1"),
+      Button("2"),
+      Button("3"),
+    ],
+  )
+  hold
+  
+  remember _bdi_u = event
+  goto step_67
+
+
+step_67:
+  say Typing(2000)
+  say Question(
+    "Très bien, merci beaucoup {{_name}}, c'est terminé !",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord !", payload="/_accueil_check_clara___check3_5c67dc3a76ccbc29ae8ff1f0"),
+      Button("Discuter", targets=["_ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228", "_ai_dial_negatifscf___dialogueneg2_5c67dc3a76ccbc29ae8ff229"]) as btn__1,
+      Button("Mes valeurs", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,110 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff271
+start:
+  say "Voici ce que nous pouvons faire ensemble sur ce sujet :
+
+(fais défiler les images ↔️)"
+  say Typing(2900)
+  say Carousel(
+    cards=[
+      Card(
+        title="Développer ma bienveillance",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e3d5d987-576c-4c09-89fa-bad5cd9663ae.jpeg",
+        buttons=[
+          Button("Bienveillance", payload="/_psychologie_clara___exercice_de_gratitude_5c67dc3a76ccbc29ae8ff3d7"),
+        ],
+      ),
+      Card(
+        title="Mieux communiquer avec une personne",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0bfdb0f1-f65a-4332-a6c6-af6fea19f77b.jpeg",
+        buttons=[
+          Button("Mieux communiquer", payload="/_psychologie_clara___communication_non_violente_5c67dc3a76ccbc29ae8ff3d6"),
+        ],
+      ),
+      Card(
+        title="Mieux gérer mes relations",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4eacf385-cb76-45b7-acae-358760edc846.jpeg",
+        buttons=[
+          Button("Mes relations", payload="/_education_therapeutiqcf___relations_interpersonnelles_5c67dc3a76ccbc29ae8ff426"),
+        ],
+      ),
+      Card(
+        title="Résoudre une situation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0b01767c-529a-4e30-81ef-327c4c6b2410.jpeg",
+        buttons=[
+          Button("Résoudre", payload="/_psychologie_clara___analyse_2_resolution_de_probleme_5c67dc3a76ccbc29ae8ff3d3"),
+        ],
+      ),
+      Card(
+        title="Analyser ma part de responsabilité réelle",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/172d4bde-8870-4f8c-9f07-77ed775db0dd.jpeg",
+        buttons=[
+          Button("Responsabilité", payload="/_psychologie_clara___evaluer_ma_responsabilite_5c67dc3a76ccbc29ae8ff3d4"),
+        ],
+      ),
+      Card(
+        title="Comment d'autres auraient réagi dans la même situation ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/957f4da9-89e3-4075-90cc-a79eee58ebe3.jpeg",
+        buttons=[
+          Button("Changer de regard", payload="/_psychologie_clara___pensees_et_avis_ami_5c67dc3a76ccbc29ae8ff3ce"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3600)
+  say Carousel(
+    cards=[
+      Card(
+        title="Identifier les ressources sur lesquelles m'appuyer",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1a87c7e7-1397-499c-874e-f16639b34abc.jpeg",
+        buttons=[
+          Button("Ce qui va bien", payload="/_psychologie_clara___ce_qui_va_bien_5c67dc3a76ccbc29ae8ff3d0"),
+        ],
+      ),
+      Card(
+        title="Comprendre le fonctionnement d'une habitude pour en changer",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/db5f1c68-cfd6-4533-a766-3ff00a96999e.jpeg",
+        buttons=[
+          Button("Les habitudes", payload="/_education_therapeutiqcf___fonctionnement_habitudes_5c67dc3a76ccbc29ae8ff41c"),
+        ],
+      ),
+      Card(
+        title="Apprendre à détecter les déclencheurs de comportements pénibles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/44468672-9dae-4814-ae73-ec46f25bf02d.jpeg",
+        buttons=[
+          Button("Les déclencheurs", payload="/_education_therapeutiqcf___declencheurs_de_comportements_5c67dc3a76ccbc29ae8ff425"),
+        ],
+      ),
+      Card(
+        title="Trouver un comportement alternatif",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1503a23e-053b-4e9f-ba85-a4a80725f3a4.jpeg",
+        buttons=[
+          Button("Une alternative", payload="/_psychologie_clara___trouver_un_cpmt_alternati_5c67dc3a76ccbc29ae8ff3d5"),
+        ],
+      ),
+      Card(
+        title="Pourquoi je fuis / évite certaines situations ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b35d9288-21d0-4c79-a25f-d66c2ab640d8.jpeg",
+        buttons=[
+          Button("Fuite et évitement", payload="/_education_therapeutiqcf___evitement_and_cpmt_automatique_5c67dc3a76ccbc29ae8ff424"),
+        ],
+      ),
+      Card(
+        title="Trouver du soutien social via des réseaux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/07bd3c06-a699-4959-8ddd-78982f950892.jpeg",
+        buttons=[
+          Button("Soutien social", payload="/_education_therapeutiqcf___ressources_soutien_social_5c67dc3a76ccbc29ae8ff420"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("😢Parler ", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+      Button("Menu principal", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+    ],
+  )
+  hold
+  

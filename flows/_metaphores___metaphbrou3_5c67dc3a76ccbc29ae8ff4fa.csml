@@ -1,0 +1,20 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4fa
+start:
+  say Typing(4000)
+  say "Tu décides d'avancer malgré le brouillard."
+  say Typing(3000)
+  say "Tu roules prudemment au ralenti."
+  say Typing(5000)
+  say "Le trajet sera plus long, tu seras certainement en retard mais tu restes concentré.e sur la route."
+  say Typing(5000)
+  say "Une heure et demi plus tard, tu es enfin arrivé.e."
+  say Typing(6000)
+  say Question(
+    "Le trajet a été difficile, tu as du rouler très lentement, très prudemment, mais ta journée de travail n'est pas gâchée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphbrou4_5c67dc3a76ccbc29ae8ff4fb"),
+    ],
+  )
+  hold
+  

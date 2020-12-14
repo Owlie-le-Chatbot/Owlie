@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e7
+start:
+  say Typing(5000)
+  say "Lutter contre des mauvaises pensées et des émotions négatives peut s'apparenter à un exercice de tir à la corde."
+  say Typing(4000)
+  say "En continuant à tirer, tu t'enlises dans une lutte sans fin contre toi-même."
+  say Typing(5000)
+  say "Tu monopolises toute ton attention, ton énergie et ton temps dans un combat que tu ne pourras pas gagner."
+  say Typing(4000)
+  say "Refuser le combat n'est pas une défaite, notamment si l'adversaire, c'est toi."
+  say Typing(4000)
+  say Question(
+    "En arrêtant de lutter, tu pourras consacrer davantage d'attention, de temps et d'énergie à d'autres comportements, plus en accord avec ce qui compte réellement pour toi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

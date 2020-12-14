@@ -1,0 +1,64 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc074e
+start:
+  say Typing(5000)
+  say Question(
+    "L'affirmation de soi est une méthode de communication qui permet de se sentir mieux avec les autres.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je veux en savoir +"),
+      Button("Je commence direct !", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say "Cette méthode consiste à exprimer ce que l'on pense, ce que l'on ressent, ce que l'on désire..."
+  say Typing(4000)
+  say Question(
+    "Ceci tout en respectant ce que pense, ce que ressent et ce que désire l'interlocuteur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("💪Gros programme!"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say "Il s'agit de techniques de communication qui ne sont pas naturelles ou innées."
+  say Typing(5000)
+  say "Pour se sentir à l'aise en les utilisant, il est indispensable de les apprendre, et donc de s'entrainer!"
+  say Typing(6000)
+  say Question(
+    "Il est toujours possible de le faire en imagination mais n'oublie pas que notre Monde est le meilleur des terrains d'entrainement!",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Ça vaut le coup?"),
+      Button("C'est parti !", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(2100)
+  say "Oui bien-sûr!"
+  say Typing(5000)
+  say Question(
+    "S'affirmer permet non seulement d'améliorer ses relations avec les autres, mais des bénéfices sont également observés dans l'anxiété, dans la dépression ainsi que dans le manque d'estime ou de confiance en soi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤗Waouh! Go!", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

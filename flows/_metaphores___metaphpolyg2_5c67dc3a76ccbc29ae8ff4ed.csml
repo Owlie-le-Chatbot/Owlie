@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ed
+start:
+  say Typing(4000)
+  say "Tu te concentres sur ta respiration..."
+  say Typing(5000)
+  say "Puis tu cherches à fixer ton attention sur une image apaisante..."
+  say Typing(4000)
+  say "Sur un souvenir agréable..."
+  say Typing(4000)
+  say "Tes muscles se relâchent progressivement..."
+  say Typing(4000)
+  say "Mais ça ne fonctionne pas longtemps."
+  say Typing(6000)
+  say "Ton anxiété remonte systématiquement, et les dizaines d'euros s'ajoutent à ton amende."
+  say Typing(5000)
+  say Question(
+    "Veux-tu poursuivre tes efforts de relaxation ou faire autre chose?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🧘‍♂️Relaxation🧘‍♀️", payload="/_metaphores___metaphpolyg2_5c67dc3a76ccbc29ae8ff4ed"),
+      Button("✋Arrêter les efforts", payload="/_metaphores___metaphpolyg3_5c67dc3a76ccbc29ae8ff4ee"),
+    ],
+  )
+  hold
+  

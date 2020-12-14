@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff355
+start:
+  say Typing(2000)
+  say Question(
+    "En s'inquiétant...
+
+1. on finit par se convaincre d'éviter les problèmes.
+
+2. on finit par se motiver à agir pour résoudre les problèmes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("1", payload="/_inquietude_igor___qinqu41_5c67dc3a76ccbc29ae8ff356"),
+      Button("2", payload="/_inquietude_igor___qinqu42_5c67dc3a76ccbc29ae8ff357"),
+    ],
+  )
+  hold
+  

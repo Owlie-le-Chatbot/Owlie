@@ -1,0 +1,46 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff28f
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Sentir son parfum favori",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8b79b102-450f-4688-b6e0-4d5825cb618b.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Sentir des fleurs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a896bea4-acaa-4b96-ada7-d492a3f67222.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Sentir les odeurs de la nature",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a422f1dc-f277-4f9a-a510-2c7564de5a8d.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Sentir quelque chose d'appétissant",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/96bf4672-36f9-459d-8e2e-757d6a73ca38.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_activites_igor___gout_5c67dc3a76ccbc29ae8ff28d"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Activité apaisante", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+      Button("🚀Autre activité", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

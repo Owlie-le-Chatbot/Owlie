@@ -1,0 +1,246 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3cd
+start:
+  say Typing(2900)
+  say Question(
+    "Je te propose de t'aider à prendre un peu de recul en faisant le point ensemble ce qui t'arrive avec quelques petites questions. 
+
+Quand on \"met le doigt\" sur ce qui nous fait souffrir, même si on ne peut pas forcément agir dessus tout de suite, ça fait du bien.
+
+Qu'en dis-tu ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, j'en ai besoin!"),
+      Button("Juste parler"),
+      Button("Propose moi un truc", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("Me changer les idées", payload="/_psychologie_clara___quizzemotion_5c67dc3a76ccbc29ae8ff3bb"),
+    ],
+  )
+  hold
+  
+  remember _besoin_de_parler = event
+  goto step_2
+
+
+step_2:
+  // adding conditional redirect to flow
+  if (_besoin_de_parler == "Juste parler") {
+    do rand = Floor(Random() * Length(["_ai_dial_negatifscf___dialogueneg2_5c67dc3a76ccbc29ae8ff229", "_ai_dial_negatifscf___dialogueneg3_5c67dc3a76ccbc29ae8ff22a", "_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e", "_ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228"]))
+    if (rand == 0) goto flow _ai_dial_negatifscf___dialogueneg2_5c67dc3a76ccbc29ae8ff229
+    if (rand == 1) goto flow _ai_dial_negatifscf___dialogueneg3_5c67dc3a76ccbc29ae8ff22a
+    if (rand == 2) goto flow _ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e
+    if (rand == 3) goto flow _ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228
+  }
+  say Typing(2600)
+  say Question(
+    "Quelle émotion se rapproche le plus de ce que tu ressens maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Tristesse"),
+      Button("Colère"),
+      Button("Culpabilité"),
+      Button("Stress"),
+      Button("Incompréhension"),
+      Button("Contentement"),
+      Button("Détachement"),
+      Button("Fatigue"),
+      Button("Agacement"),
+      Button("Peur"),
+      Button("Anxiété"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(3000)
+  say Question(
+    "D'accord...
+
+Sur une échelle de 1 à 10, quelle est son intensité ?
+(1 = très faible, 10 = insoutenable)",
+    button_type="quick_reply",
+    buttons=[
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _intensite_emotionnelle = event
+  goto step_9
+
+
+step_9:
+  say Typing(1700)
+  say "Mmmh... :-/"
+  say Typing(3200)
+  goto form_13_0
+
+
+// form component
+form_13_0:
+  say "Alors, allons-y : qu'est-ce que tu as bien pu te raconter dans ta tête pour te causer une telle émotion ? (phrases en boucle, phrase négatives, auto-critique...)📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _que_se_passaitil_dans_ton_esprit_juste_avant_que_tu_ressentes_cette_emotion = event
+  
+  say Typing(2900)
+  say Question(
+    "As-tu pu mettre le doigt sur une pensée qui a déclenché l'émotion ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je crois bien.."),
+      Button("Non, pas vraiment", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3200)
+  goto form_18_0
+
+
+// form component
+form_18_0:
+  say "Ok, si cette pensée que tu as était vraie, qu’est-ce que cela signifierait à propos de toi, de ta vie et de ton avenir ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _si_cetait_vrai_questce_que_ca_signifie_a_propos_de_moi_de_ma_vie_et_de_mon_avenir = event
+  
+  say Typing(3100)
+  goto form_20_0
+
+
+// form component
+form_20_0:
+  say "Maintenant, pose-toi cette question : qu’est-ce que cela signifierait alors à propos de ce que les autres peuvent penser de moi ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _questce_que_cela_signifie_a_propos_de_ce_que_les_autres_pensent_de_moi = event
+  
+  say Typing(3300)
+  goto form_22_0
+
+
+// form component
+form_22_0:
+  say "Toujours en imaginant que cette pensée soit vraie, qu’est-ce que cela signifierait par rapport aux autres personnes ou aux gens en général ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _questce_que_cela_signifierait_par_rapport_aux_autres_personnes_ou_aux_gens_en_general = event
+  
+  say Typing(2100)
+  goto form_24_0
+
+
+// form component
+form_24_0:
+  say "Bon... maintenant... Qu’est-ce que tu crains qu’il arrive ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _questce_que_je_crains_quil_arrive = event
+  
+  say Typing(3000)
+  say Question(
+    "Ah... 
+On continue ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Parler", payload="/_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"),
+      Button("Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_27
+
+
+step_27:
+  say Typing(2700)
+  goto form_29_0
+
+
+// form component
+form_29_0:
+  say "Poussons un peu plus loin encore ta pensée... Si c’est vrai, que peut-il arriver de pire selon toi ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _si_cest_vrai_que_peutil_arriver_de_pire = event
+  
+  say Typing(3000)
+  say Question(
+    "Il me reste encore 2 petites questions et on aura fait le tour !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, va-y"),
+      Button("Propose autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Parler", payload="/_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"),
+    ],
+  )
+  hold
+  
+  goto step_32
+
+
+step_32:
+  say Typing(3200)
+  goto form_34_0
+
+
+// form component
+form_34_0:
+  say "Quels souvenirs ou images as-tu eu en tête pendant cette situation ? (souvent on a des trucs qui nous remonte d'événements douloureux) 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _quels_souvenirs_ou_images_aije_eus_dans_cette_situation = event
+  
+  say Typing(3600)
+  goto form_36_0
+
+
+// form component
+form_36_0:
+  say "La pensée que tu as eu, si tu avais dit cette pensée à haute voix à un.e ami.e, penses-tu qu’iel aurait cru à cette pensée ? Que t'aurait-iel dit ? "
+  hold
+  
+  remember _propos_de_lamie_sur_la_pensee = event
+  
+  say Typing(3300)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8cbb671d-3557-4aa5-b5ea-cf8945cfafae.jpeg")
+  say Question(
+    "En poussant nos raisonnements le plus loin possible, cela nous permet de mettre le doigt sur nos peurs et nos croyances.
+
+Souvent, c'est ça qui nous fait avoir de telles pensées ou actes.
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai..."),
+      Button("Explique plus...", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+      Button("Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_40
+
+
+step_40:
+  // adding conditional redirect to flow
+  goto flow _feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243

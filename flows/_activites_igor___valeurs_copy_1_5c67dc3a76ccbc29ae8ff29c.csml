@@ -1,0 +1,45 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff29c
+start:
+  say Typing(2000)
+  say "Ce programme n'est pas encore prêt mais c'est pour bientôt !"
+  say Carousel(
+    cards=[
+      Card(
+        title="Sagesse",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/833606f1-dac1-4c31-babf-75fb882fb75c.jpeg",
+      ),
+      Card(
+        title="Transcendance",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/878ff083-ec71-4522-bc49-ad68bc5cb78f.jpeg",
+      ),
+      Card(
+        title="Courage",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ca34ee4a-8fdc-47bf-84e2-e2ab803810d7.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Tempérance",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bd8b6c33-516b-4031-b345-f18714d2a02a.jpeg",
+      ),
+      Card(
+        title="Humanité ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3cb26401-e415-4967-8f91-2209b0a28a0d.jpeg",
+      ),
+      Card(
+        title="Justice",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ec774653-9db2-4baa-914e-e1728a05036d.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Mes valeurs", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+      Button("🚀Autres activités", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+  )
+  hold
+  

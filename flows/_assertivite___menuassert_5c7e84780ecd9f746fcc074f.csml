@@ -1,0 +1,86 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc074f
+start:
+  say Carousel(
+    cards=[
+      Card(
+        title="Droits fondamentaux",
+        subtitle="J'ai conscience de mes droits et de ce qu'ils impliquent.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fa1adfa4-b996-40bf-b78c-f2959344a071.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+          Button("📋Fiche", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+        ],
+      ),
+      Card(
+        title="Du paillasson au hérisson",
+        subtitle="De la passivité à l'agressivité en passant par la manipulation.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c082da7e-3af5-4f92-ab02-a96360ab1c1b.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___asserttypes_5c7e84780ecd9f746fcc075f"),
+          Button("📋Fiche", payload="/_assertivite___assertfichtyp_5c7e84780ecd9f746fcc0750"),
+        ],
+      ),
+      Card(
+        title="Faire une demande",
+        subtitle="J'exprime mes besoins, mes désirs, j'insiste si nécessaire.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ebb5f5a5-178a-46e0-af3d-44ea7ebb24ba.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___assertdem0_5c7e84780ecd9f746fcc0764"),
+          Button("📋Fiche", payload="/_assertivite___assertfichdem_5c7e84780ecd9f746fcc0752"),
+        ],
+      ),
+      Card(
+        title="Refuser quelque chose",
+        subtitle="J'arrive à dire \"non\", à différer ma réponse, à persister.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8ead9996-2502-45e2-adc8-1028618a554d.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___assertref0_5c7e84780ecd9f746fcc0768"),
+          Button("📋Fiche", payload="/_assertivite___assertfichref_5c7e84780ecd9f746fcc0753"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Faire une critique",
+        subtitle="J'exprime des sentiments négatifs, une demande de changement.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/37179536-b8e3-449d-a52b-5e66d17e9134.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___assertcritf0_5c7e84780ecd9f746fcc076c"),
+          Button("📋Fiche", payload="/_assertivite___assertfichcrf_5c7e84780ecd9f746fcc0754"),
+        ],
+      ),
+      Card(
+        title="Recevoir une critique",
+        subtitle="J'accuse réception, j'accepte, je refuse. J'enquête, je gère l'agressivité.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7cb38963-4cf2-4b9e-9f76-eb6ea228edc4.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___assertcritr0_5c7e84780ecd9f746fcc0770"),
+          Button("📋Fiche", payload="/_assertivite___assertfichcrr_5c7e84780ecd9f746fcc0755"),
+        ],
+      ),
+      Card(
+        title="Faire un compliment",
+        subtitle="J'exprime des sentiments positifs, j'insiste si nécessaire.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/de9c08ce-b1ed-4ee5-a928-df4605a0d388.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___assertcompf0_5c7e84780ecd9f746fcc0783"),
+          Button("📋Fiche", payload="/_assertivite___assertfichcof_5c7e84780ecd9f746fcc0756"),
+        ],
+      ),
+      Card(
+        title="Recevoir un compliment",
+        subtitle="J'accuse réception, j'accepte, je refuse ou je demande des précisions.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d43c273e-a9af-47cc-8d06-a6d43a0d498f.jpeg",
+        buttons=[
+          Button("▶️ C'est parti!", payload="/_assertivite___assertcompr0_5c7e84780ecd9f746fcc0787"),
+          Button("📋Fiche", payload="/_assertivite___assertfichcor_5c7e84780ecd9f746fcc0757"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  

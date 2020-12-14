@@ -1,0 +1,84 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff41e
+start:
+  say Typing(2200)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e7da0365-0e54-410a-8679-91961e02f45a.jpeg")
+  say Typing(2200)
+  say "Voici différentes ressources que je t'invite à explorer pour penser positif, apprendre de nouvelles choses, te documenter et t'apporter de nouvelles idées..."
+  say Typing(3200)
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Jeux",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/adc4cbf2-819c-4e6b-954e-9d63851b6f25.jpeg",
+        buttons=[
+          Button("Jeux", payload="/_menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274"),
+        ],
+      ),
+      Card(
+        title="Conférences TED",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/620e8424-9693-4745-a788-0172f6bd925c.jpeg",
+        buttons=[
+          Url("https://www.ted.com/talks/martin_seligman_on_the_state_of_psychology#t-845551", text="Conférences TED"),
+        ],
+      ),
+      Card(
+        title="Vidéos psychiatrie et humour",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e55f8eea-04e1-4d28-8efb-57946644e4b6.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/channel/UC72lswiocu5Asjt6j9RWh7A", text="PsyLab"),
+        ],
+      ),
+      Card(
+        title="Blog de Christophe André",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1dba31fa-bcca-41f8-afb5-dcc1dd224a46.jpeg",
+        buttons=[
+          Url("http://psychoactif.blogspot.fr/", text="Blog"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Réflexions sur la méditation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/31c366e0-4c88-4aa1-99d6-6c43116012fd.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/channel/UCWtk5On87GoxzgbUbftQSxQ", text="Sur la méditation"),
+        ],
+      ),
+      Card(
+        title="Bibliothérapie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/98ebff72-dc5c-4939-b98a-75c3a2e1ce29.jpeg",
+        buttons=[
+          Url("http://www.psychologies.com/Culture/Savoirs/Litterature/Articles-et-dossiers/Bibliotherapie-ces-livres-qui-nous-aident-a-mieux-vivre", text="Bibliothérapie"),
+        ],
+      ),
+      Card(
+        title="Humour",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/40464b56-913e-45e9-a243-9c525b607f88.jpeg",
+        buttons=[
+          Url("https://9gag.com/cute", text="Drôles d'animaux"),
+        ],
+      ),
+      Card(
+        title="Films à thématique psy",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2f135a7e-3184-4599-9854-34ad6c060e9c.jpeg",
+        buttons=[
+          Url("http://www.cinetrafic.fr/top-film-psychologique", text="Films"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    buttons=[
+      Button("+ de propositions", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+    quick_replies=[
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  

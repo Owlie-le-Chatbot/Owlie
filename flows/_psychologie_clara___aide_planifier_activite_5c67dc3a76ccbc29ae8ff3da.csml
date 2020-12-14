@@ -1,0 +1,190 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3da
+start:
+  say Typing(2900)
+  say "Je suis sûre que tu peux y arriver {{_name}} !"
+  say Typing(3400)
+  say Question(
+    "Pour t’aider, la première chose à faire est : 
+- si l'activité/l'action est nouvelle : d'entrevoir les différentes étapes à la réalisation (sous-étapes, moyens, actions à faire) de l'activité
+- de bien planifier
+- le top du top pour le moral : 2 activités que tu aimes par semaine !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue..."),
+      Button("Planifier ", payload="/_reprogrammer_clara___reprogrammer1_5c67dc3a76ccbc29ae8ff24e"),
+      Button("Autres activités", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3300)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6df3d8ef-307a-4df5-a786-31e476fedcee.jpeg")
+  say Question(
+    "Tu as une activité ou action que tu veux faire en tête ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2900)
+  goto form_10_0
+
+
+// form component
+form_10_0:
+  say "Quelles seraient les premières et plus petites étapes à effectuer pour mettre en oeuvre l'activité/l'action ?"
+  hold
+  
+  remember _activite_nouvelle = event
+  
+  say Typing(2800)
+  goto form_12_0
+
+
+// form component
+form_12_0:
+  say "Ok ! De quoi as-tu besoin ? (Dois-tu solliciter des personnes, faire des démarches, acheter des choses par exemple)"
+  hold
+  
+  remember _activite_nouvelle = event
+  
+  say Typing(2700)
+  say Question(
+    "Passons maintenant à la plannification, étape essentielle à la réalisation concrète pour que ton action/activité puisse avoir lieu réellement :-) !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Propose autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("En rester là :)", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(3100)
+  say Question(
+    "Pour cela, tu peux prévoir un bref moment régulier et quotidien dans tes habitudes du soir pour planifier ton programme d’activités pour le lendemain.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, poursuis"),
+      Button("Compris, autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("En rester là :-)", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(2100)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/31ffad1b-e613-47ca-9806-03b13e817006.jpeg")
+  say Question(
+    "Quelques petits conseils : 
+parmis les activités que tu prévois dans une journée, pense à choisir, dans la mesure du possible, des activités qui impliquent des contacts sociaux et des activités physiques. 
+
+C'est toujours meilleur pour le moral de partager des moments avec d'autres et d'être entouré.e ! :-)",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr !"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(2800)
+  say Question(
+    "Veille à ce que cette planification de ta journée et de tes activités soit réaliste en fonction de ton état actuel. 
+
+Mieux vaut en mettre un peu moins dans ta planification pour être bien certain de pouvoir l’accomplir !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai !"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2600)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/532b8374-dc23-4969-a03f-fa7482c905f4.jpeg")
+  say Typing(2900)
+  say Question(
+    "Peux-tu noter la première étape de ton projet dans ton planning du lendemain ? (un horaire et une durée pour l'effectuer)
+
+Je te laisse le noter dans ton agenda ou sur un post-it :-)",
+    button_type="quick_reply",
+    buttons=[
+      Button("2 sec, je note ça !"),
+      Button("Plus tard", payload="/_reprogrammer_clara___reprogrammer1_5c67dc3a76ccbc29ae8ff24e"),
+      Button("Je vais le fait, bye", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(2600)
+  goto form_32_0
+
+
+// form component
+form_32_0:
+  say "Quelles sont ensuite les prochaines étapes + date de réalisation ? (ex : 2e étape, dans 1 semaine, je fais XXXX\")"
+  hold
+  
+  remember _etapes_secondaires = event
+  
+  say Typing(3400)
+  say "Tu vas voir, normalement ça devrait avoir un effet sur ton moral de réaliser la première étape de ce que tu souhaites faire ! 
+
+C'est le sentiment d'être capable de faire des choses, de reprendre ta vie en main."
+  say Typing(2200)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8f640a95-dd98-4e40-ae40-f083e454723d.jpeg",
+    quick_replies=[
+      Button("Ok, je comprends :-)"),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(2400)
+  say Question(
+    "Je suis là pour t'y aider au quotidien. Je suis fière de toi !
+
+Tu te diriges dans la bonne direction : à chaque étape réalisée, tu progresses vers un.e meilleur.e toi !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci, autre chose?", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("M'améliorer", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("Discuter", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Merci :-) bye !", payload="/_fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8"),
+    ],
+  )
+  hold
+  

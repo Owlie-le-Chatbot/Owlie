@@ -1,0 +1,8 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff29e
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291", "_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288", "_procrastination_igor___introprocrast_5c67dc3a76ccbc29ae8ff3a5", "_activites_igor___temp_5c67dc3a76ccbc29ae8ff29d"]))
+  if (rand == 0) goto flow _activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291
+  if (rand == 1) goto flow _activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288
+  if (rand == 2) goto flow _procrastination_igor___introprocrast_5c67dc3a76ccbc29ae8ff3a5
+  if (rand == 3) goto flow _activites_igor___temp_5c67dc3a76ccbc29ae8ff29d

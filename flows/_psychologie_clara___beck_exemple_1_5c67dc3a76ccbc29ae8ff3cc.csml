@@ -1,0 +1,316 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3cc
+start:
+  say Typing(3000)
+  say Question(
+    "Je te propose de lister ensemble des pensées positives pour remettre à sa juste place les pensées négatives que tu as.
+ 
+Cela devrait avoir pour effet de baisser de moitié l'intensité de l'émotion normalement.
+
+Ok ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+      Button("Juste parler"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  remember _besoin_de_parler = event
+  goto step_2
+
+
+step_2:
+  // adding conditional redirect to flow
+  if (_besoin_de_parler == "Juste parler") {
+    do rand = Floor(Random() * Length(["_ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228", "_ai_dial_negatifscf___dialogueneg2_5c67dc3a76ccbc29ae8ff229", "_ai_dial_negatifscf___dialogueneg3_5c67dc3a76ccbc29ae8ff22a", "_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"]))
+    if (rand == 0) goto flow _ai_dial_negatifscf___dialogueneg1_5c67dc3a76ccbc29ae8ff228
+    if (rand == 1) goto flow _ai_dial_negatifscf___dialogueneg2_5c67dc3a76ccbc29ae8ff229
+    if (rand == 2) goto flow _ai_dial_negatifscf___dialogueneg3_5c67dc3a76ccbc29ae8ff22a
+    if (rand == 3) goto flow _ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e
+  }
+  say Typing(2700)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Quelle est la pensée qui te cause de la peine tout de suite ?"
+  hold
+  
+  remember _pensee_douloureuse = event
+  
+  say Typing(2200)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Quelle est l'émotion prédominante là ?"
+  hold
+  
+  remember _emotion = event
+  
+  say Typing(2900)
+  say "Bon... une pensée qui reste floue est une pensée qui fait souffrir. 
+
+Précisons donc ensemble pour t'aider à prendre du recul et t'apaiser."
+  say Typing(2600)
+  say Question(
+    "Sur une échelle de 1 à 10, à combien tu évalues la souffrance que te provoque cette pensée ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _douleur_morale_ressentie = event
+  goto step_12
+
+
+step_12:
+  say Typing(2800)
+  say Question(
+    "Cette pensée, sur une échelle de 0 à 100 %, à quel point tu crois à cette pensée ?
+Tu y crois à...",
+    button_type="quick_reply",
+    buttons=[
+      Button("0 %"),
+      Button("10 %"),
+      Button("20 %"),
+      Button("30 %"),
+      Button("40 %"),
+      Button("50 %"),
+      Button("60 %"),
+      Button("70 %"),
+      Button("80 %"),
+      Button("90 %"),
+      Button("100 %"),
+    ],
+  )
+  hold
+  
+  remember _degre_dadhesion_croyance_a_la_pensee = event
+  goto step_15
+
+
+step_15:
+  say Typing(3000)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e2df024c-4eac-4114-b77f-2089f8ee7fad.jpeg")
+  say Question(
+    "Cette pensée que tu as... te parait-elle rationnelle ou assez irrationnelle ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Irrationnelle"),
+      Button("Rationnelle", payload="/_psychologie_clara___analyse_2_resolution_de_probleme_5c67dc3a76ccbc29ae8ff3d3"),
+      Button("Un peu des deux !"),
+      Button("Je ne sais pas trop"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(2900)
+  say Question(
+    "Est-ce une pensée automatique ? (une rengaine que tu as souvent, qui tourne en boucle dans ta tête)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je crois oui..."),
+      Button("Je ne sais pas trop"),
+      Button("Non, pas vraiment", payload="/_psychologie_clara___trouver_un_cpmt_alternati_5c67dc3a76ccbc29ae8ff3d5"),
+      Button("Qu'est-ce que c'est?", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say Question(
+    "Essayons de trouver des pensées qui montrent que tout n'est pas noir, qu'à d'autres moments, tu arrives à faire des choses, tu as des qualités en toi !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+      Button("Mmmh..."),
+      Button("Juste parler", payload="/_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"),
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3100)
+  say Question(
+    "On appelle ça \"pensée alternative\", c'est comme un argument qui vient s'opposer à la pensée négative. 
+
+Ça lui coupe le passage et améliore l'humeur, tu vois ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, je vois"),
+      Button("Mmmh.."),
+      Button("Juste parler", payload="/_ai_dial_negatifscf___dialogueneg4_5c67dc3a76ccbc29ae8ff22b"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(3000)
+  say "Je te donne un exemple très fréquent : \"j'ai envie de rien\" 
+
+=> phrase alternative : \"j'arrive quand même à faire (ceci).....\" (sortir de mon lit, faire quelques activités, manger... à parler à Owlie 😊)
+
+D'ailleurs, déjà, pendant qu'on parle tu ne rumines pas 😊, tu as bien fait de venir !"
+  say Typing(2900)
+  goto form_32_0
+
+
+// form component
+form_32_0:
+  say "Peux-tu déjà me lister une pensée alternative comme je viens de te montrer ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _pensee_alternative = event
+  
+  say Typing(2900)
+  goto form_34_0
+
+
+// form component
+form_34_0:
+  say "Allez, continue {{_name}}, tu peux en lister encore 3 à la suite !(📝Écris-le moi puis clique sur la touche \"entrer\" ↩️ ou \"envoyer\" lorsque tu as terminé)"
+  hold
+  
+  remember _pensee_alternative = event
+  
+  say Typing(2400)
+  say Question(
+    "On continue encore un peu ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continuer"),
+      Button("🚨Je n'y arrive pas", payload="/_jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b"),
+      Button("😢Parler ", payload="/_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(2800)
+  goto form_39_0
+
+
+// form component
+form_39_0:
+  say "Peux-tu m’en lister encore 3 à la suite ? 📝Écris-le moi en 1 phrase puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _pensee_alternative = event
+  
+  say Typing(2600)
+  goto form_41_0
+
+
+// form component
+form_41_0:
+  say "Et une dernière ? 📝Écris-le moi en 1 phrase puis appuie sur la touche « entrer » ↩️ ou « envoyer » de ton clavier lorsque tu as fini !"
+  hold
+  
+  remember _pensee_alternative = event
+  
+  say Typing(2900)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/70da2395-d792-4a5e-a774-028465becfb9.jpeg")
+  say Question(
+    "Si tu souhaites refaire cet exercice plus tard, voici un récapitulatif de ce que nous venons de faire :",
+    buttons=[
+      Url("https://drive.google.com/open?id=0BwzjG62bhAz0T24xdlYyMHZ0QUk", text="Exercice des pensées"),
+    ],
+  )
+  
+  say Typing(3100)
+  say Question(
+    "Sur une échelle de 1 à 10, tes émotions ça donne quoi maintenant ? 
+(1 = très peu fort, 10 = très fort)",
+    button_type="quick_reply",
+    buttons=[
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _intensite_emotionnelle = event
+  goto step_47
+
+
+step_47:
+  say Typing(3000)
+  say Question(
+    "Cette pensée que tu avais. 
+Sur une échelle de 1 à 10, à quel point t'impacte t-elle maintenant ? 
+
+(1 = plus du tout, 5 = elle est encore un peu là, mais ça va, 10 = très pénible)",
+    button_type="quick_reply",
+    buttons=[
+      Button("1"),
+      Button("2"),
+      Button("3"),
+      Button("4"),
+      Button("5"),
+      Button("6"),
+      Button("7"),
+      Button("8"),
+      Button("9"),
+      Button("10"),
+    ],
+  )
+  hold
+  
+  remember _douleur_morale_ressentie = event
+  goto step_50
+
+
+step_50:
+  // adding conditional redirect to flow
+  if (_intensite_emotionnelle == "1" || _intensite_emotionnelle == "2" || _intensite_emotionnelle == "3" || _intensite_emotionnelle == "4" || _intensite_emotionnelle == "5" && _douleur_morale_ressentie == "1" || _douleur_morale_ressentie == "2" || _douleur_morale_ressentie == "3" || _douleur_morale_ressentie == "4" || _douleur_morale_ressentie == "5") {
+    do rand = Floor(Random() * Length(["_eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253", "_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"]))
+    if (rand == 0) goto flow _eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253
+    if (rand == 1) goto flow _choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265
+  }
+  // adding conditional redirect to flow
+  if (_intensite_emotionnelle == "6" || _intensite_emotionnelle == "7" || _intensite_emotionnelle == "8" || _intensite_emotionnelle == "9" || _intensite_emotionnelle == "10" || _douleur_morale_ressentie == "6" || _douleur_morale_ressentie == "7" || _douleur_morale_ressentie == "8" || _douleur_morale_ressentie == "9" || _douleur_morale_ressentie == "10") {
+    goto flow _jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b
+  }

@@ -1,0 +1,48 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2b9
+start:
+  say Typing(2000)
+  say "Pense maintenant à une activité routinière."
+  say Typing(3000)
+  say "Quelque chose que tu fais souvent, régulièrement, et souvent machinalement."
+  say Typing(3000)
+  say "Une chose à laquelle tu n'as même plus besoin de penser tellement elle est devenue automatique."
+  say Typing(4000)
+  say Question(
+    "Voici quelques exemples si tu as du mal à trouver :
+- Faire la vaisselle 🍽
+- Se laver 🚿
+- Un trajet 🚶‍♂️
+- Préparer à manger 🥘
+- Mettre ses chaussures",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ J'ai choisi !"),
+      Button("🔙Arrêter", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3000)
+  say "OK, maintenant décris cette activité à haute voix avec le maximum de détails."
+  say Typing(2000)
+  say "Détaille bien sa préparation, son déroulement et son dénouement."
+  say Typing(2000)
+  say Question(
+    "Vas-y !",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait!"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

@@ -1,0 +1,6 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff43d
+start:
+  say "Petite pensée, je reviens prendre de tes nouvelles 😊!"
+  say Typing(3300)
+  // adding conditional redirect to flow
+  goto flow _accueil_check_clara___checkrelance_5c67dc3a76ccbc29ae8ff1f6

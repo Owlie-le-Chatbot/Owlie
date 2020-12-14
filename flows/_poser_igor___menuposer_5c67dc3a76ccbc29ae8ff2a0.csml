@@ -1,0 +1,87 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a0
+start:
+  say Typing(3000)
+  say "Voici ce que je peux te proposer
+
+(fais aussi défiler les boutons en bas ↔️)"
+  say Typing(1600)
+  say Carousel(
+    cards=[
+      Card(
+        title="Respiration",
+        subtitle="Reprendre le contrôle de ma respiration",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/91fff5f8-b802-45f4-91f2-341096f7e271.jpeg",
+        buttons=[
+          Button("C'est parti ! 🌬️", payload="/_respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9"),
+        ],
+      ),
+      Card(
+        title="Relaxation",
+        subtitle="Je fais une séance de relaxation",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/04d06136-cbf6-4bd1-bccf-14ae9cf3f841.jpeg",
+        buttons=[
+          Button("C'est parti ! 🙇🏻", payload="/_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1"),
+        ],
+      ),
+      Card(
+        title="Méditation",
+        subtitle="Je cherche la pleine conscience",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dad640a9-9587-42a4-bb80-00161d396814.jpeg",
+        buttons=[
+          Button("C'est parti ! 🧘", payload="/_poser_igor___listpc_5c67dc3a76ccbc29ae8ff2a2"),
+          Button("Audios de thérapie �", payload="/_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Musique",
+        subtitle="J'écoute une musique",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f59bf357-45c6-4782-b8a2-b3420959c054.jpeg",
+        buttons=[
+          Button("C'est parti ! 🎶", payload="/_poser_igor___listmusic_5c67dc3a76ccbc29ae8ff2a3"),
+        ],
+      ),
+      Card(
+        title="Nature",
+        subtitle="J'écoute des sons de la nature",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b5d1ada4-39c4-4fbe-91e2-75dbcc87b4ff.jpeg",
+        buttons=[
+          Button("C'est parti ! 🍃", payload="/_poser_igor___listnature_5c67dc3a76ccbc29ae8ff2a4"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="ASMR",
+        subtitle="J'écoute des sons satisfaisants",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bf26bb95-438c-4734-b938-43cd46ef7dab.jpeg",
+        buttons=[
+          Button("C'est parti ! 👂🏻", payload="/_poser_igor___listasmr_5c67dc3a76ccbc29ae8ff2a5"),
+        ],
+      ),
+      Card(
+        title="Vidéos",
+        subtitle="Je regarde des vidéos satisfaisantes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/969a4755-60e2-4dcf-a7e5-aa8ae01de1d4.jpeg",
+        buttons=[
+          Button("C'est parti ! 🎞️", payload="/_poser_igor___listvid_5c67dc3a76ccbc29ae8ff2a6"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("❔Au hasard", payload="/_poser_igor___random4ajoutcf_5c67dc3a76ccbc29ae8ff2a7"),
+    ],
+  )
+  hold
+  

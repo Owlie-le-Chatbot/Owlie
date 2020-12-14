@@ -1,0 +1,5 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff268
+start:
+  say "Je comprends 😕, tu ne vis pas un moment facile..."
+  // adding conditional redirect to flow
+  goto flow _menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d

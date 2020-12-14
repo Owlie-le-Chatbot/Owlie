@@ -1,0 +1,86 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff39c
+start:
+  say Typing(4000)
+  say Question(
+    "Si quelque chose a un jour beaucoup affecté ta vie, cela ne signifie pas que cela l'affectera toujours. 
+
+Par exemple, quand tu étais enfant.e, la peur des adultes t'incitait à leur faire plaisir afin qu'iels soient bons avec toi.
+
+Mais tu n'es plus un.e enfant.e et n'as plus forcément (ou à priori mois) peur des autres 😊
+
+Tu as maintenant la possibilité de décider toi-même de ce que tu veux faire dans la vie, et notamment de faire ce qui te plait !",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Si un.e enfant de deux ans n'obtient pas ce qu'il veut, iel piquera parfois une crise jusqu'à l'obtenir. 
+
+Cette solution marche plutôt bien à cet âge mais beaucoup moins chez les adultes 😅
+
+La plupart des problèmes ont plusieurs solutions, mais si tu continues à opter pour des solutions d'enfants, tu auras d'autant plus de mal à en trouver des meilleures, plus adultes, plus mûres, plus sages ☺️",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Mettre tes problèmes actuels sur le dos de ton enfance est souvent une excuse pour ne pas essayer de les résoudre. 
+
+Si tu fais l'effort de chercher des solutions, et/ou que tu cherches de l'aide pour en trouver, tu en trouveras !",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Tu as peut-être appris certains comportements inadaptés et autodestructeurs pendant ton enfance, mais bien qu'il soit parfois difficile de les changer, ce n'est pas impossible.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Plus tard, quand tu regarderas derrière toi, aujourd'hui fera partie de ton passé. 
+
+C'est en changeant aujourd'hui que vous pourras obtenir un avenir meilleur 😃",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

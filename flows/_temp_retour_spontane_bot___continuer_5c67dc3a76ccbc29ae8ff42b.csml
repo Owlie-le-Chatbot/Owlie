@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff42b
+start:
+  say Typing(2800)
+  say Question(
+    "On continue {{_name}}?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("Ça ira ", payload="/_fin_clara___randomfin_5c67dc3a76ccbc29ae8ff201"),
+      Button("Se voir + tard", payload="/_reprogrammer_clara___randomreprog_5c67dc3a76ccbc29ae8ff251"),
+    ],
+  )
+  hold
+  

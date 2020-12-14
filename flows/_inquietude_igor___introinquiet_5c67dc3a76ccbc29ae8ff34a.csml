@@ -1,0 +1,19 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff34a
+start:
+  say Typing(2000)
+  say "L’inquiétude est une suite de pensées négatives à propos de phénomènes qui pourraient se produire."
+  say Typing(2000)
+  say "Ces phénomènes seraient les conséquences incertaines mais redoutées d’un évènement réel ou lui-même redouté."
+  say Typing(2000)
+  say "Cette anticipation de conséquences négatives s’accompagne le plus souvent d’une charge émotionnelle anxieuse."
+  say Typing(2000)
+  say Question(
+    "Veux-tu en apprendre plus à l'aide d'un petit questionnaire ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_inquietude_igor___typeinquiet_5c67dc3a76ccbc29ae8ff34b"),
+      Button("Non", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

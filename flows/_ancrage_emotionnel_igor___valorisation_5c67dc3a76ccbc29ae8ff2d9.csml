@@ -1,0 +1,185 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d9
+start:
+  say Typing(2000)
+  say "Tu vas maintenant te rassurer en te valorisant."
+  say Typing(2000)
+  say "Cet exercice consiste tout simplement à te dire des choses gratifiantes. Il peut s'agir de compliments, de te rappeler tes qualités ou ce qui peut restaurer ta confiance."
+  say Typing(2000)
+  say "Imagine que tu t'adresses à un petit enfant, ou toi quand tu étais enfant."
+  say Typing(2000)
+  say Question(
+    "Si tu te sens prêt.e, commence maintenant et arrête-toi au bout de 10 phrases.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+      Button("💡Pas d'idées"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2000)
+  say "Je vais t'aider à en trouver."
+  say Typing(2000)
+  say Question(
+    "Répéte chaque phrase après moi à haute voix.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(2000)
+  say Question(
+    "Tu vas y arriver {{_name}} !",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(2000)
+  say Question(
+    "Tu as les capacités de surmonter cette crise.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(2000)
+  say Question(
+    "Tu es quelqu'un de courageux {{_name}}. 
+Tu es même la personne la plus courageuse que je connaisse.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(2000)
+  say Question(
+    "Tu as déjà réussi à surmonter des épreuves dans le passé. Tu surmonteras celle-ci.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2000)
+  say Question(
+    "Je connais très peu de personnes qui pourraient encaisser une telle douleur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(2000)
+  say Question(
+    "Tu es une bonne personne {{_name}}. 
+Tu ne mérites pas ce qui t'arrives en ce moment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(2000)
+  say Question(
+    "Souviens toi que la douleur d'aujourd'hui sera ta force de demain.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_34
+
+
+step_34:
+  say Typing(2000)
+  say Question(
+    "Et tu es déjà beaucoup plus fort.e que tu le crois.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_37
+
+
+step_37:
+  say Typing(2000)
+  say Question(
+    "Je sais que tu ne lâcheras pas {{_name}}.
+Ce n'est pas ton genre.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_40
+
+
+step_40:
+  say Typing(2000)
+  say Question(
+    "Je sais ce que tu as accompli jusqu'à maintenant. 
+Je crois en toi !",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_43
+
+
+step_43:
+  // adding conditional redirect to flow
+  goto flow _ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1

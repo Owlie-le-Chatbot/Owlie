@@ -1,0 +1,62 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff287
+start:
+  say Typing(2000)
+  say "Voici ce que je peux te proposer :"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Activités apaisantes",
+        subtitle="J'ai besoin d'une activité paisible.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0d90ae27-ac9f-4786-b67f-e7d946a9262c.jpeg",
+        buttons=[
+          Button("C'est parti ! 🧘", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+        ],
+      ),
+      Card(
+        title="Activités stimulantes",
+        subtitle="J'ai besoin d'une activité stimulante",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ad63069c-42df-46fe-9181-df5f056cb19b.jpeg",
+        buttons=[
+          Button("C'est parti ! 👯", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+        ],
+      ),
+      Card(
+        title="Procrastination",
+        subtitle="Je remets souvent à plus tard",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b7f54e5f-a79a-4480-8e8d-ee854cdb6b69.jpeg",
+        buttons=[
+          Button("C'est parti ! ⏳", payload="/_procrastination_igor___introprocrast_5c67dc3a76ccbc29ae8ff3a5"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Valeurs",
+        subtitle="Agir selon ses valeurs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2ed33508-1525-42ec-a73b-f74dfa1372be.jpeg",
+        buttons=[
+          Button("C'est parti ! 🎋", payload="/_activites_igor___temp_5c67dc3a76ccbc29ae8ff29d"),
+        ],
+      ),
+      Card(
+        title="Assertivité",
+        subtitle="Je m'affirme",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b8914cc7-8bad-4f78-b87e-67e401919cc6.jpeg",
+        buttons=[
+          Button("C'est parti ! ✊", payload="/_assertivite___introassert_5c7e84780ecd9f746fcc074e"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Sortir", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("❔Au hasard ", payload="/_activites_igor___random3ajoutcf_5c67dc3a76ccbc29ae8ff29e"),
+    ],
+  )
+  hold
+  

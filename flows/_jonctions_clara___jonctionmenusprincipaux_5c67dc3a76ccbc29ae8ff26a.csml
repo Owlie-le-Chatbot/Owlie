@@ -1,0 +1,24 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff26a
+start:
+  say Typing(3000)
+  say Question(
+    "De quoi as-tu besoin ?
+- 🚨besoin d'aide ! (si c'est la panique émotionnelle) 
+- 💬parler (dire ce que tu as sur le coeur, ça fait du bien parfois !)
+- 🔎découvrir le fonctionnement de l'esprit et des émotions, des relations (🤗psychologie) ou faire des 🚀activités concrètes 
+
+(fais défiler les boutons ↔️)",
+    buttons=[
+      Button("🌟Tous les menus !", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+      Button("🤗Réconfort", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+    quick_replies=[
+      Button("🔎Découvrir", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🚨Besoin d'aide !", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("😕Je ne sais pas", payload="/_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"),
+      Button("🕗Se voir + tard ", payload="/_fin_clara___randomfin_5c67dc3a76ccbc29ae8ff201"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,40 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4ea
+start:
+  say Typing(2000)
+  say "Tu décides de lâcher la voile."
+  say Typing(4000)
+  say "Ce qui a pour effet immédiat de réduire les amplitudes du tangage et du roulis."
+  say Typing(4000)
+  say "Ton embarcation est plus stable mais maintenant elle dérive."
+  say Typing(3000)
+  say "Tu es de plus en plus loin du port..."
+  say Typing(3000)
+  say "Mais..."
+  say Typing(4000)
+  say Question(
+    "Tu auras tout le temps d'y retourner une fois que la tempête se sera calmée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(3000)
+  say "Une heure plus tard, le temps est redevenu plus clément."
+  say Typing(4000)
+  say "Tu peux à nouveau naviguer vers le port en toute sécurité."
+  say Typing(5000)
+  say Question(
+    "Sur le trajet, tu repêches un.e marin en détresse dont le voilier a chaviré, et vous rentrez tranquillement chez vous.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphlavoile4_5c67dc3a76ccbc29ae8ff4eb"),
+    ],
+  )
+  hold
+  

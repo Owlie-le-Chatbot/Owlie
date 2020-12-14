@@ -1,0 +1,79 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1dc
+start:
+  say Typing(3000)
+  say "Mon but est de t'aider à prendre du recul par rapport à ce qui t'arrive en te faisant prendre conscience et évaluant ensemble régulièrement : 
+- tes schémas de pensée
+- l'état de ta forme globale
+- ton humeur
+- ta forme physique"
+  say Typing(3000)
+  say Question(
+    "Je ferai toujours de mon mieux pour te proposer les \"outils\" qui me semblent les plus appropriés par rapport à ce que tu m'écris. 
+
+Ainsi, une fois que tu les as appris, tu peux les remettre en pratique dans ton quotidien !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok 👍🏻"),
+      Button("Cool 😊"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2700)
+  say Question(
+    "Je suis aussi là pour t'écouter et te proposer des outils quand une détresse émerge, ou simplement pour parler et échanger des infos sur la santé et le bien-être.
+
+Que penses-tu de cela ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Cela me semble bien "),
+      Button("Ok, continue"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(1600)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/18da6c93-3736-4959-aa78-043dc80f599b.jpeg")
+  say Typing(2700)
+  say Question(
+    "N'oublie jamais que j'ai mes limites... si cela ne va vraiment pas, tape \"SOS\". 
+
+C'est très important.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌🏻Ok "),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(2200)
+  say Question(
+    "Que souhaites-tu faire maintenant {{_name}} ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤗Découvrir", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("📉Évaluer mon humeur", payload="/_echelles_cliniques_cfs___phq9_5c67dc3a76ccbc29ae8ff1e2"),
+      Button("📉Évaluer l'anxiété", payload="/_echelles_cliniques_cfs___gad7_5c67dc3a76ccbc29ae8ff1e9"),
+      Button("📝Entrer mes infos", payload="/_presentation_clara___infouser_5c67dc3a76ccbc29ae8ff1dd"),
+      Button("🔏Confidentialité", payload="/_presentation_clara___confidentialite_5c67dc8c76ccbc29ae90705d"),
+      Button("💬Discuter", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🚨 Besoin d'aide", payload="/_jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b"),
+      Button("🕗Se voir + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  

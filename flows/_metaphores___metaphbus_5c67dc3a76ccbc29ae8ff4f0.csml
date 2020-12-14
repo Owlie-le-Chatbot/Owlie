@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4f0
+start:
+  say Typing(4000)
+  say "Imagine-toi en chauffeur.e de bus."
+  say Typing(3000)
+  say "C'est ta première journée de travail."
+  say Typing(4000)
+  say "Ta ligne n'est pas très compliquée, tu la connais déjà très bien."
+  say Typing(3000)
+  say "Mais..."
+  say Typing(3000)
+  say "Ton bus est bondé, bruyant, et les passager.e.s sont très dissipé.e.s."
+  say Typing(5000)
+  say "La plupart d'entre-elleux veulent t'imposer leur itinéraire et te le font savoir en hurlant à chaque nouveau carrefour."
+  say Typing(4000)
+  say "Certain.e.s crient : \"à gauche!\""
+  say Typing(3000)
+  say "D'autres : \"non, à droite!\""
+  say Typing(3000)
+  say "Certains se battent, d'autres tapent du pied..."
+  say Typing(4000)
+  say "Une dame âgée te demande avec insistance de la déposer en bas de chez elle."
+  say Typing(7000)
+  say "Un jeune homme tape sur la vitre de ta cabine en t'ordonnant de le laisser descendre immédiatement alors que le prochain arrêt est encore loin."
+  say Typing(7000)
+  say "Tu es partagé.e entre la volonté de respecter le trajet prévu et celle de te débarrasser au plus vite des éléments les plus perturbateurs."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🚌Obéir aux autres", payload="/_metaphores___metaphbus4_5c67dc3a76ccbc29ae8ff4f3"),
+      Button("🚍Suivre votre ligne", payload="/_metaphores___metaphbus2_5c67dc3a76ccbc29ae8ff4f1"),
+    ],
+  )
+  hold
+  

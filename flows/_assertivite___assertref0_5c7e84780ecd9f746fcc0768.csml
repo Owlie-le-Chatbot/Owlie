@@ -1,0 +1,30 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0768
+start:
+  say Typing(3000)
+  say "Bienvenue dans le module consacré au refus."
+  say Typing(5000)
+  say Question(
+    "En dehors des rapports d'autorité légitime, refuser quelque chose est un droit fondamental.",
+    button_type="quick_reply",
+    buttons=[
+      Button("😎Je sais déjà !", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+      Button("🔍Vraiment?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "Souhaites-tu relire tes droits fondamentaux 📜?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_assertivite___assertdroref_5c7e84780ecd9f746fcc075a"),
+      Button("Non", payload="/_assertivite___assertref1_5c7e84780ecd9f746fcc0769"),
+    ],
+  )
+  hold
+  

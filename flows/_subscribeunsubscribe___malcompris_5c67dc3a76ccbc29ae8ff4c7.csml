@@ -1,0 +1,7 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4c7
+start:
+  say Typing(3100)
+  say "Ah pardon, j'ai mal compris ce que tu voulais me dire 😊!"
+  say Typing(2700)
+  // adding conditional redirect to flow
+  goto flow Default

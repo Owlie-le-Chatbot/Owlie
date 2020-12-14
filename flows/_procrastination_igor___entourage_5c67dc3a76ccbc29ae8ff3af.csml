@@ -1,0 +1,42 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3af
+start:
+  say Typing(2000)
+  say "L'engagement public est un puissant ressort de l'action. Plus il y aura de gens informés de ce que tu comptes faire, plus tu auras de chances de t'y mettre 😉"
+  say Typing(2000)
+  say "Voici pourquoi tu dois annoncer dès maintenant à quelqu'un de ton entourage que tu vas commencer {{_procra}} {{_jourprocra}} à {{_heureprocra}}."
+  say Typing(2000)
+  say Question(
+    "Si tu as quelqu'un à coté de toi, peux-tu lui annoncer maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est fait !", payload="/_procrastination_igor___environs_5c67dc3a76ccbc29ae8ff3b0"),
+      Button("Pas possible !"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2000)
+  say Question(
+    "D'accord... 
+Dans ce cas, peux-tu l'annoncer maintenant par téléphone ou par texto à une personne de ton choix?",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est fait !", payload="/_procrastination_igor___environs_5c67dc3a76ccbc29ae8ff3b0"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(2000)
+  say "Ce n'est pas grave. 
+Tu y arriveras quand même. Mais n'oublie pas ce que je t'ai dit au sujet de la force de l'engagement 😉!"
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___environs_5c67dc3a76ccbc29ae8ff3b0

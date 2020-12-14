@@ -1,0 +1,46 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2bc
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Choisis une lettre au hasard et écris-là moi 📝"
+  hold
+  
+  remember _lettre = event
+  
+  say Typing(2000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Écris le nom d'un animal qui commence par {{_lettre}}."
+  hold
+  
+  remember _animal = event
+  
+  goto form_3_1
+
+
+// form component
+form_3_1:
+  say "Écris un prénom qui commence par {{_lettre}}"
+  hold
+  
+  remember _firstname = event
+  
+  goto form_3_2
+
+
+// form component
+form_3_2:
+  say "Écris le nom d'une ville ou d'un pays qui commence par {{_lettre}}"
+  hold
+  
+  remember _ville = event
+  
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

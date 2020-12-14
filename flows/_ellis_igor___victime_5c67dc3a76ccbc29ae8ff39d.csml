@@ -1,0 +1,102 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff39d
+start:
+  say Typing(4000)
+  say Question(
+    "Les problèmes des autres n'ont la plupart du temps rien à voir avec toi. 
+
+Il n'y a pas de raison de s'en contrarier 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Nous sommes tou.te.s différent.e.s, et les autres font souvent des choses avec lesquelles tu n'es pas d'accord. 
+
+Ça n'en fait pas pour autant des criminel.le.s. 
+Te contrarier ou te mettre en colère ne t'aidera pas, et ça ne les aidera pas à changer.
+
+Je sais que ce n'est pas facile pour autant de changer hein!",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Si quelqu'un.e est injuste ou impoli.e avec toi, ce n'est pas l'injustice ou l'impolitesse qui te dérange mais l'idée que les autres doivent toujours être justes et polis.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Il est beaucoup plus facile de se changer soi-même que de changer les autres. 
+
+La contrariété ne te donnera pas plus de possibilité de changer les autres et réduira même ton influence. Certain.e.s pourraient également chercher à cultiver ta contrariété au lieu d'essayer de changer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Certaines personnes peuvent changer si tu es fâché.e ou contrarié.e, mais cela en vaut rarement la peine. 
+
+Se sentir mal n'est ni nécessaire ni suffisant pour changer les gens.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4000)
+  say Question(
+    "Être heureuxse implique souvent de changer sa façon de penser et de se comporter 😊
+
+Si tu es trop occupé.e à essayer de changer les autres, tu n'auras plus le temps pour te changer toi-même. 
+
+Se contrarier ou se mettre en colère face au comportement des autres est souvent un prétexte pour ne pas avoir à régler ses propres problèmes et changer sa façon de penser  😉",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

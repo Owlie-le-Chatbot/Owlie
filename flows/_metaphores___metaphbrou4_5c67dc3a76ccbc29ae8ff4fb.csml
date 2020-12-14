@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4fb
+start:
+  say Typing(5000)
+  say "Tes pensées et tes émotions douloureuses sont parfois comme une nappe de brouillard."
+  say Typing(5000)
+  say "Elles t'empêchent de voir au loin vers tes objectifs, vers ce qui te tient à coeur dans la vie."
+  say Typing(5000)
+  say "Elles t'incitent souvent à t'arrêter."
+  say Typing(3000)
+  say "Elles te poussent même parfois à abandonner ne serait-ce que temporairement tes objectifs."
+  say Typing(5000)
+  say "Mais elles ne disparaissent pas forcément, ni aussi rapidement que tu le voudrais."
+  say Typing(4000)
+  say "Or ce qui compte le plus, ce n'est pas de se débarrasser de ces pensées et de ces émotions."
+  say Typing(5000)
+  say Question(
+    "Ce qui compte le plus, c'est d'avancer vers ce qui compte vraiment pour toi : tes valeurs.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris", payload="/_metaphores___metaphreprise_5c67dc3a76ccbc29ae8ff4d7"),
+      Button("❓Mes valeurs?", payload="/_metaphores___metaphvaleurs_5c67dc3a76ccbc29ae8ff500"),
+    ],
+  )
+  hold
+  

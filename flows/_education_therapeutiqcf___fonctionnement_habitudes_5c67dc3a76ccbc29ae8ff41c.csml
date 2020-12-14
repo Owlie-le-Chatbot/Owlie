@@ -1,0 +1,127 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff41c
+start:
+  say Typing(2700)
+  say Question(
+    "Nos comportements sont, pour la plupart tellement automatiques qu'ils nous échappent !",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est bien vrai ça !"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+      Button("Choisir une activité", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(1800)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e4f40e45-e4c4-4133-b172-4999fabb980e.jpeg")
+  say Typing(2500)
+  say Question(
+    "Nous agissons souvent par habitude...
+Un comportement peut se maintenir (et devenir une habitude) pour plusieurs raisons :",
+    button_type="quick_reply",
+    buttons=[
+      Button("Lesquelles ?"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4100)
+  say Question(
+    "- il est renforcé par un schéma de pensée sous-jacent (il est cohérent avec une pensée ou une croyance que nous avons sur le monde)
+- on n'y prête pas attention (il est automatique et on n'y réfléchit plus)
+- cette habitude nous \"sert\" à quelque chose (ce n'est pas toujours conscient, par exemple : cela nous permet d'éviter quelquechose)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue"),
+      Button("Faire autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(2200)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cbf1895e-ccc1-421a-b249-802db305ca49.jpeg")
+  say Typing(3400)
+  say Question(
+    "Cependant, rien n'est immuable, comme dit le Bouddha \"tout est mouvement dans la vie\".
+
+On peut changer un comportement, même le plus récalcitrant !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Comment faire ?"),
+      Button("Gérer une situation", payload="/_psychologie_clara___trouver_un_cpmt_alternati_5c67dc3a76ccbc29ae8ff3d5"),
+      Button("Faire autre chose", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(3100)
+  say Question(
+    "Il faut déjà déterminer la chaine logique qui a mené au comportement et à quoi il sert. 
+
+Pose-toi ces questions sur ton habitude/comportement :",
+    button_type="quick_reply",
+    buttons=[
+      Button("Dis-moi"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3400)
+  say Question(
+    "1. qu'est-ce qui déclenche le comportement (une situation et un déclencheur)
+
+2. la pensée (pas toujours consciente) qui y est associée
+
+3. comment cela te fait te sentir (émotions) 
+
+4. ce que cela t'apporte de faire ça :-)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je vois..."),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(4100)
+  say Question(
+    "Maintenant, je peux te proposer : 
+- d'en apprendre plus sur les différents types comportements qui peuvent te poser problèmes
+=> \"Dis m'en plus !\"
+- de trouver une alternative
+=> \"Alternative\"
+- d'en apprendre plus sur d'autre sujets => \"Autres sujets\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Dis m'en plus !", payload="/_education_therapeutiqcf___fonctionnement_evitement_5c67dc3a76ccbc29ae8ff41d"),
+      Button("Une alternative", payload="/_psychologie_clara___trouver_un_cpmt_alternati_5c67dc3a76ccbc29ae8ff3d5"),
+      Button("Autres sujets", payload="/_education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c"),
+    ],
+  )
+  hold
+  

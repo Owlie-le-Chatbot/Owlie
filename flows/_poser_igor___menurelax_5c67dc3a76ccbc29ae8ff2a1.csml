@@ -1,0 +1,127 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a1
+start:
+  say Typing(2000)
+  say "Choisis une séance, installe-toi confortablement et suis les instructions 🧘‍♂️"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Méthode Jacobson",
+        subtitle="Jacques Van Rillaer",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b6f5bde9-e308-4c19-b812-4bf0f1a1649e.jpeg",
+        buttons=[
+          Url("https://1drv.ms/u/s!AkfXpEKqNlmzt07Ixv45RojZXHOY?e=RhxsO3", text="C'est parti!"),
+        ],
+      ),
+      Card(
+        title="Méthode Schultz",
+        subtitle="Jacques Van Rillaer",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dc7d4654-36ef-4a83-885e-2691c54b671d.jpeg",
+        buttons=[
+          Url("https://1drv.ms/u/s!AkfXpEKqNlmzt08tj33Dw-Wwwbao?e=uZXVJ3", text="C'est parti !"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(2200)
+  say Carousel(
+    cards=[
+      Card(
+        title="Phase active (Jacobson)",
+        subtitle="Louis Chaloult",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/95f7cfc5-f39e-47f6-be69-d3dd1dca258c.jpeg",
+        buttons=[
+          Url("https://1drv.ms/u/s!AkfXpEKqNlmzt0rpqJaCln_qd-Ki?e=7edclh", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Phase différentielle (Jacobson)",
+        subtitle="Louis Chaloult",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b8d1d0d5-0c43-493e-b3ea-c8a4d200c926.jpeg",
+        buttons=[
+          Url("https://1drv.ms/u/s!AkfXpEKqNlmzt03N9FvSIfoJlFqq?e=926Mdu", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Phase abrégée (Jacobson)",
+        subtitle="Louis Chaloult",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/441c5e8c-621d-4076-9441-bc1ede808a6b.jpeg",
+        buttons=[
+          Url("https://1drv.ms/u/s!AkfXpEKqNlmzt0yAV922piMUiL5R?e=KZ2tgX", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Phase passive (Jacobson)",
+        subtitle="Louis Chaloult",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/09ddb5af-1561-4bec-91f6-0321479a4973.jpeg",
+        buttons=[
+          Url("https://1drv.ms/u/s!AkfXpEKqNlmzt0ujBRrK0LSkIimp?e=Rze334", text="C'est parti !"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(2700)
+  say Carousel(
+    cards=[
+      Card(
+        title="Exercice audio - Auto-compassion (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/29ccef97-ccab-4930-8ec1-bd7772efe69f.jpeg",
+        buttons=[
+          Url("https://drive.google.com/file/d/1DSCfsTSaR1UoTbNyFUEoPpH4i5NVWtT6/view?usp=sharing", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Méditation observation des émotions (07:01) - (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a401efed-9351-46da-b5e0-d8f0c4393919.jpeg",
+        buttons=[
+          Url("https://drive.google.com/file/d/1hFmjDXstdTQeqZMQdGZhth8pbOPUKayN/view?usp=sharing", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Méditation Du Lieu Sûr Intérieur (11:55) - (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c5a94078-56f8-4ef4-b698-02c28a492e63.jpeg",
+        buttons=[
+          Url("https://drive.google.com/file/d/1i--kKv_FHyd_6po0CsezruiUunumPrnT/view?usp=sharing", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Sécurité Et Reparentage Intérieur (14:24) - (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/24f74b5d-2a69-4221-b575-7d4c5f3ce1d1.jpeg",
+        buttons=[
+          Url("https://drive.google.com/open?id=1Kv6Vxgsg0mVletwmau9Q14TnkTCe2of_", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Laisser Aller Les Pensées (05:10) - (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ba34ac02-99e1-4e13-be1f-23b2dba0e4a5.jpeg",
+        buttons=[
+          Url("https://drive.google.com/open?id=15TrLsOlOW6H7nmsOW43gB9e0cC6O10Pf", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - La Pleine Conscience Dans Le Quotidien (06:06) (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e84f1585-6f4f-4c5f-8c96-be73d175f5a1.jpeg",
+        buttons=[
+          Url("https://drive.google.com/open?id=1O0NQcoU2u6fw64caGD4t2tMXXY14vMme", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Cultiver son observation des relations sociales (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/201f66a4-d756-4595-845e-6619d8652d37.jpeg",
+        buttons=[
+          Url("https://drive.google.com/file/d/1JbQJHiadVmyaA2C0fBRkGllZkJWhLYKj/view?usp=sharing", text="C'est parti !"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

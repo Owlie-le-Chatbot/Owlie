@@ -1,0 +1,41 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2ba
+start:
+  say Typing(2000)
+  say "Le but de cet exercice est de réciter quelque chose que tu connais déjà."
+  say Typing(4000)
+  say Question(
+    "Si tu ne trouves rien, voici ce que tu pourrais réciter : 
+- L'alphabet
+- Compter à rebours à partir de 100
+- Une table de multiplication
+- Les paroles d'une chanson (\"Au clair de la lune\", \"la Marseillaise\" \"hakuna matata\" ou autre)
+- Une fable de La Fontaine
+- Une prière",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ J'ai choisi !"),
+      Button("🔙Arrêter", payload="/_ancrage_mental_igor___listancment_5c67dc3a76ccbc29ae8ff2b4"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "OK, maintenant récite ce que tu as choisi, lentement, et à haute voix.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

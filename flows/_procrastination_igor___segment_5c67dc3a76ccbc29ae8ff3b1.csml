@@ -1,0 +1,78 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3b1
+start:
+  say Typing(2000)
+  say "Une tâche d'allure imposante semble tout de suite plus abordable lorsqu'elle est décomposée en plusieurs petites tâches."
+  say Typing(2000)
+  say Question(
+    "Es-tu prêt.e à segmenter {{_procra}} en plusieurs étapes pour que ça te semble plus accessible?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "Je te propose de décomposer {{_procra}} en 5 étapes. Rien ne t'empêche d'en rajouter d'autres toi-même si tu l'estimes nécessaire."
+  say Typing(2000)
+  goto form_8_0
+
+
+// form component
+form_8_0:
+  say "Quelle sera la première étape de {{_procra}} ? Écris-le moi en une phrase 📝 "
+  hold
+  
+  remember _etaprocra1 = event
+  
+  say Typing(2000)
+  goto form_10_0
+
+
+// form component
+form_10_0:
+  say "Quelle sera la deuxième étape de {{_procra}} ? Écris-le moi en une phrase 📝 "
+  hold
+  
+  remember _etaprocra2 = event
+  
+  say Typing(2000)
+  goto form_12_0
+
+
+// form component
+form_12_0:
+  say "Quelle sera la troisième étape de {{_procra}} ? Écris-le moi en une phrase 📝 "
+  hold
+  
+  remember _etaprocra3 = event
+  
+  say Typing(2000)
+  goto form_14_0
+
+
+// form component
+form_14_0:
+  say "Quelle sera la quatrième étape de {{_procra}}? Si cette étape n'est pas nécessaire, mets juste un smiley 😉"
+  hold
+  
+  remember _etaprocra4 = event
+  
+  say Typing(2000)
+  goto form_16_0
+
+
+// form component
+form_16_0:
+  say "Quelle sera la cinquième étape de {{_procra}} ? Si cette étape n'est pas nécessaire, mets juste un smiley 😉"
+  hold
+  
+  remember _etaprocra5 = event
+  
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___recomp_5c67dc3a76ccbc29ae8ff3b2

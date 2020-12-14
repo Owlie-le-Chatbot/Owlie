@@ -1,0 +1,61 @@
+// CHATFUEL BLOCK ID 5e05bd76f659330001f87cc6
+start:
+  say Typing(4000)
+  say "Je te laisse choisir la pensée que tu veux travailler à partir de la petite fiche ci-dessous:"
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/bf319123-3e00-443b-a2c2-758e74b97137.jpeg",
+    quick_replies=[
+      Button("1", payload="/_trauma_igor___traumapculp01_5deb66171330c00001825447"),
+      Button("2", payload="/_trauma_igor___traumapculp02_5deb66171330c00001825449"),
+      Button("3", payload="/_trauma_igor___traumapculp03_5deb66171330c0000182544b"),
+      Button("4", payload="/_trauma_igor___traumapculp04_5deb66171330c0000182544d"),
+      Button("5", payload="/_trauma_igor___traumapculp05_5deb66171330c0000182544f"),
+      Button("6", payload="/_trauma_igor___traumapculp06_5deb66171330c00001825451"),
+      Button("Suite..."),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "Voici les autres choix 🙂 :",
+    button_type="quick_reply",
+    buttons=[
+      Button("7", payload="/_trauma_igor___traumapculp07_5deb66171330c00001825453"),
+      Button("8", payload="/_trauma_igor___traumapculp08_5deb66171330c00001825455"),
+      Button("9", payload="/_trauma_igor___traumapculp09_5deb66171330c00001825457"),
+      Button("10", payload="/_trauma_igor___traumapculp10_5deb66171330c00001825459"),
+      Button("11", payload="/_trauma_igor___traumapculp11_5deb66171330c0000182545b"),
+      Button("12", payload="/_trauma_igor___traumapculp12_5deb66171330c0000182545d"),
+      Button("Au hasard"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_trauma_igor___traumapculp01_5deb66171330c00001825447", "_trauma_igor___traumapculp02_5deb66171330c00001825449", "_trauma_igor___traumapculp03_5deb66171330c0000182544b", "_trauma_igor___traumapculp04_5deb66171330c0000182544d", "_trauma_igor___traumapculp05_5deb66171330c0000182544f", "_trauma_igor___traumapculp06_5deb66171330c00001825451", "_trauma_igor___traumapculp06_5deb66171330c00001825451", "_trauma_igor___traumapculp07_5deb66171330c00001825453", "_trauma_igor___traumapculp08_5deb66171330c00001825455", "_trauma_igor___traumapculp09_5deb66171330c00001825457", "_trauma_igor___traumapculp10_5deb66171330c00001825459", "_trauma_igor___traumapculp11_5deb66171330c0000182545b", "_trauma_igor___traumapculp12_5deb66171330c0000182545d"]))
+  if (rand == 0) goto flow _trauma_igor___traumapculp01_5deb66171330c00001825447
+  if (rand == 1) goto flow _trauma_igor___traumapculp02_5deb66171330c00001825449
+  if (rand == 2) goto flow _trauma_igor___traumapculp03_5deb66171330c0000182544b
+  if (rand == 3) goto flow _trauma_igor___traumapculp04_5deb66171330c0000182544d
+  if (rand == 4) goto flow _trauma_igor___traumapculp05_5deb66171330c0000182544f
+  if (rand == 5) goto flow _trauma_igor___traumapculp06_5deb66171330c00001825451
+  if (rand == 6) goto flow _trauma_igor___traumapculp06_5deb66171330c00001825451
+  if (rand == 7) goto flow _trauma_igor___traumapculp07_5deb66171330c00001825453
+  if (rand == 8) goto flow _trauma_igor___traumapculp08_5deb66171330c00001825455
+  if (rand == 9) goto flow _trauma_igor___traumapculp09_5deb66171330c00001825457
+  if (rand == 10) goto flow _trauma_igor___traumapculp10_5deb66171330c00001825459
+  if (rand == 11) goto flow _trauma_igor___traumapculp11_5deb66171330c0000182545b
+  if (rand == 12) goto flow _trauma_igor___traumapculp12_5deb66171330c0000182545d

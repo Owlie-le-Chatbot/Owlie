@@ -1,0 +1,32 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3bc
+start:
+  say Typing(3100)
+  say "C'est presque ça..."
+  say Typing(2100)
+  say Question(
+    "...mais pas tout à fait !
+
+Que souhaites-tu faire ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🔄 Re-tenter !"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🚀Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be", "_psychologie_clara___quizzdegout_5c67dc3a76ccbc29ae8ff3c1", "_psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0", "_psychologie_clara___quizzpeur_5c67dc3a76ccbc29ae8ff3c2", "_psychologie_clara___quizzjoie_5c67dc3a76ccbc29ae8ff3bf", "_psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd"]))
+  if (rand == 0) goto flow _psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be
+  if (rand == 1) goto flow _psychologie_clara___quizzdegout_5c67dc3a76ccbc29ae8ff3c1
+  if (rand == 2) goto flow _psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0
+  if (rand == 3) goto flow _psychologie_clara___quizzpeur_5c67dc3a76ccbc29ae8ff3c2
+  if (rand == 4) goto flow _psychologie_clara___quizzjoie_5c67dc3a76ccbc29ae8ff3bf
+  if (rand == 5) goto flow _psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd

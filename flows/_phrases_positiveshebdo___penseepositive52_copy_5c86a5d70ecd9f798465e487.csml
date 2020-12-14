@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c86a5d70ecd9f798465e487
+start:
+  say Typing(4000)
+  say Question(
+    "\"Qui veut du mieldoit avoir le courage d'affronterles abeilles\"
+
+Proverbe africain",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌟Donner 1 citation", payload="/_feedbacks_clara___propositioncitation_5c67dc3a76ccbc29ae8ff244"),
+      Button("Me désabonner", payload="/_subscribeunsubscribe___arretrelancepos_5c67dc3a76ccbc29ae8ff4c5"),
+    ],
+  )
+  hold
+  

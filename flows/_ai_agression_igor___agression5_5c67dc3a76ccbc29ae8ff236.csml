@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff236
+start:
+  say Typing(2000)
+  say "La colère mène à la haine."
+  say Typing(2000)
+  say "La haine mène à la souffrance."
+  say Typing(2000)
+  say "N'emprunte pas le chemin qui mène au côté obscur."
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0f46f490-d903-4303-a0e5-810389e89328.jpeg",
+    quick_replies=[
+      Button("Ok", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("Ça va pas...", payload="/_choix_clara___empathiepremenucrise_5c67dc3a76ccbc29ae8ff268"),
+      Button("En rester là", payload="/_fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8"),
+    ],
+  )
+  hold
+  

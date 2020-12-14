@@ -1,0 +1,107 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3e2
+start:
+  say "{{_name}}, je te propose de revoir ensemble les valeurs qui sont importantes pour toi :)"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a425ab55-c9a8-409f-9b3f-d0b3a903eddf.jpeg")
+  say Typing(1600)
+  say Question(
+    "Si tu es d'accord, je vais te poser quelques questions pour identifier tes valeurs, les choses qui sont vraiment importantes pour toi dans la vie !",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'accord !"),
+      Button("Plutôt autre chose", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Sans limitation, écris-moi la réponse à cette question : qu’est-ce qui est important pour moi ?"
+  hold
+  
+  remember _questce_qui_est_important_pour_moi = event
+  
+  say Typing(3200)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Imagine maintenant que tu vives les 10 prochaines années sans passages très déprimés/tristes, où serais-tu et que ferais-tu ?
+"
+  hold
+  
+  remember _que_feraisje_sans_la_depression_dans_10_ans = event
+  
+  say Typing(3100)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Ta maison prend feu, quels sont les 5 objets que tu amènes avec toi ?"
+  hold
+  
+  remember _5_objets_essentiels_si_ma_maison_prend_feu = event
+  
+  say Typing(3000)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/830eaa47-6563-4c89-ace4-8c7da196ff54.jpeg")
+  goto form_12_0
+
+
+// form component
+form_12_0:
+  say "Imagine maintenant que tu assistes à ton 80e anniversaire de naissance et qu’on te rend hommage. Qu’est-ce que les gens disent et retiennent à ton sujet ?"
+  hold
+  
+  remember _80e_anniversaire_hommage_que_diton_et_retienton_de_moi = event
+  
+  say Typing(3200)
+  goto form_14_0
+
+
+// form component
+form_14_0:
+  say "Faisons une autre visualisation : c’est ta dernière journée sur terre comment vas-tu remplir cette journée ?"
+  hold
+  
+  remember _derniere_journee_sur_terre_comment_je_la_remplis = event
+  
+  say Typing(3300)
+  say "Mmmh..."
+  say Typing(2100)
+  goto form_18_0
+
+
+// form component
+form_18_0:
+  say "Et si une magicienne t'offrait de réaliser 2 rêves, quels seraient-ils ?"
+  hold
+  
+  remember _2_reves = event
+  
+  say Typing(2800)
+  say "Wow...!"
+  say Typing(2300)
+  say "D'accord, merci {{_name}}!"
+  say Typing(4000)
+  say Question(
+    "Voici un court petit texte si tu souhaites en savoir plus sur l'importance de cultiver ses valeurs :-)",
+    buttons=[
+      Url("https://drive.google.com/open?id=0BwzjG62bhAz0QXVMRFJTclNJS3M", text="Cultiver ses valeurs"),
+    ],
+    quick_replies=[
+      Button("Un autre exercice !", payload="/_act___lettremoifutur1_5c67dc3a76ccbc29ae8ff3e6"),
+      Button("Échanger", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Merci Owlie !", payload="/_eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253"),
+      Button("En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

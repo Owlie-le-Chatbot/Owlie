@@ -1,0 +1,32 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2eb
+start:
+  say Typing(3200)
+  say Question(
+    "Oh, tu as besoin d'affection et de réconfort... 
+Je te comprends 😊
+
+J'ai plusieurs choses pour ça !
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🐻Besoin d'un câlin"),
+      Button("💛Paroles douces", payload="/_ancrage_emotionnel_igor___valorisation_5c67dc3a76ccbc29ae8ff2d9"),
+      Button("🦸‍♀️Protection", payload="/_ancrage_mental_igor___protection_5c67dc3a76ccbc29ae8ff2bd"),
+      Button("🌳Lieu sécure", payload="/_ancrage_emotionnel_igor___securite_5c67dc3a76ccbc29ae8ff2d5"),
+      Button("💨Respirer", payload="/_respiration_igor___introresp_5c67dc3a76ccbc29ae8ff2a9"),
+      Button("🌟Gratitude", payload="/_activites_igor___gratitude_5c67dc3a76ccbc29ae8ff29b"),
+      Button("🎶Sons de la nature", payload="/_poser_igor___listnature_5c67dc3a76ccbc29ae8ff2a4"),
+      Button("🧘‍♂️Relaxation", payload="/_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1"),
+      Button("💛Audios de thérapie", payload="/_poser_igor___menuaudiostherapie_5da4b98c38a0870001f61853"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3300)
+  say "En voici un peu 🐻"
+  // adding conditional redirect to flow
+  goto flow _reconfort_clara___randomhug_5c67dc3a76ccbc29ae8ff2f3

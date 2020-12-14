@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff215
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Quelle est la chose la plus importante que tu voudrais avoir terminée aujourd'hui ? "
+  hold
+  
+  remember _chose_la_plus_importante_que_tu_voudrais_avoir_terminee_aujourdhui = event
+  
+  say Typing(2600)
+  say "Pas mal...!"
+  // adding conditional redirect to flow
+  goto flow _choix_clara___choix1_5c67dc3a76ccbc29ae8ff263

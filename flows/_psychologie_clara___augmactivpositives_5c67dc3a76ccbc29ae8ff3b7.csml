@@ -1,0 +1,153 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3b7
+start:
+  say Typing(4000)
+  say Question(
+    "Je te propose de faire un premier petit pas, et de voir avec toi pourquoi c'est important de choisir et de mettre en place régulièrement des activités qui te font du bien, ça te tente ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻Ok !"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🎓Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3500)
+  say Question(
+    "C'est très important pour l'humeur : on dit en général qu'il faut 2 activités agréables planifiée par semaine...
+
+Souvent quand on est triste, déprimé.e, abattu.e, fatigué.e c'est parce qu'on manque de \"renforcements positifs\", de plaisirs apportés par notre vie...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr..."),
+      Button("Je vois..."),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3300)
+  say "Or cela contribue à maintenir les émotions négatives, la tristesse... et n'aide pas à relâcher la pression que l'on se met parfois : la pression que nous met notre esprit (\"je dois\", \"il faut\") ou des éléments extérieurs (travail, obligations...)
+
+Voici un petit schéma que je t'ai préparé qui explique bien ça !"
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e8e36003-122d-4fb4-8793-1803217cc127.jpeg",
+    quick_replies=[
+      Button("👌🏻Ok, continue"),
+      Button("🔙Menu précédent", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3200)
+  say "Ces activités peuvent être : des activités qu'on fait déjà mais pas assez souvent, de nouvelles 
+activités ou des activités qu’on aimait avant mais qu'on ne fait plus."
+  say Typing(2900)
+  say Question(
+    "Peux tu me lister 3 activités que tu aimes faire ? Cela peut même être de toutes petites choses !",
+    button_type="quick_reply",
+    buttons=[
+      Button("🙂Oui, je crois..."),
+      Button("💡Donne moi des idée", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+      Button("🚀Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(2500)
+  goto form_16_0
+
+
+// form component
+form_16_0:
+  say "Quelles sont ces activités que tu aimes ?"
+  hold
+  
+  remember _activites_agreables = event
+  
+  say Typing(2600)
+  say Question(
+    "Veux-tu que je te donne des idées ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je veux bien"),
+      Button("Pourquoi pas"),
+      Button("Me changer les idées", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("Ça ira", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "Si cela peut te donner quelques idées, souvent, les gens me disent souvent qu'ils aiment bien faire des caresses à leur chat ou chien, un câlin à un proche, se balader dans leur ville ou dans un parc, aller dans une librairie trouver un bon livre ou une bande-dessinée, regarder un film ou une série, se faire un chocolat chaud, un thé ou tisane, se prendre une bonne douche chaude ou un bain, mettre d'autres vêtements pour changer d'état d'esprit 🌟😊",
+    buttons=[
+      Button("Ok, j'en fais une !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+    ],
+    quick_replies=[
+      Button("C'est sympa"),
+      Button("D'autres idées"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Me changer les idées", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say Question(
+    "Ils aiment bien aussi regarder un livre de recettes pour préparer un gâteau ou un plat qui leur plait, envoyer un petit message ou appeler un.e ami.e, aller faire un peu de sport ou du yoga, une séance d'étirement, écouter ou jouer de la musique...",
+    buttons=[
+      Button("Ok j'en fais une !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+    ],
+    quick_replies=[
+      Button("Poursuis..."),
+      Button("Autres idées", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2800)
+  say Question(
+    "Que dirais-tu de mettre une activité agréable en place maintenant justement ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻Ok, je le fais", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+      Button("📆Aide - plannifier", payload="/_psychologie_clara___aide_planifier_activite_5c67dc3a76ccbc29ae8ff3da"),
+      Button("🌈Activité agréable", payload="/_activites_igor___listactapai_5c67dc3a76ccbc29ae8ff288"),
+      Button("🤭Je procrastine", payload="/_procrastination_igor___introprocrast_5c67dc3a76ccbc29ae8ff3a5"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin5_5c67dc3a76ccbc29ae8ff1fc"),
+    ],
+  )
+  hold
+  

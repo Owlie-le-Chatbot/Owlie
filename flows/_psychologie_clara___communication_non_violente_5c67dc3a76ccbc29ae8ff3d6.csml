@@ -1,0 +1,207 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d6
+start:
+  say Typing(3300)
+  say Question(
+    "Souvent, dans une relation, quand il y a un problème, on a tendance à voir tout en noir/blanc : à rejeter la faute sur une personne entièrement, une circonstance ou sur soi-même.
+
+Si tu as une situation en tête où sont impliquée(s) une ou plusieurs personnes, que dirais-tu de faire un peu le tri dans tout ça ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("Tout va bien là :-)", payload="/_ai_dial_positifs_cf___choixrenfo_5c67dc3a76ccbc29ae8ff212"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3300)
+  goto form_4_0
+
+
+// form component
+form_4_0:
+  say "Ok {{_name}}, pourrais-tu me résumer brièvement la situation dont tu veux me parler ? (appuie sur \"entrer\" ou \"envoyer\" quand tu as terminé)"
+  hold
+  
+  remember _entrainement_habiletes_sociale = event
+  
+  say Typing(2700)
+  say "D'accord..."
+  say Typing(3300)
+  say Question(
+    "Est-ce que les échanges que vous avez eu auraient pu être mal interprétés à cause de : 
+- \"filtres\" négatifs 
+- ou de croyances (par exemple \"je suis sûr.e qu'iel me veut du mal\")
+- ou parce que tu voulais absolument prouver que l'autre avait tord, sans vraiment te mettre à sa place ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est possible oui.."),
+      Button("Je ne crois pas"),
+      Button("Explique moi ça déjà", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+      Button("Faire autre chose", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(2800)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Quelles sont tes attentes par rapport à cette situation ? Je veux dire par là, comment souhaiterais-tu qu'elle évolue ?"
+  hold
+  
+  remember _entrainement_aux_habiletes_sociales = event
+  
+  say Typing(2100)
+  goto form_13_0
+
+
+// form component
+form_13_0:
+  say "Que faudrait-il pour cela ? (essaie d'être précis.e, ça aide à résoudre le problème :))"
+  hold
+  
+  remember _entrainement_habiletes_sociales = event
+  
+  say Typing(3000)
+  say Question(
+    "As-tu pu trouver des idées qui te semblent faisables à mettre en place ? 
+
+Je n'ai pas dit \"facile(s)\" hein.. j'ai dit faisable(s) ! ;-))",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je crois"),
+      Button("Comment faire ?"),
+      Button("Non, j'y arrive pas", payload="/_psychologie_clara___aide_5c67dc3a76ccbc29ae8ff3db"),
+      Button("Chat modérateur", payload="/_sos_clara___non_connecte_chat_direct_moderateur_5c67dc3a76ccbc29ae8ff261"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(2300)
+  say Question(
+    "Ok, sais-tu comment tu vas t'adresser à la personne ou as-tu besoin qu'on travaille un peu ça ensemble ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Voyons ça ensemble"),
+      Button("C'est bon, je sais !", payload="/_eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "Alors, généralement, pour éviter une réaction \"à vif\" de l'autre, il vaut mieux :
+
+1. commencer par résumer la situation (pour voir déjà si vous comprenez bien la même chose)
+2. évoquer ce que cela te fait (parle avec ton coeur !) en utilisant le pronom \"je\" (ex : j'ai ressenti ça\")
+3. dire vers quoi tu aimerais aller, l'action que vous pourriez faire chacun.e pour trouver un compromis.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Wow, tout ça !!"),
+      Button("Continue..."),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3200)
+  say Question(
+    "Un exemple : 
+\"Hier il s'est passé XXX, je comprends, c'est ennuyeux pour telle et telle raisons, moi, tu vois, ça m'a fait me sentir XXXX. Que dirais-tu qu'on fasse XXX\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2300)
+  goto form_27_0
+
+
+// form component
+form_27_0:
+  say "Je t'assure, tu peux le faire ! Du coup, sur ce même modèle, qu'est-ce que tu pourrais dire à cette personne ? (en une longue phrase, ça donnerait quoi ?)"
+  hold
+  
+  remember _relations_interpersonnelles = event
+  
+  say Typing(2900)
+  say Question(
+    "As-tu trouvé quelque chose qui te semble faisable à dire ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je crois bien !"),
+      Button("C'est pas encore ça", payload="/_psychologie_clara___evaluer_ma_responsabilite_5c67dc3a76ccbc29ae8ff3d4"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(3300)
+  say Question(
+    "Est-ce que cela respecte ces 4 points : 
+1. respect de tes émotions 
+2. respect de tes valeurs 
+3. la personnalité de ton interlocuteurice
+4. forme positive avec des propositions d'actions/solutions (c'est le + important ça !)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui je crois bien"),
+      Button("Non...", payload="/_psychologie_clara___aide_5c67dc3a76ccbc29ae8ff3db"),
+    ],
+  )
+  hold
+  
+  goto step_33
+
+
+step_33:
+  say Typing(1800)
+  say Question(
+    "Wow, bravo dis donc ! 
+Voilà une situation dénouée avec une communication non violente et respecteuse de chacun.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci :-)", payload="/_eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Me changer les idées", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("En rester là", payload="/_fin_clara___fin5_5c67dc3a76ccbc29ae8ff1fc"),
+    ],
+  )
+  hold
+  

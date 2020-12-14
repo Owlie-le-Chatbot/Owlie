@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1e7
+start:
+  say Typing(2600)
+  say Question(
+    "D'après tes réponses, tu présentes une dépression sévère. Je vais faire de mon mieux pour t'aider mais un accompagnement psychologique est indispensable car je ne suis qu'un petit robot et ne peux pas me substituer à un vrai suivi.
+
+Es-tu suivi.e ?",
+    buttons=[
+      Button("J'ai déjà répondu", payload="/_echelles_cliniques_cfs___endphq_5c67dc3a76ccbc29ae8ff1e8"),
+    ],
+    quick_replies=[
+      Button("Oui, psychiatre"),
+      Button("Oui, psychologue"),
+      Button("Oui, les deux"),
+      Button("Médecin traitant"),
+      Button("Non, plus maintenant"),
+      Button("Non, interrompu"),
+      Button("Non, jamais été"),
+    ],
+  )
+  hold
+  
+  remember _suivipsy = event
+  goto step_2
+
+
+step_2:
+  // adding conditional redirect to flow
+  goto flow _echelles_cliniques_cfs___endphq_5c67dc3a76ccbc29ae8ff1e8

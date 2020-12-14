@@ -1,0 +1,74 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3db
+start:
+  say Question(
+    "C'est normal, c'est peut-être tout nouveau pour toi comme exercice...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+      Button("Je ne sais pas trop"),
+    ],
+  )
+  hold
+  
+  goto step_1
+
+
+step_1:
+  say Question(
+    "Quand c'est dur pour le moral, les émotions font comme un \"brouillard\", et on n'a la sensation qu'on n'a même plus l'énergie de réfléchir...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai"),
+      Button("Mmmh...."),
+      Button("Re-tenter", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Juste parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  
+  goto step_3
+
+
+step_3:
+  say Typing(2100)
+  say Question(
+    "Donc c'est difficile de remettre les pensées en marche. 
+Du coup ça donne des réponses comme : \"j'en sais rien\", \"rien\", \"je ne sais pas\".
+
+Sauf que c'est ce \"flou\" qui te maintien dans la douleur. Donc c'est pour cela que je te propose des activités qui te font écrire et préciser ta pensée. Une fois qu'on sait mieux ensemble quel est le problème, on peut mieux agir dessus pour que tu ailles mieux !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah ok !"),
+      Button("Je savais ça"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(3000)
+  say Question(
+    "Du coup, je te propose 4 solutions possibles face à ça : 
+
+1. gérer l'émotion :  faire d'abord baisser l'émotion (apaiser) pour y voir plus clair
+=> clique sur \"Émotion\"
+
+2. parler simplement en vrac de la pensée => clique sur \"Parler\"
+si vraiment c'est une méga urgence => SOS
+
+3. Te changer les idées (blogs, sites, ressources) et y revenir plus tard quand tu as changé d'air mentalement => Clique sur \"Me divertir\"
+
+3. re-tenter cette activité ou une autre. Tu peux la retrouver dans les activités => clique sur \"Activités\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Émotion", payload="/_specification_etat_cf___specemotion_5c67dc3a76ccbc29ae8ff25a"),
+      Button("Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Me divertir", payload="/_education_therapeutiqcf___ressources_inspiration_5c67dc3a76ccbc29ae8ff41e"),
+      Button("Activités", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  

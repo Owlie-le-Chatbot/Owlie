@@ -1,0 +1,15 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4cb
+start:
+  say Typing(2000)
+  say Question(
+    "Ce que tu viens d'écrire me laisse penser que tu as pu être victime d'abus sexuel(s)? 
+Est-ce le cas?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_abus_sexuel_igor___abus_confirme_5c67dc3a76ccbc29ae8ff4cc"),
+      Button("Non", payload="/_abus_sexuel_igor___abus_non_merci_5c67dc3a76ccbc29ae8ff4d0"),
+      Button("J'ai un doute", payload="/_abus_sexuel_igor___abus_doute_5c67dc3a76ccbc29ae8ff4cd"),
+    ],
+  )
+  hold
+  

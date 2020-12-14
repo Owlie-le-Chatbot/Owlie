@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1f0
+start:
+  say "Contente de te revoir 😃!"
+  say Typing(2300)
+  say Question(
+    "Comment tu te sens aujourd'hui ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("😊Très bien !", payload="/_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"),
+      Button("🙂Pas mal", payload="/_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"),
+      Button("😐Ça peut aller", payload="/_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"),
+      Button("😕Bof", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("😞Pas terrible", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("😯Je ne sais pas", payload="/_default_answers_clara___defaultanswer7_5c67dc3a76ccbc29ae8ff209"),
+    ],
+  )
+  hold
+  
+  remember _etat = event

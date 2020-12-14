@@ -1,0 +1,59 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2da
+start:
+  say Typing(2000)
+  say "Une crise c'est aussi une épreuve qui mérite récompense."
+  say Typing(3000)
+  say "Pense maintenant à la façon dont tu pourrais te remercier d'avoir surmonté ça."
+  say Typing(2000)
+  say Question(
+    "Si tu as trouvé, récompense-toi maintenant ou une fois que la crise sera passée.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ce sera fait !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+      Button("💡Pas d'idées"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2000)
+  say "Voici quelques idées pour te récompenser :"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Un chocolat chaud",
+        subtitle="ou une autre boisson chaude",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ababd091-6661-4ce3-b6ba-e4dd07d069d7.jpeg",
+      ),
+      Card(
+        title="Un bain chaud",
+        subtitle="ou une douche",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f564aef3-f4e8-4f9d-b54a-f4a80ede5c4d.jpeg",
+      ),
+      Card(
+        title="Un bon repas",
+        subtitle="au restau ou chez soi",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/90f1406d-fb5d-4030-9daf-121b1d287085.jpeg",
+      ),
+      Card(
+        title="Un bon film",
+        subtitle="au cinéma ou chez soi",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4948eceb-7eb2-480e-8028-c955ec9b97ca.jpeg",
+      ),
+      Card(
+        title="Un câlin",
+        subtitle="à un proche, un animal de compagnie ou une peluche",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d6f6e171-11c6-4114-8ef7-2a0db94fe95c.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("✔ C'est choisi !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+    ],
+  )
+  hold
+  

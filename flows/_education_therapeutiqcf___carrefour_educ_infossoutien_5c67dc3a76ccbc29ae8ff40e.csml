@@ -1,0 +1,36 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff40e
+start:
+  say Typing(2000)
+  say "Voici ce que je peux te proposer :"
+  say Typing(2700)
+  say Carousel(
+    cards=[
+      Card(
+        title="Trouver davantage d'aide auprès professionnels de santé",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5ce7400f-0a5c-43c6-a567-1d738d9d42ec.jpeg",
+        buttons=[
+          Button("Professionnels santé", payload="/_education_therapeutiqcf___ressources_medicales_5c67dc3a76ccbc29ae8ff41f"),
+        ],
+      ),
+      Card(
+        title="Devenir pleinement acteur dans sa maladie : l'empowerment",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/807f29d4-36ac-4dd2-93e4-f9a604753b05.jpeg",
+        buttons=[
+          Button("Être acteur", payload="/_education_therapeutiqcf___ressources_empowerment_5c67dc3a76ccbc29ae8ff421"),
+        ],
+      ),
+      Card(
+        title="Trouver du soutien socialement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0cccc610-fa37-4f2d-b65f-03a8e34106fe.jpeg",
+        buttons=[
+          Button("Soutien social", payload="/_education_therapeutiqcf___ressources_soutien_social_5c67dc3a76ccbc29ae8ff420"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("Menu précédent", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  

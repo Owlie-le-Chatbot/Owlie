@@ -1,0 +1,51 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3c1
+start:
+  say Typing(3100)
+  say "J'ai les sourcils qui se froncent, le nez \"qui se retrousse\", un mouvement de recul..."
+  say Typing(1900)
+  say Question(
+    "Mes lèvres se tordent et les commissures vont vers le bas...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est la peur !", payload="/_psychologie_clara___quizzemotrate_5c67dc3a76ccbc29ae8ff3bc"),
+      Button("C'est le dégoût"),
+      Button("C'est la surprise !", payload="/_psychologie_clara___quizzemotrate_5c67dc3a76ccbc29ae8ff3bc"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2600)
+  say Question(
+    "Dans le mile {{_name}} !
+Je te propose de rencontre le dégoût",
+    buttons=[
+      Url("https://www.youtube.com/watch?v=F3MI9MCXduc", text="Dégoût"),
+    ],
+  )
+  
+  say Typing(1700)
+  say Question(
+    "Poursuivons encore un peu, tu veux bien ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("☺️Oui, bien sûr !"),
+      Button("🚀Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_psychologie_clara___quizzjoie_5c67dc3a76ccbc29ae8ff3bf", "_psychologie_clara___quizzpeur_5c67dc3a76ccbc29ae8ff3c2", "_psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be", "_psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd", "_psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0"]))
+  if (rand == 0) goto flow _psychologie_clara___quizzjoie_5c67dc3a76ccbc29ae8ff3bf
+  if (rand == 1) goto flow _psychologie_clara___quizzpeur_5c67dc3a76ccbc29ae8ff3c2
+  if (rand == 2) goto flow _psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be
+  if (rand == 3) goto flow _psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd
+  if (rand == 4) goto flow _psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0

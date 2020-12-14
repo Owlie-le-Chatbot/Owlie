@@ -1,0 +1,67 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2db
+start:
+  say Typing(2000)
+  say "Tu vas commencer à te projeter dans un avenir proche, une fois que cette crise sera passée."
+  say Typing(2000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Écris la première chose que tu auras envie de faire après la crise ? 📝 "
+  hold
+  
+  remember _demain = event
+  
+  say Typing(2000)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Quelle est la première personne que tu auras envie de voir après la crise ? 📝 "
+  hold
+  
+  remember _personne = event
+  
+  say Typing(2000)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Écris une chose sympathique que tu as prévu de faire dans les jours qui suivront ? 📝 "
+  hold
+  
+  remember _chosesympa = event
+  
+  say Typing(3000)
+  say Question(
+    "Voici donc le programme des réjouissances :
+- {{_demain}}
+- {{_personne}}
+- {{_chosesympa}}",
+    button_type="quick_reply",
+    buttons=[
+      Button("☺️ Ça me va !"),
+      Button("🔄 Recommencer", payload="/_ancrage_emotionnel_igor___avenir_5c67dc3a76ccbc29ae8ff2db"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3000)
+  say Question(
+    "Concentre-toi maintenant sur ces évènements prévus. Essaye d'imaginer la manière dont ils pourraient se dérouler et comment ils te changeront les idées 😊
+
+Prends ton temps pour bien visualiser !",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+    ],
+  )
+  hold
+  

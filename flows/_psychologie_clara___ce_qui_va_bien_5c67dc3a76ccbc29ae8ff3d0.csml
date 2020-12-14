@@ -1,0 +1,65 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d0
+start:
+  say Typing(2900)
+  say "La vie n'est pas toujours facile... mais dans toute situation, même la plus sombre, il existe une part de lumière..."
+  say Typing(2600)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/52e21663-7926-42c8-8cc1-8f62fb5b4a1e.jpeg")
+  say Typing(2600)
+  say Question(
+    "Essayons d'identifier ensemble les éléments qui vont bien, tes ressources.
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, pourquoi pas..."),
+      Button("Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Plutôt autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("Parler...", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(3200)
+  goto form_8_0
+
+
+// form component
+form_8_0:
+  say "Quels sont les éléments qui vont bien ces derniers temps ? (\"rien\" n'est pas une réponse possible, il y a forcément une toute petite chose... par exemple, c'est bête, mais tu as internet et tu peux m'écrire !)"
+  hold
+  
+  remember _elements_positifs = event
+  
+  say Typing(3000)
+  goto form_10_0
+
+
+// form component
+form_10_0:
+  say "Peux-tu me citer une activité, un plaisir simple que tu fais ces derniers temps et qui t'est agréable ? (ex : me laver, regarder le ciel, écrire...)"
+  hold
+  
+  remember _activite_agreable = event
+  
+  say Typing(2900)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5f357fec-b681-4fcc-b8b5-34e497923f7b.jpeg")
+  say Typing(2900)
+  say "En voilà une que j'aime bien, moi :"
+  say Typing(2300)
+  say Question(
+    "Souhaiterais-tu en faire davantage ou préfères-tu...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je l'aimerais", payload="/_psychologie_clara___augmactivpositives_5c67dc3a76ccbc29ae8ff3b7"),
+      Button("Aborder mes valeurs", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+      Button("Penser positif", payload="/_psychologie_clara___positif_5c67dc3a76ccbc29ae8ff3e4"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  

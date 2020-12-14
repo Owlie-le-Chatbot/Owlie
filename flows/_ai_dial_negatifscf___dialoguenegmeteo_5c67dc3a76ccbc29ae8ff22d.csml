@@ -1,0 +1,70 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff22d
+start:
+  say Typing(2900)
+  say Question(
+    "Refaisons un peu le point ensemble pour que je vois comment je peux t'aider au mieux... 🤗",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+      Button("Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2400)
+  say Question(
+    "Si on fait une sorte de \"météo intérieure\"...
+Quelle est l'émotion qui ressort le plus là ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("tristesse"),
+      Button("colère"),
+      Button("culpabilité"),
+      Button("négativité"),
+      Button("fatigue"),
+      Button("neutralité"),
+      Button("apaisement"),
+      Button("contentement"),
+      Button("je ne sais pas"),
+    ],
+  )
+  hold
+  
+  remember _emotions = event
+  goto step_5
+
+
+step_5:
+  say Typing(3000)
+  say Question(
+    "C'est une bonne chose que tu puisses mettre des mots dessus ! 
+
+Cela te permet de les observer avec un peu de recul...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai..."),
+      Button("Mmmh..."),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2500)
+  say Question(
+    "Est-ce qu'il y a encore des choses qui te prennent la tête et dont tu veux qu'on parle ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😢Oui !", payload="/_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"),
+      Button("🙂Ça va...", payload="/_ai_dial_negatifscf___sortiedialogueneg_5c67dc3a76ccbc29ae8ff230"),
+    ],
+  )
+  hold
+  
+  remember _en_parler = event

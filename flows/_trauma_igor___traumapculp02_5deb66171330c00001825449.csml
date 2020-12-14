@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825449
+start:
+  say Typing(4000)
+  say Question(
+    "2. \"Ce qui est arrivé est la conséquence de ce que j’ai fait (ou de ce que je n’ai pas fait).\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Analyser", payload="/_trauma_igor___traumapculp02r_5deb66171330c0000182544a"),
+      Button("Passer", payload="/_trauma_igor___traumapculp03_5deb66171330c0000182544b"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

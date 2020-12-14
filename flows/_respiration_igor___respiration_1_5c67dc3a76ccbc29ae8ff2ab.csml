@@ -1,0 +1,11 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2ab
+start:
+  say Typing(3000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a2385b65-ab54-42d3-810a-13f2aec69b02.jpeg",
+    quick_replies=[
+      Button("✔ C'est fait !", payload="/_respiration_igor___complresp_5c67dc3a76ccbc29ae8ff2aa"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,72 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3ce
+start:
+  say Typing(3400)
+  say Question(
+    "Ok.... Je te propose de prendre du recul sur la situation en l'imaginant sous un autre angle. 
+
+Ça te dit ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Essayons..."),
+      Button("Plutôt autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("En rester là", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2200)
+  say "Imaginons donc que tu es avec un.e ami.e de confiance et que tu lui fais part à haute voix de ta pensée."
+  say Typing(2800)
+  say Question(
+    "Est-ce que tu crois que ton ami.e serait en accord avec cette pensée que tu as ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non, pas possible"),
+      Button("Peut être..."),
+      Button("Je ne sais pas"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3100)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Imaginons maintenant que la situation est inversée : c'est ton ami.e qui a cette pensée. Iel t'en fait part car cela lea peine beaucoup. Que lui dirais-tu de faire ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _comportement_alternatif = event
+  
+  say Typing(2600)
+  say "Souvent, on arrive à être bienveillant.e et de bon conseil pour les autres mais c'est plus difficile pour soi-même... 
+
+C'est pour cela que je t'ai fait faire cet exercice !"
+  say Typing(2600)
+  say Question(
+    "Je suis sûre qu'au fond de toi, tu peux être lea bon.ne ami.e pour toi-même.
+
+Que dirais-tu de mettre en pratique les conseils que tu viens de donner à ton ami.e ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, je le fais !", payload="/_fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8"),
+      Button("Comment ?", payload="/_psychologie_clara___aide_planifier_activite_5c67dc3a76ccbc29ae8ff3da"),
+      Button("Je procrastine...", payload="/_procrastination_igor___introprocrast_5c67dc3a76ccbc29ae8ff3a5"),
+      Button("Ça va pas encore...", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("En rester là !", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

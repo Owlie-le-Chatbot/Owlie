@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc075f
+start:
+  say Typing(4000)
+  say "S'affirmer consiste à chercher le juste milieu entre la passivité et l'agressivité."
+  say Typing(7000)
+  say "Il est donc essentiel de bien comprendre en quoi consisteraient des comportements passifs et agressifs lorsqu'on souhaite s'affirmer dans une situation donnée."
+  say Typing(5000)
+  say "Je vais te présenter brièvement et de façon un peu caricaturale les comportements passifs, agressifs et manipulateurs."
+  say Typing(4000)
+  say "Sache que nous nous comportons tou.tes de façon un peu passive, agressive et/ou manipulatrice."
+  say Typing(4000)
+  say "Ces comportements ne sont pas pathologiques ou problématiques en soi."
+  say Typing(5000)
+  say "Mais ils peuvent le devenir lorsqu'ils sont utilisés de façon systématique, et c'est ce que je vais essayer de t'expliquer."
+  say Typing(4000)
+  say Question(
+    "Quel type de comportement veux-tu connaitre ? 
+
+(tu pourra aussi voir les autres types de comportements plus tard si tu le souhaites !)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🙏Passif", payload="/_assertivite___assertpass_5c7e84780ecd9f746fcc0760"),
+      Button("👊Agressif", payload="/_assertivite___assertagress_5c7e84780ecd9f746fcc0761"),
+      Button("✊Affirmé", payload="/_assertivite___assertaffirm_5c7e84780ecd9f746fcc0762"),
+      Button("🤞Manipulateur", payload="/_assertivite___assertmanip_5c7e84780ecd9f746fcc0763"),
+    ],
+  )
+  hold
+  

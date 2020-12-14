@@ -1,0 +1,4 @@
+// flow built from AI Rules text target undefined
+start:
+  say "Mmmh... Je détecte quelquechose qui ne ressemble pas à un mot ou une phrase... Je fais de mon mieux pour te comprendre, et comme je ne suis pas face à toi, je te demande souvent de préciser ton émotion. Pour que je ne raconte pas n'importe quoi, il vaut mieux ne pas être illogique ou contradictoire avec moi... Et pour te faire une confidence, comme je suis une intelligence artificielle, je ne comprends pas très bien l'ironie des humains, ahahah 😉"
+  goto end

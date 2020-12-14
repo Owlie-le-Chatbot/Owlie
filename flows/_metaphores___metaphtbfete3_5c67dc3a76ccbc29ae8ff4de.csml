@@ -1,0 +1,22 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4de
+start:
+  say Typing(4000)
+  say "Tu décides donc de le laisser entrer, d'accepter les inconvénients liés à sa présence afin de mieux profiter de ta soirée, même si cela change tes plans."
+  say Typing(4000)
+  say "Tu laisses donc rentrer le trouble-fête à ta soirée pour son plus grand plaisir."
+  say Typing(6000)
+  say "Il se révèle rapidement aussi lourdingue que tu le craignais, monopolisant quelques conversations et formulant quelques critiques malvenues."
+  say Typing(6000)
+  say "Cependant, tu parviens tout de même à profiter de cette soirée avec tes invité.e.s, même bien davantage que si tu avais continué à lui barrer le passage."
+  say Typing(6000)
+  say "Le trouble-fête finit même par quitter assez rapidement ta soirée, probablement contrarié par le manque d’attention qui lui est consacré."
+  say Typing(4000)
+  say Question(
+    "Ceci te permet de profiter enfin pleinement de cet évènement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D’accord", payload="/_metaphores___metaphtbfete4_5c67dc3a76ccbc29ae8ff4df"),
+    ],
+  )
+  hold
+  

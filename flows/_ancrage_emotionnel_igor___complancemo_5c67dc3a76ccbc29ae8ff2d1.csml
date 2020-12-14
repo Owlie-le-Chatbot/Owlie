@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d1
+start:
+  say Typing(2000)
+  say Question(
+    "Super 👍🏻
+Tu as complété ce niveau 😃!
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🔄 Un autre !", payload="/_ancrage_emotionnel_igor___listancemo_5c67dc3a76ccbc29ae8ff2d0"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("📍Faire le point", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("✍️Donner mon avis", payload="/_feedbacks_clara___randomavis_5c67dc3a76ccbc29ae8ff243"),
+    ],
+  )
+  hold
+  

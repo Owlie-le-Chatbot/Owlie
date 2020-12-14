@@ -1,0 +1,43 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2e6
+start:
+  say Typing(2600)
+  say Question(
+    "Deux ouvriers vont travailler sur la Tour Eiffel. 
+Soudain, ils s'aperçoivent qu'ils ont oublié leur mètre. 
+
+À quelle hauteur sont-ils? 
+
+Ils sont à 200 mètres (à deux sans mètre) ! 
+😂",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ahahaha !"),
+      Button("Pfff...!"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2500)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/199119e9-9f94-44bb-9a96-720d7cf440cd.jpeg",
+    quick_replies=[
+      Button("😉Ça me suffit !", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("🔄Encore !"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_blagues_clara___blague4_5c67dc3a76ccbc29ae8ff2e7", "_blagues_clara___rirebebe_5c67dc3a76ccbc29ae8ff2e8", "_blagues_clara___blague1_5c67dc3a76ccbc29ae8ff2e4", "_blagues_clara___blague2_5c67dc3a76ccbc29ae8ff2e5"]))
+  if (rand == 0) goto flow _blagues_clara___blague4_5c67dc3a76ccbc29ae8ff2e7
+  if (rand == 1) goto flow _blagues_clara___rirebebe_5c67dc3a76ccbc29ae8ff2e8
+  if (rand == 2) goto flow _blagues_clara___blague1_5c67dc3a76ccbc29ae8ff2e4
+  if (rand == 3) goto flow _blagues_clara___blague2_5c67dc3a76ccbc29ae8ff2e5

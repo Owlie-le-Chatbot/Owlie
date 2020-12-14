@@ -1,0 +1,149 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2c5
+start:
+  say Typing(2000)
+  say "Concentre-toi sur le contact entre ton corps et tes habits 👕"
+  say Typing(2000)
+  say Question(
+    "Si nécessaire, bouge très légèrement afin de mieux les ressentir.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+      Button("🔙Arrêter", payload="/_ancrage_physique_igor___listancphy_5c67dc3a76ccbc29ae8ff2c2"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Sens le poids de tes habits. 
+
+Sens leur consistance.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(2000)
+  say Question(
+    "Sens la chaleur qu’ils te permettent de conserver.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(2000)
+  say Question(
+    "Sens la différence avec les endroits de ton corps qui ne sont pas en contact avec tes vêtements.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(2000)
+  say Question(
+    "Ok, assis-toi maintenant s'il te plait 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C’est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(2000)
+  say Question(
+    "Sens le contact de ton corps avec la chaise, ou ce sur quoi tu es assis.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(2000)
+  say Question(
+    "Sens le poids que tu exerces sur cette chaise, ou ce sur quoi tu es assis.e.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(2000)
+  say Question(
+    "Lève-toi maintenant s'il te plait 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C’est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(2000)
+  say Question(
+    "Sens le contact entre tes pieds et le sol.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(2000)
+  say Question(
+    "Sens le poids qu’exerce ton corps à travers tes pieds.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  // adding conditional redirect to flow
+  goto flow _ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3

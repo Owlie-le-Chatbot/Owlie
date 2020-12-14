@@ -1,0 +1,33 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff40a
+start:
+  say Typing(3200)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/52a2c334-08e8-4223-a1f2-216075a8245c.jpeg")
+  say Question(
+    "Pour se sentir bien au quotidien et être au meilleur de soi-même, voici des éléments qui peuvent aider.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, dis-m'en plus..."),
+      Button("Toutes les activités", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_3
+
+
+step_3:
+  say Typing(3200)
+  say "Ce sont des éléments sur lesquels tu peux agir concrètement en te documentant et en faisant quelques petits aménagements dans ta vie !"
+  say Typing(2300)
+  say Question(
+    "Quel domaine souhaites-tu explorer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Prendre soin de soi", payload="/_education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c"),
+      Button("Me comprendre", payload="/_education_therapeutiqcf___carrefour_educ_th_fonctmt_humain_5c67dc3a76ccbc29ae8ff40d"),
+      Button("Infos santé/soutien", payload="/_education_therapeutiqcf___carrefour_educ_infossoutien_5c67dc3a76ccbc29ae8ff40e"),
+      Button("Propose, toi !", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  

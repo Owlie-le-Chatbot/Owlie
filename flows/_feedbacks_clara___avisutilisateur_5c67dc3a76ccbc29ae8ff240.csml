@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff240
+start:
+  say Typing(2900)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Je suis ravie de pouvoir avoir ton avis, dis-moi ce que tu penses ! (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _feedback = event
+  
+  say Typing(4000)
+  say "Ok, bien reçu !"
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

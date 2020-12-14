@@ -1,0 +1,26 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff266
+start:
+  say Typing(2900)
+  say Question(
+    "Qu'est-ce qui te tente à présent ?
+
+(😊fais défiler les boutons ↔️)",
+    buttons=[
+      Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+    ],
+    quick_replies=[
+      Button("🌟Penser positif", payload="/_psychologie_clara___positif_5c67dc3a76ccbc29ae8ff3e4"),
+      Button("💛Mes valeurs", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+      Button("🎲Un jeu", payload="/_menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274"),
+      Button("🤾‍♀️Me bouger", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+      Button("🧘‍♂️Stretch/détente", payload="/_psychologie_clara___stretch_5c67dc3a76ccbc29ae8ff3c5"),
+      Button("⛵️Activités ", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("🏖Changer les idées", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🌈Propose un truc !", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🔙Sortir", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+    ],
+  )
+  hold
+  

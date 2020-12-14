@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff422
+start:
+  say Typing(2700)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Ok {{_name}}, qui souhaiterais-tu appeler ?"
+  hold
+  
+  remember _ami_a_appeler = event
+  
+  say Typing(2100)
+  say "Excellente idée !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/12b01601-0fef-411d-97ba-d358582cfd9a.jpeg")
+  say Typing(2700)
+  say Question(
+    "Je t'invite à composer son numéro maintenant :-)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !", payload="/_fin_clara___fin3_5c67dc3a76ccbc29ae8ff1fa"),
+      Button("Module de crise", payload="/_choix_clara___empathiepremenucrise_5c67dc3a76ccbc29ae8ff268"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Plus tard", payload="/_reprogrammer_clara___reprogrammer1_5c67dc3a76ccbc29ae8ff24e"),
+    ],
+  )
+  hold
+  

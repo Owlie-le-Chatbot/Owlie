@@ -1,0 +1,28 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e9
+start:
+  say Typing(4000)
+  say "Ta voile est toujours hissée et ton embarcation malmenée par la tempête."
+  say Typing(4000)
+  say "Tu navigues en direction du port mais à plusieurs reprises, tu manques de chavirer."
+  say Typing(4000)
+  say "Ta voile est déjà légèrement déchirée, le mat se fissure davantage à chaque coup de vent."
+  say Typing(3000)
+  say "Tu perds progressivement le contrôle de ton navire."
+  say Typing(4000)
+  say "La prochaine vague ou la prochaine bourrasque pourraient t'être fatales."
+  say Typing(3000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("⛵Tendre la voile", payload="/_metaphores___metaphlavoile2_5c67dc3a76ccbc29ae8ff4e9"),
+      Button("✋Lâcher la voile", payload="/_metaphores___metaphlavoile3_5c67dc3a76ccbc29ae8ff4ea"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(4000)

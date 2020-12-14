@@ -1,0 +1,71 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182544c
+start:
+  say Typing(3000)
+  say Question(
+    "Il s'agit d'une \"illusion de contrôle\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est quoi ?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(8000)
+  say Question(
+    "C'est un biais qui conduit souvent à surestimer notre influence sur l’environnement! Et y compris lorsqu’il s’agit d’évènements aléatoires ou pour lesquels d’autres influences sont bien supérieures à la nôtre.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Et alors ?"),
+      Button("👍"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(5000)
+  say Question(
+    "Surestimer son rôle conduit logiquement à surestimer à tort sa responsabilité pour un évènement qui tient davantage de celle d’un agresseur ou du hasard.",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante ➡️", payload="/_trauma_igor___traumapculp04_5deb66171330c0000182544d"),
+      Button("Développe stp..."),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(6000)
+  say "L'impression de maitriser ce qui t'entoure est généralement apaisante, c'est pourquoi tu as habitué ton cerveau à te donner ce sentiment."
+  say Typing(7000)
+  say "Mais dans certains cas, notamment si tu as subi un traumatisme, cette illusion de contrôle peut faire mal, très mal, en te donnant la fausse impression que tu maitrisais les évènements...
+
+Tu ne pouvais pas les maitriser!"
+  say Typing(1500)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp04_5deb66171330c0000182544d"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

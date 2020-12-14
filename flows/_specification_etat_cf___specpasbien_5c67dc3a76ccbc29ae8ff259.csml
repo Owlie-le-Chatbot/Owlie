@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff259
+start:
+  say "D'accord {{_name}}, nous allons faire face ensemble 🤗"
+  say Typing(1800)
+  say Question(
+    "Tu ne te sens pas bien...",
+    button_type="quick_reply",
+    buttons=[
+      Button("❤️émotionnellement", payload="/_specification_etat_cf___specemotion_5c67dc3a76ccbc29ae8ff25a"),
+      Button("🧘‍♂️physiquement/st", payload="/_specification_etat_cf___specphysique_5c67dc3a76ccbc29ae8ff25b"),
+      Button("🤯dans ma tête", payload="/_specification_etat_cf___speccog_5c67dc3a76ccbc29ae8ff25d"),
+      Button("🤔c'est mélangé...", payload="/_specification_etat_cf___specjsp_5c67dc3a76ccbc29ae8ff25c"),
+    ],
+  )
+  hold
+  

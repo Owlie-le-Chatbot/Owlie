@@ -1,0 +1,64 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2c8
+start:
+  say Typing(2000)
+  say Question(
+    "Cherche maintenant un objet de petite taille que tu peux tenir dans ta main.
+N'importe quoi 😉",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Je l'ai trouvé"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  say Question(
+    "Garde-le dans ta main et manipule-le sans le regarder.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(2000)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Quelle est sa forme?"
+  hold
+  
+  remember _forme_2 = event
+  
+  goto form_7_1
+
+
+// form component
+form_7_1:
+  say "Quelle est sa consistance?"
+  hold
+  
+  remember _consistance_2 = event
+  
+  goto form_7_2
+
+
+// form component
+form_7_2:
+  say "Comment pourrais-tu le décrire davantage ?"
+  hold
+  
+  remember _objet_2 = event
+  
+  // adding conditional redirect to flow
+  goto flow _ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3

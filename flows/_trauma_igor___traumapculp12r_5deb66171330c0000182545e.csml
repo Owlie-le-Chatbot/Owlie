@@ -1,0 +1,68 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182545e
+start:
+  say Typing(7000)
+  say Question(
+    "Lorsque l’intégralité des options disponibles ne peuvent qu’aboutir à des mauvais résultats, ce n’est pas le caractère négatif des conséquences qui dicte nos choix.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est quoi alors ?"),
+      Button("👍"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "C'est ce que l’on peut imaginer comme étant les moins pires de ces conséquences",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est à dire ?"),
+      Button("👍"),
+      Button("Moins pires ? 🙈"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(6000)
+  say Question(
+    "Il s’agit d’un choix moral, comme celui du soldat qui doit tuer ou être tué, ou celui d’une victime qui craint d’aggraver la situation en parlant.",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Je comprends pas..."),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap!", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say "Lorsque la situation est critique, il y a rarement une bonne et une mauvaise solution."
+  say Typing(5000)
+  say "Lorsque toutes les solutions nous paraissent mauvaises, on cherche à limiter la casse, à choisir la moins pire."
+  say Typing(1600)
+  say Question(
+    "On a fini d'analyser cette pensée et ce module. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap!", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

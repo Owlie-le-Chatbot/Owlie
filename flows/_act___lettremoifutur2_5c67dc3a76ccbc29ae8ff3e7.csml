@@ -1,0 +1,25 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3e7
+start:
+  say Typing(2800)
+  say Question(
+    "Voici ce que tu souhaites pour toi dans 10 ans : 
+
+1. {{_personnel}}
+
+
+2. {{_projets}}
+
+
+3. {{_relations}}
+
+
+Et surtout...
+4. {{_lachose}}",
+    button_type="quick_reply",
+    buttons=[
+      Button("🔄 Recommencer !", payload="/_act___lettremoifutur1_5c67dc3a76ccbc29ae8ff3e6"),
+      Button("✔ Ok", payload="/_act___lettremoifutur3_5c67dc3a76ccbc29ae8ff3e8"),
+    ],
+  )
+  hold
+  

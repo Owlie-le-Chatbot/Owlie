@@ -1,0 +1,71 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff321
+start:
+  say Typing(2000)
+  say "C'est tout noir ou tout blanc !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/90f93e1d-dc7c-4b75-b23f-d76ddbeb8e75.jpeg")
+  say Question(
+    "La pensée en tout ou rien consiste à se baser sur une opposition entre deux extrêmes sans prendre en compte les nuances.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("😉Ça me suffit !", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"Si tu n’es pas avec moi, tu es contre moi\""
+  say Typing(2000)
+  say "\"J’ai fait un écart, ça ne vaut plus la peine de continuer le régime\""
+  say Typing(2000)
+  say Question(
+    "\"L’employeureuse ne m’a pas recruté.E, je ne suis pas fait.e pour ce boulot\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(3000)
+  say "La plupart du temps, si tu poses un problème sans prendre en compte le fait que la réalité n'est ni toute blanche, ni toute noire, ce problème devient un faux problème."
+  say Typing(3000)
+  say "Et un faux problème ne peut pas avoir de bonnes solutions. Si tu n'attends pas avant d'agir, tu risques de le regretter."
+  say Typing(3000)
+  say "1. Identifie et désigne les deux catégories ou les deux extrêmes que tu es en train d'opposer. 
+Imagine-les comme les deux extrêmes d'un thermomètre."
+  say Typing(3000)
+  say Question(
+    "2. Identifie et désigne le plus possible de catégories (graduations) intermédiaires sans forcément chercher un juste milieu, et sans forcément y chercher une solution immédiate.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌🏻Ok"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Question(
+    "Veux-tu continuer l'analyse de ta pensée douloureuse ou commencer les exercices d'assouplissement de pensée?",
+    buttons=[
+      Button("Continuer", payload="/_analyse_rationelle_igor___2filtment_5c67dc3a76ccbc29ae8ff315"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  

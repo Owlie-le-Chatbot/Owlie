@@ -1,0 +1,75 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825452
+start:
+  say Typing(3000)
+  say Question(
+    "Tu cèdes au biais des historiens.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est quoi ?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(6000)
+  say Question(
+    "Ça consiste à évaluer après coup une décision en fonction de ses résultats, et non d’après ce qui nous a conduit à la prendre dans le passé.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Et alors ?"),
+      Button("👍"),
+      Button("Ah ?"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(5000)
+  say "Une décision peut s’apprécier de façon fiable seulement si on se base sur le contexte du moment où elle a été prise."
+  say Typing(4000)
+  say Question(
+    "Et sans tenir compte des informations que recueillies depuis.",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("👍"),
+      Button("Je comprends pas..."),
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp07_5deb66171330c00001825453"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap!", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say "Pas de soucis ! Prenons un exemple : si tu n'as pas parlé de ce que tu as subi \"au moment\" des faits..."
+  say Typing(3000)
+  say "Ce n'est pas à cause de ce qui s'est passé \"depuis\"."
+  say Typing(4000)
+  say "Pour le comprendre, il faut se resituer \"à ta place\" et \"au moment\" des faits."
+  say Typing(1800)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante", payload="/_trauma_igor___traumapculp07_5deb66171330c00001825453"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap !", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

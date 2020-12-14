@@ -1,0 +1,108 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc077c
+start:
+  say Typing(4000)
+  say "Voici l'exemple d'une critique vague ☁️formulée par un.e collègue de travail."
+  say Typing(3000)
+  say Question(
+    "Critique ☁️: \"Vous nous prévenez toujours à la dernière minute!\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(6000)
+  say Question(
+    "Réponse : \"Ça m'ennuie que vous soyez contrarié.e (empathie) mais pourriez-vous préciser vos propos?\". (demande de précision)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say Question(
+    "Critique (2) ☁️: \"Je n'aime pas trop vos méthodes c'est tout.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(5000)
+  say Question(
+    "Réponse : \"Vous souhaiteriez être prévenu.e plus tôt des réunions? C'est bien ça?\". (reformulation)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(5000)
+  say Question(
+    "Critique (3) ☁️: \"J'aimerais surtout qu'on fasse un peu preuve de considération les un.e.s envers les autres.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(8000)
+  say Question(
+    "Réponse : \"J'ai bien compris que vous souhaitiez être prévenu.e plus tôt des réunions. Y a-t-il autre chose qui vous déplait dans ma façon de travailler?\" (question ouverte sur les faits/sentiments)",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule stp !"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e8c32755-89ff-4b03-b42a-0f557dcc12f9.jpeg",
+    quick_replies=[
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("🔍Autres exemples?", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,24 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff379
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Quelle est ta deuxième solution ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _solution2 = event
+  
+  say Typing(2000)
+  say Question(
+    "Ta deuxième solution est-elle : {{_solution2}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_resolution_de_problemeit___recap_5c67dc3a76ccbc29ae8ff376"),
+      Button("Reformuler", payload="/_resolution_de_problemeit___modif2_5c67dc3a76ccbc29ae8ff379"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d1
+start:
+  say Typing(2900)
+  say Question(
+    "C'est une bonne idée de vouloir reconnaître les pièges,
+les situations dans lesquelles tu (re)tombes souvent.
+
+Je te propose de comprendre ensemble comme une situation se reproduit et se maintient => \"Comprendre\"
+
+ou d'analyser une situation que tu as en tête => \"Analyser\"",
+    buttons=[
+      Button("Comprendre", payload="/_education_therapeutiqcf___fonctionnement_evitement_5c67dc3a76ccbc29ae8ff41d"),
+      Button("Analyser", payload="/_psychologie_clara___analyse_de_situation_1_5c67dc3a76ccbc29ae8ff3d2"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+    ],
+  )
+  

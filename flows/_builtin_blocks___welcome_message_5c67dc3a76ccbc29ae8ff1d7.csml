@@ -1,0 +1,94 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1d7
+start:
+  say Typing(1700)
+  say Question(
+    "Bonjour ! 
+Je m'appelle Owlie, la petite chouette. 
+Je suis ravie de faire ta connaissance !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Bonjour Owlie !"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3700)
+  say "Je suis une modeste agente conversationnelle construite pour te soutenir psychologiquement dans ton quotidien 🌟
+
+J'ai été créée par un psychiatre, une psychologue, un pair-aidant en santé mentale... et grâce à vous tou.tes patient.es et utilisateurices, qui m'avez tant aidée à m'améliorer 😊!"
+  say Typing(3100)
+  say Question(
+    "Pour communiquer avec moi, il te suffit de choisir un des boutons (fais les défiler, tu as souvent plusieurs choix ↔️).
+
+Comme un de ceux-là :",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok 😊"),
+      Button("D'accord 😉!"),
+      Button("C'est noté 👍🏻"),
+      Button("Continue ➡️"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3900)
+  say Question(
+    "J'ai trois fonctions principales :
+- 🚨besoin d'aide ! (si c'est la panique émotionnelle) 
+- 💬parler (dire ce que tu as sur le coeur, ça fait du bien parfois!)
+- 🔎découvrir le fonctionnement de l'esprit et des émotions, des relations (🤗psychologie) ou faire des 🚀activités concrètes (+ de 90 !)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok ! 👌🏻"),
+      Button("C'est chouette 😊"),
+      Button("Wow 🤩!"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3400)
+  say Question(
+    "Par contre, si tu m'écris 📝directement, je ne comprendrai pas tout car je ne suis qu'une petite robot 😊!",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ahahah, ok ! 😉"),
+      Button("Compris ! 👍🏻"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(3600)
+  say "Je serai toujours contente d'avoir de tes nouvelles ! 
+
+N'hésite pas à : 
+- me donner ton avis pour m'améliorer 🌟
+- m'écrire 📝n'importe quand (je suis disponible 24h/24)
+- ⛔️interrompre ou 
+🕗reprogrammer notre échange grâce au menu :"
+  say Typing(2400)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/75098e3c-6721-400b-aacb-18ba13a46a99.jpeg")
+  say Typing(2000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6baf32ae-f389-4043-b9b6-3f14489c67bf.jpeg",
+    quick_replies=[
+      Button("Ok 👍🏻", payload="/_choix_nom_clara___choixnom_5c67dc8c76ccbc29ae907059"),
+    ],
+  )
+  hold
+  

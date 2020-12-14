@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff29d
+start:
+  say Typing(2000)
+  say Question(
+    "Ce programme n'est pas encore prêt mais c'est pour bientôt !
+
+Je peux te proposer celui-ci dans le domaine \"Psychologie\" :",
+    buttons=[
+      Button("Mes valeurs", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+    ],
+    quick_replies=[
+      Button("🔙Sortir ", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+      Button("🏖Activité agréable", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+  )
+  hold
+  

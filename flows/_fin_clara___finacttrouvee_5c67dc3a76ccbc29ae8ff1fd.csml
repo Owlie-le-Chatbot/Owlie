@@ -1,0 +1,31 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1fd
+start:
+  say Typing(2700)
+  say "Je suis contente que tu aies trouvé comment te faire du bien ! 
+C'est vraiment chouette 😉..."
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/146bc2e3-70cb-4b9d-b002-ddd17b705e6c.jpeg",
+    quick_replies=[
+      Button("Oui 😉 "),
+      Button("🔃Propose autre chos", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  remember _actiontrouvee = event
+  goto step_3
+
+
+step_3:
+  say Typing(3300)
+  say Question(
+    "Profite bien 😊
+
+Et si tu as besoin de moi de nouveau, n'hésite pas, c'est toujours un plaisir !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci !"),
+    ],
+  )
+  hold
+  

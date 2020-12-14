@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1d8
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_default_answers_clara___defaultanswer1_5c67dc3a76ccbc29ae8ff203", "_default_answers_clara___defaultanswer2_5c67dc3a76ccbc29ae8ff204", "_default_answers_clara___defaultanswer3_5c67dc3a76ccbc29ae8ff205", "_default_answers_clara___defaultanswer4_5c67dc3a76ccbc29ae8ff206", "_default_answers_clara___defaultanswer5_5c67dc3a76ccbc29ae8ff207", "_default_answers_clara___defaultanswer6_5c67dc3a76ccbc29ae8ff208", "_default_answers_clara___defaultanswer7_5c67dc3a76ccbc29ae8ff209", "_default_answers_clara___defaultanswer8_5c67dc3a76ccbc29ae8ff20a", "_default_answers_clara___defaultanswer11_5c67dc3a76ccbc29ae8ff20d", "_default_answers_clara___defaultanswer12_5c67dc3a76ccbc29ae8ff20e", "_default_answers_clara___defaultanswer13_5c67dc3a76ccbc29ae8ff20f", "_default_answers_clara___defaultanswer14_5c67dc3a76ccbc29ae8ff210"]))
+  if (rand == 0) goto flow _default_answers_clara___defaultanswer1_5c67dc3a76ccbc29ae8ff203
+  if (rand == 1) goto flow _default_answers_clara___defaultanswer2_5c67dc3a76ccbc29ae8ff204
+  if (rand == 2) goto flow _default_answers_clara___defaultanswer3_5c67dc3a76ccbc29ae8ff205
+  if (rand == 3) goto flow _default_answers_clara___defaultanswer4_5c67dc3a76ccbc29ae8ff206
+  if (rand == 4) goto flow _default_answers_clara___defaultanswer5_5c67dc3a76ccbc29ae8ff207
+  if (rand == 5) goto flow _default_answers_clara___defaultanswer6_5c67dc3a76ccbc29ae8ff208
+  if (rand == 6) goto flow _default_answers_clara___defaultanswer7_5c67dc3a76ccbc29ae8ff209
+  if (rand == 7) goto flow _default_answers_clara___defaultanswer8_5c67dc3a76ccbc29ae8ff20a
+  if (rand == 8) goto flow _default_answers_clara___defaultanswer11_5c67dc3a76ccbc29ae8ff20d
+  if (rand == 9) goto flow _default_answers_clara___defaultanswer12_5c67dc3a76ccbc29ae8ff20e
+  if (rand == 10) goto flow _default_answers_clara___defaultanswer13_5c67dc3a76ccbc29ae8ff20f
+  if (rand == 11) goto flow _default_answers_clara___defaultanswer14_5c67dc3a76ccbc29ae8ff210

@@ -1,0 +1,81 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a6
+start:
+  say Typing(3000)
+  say "Voici quelques suggestions :
+
+(fais défiler les images ↔️)"
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Kaleidoscope",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5816b2d9-d1d8-4b30-a690-647fc588d903.jpeg",
+        buttons=[
+          Url("https://youtu.be/rVKRRzaf21U", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Satisfaction",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4e92076e-b73b-4338-b786-dda9dced1241.jpeg",
+        buttons=[
+          Url("https://youtu.be/udm0umBnTsw", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Peinture",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e7f86d06-3eea-46d7-bcbc-d4d9bbaecad6.jpeg",
+        buttons=[
+          Url("https://youtu.be/lLWEXRAnQd0", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Tours de cartes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/423c8f94-4473-44ad-bb5e-885956314428.jpeg",
+        buttons=[
+          Url("https://youtu.be/VMdfFWAAJ10", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Illusions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e5dd9eaf-5e33-4b03-9f0f-a27957837ede.jpeg",
+        buttons=[
+          Url("https://youtu.be/hrpSG8M3Bis", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Calligraphie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/aef96fa0-eebb-46b5-b576-2a0e6ba701d7.jpeg",
+        buttons=[
+          Url("https://youtu.be/Aq9uF6-Q4gU", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Bougie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e8814b02-2066-4d9e-8508-0aef6eddbd7d.jpeg",
+        buttons=[
+          Url("https://youtu.be/XrDUTpeGW0A", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Feu de cheminée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8147a48e-b460-49e1-bc76-52cb5c63cd01.jpeg",
+        buttons=[
+          Url("https://youtu.be/ZY3J3Y_OU0w", text="Vidéo"),
+        ],
+      ),
+      Card(
+        title="Aquarium",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3156711d-7d4c-44e3-b670-18631d7036e4.jpeg",
+        buttons=[
+          Url("https://youtu.be/dVkK36KOcqs", text="Vidéo"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

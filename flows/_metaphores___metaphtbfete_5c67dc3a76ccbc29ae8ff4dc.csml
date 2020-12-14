@@ -1,0 +1,31 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4dc
+start:
+  say Typing(3000)
+  say "Imagine-toi à ta soirée d'anniversaire."
+  say Typing(3500)
+  say "Tu es chez toi, en bonne compagnie, et tu te prépares à passer une excellente soirée."
+  say Typing(2000)
+  say "Mais..."
+  say Typing(3000)
+  say "Un touble fête a décidé de s'inviter chez toi pour profiter de la soirée."
+  say Typing(3000)
+  say "Personne n'a envie de le voir venir mais il est là et sonne à la porte."
+  say Typing(3500)
+  say "Tu décides de ne pas le laisser rentrer, mais il se montre maintenant à la fenêtre et te fait signe de le laisser venir."
+  say Typing(4000)
+  say "Tu fermes les rideaux mais tu l'entends toujours te supplier. Il se met à t'appeler au téléphone, à t'envoyer des textos, et continue à sonner à la porte."
+  say Typing(3500)
+  say "Cela fait maintenant une bonne demi-heure que tu consacres ton temps et ton énergie à le maintenir à l'écart."
+  say Typing(3000)
+  say "En continuant comme ça, tu ne pourras pas profiter de ta soirée d'anniversaire."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤝Le laisser rentrer", payload="/_metaphores___metaphtbfete3_5c67dc3a76ccbc29ae8ff4de"),
+      Button("🖐️Refuser, résister", payload="/_metaphores___metaphtbfete2_5c67dc3a76ccbc29ae8ff4dd"),
+    ],
+  )
+  hold
+  

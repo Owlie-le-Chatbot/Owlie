@@ -1,0 +1,53 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2ca
+start:
+  say Typing(2000)
+  say Question(
+    "Si tu ne l'es pas déjà, lève-toi s'il te plait 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  say "Tu vas maintenant marcher lentement et porter attention sur chacun de tes pas."
+  say Typing(3500)
+  say Question(
+    "Si tu ne disposes pas d'assez d'espace, tu peux marcher en rond ou même marcher sur place.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Ok"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3000)
+  say "Va-y.
+Marche lentement et sens bien chacun de tes pas sur le sol. 
+
+Ressens le contact de tes pieds sur le sol et le poids qui s'applique."
+  say Typing(2000)
+  say Question(
+    "Tu peux également marquer chaque pas d'une parole : \"droite\", gauche\", \"droite\" etc.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  // adding conditional redirect to flow
+  goto flow _ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3

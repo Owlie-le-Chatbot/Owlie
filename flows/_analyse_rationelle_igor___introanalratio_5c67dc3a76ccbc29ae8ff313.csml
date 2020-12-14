@@ -1,0 +1,8 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff313
+start:
+  say Typing(2000)
+  say "Je vais essayer d'évaluer avec toi à quel point cette pensée est rationnelle."
+  say Typing(2000)
+  say "Commençons par quelques questions."
+  // adding conditional redirect to flow
+  goto flow _analyse_rationelle_igor___1toutrien_5c67dc3a76ccbc29ae8ff314

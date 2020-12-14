@@ -1,0 +1,131 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0763
+start:
+  say Typing(4000)
+  say "Voici les principales caractéristiques du comportement manipulateur 🤞."
+  say Typing(5000)
+  say Question(
+    "Il consiste à chercher à obtenir ce que l'on désire par des moyens détournés et pas toujours très honnêtes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Eurf"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(7000)
+  say Question(
+    "Parmi ces moyens, il y a le mensonge, la dissimulation ou les faux-prétextes, le chantage, l'intimidation ou la menace, parfois voilée mais également les reproches ou l'ironie...",
+    button_type="quick_reply",
+    buttons=[
+      Button("D'ac"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(5000)
+  say Question(
+    "Ce type de comportement permet souvent d'obtenir ce que l'on veut à court terme, mais...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Mais ?"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(6000)
+  say Question(
+    "À trop sombrer dans la manipulation, on peut finir par se sentir coupable, par s'inquiéter d'être découvert.e, et donc par craindre d'éventuelles représailles.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pas faux..."),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(5000)
+  say Question(
+    "Par la suite, ce type de comportement entraine la méfiance, le rejet ou la fuite des gens qui la subissent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oups"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(5000)
+  say Question(
+    "Se livrer régulièrement à des comportements manipulateurs ne permet pas d'avoir des relations saines et durables.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oh..."),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "Ni d'améliorer la dépression, l'anxiété, sa confiance ou son estime de soi.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍J'ai compris !"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Question(
+    "Quel autre type de comportement souhaites-tu explorer ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapituler"),
+      Button("🙏Passif", payload="/_assertivite___assertpass_5c7e84780ecd9f746fcc0760"),
+      Button("👊Agressif", payload="/_assertivite___assertagress_5c7e84780ecd9f746fcc0761"),
+      Button("✊Affirmé", payload="/_assertivite___assertaffirm_5c7e84780ecd9f746fcc0762"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_24
+
+
+step_24:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/78fb4449-a7f2-46e1-9143-d48c1d78707d.jpeg",
+    quick_replies=[
+      Button("🙏Passif", payload="/_assertivite___assertpass_5c7e84780ecd9f746fcc0760"),
+      Button("👊Agressif", payload="/_assertivite___assertagress_5c7e84780ecd9f746fcc0761"),
+      Button("✊Affirmé", payload="/_assertivite___assertaffirm_5c7e84780ecd9f746fcc0762"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

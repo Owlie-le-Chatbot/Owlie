@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2a9
+start:
+  say Typing(3000)
+  say Question(
+    "Tu vas maintenant respirer lentement pendant quelques minutes 💨",
+    button_type="quick_reply",
+    buttons=[
+      Button("🌬C'est parti !"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_respiration_igor___respiration_1_5c67dc3a76ccbc29ae8ff2ab", "_respiration_igor___respiration_2_5c67dc3a76ccbc29ae8ff2ac"]))
+  if (rand == 0) goto flow _respiration_igor___respiration_1_5c67dc3a76ccbc29ae8ff2ab
+  if (rand == 1) goto flow _respiration_igor___respiration_2_5c67dc3a76ccbc29ae8ff2ac

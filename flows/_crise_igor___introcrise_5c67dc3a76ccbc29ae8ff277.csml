@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff277
+start:
+  say Typing(3000)
+  say Question(
+    "Une crise, ça fait mal 😰...
+...mais n'oublie pas que ça finit toujours par passer !",
+    buttons=[
+      Button("🤗Réconfort", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+  )
+  
+  say Typing(3000)
+  say "Je peux t'entrainer à la gérer si tu suis bien mes conseils 😊"
+  say Typing(2000)
+  say "Pour cela, je te propose maintenant de choisir une technique :"
+  // adding conditional redirect to flow
+  goto flow _crise_igor___menucrise_5c67dc3a76ccbc29ae8ff278

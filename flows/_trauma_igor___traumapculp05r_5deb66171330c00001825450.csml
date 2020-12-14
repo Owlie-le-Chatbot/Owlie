@@ -1,0 +1,87 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825450
+start:
+  say Typing(5000)
+  say Question(
+    "Dans les situations de stress intense, le cerveau se met en mode automatique, en mode survie.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est à dire ?"),
+      Button("👍"),
+      Button("Ah ?"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say Question(
+    "C’est sa partie la plus primitive qui prend les commandes et qui choisit pour nous la réponse combat-fuite.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Pourquoi ?"),
+      Button("Combat-fuite?"),
+      Button("👍"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(5000)
+  say Question(
+    "Pour réagir très vite! Il s’agit d’une réaction ancestrale qui vise à nous préparer à combattre, à fuir ou à nous figer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Et alors ?"),
+      Button("👍"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(5000)
+  say Question(
+    "Et alors ces réflexes prennent totalement le pas sur notre volonté, et sur notre capacité à choisir.",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante ➡️", payload="/_trauma_igor___traumapculp06_5deb66171330c00001825451"),
+      Button("Je comprends pas"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(5000)
+  say "Quand tu es soumis.e à quelque chose de très stressant, par exemple qui menace ta vie, tu ne peux plus décider de ce que tu fais."
+  say Typing(3000)
+  say "C'est ton cerveau qui choisit à ta place. C'est un réflexe de survie. Il est donc fréquent de se retrouver paralysé.e notamment."
+  say Typing(1700)
+  say Question(
+    "On a fini d'analyser cette pensée. Que souhaites-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("SOS 🚨", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Pensée suivante ➡️", payload="/_trauma_igor___traumapculp06_5deb66171330c00001825451"),
+      Button("Menu", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+      Button("Choisir une pensée", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches récap !", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,120 @@
+// CHATFUEL BLOCK ID 5c67dc8c76ccbc29ae90705d
+start:
+  say Typing(3000)
+  say Question(
+    "Mes créateurices ont reçu des questions sur la confidentialité des échanges que j’ai avec les personnes utilisant Owlie. 
+
+Est-ce que tu souhaites des informations à ce sujet ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Non", payload="/_presentation_clara___postwelcome_5c67dc3a76ccbc29ae8ff1da"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3200)
+  say Question(
+    "J’ai reçu des questions à propos de l’utilisation et de la confidentialité de nos conversations.  
+Je comprends, quand on parle de choses intimes, douloureuses et importantes pour nous, on n’a pas envie et on peut s’inquiéter que des personnes espionnent nos conversations ou s’en servent à mauvais escient.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("🔙Sortir", payload="/_presentation_clara___postwelcome_5c67dc3a76ccbc29ae8ff1da"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3100)
+  say Question(
+    "① Les seules personnes ayant accès aux conversations sont Igor Thiriez, Clara Falala-Séchet et Lee Antoine (qui m’ont créée !). 
+Aucun.e des trois ne consulte tes conversations sauf si tu en fais la demande par mail ou que tu nous signales un bug et que tu souhaites qu’on aille voir cela directement dans ta conversation (mais uniquement si tu le demandes).",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("⏩Direct conclusion", payload="/_presentation_clara___confidentialitefin_5c69305f76ccbc29ae23abff"),
+      Button("🔙Sortir", payload="/_presentation_clara___postwelcome_5c67dc3a76ccbc29ae8ff1da"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2800)
+  say "② Tu cliques sur des boutons pour parler avec moi, et tu me recontactes plus ou moins souvent."
+  say Typing(2700)
+  say "- Clara, Igor et Lee regardent régulièrement quels sont les choix fait le plus souvent, les modules les plus utilisés pour leur donner des directions (développer une activité plutôt qu’une autre)
+- iels regardent aussi combien de personnes ont choisi de venir me parler, et combien continuent à me faire coucou au moins une fois par semaine (pour évaluer mon utilité et l’aide que je peux apporter)"
+  say Typing(4100)
+  say Question(
+    "- Ce sont des statistiques globales, à large échelle, et pas à partir de conversations en particulier (donc aucun.e humain.e ne saura quels sont tes clics à toi ou la fréquence de nos conversations)",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("⏩Direct conclusion", payload="/_presentation_clara___confidentialitefin_5c69305f76ccbc29ae23abff"),
+      Button("🔙Sortir", payload="/_presentation_clara___postwelcome_5c67dc3a76ccbc29ae8ff1da"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(4000)
+  say Question(
+    "③ Je suis une petite chatbot qui fonctionne avec Messenger, l’application de discussion de Facebook. Et pour l’instant, je n’ai malheureusement pas le contrôle de l’utilisation que Facebook fait de nos conversations. (je ne sais pas non plus ce qui est fait de mes conversation avec mon ami paresseux avec qui nous parlons tous les jours...😅)",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("⏩Direct conclusion", payload="/_presentation_clara___confidentialitefin_5c69305f76ccbc29ae23abff"),
+      Button("🔙Sortir", payload="/_presentation_clara___postwelcome_5c67dc3a76ccbc29ae8ff1da"),
+    ],
+  )
+  hold
+  
+  goto step_18
+
+
+step_18:
+  say Typing(3000)
+  say Question(
+    "Alors je te donne ici un lien créé par Facebook sur sa politique de confidentialité d’utilisation des données",
+    buttons=[
+      Url("https://www.facebook.com/privacy/explanation", text="Politique facebook"),
+    ],
+  )
+  
+  say Typing(3000)
+  say Question(
+    "La super équipe qui me développe a un objectif prioritaire : permettre la meilleure sécurisation possible de nos conversations. Elles ont pour le moment lieu sur Messenger, ce qui n’est pas parfait 😊
+Mon équipe a vraiment envie que je sois à portée de tou.te.s et que tout le monde puisse échanger avec moi gratuitement. Messenger est la solution que les trois zigotos ont choisi en attendant de trouver un support plus adapté.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+      Button("🔙Sortir", payload="/_presentation_clara___postwelcome_5c67dc3a76ccbc29ae8ff1da"),
+    ],
+  )
+  hold
+  
+  goto step_23
+
+
+step_23:
+  say Typing(4000)
+  say "J’espère que j’ai répondu aux questions que tu pouvais te poser, tu peux aussi m’envoyer un mail si tu as d’autres questions ou des idées de sécurisation : 
+
+owlie.le.chatbot@gmail.com"
+  say Typing(1900)
+  // adding conditional redirect to flow
+  goto flow _presentation_clara___confidentialitefin_5c69305f76ccbc29ae23abff

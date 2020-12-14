@@ -1,0 +1,56 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff263
+start:
+  say Typing(1900)
+  say Question(
+    "Voici ce que je peux te proposer maintenant :
+
+(😊fais aussi défiler les boutons en bas ↔️)",
+    buttons=[
+      Button("Toutes les activités", payload="/_supermenu___supermenu_5c67dc3a76ccbc29ae8ff4d2"),
+    ],
+  )
+  
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Activités pour me comprendre",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/89b1adaa-debb-42f4-90d5-e78a3c9316a7.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+          Button("🚨Crise", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+        ],
+      ),
+      Card(
+        title="Agir sur une difficulté",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8c96fc8c-bd48-4366-84d5-79f2b193ac54.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+        ],
+      ),
+      Card(
+        title="Détente",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/898ff871-a48f-4877-858f-dcd4fe1dd79d.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+        ],
+      ),
+      Card(
+        title="Je me fais du bien",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/29e8c999-4ccd-4a67-a1a7-ad2dd6c06ec2.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_activites_agreables_cf___activiteagreable1_5c67dc3a76ccbc29ae8ff2e1"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("⛵️Activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🏖Changer les idées", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🕗Reprendre + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8"),
+    ],
+  )
+  hold
+  

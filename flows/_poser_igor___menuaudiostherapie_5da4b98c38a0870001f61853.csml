@@ -1,0 +1,58 @@
+// CHATFUEL BLOCK ID 5da4b98c38a0870001f61853
+start:
+  say Typing(2000)
+  say "Choisis une séance, installe-toi confortablement et suis les instructions 🧘‍♂️"
+  say Typing(2700)
+  say Carousel(
+    cards=[
+      Card(
+        title="Exercice audio - Méditation pour apaiser la douleur (10') - (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ed0bacef-139e-48be-92a6-a892af50f10e.jpeg",
+        buttons=[
+          Url("https://drive.google.com/open?id=1GWXv18xdKBGN9yqZsrMr0caguhiIJg5I", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Méditation Du Lieu Sûr Intérieur (11:55) - (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/28a2d28c-13cc-42e1-bf4a-2e877044a447.jpeg",
+        buttons=[
+          Url("https://drive.google.com/file/d/1i--kKv_FHyd_6po0CsezruiUunumPrnT/view?usp=sharing", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Sécurité Et Reparentage Intérieur (14:24) - (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b5746920-fe9d-4220-af12-8fd0f9c5b8d0.jpeg",
+        buttons=[
+          Url("https://drive.google.com/open?id=1Kv6Vxgsg0mVletwmau9Q14TnkTCe2of_", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Auto-compassion (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/45eecbdd-8675-47c3-bb2e-50436b69217e.jpeg",
+        buttons=[
+          Url("https://drive.google.com/file/d/1DSCfsTSaR1UoTbNyFUEoPpH4i5NVWtT6/view?usp=sharing", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - La Pleine Conscience Dans Le Quotidien (06:06) (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6a309463-2804-4ddd-afaf-1bbf75b61eae.jpeg",
+        buttons=[
+          Url("https://drive.google.com/open?id=1O0NQcoU2u6fw64caGD4t2tMXXY14vMme", text="C'est parti !"),
+        ],
+      ),
+      Card(
+        title="Exercice audio - Cultiver son observation des relations sociales (voix de Clara)",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/285a72b6-4f29-4937-93fc-edcdae0a14f9.jpeg",
+        buttons=[
+          Url("https://drive.google.com/file/d/1JbQJHiadVmyaA2C0fBRkGllZkJWhLYKj/view?usp=sharing", text="C'est parti !"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_poser_igor___menuposer_5c67dc3a76ccbc29ae8ff2a0"),
+      Button("🔙Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

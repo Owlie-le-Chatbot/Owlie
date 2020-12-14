@@ -1,0 +1,101 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3cb
+start:
+  say Typing(2500)
+  say Question(
+    "Nous avons des pensées qui tournent en boucle dans notre tête, comme un disque rayé. 
+
+C'est \"la petite voix\" qui fait des commentaires.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah ça....!"),
+      Button("Je vois !"),
+      Button("Continue..."),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say Question(
+    "On appelle ça des \"pensées automatiques\", parce qu'elles se déclenchent sans qu'on demande quoi que ce soit et est rarement sympathique !
+
+Voici les plus connue de toutes : \"je suis nul.le/stupide/je ne vaux rien\" ou encore \"il va forcément m'arriver un truc horrible/négatif\"...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je vois...!"),
+      Button("Continue..."),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3000)
+  say "Le but de ce jeu, c'est de les identifier ensemble pour ensuite te permettre de le faire dans ton quotidien. 
+
+Cela te permettra ainsi d'être davantage conscient.e du type de petite voix auquel tu as affaire..."
+  say Typing(3100)
+  say Question(
+    "...et ainsi éviter de te faire embarquer en \"pilote automatique\" par son commentaire négatif qui te plombe... 
+
+...de te faire prendre à son jeu quoi ! :) Je te conseille de lui coller une étiquette quand tu en remarque une \"tiens, revoilà la petite voix !\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ahaha, bonne idée !"),
+      Button("Ok !"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(1700)
+  say Question(
+    "Maintenant :
+- Soit tu peux essayer directement et \"apprendre sur le tas\" 🎲
+Mais je te préviens, c'est pas facile !
+- Soit tu peux apprendre les différents types de pensées 💭 avant pour être encore plus fort.e !
+
+Tu choisis quoi ?
+
+(fais défiler les images ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🎲Jouer direct"),
+      Button("💭 différents types", payload="/_education_therapeutiqcf___les_ruminations_5c67dc3a76ccbc29ae8ff41a"),
+      Button("🤗Menu psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  
+  remember _quizz = event
+  goto step_13
+
+
+step_13:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_quiz_cognitif_clara___jeu_1_pensee_catastrophique_5c67dc3a76ccbc29ae8ff3ee", "_quiz_cognitif_clara___jeu_13_maximisation_minimisation_5c67dc3a76ccbc29ae8ff3fa", "_quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef", "_quiz_cognitif_clara___jeu_3_raisonnement_emotionnel_5c67dc3a76ccbc29ae8ff3f0", "_quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef", "_quiz_cognitif_clara___jeu_4_lecture_dans_les_pensees_5c67dc3a76ccbc29ae8ff3f1", "_quiz_cognitif_clara___jeu_6_dichotomie_5c67dc3a76ccbc29ae8ff3f3", "_quiz_cognitif_clara___jeu_7_jugement_dattributionetiquetage_5c67dc3a76ccbc29ae8ff3f4", "_quiz_cognitif_clara___jeu_8_filtre_negatif_tunnel_abstraction_selective_5c67dc3a76ccbc29ae8ff3f5", "_quiz_cognitif_clara___jeu_9_illusion_de_controle_externe_5c67dc3a76ccbc29ae8ff3f6", "_quiz_cognitif_clara___jeu_10_attribution_arbitraire_5c67dc3a76ccbc29ae8ff3f7", "_quiz_cognitif_clara___jeu_11_erreur_dequite_5c67dc3a76ccbc29ae8ff3f8", "_quiz_cognitif_clara___jeu_12_personnalisation_5c67dc3a76ccbc29ae8ff3f9", "_quiz_cognitif_clara___jeu_5_pensee_de_type_je_dois_5c67dc3a76ccbc29ae8ff3f2"]))
+  if (rand == 0) goto flow _quiz_cognitif_clara___jeu_1_pensee_catastrophique_5c67dc3a76ccbc29ae8ff3ee
+  if (rand == 1) goto flow _quiz_cognitif_clara___jeu_13_maximisation_minimisation_5c67dc3a76ccbc29ae8ff3fa
+  if (rand == 2) goto flow _quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef
+  if (rand == 3) goto flow _quiz_cognitif_clara___jeu_3_raisonnement_emotionnel_5c67dc3a76ccbc29ae8ff3f0
+  if (rand == 4) goto flow _quiz_cognitif_clara___jeu_2_surgeneralisation_generalisation_5c67dc3a76ccbc29ae8ff3ef
+  if (rand == 5) goto flow _quiz_cognitif_clara___jeu_4_lecture_dans_les_pensees_5c67dc3a76ccbc29ae8ff3f1
+  if (rand == 6) goto flow _quiz_cognitif_clara___jeu_6_dichotomie_5c67dc3a76ccbc29ae8ff3f3
+  if (rand == 7) goto flow _quiz_cognitif_clara___jeu_7_jugement_dattributionetiquetage_5c67dc3a76ccbc29ae8ff3f4
+  if (rand == 8) goto flow _quiz_cognitif_clara___jeu_8_filtre_negatif_tunnel_abstraction_selective_5c67dc3a76ccbc29ae8ff3f5
+  if (rand == 9) goto flow _quiz_cognitif_clara___jeu_9_illusion_de_controle_externe_5c67dc3a76ccbc29ae8ff3f6
+  if (rand == 10) goto flow _quiz_cognitif_clara___jeu_10_attribution_arbitraire_5c67dc3a76ccbc29ae8ff3f7
+  if (rand == 11) goto flow _quiz_cognitif_clara___jeu_11_erreur_dequite_5c67dc3a76ccbc29ae8ff3f8
+  if (rand == 12) goto flow _quiz_cognitif_clara___jeu_12_personnalisation_5c67dc3a76ccbc29ae8ff3f9
+  if (rand == 13) goto flow _quiz_cognitif_clara___jeu_5_pensee_de_type_je_dois_5c67dc3a76ccbc29ae8ff3f2

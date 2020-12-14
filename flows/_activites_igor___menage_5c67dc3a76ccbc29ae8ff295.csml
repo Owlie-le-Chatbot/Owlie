@@ -1,0 +1,58 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff295
+start:
+  say Typing(2000)
+  say "Voici quelques suggestions :"
+  say Typing(2000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Passer l'aspirateur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1a511082-7cf2-4138-9bbb-8c1ed38f59dd.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Faire la vaisselle",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/597a4d2d-557e-4be3-b2c2-1f7e47dc55a5.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Laver les vitres",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/50e43dc8-5168-463b-b1b1-c721c299b9d0.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Laver, plier, ranger le linge",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f958e61f-b70a-4b4a-9d67-9a4b68771bb7.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Faire les courses",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/43025889-970e-4019-b97b-6108b380a0f8.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+      Card(
+        title="Sortir ou vider les poubelles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/47229f00-cdb7-4329-9428-d0a8894bbd50.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_fin_clara___finacttrouvee_5c67dc3a76ccbc29ae8ff1fd"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🌟Autres suggestions", payload="/_activites_igor___listactstim_5c67dc3a76ccbc29ae8ff291"),
+      Button("🚀Autres activités", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

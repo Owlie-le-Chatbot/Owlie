@@ -1,0 +1,72 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff323
+start:
+  say Typing(2000)
+  say "Le discrédit pour soi !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e5ba7fa8-09a4-4c5c-9543-08c4e4c44893.jpeg")
+  say Question(
+    "La disqualification (dévalorisation ou transformation) du positif consiste à minimiser ce qui arrive de positif jusqu'à le rendre neutre ou négatif.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"Oui j’ai eu mon diplôme cette année, mais c’est un coup de chance\""
+  say Typing(2000)
+  say "\"Iel m’a fait un compliment sur ma cuisine, mais c’est parce qu’iel a pitié de moi\""
+  say Typing(2000)
+  say Question(
+    "\"Lea patron.ne m’a offert une promotion mais c’est parce qu’iel n’avait personne d’autre à qui la donner\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(3000)
+  say "Ce mode de pensée déprimant repose généralement sur deux types de raisonnement qui sont autant de simplifications excessives du monde qui nous entoure."
+  say Typing(2000)
+  say "Il y a d'un coté la tendance à attribuer aux évènements une cause unique."
+  say Typing(2000)
+  say "Et de l'autre une tendance à désigner autre chose ou quelqu'un.e d'autre comme responsable de ses propres réussites."
+  say Typing(2000)
+  say "1. Réévalue systématiquement les différentes causes possibles de l'évènement sans oublier de t'y inclure."
+  say Typing(2000)
+  say Question(
+    "2. Attribue à chacune de ces causes possibles une part ou un pourcentage de responsabilité.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Question(
+    "Veux-tu continuer l'analyse de ta pensée douloureuse ou commencer les exercices d'assouplissement de pensée?",
+    buttons=[
+      Button("Continuer", payload="/_distorsions_cog_igor___4generalisationabusive_5c67dc3a76ccbc29ae8ff324"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

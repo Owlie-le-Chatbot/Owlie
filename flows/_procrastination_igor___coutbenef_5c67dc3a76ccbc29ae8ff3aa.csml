@@ -1,0 +1,26 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3aa
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Quel est le plus gros avantage dans le fait de commencer à exécuter {{_procra}} maintenant ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _avantageprocra = event
+  
+  say Typing(2000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Quel est le plus gros inconvénient dans le fait de commencer à exécuter {{_procra}} maintenant ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _inconvenientprocra = event
+  
+  // adding conditional redirect to flow
+  goto flow _procrastination_igor___estimduree_5c67dc3a76ccbc29ae8ff3ab

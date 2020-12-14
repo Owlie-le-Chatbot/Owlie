@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff21a
+start:
+  say Typing(2400)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Quel moment de ta journée as-tu préféré jusqu'à présent ?"
+  hold
+  
+  remember _quel_moment_de_ta_journee_astu_prefere_jusqua_present = event
+  
+  say Typing(1700)
+  say "Je vois..."
+  // adding conditional redirect to flow
+  goto flow _choix_clara___choix1_5c67dc3a76ccbc29ae8ff263

@@ -1,0 +1,12 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff368
+start:
+  say Typing(2000)
+  say "Bonne réponse ! :-)"
+  say Typing(2000)
+  say "N'oublie pas que l'inquiétude est faite de pensées négatives au sujet de l'avenir."
+  say Typing(2000)
+  say "Cette vision négative de l'avenir entretient la conviction qu'il ne sert à rien d'agir et qu'il est préférable d'éviter de faire face aux problèmes."
+  say Typing(2000)
+  say "L'évitement soulage à court terme mais ne fait pas disparaitre le problème, ni le malaise face au problème."
+  // adding conditional redirect to flow
+  goto flow _inquietudeb_igor___questinqu5b_5c67dc3a76ccbc29ae8ff36a

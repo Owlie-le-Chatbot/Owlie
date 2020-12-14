@@ -1,0 +1,99 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0788
+start:
+  say Typing(4000)
+  say Question(
+    "Avant de répondre à un compliment, il est essentiel de bien le recevoir, de façon active.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment faire?"),
+      Button("⏩Passer l'étape", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+      Button("🔍Des exemples!", payload="/_assertivite___assertcompr2_5c7e84780ecd9f746fcc078f"),
+      Button("😥J'y arrive pas...", payload="/_assertivite___assertcompr30_5c7e84780ecd9f746fcc0796"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say "Voici quelques règles très simples qui te permettront d'accuser réception d'un compliment."
+  say Typing(4000)
+  say "Les respecter ne te garantira pas une efficacité systématique ni immédiate."
+  say Typing(4000)
+  say Question(
+    "Mais en les appliquant, tu auras plus de chance d'y répondre de manière optimale.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ca semble chouette !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say Question(
+    "Règle 1. Écouter, jusqu'au bout.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Bah oui !"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(3000)
+  say "Cela peut paraitre évident, mais ce n'est pas si facile."
+  say Typing(4000)
+  say "Le malaise ressenti face à un compliment donne souvent l'envie de répondre très vite."
+  say Typing(4000)
+  say "Or il est essentiel que ton interlocuteurice se sente écouté.e."
+  say Typing(4000)
+  say "Sois donc à l'écoute et n'aies pas l'air amusé.e, irrité.e ou indifférent.e."
+  say Typing(7000)
+  say Question(
+    "De même, ne t'empresse pas de minimiser le compliment, de le nier, de le refuser, de le détourner ou de le renvoyer à ton interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Je vais essayer"),
+    ],
+  )
+  hold
+  
+  goto step_23
+
+
+step_23:
+  say Typing(3000)
+  say Question(
+    "Règle 2. Identifier le fond et la forme du compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Comment ça?"),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(4000)
+  say "Sur le fond, un compliment peut-être vrai ✅, faux ❎ou vague☁️."
+  say Typing(4000)
+  say Question(
+    "Sur la forme, un compliment peut-être constructif 🌤ou manipulateur ⛈.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?", payload="/_assertivite___assertcompr10_5c7e84780ecd9f746fcc0789"),
+    ],
+  )
+  hold
+  

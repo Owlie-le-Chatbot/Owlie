@@ -1,0 +1,105 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff425
+start:
+  say Typing(2600)
+  say Question(
+    "J'aimerais bien t'expliquer les principaux éléments connus pour être des \"déclencheurs\" de comportements que l'on n'aime pas chez soi :-/",
+    button_type="quick_reply",
+    buttons=[
+      Button("Explique"),
+      Button("Plutôt autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Menu précédent", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3300)
+  say Question(
+    "Voilà mon idée : si je te t'apprends ces \"déclencheurs\", par la suite tu pourras mieux les voir venir.
+Tu seras conscient.e de ce qu'il se passe et pourra trouver une autre façon de réagir plus en accord avec toi-même.
+
+Qu'est-ce que t'en dis ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, allons-y"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Propose autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3600)
+  say Question(
+    "Alors, les déclencheurs les plus courants sont :
+1. ceux qui te rappelle le passé, un épisode similaire déjà vécu (et pas forcément agréable : \"ah ça va encore faire comme quand j'étais petit.e)\"). Tu plaques l'idée que les choses vont se passer de la même façon...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, quoi d'autres ?"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3800)
+  say Question(
+    "Il existe aussi des déclencheurs dû à un contexte quelque chose d'extérieur à toi, cela peut aussi être relationnel.
+
+Par exemple \"je sors dehors\" (déclencheur) => \"je fume\" (réponse au déclencheur, comportement)
+
+ou encore \"chaque fois que je sais que je vais voir Monsieur X\" (déclencheur), => \"je stresse\" (réponse émotionnelle au déclencheur)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Je vois !"),
+      Button("Continue"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2400)
+  say Question(
+    "Il existe également des déclencheurs internes, plus difficiles à percevoir parfois. (déclencheur interne = une émotion) 
+
+Par exemple \"chaque fois que je suis triste\" => \"je m'enferme chez moi et je ne demande pas d'aide\"
+
+ou encore : \"je suis stressé.e/je pense que je ne vais pas y arriver\" => \"je grignote ou je fais une activité pour éviter la tâche à faire\" qui me permettrait d'agir sur la situation pourtant...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ah, je connais bien!"),
+      Button("Continue"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4000)
+  say Question(
+    "Souhaites-tu que l'on travaille sur une situation récente à laquelle tu voudrais trouver une alternative ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_resolution_de_problemeit___probleme_5c67dc3a76ccbc29ae8ff36f"),
+      Button("Ça va, autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("Me divertir", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+    ],
+  )
+  hold
+  

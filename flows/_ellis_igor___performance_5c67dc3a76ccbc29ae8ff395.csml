@@ -1,0 +1,154 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff395
+start:
+  say Typing(4000)
+  say Question(
+    "Personne n'est performant.e dans tous les domaines. Si tu es (par exemple) un.e bon.ne sporti.f.ve, tu ne seras pas forcément un.e bon.ne musicien.ne. En réalité, la plupart des gens n'excellent même pas dans un domaine 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "C'est agréable de réussir quelque chose mais si tu exiges le succès en permanence ou dans tous les domaines, le stress généré l'emportera sur la satisfaction. 
+
+En d'autres termes, il est constructif de vouloir le succès mais autodestructeur d'en avoir besoin.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Réussir implique souvent la compétition, ce qui incite parfois à accorder plus d'attention à ce que les autres peuvent faire qu'à ce dont tu es capable. 
+
+À trop te préoccuper de la performance des autres, tu finiras par lutter contre quelque chose que tu ne contrôles pas.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Certaines aptitudes sont parfois peu, voire non modifiables. 
+
+Tu ne pourras (par exemple) pas devenir un.e musicien.ne à succès si tu n'as pas l'oreille musicale.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Tu n'as pas à réussir pour être digne d'intérêt. 
+
+Être en vie et pouvoir en profiter suffit à te rendre intéressant.e. 
+Rien n'est plus important 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4000)
+  say Question(
+    "Si tu es trop occupé.e à essayer de réussir, tu n'auras plus de temps pour faire les choses que tu aimes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(4000)
+  say Question(
+    "Si tu as trop peur de l'échec, tu auras peur d'essayer. 
+
+Ceci pourrait t'inciter à éviter les nouvelles expériences pour ne te limiter qu'à ce que tu es certain.e de réussir. 
+
+Ta vie risque alors d'être ennuyeuse 😕",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(4000)
+  say Question(
+    "La peur de l'échec peut t'empêcher non seulement de prendre du plaisir mais également de te concentrer sur ce que tu fais. 
+
+Tu risques donc de commettre une erreur, et d'échouer. 
+Il s'agit d'un cercle vicieux.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_23
+
+
+step_23:
+  say Typing(4000)
+  say Question(
+    "La meilleure façon d'apprendre à faire quelque chose, c'est justement de le faire. 
+
+La meilleure façon de réussir, c'est de s'entrainer, de s'entrainer encore et d'apprendre de ses erreurs. 
+
+Les échecs ne sont pas horribles ; ils font partie de l'apprentissage. Les humain.e.s font sans cesse des erreurs, les petits robots aussi 😉
+
+Si tu en fais, ça ne fait pas de toi un.e être sans valeur mais juste un.e être humain.e 🤗",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

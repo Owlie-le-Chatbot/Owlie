@@ -1,0 +1,97 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff273
+start:
+  say "Voici ce que je te propose dans le domaine de la forme et du réconfort physique :
+
+(fais défiler les images ↔️)"
+  say Typing(3100)
+  say Carousel(
+    cards=[
+      Card(
+        title="Comprendre l'intérêt d'une bonne respiration",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0a365c6c-80c8-4ac2-92e0-de3f24e64ea6.jpeg",
+        buttons=[
+          Button("Bien respirer", payload="/_education_therapeutiqcf___hygiene_respiration_5c67dc3a76ccbc29ae8ff410"),
+        ],
+      ),
+      Card(
+        title="Qu'est-ce qu'une bonne alimentation peut apporter à mes émotions et mon esprit ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6431214d-4307-4518-bf9e-33ad999b76a3.jpeg",
+        buttons=[
+          Button("L'alimentation", payload="/_education_therapeutiqcf___hygiene_alimentation_5c67dc3a76ccbc29ae8ff411"),
+        ],
+      ),
+      Card(
+        title="Impact du stress sur le corps",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7f113b7d-0fdf-4962-a6d3-33c3ede91a4d.jpeg",
+        buttons=[
+          Button("Impact du stress", payload="/_education_therapeutiqcf___hygiene_stress_5c67dc3a76ccbc29ae8ff414"),
+        ],
+      ),
+      Card(
+        title="Informations sur la santé de l'esprit",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fd52def9-799e-45ec-bc6c-a5942854c147.jpeg",
+        buttons=[
+          Button("Santé de l'esprit", payload="/_education_therapeutiqcf___maladiesante_5c67dc3a76ccbc29ae8ff418"),
+        ],
+      ),
+      Card(
+        title="Être acteur pour mieux gérer ma forme au quotidien",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/978d9735-c8f1-4691-aec1-403bcbef53a4.jpeg",
+        buttons=[
+          Button("Être acteur", payload="/_education_therapeutiqcf___ressources_empowerment_5c67dc3a76ccbc29ae8ff421"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3900)
+  say Carousel(
+    cards=[
+      Card(
+        title="Auto-apaisement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/466f66e2-ee29-41ea-8d40-ed6ae3706404.jpeg",
+        buttons=[
+          Button("Auto-apaisement", payload="/_psychologie_clara___autoapaisement_5c67dc3a76ccbc29ae8ff3b9"),
+          Button("Audios apaisants"),
+        ],
+      ),
+      Card(
+        title="Bouger 5' pour apaiser mes émotions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b061d8e1-61fb-471c-9ff8-16525c5a177e.jpeg",
+        buttons=[
+          Button("Bouger 5'", payload="/_psychologie_clara___sport_5c67dc3a76ccbc29ae8ff3c6"),
+        ],
+      ),
+      Card(
+        title="Cohérence cardiaque",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5454b9dd-f160-41a9-b9b2-8a79ddce4d6b.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=dGJkzyKHKUE", text="Cohérence cardiaque"),
+        ],
+      ),
+      Card(
+        title="Stretch de 5' pour dénouer les tensions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/70bdef26-2a19-4226-aa19-66fffaa8a409.jpeg",
+        buttons=[
+          Button("Stretch 5'", payload="/_psychologie_clara___stretch_5c67dc3a76ccbc29ae8ff3c5"),
+        ],
+      ),
+      Card(
+        title="Respirer pour me détendre",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0163b1f3-e98b-494e-89d9-1849d539634b.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=ruWLyDivpnU", text="Exo respiration"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Menu principal", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+    ],
+  )
+  hold
+  

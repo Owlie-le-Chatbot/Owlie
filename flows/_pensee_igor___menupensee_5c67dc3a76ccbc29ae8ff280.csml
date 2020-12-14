@@ -1,0 +1,90 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff280
+start:
+  say Typing(3800)
+  say "Et tu sais {{_name}}, tu n'es pas seul.e à avoir des ruminations .
+Moi-même cela m'arrive parfois 😊 !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cbbe4732-5e72-406c-8ed2-cb677b883314.jpeg")
+  say Typing(3200)
+  say "Voici ce que je peux te proposer :"
+  say Typing(3400)
+  say Carousel(
+    cards=[
+      Card(
+        title="Apaiser une pensée",
+        subtitle="Analyser et assouplir les mauvaises pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/36ffe9a2-dfee-4d18-81cd-c45e4024680b.jpeg",
+        buttons=[
+          Button("C'est parti ! ⛈️", payload="/_pensee_igor___defpensee_5c67dc3a76ccbc29ae8ff281"),
+        ],
+      ),
+      Card(
+        title="Résoudre un problème",
+        subtitle="Trouver et analyser des solutions",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c7de5a1d-fb5b-4568-93b2-c62e1def867c.jpeg",
+        buttons=[
+          Button("C'est parti ! 🤔", payload="/_resolution_de_problemeit___probleme_5c67dc3a76ccbc29ae8ff36f"),
+        ],
+      ),
+      Card(
+        title="Je m'inquiète",
+        subtitle="En savoir plus sur l'inquiétude",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dd1729e8-ab12-406c-8b86-cdd2bcb82de5.jpeg",
+        buttons=[
+          Button("C'est parti ! ⁉️", payload="/_inquietude_igor___introinquiet_5c67dc3a76ccbc29ae8ff34a"),
+        ],
+      ),
+      Card(
+        title="J'ai été traumatisé.e et je m'en sens reponsable",
+        subtitle="Analyser les pensées culpabilisantes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ea46949b-b527-4724-b20a-5a47bdec40ce.jpeg",
+        buttons=[
+          Button("C'est parti ! ⚡", payload="/_trauma_igor___intrauma_5deb66171330c00001825446"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Mauvais réflexes de pensée",
+        subtitle="Ce qui peut clocher dans le raisonnement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/440678e9-a88a-4db5-8878-380ce62c0de3.jpeg",
+        buttons=[
+          Button("C'est parti ! 🔁", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+        ],
+      ),
+      Card(
+        title="Croyances profondes",
+        subtitle="Ce qui peut clocher dans les croyances",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/eec7f3fc-8b11-4a45-ab43-6bc80abea2d8.jpeg",
+        buttons=[
+          Button("C'est parti ! 💔", payload="/_ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393"),
+        ],
+      ),
+      Card(
+        title="Restructuration cognitive",
+        subtitle="Exercices d'assouplissement de pensée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/34655a08-8cd0-4f0b-804e-1d15d64a983f.jpeg",
+        buttons=[
+          Button("C'est parti ! 🔩", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+        ],
+      ),
+      Card(
+        title="Métaphores",
+        subtitle="Je métaphorise ma pensée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3d350321-6291-4c4f-ba3a-c7f11f0845e0.jpeg",
+        buttons=[
+          Button("C'est parti ! 🌟", payload="/_metaphores___intrometaph_5c67dc3a76ccbc29ae8ff4d4"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Menus principaux", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("❔Au hasard", payload="/_pensee_igor___random2ajoutcf_5c67dc3a76ccbc29ae8ff285"),
+    ],
+  )
+  hold
+  

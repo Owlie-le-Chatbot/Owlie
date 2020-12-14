@@ -1,0 +1,762 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1e0
+start:
+  say Typing(2600)
+  say Question(
+    "Je te propose d'évaluer ensemble ton niveau d'anxiété (7-10'). Cela me permettra de mieux t'aider par la suite.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Pas maintenant", payload="/_reprogrammer_clara___reprogrammer1_5c67dc3a76ccbc29ae8ff24e"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2100)
+  say Question(
+    "Je vais te soumettre 40 affirmations courtes, choisis spontanément la réponse la plus proche de ton ressenti ces dernières semaines.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3200)
+  say Question(
+    "1 - Je me sens calme",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_1 = event
+  goto step_8
+
+
+step_8:
+  say Typing(3300)
+  say Question(
+    "2 - Je me sens en sécurité, sans inquiétude, en sûreté",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_2 = event
+  goto step_11
+
+
+step_11:
+  say Typing(3600)
+  say Question(
+    "3 - Je suis tendu.e, crispé.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_3 = event
+  goto step_14
+
+
+step_14:
+  say Typing(2900)
+  say Question(
+    "4 - Je me sens surmené.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_4 = event
+  goto step_17
+
+
+step_17:
+  say Typing(3300)
+  say Question(
+    "5 - Je me sens tranquille, bien dans ma peau",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_5 = event
+  goto step_20
+
+
+step_20:
+  say Typing(3200)
+  say Question(
+    "6 - Je me sens ému.e, bouleversé.e, contrarié.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_6 = event
+  goto step_23
+
+
+step_23:
+  say Typing(3200)
+  say Question(
+    "7 - L'idée de malheurs éventuels me tracasse en ce moment",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_7 = event
+  goto step_26
+
+
+step_26:
+  say Typing(3300)
+  say Question(
+    "8 - Je me sens content.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_8 = event
+  goto step_29
+
+
+step_29:
+  say Typing(3200)
+  say Question(
+    "9 - Je me sens effrayé(e)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_9 = event
+  goto step_32
+
+
+step_32:
+  say Typing(3500)
+  say Question(
+    "10 - Je me sens à mon aise (je me sens bien)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_10 = event
+  goto step_35
+
+
+step_35:
+  say Typing(3200)
+  say Question(
+    "11 - Je sens que j'ai confiance en moi",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_11 = event
+  goto step_38
+
+
+step_38:
+  say Typing(3500)
+  say Question(
+    "12 - Je me sens nerveu.x.se, irritable",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_12 = event
+  goto step_41
+
+
+step_41:
+  say Typing(3400)
+  say Question(
+    "13 - J'ai la frousse, la trouille (j'ai peur)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_13 = event
+  goto step_44
+
+
+step_44:
+  say Typing(3800)
+  say Question(
+    "14 - Je me sens indécis.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_14 = event
+  goto step_47
+
+
+step_47:
+  say Typing(3500)
+  say Question(
+    "15 - Je suis décontracté.e, détendu.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_15 = event
+  goto step_50
+
+
+step_50:
+  say Typing(3200)
+  say Question(
+    "16 - Je suis satisfait.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_16 = event
+  goto step_53
+
+
+step_53:
+  say Typing(3000)
+  say Question(
+    "17 - Je suis inquiet.e, soucieu.x.se",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_17 = event
+  goto step_56
+
+
+step_56:
+  say Typing(4000)
+  say Question(
+    "18 - Je ne sais plus où j'en suis, je me sens déconcerté.e, dérouté.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_18 = event
+  goto step_59
+
+
+step_59:
+  say Typing(3400)
+  say Question(
+    "19 - Je me sens solide, posé.e, pondéré.e, réfléchi.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_19 = event
+  goto step_62
+
+
+step_62:
+  say Typing(2900)
+  say Question(
+    "20 - Je me sens de bonne humeur, aimable",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non"),
+      Button("Plutôt non"),
+      Button("Plutôt oui"),
+      Button("Oui"),
+    ],
+  )
+  hold
+  
+  remember _stai_ya_20 = event
+  goto step_65
+
+
+step_65:
+  say Typing(3300)
+  say Question(
+    "21 - Je me sens de bonne humeur, aimable",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_21 = event
+  goto step_68
+
+
+step_68:
+  say Typing(2000)
+  say Question(
+    "22 - Je me sens nerveu.x.se , agité.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_22 = event
+  goto step_71
+
+
+step_71:
+  say Typing(2100)
+  say Question(
+    "23 - Je me sens content.e de moi",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_23 = event
+  goto step_74
+
+
+step_74:
+  say Typing(2600)
+  say Question(
+    "24 - Je voudrais être aussi heureu.x.se que les autres",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_24 = event
+  goto step_77
+
+
+step_77:
+  say Typing(2100)
+  say Question(
+    "25 - J'ai un sentiment d'echec",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_25 = event
+  goto step_80
+
+
+step_80:
+  say Typing(2300)
+  say Question(
+    "26 - Je me sens reposé.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_26 = event
+  goto step_83
+
+
+step_83:
+  say Typing(2400)
+  say Question(
+    "27 - J'ai tout mon sang-froid",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_27 = event
+  goto step_86
+
+
+step_86:
+  say Typing(2500)
+  say Question(
+    "28 - J'ai l'impression que les difficultés s'accumulent à un tel point que je ne peux plus les surmonter",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_28 = event
+  goto step_89
+
+
+step_89:
+  say Typing(2500)
+  say Question(
+    "29 - Je m'inquiète a propos de choses sans importance",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_29 = event
+  goto step_92
+
+
+step_92:
+  say Typing(2300)
+  say Question(
+    "30 - Je me sens heureu.x.se",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_30 = event
+  goto step_95
+
+
+step_95:
+  say Typing(2200)
+  say Question(
+    "31 - J'ai des pensées qui me perturbent",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_31 = event
+  goto step_98
+
+
+step_98:
+  say Typing(2600)
+  say Question(
+    "32 - Je manque de confiance en moi",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_32 = event
+  goto step_101
+
+
+step_101:
+  say Typing(2900)
+  say Question(
+    "33 - Je me sens sans inquiétude, en sécurité, en sûreté",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Presque toujours"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_33 = event
+  goto step_104
+
+
+step_104:
+  say Typing(2900)
+  say Question(
+    "34 - Je prends facilement des décisions",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_34 = event
+  goto step_107
+
+
+step_107:
+  say Typing(2800)
+  say Question(
+    "35 - Je me sens incompétent.e, pas à la hauteur",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_35 = event
+  goto step_110
+
+
+step_110:
+  say Typing(2600)
+  say Question(
+    "36 - Je suis satisfait.e",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_36 = event
+  goto step_113
+
+
+step_113:
+  say Typing(2800)
+  say Question(
+    "37 - Des idées sans importance trottent dans ma tête me dérangent",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_37 = event
+  goto step_116
+
+
+step_116:
+  say Typing(2900)
+  say Question(
+    "38 - Je prends les décisions tellement à cœur que je les oublie difficilement",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_38 = event
+  goto step_119
+
+
+step_119:
+  say Typing(2900)
+  say Question(
+    "39 - Je suis une personne posée, solide, stable",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_39 = event
+  goto step_122
+
+
+step_122:
+  say Typing(2300)
+  say Question(
+    "40 - Je deviens tendu.e et agité.e quand je réfléchis à mes soucis",
+    button_type="quick_reply",
+    buttons=[
+      Button("Presque jamais"),
+      Button("Parfois"),
+      Button("Souvent"),
+      Button("Très souvent"),
+    ],
+  )
+  hold
+  
+  remember _stai_yb_40 = event
+  goto step_125
+
+
+step_125:
+  say Typing(2600)
+  say Question(
+    "Merci beaucoup {{_name}} ! Nous avons terminé.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok", payload="/_accueil_check_clara___check2_5c67dc3a76ccbc29ae8ff1ef"),
+      Button("Mes valeurs", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+    ],
+  )
+  hold
+  

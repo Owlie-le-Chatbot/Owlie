@@ -1,0 +1,43 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff229
+start:
+  say Typing(2400)
+  say "Ok {{_name}}, je t'écoute..."
+  say Typing(2600)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Dis-moi tout ce qui te passe par la tête, les pensées que tu as... (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(3100)
+  say "Je vois..."
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/98b39a0f-d5d6-48f2-a83d-3118e463ea82.jpeg")
+  say Typing(3000)
+  say Question(
+    "Est-ce que tu m'as dit tout ce qui te pèse ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("😢Non... continuer"),
+      Button("🙂Ça va...", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("🆘 Besoin d'aide", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+      Button("🏖Activité agréable", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🐻Câlins", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+  )
+  hold
+  
+  remember _en_parler = event
+  goto step_9
+
+
+step_9:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e", "_ai_dial_negatifscf___relancesneg2_5c67dc3a76ccbc29ae8ff22f"]))
+  if (rand == 0) goto flow _ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e
+  if (rand == 1) goto flow _ai_dial_negatifscf___relancesneg2_5c67dc3a76ccbc29ae8ff22f

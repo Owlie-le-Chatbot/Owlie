@@ -1,0 +1,18 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff235
+start:
+  say Typing(3000)
+  say "Je comprends ta colère. 
+Essaye de ne pas la diriger vers quelqu'un ou vers toi-même."
+  say Typing(2500)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Explique-moi plutôt ce qui se passe en 1 phrase 📝"
+  hold
+  
+  remember _explication = event
+  
+  // adding conditional redirect to flow
+  goto flow _ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c

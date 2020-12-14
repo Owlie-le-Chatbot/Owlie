@@ -1,0 +1,75 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff33c
+start:
+  say Typing(2000)
+  say "Voici ta pensée douloureuse : {{_penseedouloureuse}}"
+  say Typing(2000)
+  say "Essaye d'évaluer quelle est ta part de responsabilité dans ce qui t'arrive 😊"
+  say Typing(2000)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Écris maintenant ton pourcentage de responsabilité, entre 0% (pas du tout responsable) et 100% (en totalité responsable)  📝"
+  hold
+  
+  remember _responsabilite1 = event
+  
+  say Typing(2000)
+  say "Pense maintenant à tous les autres facteurs qui, sans en être entièrement responsables, ont pu contribuer à la situation actuelle."
+  say Typing(2000)
+  say Question(
+    "Il peut s'agir de personnes, de choses qui sont arrivées mais également de ce qui n'est pas survenu.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(2000)
+  say "Concentre-toi maintenant sur ta capacité à contrôler ces personnes ou ces évènements."
+  say Typing(2000)
+  say Question(
+    "Essaye de déterminer si tu pouvais contrôler tout ça, si tu pouvais vraiment empêcher certaines choses d'arriver, si tu pouvais vraiment tout faire autrement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_15
+
+
+step_15:
+  say Typing(2200)
+  goto form_17_0
+
+
+// form component
+form_17_0:
+  say "Réécris maintenant ton pourcentage de responsabilité après avoir réfléchi à tout ça 📝"
+  hold
+  
+  remember _responsabilite2 = event
+  
+  say Typing(2000)
+  say "Très bien tu es passé.e de {{_responsabilite1}} à {{_responsabilite2}}."
+  say Typing(2000)
+  say Question(
+    "Te sens-tu prêt.e à reformuler ta pensée douloureuse ou souhaite-tu l'assouplir davantage?",
+    buttons=[
+      Button("Reformuler", payload="/_restructuration_cog_it___reformulation_5c67dc3a76ccbc29ae8ff33a"),
+      Button("Assouplir", payload="/_restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339"),
+    ],
+    quick_replies=[
+      Button("Ça me suffit", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

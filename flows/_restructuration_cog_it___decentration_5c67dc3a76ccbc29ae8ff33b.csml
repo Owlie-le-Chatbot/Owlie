@@ -1,0 +1,91 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff33b
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Si un.e ami.e ou une personne que tu apprécies avait cette pensée, que lui dirais-tu ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _ami1 = event
+  
+  say Typing(2000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Si une personne qui t'apprécie savait que tu as cette pensée, que te dirait-elle ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _ami2 = event
+  
+  say Typing(2000)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Lorsque tu ne te sens pas aussi mal, que te dis-tu pour faire face à ce genre de pensée ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _passe1 = event
+  
+  say Typing(2000)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Lorsque tu te sentais aussi mal dans le passé, que t'es-tu dit pour t'aider à te sentir mieux ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _passe2 = event
+  
+  say Typing(2000)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Si tu repenses à cette situation dans 5 ans, que te diras-tu ? Écris-le moi en une phrase 📝"
+  hold
+  
+  remember _futur = event
+  
+  say Typing(2000)
+  say "Récapitulons. 
+Voici tout ce que tu peux te dire pour te sentir mieux maintenant : 
+- {{_ami1}}
+- {{_ami2}}
+- {{_passe1}}
+- {{_passe2}}
+- {{_futur}}"
+  say Typing(2000)
+  say Question(
+    "Concentre-toi bien dessus.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Question(
+    "Te sens-tu prêt.e à reformuler ta pensée douloureuse ou souhaite-tu l'assouplir davantage ?",
+    buttons=[
+      Button("Reformuler", payload="/_restructuration_cog_it___reformulation_5c67dc3a76ccbc29ae8ff33a"),
+      Button("Assouplir", payload="/_restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339"),
+    ],
+    quick_replies=[
+      Button("Ça me suffit", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

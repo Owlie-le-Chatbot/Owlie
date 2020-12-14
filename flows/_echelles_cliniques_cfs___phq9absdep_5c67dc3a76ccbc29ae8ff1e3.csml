@@ -1,0 +1,6 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1e3
+start:
+  say Typing(2600)
+  say "Tu ne semble pas avoir de symptômes de dépression {{_name}}, c'est super ça !"
+  // adding conditional redirect to flow
+  goto flow _echelles_cliniques_cfs___endphq_5c67dc3a76ccbc29ae8ff1e8

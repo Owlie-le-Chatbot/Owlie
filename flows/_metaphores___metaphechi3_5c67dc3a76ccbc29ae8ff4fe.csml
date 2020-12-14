@@ -1,0 +1,22 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4fe
+start:
+  say Typing(4000)
+  say "Tu décides de laisser ton ami.e jouer sans intervenir."
+  say Typing(4000)
+  say "La partie est longue."
+  say Typing(4000)
+  say "La partie est laborieuse."
+  say Typing(4000)
+  say "La partie est interminable."
+  say Typing(5000)
+  say "Si ton ami.e ne parvient toujours pas à éliminer son adversaire, iel semble capable de se débrouiller tout.e seul.e."
+  say Typing(5000)
+  say Question(
+    "Tu choisis donc de lea laisser continuer seul.e et de reprendre le cours de ta vie.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord", payload="/_metaphores___metaphechi4_5c67dc3a76ccbc29ae8ff4ff"),
+    ],
+  )
+  hold
+  

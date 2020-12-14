@@ -1,0 +1,84 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2e1
+start:
+  say Typing(2000)
+  say "Voici ce que je peux te proposer :
+
+(fais aussi défiler les boutons en bas ↔️)"
+  say Typing(2000)
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Gratitude",
+        subtitle="Je pratique la gratitude",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7d0dc8ea-0f3e-4a7f-b575-faaba3137ebd.jpeg",
+        buttons=[
+          Button("C'est parti ! 💛", payload="/_psychologie_clara___exercice_de_gratitude_5c67dc3a76ccbc29ae8ff3d7"),
+        ],
+      ),
+      Card(
+        title="Ancrage",
+        subtitle="Je me reconnecte à mon corps et mon esprit",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/320f8737-e25c-4f6b-a24e-50846ab5cd2c.jpeg",
+        buttons=[
+          Button("C'est parti ⚓️", payload="/_ancrage_igor___introanc_5c67dc3a76ccbc29ae8ff2ae"),
+        ],
+      ),
+      Card(
+        title="Relaxation",
+        subtitle="Détente profonde",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/abe29d20-36e4-4115-acd3-e3923387f472.jpeg",
+        buttons=[
+          Button("C'est parti! ⏳", payload="/_poser_igor___menurelax_5c67dc3a76ccbc29ae8ff2a1"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Jeux",
+        subtitle="J'ai envie de jouer ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/81e29967-902f-4b04-a63f-81f4f920623b.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_menus_igorclara___menujeux_5c67dc3a76ccbc29ae8ff274"),
+        ],
+      ),
+      Card(
+        title="Rire",
+        subtitle="J'ai besoin de rire un bon coup !",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e1cd3fd7-6fd5-4296-a2c6-ea377ccae9aa.jpeg",
+        buttons=[
+          Button("C'est parti ! 😂", payload="/_blagues_clara___randomrire_5c67dc3a76ccbc29ae8ff2e9"),
+        ],
+      ),
+      Card(
+        title="Valeurs",
+        subtitle="Agir selon ses valeurs",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/0e1ee861-89e7-436d-a6c3-19dcfdc6054c.jpeg",
+        buttons=[
+          Button("C'est parti !🎋", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+        ],
+      ),
+      Card(
+        title="Lettre Moi Futur",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/849d9748-67aa-47c0-b926-ac0505ff23c1.jpeg",
+        buttons=[
+          Button("C'est parti ! 🤗", payload="/_act___lettremoifutur1_5c67dc3a76ccbc29ae8ff3e6"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("❔Activité au hasard", payload="/_activites_agreables_cf___randomactiviteagreable_5c67dc3a76ccbc29ae8ff2e2"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🤗Psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("👋🏻En rester là", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

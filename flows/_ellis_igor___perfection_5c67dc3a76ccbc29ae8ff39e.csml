@@ -1,0 +1,116 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff39e
+start:
+  say Typing(4000)
+  say Question(
+    "Même si la solution parfaite existait (ce qui n'est pas le cas), il n'y aurait pas de raison de devoir absolument la trouver 😉
+
+(Même si je sais que c'est tentant! J'essaye d'être parfaite, mais mes créateurices ne le sont pas huhu)",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Nous avons tou.te.s un certain contrôle sur nos vies, mais il est impossible de tout contrôler, tout comme il est impossible de trouver des solutions parfaites à tous nos problèmes.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Ce n'est pas la fin du monde si tu ne trouves pas la solution parfaite à un problème. En te disant qu'il est horrible de ne pas trouver la solution idéale, tu ne fais que te contrarier davantage et tu auras encore plus de mal à trouver une solution valable.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "La plupart des problèmes ont plusieurs solutions. 
+
+Mais si tu n'en cherches qu'une seule et parfaite, tu ne verras pas les autres, et par conséquent, tu ne pourras régler aucun problème. 
+
+De plus, si tu optes pour une solution imparfaite, tu seras contrarié.e de ne pas avoir continué à chercher la solution idéale...",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Si tu passes un temps important à chercher la solution parfaite à un de tes problèmes, tu n'auras pas assez de temps à consacrer aux autres problèmes (donc aux autres solutions ! ).",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4000)
+  say Question(
+    "Quand tu as un problème, fais une liste de plusieurs solutions et choisis la meilleure d'entre elles plutôt que de chercher sans relâche la solution parfaite 😉",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(4000)
+  say Question(
+    "Les solutions qui semblent parfaites ont souvent des résultats inattendus. 
+
+De temps en temps, tu en choisiras une dont les résultats ne seront pas aussi bons que prévus. 
+
+Résoudre des problèmes nécessite de l'entrainement. 
+Plus tu auras pratiqué, plus efficacement tu résoudras tes problèmes. 
+Mais si tu t'obstines à chercher la solution parfaite, tu ne pourras pas essayer les autres, tu ne pourras pas t'entrainer et tu ne pourras donc pas progresser. 
+
+(mes créateurices passent un temps fou à chercher de nouvelles solutions aux problèmes que je leur pose... oups)",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

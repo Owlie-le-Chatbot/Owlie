@@ -1,0 +1,24 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff341
+start:
+  say Typing(2000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Très bien, écris un deuxième argument \"pour\" en une phrase 📝"
+  hold
+  
+  remember _faveur2 = event
+  
+  say Typing(2000)
+  say Question(
+    "Le deuxième argument en faveur de la pensée douloureuse : {{_penseedouloureuse}} est-il : {{_faveur2}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_examen_de_levidence_it___pour3_5c67dc3a76ccbc29ae8ff342"),
+      Button("Recommencer", payload="/_examen_de_levidence_it___pour2_5c67dc3a76ccbc29ae8ff341"),
+    ],
+  )
+  hold
+  

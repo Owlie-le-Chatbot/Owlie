@@ -1,0 +1,27 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1fe
+start:
+  say Typing(1800)
+  say Question(
+    "Aurais-tu la gentillesse de me dire si ce que nous avons fait ensemble t'a fait du bien ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😊Oui, plutôt !"),
+      Button("☺️Non, pas encore"),
+      Button("📝Donner mon avis", payload="/_feedbacks_clara___avisutilisateur_5c67dc3a76ccbc29ae8ff240"),
+    ],
+  )
+  hold
+  
+  remember _user_feedback = event
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  say "Merci, c'est bon à savoir !"
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8", "_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9", "_fin_clara___fin4_5c67dc3a76ccbc29ae8ff1fb", "_fin_clara___fin5_5c67dc3a76ccbc29ae8ff1fc"]))
+  if (rand == 0) goto flow _fin_clara___fin1_5c67dc3a76ccbc29ae8ff1f8
+  if (rand == 1) goto flow _fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9
+  if (rand == 2) goto flow _fin_clara___fin4_5c67dc3a76ccbc29ae8ff1fb
+  if (rand == 3) goto flow _fin_clara___fin5_5c67dc3a76ccbc29ae8ff1fc

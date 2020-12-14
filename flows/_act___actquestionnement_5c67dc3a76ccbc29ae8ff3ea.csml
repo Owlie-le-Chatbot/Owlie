@@ -1,0 +1,63 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3ea
+start:
+  say Typing(2700)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Souviens-toi du dernier moment où tu te sentais bien {{_name}}.
+Qu'est-ce qui a changé depuis ? 📝Écris-le moi en 1 phrase puis appuie sur la touche « entrer » ↩️
+"
+  hold
+  
+  remember _act1 = event
+  
+  say Typing(4000)
+  goto form_3_0
+
+
+// form component
+form_3_0:
+  say "Qu'est-ce que ce comportement essaie de te dire ? Écris-le moi en 1 phrase puis appuie sur la touche « entrer » ↩️"
+  hold
+  
+  remember _act2 = event
+  
+  say Typing(4000)
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Qu’est-ce qui est tellement important pour toi pour que ton corps et ton esprit cherche à attirer ton attention dessus ? Écris-le moi en 1 phrase puis appuie sur la touche « entrer » ↩️"
+  hold
+  
+  remember _act3 = event
+  
+  say Typing(4000)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Qu’est-ce qui compte suffisamment à tes yeux pour que tu sois prêt.e à accepter les émotions négatives qui vont avec (peur, frustration, culpabilité…) ?
+
+Écris-le moi en 1 phrase puis appuie sur la touche « entrer » ↩️"
+  hold
+  
+  remember _act4 = event
+  
+  say Typing(4000)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Qu’est-ce que tu peux faire, là maintenant, tout de suite, pour aller dans la direction de ce qui est important pour toi ? Écris-le moi en 1 phrase puis appuie sur la touche « entrer » ↩️"
+  hold
+  
+  remember _act5 = event
+  
+  // adding conditional redirect to flow
+  goto flow _act___actquestionnement2_5c67dc3a76ccbc29ae8ff3eb

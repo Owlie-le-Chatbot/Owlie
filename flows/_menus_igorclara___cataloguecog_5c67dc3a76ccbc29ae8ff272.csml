@@ -1,0 +1,84 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff272
+start:
+  say "Voici toutes les activités dans ce domaine :
+
+(fais défiler les images ↔️)"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Me rappeler et/ou noter les valeurs importantes pour moi !",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/afbbe31b-a2c1-49e4-9947-5cdcc9d3a05c.jpeg",
+        buttons=[
+          Button("Mes valeurs", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+        ],
+      ),
+      Card(
+        title="Me changer les idées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cc16cdb3-2401-4868-8eab-79341a1ee4a5.jpeg",
+        buttons=[
+          Button("Me changer les idées", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+        ],
+      ),
+      Card(
+        title="Quels sont différents types de pensées douleureuses ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ce9243ab-fc9c-43dc-84a6-fdea8bfcb386.jpeg",
+        buttons=[
+          Button("Les types de pensées", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+        ],
+      ),
+      Card(
+        title="Pourquoi je rumine et vois tout en noir ?",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/44f1eda8-e428-457f-ac66-1e8f27dd8e3e.jpeg",
+        buttons=[
+          Button("Ruminations", payload="/_education_therapeutiqcf___les_ruminations_5c67dc3a76ccbc29ae8ff41a"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Penser positif",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2e082bd7-e78c-45bf-9882-55460381bc0e.jpeg",
+        buttons=[
+          Button("Penser positif", payload="/_psychologie_clara___positif_5c67dc3a76ccbc29ae8ff3e4"),
+        ],
+      ),
+      Card(
+        title="Quiz sur les pensées automatiques",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4cea8d7f-0159-433c-b558-5164655ab66d.jpeg",
+        buttons=[
+          Button("Quiz", payload="/_psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca"),
+        ],
+      ),
+      Card(
+        title="Me distancier de mes pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8fa50525-0463-4d79-81c3-0d54011233e4.jpeg",
+        buttons=[
+          Button("Apaiser une pensée", payload="/_psychologie_clara___beck_exemple_1_5c67dc3a76ccbc29ae8ff3cc"),
+          Button("Prendre du recul", payload="/_psychologie_clara___pensees_et_avis_ami_5c67dc3a76ccbc29ae8ff3ce"),
+        ],
+      ),
+      Card(
+        title="Résoudre un problème",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/23421c1e-cb11-4d68-a83b-458d9176f42d.jpeg",
+        buttons=[
+          Button("Analyser", payload="/_psychologie_clara___analyse_de_situation_1_5c67dc3a76ccbc29ae8ff3d2"),
+          Button("Résoudre", payload="/_psychologie_clara___analyse_2_resolution_de_probleme_5c67dc3a76ccbc29ae8ff3d3"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+      Button("💬Parler", payload="/_ai_dial_negatifscf___randomdialnegatifs_5c67dc3a76ccbc29ae8ff227"),
+      Button("Menu principal", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+    ],
+  )
+  hold
+  

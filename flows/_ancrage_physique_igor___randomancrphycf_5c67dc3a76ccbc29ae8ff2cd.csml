@@ -1,0 +1,13 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2cd
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_ancrage_physique_igor___etirement_5c67dc3a76ccbc29ae8ff2c4", "_ancrage_physique_igor___contact_5c67dc3a76ccbc29ae8ff2c5", "_ancrage_physique_igor___crampon_5c67dc3a76ccbc29ae8ff2c6", "_ancrage_physique_igor___souffle_5c67dc3a76ccbc29ae8ff2c7", "_ancrage_physique_igor___tactile_5c67dc3a76ccbc29ae8ff2c8", "_ancrage_physique_igor___talons_5c67dc3a76ccbc29ae8ff2c9", "_ancrage_physique_igor___marche_5c67dc3a76ccbc29ae8ff2ca", "_ancrage_physique_igor___saut_5c67dc3a76ccbc29ae8ff2cb", "_ancrage_physique_igor___eaucopy1_5c67dc3a76ccbc29ae8ff2cc"]))
+  if (rand == 0) goto flow _ancrage_physique_igor___etirement_5c67dc3a76ccbc29ae8ff2c4
+  if (rand == 1) goto flow _ancrage_physique_igor___contact_5c67dc3a76ccbc29ae8ff2c5
+  if (rand == 2) goto flow _ancrage_physique_igor___crampon_5c67dc3a76ccbc29ae8ff2c6
+  if (rand == 3) goto flow _ancrage_physique_igor___souffle_5c67dc3a76ccbc29ae8ff2c7
+  if (rand == 4) goto flow _ancrage_physique_igor___tactile_5c67dc3a76ccbc29ae8ff2c8
+  if (rand == 5) goto flow _ancrage_physique_igor___talons_5c67dc3a76ccbc29ae8ff2c9
+  if (rand == 6) goto flow _ancrage_physique_igor___marche_5c67dc3a76ccbc29ae8ff2ca
+  if (rand == 7) goto flow _ancrage_physique_igor___saut_5c67dc3a76ccbc29ae8ff2cb
+  if (rand == 8) goto flow _ancrage_physique_igor___eaucopy1_5c67dc3a76ccbc29ae8ff2cc

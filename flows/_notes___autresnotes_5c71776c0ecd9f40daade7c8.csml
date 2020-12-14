@@ -1,0 +1,20 @@
+// CHATFUEL BLOCK ID 5c71776c0ecd9f40daade7c8
+start:
+  say Typing(2400)
+  say Question(
+    "Ah zut...
+
+Peut être était-ce une autre petite note sous un autre numéro ? 
+Je peux en stocker jusqu'à 3.
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("✍️Note 1", payload="/_notes___rappelnotes1_5c7176d80ecd9f40daad4e87"),
+      Button("✍️Note 2", payload="/_notes___rappelnotes2_5c72b9020ecd9f40da322ff3"),
+      Button("✍️Note 3", payload="/_notes___rappelnotes3_5c72b8b80ecd9f40da31d40f"),
+      Button("🔚Sortir", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

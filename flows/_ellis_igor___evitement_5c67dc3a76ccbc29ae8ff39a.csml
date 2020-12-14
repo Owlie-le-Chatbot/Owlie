@@ -1,0 +1,151 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff39a
+start:
+  say Typing(4000)
+  say Question(
+    "Le soulagement obtenu en évitant une tâche difficile ou désagréable n'est que temporaire. 
+
+Tu te sens mieux sur le moment et généralement moins bien plus tard lorsque tu regrettes de ne pas avoir saisi cette opportunité. 
+
+Par exemple, si tu évites de demander une augmentation à ton patron, tu te sens soulagé.e de ne pas avoir pris le risque d'essuyer un refus et de te sentir rejeté.e, mais tu risques ultérieurement de te reprocher d'avoir été lâche.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(4000)
+  say Question(
+    "Quand tu te dis qu'une tâche est si pénible qu'il faut l'éviter :
+① tu passes du temps à trouver des moyens d'y échapper...
+② ...puis du temps à trouver une excuse pour ne pas l'avoir réalisée 😅
+
+Plus tu la fais trainer, plus tu traines tes soucis !
+Au lieu de l'accomplir et de t'en libérer, tu perpétues ta misère 😅",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Plus on pratique quelque chose, plus ça devient facile. 
+
+Plus tu éviteras les tâches difficiles, moins tu auras l'occasion de les rendre plus faciles. 
+
+Les tâches difficiles resteront donc difficiles et tu ne gagneras pas la confiance pour les accomplir 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(4000)
+  say Question(
+    "Si tu passes ta vie à ne faire que des choses très faciles, ta vie risque d'être ennuyeuse. 
+
+Mais si tu tentes de nouvelles expériences, et notamment des tâches plus difficiles, tu gagneras de la satisfaction et un sentiment d'accomplissement. 
+
+Tu mèneras alors certainement une vie plus heureuse 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(4000)
+  say Question(
+    "Si une tâche est inutile, il est logique de l'éviter. Mais si cette tâche peut te rendre la vie plus facile ou plus agréable à l'avenir, plus tôt tu t'y mettras, meilleur ce sera.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(4000)
+  say Question(
+    "Tu n'es pas né.e paresseuxse La paresse n'est rien d'autre que l' habitude de se dire des choses fausses sur l'effort. 
+
+Une fois que tu commences à te dire que :
+
+① l'effort à fournir n'est pas monstrueux
+② qu'il n'y a pas de raison de l'éviter 
+③ et que le plus tôt sera le mieux
+
+Tu verras que la paresse disparaitra !",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(4000)
+  say Question(
+    "Il n'y a pas de raison de te rendre la vie difficile en travaillant trop dur ou inutilement. 
+Mais si l'effort est nécessaire et peut rendre ta vie meilleure, alors :
+
+① décide du moment où tu vas l'entamer (le plus tôt sera le mieux)
+② fais-le au moment que tu auras fixé (ne le retarde pas encore)
+③ fais-le par petits bouts si nécessaire et 
+④ accorde-toi une récompense après avoir accompli chaque petit bout.",
+    button_type="quick_reply",
+    buttons=[
+      Button("➡️Continue"),
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(4000)
+  say Question(
+    "En résumé : 
+La vie est faite pour être vécue. Si tu es fatigué.e, repose-toi, mais ne passe pas ta vie à te reposer car tu n'en as qu'une ! 
+
+Essaye des choses qui peuvent paraître difficiles et déplaisantes (si elles te semblent importantes), continue à les faire jusqu'à ce qu'elles soient bien faites et tu les trouveras plus attrayantes 😃",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_feedbacks_clara___avisutilisateur3ellis_5c67dc3a76ccbc29ae8ff242"),
+    ],
+  )
+  hold
+  

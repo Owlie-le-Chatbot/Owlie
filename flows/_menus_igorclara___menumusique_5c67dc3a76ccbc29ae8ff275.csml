@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff275
+start:
+  say Typing(4000)
+  say Question(
+    "Bonne idée 🎶!
+Tu préfères quoi ?",
+    buttons=[
+      Button("Musique stimulante🎸", payload="/_activites_igor___musicstim_5c67dc3a76ccbc29ae8ff298"),
+      Button("Musique détente🎷", payload="/_poser_igor___listmusic_5c67dc3a76ccbc29ae8ff2a3"),
+    ],
+    quick_replies=[
+      Button("🏖Activité agréable ", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("Menu principal", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,14 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4d4
+start:
+  say Typing(1500)
+  say "Voici quelques exercices à réaliser en imagination."
+  say Typing(2000)
+  say Question(
+    "En les pratiquant régulièrement, ils te permettront d'augmenter ta flexibilité psychologique face à une pensée douloureuse.",
+    button_type="quick_reply",
+    buttons=[
+      Button("OK", payload="/_metaphores___menumetaph_5c67dc3a76ccbc29ae8ff4d5"),
+    ],
+  )
+  hold
+  

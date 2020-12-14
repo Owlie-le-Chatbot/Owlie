@@ -1,0 +1,73 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff322
+start:
+  say Typing(2000)
+  say "Une mémoire sélective !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c0faf352-884d-47a9-b26c-5ddd797f557c.jpeg")
+  say Question(
+    "Le filtrage mental (ou abstraction sélective) consiste à ne retenir d'un évènement ou d'une expérience que les détails le plus déplaisants.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say "\"J’ai gâché mon rendez-vous avec iel car en l’embrassant, je lui ai marché sur le pied\""
+  say Typing(2000)
+  say "\"Mon exposé est raté, j’ai vu quelqu’un rire dans le public\""
+  say Typing(2000)
+  say Question(
+    "\"Ce.tte médecin a consulté le Vidal pendant la consultation, iel n’est pas compétent.e\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3000)
+  say "Le cerveau est une formidable machine à confirmer nos croyances. 
+
+Il sélectionne en priorité ce qui va dans leur sens au détriment du reste."
+  say Typing(2000)
+  say "Si ces croyances sont des pensées négatives, elles sont logiquement renforcées malgré ce qui pourrait les contredire."
+  say Typing(2000)
+  say "Lorsque ce cercle vicieux s'enclenche, il conduit logiquement à maintenir le malaise et à installer la démotivation."
+  say Typing(3000)
+  say "1. Recherche les détails positifs qui peuvent également être associés à cette situation décevante, même s'ils ne te paraissent pas faire le poids."
+  say Typing(2000)
+  say Question(
+    "2. À force d'entrainement, tu constateras qu'il y a toujours suffisamment de positif pour compenser le négatif, et la motivation reviendra.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Question(
+    "Veux-tu continuer l'analyse de ta pensée douloureuse ou commencer les exercices d'assouplissement de pensée?",
+    buttons=[
+      Button("Continuer", payload="/_distorsions_cog_igor___3disqualificationdupositif_5c67dc3a76ccbc29ae8ff323"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

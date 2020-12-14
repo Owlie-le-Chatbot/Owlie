@@ -1,0 +1,46 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3dc
+start:
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a971cc64-f69a-4f74-be9a-c20893cabd1c.jpeg")
+  say "Voici de quoi t'aider un peu pour apaiser ton mental et te sentir mieux :-)"
+  say Typing(1900)
+  say Carousel(
+    cards=[
+      Card(
+        title="Cohérence cardiaque",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/4138e7e8-b66a-4452-82d7-09384d1de067.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=dGJkzyKHKUE", text="Cohérence cardiaque"),
+        ],
+      ),
+      Card(
+        title="Méditer (12')",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f5812748-d906-4e48-a18d-160e5787272d.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=JaCxFK1ttYE", text="Méditer"),
+        ],
+      ),
+      Card(
+        title="Respiration (3')",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/89cbe910-dfad-4378-9c50-8be668ba8502.jpeg",
+        buttons=[
+          Url("https://www.youtube.com/watch?v=ruWLyDivpnU", text="Exercice respiration"),
+        ],
+      ),
+      Card(
+        title="Auto-apaisement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5e1f6a8e-1681-418c-b807-9fa3333fb6ac.jpeg",
+        buttons=[
+          Button("Auto-apaisement", payload="/_psychologie_clara___autoapaisement_5c67dc3a76ccbc29ae8ff3b9"),
+        ],
+      ),
+      Card(
+        title="Échanger",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c3d2ed61-8c04-4cab-992a-f25fe4af9cfa.jpeg",
+        buttons=[
+          Button("Échanger", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="square",
+  )
+  

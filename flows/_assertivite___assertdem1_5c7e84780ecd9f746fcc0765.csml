@@ -1,0 +1,308 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0765
+start:
+  say Typing(4000)
+  say Question(
+    "Il n'est pas toujours facile de demander quelque chose.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment faire?"),
+      Button("🔍Un exemple stp !", payload="/_assertivite___assertdem2_5c7e84780ecd9f746fcc0766"),
+      Button("😥Oui, je n'ose pas", payload="/_assertivite___assertdem3_5c7e84780ecd9f746fcc0767"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say "Voici quelques règles simples pour formuler une demande."
+  say Typing(3000)
+  say "Les respecter ne te garantira pas d'obtenir gain de cause."
+  say Typing(5000)
+  say Question(
+    "En revanche, tu te donneras plus de chances de bien faire passer ton message.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say Question(
+    "Règle 1. Savoir ce que l'on veut.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(4000)
+  say "En effet, cela peut paraitre évident en théorie mais ça ne l'est pas toujours en pratique!"
+  say Typing(5000)
+  say "Si tu ne sais pas clairement ce que tu veux, ton interlocuteurice ne pourra pas le savoir mieux que toi."
+  say Typing(3000)
+  say Question(
+    "Ni le deviner!",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est pas faux"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "Règle 2. Connaitre ses droits, et ce qu'ils impliquent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say "Tu as en effet tout à fait le droit de demander quelque chose."
+  say Typing(4000)
+  say "Mais n'oublie pas que ton interlocuteurice a le droit de refuser."
+  say Typing(3000)
+  say Question(
+    "Le refus fait partie de la règle du jeu!",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr..."),
+    ],
+  )
+  hold
+  
+  goto step_29
+
+
+step_29:
+  say Typing(3000)
+  say Question(
+    "Règle 3. Formuler la demande de façon DIRECTE et PRÉCISE.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_32
+
+
+step_32:
+  say Typing(4000)
+  say "DIRECTE car il est souvent inutile voire contreproductif de se justifier."
+  say Typing(4000)
+  say "Pour la plupart de tes interlocuteurice.s, il s'agira d'un détour inutile."
+  say Typing(5000)
+  say "Si tu estimes qu'il est indispensable de le faire, abrège au maximum tes justifications."
+  say Typing(6000)
+  say Question(
+    "En effet, ton interlocuteurice risque de s'impatienter voire de s'irriter si tu te perds dans des justifications interminables.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📝C'est noté"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(7000)
+  say "PRÉCISE car ta demande aura plus de chances d'être bien comprise si ton interlocuteurice sait précisément ce qui lui est demandé."
+  say Typing(4000)
+  say "Pour exemple, note la différence entre demander à son/sa conjoint.e :"
+  say Typing(3000)
+  say "a. \"un peu plus de son temps parce qu'iel ne nous en accorde pas assez\" (vague)"
+  say Typing(3000)
+  say Question(
+    "b. \"d'aller manger en tête à tête ce soir au restaurant\" (précis)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_50
+
+
+step_50:
+  say Typing(4000)
+  say Question(
+    "Règle 4. S'impliquer personnellement, et impliquer l'interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Et je fais comment?"),
+    ],
+  )
+  hold
+  
+  goto step_53
+
+
+step_53:
+  say Typing(4000)
+  say "Le meilleur moyen de s'impliquer personnellement, c'est d'utiliser le \"je\"."
+  say Typing(4000)
+  say "Le meilleur moyen d'impliquer l'interlocuteur, c'est d'utiliser le \"tu\" (ou le \"vous\")."
+  say Typing(3000)
+  say "Dans les deux cas, ta demande sera plus efficace."
+  say Typing(4000)
+  say "Pour exemple, note la différence entre demander à son/sa collègue :"
+  say Typing(4000)
+  say "a. \"...Je souhaiterais vraiment que tu puisses me remplacer jeudi prochain...\" (implication)"
+  say Typing(5000)
+  say Question(
+    "b. \"... Il faudrait vraiment que quelqu'un.e puisse me remplacer jeudi prochain...\" (peu d'implication)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_66
+
+
+step_66:
+  say Typing(3000)
+  say Question(
+    "Règle 5. Exprimer ses sentiments de façon positive.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_69
+
+
+step_69:
+  say Typing(5000)
+  say "Exprimer ce que l'on ressent, ou ce que l'on pourrait ressentir donne plus de force à une demande."
+  say Typing(4000)
+  say "Mais à condition que ces sentiments soient exprimés de manière positive!"
+  say Typing(4000)
+  say "Pour exemple, note la différence entre demander à un.e ami.e :"
+  say Typing(4000)
+  say "a. \"Ça me ferait bien plaisir que tu puisses me raccompagner\" (positif)"
+  say Typing(4000)
+  say Question(
+    "b. \"Ça m'embetterait vachement si tu ne pouvais pas me raccompagner\" (négatif)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_80
+
+
+step_80:
+  say Typing(3000)
+  say Question(
+    "Règle 6. Exprimer son empathie",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_83
+
+
+step_83:
+  say Typing(4000)
+  say "Cela consiste à faire savoir à l'interlocuteurice ce que l'on comprend de sa position ou de sa situation."
+  say Typing(4000)
+  say "Certain.e.s appellent ça \"passer un peu de pommade\"."
+  say Typing(7000)
+  say Question(
+    "La plupart du temps, dans le cadre d'une demande, il s'agit de signifier à son interlocuteurice que l'on peut comprendre qu'il soit difficile pour lui/elle d'accepter la demande.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_90
+
+
+step_90:
+  say Typing(4000)
+  say "Note par exemple la différence entre demander à un.e collègue :"
+  say Typing(6000)
+  say "a. \"Je sais que c'est peut-être difficile pour toi mais j'aimerais vraiment que tu puisses me remplacer jeudi prochain\" (empathie)"
+  say Typing(4000)
+  say "b. \"J'aimerais vraiment que tu puisses me remplacer jeudi prochain\" (pas d'empathie)"
+  say Typing(5000)
+  say Question(
+    "L'empathie est le ressort le plus efficace pour s'affirmer. Alors autant ne pas se priver de la manifester!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_99
+
+
+step_99:
+  say Typing(4000)
+  say Question(
+    "C'était donc les 6 règles à respecter pour formuler des demandes affirmées!",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule !"),
+      Button("🔍Un exemple stp!", payload="/_assertivite___assertdem2_5c7e84780ecd9f746fcc0766"),
+      Button("😥J'ose pas le faire", payload="/_assertivite___assertdem3_5c7e84780ecd9f746fcc0767"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_102
+
+
+step_102:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/faccc78b-9c37-4c29-950c-1b103d1e757d.jpeg",
+    quick_replies=[
+      Button("🔍Un exemple!", payload="/_assertivite___assertdem2_5c7e84780ecd9f746fcc0766"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertdem3_5c7e84780ecd9f746fcc0767"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

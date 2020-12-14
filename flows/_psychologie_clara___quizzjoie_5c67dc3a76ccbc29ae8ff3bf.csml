@@ -1,0 +1,50 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3bf
+start:
+  say Typing(2200)
+  say "J'ai les yeux brillants, je souris, la poitrine/le torse en avant..."
+  say Typing(2600)
+  say Question(
+    "Les pommettes de mes joues se haussent, je ressens de l'ouverture, je pétille intérieurement...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est de la joie !"),
+      Button("C'est la surprise !", payload="/_psychologie_clara___quizzemotrate_5c67dc3a76ccbc29ae8ff3bc"),
+      Button("C'est la colère !", payload="/_psychologie_clara___quizzemotrate_5c67dc3a76ccbc29ae8ff3bc"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3200)
+  say Question(
+    "Tout à fait {{_name}} ! Il s'agit bien de la joie ! Faisons connaissance avec Joie :",
+    buttons=[
+      Url("https://www.youtube.com/watch?v=KESbqOWTY-8", text="Joie"),
+    ],
+  )
+  
+  say Typing(2000)
+  say Question(
+    "On poursuit ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("☺️Oui, avec plaisir "),
+      Button("🚀Autre chose", targets=["_education_therapeutiqcf___carrefour_explications_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40a", "_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"]) as btn__1,
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_psychologie_clara___quizzdegout_5c67dc3a76ccbc29ae8ff3c1", "_psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd", "_psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0", "_psychologie_clara___quizzpeur_5c67dc3a76ccbc29ae8ff3c2", "_psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be"]))
+  if (rand == 0) goto flow _psychologie_clara___quizzdegout_5c67dc3a76ccbc29ae8ff3c1
+  if (rand == 1) goto flow _psychologie_clara___quizzcolere_5c67dc3a76ccbc29ae8ff3bd
+  if (rand == 2) goto flow _psychologie_clara___quizzsurprise_5c67dc3a76ccbc29ae8ff3c0
+  if (rand == 3) goto flow _psychologie_clara___quizzpeur_5c67dc3a76ccbc29ae8ff3c2
+  if (rand == 4) goto flow _psychologie_clara___quizztristesse_5c67dc3a76ccbc29ae8ff3be

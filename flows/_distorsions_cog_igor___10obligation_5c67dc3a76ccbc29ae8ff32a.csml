@@ -1,0 +1,65 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff32a
+start:
+  say Typing(2000)
+  say "La \"musturbation\" !
+
+Cela vient du verbe \"must\" (= devoir en anglais)"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/94a83607-2751-49cb-bfce-14559bb88aee.jpeg")
+  say Question(
+    "La pensée par obligation consiste à fixer (à soi ou aux autres) des règles correspondant à des principes rigides ou à des exigences de perfection.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"Il faut toujours aider ses ami.e.s, je ne peux donc pas refuser de lui prêter de l’argent\""
+  say Typing(2000)
+  say "\"Il est indispensable d’être apprécié.e de ses voisin.e.s, je ne dois donc pas leur faire de reproches quand iels font du bruit\""
+  say Typing(2000)
+  say Question(
+    "\"Après tout ce que j’ai fait pour iel, comment ose-t-iel refuser de me confier sa voiture ?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2000)
+  say "Ce mode de pensée inclut souvent les verbe devoir (\"je dois\") ou falloir (\"il faut\"). Il traduit un manque de flexibilité mentale."
+  say Typing(3000)
+  say "Être intransigeant.e vis-à-vis de soi-même ou des autres entretient la déception, la frustration et incite à des reproches excessifs."
+  say Typing(2000)
+  say "1. Reformule ta pensée en une phrase qui traduit moins l'obligation. 
+
+Fait l'effort de retirer les verbes \"devoir\" et \"falloir\" de cette phrase et de ton vocabulaire au profit d'autres plus souples (ex. \"j'aimerais\")"
+  say Typing(2000)
+  say Question(
+    "2. Compense les reproches par des gratifications. 
+
+Si ce qui n'a pas été fait est souligné, ce qui a été réalisé mérite aussi de l'être. Remercie, félicite (toi ou les autres) lorsqu'arrive ce que tu attendais.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  // adding conditional redirect to flow
+  goto flow _analyse_rationelle_igor___complanal_5c67dc3a76ccbc29ae8ff31e

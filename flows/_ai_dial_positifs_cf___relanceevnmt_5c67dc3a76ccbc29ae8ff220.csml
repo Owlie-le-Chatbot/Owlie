@@ -1,0 +1,14 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff220
+start:
+  goto form_0_0
+
+
+// form component
+form_0_0:
+  say "Raconte, de quoi s'agit-il ?"
+  hold
+  
+  remember _recit_journee = event
+  
+  // adding conditional redirect to flow
+  goto flow _ai_dial_positifs_cf___specvalenceemot_5c67dc3a76ccbc29ae8ff224

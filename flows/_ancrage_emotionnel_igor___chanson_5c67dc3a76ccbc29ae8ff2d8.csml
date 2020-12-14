@@ -1,0 +1,162 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d8
+start:
+  say Typing(2000)
+  say "Tu vas maintenant écouter une chanson ou n'importe quelle musique qui soit apaisante et/ou réconfortante pour toi."
+  say Typing(3000)
+  say "Cherche dans ton smartphone, tes CDs, ton MP3, ou dans ton ordinateur si tu disposes de quelque chose qui pourrait te procurer cet effet 😊"
+  say Typing(2000)
+  say Question(
+    "Si tu as trouvé, écoute la piste attentivement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+      Button("💡Pas d'idée"),
+    ],
+  )
+  hold
+  
+  goto step_6
+
+
+step_6:
+  say Typing(2000)
+  say "Voici quelques chansons apaisantes et réconfortantes :
+
+(fais défiler les images ↔️)"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Father and Son",
+        subtitle="Cat Stevens",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c1e1215f-5045-4993-b507-e8a305222e26.jpeg",
+        buttons=[
+          Url("https://youtu.be/yERildSsWxM", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Lean on Me",
+        subtitle="Bill Withers",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/95ec7e87-6545-4fbb-8c8d-2eaf2e523680.jpeg",
+        buttons=[
+          Url("https://youtu.be/MYI0AoXlOwE", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="You've Got a Friend",
+        subtitle="Carole King",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/29883c68-c343-43b9-97c0-b2c2637b41b4.jpeg",
+        buttons=[
+          Url("https://youtu.be/BcJbzuyp6VY", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Don't Worry Baby",
+        subtitle="The Beach Boys",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3ddc0fb6-bb24-43ab-b62d-1493afbb1fe6.jpeg",
+        buttons=[
+          Url("https://youtu.be/Qt6oiHHbmT8", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Smile Please",
+        subtitle="Stevie Wonder",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7ff95ac2-cf93-4bee-add1-936a40d0ecd1.jpeg",
+        buttons=[
+          Url("https://youtu.be/5RBX8EQKM6A", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="What a Wonderful Thing Love Is",
+        subtitle="Al Green",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/daca4c06-ba64-4ae9-9039-10387ae9933d.jpeg",
+        buttons=[
+          Url("https://youtu.be/0js1593pQr0", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Eldorado",
+        subtitle="Electric Light Orchestra",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6f78e03e-8022-409f-9cff-cb5c4cbd0cef.jpeg",
+        buttons=[
+          Url("https://youtu.be/pC_lakXdc-E", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Musty Dusty",
+        subtitle="Sagittarius",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/17ed7993-4892-464c-a7f6-e6148189a13c.jpeg",
+        buttons=[
+          Url("https://youtu.be/XQWmPMAld1c", text="J'écoute"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="J'ai dormi sous l'eau",
+        subtitle="Air",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/69fd32be-8af5-42fc-897a-6f49b6d304dd.jpeg",
+        buttons=[
+          Url("https://youtu.be/Zy9pBpp0cNs", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="At Last I Am Free",
+        subtitle="Chic",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c2af66c7-1d56-4fed-bfdc-ddf49a25e375.jpeg",
+        buttons=[
+          Url("https://youtu.be/Qo0LYX6COv0", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Starlight Ride",
+        subtitle="Camel",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b07fd6fc-0ca8-4ba3-be5b-d414d7c7840a.jpeg",
+        buttons=[
+          Url("https://youtu.be/fA0DTLRN4Oo", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Surprise, Surprise",
+        subtitle="Caravan",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/812450c4-0ef9-49cc-87bc-1e0ce0e5c487.jpeg",
+        buttons=[
+          Url("https://youtu.be/mKhUrYT_2_s", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="I'm Sorry",
+        subtitle="Brenda Lee",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/efe42041-58c9-409e-b807-56f5008a9ac7.jpeg",
+        buttons=[
+          Url("https://youtu.be/Kh0Ky6vGoeM", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Rejoice",
+        subtitle="Argent",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dc927c92-08b7-45bb-accd-23bf6a2a7a21.jpeg",
+        buttons=[
+          Url("https://youtu.be/bh9FlJ5ldG8", text="J'écoute"),
+        ],
+      ),
+      Card(
+        title="Both Sides Now",
+        subtitle="Joni Mitchell",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3a076608-0669-4a25-b4bf-f014e777d1b0.jpeg",
+        buttons=[
+          Url("https://youtu.be/XRjsS3sgY5I", text="J'écoute"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("✔ C'est fait !", payload="/_ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,61 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff339
+start:
+  say Typing(2000)
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Examen de l'évidence",
+        subtitle="J'examine les faits",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a4c3481d-6417-43ed-b178-19f5d3532709.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_examen_de_levidence_it___examevid_5c67dc3a76ccbc29ae8ff33e"),
+        ],
+      ),
+      Card(
+        title="Décentration",
+        subtitle="Je prends de la distance",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/abbb3940-173c-4512-897d-c7358e03522a.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_restructuration_cog_it___decentration_5c67dc3a76ccbc29ae8ff33b"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Réattribution",
+        subtitle="Je réévalue ma part de responsabilité",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/636f081a-bbf8-46f1-a11b-659722eb088f.jpeg",
+        buttons=[
+          Button("C’est parti!", payload="/_restructuration_cog_it___reattribution_5c67dc3a76ccbc29ae8ff33c"),
+        ],
+      ),
+      Card(
+        title="Reformulation",
+        subtitle="Je reformule ma pensée douloureuse",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/71a36d2b-a8c9-463e-9d68-c389970e664c.jpeg",
+        buttons=[
+          Button("C’est parti!", payload="/_restructuration_cog_it___reformulation_5c67dc3a76ccbc29ae8ff33a"),
+        ],
+      ),
+      Card(
+        title="Métaphores",
+        subtitle="Je métaphorise ma pensée",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/19c2f586-13f6-42b7-891a-05c28a0a709b.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_metaphores___intrometaph_5c67dc3a76ccbc29ae8ff4d4"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("Autre chose", payload="/_choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267"),
+    ],
+  )
+  hold
+  

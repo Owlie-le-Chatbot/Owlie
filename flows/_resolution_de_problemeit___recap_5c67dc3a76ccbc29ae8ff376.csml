@@ -1,0 +1,27 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff376
+start:
+  say Typing(2000)
+  say "Récapitulons 😊
+Voici les 5 solutions que tu as proposées :"
+  say Typing(3000)
+  say "1. {{_solution1}}
+
+2. {{_solution2}}
+
+3. {{_solution3}}
+
+4. {{_solution4}}
+
+5. {{_solution5}}"
+  say Typing(2000)
+  say Question(
+    "Cela te convient-il ? 
+Souhaites-tu faire des modifications ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ça me va !", payload="/_resolution_de_problemeit___anal_5c67dc3a76ccbc29ae8ff37d"),
+      Button("Modifier", payload="/_resolution_de_problemeit___modif_5c67dc3a76ccbc29ae8ff377"),
+    ],
+  )
+  hold
+  

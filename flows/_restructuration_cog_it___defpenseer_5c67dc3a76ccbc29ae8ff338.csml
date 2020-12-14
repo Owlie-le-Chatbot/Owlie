@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff338
+start:
+  say Typing(2000)
+  say "Ce n’est pas toujours évident de cerner une pensée qui fait mal 😊"
+  say Typing(2000)
+  say "Essaye d’identifier ce que tes émotions négatives te poussent à juger de ta situation."
+  say Typing(2000)
+  say "Quelle conclusion pourrais-tu  tirer actuellement sur toi-même, sur l’avenir, sur les autres ou sur le monde ?"
+  say Typing(2000)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Écris-moi cette pensée sous la forme d'une phrase simple, directe et précise 📝 "
+  hold
+  
+  remember _penseedouloureuse = event
+  
+  // adding conditional redirect to flow
+  goto flow _restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339

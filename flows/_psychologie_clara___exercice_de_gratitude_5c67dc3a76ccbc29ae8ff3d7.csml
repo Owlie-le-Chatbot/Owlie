@@ -1,0 +1,206 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d7
+start:
+  say Typing(3100)
+  say Question(
+    "\"La gratitude peut transformer votre routine en jours de fête\"
+(William Arthur Ward, écrivain)
+
+\"Une âme pleine de gratitude est comme une rivière pleine d'eau qui ne tarit jamais.\"
+Esther Jonhson (écrivain)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Joli !"),
+      Button("Continue"),
+      Button("Propose autre chose", payload="/_psychologie_clara___random_psychologie_5c67dc3a76ccbc29ae8ff3e3"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3300)
+  say Question(
+    "Je te propose que nous fassions deux courts exercices sur la gratitude et les émotions positives.
+
+Tu te demandes peut être leur intérêt ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui..."),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(4000)
+  say Question(
+    "Eh bien, les interventions positives comme celles-ci ainsi que des exercices visant à promouvoir la bonté, la générosité et l’attention à des éléments positifs dans la journée augmentent les émotions positives, la perception des ressources mentales, sociales et physiques.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(2600)
+  say Question(
+    "Cela améliore aussi la satisfaction de vie et réduit les émotions négatives et la tendance à être déprimé.e. 
+
+Ca a été montré dans de nombreuses études :-)
+(Fredrickson et al., 2008 ; Layous et al., 2011).",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2700)
+  say Question(
+    "Alors, pour commencer, faisons ensemble l'exercice des \"trois bonnes choses\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est à dire ?"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(3300)
+  say Question(
+    "Peux-tu prendre de quoi écrire ?
+
+Sinon tu peux aussi les dire à haute voix, mais ca a plus d'impact si tu l'écris :-) 
+
+L'avantage avec un écrit (dans un petit carnet par exemple), c'est que tu pourras en garder la trace.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, c'est bon !"),
+      Button("Plutôt à haute voix"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("M'améliorer", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+    ],
+  )
+  hold
+  
+  goto step_17
+
+
+step_17:
+  say Typing(2900)
+  say Question(
+    "Maintenant, je t'invite à écrire 3 choses qui se sont bien passées aujourd'hui et leur cause.
+
+Cela peut être 3 choses dont tu es reconnaissant.e.
+
+On peut se dire qu'il n'y a eu aucune bonne chose... Mais, ces trois choses peuvent être \"très petites\" (par exemple : le soleil était agréable, j'ai vu telle vidéo chouette, un.e ami.e m'a rendu visite...)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_20
+
+
+step_20:
+  say Typing(3300)
+  goto form_22_0
+
+
+// form component
+form_22_0:
+  say "Quelles seraient ces 3 choses ? (clique sur la touche \"entrer\" ou \"envoyer\" lorsque tu as terminé)"
+  hold
+  
+  remember _3_bonnes_choses = event
+  
+  say Typing(2700)
+  say Question(
+    "Dans le même esprit, je te propose un autre exercice maintenant : \"Le meilleur soi futur\". 
+
+Ça te dit ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Reprendre + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(1700)
+  say Question(
+    "Pense à ta vie dans le futur. Imagine que tout s’est passé aussi bien que cela se pouvait. Tu as travaillé dur et réussi à accomplir l’ensemble de tes objectifs de vie.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+    ],
+  )
+  hold
+  
+  goto step_28
+
+
+step_28:
+  say Typing(1900)
+  say "Pense à ce que la réalisation de tous tes rêves de vie pourrait t'apporter... 
+
+Prend ton temps pour bien visualiser la scène, ce qui se serait réalisé, comment cela te fait te sentir, comment tu es toi..."
+  say Typing(2300)
+  say Question(
+    "Tu as bien la visualisation en tête ? Appuie sur \"Ok !\" quand l'image est assez nette dans ta tête...",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok !"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_33
+
+
+step_33:
+  say Typing(1700)
+  goto form_35_0
+
+
+// form component
+form_35_0:
+  say "Maintenant, écris ce que tu as imaginé :-), (appuie sur \"entrer\" ou \"envoyer\" quand tu as terminé !)"
+  hold
+  
+  remember _meilleur_soi_futur = event
+  
+  say Typing(2000)
+  say "C'est super que tu sois allé.e jusqu'au bout {{_name}} !"
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c1f26c94-cec0-4753-9b3c-7c3eae7257f4.jpeg",
+    quick_replies=[
+      Button("Merci Owlie !", payload="/_eva_etat_pendant_clara___evaetat2_5c67dc3a76ccbc29ae8ff254"),
+      Button("En rester là :)", payload="/_fin_clara___fin5_5c67dc3a76ccbc29ae8ff1fc"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,37 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff38a
+start:
+  say Typing(2000)
+  say "Tu peux désormais opter pour la solution qui te parait la plus appropriée à la situation 😉"
+  say Typing(2000)
+  say Question(
+    "As-tu choisi ? (prends ton temps)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻Oui"),
+      Button("Non", payload="/_resolution_de_problemeit___rappel_5c67dc3a76ccbc29ae8ff38b"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Question(
+    "Laquelle ?
+1. {{_solution1}}?
+2. {{_solution2}}?
+3. {{_solution3}}?
+4. {{_solution4}}?
+5. {{_solution5}}?",
+    button_type="quick_reply",
+    buttons=[
+      Button("1", payload="/_resolution_de_problemeit___planif1_5c67dc3a76ccbc29ae8ff38c"),
+      Button("2", payload="/_resolution_de_problemeit___planif2_5c67dc3a76ccbc29ae8ff38d"),
+      Button("3", payload="/_resolution_de_problemeit___planif3_5c67dc3a76ccbc29ae8ff38e"),
+      Button("4", payload="/_resolution_de_problemeit___planif4_5c67dc3a76ccbc29ae8ff38f"),
+      Button("5", payload="/_resolution_de_problemeit___planif5_5c67dc3a76ccbc29ae8ff390"),
+    ],
+  )
+  hold
+  

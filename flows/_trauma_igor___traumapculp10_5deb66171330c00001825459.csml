@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c00001825459
+start:
+  say Typing(4000)
+  say Question(
+    "10. \"J’avais un mauvais pressentiment, j’aurais dû suivre mon intuition.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Analyser", payload="/_trauma_igor___traumapculp10r_5deb66171330c0000182545a"),
+      Button("Passer", payload="/_trauma_igor___traumapculp11_5deb66171330c0000182545b"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

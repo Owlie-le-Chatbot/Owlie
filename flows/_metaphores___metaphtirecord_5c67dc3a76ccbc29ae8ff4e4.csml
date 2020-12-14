@@ -1,0 +1,23 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e4
+start:
+  say Typing(3000)
+  say "Imagine-toi en train de disputer une partie de tir à la corde."
+  say Typing(4000)
+  say "Entre toi et ton adversaire, il y a un ravin dont tu ne peux pas apercevoir le fond."
+  say Typing(3000)
+  say "Un épais nuage de brouillard t'empêche de voir cet.te adversaire."
+  say Typing(5000)
+  say "La partie dure. Le moindre relâchement de ta part te rapproche du précipice et t'oblige à redoubler d'efforts pour maintenir la distance."
+  say Typing(3500)
+  say "Cela fait maintenant plusieurs heures que tu luttes contre ce.tte mystérieuxse adversaire."
+  say Typing(3000)
+  say Question(
+    "Tous tes efforts restent vains. Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("💪Tirer encore", payload="/_metaphores___metaphtirecord2_5c67dc3a76ccbc29ae8ff4e5"),
+      Button("✋Lâcher la corde", payload="/_metaphores___metaphtirecord3_5c67dc3a76ccbc29ae8ff4e6"),
+    ],
+  )
+  hold
+  

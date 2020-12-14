@@ -1,0 +1,36 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff242
+start:
+  say Typing(4000)
+  say Question(
+    "Cet échange t'a t-il été utile ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("🙂Oui"),
+      Button("😕Non"),
+      Button("🔙Retour", payload="/_ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393"),
+      Button("📍Faire le point", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(1800)
+  goto form_4_0
+
+
+// form component
+form_4_0:
+  say "Pourquoi ? (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _feedback = event
+  
+  say Typing(2900)
+  say "Merci pour ton feedback !"
+  // adding conditional redirect to flow
+  goto flow _ellis_igor___menuellis_5c67dc3a76ccbc29ae8ff393

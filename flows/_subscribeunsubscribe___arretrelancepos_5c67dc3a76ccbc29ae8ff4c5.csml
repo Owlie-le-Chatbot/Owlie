@@ -1,0 +1,29 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4c5
+start:
+  say Typing(2500)
+  say Question(
+    "Tu souhaites arrêter mes relances de phrases positives?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui !"),
+      Button("Non😊 ", payload="/_subscribeunsubscribe___malcompris_5c67dc3a76ccbc29ae8ff4c7"),
+      Button("À quoi ça sert déjà?", payload="/_subscribeunsubscribe___inscriptionrelancepositives_5c67dc3a76ccbc29ae8ff4c8"),
+    ],
+  )
+  hold
+  
+  remember _arretrelancepositives = event
+  goto step_2
+
+
+step_2:
+  // not handling remove_from_sequence plugin
+  // block ID 5c67dc3a76ccbc29ae8ff4c5 (SUBSCRIBE/UNSUBSCRIBE / ArretRelancePos)
+
+  say Typing(2200)
+  say "C'est fait ✔ !"
+  say Typing(2500)
+  // adding conditional redirect to flow
+  goto flow _choix_clara___randomchoix_5c67dc3a76ccbc29ae8ff267

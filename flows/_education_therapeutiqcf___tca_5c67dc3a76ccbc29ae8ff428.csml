@@ -1,0 +1,45 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff428
+start:
+  say Typing(3000)
+  say "Voici les informations que je peux te proposer :"
+  // converting list to carousel
+  say Carousel(
+    cards=[
+      Card(
+        title="Informations",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1c5a8617-caad-4ba4-a46a-f4e9db843480.jpeg",
+        buttons=[
+          Url("http://www.psycom.org/Espace-Presse/Sante-mentale-de-A-a-Z/Troubles-du-comportement-alimentaire-TCA/(language)/fre-FR", text="Je regarde ça !"),
+        ],
+      ),
+      Card(
+        title="Fédération française anorexie/boulimie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c4b65e69-0a9f-4c2a-97a4-3e3ab2a63839.jpeg",
+        buttons=[
+          Url("https://fna-tca.org/", text="Je regarde ça !"),
+        ],
+      ),
+      Card(
+        title="Travailler sur mes pensées",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9fb018ef-d1d9-4b40-9175-dc7f0e22bdb8.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+        ],
+      ),
+      Card(
+        title="Lutter contre une crise !",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a24b8292-1c43-4a17-a788-aa2395cc1f6c.jpeg",
+        buttons=[
+          Button("Je fais ça !", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🚨Module de crise", payload="/_choix_clara___empathiepremenucrise_5c67dc3a76ccbc29ae8ff268"),
+      Button("🚀Autre chose", payload="/Default"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  

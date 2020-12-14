@@ -1,0 +1,153 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc077f
+start:
+  say Typing(3000)
+  say "Il n'est pas toujours facile de recevoir une critique."
+  say Typing(4000)
+  say Question(
+    "Certaines pensées, certaines convictions peuvent parfois te perturber.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Lesquelles?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Indique pour chacune d'entre elles si tu les partage",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "1. J'ai peur d'être mal à l'aise, anxieux.se, de rougir face à une critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(4000)
+  say Question(
+    "2. J'ai peur de m'énerver, de contre-attaquer ou de devenir agressif.ve face à une critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "3. Je ne sais pas quoi répondre, ou je n'arrive pas à répondre face à la critique.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4000)
+  say Question(
+    "4. Je dois être aimé.e ou approuvé.e de tous.tes celleux qui m'entourent.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "5. Je dois toujours être performant.e et compétent.e dans ce que je fais.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say Question(
+    "6. Les mauvaises personnes devraient toujours être punies.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3000)
+  say "Très bien {{_firstname}}"
+  say Typing(4000)
+  say Question(
+    "Je vais maintenant t'exposer des points de vue que j'estime aussi importants et qui ne vont pas forcément dans le même sens :",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Vas-y Owlie !"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(4000)
+  say "La critique constructive vise à rechercher des conditions communes de bien-être."
+  say Typing(4000)
+  say Question(
+    "Elle est donc non seulement utile mais nécessaire à la vie en société.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Suite", payload="/_assertivite___assertcritr31_5c7e84780ecd9f746fcc0780"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("🔍Exemples", payload="/_assertivite___assertcritr2_5c7e84780ecd9f746fcc0778"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

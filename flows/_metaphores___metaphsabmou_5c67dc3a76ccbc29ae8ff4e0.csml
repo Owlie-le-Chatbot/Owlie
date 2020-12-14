@@ -1,0 +1,23 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4e0
+start:
+  say Typing(3000)
+  say "Imagine-toi pris.e dans des sables mouvants."
+  say Typing(3000)
+  say "Tu commences par chercher un moyen de t'en échapper."
+  say Typing(2000)
+  say "Mais..."
+  say Typing(3500)
+  say "Tu remarques rapidement qu'à chaque fois que tu essayes de lever un pied, tout ton corps s'enfonce davantage."
+  say Typing(3000)
+  say "Plus tu cherches à t'en extirper, plus tu te fais engloutir."
+  say Typing(2500)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("💪Redoubler d’effort", payload="/_metaphores___metaphsabmou2_5c67dc3a76ccbc29ae8ff4e1"),
+      Button("✋M’allonger", payload="/_metaphores___metaphsabmou3_5c67dc3a76ccbc29ae8ff4e2"),
+    ],
+  )
+  hold
+  

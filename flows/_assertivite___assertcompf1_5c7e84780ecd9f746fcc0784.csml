@@ -1,0 +1,280 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0784
+start:
+  say Typing(4000)
+  say Question(
+    "Formuler un compliment consiste généralement à exprimer des sentiments positifs vis-à-vis de quelque chose...",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Comment faire?"),
+      Button("🔍Un exemple stp!", payload="/_assertivite___assertcompf2_5c7e84780ecd9f746fcc0785"),
+      Button("😥J'ose pas Owlie...", payload="/_assertivite___assertcompf3_5c7e84780ecd9f746fcc0786"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say "Voici quelques règles simples pour formuler un compliment."
+  say Typing(4000)
+  say "Les respecter ne te garantira pas une efficacité systématique et immédiate."
+  say Typing(4000)
+  say Question(
+    "Mais en les appliquant, ton message a plus de chance de bien passer.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ Dis les règles"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(4000)
+  say Question(
+    "Règle 1. Avoir bien identifié l'objet du compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Comment ça?"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  say Typing(4000)
+  say "En effet, cela peut paraitre évident en théorie mais ça ne l'est pas toujours en pratique!"
+  say Typing(6000)
+  say "Si tu ne désignes pas clairement la source de ta satisfaction, ton interlocuteurice ne pourra pas forcément le deviner."
+  say Typing(5000)
+  say Question(
+    "Et garde à l'esprit qu'un compliment porte sur un fait ou un comportement et non sur la personne dans ce qu'elle est.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍C'est noté!"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Question(
+    "Règle 2. Bien choisir son moment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Quand alors?"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(5000)
+  say "Bien qu'il s'agisse d'un message positif, tout le monde n'est pas forcément à l'aise pour recevoir un compliment."
+  say Typing(5000)
+  say "Du coup, assure-toi que ton interlocuteurice soit dans de bonnes conditions pour le recevoir."
+  say Typing(5000)
+  say "Il est généralement conseillé de formuler ton compliment au calme, en évitant les distractions potentielles."
+  say Typing(4000)
+  say "Mieux vaut par exemple prendre ton interlocuteurice à part si c'est possible."
+  say Typing(4000)
+  say "Par ailleurs, le meilleur moment n'est pas forcément celui où survient le problème."
+  say Typing(6000)
+  say Question(
+    "Un compliment ne sera jamais moins efficace à distance des faits, et souvent même plus efficace si formulé dans de meilleures conditions.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ça marche"),
+    ],
+  )
+  hold
+  
+  goto step_35
+
+
+step_35:
+  say Typing(4000)
+  say Question(
+    "Règle 3. Décrire le ou les faits de façon DIRECTE et PRECISE.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Comment ?"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(4000)
+  say "C'est ce qui différencie un compliment constructif d'un compliment vague."
+  say Typing(5000)
+  say "Si tu restes flou.e, ton interlocuteurice aura plus de mal à comprendre ce qui t'a plu."
+  say Typing(5000)
+  say "De même si tu te perds dans les détails annexes, ton compliment perdra en efficacité."
+  say Typing(4000)
+  say "Note par exemple la différence entre ces deux compliments :"
+  say Typing(9000)
+  say "a. \"Tu es beau aujourd'hui! Je trouve que ça te va mieux qu'avant. Tu aurais du faire ça depuis bien longtemps mais je sais que c'est pas facile d'oser le changement mais tu as vraiment bien fait. À ta place j'aurais fait la même chose même si je n'ai pas la même forme de visage que toi mais un peu quand même, enfin je ne sais pas...\" (vague)"
+  say Typing(4000)
+  say Question(
+    "b. \"Cette nouvelle coupe de cheveux est vraiment réussie!\". (direct et précis)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍C'est plus clair !"),
+    ],
+  )
+  hold
+  
+  goto step_51
+
+
+step_51:
+  say Typing(4000)
+  say Question(
+    "Règle 4. Impliquer l'interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_54
+
+
+step_54:
+  say Typing(5000)
+  say "Le meilleur moyen d'impliquer l'interlocuteurice, c'est d'utiliser le \"tu\" (ou le \"vous\") et leurs dérivés."
+  say Typing(5000)
+  say "Impliquer ton interlocuteurice augmente la clarté et l'efficacité d'un compliment."
+  say Typing(4000)
+  say "Pour exemple, note la différence entre ces deux compliments :"
+  say Typing(3000)
+  say "a. \"Cette coupe de cheveux est vraiment réussie.\". (pas d'implication)"
+  say Typing(4000)
+  say Question(
+    "b. \"Ta coupe de cheveux est vraiment réussie.\". (implication)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍OK"),
+    ],
+  )
+  hold
+  
+  goto step_65
+
+
+step_65:
+  say Typing(4000)
+  say Question(
+    "Règle 5. S'impliquer personnellement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Ah ?"),
+    ],
+  )
+  hold
+  
+  goto step_68
+
+
+step_68:
+  say Typing(4000)
+  say "Le meilleur moyen de s'impliquer personnellement, c'est d'utiliser le \"je\"."
+  say Typing(5000)
+  say "En t'impliquant personnellement, tu augmentes la clarté et l'efficacité d'un compliment."
+  say Typing(4000)
+  say "Note par exemple la différence entre ces deux compliments :"
+  say Typing(4000)
+  say "a. \"Ta coupe de cheveux est vraiment réussie.\". (pas d'implication personnelle)"
+  say Typing(4000)
+  say Question(
+    "b. \"Je trouve que ta coupe de cheveux est vraiment réussie.\". (implication personnelle)",
+    button_type="quick_reply",
+    buttons=[
+      Button("
+
+👍Ah oui !!!"),
+    ],
+  )
+  hold
+  
+  goto step_79
+
+
+step_79:
+  say Typing(4000)
+  say Question(
+    "Règle 6. Exprimer ses sentiment positifs.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔Pourquoi?"),
+    ],
+  )
+  hold
+  
+  goto step_82
+
+
+step_82:
+  say Typing(5000)
+  say "Exprimer des sentiments positifs (et sincères) est ce qui permet de donner le plus de force à un compliment."
+  say Typing(4000)
+  say "Note pour exemple la différence entre ces deux compliments :"
+  say Typing(4000)
+  say "a. \"Je trouve que ta coupe de cheveux est vraiment réussie.\". (pas de sentiments exprimés)"
+  say Typing(4000)
+  say Question(
+    "b. \"J'aime beaucoup ta nouvelle coupe de cheveux.\". (sentiment positif exprimé)",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_91
+
+
+step_91:
+  say Typing(4000)
+  say Question(
+    "Voici donc les 6 règles à respecter pour formuler des compliments.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule stp!"),
+      Button("🔍Un exemple!", payload="/_assertivite___assertcompf2_5c7e84780ecd9f746fcc0785"),
+      Button("😥J'ose pas ...", payload="/_assertivite___assertcompf3_5c7e84780ecd9f746fcc0786"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_94
+
+
+step_94:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/70b7a312-c772-455a-8255-efd9d0e1e38e.jpeg",
+    quick_replies=[
+      Button("🔍Un exemple!", payload="/_assertivite___assertcompf2_5c7e84780ecd9f746fcc0785"),
+      Button("😥J'ose pas", payload="/_assertivite___assertcompf3_5c7e84780ecd9f746fcc0786"),
+      Button("⤴️Retour au menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

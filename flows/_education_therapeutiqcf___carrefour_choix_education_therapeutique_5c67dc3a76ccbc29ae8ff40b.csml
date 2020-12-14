@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff40b
+start:
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b8247bee-e6cc-420f-aae2-8bf3ddc68231.jpeg")
+  say Question(
+    "Ici c'est le coin des \"tips\" (astuces) pour être au top !
+
+Quel domaine souhaites-tu explorer aujourd'hui ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Prendre soin de soi", payload="/_education_therapeutiqcf___carrefour_educ_th_hygiene_5c67dc3a76ccbc29ae8ff40c"),
+      Button("Me comprendre", payload="/_education_therapeutiqcf___carrefour_educ_th_fonctmt_humain_5c67dc3a76ccbc29ae8ff40d"),
+      Button("Infos santé/soutien", payload="/_education_therapeutiqcf___carrefour_educ_infossoutien_5c67dc3a76ccbc29ae8ff40e"),
+      Button("Choisis pour moi :-)", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  

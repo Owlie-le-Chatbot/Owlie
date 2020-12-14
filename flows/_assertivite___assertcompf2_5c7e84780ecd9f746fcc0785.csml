@@ -1,0 +1,213 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0785
+start:
+  say Typing(6000)
+  say Question(
+    "Voici un exemple qui te permettra de vérifier si tu as bien retenu les instructions pour formuler un compliment.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ C'est parti !"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(5000)
+  say "Ta/ton collègue t'a invité.e à diner hier soir et tu souhaites lui faire savoir que tu as apprécié sa cuisine."
+  say Typing(4000)
+  say "Choisis le compliment qui te parrait le mieux formulé."
+  say Typing(3000)
+  say "A. \"Merci pour hier!\""
+  say Typing(3000)
+  say "B. \"Non franchement, j'ai l'habitude de ce genre de plat, je sais que c'est pas facile à préparer. Une fois j'avais essayé et je m'étais planté à cause de la durée de cuisson. Je sais que tout le monde n'aime pas ça mais moi j'ai trouvé que c'était réussi et tu t'es donné du mal. C'est pas comme certains qui réchauffent du surgelé. C'est pas vraiment respectueux je ne sais pas ce que tu en penses mais moi j'avoue...\""
+  say Typing(4200)
+  say "C. \"J'ai beaucoup apprécié ce que tu nous as fait à manger hier soir.\""
+  say Typing(4200)
+  say "D. \"Le plat était très bon hier soir. C'est dommage qu'il n'y ait pas eu assez de déssert pour tout le monde.\""
+  say Typing(4000)
+  say "E. \"C'était bon ce que t'as fait à manger hier soir.\""
+  say Typing(3500)
+  say Question(
+    "F. \"Je tiens à te féliciter pour ton repas d'hier soir. C'était très bon. Est-ce que tu pourrais déposer des recommandés à la poste pour moi cet après-midi?\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("A"),
+      Button("B"),
+      Button("C"),
+      Button("D"),
+      Button("E"),
+      Button("F"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "Il fallait choisir la réponse C 🌤.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🔍Pourquoi?"),
+      Button("❓Comment faire?", payload="/_assertivite___assertcompf1_5c7e84780ecd9f746fcc0784"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcompf3_5c7e84780ecd9f746fcc0786"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(4000)
+  say "Reprenons la réponse A :
+\"Merci pour hier!\""
+  say Typing(5000)
+  say "Le compliment est trop vague ☁️pour que l'interlocuteur.rice comprenne que sa cuisine est particulièrement concernée."
+  say Typing(5000)
+  say Question(
+    "De plus, il y a aucune implication personnelle, de l'interlocuteur, ni aucun sentiment exprimé.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_29
+
+
+step_29:
+  say Typing(7000)
+  say "Pour ce qui est de la réponse B :
+\"Non franchement, j'ai l'habitude de ce genre de plat, je sais que c'est pas facile à préparer. Une fois j'avais essayé et je m'étais planté à cause de la durée de cuisson. Je sais que tout le monde n'aime pas ça mais moi j'ai trouvé que c'était réussi et tu t'es donné du mal. C'est pas comme certains qui réchauffent du surgelé. C'est pas vraiment respectueux je ne sais pas ce que tu en penses mais moi j'avoue...\""
+  say Typing(4000)
+  say "Le compliment n'est pas formulé de façon directe et précise."
+  say Typing(5000)
+  say "Du coup, l'objet du compliment et noyé dans les détails annexes, le compliment perd en clarté et en efficacité ☁️."
+  say Typing(3000)
+  say Question(
+    "De plus, aucun sentiment n'est exprimé.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_38
+
+
+step_38:
+  say Typing(5000)
+  say "Concernant la réponse C 🌤:
+\"J'ai beaucoup apprécié ce que tu nous as fait à manger hier soir.\""
+  say Typing(6000)
+  say Question(
+    "Tout y est : le compliment est formulé de façon directe et précise, en s'impliquant soi, l'interlocuteur.rice et en exprimant un sentiment positif.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👌D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_43
+
+
+step_43:
+  say Typing(6000)
+  say "Pour ce qui est de la réponse D :
+\"Le plat était très bon hier soir. C'est dommage qu'il n'y ait pas eu assez de déssert pour tout le monde.\""
+  say Typing(5000)
+  say "Aucun sentiment n'est exprimé, aucune implication personnelle ou de l'interlocuteur.rice n'est présente."
+  say Typing(5000)
+  say Question(
+    "De plus le compliment est associé à une critique, ce qui lui fait perdre de sa valeur et risquer d'être mal interprété ⛈.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_50
+
+
+step_50:
+  say Typing(4000)
+  say "Examinons la réponde E :
+\"C'était bon ce que t'as fait à manger hier soir.\""
+  say Typing(3000)
+  say "L'interlocuteur.rice est bien impliqué.e dans ce compliment."
+  say Typing(4000)
+  say Question(
+    "Mais l'implication personnelle est absente et aucun sentiment n'est exprimé ☁️.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_57
+
+
+step_57:
+  say Typing(7000)
+  say "Enfin, la réponse F :
+\"Je tiens à te féliciter pour ton repas d'hier soir. C'était très bon. Est-ce que tu pourrais déposer des recommandés à la poste pour moi cet après-midi?\""
+  say Typing(5000)
+  say "Il y a une implication personnelle et l'interlocuteur.rice est également impliqué.e."
+  say Typing(3000)
+  say "En revanche, aucun sentiment n'est exprimé."
+  say Typing(5000)
+  say Question(
+    "Et surtout, le compliment est associé à une demande. Il pourrait donc bien passer pour une tentative de manipulation ⛈.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_66
+
+
+step_66:
+  say Typing(4000)
+  say Question(
+    "Très bien {{_firstname}}! Sur quoi souhaitez-vous enchainer?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapituler", payload="/_assertivite___assertfichcof_5c7e84780ecd9f746fcc0756"),
+      Button("❓Comment faire?", payload="/_assertivite___assertcompf1_5c7e84780ecd9f746fcc0784"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcompf3_5c7e84780ecd9f746fcc0786"),
+      Button("📜Mes droits?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_69
+
+
+step_69:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/591e5f3c-4ea5-49c1-be62-10cc523833fa.jpeg",
+    quick_replies=[
+      Button("❓Comment faire?", payload="/_assertivite___assertcompf1_5c7e84780ecd9f746fcc0784"),
+      Button("😥Je n'ose pas", payload="/_assertivite___assertcompf3_5c7e84780ecd9f746fcc0786"),
+      Button("📜Mes droits?", payload="/_assertivite___assertfichdro_5c7e84780ecd9f746fcc0751"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

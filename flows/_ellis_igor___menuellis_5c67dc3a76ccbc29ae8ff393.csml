@@ -1,0 +1,132 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff393
+start:
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Je dois être aimé.e ou approuvé.e de tous ceux qui m'entourent.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/012a6c97-37fc-48c4-a4b7-78f03caf12ca.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___amour_5c67dc3a76ccbc29ae8ff394"),
+        ],
+      ),
+      Card(
+        title="Je dois toujours être performant.e et compétent.e dans ce que je fais.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/105712e9-7919-4136-bcd3-d8472220f223.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___performance_5c67dc3a76ccbc29ae8ff395"),
+        ],
+      ),
+      Card(
+        title="Les mauvaises personnes devraient toujours être punies.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/05e137f2-8bc8-40fc-9c70-e45561c7bce5.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___blame_5c67dc3a76ccbc29ae8ff396"),
+        ],
+      ),
+      Card(
+        title="Les choses doivent absolument se dérouler comme je le souhaite.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/cd35e03a-7a76-463c-8bdf-489b25219049.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___caprice_5c67dc3a76ccbc29ae8ff397"),
+        ],
+      ),
+      Card(
+        title="Je n'ai pas provoqué ma souffrance donc je ne peux pas la contrôler.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/52608119-21c4-477b-898c-cd4f1a9b64c7.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___impuissance_5c67dc3a76ccbc29ae8ff398"),
+        ],
+      ),
+      Card(
+        title="Je dois toujours être extrêmement vigilant.e pour éviter les problèmes.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7742e7fc-b609-4e93-a4a2-feb6dfc2a90f.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___inquietude_5c67dc3a76ccbc29ae8ff399"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3400)
+  say Carousel(
+    cards=[
+      Card(
+        title="Je dois éviter les difficultés et les responsabilités dans la vie.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/481271b2-ef54-4b6e-a601-fe9eddf27d52.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___evitement_5c67dc3a76ccbc29ae8ff39a"),
+        ],
+      ),
+      Card(
+        title="J'ai forcément besoin de quelqu'un de plus fort sur qui compter.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/91163b34-aa2a-4667-8b44-651cd172f510.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___dependance_5c67dc3a76ccbc29ae8ff39b"),
+        ],
+      ),
+      Card(
+        title="Je serai toujours hanté(e) et très influencé(e) par mon passé.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8da46659-6f3f-47a8-b0db-ecdb4bde6f7f.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___passe_5c67dc3a76ccbc29ae8ff39c"),
+        ],
+      ),
+      Card(
+        title="Ce sont plutôt les autres qui doivent changer d'attitude.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c48ba6e3-17fc-48eb-b0bb-0d32beb46f2f.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___victime_5c67dc3a76ccbc29ae8ff39d"),
+        ],
+      ),
+      Card(
+        title="Je dois trouver LA solution idéale à chacun de mes problèmes.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/46cd1a10-e658-4fee-bc28-10a3d0190448.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___perfection_5c67dc3a76ccbc29ae8ff39e"),
+        ],
+      ),
+      Card(
+        title="La valeur d'une personne dépend de la qualité de ses actes.",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/346d07f8-77b2-4d61-86a9-75d814614dc7.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___valeur_5c67dc3a76ccbc29ae8ff39f"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Typing(3400)
+  say Carousel(
+    cards=[
+      Card(
+        title="J'ai du mal avec les critiques",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6a1bcc2f-708e-4f0b-a17b-3008c4f4a5b7.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___critiquesoiintro_5c67dc3a76ccbc29ae8ff3a2"),
+        ],
+      ),
+      Card(
+        title="Je dois toujours être parfait.e physiquement",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dba73d26-fe40-4ffb-b630-dba2c7b5cbcd.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___bodyimageintro_5c67dc3a76ccbc29ae8ff3a0"),
+        ],
+      ),
+      Card(
+        title="Je dois toujours contrôler mon image",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/63e7e353-85d2-410b-88d8-8472c16cd7c7.jpeg",
+        buttons=[
+          Button("C'est moi !", payload="/_ellis_igor___bodyimageintro_5c67dc3a76ccbc29ae8ff3a0"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Retour", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+    ],
+  )
+  hold
+  

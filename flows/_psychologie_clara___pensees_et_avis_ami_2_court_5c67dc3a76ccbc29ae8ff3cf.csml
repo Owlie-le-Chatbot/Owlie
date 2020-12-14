@@ -1,0 +1,106 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3cf
+start:
+  say Typing(2400)
+  say Question(
+    "Ok {{_name}}, je te propose d'essayer de d'identifier ensemble quelles sont tes inquiétudes profondes sous la peine que tu ressens.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+      Button("Gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3100)
+  say Question(
+    "Ton état est-il dû à une pensée négative qui te plombe le moral ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je crois bien.."),
+      Button("Ça va finalement...", payload="/_eva_etat_pendant_clara___evaetat_5c67dc3a76ccbc29ae8ff253"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(1900)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Peux-tu me rappeler succinctement ta pensée de départ, la pensée qui te cause de la peine ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _pensee_automatique = event
+  
+  say Typing(2800)
+  say "Ok, je vois..."
+  say Typing(3100)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Cette pensée que tu as, si elle était vraie, pourquoi cela te dérangerait ? 📝Écris-le moi en 1 phrase "
+  hold
+  
+  remember _si_elle_etait_vraie_pourquoi_cela_te_derangerait = event
+  
+  say Typing(2900)
+  goto form_13_0
+
+
+// form component
+form_13_0:
+  say "Si quelqu'un que tu connais était dans la même situation, tu en dirais quoi ? 📝Écris-le moi en 1 phrase"
+  hold
+  
+  remember _et_si_ca_aussi_cetait_vrai_en_quoi_cela_te_poserait_un_probleme = event
+  
+  say Typing(2400)
+  say Question(
+    "D'accord... Je te dis ça parce que souvent on imagine le pire pour soi alors que pour les autres, on relativise plus.
+
+Du coup, j'essayais de te faire relativiser 😊!",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est vrai"),
+      Button("Mmmh..."),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(2500)
+  say Question(
+    "Souhaites-tu poursuivre encore un peu ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je veux bien"),
+      Button("Ça ne va pas du tout", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Ça va mieux", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("En rester là :-)", payload="/_fin_clara___fin5_5c67dc3a76ccbc29ae8ff1fc"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_psychologie_clara___ce_qui_va_bien_5c67dc3a76ccbc29ae8ff3d0", "_psychologie_clara___positif_5c67dc3a76ccbc29ae8ff3e4"]))
+  if (rand == 0) goto flow _psychologie_clara___ce_qui_va_bien_5c67dc3a76ccbc29ae8ff3d0
+  if (rand == 1) goto flow _psychologie_clara___positif_5c67dc3a76ccbc29ae8ff3e4

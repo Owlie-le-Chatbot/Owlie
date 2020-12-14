@@ -1,0 +1,31 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff337
+start:
+  say Typing(2000)
+  say "Essaye de te concentrer sur la pensée qui te tracasse le plus."
+  say Typing(2000)
+  say Question(
+    "As-tu réussi à l’identifier ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_restructuration_cog_it___defpenseer_5c67dc3a76ccbc29ae8ff338"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  goto form_5_0
+
+
+// form component
+form_5_0:
+  say "Écris-la sous sa forme d'une phrase simple, directe et précise"
+  hold
+  
+  remember _penseedouloureuse = event
+  
+  // adding conditional redirect to flow
+  goto flow _restructuration_cog_it___menurestructu_5c67dc3a76ccbc29ae8ff339

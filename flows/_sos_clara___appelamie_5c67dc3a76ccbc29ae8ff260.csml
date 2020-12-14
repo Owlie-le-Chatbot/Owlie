@@ -1,0 +1,27 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff260
+start:
+  say Typing(4000)
+  goto form_1_0
+
+
+// form component
+form_1_0:
+  say "Qui souhaites-tu appeler ? ✍️Écris-moi son numéro (cherche-le dans ton portable si besoin)"
+  hold
+  
+  remember _numeropersressource = event
+  
+  say Typing(1900)
+  say Question(
+    "Peux-tu appeler le {{_numeropersressource}} ?
+⬆️Clique dessus !
+
+(si tu es sur ton ordinateur, prends ton téléphone et compose le numéro)",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ Fait", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("🚨Menu crise", payload="/_crise_igor___introcrise_5c67dc3a76ccbc29ae8ff277"),
+    ],
+  )
+  hold
+  

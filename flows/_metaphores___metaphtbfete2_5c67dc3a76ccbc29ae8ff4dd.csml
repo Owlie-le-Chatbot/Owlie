@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4dd
+start:
+  say Typing(4000)
+  say "Tu continues à tenir ta position et à refuser de laisser rentrer le trouble-fête."
+  say Typing(4000)
+  say "Mais celui-ci n’abandonne toujours pas et continue à te harceler par tous les moyens possibles."
+  say Typing(4000)
+  say "Tu n’arrives toujours pas à profiter de ta soirée."
+  say Typing(4000)
+  say "Ta colère monte et ton sentiment de frustration devient insoutenable."
+  say Typing(4000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤝Le laisser rentrer", payload="/_metaphores___metaphtbfete3_5c67dc3a76ccbc29ae8ff4de"),
+      Button("🖐️Refuser, résister", payload="/_metaphores___metaphtbfete2_5c67dc3a76ccbc29ae8ff4dd"),
+    ],
+  )
+  hold
+  

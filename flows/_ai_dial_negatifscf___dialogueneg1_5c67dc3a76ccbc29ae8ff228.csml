@@ -1,0 +1,58 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff228
+start:
+  say "Ok {{_name}}..."
+  say Typing(2300)
+  goto form_2_0
+
+
+// form component
+form_2_0:
+  say "Va-y, dis-moi tout ce qui te vient à l'esprit, en vrac... (📝écris puis appuie sur la touche \"entrée\" ou \"envoyer\" ↩️de ton clavier)"
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(3200)
+  say Question(
+    "As-tu épuisé tout ce que avais besoin de me confier ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Non, en parler"),
+      Button("Oui, je crois...", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3100)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Continue, je t'en prie, je suis là pour toi..."
+  hold
+  
+  remember _propos_utilisateur = event
+  
+  say Typing(2800)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3dcbbe77-a796-4def-adc9-14f63a8c8915.jpeg")
+  say Question(
+    "Qu'est-ce qui te ferait du bien, là {{_name}}?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("💬Continuer à parler", payload="/_ai_dial_negatifscf___relancesneg1_5c67dc3a76ccbc29ae8ff22e"),
+      Button("🙂Ça va...", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("🆘 Besoin d'aide", payload="/_menus_igorclara___menuprincipaligor_5c67dc3a76ccbc29ae8ff26d"),
+      Button("🏖Activité agréable", payload="/_eteindre_cerveau_clara___menueteindrecerveau_5c67dc3a76ccbc29ae8ff2de"),
+      Button("🐻Câlins", payload="/_reconfort_clara___introreconfort_5c67dc3a76ccbc29ae8ff2eb"),
+    ],
+  )
+  hold
+  
+  remember _choix = event

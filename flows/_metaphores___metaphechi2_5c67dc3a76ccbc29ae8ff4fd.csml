@@ -1,0 +1,23 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4fd
+start:
+  say Typing(4000)
+  say "Tu décides d'intervenir pour aider ton ami.e."
+  say Typing(3000)
+  say "Tu parviens rapidement à éliminer une pièce noire."
+  say Typing(3000)
+  say "Mais..."
+  say Typing(3000)
+  say "Au tour suivant..."
+  say Typing(3000)
+  say "Elle réapparait!"
+  say Typing(3000)
+  say Question(
+    "Que vas-tu faire?",
+    button_type="quick_reply",
+    buttons=[
+      Button("⚔️Rejouer", payload="/_metaphores___metaphechi2_5c67dc3a76ccbc29ae8ff4fd"),
+      Button("✋Laisser", payload="/_metaphores___metaphechi3_5c67dc3a76ccbc29ae8ff4fe"),
+    ],
+  )
+  hold
+  

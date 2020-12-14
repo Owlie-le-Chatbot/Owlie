@@ -1,0 +1,4 @@
+// flow built from AI Rules text target undefined
+start:
+  say "Je n'ai pas besoin d'être redémarrée pour être utilisée :) si tu cherches une activité spécifique, je t'invite à aller directement dans le menu !"
+  goto end

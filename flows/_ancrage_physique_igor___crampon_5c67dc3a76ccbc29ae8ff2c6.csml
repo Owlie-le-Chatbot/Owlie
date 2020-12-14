@@ -1,0 +1,34 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2c6
+start:
+  say Typing(2000)
+  say Question(
+    "Assis-toi maintenant s'il te plait 😊",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C’est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2000)
+  say "Aggripe-toi à la chaise, ou à ce sur quoi tu es assis.e."
+  say Typing(2000)
+  say Question(
+    "Cramponne-toi le plus fort possible et compte jusqu’à 10.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  // adding conditional redirect to flow
+  goto flow _ancrage_physique_igor___complancphy_5c67dc3a76ccbc29ae8ff2c3

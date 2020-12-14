@@ -1,0 +1,108 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc077a
+start:
+  say Typing(4000)
+  say "Voici l'exemple d'une \"critique vraie\" ✅formulée par un.e collègue de travail."
+  say Typing(6000)
+  say Question(
+    "Critique ✅: \"Ça m'ennuie que vous ne m'informiez pas plus tôt de ces réunions. Je vais avoir des difficultés à prendre mes dispositions.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(6000)
+  say Question(
+    "Réponse : \"Vous avez raison (reconnaitre les faits). Ça m'ennuie également de vous mettre dans de telles difficultés (empathie).\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(6000)
+  say Question(
+    "Critique (2) ✅: \"Je vais devoir annuler deux RDVs pour être présent.e demain avec vous. C'est très désagréable pour moi et pour mes client.e.s.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(8000)
+  say Question(
+    "Réponse : \"C'est vrai. Je suis désolé.e de devoir vous faire subir un tel désagrément. C'est une mauvaise habitude dont j'essaie de me défaire.\". (comportement habituel avec désir de changement)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continuer"),
+      Button("Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "Demande (3) : \"J'aimerais que vous nous préveniez plus tôt la prochaine fois.\".",
+    button_type="quick_reply",
+    buttons=[
+      Button("Réponse"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(9000)
+  say Question(
+    "Réponse : \"Combien de temps à l'avance souhaiteriez-vous être informé.e.s d'une prochaine réunion?\". (tentative de compromis)",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule Owlie!"),
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("🔍Autre exemples?", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a6a35a4e-fe18-401a-91e6-79331b333670.jpeg",
+    quick_replies=[
+      Button("❓Autre critique", payload="/_assertivite___assertcritr10_5c7e84780ecd9f746fcc0772"),
+      Button("🔍Autre exemples?", payload="/_assertivite___assertcritr20_5c7e84780ecd9f746fcc0779"),
+      Button("❓Comment recevoir", payload="/_assertivite___assertcritr1_5c7e84780ecd9f746fcc0771"),
+      Button("😥Je n'y arrive pas", payload="/_assertivite___assertcritr30_5c7e84780ecd9f746fcc077f"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

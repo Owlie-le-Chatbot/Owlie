@@ -1,0 +1,314 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0767
+start:
+  say Typing(4000)
+  say "Il n'est pas toujours facile de formuler une demande."
+  say Typing(4000)
+  say Question(
+    "Certaines pensées, certaines convictions peuvent parfois t'en dissuader.",
+    button_type="quick_reply",
+    buttons=[
+      Button("❓Lesquelles?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(4000)
+  say Question(
+    "Je vais te faire des propositions pour que ce soit plus clair !
+
+Si tu le veux bien, indique pour chacune d'entre elles si tu les partage.",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(4000)
+  say Question(
+    "1. J'ai souvent l'impression de ne pas avoir le droit de demander.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(3000)
+  say Question(
+    "2. C'est souvent malpoli de demander quelque chose.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(4000)
+  say Question(
+    "3. Pour demander, je dois d'abord être certain d'obtenir.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(3000)
+  say Question(
+    "4. J'ai peur de me sentir rejeté.e si mon interlocuteurice refuse.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_19
+
+
+step_19:
+  say Typing(3000)
+  say Question(
+    "5. Ce serait malpoli de ne pas se justifier.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Typing(3000)
+  say Question(
+    "6. Ce serait malpoli d'insister.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_25
+
+
+step_25:
+  say Typing(3000)
+  say "Très bien {{_firstname}}."
+  say Typing(6000)
+  say Question(
+    "Je vais maintenant t'exposer des points de vue que j'estime aussi importants et qui ne vont pas forcément dans le même sens :",
+    button_type="quick_reply",
+    buttons=[
+      Button("▶️ D'ac !"),
+    ],
+  )
+  hold
+  
+  goto step_30
+
+
+step_30:
+  say Typing(6000)
+  say "À partir du moment où c'est une demande (et non un ordre) qui est formulé, ton interlocuteurice a le droit d'accepter ou de refuser."
+  say Typing(3000)
+  say "Ce qui signifie déjà deux choses :"
+  say Typing(3000)
+  say "1. Demander, ce n'est pas exiger."
+  say Typing(4000)
+  say "2. Demander, ce n'est pas manquer de respect à ton interlocuteurice."
+  say Typing(5000)
+  say Question(
+    "Puisqu'en formulant ta demande correctement, tu ne lui enleve pas le droit de refuser.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ah! OK !"),
+    ],
+  )
+  hold
+  
+  goto step_41
+
+
+step_41:
+  say Typing(3000)
+  say "En conséquence :"
+  say Typing(5000)
+  say "3. Tu ne pourra jamais être certain.e du résultat de ta demande avant de l'avoir formulée."
+  say Typing(3000)
+  say "En revanche, ce dont tu peux être certain.e, c'est que :"
+  say Typing(3000)
+  say "4. Si tu ne demandes rien, tu n'obtiendra généralement rien."
+  say Typing(3000)
+  say "De même :"
+  say Typing(3000)
+  say Question(
+    "5. Faire deviner, ce n'est pas demander.",
+    button_type="quick_reply",
+    buttons=[
+      Button("🤔C'est à dire?"),
+    ],
+  )
+  hold
+  
+  goto step_54
+
+
+step_54:
+  say Typing(4000)
+  say "Ce qui est évident pour toi ne l'est pas forcément pour ton interlocuteurice."
+  say Typing(6000)
+  say Question(
+    "Et rien ne l'oblige à jouer au jeu des devinettes avec toi, d'autant plus que ce jeu n'amuse généralement pas grand monde.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Entendu"),
+    ],
+  )
+  hold
+  
+  goto step_59
+
+
+step_59:
+  say Typing(3000)
+  say Question(
+    "6. Reprocher, ce n'est pas demander.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Explique moi !"),
+    ],
+  )
+  hold
+  
+  goto step_62
+
+
+step_62:
+  say Typing(5000)
+  say "Reprocher, c'est signaler son mécontentement par rapport au passé. Or on ne peut pas modifier le passé."
+  say Typing(5000)
+  say Question(
+    "Le comble serait alors de reprocher à ton interlocuteurice de ne pas avoir deviné ce que tu voulais lui demander!",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oups"),
+    ],
+  )
+  hold
+  
+  goto step_67
+
+
+step_67:
+  say Typing(3000)
+  say "Par ailleurs :"
+  say Typing(4000)
+  say "7. Refuser quelque chose, ce n'est pas refuser quelqu'un.e."
+  say Typing(4000)
+  say "Il est en effet essentiel de bien faire la distinction entre ta personne, et ta demande."
+  say Typing(3000)
+  say "Ensuite :"
+  say Typing(3000)
+  say "8. Se justifier, ce n'est pas faire preuve de respect."
+  say Typing(4000)
+  say "Les justification sont plutôt généralement motivées par notre crainte d'être (mal) jugé.e."
+  say Typing(5000)
+  say Question(
+    "Si tu veux montrer du respect, voire de la politesse à ton interlocuteurice, manifeste-lui plutôt ton empathie!",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍Ça marche!"),
+    ],
+  )
+  hold
+  
+  goto step_82
+
+
+step_82:
+  say Typing(3000)
+  say "Enfin :"
+  say Typing(3000)
+  say "9. Insister sur une demande, ce n'est pas exiger."
+  say Typing(4000)
+  say "À partir, du moment où formuler une demande est un droit, ..."
+  say Typing(4000)
+  say "À partir du moment où ton interlocuteurice a toujours le droit de refuser, ..."
+  say Typing(4000)
+  say "Tu as le droit de formuler à nouveau ta demande si c'est important pour toi."
+  say Typing(5000)
+  say Question(
+    "Dans ce cas, il est conseillé de manifester de plus en plus d'empathie à chaque nouvelle formulation de ta demande.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍D'accord"),
+    ],
+  )
+  hold
+  
+  goto step_95
+
+
+step_95:
+  say Typing(4000)
+  say "Ces points de vue rationnels devraient t'aider à oser formuler tes demandes !"
+  say Typing(5000)
+  say Question(
+    "N'hésite pas également à cliquer sur le bouton \"Mes droits?\" pour te remettre en tête tes droits fondamentaux.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Récapitule stp !"),
+      Button("📜Mes droits?", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("❓Comment demander?", payload="/_assertivite___assertdem1_5c7e84780ecd9f746fcc0765"),
+      Button("🔍Un exemple !!!", payload="/_assertivite___assertdem2_5c7e84780ecd9f746fcc0766"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  
+  goto step_100
+
+
+step_100:
+  say Typing(4000)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2b42ed7b-b3d1-4df3-af9f-cb44a15c592c.jpeg",
+    quick_replies=[
+      Button("❓Comment demander?", payload="/_assertivite___assertdem1_5c7e84780ecd9f746fcc0765"),
+      Button("📜Mes droits?", payload="/_assertivite___assertdroits_5c7e84780ecd9f746fcc0758"),
+      Button("🔍Un exemple stp !", payload="/_assertivite___assertdem2_5c7e84780ecd9f746fcc0766"),
+      Button("⤴️Menu", payload="/_assertivite___menuassert_5c7e84780ecd9f746fcc074f"),
+    ],
+  )
+  hold
+  

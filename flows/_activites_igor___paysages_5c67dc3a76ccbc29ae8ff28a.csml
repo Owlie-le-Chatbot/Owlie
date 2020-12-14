@@ -1,0 +1,89 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff28a
+start:
+  say Typing(3000)
+  say "Voici ce que je peux te proposer !
+
+(fais défiler les images ↔️)"
+  say Typing(1700)
+  say Carousel(
+    cards=[
+      Card(
+        title="Red and Blue by Frank Wijn",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1e6c9d39-86ff-4350-a09f-e438e6224de3.jpeg",
+        buttons=[
+          Url("https://1x.com/photo/689896", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Somewhere only we know",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1cea6191-1ab6-4bc1-9b64-8de43d05ac97.jpeg",
+        buttons=[
+          Url("https://islandtime.deviantart.com/art/somewhere-only-we-know-190583210", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Relax by Rasso",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8eb15315-dd80-4e54-b238-68b2e5671fe1.jpeg",
+        buttons=[
+          Url("https://www.flickr.com/photos/lanraga/184466548", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Sandbridge Sunrise by Doug Roane",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6abe553f-844b-4f34-8a8b-6ac0b8c6cce8.jpeg",
+        buttons=[
+          Url("https://1x.com/photo/18964", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Arashiyama",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/e8715bcb-d9c8-47ae-9e64-279f8e3c926b.jpeg",
+        buttons=[
+          Url("https://media.cntraveler.com/photos/5654e783659c4b4874865e88/master/w_820,c_limit/arashiyama-bamboo-forest-kyoto-cr-getty.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Mù Cang Chải",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/54bc8f6b-c440-4c4d-ad27-bfe83a1d74a5.jpeg",
+        buttons=[
+          Url("https://media.cntraveler.com/photos/56549cc6659c4b4874865502/master/w_820,c_limit/mu-cang-chai-vietnam-cr-getty.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Falaises de Moher",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/1c8bae32-0614-499c-b2c0-a1c234d32577.jpeg",
+        buttons=[
+          Url("https://media.cntraveler.com/photos/56549cb5659c4b48748654a8/master/w_820,c_limit/cliffs-of-moher-ireland-cr-getty.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Champs de lavande",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/473b165e-76d1-482f-bd6d-55af00ee9900.jpeg",
+        buttons=[
+          Url("https://media.cntraveler.com/photos/56556bad5e7aeb7a6e2183c2/master/w_820,c_limit/lavender-field-provence-cr-alamy.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Machu Pichu",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/33538edc-dc20-4e2a-8107-1e997a6a5c8b.jpeg",
+        buttons=[
+          Url("https://media.cntraveler.com/photos/56556bca659c4b4874866182/master/w_820,c_limit/machu-picchu-llama-overlord-cr-getty.jpg", text="Agrandir"),
+        ],
+      ),
+      Card(
+        title="Dourando by bombeador",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/51d2ee03-84d9-4f3c-9640-da1c3b35e9c5.jpeg",
+        buttons=[
+          Url("https://www.flickr.com/photos/bombeador/770898426/", text="Agrandir"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("🔙Retour", payload="/_activites_igor___vue_5c67dc3a76ccbc29ae8ff289"),
+      Button("⛵️Activité agréable", payload="/_choix_clara___choix4actagreables_5c67dc3a76ccbc29ae8ff266"),
+      Button("🚀Autre chose", payload="/_jonctions_clara___jonctionmenusprincipaux_5c67dc3a76ccbc29ae8ff26a"),
+    ],
+  )
+  hold
+  

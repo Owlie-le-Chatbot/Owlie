@@ -1,0 +1,96 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2bd
+start:
+  say Typing(2000)
+  say "Imagine maintenant un symbole de protection."
+  say Typing(2000)
+  say "Il peut s'agir d'un objet, d'un personnage ou d'une personne réelle."
+  say Typing(2000)
+  say "Si tu ne trouve pas, voici quelques idées : 
+
+(fais défiler les images ↔️)"
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Un mur indestructible",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/6538081c-3402-46f6-af22-0caadd43d83d.jpeg",
+      ),
+      Card(
+        title="Le bouclier de Captain America",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/626fe3e0-d58f-46e4-b471-6310113b770d.jpeg",
+      ),
+      Card(
+        title="Un parapluie",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3bcb65a0-b745-4b8d-a0c3-5b523efbb9ba.jpeg",
+      ),
+      Card(
+        title="Un champ de force",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/2019140f-ccfa-4399-890f-e91f29d560f7.jpeg",
+      ),
+      Card(
+        title="Une grosse doudoune",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3559c59b-52ea-46a1-ac8f-26c33c80eb13.jpeg",
+      ),
+      Card(
+        title="Une cape de super héros",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/f58f9c9d-8f0b-4fc5-aab3-61c37322eae1.jpeg",
+      ),
+    ],
+    image_aspect_ratio="square",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Un garde du corps",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d6bf11db-9035-4d4a-ae81-cddc8da954a4.jpeg",
+      ),
+      Card(
+        title="Obi-Wan Kenobi",
+        subtitle="Il vous protège contre Dark Vador",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/7f92118b-5248-47fd-a05e-cfd9d5bfac6a.jpeg",
+      ),
+      Card(
+        title="Brienne de Tarth",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/dd54390c-e1fe-45df-a89b-bb86220d639c.jpeg",
+      ),
+      Card(
+        title="Sarah Connor",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/9d4b43a5-d056-46e5-ae3a-d95e0539c9fe.jpeg",
+      ),
+      Card(
+        title="Gandalf ",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/8af59a08-c928-4e39-ad73-45a802c5b2bb.jpeg",
+      ),
+      Card(
+        title="Wonderwoman",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/285cdead-5386-49c5-a2bd-71b2e44c746e.jpeg",
+      ),
+    ],
+    image_aspect_ratio="square",
+    quick_replies=[
+      Button("✔ J'ai choisi !"),
+    ],
+  )
+  hold
+  
+  goto step_9
+
+
+step_9:
+  say Typing(3000)
+  say Question(
+    "Imagine maintenant ce personnage ou cet objet en train de te protéger, de ce qui vous fait souffrir, ou d'autre chose.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_12
+
+
+step_12:
+  // adding conditional redirect to flow
+  goto flow _ancrage_mental_igor___complancment_5c67dc3a76ccbc29ae8ff2b5

@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff30f
+start:
+  say Typing(2500)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/90b30bb7-2847-470d-bd4b-1138c5fa853f.jpeg",
+    quick_replies=[
+      Button("😉Ça me suffit !", payload="/_default_answers_clara___defaultanswer10_5c67dc3a76ccbc29ae8ff20c"),
+      Button("🔃Encore !", payload="/_reconfort_clara___randomhug_5c67dc3a76ccbc29ae8ff2f3"),
+      Button("🚨Aide !", payload="/_jonctions_clara___jonctionneg_5c67dc3a76ccbc29ae8ff26b"),
+      Button("😂Rire", payload="/_blagues_clara___randomrire_5c67dc3a76ccbc29ae8ff2e9"),
+      Button("🤗Psychologie", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("🕗Se voir + tard", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  

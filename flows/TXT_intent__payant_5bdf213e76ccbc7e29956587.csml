@@ -1,0 +1,4 @@
+// flow built from AI Rules text target undefined
+start:
+  say "Non, je suis une chatbot gratuite :-) !"
+  goto end

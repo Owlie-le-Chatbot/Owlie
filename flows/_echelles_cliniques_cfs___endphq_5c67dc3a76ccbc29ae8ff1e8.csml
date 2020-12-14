@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1e8
+start:
+  say Typing(2200)
+  say Question(
+    "Qu'aimerais-tu faire maintenant ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("📈Évaluer l'anxiété", payload="/_echelles_cliniques_cfs___gad7_5c67dc3a76ccbc29ae8ff1e9"),
+      Button("📝Entrer mes données", payload="/_presentation_clara___infouser_5c67dc3a76ccbc29ae8ff1dd"),
+      Button("💬Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("⛵️Activités ", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("🕗Se voir + tard ", payload="/_reprogrammer_clara___reprogrammer2_5c67dc3a76ccbc29ae8ff24f"),
+    ],
+  )
+  hold
+  

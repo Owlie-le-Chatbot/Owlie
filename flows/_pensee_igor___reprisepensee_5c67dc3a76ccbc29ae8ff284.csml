@@ -1,0 +1,27 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff284
+start:
+  say Typing(2000)
+  say Question(
+    "Te sens-tu plus à l'aise face à ta pensée douloureuse ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+      Button("Non"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Question(
+    "La pensée : {{_penseedouloureuse}} te parait-elle découler d'une croyance plus profonde et tenace ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_ellis_igor___introellis_5c67dc3a76ccbc29ae8ff392"),
+      Button("Non", payload="/_pensee_igor___menupensee_5c67dc3a76ccbc29ae8ff280"),
+    ],
+  )
+  hold
+  

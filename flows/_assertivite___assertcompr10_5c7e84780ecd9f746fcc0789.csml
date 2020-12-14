@@ -1,0 +1,16 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0789
+start:
+  say Typing(5000)
+  say Question(
+    "À quel type de compliment souhaite-tu répondre? (tu pourras en choisir un autre plus tard si tu en as envie!)",
+    button_type="quick_reply",
+    buttons=[
+      Button("✅Vrai", payload="/_assertivite___assertcompr11_5c7e84780ecd9f746fcc078a"),
+      Button("❎Faux", payload="/_assertivite___assertcompr12_5c7e84780ecd9f746fcc078b"),
+      Button("☁️Vague", payload="/_assertivite___assertcompr13_5c7e84780ecd9f746fcc078c"),
+      Button("⛈Manipulateur", payload="/_assertivite___assertcompr14_5c7e84780ecd9f746fcc078d"),
+      Button("🌤Constructif", payload="/_assertivite___assertcompr15_5c7e84780ecd9f746fcc078e"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,53 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3de
+start:
+  say Typing(3100)
+  say Question(
+    "Tu peux commencer par marcher 30 minutes par jour tous les jours en écoutant de la musique, un podcast, ou simplement en prenant le temps de regarder les gens, les maisons, le ciel, les arbres, à écouter le son de l'environnement qui t'entoure.
+
+Evidemment, adapte le à tes possibilités psychiques et physiques, celà peut se faire de façon progressive (par exemple, commencer par 10 minutes par jour) seul.e ou accompagné.e (par exemple : programmer cette sortie avec un.e proche), avec un objectif précis ou non (marcher pour aller chercher du pain, poster une lettre...)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue"),
+      Button("Choisir une activité", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3500)
+  say Question(
+    "Ensuite, l'idéal c'est de marcher 45 à 50 minutes, et ce, 3 fois par semaine...
+
+Cela a un
+effet aussi efficace qu’un traitement antidépresseur particulièrement
+dans le cas de dépression légère !
+
+Encore une fois, n'hésite pas à l'adapter à tes possibilités, on trouve souvent un moyen adapté à soi en essayant des choses, ou demandant à ses pairs ce qui les aide pour reprendre une activité physique",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok..."),
+      Button("Autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+      Button("En rester là :-)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3000)
+  say Question(
+    "Tu peux aussi intégrer au moins deux activités plaisantes par semaine : de nouvelles activités et des activités que tu aimais avant ou que tu aimerais essayer !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, je vais faire ça", payload="/_fin_clara___fin5_5c67dc3a76ccbc29ae8ff1fc"),
+      Button("Tu peux m'aider ?", payload="/_psychologie_clara___aide_planifier_activite_5c67dc3a76ccbc29ae8ff3da"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,20 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1f3
+start:
+  say Typing(2900)
+  say "Je suis contente de te lire 😊!"
+  say Typing(2600)
+  say Question(
+    "Comment ça va ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("😊Très bien !", payload="/_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"),
+      Button("🙂Bien", payload="/_ai_dial_positifs_cf___randomdialpositifs_5c67dc3a76ccbc29ae8ff21d"),
+      Button("😐Ça peut aller", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("😕Bof", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("😞Ça va pas fort", payload="/_choix_clara___empathiepremenucrise_5c67dc3a76ccbc29ae8ff268"),
+      Button("😯Je ne sais pas", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+    ],
+  )
+  hold
+  
+  remember _moral = event

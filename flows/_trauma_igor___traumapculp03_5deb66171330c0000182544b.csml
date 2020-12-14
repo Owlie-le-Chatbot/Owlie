@@ -1,0 +1,17 @@
+// CHATFUEL BLOCK ID 5deb66171330c0000182544b
+start:
+  say Typing(4000)
+  say Question(
+    "3. \"Je pouvais empêcher que ça m’arrive. Ça veut donc dire que je l’ai provoqué.\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("Analyser", payload="/_trauma_igor___traumapculp03r_5deb66171330c0000182544c"),
+      Button("Passer", payload="/_trauma_igor___traumapculp04_5deb66171330c0000182544d"),
+      Button("Choisir", payload="/_trauma_igor___intraumenu_5e05bd76f659330001f87cc6"),
+      Button("Fiches", payload="/_trauma_igor___traumafiches_5deb66171330c0000182545f"),
+      Button("SOS", payload="/_sos_clara___sos_5c67dc3a76ccbc29ae8ff25f"),
+      Button("Quitter", payload="/Default"),
+    ],
+  )
+  hold
+  

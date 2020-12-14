@@ -1,0 +1,190 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff3d5
+start:
+  say Typing(2000)
+  say Question(
+    "As-tu une situation en tête sur laquelle tu aurais aimé agir différemment ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, c'est bon !"),
+      Button("Pas vraiment...", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Besoin de parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3100)
+  say Question(
+    "Maintenant, repense à ce qui t’a posé problème et au contexte (lieu, personnes, moment)
+C'est bon, tu visualises ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, c'est bon"),
+      Button("Non, gérer autrement", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Parler", payload="/_ai_dial_positifs_cf___reorientationdialogue_5c67dc3a76ccbc29ae8ff21f"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3500)
+  goto form_7_0
+
+
+// form component
+form_7_0:
+  say "Pourquoi cela t’a posé problème ? (prend ton temps plutôt que d'écrire \"je ne sais pas\", ça cela ne va pas t'aider, on ne peut pas agir dessus si tu restes dans le flou :-), liste ce qui te vient à l'esprit, des mots, n'importe quoi)"
+  hold
+  
+  remember _exercice_trac = event
+  
+  say Typing(2600)
+  goto form_9_0
+
+
+// form component
+form_9_0:
+  say "Qu’as-tu ressenti, quelles ont été tes pensées ? (liste-moi tout en vrac et appuie sur \"entrer\" ou \"envoyer\")"
+  hold
+  
+  remember _exercice_trac = event
+  
+  say Typing(2900)
+  goto form_11_0
+
+
+// form component
+form_11_0:
+  say "Étais-tu en accord avec tes valeurs à ce moment là ? (ce qui est important pour toi dans la vie)"
+  hold
+  
+  remember _exercice_trac = event
+  
+  say Typing(3300)
+  say Question(
+    "Est-ce que tu penses que tu aurais pu faire les choses autrement ou as-tu agis au mieux pour respecter ton ressenti et tes valeurs ?
+
+En somme, avais-tu la possibilité d’agir différemment ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, je crois bien.."),
+      Button("Non, pas vraiment...", payload="/_psychologie_clara___autoapaisement_5c67dc3a76ccbc29ae8ff3b9"),
+    ],
+  )
+  hold
+  
+  goto step_14
+
+
+step_14:
+  say Typing(2300)
+  goto form_16_0
+
+
+// form component
+form_16_0:
+  say "Ok... Qu'est-ce qui a déclenché cette situation, qu'est ce qui a fait que tu en es arrivé.e là ? "
+  hold
+  
+  remember _exemple_trac = event
+  
+  say Typing(3500)
+  goto form_18_0
+
+
+// form component
+form_18_0:
+  say "Comment aurais-tu pu y répondre autrement ? Qu'aurais-tu pu faire à la place de ce que tu as fait ? (on appelle ça un \"comportement alternatif\" = à la place d'un comportement qui fait souffrir/a posé problème)"
+  hold
+  
+  remember _comportement_altertnatif = event
+  
+  say Typing(2800)
+  say Question(
+    "As-tu trouvé quelque chose de faisable et réaliste selon toi ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, continuer"),
+      Button("Non", payload="/_ai_dial_negatifscf___choixactionneg_5c67dc3a76ccbc29ae8ff22c"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+    ],
+  )
+  hold
+  
+  goto step_21
+
+
+step_21:
+  say Typing(2500)
+  say "Voici un petit récapitulatif de l’exercice que nous venons de faire ensemble (pour ta boîte à outils de tous les jours pour décoder des problèmes :-)) :"
+  say Typing(2400)
+  say Image(
+    "https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a23469b0-c71e-49d3-b988-3e5e16db8b49.jpeg",
+    quick_replies=[
+      Button("Merci "),
+    ],
+  )
+  hold
+  
+  goto step_26
+
+
+step_26:
+  say Typing(2700)
+  say Question(
+    "Tu peux aussi le télécharger ici :-)",
+    buttons=[
+      Url("https://drive.google.com/open?id=0BwzjG62bhAz0UWh3MWRMTWhZS2c", text="Télécharger"),
+    ],
+  )
+  
+  say Typing(2400)
+  say Question(
+    "Un conseil avant que je ne te laisse :",
+    button_type="quick_reply",
+    buttons=[
+      Button("Quoi donc ?"),
+      Button("Je sais ;-)", payload="/_choix_clara___choix3relance_5c67dc3a76ccbc29ae8ff265"),
+    ],
+  )
+  hold
+  
+  goto step_31
+
+
+step_31:
+  say Typing(3100)
+  say Question(
+    "Répète l’expérience :-) Les bon.ne.s chercheureuses répètent leurs expériences (minimum 3 fois c'est l'idéal) puisque les résultats peuvent varier d’une fois à l’autre !
+
+Donc avant de tirer une conclusion à la hâte (\"ça marche paaaas !\"), re teste !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, je ferai ça !"),
+    ],
+  )
+  hold
+  
+  goto step_34
+
+
+step_34:
+  say Typing(2500)
+  say Question(
+    "Souhaites-tu faire autre chose ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui, j'aimerai bien", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+      Button("Résoudre encore", payload="/_psychologie_clara___analyse_2_resolution_de_probleme_5c67dc3a76ccbc29ae8ff3d3"),
+      Button("Ça va pour le moment", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,72 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff325
+start:
+  say Typing(2000)
+  say "Le jugement définitif !"
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/617dee8f-168f-42b2-a4a8-235e1c56316e.jpeg")
+  say Question(
+    "L'étiquetage consiste à catégoriser ou à juger définitivement un.e individu.e sur la base d'un ou de quelques comportements.",
+    button_type="quick_reply",
+    buttons=[
+      Button("📋Exemples"),
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say "\"J’ai oublié mon RDV, je ne suis pas quelqu’un.e de fiable\""
+  say Typing(2000)
+  say "\"Iel m’a doublé par la droite, c’est un.e chauffard.e !\""
+  say Typing(2000)
+  say Question(
+    "\"Je me suis énervé.e contre lui, je ne sais pas garder mon sang froid\"",
+    button_type="quick_reply",
+    buttons=[
+      Button("😅 Que faire ?"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2000)
+  say "Coller une étiquette, c'est juger quelqu'un.e de façon définitive, qu'il s'agisse de vous ou d'une autre personne."
+  say Typing(3000)
+  say "En étiquetant quelqu'un.e, tu lea punis. Tu lui enleves la possibilité de corriger son erreur, de progresser. Tu effaces également toute une partie plus positive de son passé."
+  say Typing(3000)
+  say "Par ailleurs, le monde est complexe et évolue en permanence. Les étiquettes ne tiennent jamais longtemps, pas plus que les tiroirs dans lesquels on essaye de ranger les choses ou les gens."
+  say Typing(2000)
+  say "1. Imagine-toi décoller cette étiquette. Si une erreur ou une mauvaise chose a été commise, critique l'acte en lui-même sans juger la personne dans son ensemble."
+  say Typing(2000)
+  say Question(
+    "2. Cherche attentivement des comportements du passé qui pourraient contredire le jugement porté sur cette personne.",
+    button_type="quick_reply",
+    buttons=[
+      Button("👍🏻 Ok"),
+    ],
+  )
+  hold
+  
+  goto step_22
+
+
+step_22:
+  say Question(
+    "Veux-tu continuer l'analyse de ta pensée douloureuse ou commencer les exercices d'assouplissement de pensée?",
+    buttons=[
+      Button("Continuer", payload="/_distorsions_cog_igor___6prophetiedivination_5c67dc3a76ccbc29ae8ff326"),
+      Button("Assouplir", payload="/_restructuration_cog_it___introrestructu_5c67dc3a76ccbc29ae8ff336"),
+    ],
+    quick_replies=[
+      Button("🔙Menu précédent", payload="/_distorsions_cog_igor___menudisto_5c67dc3a76ccbc29ae8ff320"),
+      Button("😉Ça me suffit !", payload="/_eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,98 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d0
+start:
+  say Typing(4000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Bienveillance",
+        subtitle="Je me dis des choses gentilles",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b8294af0-9a10-4e9f-be3c-e5626b8af588.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_emotionnel_igor___bienveillance_5c67dc3a76ccbc29ae8ff2d2"),
+        ],
+      ),
+      Card(
+        title="Photo",
+        subtitle="Je regarde une photo rassurante",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d74a8938-eb53-445c-86d6-ecf45e8b5bca.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_emotionnel_igor___photo_5c67dc3a76ccbc29ae8ff2d3"),
+        ],
+      ),
+      Card(
+        title="Sécurité",
+        subtitle="Je m'imagine dans un endroit sûr",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b8d6d1db-0a00-46c5-8d9f-81a7c48a139b.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_emotionnel_igor___securite_5c67dc3a76ccbc29ae8ff2d5"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Favoris",
+        subtitle="Je pense à mes choses favorites",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/5a9c4b77-b894-49a0-9f11-23dc77abfa10.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_emotionnel_igor___favoris_5c67dc3a76ccbc29ae8ff2d6"),
+        ],
+      ),
+      Card(
+        title="Inspiration",
+        subtitle="Je me récite quelque chose d'inspirant",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/d491387e-3186-4858-b25c-69480eff34cd.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_emotionnel_igor___inspiration_5c67dc3a76ccbc29ae8ff2d7"),
+        ],
+      ),
+      Card(
+        title="Chanson",
+        subtitle="J'écoute une chanson apaisante et réconfortante",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/3924a627-04d6-48a1-8278-fef1b09c700a.jpeg",
+        buttons=[
+          Button("C'est parti !", payload="/_ancrage_emotionnel_igor___chanson_5c67dc3a76ccbc29ae8ff2d8"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Carousel(
+    cards=[
+      Card(
+        title="Valorisation",
+        subtitle="Je me dis des choses encourageantes",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c8b1d27f-8e66-49a3-b039-450826c15301.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_ancrage_emotionnel_igor___valorisation_5c67dc3a76ccbc29ae8ff2d9"),
+        ],
+      ),
+      Card(
+        title="Récompense",
+        subtitle="Je m'accorde une gratification",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/de04d167-8eaf-4f7b-be44-d48c4e855c51.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_ancrage_emotionnel_igor___recompense_5c67dc3a76ccbc29ae8ff2da"),
+        ],
+      ),
+      Card(
+        title="Avenir",
+        subtitle="Je pense à l'avenir proche",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/c29307c5-90e6-4da5-9fcf-ff2e163ca09f.jpeg",
+        buttons=[
+          Button("C'est parti!", payload="/_ancrage_emotionnel_igor___avenir_5c67dc3a76ccbc29ae8ff2db"),
+        ],
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+    quick_replies=[
+      Button("❔Au hasard "),
+      Button("🔙Sortir ", payload="/_ancrage_igor___listanc_5c67dc3a76ccbc29ae8ff2af"),
+    ],
+  )
+  hold
+  

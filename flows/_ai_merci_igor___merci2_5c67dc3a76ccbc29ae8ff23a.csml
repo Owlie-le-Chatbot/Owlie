@@ -1,0 +1,6 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff23a
+start:
+  say Typing(2000)
+  say "Je t'en prie !"
+  // adding conditional redirect to flow
+  goto flow _eva_etat_pendant_clara___randometat_5c67dc3a76ccbc29ae8ff257

@@ -1,0 +1,117 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff426
+start:
+  say Typing(3100)
+  say "Tu as bien fait de me solliciter pour qu'on aborde les relations interpersonnelles {{_name}} !"
+  say Typing(3100)
+  say Question(
+    "Plusieurs auteurices considèrent que les émotions négatives récurrentes sont presque toujours associées à des problèmes interpersonnels. C'est à dire des problèmes dans tes relations avec tes proches et/ou ami.e.s, connaissances, collègues...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr..."),
+      Button("Je savais ça"),
+      Button("Menu précédent", payload="/_menus_igorclara___cataloguehabiletes_5c67dc3a76ccbc29ae8ff271"),
+      Button("Apprendre un truc", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3200)
+  say Question(
+    "Il se peut que des difficultés interpersonnelles aient même contribué (ou contribuent encore) à l'état de ton humeur au quotidien ou que tes relations soient affectées par ton humeur.",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est mon cas..."),
+      Button("C'est sûr..."),
+      Button("Continue"),
+      Button("Faire autre chose", payload="/_menus_igorclara___cataloguechoix_5c67dc3a76ccbc29ae8ff26f"),
+    ],
+  )
+  hold
+  
+  goto step_7
+
+
+step_7:
+  say Typing(3100)
+  say Question(
+    "En plus, si une relation difficile aggrave ton humeur, il se peut que tu hésites à discuter avec la personne concernée...",
+    button_type="quick_reply",
+    buttons=[
+      Button("C'est sûr..."),
+      Button("C'est mon cas..."),
+      Button("Continue"),
+    ],
+  )
+  hold
+  
+  goto step_10
+
+
+step_10:
+  say Typing(2500)
+  say Question(
+    "Pour mieux appréhender une relation compliquée, tu peux utiliser un outil de résolution de problèmes et l’appliquer à tes conflits interpersonnels.",
+    button_type="quick_reply",
+    buttons=[
+      Button("De quelle façon ?"),
+      Button("Continue"),
+    ],
+  )
+  hold
+  
+  goto step_13
+
+
+step_13:
+  say Typing(3000)
+  say Question(
+    "Voici comment prendre du recul déjà : 
+
+1. repérer qui est impliqué dans le problème : quelle est ta part de responsabilité, la part de responsabilité de l'autre 
+(pour creuser ce point => clique sur \"Responsabilité\")
+
+2. regarder si les échanges et les réponses ne sont pas mal interprétés à cause de \"filtres\" mentaux, négatifs par ex. et/ou par la présence de pensées dysfonctionnelles
+(=> pour creuser ce point, clique sur \"Filtres\")
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continue..."),
+      Button("Responsabilité", payload="/_psychologie_clara___evaluer_ma_responsabilite_5c67dc3a76ccbc29ae8ff3d4"),
+      Button("Filtres", payload="/_education_therapeutiqcf___les_differentes_pensees_dysfonctionnelles_5c67dc3a76ccbc29ae8ff41b"),
+    ],
+  )
+  hold
+  
+  goto step_16
+
+
+step_16:
+  say Typing(4400)
+  say Question(
+    "3. tu peux aussi identifier quelles sont les personnes ou éléments qui vont bien et sur lesquels tu peux t'appuyer pour t'aider à sortir de ces difficultés 
+(pour creuser ce point, clique sur \"mes ressources\")
+
+4. tu peux aussi réfléchir à la façon dont tu peux communiquer ton ressenti et agir d'une façon qui respecte ton ressenti et celui de l'autre
+(pour creuser ce point, clique sur \"communication\")
+
+5. Faire de la résolution de problème (\"Résoudre le problème\")
+
+Qu'aimerais-tu faire maintenant ?
+
+(fais défiler les boutons ↔️)",
+    button_type="quick_reply",
+    buttons=[
+      Button("Mes ressources", payload="/_psychologie_clara___ce_qui_va_bien_5c67dc3a76ccbc29ae8ff3d0"),
+      Button("Communication", payload="/_psychologie_clara___communication_non_violente_5c67dc3a76ccbc29ae8ff3d6"),
+      Button("Résoudre le problème", payload="/_resolution_de_problemeit___probleme_5c67dc3a76ccbc29ae8ff36f"),
+      Button("Faire autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("En rester là :)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

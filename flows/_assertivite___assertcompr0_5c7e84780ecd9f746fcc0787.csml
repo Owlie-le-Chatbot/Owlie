@@ -1,0 +1,30 @@
+// CHATFUEL BLOCK ID 5c7e84780ecd9f746fcc0787
+start:
+  say Typing(4000)
+  say "Bienvenue dans le module consacré à recevoir les compliments."
+  say Typing(5000)
+  say Question(
+    "Exprimer ses sentiments positifs est aussi un droit fondamental pour votre interlocuteurice.",
+    button_type="quick_reply",
+    buttons=[
+      Button("😎Oui!", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+      Button("🔍Vraiment?"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(3000)
+  say Question(
+    "Tu souhaites relire tes droits fondamentaux 📜?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_assertivite___assertdrocor_5c7e84780ecd9f746fcc075e"),
+      Button("Non", payload="/_assertivite___assertcompr1_5c7e84780ecd9f746fcc0788"),
+    ],
+  )
+  hold
+  

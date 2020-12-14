@@ -1,0 +1,21 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff4fc
+start:
+  say Typing(4000)
+  say "Imagine-toi en train d'assister à une partie d'échec."
+  say Typing(3000)
+  say "Ton/ta meilleur.e ami.e (pièces blanches) s'y retrouve opposé.e à ton/ta pire ennemi.e (pièces noires)."
+  say Typing(6000)
+  say "Cette partie est un peu spéciale puisque tu es autorisé.e à intervenir et à jouer à la place de ton ami.e si tu l'estimes nécéssaire."
+  say Typing(6000)
+  say "Pour le moment la partie est équilibrée mais tu es déjà certain.e de savoir comment ton ami.e pourrait gagner."
+  say Typing(5000)
+  say Question(
+    "Que vas-tu faire? Jouer un tour pour ton ami.e ou lea laisser jouer?",
+    button_type="quick_reply",
+    buttons=[
+      Button("⚔️Jouer", payload="/_metaphores___metaphechi2_5c67dc3a76ccbc29ae8ff4fd"),
+      Button("✋Laisser", payload="/_metaphores___metaphechi3_5c67dc3a76ccbc29ae8ff4fe"),
+    ],
+  )
+  hold
+  

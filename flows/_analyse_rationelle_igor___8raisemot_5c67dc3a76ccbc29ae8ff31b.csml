@@ -1,0 +1,33 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff31b
+start:
+  say Typing(2000)
+  say "Concentre-toi sur ta pensée douloureuse : 
+- {{_penseedouloureuse}}."
+  say Typing(2000)
+  say Question(
+    "Cette pensée est-elle davantage basée sur tes sentiments que sur des faits?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui"),
+      Button("Non", payload="/_analyse_rationelle_igor___9perso_5c67dc3a76ccbc29ae8ff31c"),
+      Button("Je ne comprends pas"),
+    ],
+  )
+  hold
+  
+  goto step_4
+
+
+step_4:
+  say Typing(2000)
+  say Question(
+    "Tes émotions sont elles suffisamment fortes pour juger à ta place ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Oui", payload="/_distorsions_cog_igor___8raisonnementemotif_5c67dc3a76ccbc29ae8ff328"),
+      Button("Non", payload="/_analyse_rationelle_igor___9perso_5c67dc3a76ccbc29ae8ff31c"),
+      Button("Je ne sais pas", payload="/_analyse_rationelle_igor___9perso_5c67dc3a76ccbc29ae8ff31c"),
+    ],
+  )
+  hold
+  

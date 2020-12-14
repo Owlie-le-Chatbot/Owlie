@@ -1,0 +1,38 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff383
+start:
+  say Typing(3000)
+  say "Récapitulons 😊
+
+Voici les 5 solutions que tu as proposées avec leur avantage et leur inconvénient :"
+  say Typing(4000)
+  say "Solution 1 : {{_solution1}}
+Avantage : {{_avantage1}}
+Inconvénient : {{_inconvenient1}}"
+  say Typing(2000)
+  say "Solution 2 : {{_solution2}}
+Avantage : {{_avantage2}}
+Inconvénient : {{_inconvenient2}}"
+  say Typing(2000)
+  say "Solution 3 : {{_solution3}}
+Avantage : {{_avantage3}}
+Inconvénient : {{_inconvenient3}}"
+  say Typing(2000)
+  say "Solution 4 : {{_solution4}}
+Avantage : {{_avantage4}}
+Inconvénient : {{_inconvenient4}}"
+  say Typing(2000)
+  say "Solution 5 : {{_solution5}}
+Avantage : {{_avantage5}}
+Inconvénient : {{_inconvenient5}}"
+  say Typing(2000)
+  say Question(
+    "Cela te convient-il ? 
+Souhaites-tu faire des modifications ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ça me va !", payload="/_resolution_de_problemeit___choix_5c67dc3a76ccbc29ae8ff38a"),
+      Button("Modifier", payload="/_resolution_de_problemeit___modifanal_5c67dc3a76ccbc29ae8ff384"),
+    ],
+  )
+  hold
+  

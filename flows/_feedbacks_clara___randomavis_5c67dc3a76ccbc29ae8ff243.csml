@@ -1,0 +1,6 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff243
+start:
+  // adding conditional redirect to flow
+  do rand = Floor(Random() * Length(["_feedbacks_clara___avisutilisateur_5c67dc3a76ccbc29ae8ff240", "_feedbacks_clara___avisutilisateur2_5c67dc3a76ccbc29ae8ff241"]))
+  if (rand == 0) goto flow _feedbacks_clara___avisutilisateur_5c67dc3a76ccbc29ae8ff240
+  if (rand == 1) goto flow _feedbacks_clara___avisutilisateur2_5c67dc3a76ccbc29ae8ff241

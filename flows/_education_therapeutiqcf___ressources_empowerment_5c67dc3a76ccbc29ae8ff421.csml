@@ -1,0 +1,85 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff421
+start:
+  say Typing(2100)
+  say Question(
+    "Pour gérer au mieux ta maladie et devenir acteurice de ta vie, la prise de conscience et l'action peuvent t'aider considérablement.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok"),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___choisis_pour_moipropose_toi_education_therapeutique_5c67dc3a76ccbc29ae8ff40f"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(2900)
+  say Question(
+    "Voici 5 étapes que tu peux suivre pour devenir pleinement acteurice face à des difficultés :",
+    button_type="quick_reply",
+    buttons=[
+      Button("Continue..."),
+      Button("Propose autre chose", payload="/_education_therapeutiqcf___carrefour_choix_education_therapeutique_5c67dc3a76ccbc29ae8ff40b"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(3400)
+  say Question(
+    "1. ÉMOTIONS : reconnaître ce qui émerge en moi : émotions, pensées et sensations corporelles 
+
+2. PENSÉES : Identifier le schéma mentale (pensées automatiques) et essayer de comprendre pourquoi il s’active dans ce
+contexte.",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue"),
+    ],
+  )
+  hold
+  
+  goto step_8
+
+
+step_8:
+  say Typing(3600)
+  say Question(
+    "3. CHALLENGER : Maintenir une vision éclairée de ce qui se passe : à l’aide de la restructuration cognitive, se fier à nos expériences passées, rester dans le moment présent...
+
+4. ACTION : Passer à l’action en fonction de mes valeurs et ce, peu importe mes émotions et ce que je crois qui devrait être ou ne pas être.
+
+5. VALEURS : Me rappeler les valeurs importantes pour moi dans la vie",
+    button_type="quick_reply",
+    buttons=[
+      Button("Ok, continue"),
+    ],
+  )
+  hold
+  
+  goto step_11
+
+
+step_11:
+  say Typing(2100)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/fd0831a0-8c0a-44aa-833b-c3c9babe0a63.jpeg")
+  say Typing(2500)
+  say Question(
+    "Quel point souhaites-tu approfondir aujourd'hui ?",
+    button_type="quick_reply",
+    buttons=[
+      Button("1. ÉMOTIONS", payload="/_specification_etat_cf___specemotion_5c67dc3a76ccbc29ae8ff25a"),
+      Button("2. PENSÉES", payload="/_psychologie_clara___quizz_cognitif_1_invitation_5c67dc3a76ccbc29ae8ff3ca"),
+      Button("3. CHALLENGER", payload="/_psychologie_clara___beck_exemple_1_5c67dc3a76ccbc29ae8ff3cc"),
+      Button("4. ACTION"),
+      Button("5. VALEURS", payload="/_psychologie_clara___valeurs_importantes_5c67dc3a76ccbc29ae8ff3e2"),
+      Button("Autre chose", payload="/_choix_clara___choix1_5c67dc3a76ccbc29ae8ff263"),
+      Button("Tout va bien :-)", payload="/_fin_clara___fin2_5c67dc3a76ccbc29ae8ff1f9"),
+    ],
+  )
+  hold
+  

@@ -1,0 +1,47 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff2d4
+start:
+  say Typing(3000)
+  say "Je vais t'aider 😊
+
+Voici quelques photos : 
+
+(fais défiler les images ↔️)"
+  say Typing(3000)
+  say Carousel(
+    cards=[
+      Card(
+        title="Whoopi Goldberg",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/858ad9ae-82ee-4a7d-8a28-599cb06056ab.jpeg",
+      ),
+      Card(
+        title="Gandalf",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/ecf5594d-524a-4eb4-a9b3-184660319cac.jpeg",
+      ),
+      Card(
+        title="Yoda",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/a9c86a5f-44b0-404b-8677-21e9c1242ff9.jpeg",
+      ),
+      Card(
+        title="Dumbledore",
+        image_url="https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/b995b043-5e38-45ad-abf3-a2aa7c30ccc8.jpeg",
+      ),
+    ],
+    image_aspect_ratio="horizontal",
+  )
+  
+  say Question(
+    "Concentre-toi sur l'une de ces photos, sens la présence de cette personne et imagine ce qu'elle pourrait te dire à ce moment précis.",
+    button_type="quick_reply",
+    buttons=[
+      Button("✔ C'est fait !"),
+    ],
+  )
+  hold
+  
+  goto step_5
+
+
+step_5:
+  say Typing(2200)
+  // adding conditional redirect to flow
+  goto flow _ancrage_emotionnel_igor___complancemo_5c67dc3a76ccbc29ae8ff2d1

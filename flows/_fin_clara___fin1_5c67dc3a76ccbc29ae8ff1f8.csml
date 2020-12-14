@@ -1,0 +1,28 @@
+// CHATFUEL BLOCK ID 5c67dc3a76ccbc29ae8ff1f8
+start:
+  say Typing(2300)
+  say Question(
+    "Je te remercie pour ce moment passé ensemble {{_name}} !",
+    button_type="quick_reply",
+    buttons=[
+      Button("Merci à toi aussi !"),
+    ],
+  )
+  hold
+  
+  goto step_2
+
+
+step_2:
+  say Typing(3000)
+  say Image("https://migrate-assets.csml.dev/cf/5c67dc3976ccbc29ae8fd719/487d85cb-d1a8-4d84-a18b-47e5f47429df.jpeg")
+  say Typing(2300)
+  say Question(
+    "À bientôt !",
+    button_type="quick_reply",
+    buttons=[
+      Button("À plus tard !"),
+    ],
+  )
+  hold
+  
